@@ -38,7 +38,9 @@
 
 (defun my-ac-cc-mode-hook ()
   (setq ac-sources (append '(ac-source-semantic
-			     ac-source-yasnippet)
+;;			     ac-source-gtags
+;;			     ac-source-yasnippet
+			     )
 			   ac-sources)))
 
 (defun my-ac-python-mode-hook ()

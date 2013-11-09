@@ -19,3 +19,6 @@
 
 ;; Run this function the first time you want to use slime.
 (slime-setup '(slime-fancy))
+
+;; Add a fun mode that makes `lambda' appear as the literal greek character.
+(add-to-list 'lisp-mode-hook '(lambda () (pretty-lambda-mode 1)))

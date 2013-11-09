@@ -7,8 +7,14 @@
 ;     * This shit is fucking broken now.  Fuck you Emacs24
 
 ; Not sure if this will break things
+
 (require 'package)
-(setq package-archives '(("marmalade" . "http://marmalade-repo.org/packages/")
-			 ("elpa" . "http://tromey.com/elpa/")
-			 ("gnu" . "http://elpa.gnu.org/packages/")))
+(if (not (boundp 'package-archives))
+    (setq package-archives nil))
+(add-to-list 'package-archives
+	     '("gnu" . "http://elpa.gnu.org/packages/"))
+(add-to-list 'package-archives
+	     '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives
+	     '("elpa" . "http://tromey.com/elpa/"))
 (package-initialize)

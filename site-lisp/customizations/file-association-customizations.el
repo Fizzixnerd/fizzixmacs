@@ -7,5 +7,11 @@
 ;;
 ;; October 19, 2012: * Created file; moved association of .lzz files
 ;;                     to c++-mode from c++-customizations to here.
+;; July 19, 2013: * Associated .h files with c++-mode by default.
+;; July 28, 2013: * Associated .hdl files with c-mode.
 
 (add-to-list 'auto-mode-alist '("\\.lzz\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+
+;; hdl files are close enough to syntax C, so this works well enough.
+(add-to-list 'auto-mode-alist '("\\.hdl\\'" . c-mode))

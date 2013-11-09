@@ -6,3 +6,4 @@
 
 ; Make the prompt read-only and thus non-retarded
 (setq comint-prompt-read-only t)
+

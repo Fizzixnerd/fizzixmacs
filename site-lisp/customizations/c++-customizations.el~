@@ -7,5 +7,6 @@
 ;;
 ;; April 23, 2012: * made lazy c++ files (of .lzz extension) load c++-mode
 ;;
+;; October 19, 2012: * moved the .lzz extension hook to
+;;                     file-associations-cusomizations.el.
 
-(add-to-list 'auto-mode-alist '("\\.lzz\\'" . c++-mode))

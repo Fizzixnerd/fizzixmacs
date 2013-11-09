@@ -59,6 +59,21 @@
 ;;   (unless arg (setq arg 1))
 ;;   (mouse-skip-word arg))
 
+;; the following block tells Emacs to automatically indent pasted
+;; lines.
+(dolist (command '(yank yank-pop))
+  (eval `(defadvice ,command (after indent-region activate)
+	   (and (not current-prefix-arg)
+		(member major-mode '(emacs-lisp-mode lisp-mode
+				     clojure-mode    scheme-mode
+				     haskell-mode    ruby-mode
+				     rspec-mode      python-mode
+				     c-mode          c++-mode
+				     objc-mode       latex-mode
+				     plain-tex-mode))
+		(let ((mark-even-if-inactive transient-mark-mode))
+		  (indent-region (region-beginning) (region-end) nil))))))
+
 (global-set-key [home] 'smart-move-beginning-of-line)
 (global-set-key "\C-a" 'smart-move-beginning-of-line)
 (global-set-key "\M-f" 'skip-whitespace-or-forward-word)

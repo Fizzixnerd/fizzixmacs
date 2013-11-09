@@ -20,11 +20,14 @@
 
 (require 'cedet)
 (require 'semantic)
+(require 'semantic/ia)
+(require 'semantic/bovine/gcc)
 
 ;; Note: apparently cedet can get pissy if you enable using "t"
 ;; instead of "1". I'm looking at you, global-semanticdb-minor-mode!
 (global-ede-mode 1)
 (ede-enable-generic-projects)
+(semantic-gcc-setup)
 
 ;; uses exuberant-ctags to parse for new languages only
 ;(semantic-load-enable-primary-exuberent-ctags-support)
@@ -36,14 +39,10 @@
   (local-set-key "." 'semantic-complete-self-insert)
   (local-set-key ">" 'semantic-complete-self-insert))
 
-(defun semantic-enable-idle-helpers ()
-  (semantic-idle-completions-mode 1)
-  (semantic-idle-summary-mode 1))
-
 (defun semantic-enable-other-helpers ()
   (semantic-idle-completions-mode 1)
   (semantic-idle-summary-mode 1)
-  (semantic-idle-scheduler-mode 1)
+  (semantic-idle-local-symbol-highlight-mode 1)
   (semantic-auto-parse-mode 1)
   (semantic-stickyfunc-mode 1)
   (semantic-mru-bookmark-mode 1)
@@ -53,9 +52,13 @@
   (semantic-enable-other-helpers))
 
 (defun c-like-semantic-hook ()
-  (semantic-enable-idle-helpers)
   (semantic-enable-other-helpers)
-  (complete-instance-variables-and-methods))
+  (complete-instance-variables-and-methods)
+  (when (cedet-gnu-global-version-check t)
+    (semanticdb-enable-gnu-global-databases 'c-mode)
+    (semanticdb-enable-gnu-global-databases 'c++-mode))
+  (when (cedet-ectag-version-check)
+    (semantic-load-enable-primary-exuberant-ctags-support)))
 
 (add-hook 'c-mode-common-hook 'c-like-semantic-hook)
 (add-hook 'java-mode-common-hook 'c-like-semantic-hook)

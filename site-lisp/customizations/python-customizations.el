@@ -1,11 +1,13 @@
 ; Author: Matt Walker <matt.g.d.walker@gmail.com>
 ; Changelog:
 ;     February 24, 2012
-;     * Initial creation
-;     * Moved everything out of init.el
+;       * Initial creation
+;       * Moved everything out of init.el
 ;     March 7, 2012
-;     * Moved some the autoloads around; changed them to requires
-;     * Still not really sure what most of this stuff does
+;       * Moved some the autoloads around; changed them to requires
+;       * Still not really sure what most of this stuff does
+;    Sept 7, 2013
+;      * Added more support for ipython inferior shells.
 
 
 ; This file contains everything related to python editing, including
@@ -34,3 +36,5 @@
 
 (setq semantic-python-dependency-system-include-path
       '("/usr/lib/python2.7/"))
+
+;;

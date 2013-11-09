@@ -1,5 +1,5 @@
 ;; Created April 23, 2012
-;; Enable Code folding in emacs.  Use C-c C-@ C-c to fold and unfold
+;; Enable Code folding in emacs.  Use C-c @ C-c to fold and unfold
 ;; April 23, 2012: * first edit
 ;;                 * enabled hs-minor-mode globally (SCRATCH THAT)
 ;;                 * hs cannot be enabled in fundamental mode, so I guess
