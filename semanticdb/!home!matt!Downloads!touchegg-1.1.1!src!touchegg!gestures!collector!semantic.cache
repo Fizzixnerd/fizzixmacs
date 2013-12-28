@@ -1,0 +1,110 @@
+;; Object collector/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "collector/"
+  :tables
+  (list
+    (semanticdb-table "GestureCollector.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GestureCollector.h" include nil nil [854 883])
+            ("GestureCollector::gestures" variable (:type ("QList" type
+                 (:template-specifier 
+                    ( ("GeisGestureClass" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [1249 1301])
+            ("gestureStart" function
+               (:parent "GestureCollector"
+                :arguments 
+                  ( ("gc" variable
+                       (:pointer 1
+                        :type ("GestureCollector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1339 1360])
+                    ("event" variable (:type ("GeisEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1361 1377]))                  
+                :type "void")
+                nil [1303 1688])
+            ("gestureUpdate" function
+               (:parent "GestureCollector"
+                :arguments 
+                  ( ("gc" variable
+                       (:pointer 1
+                        :type ("GestureCollector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1727 1748])
+                    ("event" variable (:type ("GeisEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1749 1765]))                  
+                :type "void")
+                nil [1690 2021])
+            ("gestureFinish" function
+               (:parent "GestureCollector"
+                :arguments 
+                  ( ("gc" variable
+                       (:pointer 1
+                        :type ("GestureCollector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2060 2081])
+                    ("event" variable (:type ("GeisEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2082 2098]))                  
+                :type "void")
+                nil [2023 2354])
+            ("GestureCollector" function
+               (:constructor-flag t
+                :parent "GestureCollector"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2756 2772]))                  
+                :type ("GestureCollector" type (:type "class") nil nil))
+                nil [2721 3227])
+            ("GestureCollector" function
+               (:destructor-flag t
+                :parent "GestureCollector"
+                :type "void")
+                nil [3229 3299])
+            ("addWindow" function
+               (:parent "GestureCollector"
+                :arguments 
+                  ( ("w" variable (:type ("Window" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3699 3708]))                  
+                :type "void")
+                nil [3666 6173])
+            ("removeWindow" function
+               (:parent "GestureCollector"
+                :arguments 
+                  ( ("w" variable (:type ("Window" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6211 6220]))                  
+                :type "void")
+                nil [6175 6563])
+            ("geisEvent" function
+               (:parent "GestureCollector"
+                :type "void")
+                nil [6930 8021])
+            ("getGestureAttrs" function
+               (:parent "GestureCollector"
+                :arguments 
+                  ( ("event" variable (:type ("GeisEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8447 8463]))                  
+                :type ("QHash" type
+                     (:template-specifier 
+                        ( ("QString" type nil nil nil)
+                          ("QVariant" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8388 11348])
+            ("getWindowClass" function
+               (:parent "GestureCollector"
+                :arguments 
+                  ( ("window" variable (:type ("Window" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11391 11405]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [11350 11642])
+            ("setupGestureEvent" function
+               (:parent "GestureCollector"
+                :arguments 
+                  ( ("event" variable (:type ("GeisEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11685 11701]))                  
+                :type "void")
+                nil [11644 12083]))          
+      :file "GestureCollector.cpp"
+      :pointmax 12084
+      :fsize 12089
+      :lastmodtime '(20494 61612 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "GestureCollector.h"
+      :file "GestureCollector.h"
+      :fsize 4664
+      :lastmodtime '(20494 61612 0 0)))
+  :file "!home!matt!Downloads!touchegg-1.1.1!src!touchegg!gestures!collector!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

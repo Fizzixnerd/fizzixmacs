@@ -1,0 +1,20 @@
+;; Object regression/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "regression/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("TESTS" variable (:default-value ("test-hub4-n800-fwdtree.sh" "test-hub4-simple-pl.sh" "test-hub4-simple.sh" "test-hub4-cards.sh" "test-tidigits-fsg.sh" "test-tidigits-simple.sh")) nil [1 166])
+            ("TESTDATA" variable nil nil [167 178])
+            ("EXTRA_DIST" variable (:default-value ("$(TESTS)" "$(TESTDATA)")) nil [179 213])
+            ("CLEANFILES" variable (:default-value ("*.match" "*.log")) nil [214 241]))          
+      :file "Makefile.am"
+      :pointmax 241
+      :fsize 240
+      :lastmodtime '(21161 13793 256369 85000)
+      :unmatched-syntax nil))
+  :file "!home!matt!src!cmusphinx!pocketsphinx!test!regression!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

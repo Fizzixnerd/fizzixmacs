@@ -1,0 +1,24 @@
+;; Object lm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lm/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("enlmdir" variable (:default-value ("$(datadir)/@PACKAGE@/model/lm/en")) nil [1 44])
+            ("dist_enlm_DATA" variable (:default-value ("en/tidigits.dic" "en/tidigits.DMP" "en/tidigits.fsg" "en/turtle.dic" "en/turtle.DMP")) nil [44 160])
+            ("enuslmdir" variable (:default-value ("$(datadir)/@PACKAGE@/model/lm/en_US")) nil [161 209])
+            ("dist_enuslm_DATA" variable (:default-value ("en_US/cmu07a.dic" "en_US/hub4.5000.DMP" "en_US/hub4.5000.dic" "en_US/wsj0vp.5000.DMP")) nil [209 325])
+            ("zhcnlmdir" variable (:default-value ("$(datadir)/@PACKAGE@/model/lm/zh_CN")) nil [326 374])
+            ("dist_zhcnlm_DATA" variable (:default-value ("zh_CN/gigatdt.5000.DMP" "zh_CN/mandarin_notone.dic")) nil [374 450])
+            ("zhtwlmdir" variable (:default-value ("$(datadir)/@PACKAGE@/model/lm/zh_TW")) nil [451 499])
+            ("dist_zhtwlm_DATA" variable (:default-value ("zh_TW/gigatdt.5000.DMP" "zh_TW/mandarin_notone.dic")) nil [499 575]))          
+      :file "Makefile.am"
+      :pointmax 575
+      :fsize 574
+      :lastmodtime '(21161 13843 713372 252000)
+      :unmatched-syntax nil))
+  :file "!home!matt!src!cmusphinx!pocketsphinx!model!lm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

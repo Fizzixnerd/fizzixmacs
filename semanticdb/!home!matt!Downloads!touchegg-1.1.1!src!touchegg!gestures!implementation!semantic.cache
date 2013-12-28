@@ -1,0 +1,138 @@
+;; Object implementation/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "implementation/"
+  :tables
+  (list
+    (semanticdb-table "Gesture.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Gesture.h" include nil nil [841 861])
+            ("Gesture" function
+               (:constructor-flag t
+                :parent "Gesture"
+                :arguments 
+                  ( ("type" variable (:type ("GestureTypeEnum::GestureType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1244 1278])
+                    ("numFingers" variable (:type "int") (reparse-symbol arg-sub-list) [1279 1294])
+                    ("dir" variable (:type ("GestureDirectionEnum::GestureDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1295 1338])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1339 1346])
+                    ("attrs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QHash" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil)
+                                  ("QVariant" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1351 1389]))                  
+                :type ("Gesture" type (:type "class") nil nil))
+                nil [1227 1491])
+            ("Gesture" function
+               (:destructor-flag t
+                :parent "Gesture"
+                :type "void")
+                nil [1493 1541])
+            ("start" function
+               (:parent "Gesture"
+                :type "void")
+                nil [1908 2018])
+            ("update" function
+               (:parent "Gesture"
+                :type "void")
+                nil [2020 2132])
+            ("finish" function
+               (:parent "Gesture"
+                :type "void")
+                nil [2134 2246])
+            ("getType" function
+               (:parent "Gesture"
+                :type ("GestureTypeEnum::GestureType" type (:type "class") nil nil))
+                nil [2613 2693])
+            ("getNumFingers" function
+               (:parent "Gesture"
+                :type "int")
+                nil [2695 2762])
+            ("getDirection" function
+               (:parent "Gesture"
+                :type ("GestureDirectionEnum::GestureDirection" type (:type "class") nil nil))
+                nil [2764 2858])
+            ("getId" function
+               (:parent "Gesture"
+                :type "int")
+                nil [2860 2911])
+            ("getAttrs" function
+               (:parent "Gesture"
+                :constant-flag t
+                :type ("QHash" type
+                     (:template-specifier 
+                        ( ("QString" type nil nil nil)
+                          ("QVariant" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2913 2998])
+            ("getAction" function
+               (:pointer 1
+                :parent "Gesture"
+                :constant-flag t
+                :type ("Action" type (:type "class") nil nil))
+                nil [3000 3069])
+            ("setType" function
+               (:parent "Gesture"
+                :arguments 
+                  ( ("type" variable (:type ("GestureTypeEnum::GestureType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3215 3249]))                  
+                :type "void")
+                nil [3193 3276])
+            ("setNumFingers" function
+               (:parent "Gesture"
+                :arguments 
+                  ( ("numFingers" variable (:type "int") (reparse-symbol arg-sub-list) [3306 3321]))                  
+                :type "void")
+                nil [3278 3360])
+            ("setDirection" function
+               (:parent "Gesture"
+                :arguments 
+                  ( ("dir" variable (:type ("GestureDirectionEnum::GestureDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3389 3432]))                  
+                :type "void")
+                nil [3362 3457])
+            ("setId" function
+               (:parent "Gesture"
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [3479 3486]))                  
+                :type "void")
+                nil [3459 3509])
+            ("setAttrs" function
+               (:parent "Gesture"
+                :arguments 
+                  ( ("attrs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QHash" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil)
+                                  ("QVariant" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3534 3572]))                  
+                :type "void")
+                nil [3511 3601])
+            ("setAction" function
+               (:parent "Gesture"
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("Action" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3627 3642]))                  
+                :type "void")
+                nil [3603 3673]))          
+      :file "Gesture.cpp"
+      :pointmax 3674
+      :fsize 3679
+      :lastmodtime '(20494 61612 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Gesture.h"
+      :file "Gesture.h"
+      :fsize 4641
+      :lastmodtime '(20494 61612 0 0)))
+  :file "!home!matt!Downloads!touchegg-1.1.1!src!touchegg!gestures!implementation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

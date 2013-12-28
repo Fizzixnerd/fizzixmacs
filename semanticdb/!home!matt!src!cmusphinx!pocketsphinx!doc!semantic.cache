@@ -1,0 +1,26 @@
+;; Object doc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "doc/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("man_MANS" variable (:default-value ("pocketsphinx_batch.1" "pocketsphinx_continuous.1" "pocketsphinx_mdef_convert.1")) nil [1 96])
+            ("EXTRA_DIST" variable (:default-value ("args2man.pl" "doxy2swig.py" "pocketsphinx_batch.1" "pocketsphinx_continuous.1" "pocketsphinx_mdef_convert.1")) nil [97 225])
+            ("SWIG_DOC" variable (:default-value ("pydoc.i")) nil [531 550])
+            ("pydoc.i" function (:arguments ("html/index.html")) nil [551 635])
+            ("all-local" function (:arguments ("html/index.html" "$(SWIG_DOC)")) nil [659 698])
+            ("headers" variable (:default-value ("$(top_srcdir)/include/pocketsphinx.h" "$(top_srcdir)/include/ps_lattice.h")) nil [705 790])
+            ("latex/refman.pdf" function (:arguments ("doxyfile" "$(headers)")) nil [791 867])
+            ("html/index.html" function (:arguments ("doxyfile" "$(headers)")) nil [868 914])
+            ("clean-local" function nil nil [915 973])
+            ("upload" function (:arguments ("html/index.html")) nil [1030 1131]))          
+      :file "Makefile.am"
+      :pointmax 1131
+      :fsize 1130
+      :lastmodtime '(21161 13848 957372 581000)
+      :unmatched-syntax '((shell-command 1055 . 1130) (bol 1054 . 1054))))
+  :file "!home!matt!src!cmusphinx!pocketsphinx!doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

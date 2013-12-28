@@ -1,0 +1,31 @@
+;; Object python/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("SUBDIRS" variable (:default-value ("test")) nil [16 31])
+            ("SWIG_FLAGS" variable (:default-value ("-I$(top_srcdir)/include" "-I@SPHINXBASE_SWIG@")) nil [32 89])
+            ("SWIG_DIR" variable (:default-value ("$(top_srcdir)/swig")) nil [90 120])
+            ("SWIG_FILES" variable (:default-value ("$(SWIG_DIR)/pocketsphinx.i" "$(SWIG_DIR)/ps_decoder.i" "$(SWIG_DIR)/ps_lattice.i")) nil [121 220])
+            ("SWIG_FLAGS" variable (:default-value ("-DHAS_DOC" "-I$(top_builddir)/doc")) nil [238 284])
+            ("SWIG_FILES" variable (:default-value ("$(top_builddir)/doc/pydoc.i")) nil [284 326])
+            ("CLEANFILES" variable (:default-value ("pocketsphinx_wrap.c" "pocketsphinx.py" "pocketsphinx.pyc")) nil [333 399])
+            ("pkgpyexec_PYTHON" variable (:default-value ("__init__.py")) nil [400 432])
+            ("nodist_pkgpyexec_PYTHON" variable (:default-value ("pocketsphinx.py")) nil [432 474])
+            ("pkgpyexec_LTLIBRARIES" variable (:default-value ("_pocketsphinx.la")) nil [474 515])
+            ("nodist__pocketsphinx_la_SOURCES" variable (:default-value ("pocketsphinx_wrap.c")) nil [515 569])
+            ("INCLUDES" variable (:default-value ("$(PYTHON_CPPFLAGS)" "-I$(top_srcdir)/include" "-D_DATADIR=\\\"$(datadir)/@PACKAGE@\\\"")) nil [570 669])
+            ("_pocketsphinx_la_LDFLAGS" variable (:default-value ("-module")) nil [670 705])
+            ("_pocketsphinx_la_LIBADD" variable (:default-value ("-lsphinxbase" "$(top_builddir)/src/libpocketsphinx/libpocketsphinx.la")) nil [705 805])
+            ("pocketsphinx_wrap.c" function (:arguments ("$(SWIG_FILES)")) nil [806 892]))          
+      :file "Makefile.am"
+      :pointmax 899
+      :fsize 898
+      :lastmodtime '(21161 13849 354372 606000)
+      :unmatched-syntax nil))
+  :file "!home!matt!src!cmusphinx!pocketsphinx!swig!python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

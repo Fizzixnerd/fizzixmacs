@@ -1,0 +1,34 @@
+;; Object gst-plugin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gst-plugin/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("my_plugins" variable nil nil [1 15])
+            ("my_headers" variable nil nil [15 28])
+            ("my_files" variable nil nil [28 39])
+            ("my_plugins" variable (:default-value ("libgstpocketsphinx.la")) nil [52 88])
+            ("my_headers" variable (:default-value ("psmarshal.h")) nil [88 114])
+            ("my_files" variable (:default-value ("psmarshal.h" "psmarshal.c")) nil [114 150])
+            ("plugin_LTLIBRARIES" variable (:default-value ("$(my_plugins)")) nil [157 192])
+            ("libgstpocketsphinx_la_SOURCES" variable (:default-value ("gstpocketsphinx.c" "gstvader.c" "psmarshal.c")) nil [193 266])
+            ("libgstpocketsphinx_la_CFLAGS" variable (:default-value ("$(GST_CFLAGS)" "-DMODELDIR=\\\"$(pkgdatadir)/model\\\"")) nil [266 346])
+            ("libgstpocketsphinx_la_LIBADD" variable (:default-value ("$(GST_LIBS)" "-lgstaudio-$(GST_MAJORMINOR)" "$(top_builddir)/src/libpocketsphinx/libpocketsphinx.la" "-lsphinxbase")) nil [346 489])
+            ("libgstpocketsphinx_la_LDFLAGS" variable (:default-value ("$(GST_PLUGIN_LDFLAGS)")) nil [489 543])
+            ("noinst_HEADERS" variable (:default-value ("gstpocketsphinx.h" "gstvader.h" "$(my_headers)")) nil [544 604])
+            ("INCLUDES" variable (:default-value ("-I$(top_srcdir)/include" "-I$(top_builddir)/include")) nil [605 669])
+            ("EXTRA_DIST" variable (:default-value ("psmarshal.list" "livedemo.py" "fixsqrt.py")) nil [670 721])
+            ("BUILT_SOURCES" variable (:default-value ("$(my_files)")) nil [721 749])
+            ("CLEANFILES" variable (:default-value ("$(my_filse)")) nil [749 774])
+            ("psmarshal.h" function (:arguments ("psmarshal.list")) nil [775 924])
+            ("psmarshal.c" function (:arguments ("psmarshal.list")) nil [925 1179]))          
+      :file "Makefile.am"
+      :pointmax 1179
+      :fsize 1178
+      :lastmodtime '(21161 13803 559369 732000)
+      :unmatched-syntax '((shell-command 1148 . 1178) (bol 1147 . 1147))))
+  :file "!home!matt!src!cmusphinx!pocketsphinx!src!gst-plugin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

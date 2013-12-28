@@ -1,0 +1,549 @@
+;; Object asm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "asm/"
+  :tables
+  (list
+    (semanticdb-table "byteorder.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ASM_X86_BYTEORDER_H" variable (:constant-flag t) nil [38 58])
+            ("linux/byteorder/little_endian.h" include (:system-flag t) nil [60 102]))          
+      :file "byteorder.h"
+      :pointmax 138
+      :fsize 137
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ASM_X86_BYTEORDER_H")
+          )
+)
+    (semanticdb-table "stat.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ASM_X86_STAT_H" variable (:constant-flag t) nil [33 48])
+            ("STAT_HAVE_NSEC" variable (:constant-flag t) nil [58 72])
+            ("stat" type
+               (:members 
+                  ( ("st_dev" variable (:type "unsigned long") (reparse-symbol classsubparts) [1748 1769])
+                    ("st_ino" variable (:type "unsigned long") (reparse-symbol classsubparts) [1771 1792])
+                    ("st_nlink" variable (:type "unsigned long") (reparse-symbol classsubparts) [1794 1817])
+                    ("st_mode" variable (:type "unsigned int") (reparse-symbol classsubparts) [1820 1841])
+                    ("st_uid" variable (:type "unsigned int") (reparse-symbol classsubparts) [1843 1863])
+                    ("st_gid" variable (:type "unsigned int") (reparse-symbol classsubparts) [1865 1885])
+                    ("__pad0" variable (:type "unsigned int") (reparse-symbol classsubparts) [1887 1907])
+                    ("st_rdev" variable (:type "unsigned long") (reparse-symbol classsubparts) [1909 1931])
+                    ("st_size" variable (:type "long") (reparse-symbol classsubparts) [1933 1947])
+                    ("st_blksize" variable (:type "long") (reparse-symbol classsubparts) [1949 1966])
+                    ("st_blocks" variable (:type "long") (reparse-symbol classsubparts) [1968 1984])
+                    ("st_atime" variable (:type "unsigned long") (reparse-symbol classsubparts) [2027 2050])
+                    ("st_atime_nsec" variable (:type "unsigned long") (reparse-symbol classsubparts) [2052 2080])
+                    ("st_mtime" variable (:type "unsigned long") (reparse-symbol classsubparts) [2082 2105])
+                    ("st_mtime_nsec" variable (:type "unsigned long") (reparse-symbol classsubparts) [2107 2135])
+                    ("st_ctime" variable (:type "unsigned long") (reparse-symbol classsubparts) [2137 2160])
+                    ("st_ctime_nsec" variable (:type "unsigned long") (reparse-symbol classsubparts) [2162 2192])
+                    ("__unused" variable
+                       (:dereference 1
+                        :type "long")
+                        (reparse-symbol classsubparts) [2194 2212]))                  
+                :type "struct")
+                nil [1733 2215])
+            ("INIT_STRUCT_STAT_PADDING" variable (:constant-flag t) nil [2302 2326])
+            ("__old_kernel_stat" type
+               (:members 
+                  ( ("st_dev" variable (:type "unsigned short") (reparse-symbol classsubparts) [2528 2550])
+                    ("st_ino" variable (:type "unsigned short") (reparse-symbol classsubparts) [2552 2574])
+                    ("st_mode" variable (:type "unsigned short") (reparse-symbol classsubparts) [2576 2599])
+                    ("st_nlink" variable (:type "unsigned short") (reparse-symbol classsubparts) [2601 2625])
+                    ("st_uid" variable (:type "unsigned short") (reparse-symbol classsubparts) [2627 2649])
+                    ("st_gid" variable (:type "unsigned short") (reparse-symbol classsubparts) [2651 2673])
+                    ("st_rdev" variable (:type "unsigned short") (reparse-symbol classsubparts) [2675 2698])
+                    ("st_size" variable (:type "unsigned int") (reparse-symbol classsubparts) [2825 2847])
+                    ("st_atime" variable (:type "unsigned int") (reparse-symbol classsubparts) [2849 2872])
+                    ("st_mtime" variable (:type "unsigned int") (reparse-symbol classsubparts) [2874 2897])
+                    ("st_ctime" variable (:type "unsigned int") (reparse-symbol classsubparts) [2899 2922]))                  
+                :type "struct")
+                nil [2500 2932]))          
+      :file "stat.h"
+      :pointmax 2963
+      :fsize 2962
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("STAT_HAVE_NSEC" . ((number "1" 73 . 74)))
+          ("INIT_STRUCT_STAT_PADDING" (spp-arg-list ("st") 2326 . 2330) . 
+              ((DO "do" 2331 . 2333) (semantic-list "{	\\
+	st.__pad0 = 0;				\\
+	st.__unused[0] = 0;			\\
+	st.__unused[1] = 0;			\\
+	st.__unused[2] = 0;			\\
+}" 2334 . 2435) (WHILE "while" 2436 . 2441) (semantic-list "(0)" 2442 . 2445)))
+          ("_ASM_X86_STAT_H")
+          )
+)
+    (semanticdb-table "ptrace.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ASM_X86_PTRACE_H" variable (:constant-flag t) nil [35 52])
+            ("asm/ptrace-abi.h" include (:system-flag t) nil [65 92])
+            ("asm/processor-flags.h" include (:system-flag t) nil [93 125])
+            ("pt_regs" type
+               (:members 
+                  ( ("r15" variable (:type "unsigned long") (reparse-symbol classsubparts) [523 541])
+                    ("r14" variable (:type "unsigned long") (reparse-symbol classsubparts) [543 561])
+                    ("r13" variable (:type "unsigned long") (reparse-symbol classsubparts) [563 581])
+                    ("r12" variable (:type "unsigned long") (reparse-symbol classsubparts) [583 601])
+                    ("rbp" variable (:type "unsigned long") (reparse-symbol classsubparts) [603 621])
+                    ("rbx" variable (:type "unsigned long") (reparse-symbol classsubparts) [623 641])
+                    ("r11" variable (:type "unsigned long") (reparse-symbol classsubparts) [716 734])
+                    ("r10" variable (:type "unsigned long") (reparse-symbol classsubparts) [736 754])
+                    ("r9" variable (:type "unsigned long") (reparse-symbol classsubparts) [756 773])
+                    ("r8" variable (:type "unsigned long") (reparse-symbol classsubparts) [775 792])
+                    ("rax" variable (:type "unsigned long") (reparse-symbol classsubparts) [794 812])
+                    ("rcx" variable (:type "unsigned long") (reparse-symbol classsubparts) [814 832])
+                    ("rdx" variable (:type "unsigned long") (reparse-symbol classsubparts) [834 852])
+                    ("rsi" variable (:type "unsigned long") (reparse-symbol classsubparts) [854 872])
+                    ("rdi" variable (:type "unsigned long") (reparse-symbol classsubparts) [874 892])
+                    ("orig_rax" variable (:type "unsigned long") (reparse-symbol classsubparts) [894 917])
+                    ("rip" variable (:type "unsigned long") (reparse-symbol classsubparts) [981 999])
+                    ("cs" variable (:type "unsigned long") (reparse-symbol classsubparts) [1001 1018])
+                    ("eflags" variable (:type "unsigned long") (reparse-symbol classsubparts) [1020 1041])
+                    ("rsp" variable (:type "unsigned long") (reparse-symbol classsubparts) [1043 1061])
+                    ("ss" variable (:type "unsigned long") (reparse-symbol classsubparts) [1063 1080]))                  
+                :type "struct")
+                nil [505 1107]))          
+      :file "ptrace.h"
+      :pointmax 1194
+      :fsize 1193
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ASM_X86_PTRACE_H")
+          )
+)
+    (semanticdb-table "types.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ASM_X86_TYPES_H" variable (:constant-flag t) nil [34 50])
+            ("asm-generic/types.h" include (:system-flag t) nil [52 82]))          
+      :file "types.h"
+      :pointmax 114
+      :fsize 113
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ASM_X86_TYPES_H")
+          )
+)
+    (semanticdb-table "errno.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("asm-generic/errno.h" include (:system-flag t) nil [1 31]))          
+      :file "errno.h"
+      :pointmax 32
+      :fsize 31
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ptrace-abi.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ASM_X86_PTRACE_ABI_H" variable (:constant-flag t) nil [39 60])
+            ("FRAME_SIZE" variable (:constant-flag t) nil [1008 1018])
+            ("PTRACE_GETREGS" variable (:constant-flag t) nil [1132 1146])
+            ("PTRACE_SETREGS" variable (:constant-flag t) nil [1169 1183])
+            ("PTRACE_GETFPREGS" variable (:constant-flag t) nil [1206 1222])
+            ("PTRACE_SETFPREGS" variable (:constant-flag t) nil [1243 1259])
+            ("PTRACE_GETFPXREGS" variable (:constant-flag t) nil [1280 1297])
+            ("PTRACE_SETFPXREGS" variable (:constant-flag t) nil [1317 1334])
+            ("PTRACE_OLDSETOPTIONS" variable (:constant-flag t) nil [1355 1375])
+            ("PTRACE_GET_THREAD_AREA" variable (:constant-flag t) nil [1447 1469])
+            ("PTRACE_SET_THREAD_AREA" variable (:constant-flag t) nil [1484 1506])
+            ("PTRACE_ARCH_PRCTL" variable (:constant-flag t) nil [1541 1558])
+            ("PTRACE_SYSEMU" variable (:constant-flag t) nil [1580 1593])
+            ("PTRACE_SYSEMU_SINGLESTEP" variable (:constant-flag t) nil [1608 1632])
+            ("PTRACE_SINGLEBLOCK" variable (:constant-flag t) nil [1646 1664])
+            ("linux/types.h" include (:system-flag t) nil [1731 1755]))          
+      :file "ptrace-abi.h"
+      :pointmax 1799
+      :fsize 1798
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PTRACE_GETREGS" . ((number "12" 1158 . 1160)))
+          ("PTRACE_GETFPXREGS" . ((number "18" 1306 . 1308)))
+          ("PTRACE_SET_THREAD_AREA" . ((number "26" 1510 . 1512)))
+          ("PTRACE_SYSEMU" . ((number "31" 1597 . 1599)))
+          ("PTRACE_GETFPREGS" . ((number "14" 1232 . 1234)))
+          ("PTRACE_ARCH_PRCTL" . ((number "30" 1561 . 1563)))
+          ("PTRACE_SYSEMU_SINGLESTEP" . ((number "32" 1634 . 1636)))
+          ("_ASM_X86_PTRACE_ABI_H")
+          ("PTRACE_SETFPREGS" . ((number "15" 1269 . 1271)))
+          ("FRAME_SIZE" . ((number "168" 1019 . 1022)))
+          ("PTRACE_SINGLEBLOCK" . ((number "33" 1665 . 1667)))
+          ("PTRACE_GET_THREAD_AREA" . ((number "25" 1473 . 1475)))
+          ("PTRACE_SETREGS" . ((number "13" 1195 . 1197)))
+          ("PTRACE_SETFPXREGS" . ((number "19" 1343 . 1345)))
+          ("PTRACE_OLDSETOPTIONS" . ((number "21" 1381 . 1383)))
+          )
+)
+    (semanticdb-table "processor-flags.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ASM_X86_PROCESSOR_FLAGS_H" variable (:constant-flag t) nil [44 70])
+            ("linux/const.h" include (:system-flag t) nil [133 157])
+            ("X86_EFLAGS_CF_BIT" variable (:constant-flag t) nil [189 206])
+            ("X86_EFLAGS_CF" variable (:constant-flag t) nil [234 247])
+            ("X86_EFLAGS_FIXED_BIT" variable (:constant-flag t) nil [283 303])
+            ("X86_EFLAGS_FIXED" variable (:constant-flag t) nil [338 354])
+            ("X86_EFLAGS_PF_BIT" variable (:constant-flag t) nil [392 409])
+            ("X86_EFLAGS_PF" variable (:constant-flag t) nil [438 451])
+            ("X86_EFLAGS_AF_BIT" variable (:constant-flag t) nil [487 504])
+            ("X86_EFLAGS_AF" variable (:constant-flag t) nil [542 555])
+            ("X86_EFLAGS_ZF_BIT" variable (:constant-flag t) nil [591 608])
+            ("X86_EFLAGS_ZF" variable (:constant-flag t) nil [635 648])
+            ("X86_EFLAGS_SF_BIT" variable (:constant-flag t) nil [684 701])
+            ("X86_EFLAGS_SF" variable (:constant-flag t) nil [728 741])
+            ("X86_EFLAGS_TF_BIT" variable (:constant-flag t) nil [777 794])
+            ("X86_EFLAGS_TF" variable (:constant-flag t) nil [821 834])
+            ("X86_EFLAGS_IF_BIT" variable (:constant-flag t) nil [870 887])
+            ("X86_EFLAGS_IF" variable (:constant-flag t) nil [919 932])
+            ("X86_EFLAGS_DF_BIT" variable (:constant-flag t) nil [968 985])
+            ("X86_EFLAGS_DF" variable (:constant-flag t) nil [1018 1031])
+            ("X86_EFLAGS_OF_BIT" variable (:constant-flag t) nil [1067 1084])
+            ("X86_EFLAGS_OF" variable (:constant-flag t) nil [1116 1129])
+            ("X86_EFLAGS_IOPL_BIT" variable (:constant-flag t) nil [1165 1184])
+            ("X86_EFLAGS_IOPL" variable (:constant-flag t) nil [1231 1246])
+            ("X86_EFLAGS_NT_BIT" variable (:constant-flag t) nil [1291 1308])
+            ("X86_EFLAGS_NT" variable (:constant-flag t) nil [1338 1351])
+            ("X86_EFLAGS_RF_BIT" variable (:constant-flag t) nil [1387 1404])
+            ("X86_EFLAGS_RF" variable (:constant-flag t) nil [1434 1447])
+            ("X86_EFLAGS_VM_BIT" variable (:constant-flag t) nil [1483 1500])
+            ("X86_EFLAGS_VM" variable (:constant-flag t) nil [1531 1544])
+            ("X86_EFLAGS_AC_BIT" variable (:constant-flag t) nil [1580 1597])
+            ("X86_EFLAGS_AC" variable (:constant-flag t) nil [1646 1659])
+            ("X86_EFLAGS_AC_BIT" variable (:constant-flag t) nil [1695 1712])
+            ("X86_EFLAGS_AC" variable (:constant-flag t) nil [1761 1774])
+            ("X86_EFLAGS_VIF_BIT" variable (:constant-flag t) nil [1810 1828])
+            ("X86_EFLAGS_VIF" variable (:constant-flag t) nil [1869 1883])
+            ("X86_EFLAGS_VIP_BIT" variable (:constant-flag t) nil [1920 1938])
+            ("X86_EFLAGS_VIP" variable (:constant-flag t) nil [1982 1996])
+            ("X86_EFLAGS_ID_BIT" variable (:constant-flag t) nil [2033 2050])
+            ("X86_EFLAGS_ID" variable (:constant-flag t) nil [2084 2097])
+            ("X86_CR0_PE_BIT" variable (:constant-flag t) nil [2169 2183])
+            ("X86_CR0_PE" variable (:constant-flag t) nil [2219 2229])
+            ("X86_CR0_MP_BIT" variable (:constant-flag t) nil [2262 2276])
+            ("X86_CR0_MP" variable (:constant-flag t) nil [2314 2324])
+            ("X86_CR0_EM_BIT" variable (:constant-flag t) nil [2357 2371])
+            ("X86_CR0_EM" variable (:constant-flag t) nil [2399 2409])
+            ("X86_CR0_TS_BIT" variable (:constant-flag t) nil [2442 2456])
+            ("X86_CR0_TS" variable (:constant-flag t) nil [2488 2498])
+            ("X86_CR0_ET_BIT" variable (:constant-flag t) nil [2531 2545])
+            ("X86_CR0_ET" variable (:constant-flag t) nil [2578 2588])
+            ("X86_CR0_NE_BIT" variable (:constant-flag t) nil [2621 2635])
+            ("X86_CR0_NE" variable (:constant-flag t) nil [2667 2677])
+            ("X86_CR0_WP_BIT" variable (:constant-flag t) nil [2710 2724])
+            ("X86_CR0_WP" variable (:constant-flag t) nil [2757 2767])
+            ("X86_CR0_AM_BIT" variable (:constant-flag t) nil [2800 2814])
+            ("X86_CR0_AM" variable (:constant-flag t) nil [2848 2858])
+            ("X86_CR0_NW_BIT" variable (:constant-flag t) nil [2891 2905])
+            ("X86_CR0_NW" variable (:constant-flag t) nil [2942 2952])
+            ("X86_CR0_CD_BIT" variable (:constant-flag t) nil [2985 2999])
+            ("X86_CR0_CD" variable (:constant-flag t) nil [3032 3042])
+            ("X86_CR0_PG_BIT" variable (:constant-flag t) nil [3075 3089])
+            ("X86_CR0_PG" variable (:constant-flag t) nil [3115 3125])
+            ("X86_CR3_PWT_BIT" variable (:constant-flag t) nil [3191 3206])
+            ("X86_CR3_PWT" variable (:constant-flag t) nil [3243 3254])
+            ("X86_CR3_PCD_BIT" variable (:constant-flag t) nil [3288 3303])
+            ("X86_CR3_PCD" variable (:constant-flag t) nil [3340 3351])
+            ("X86_CR3_PCID_MASK" variable (:constant-flag t) nil [3385 3402])
+            ("X86_CR4_VME_BIT" variable (:constant-flag t) nil [3483 3498])
+            ("X86_CR4_VME" variable (:constant-flag t) nil [3539 3550])
+            ("X86_CR4_PVI_BIT" variable (:constant-flag t) nil [3584 3599])
+            ("X86_CR4_PVI" variable (:constant-flag t) nil [3648 3659])
+            ("X86_CR4_TSD_BIT" variable (:constant-flag t) nil [3693 3708])
+            ("X86_CR4_TSD" variable (:constant-flag t) nil [3754 3765])
+            ("X86_CR4_DE_BIT" variable (:constant-flag t) nil [3799 3813])
+            ("X86_CR4_DE" variable (:constant-flag t) nil [3859 3869])
+            ("X86_CR4_PSE_BIT" variable (:constant-flag t) nil [3902 3917])
+            ("X86_CR4_PSE" variable (:constant-flag t) nil [3963 3974])
+            ("X86_CR4_PAE_BIT" variable (:constant-flag t) nil [4008 4023])
+            ("X86_CR4_PAE" variable (:constant-flag t) nil [4076 4087])
+            ("X86_CR4_MCE_BIT" variable (:constant-flag t) nil [4121 4136])
+            ("X86_CR4_MCE" variable (:constant-flag t) nil [4175 4186])
+            ("X86_CR4_PGE_BIT" variable (:constant-flag t) nil [4220 4235])
+            ("X86_CR4_PGE" variable (:constant-flag t) nil [4273 4284])
+            ("X86_CR4_PCE_BIT" variable (:constant-flag t) nil [4318 4333])
+            ("X86_CR4_PCE" variable (:constant-flag t) nil [4388 4399])
+            ("X86_CR4_OSFXSR_BIT" variable (:constant-flag t) nil [4433 4451])
+            ("X86_CR4_OSFXSR" variable (:constant-flag t) nil [4501 4515])
+            ("X86_CR4_OSXMMEXCPT_BIT" variable (:constant-flag t) nil [4552 4574])
+            ("X86_CR4_OSXMMEXCPT" variable (:constant-flag t) nil [4623 4641])
+            ("X86_CR4_VMXE_BIT" variable (:constant-flag t) nil [4681 4697])
+            ("X86_CR4_VMXE" variable (:constant-flag t) nil [4741 4753])
+            ("X86_CR4_SMXE_BIT" variable (:constant-flag t) nil [4788 4804])
+            ("X86_CR4_SMXE" variable (:constant-flag t) nil [4846 4858])
+            ("X86_CR4_FSGSBASE_BIT" variable (:constant-flag t) nil [4893 4913])
+            ("X86_CR4_FSGSBASE" variable (:constant-flag t) nil [4955 4971])
+            ("X86_CR4_PCIDE_BIT" variable (:constant-flag t) nil [5009 5026])
+            ("X86_CR4_PCIDE" variable (:constant-flag t) nil [5064 5077])
+            ("X86_CR4_OSXSAVE_BIT" variable (:constant-flag t) nil [5113 5132])
+            ("X86_CR4_OSXSAVE" variable (:constant-flag t) nil [5176 5191])
+            ("X86_CR4_SMEP_BIT" variable (:constant-flag t) nil [5229 5245])
+            ("X86_CR4_SMEP" variable (:constant-flag t) nil [5283 5295])
+            ("X86_CR4_SMAP_BIT" variable (:constant-flag t) nil [5330 5346])
+            ("X86_CR4_SMAP" variable (:constant-flag t) nil [5384 5396])
+            ("X86_CR8_TPR" variable (:constant-flag t) nil [5477 5488])
+            ("CX86_PCR0" variable (:constant-flag t) nil [5686 5695])
+            ("CX86_GCR" variable (:constant-flag t) nil [5709 5717])
+            ("CX86_CCR0" variable (:constant-flag t) nil [5731 5740])
+            ("CX86_CCR1" variable (:constant-flag t) nil [5754 5763])
+            ("CX86_CCR2" variable (:constant-flag t) nil [5777 5786])
+            ("CX86_CCR3" variable (:constant-flag t) nil [5800 5809])
+            ("CX86_CCR4" variable (:constant-flag t) nil [5823 5832])
+            ("CX86_CCR5" variable (:constant-flag t) nil [5846 5855])
+            ("CX86_CCR6" variable (:constant-flag t) nil [5869 5878])
+            ("CX86_CCR7" variable (:constant-flag t) nil [5892 5901])
+            ("CX86_PCR1" variable (:constant-flag t) nil [5915 5924])
+            ("CX86_DIR0" variable (:constant-flag t) nil [5938 5947])
+            ("CX86_DIR1" variable (:constant-flag t) nil [5961 5970])
+            ("CX86_ARR_BASE" variable (:constant-flag t) nil [5984 5997])
+            ("CX86_RCR_BASE" variable (:constant-flag t) nil [6011 6024]))          
+      :file "processor-flags.h"
+      :pointmax 6072
+      :fsize 6071
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ASM_X86_PROCESSOR_FLAGS_H")
+          ("X86_EFLAGS_AF" . ((symbol "_BITUL" 557 . 563) (semantic-list "(X86_EFLAGS_AF_BIT)" 563 . 582)))
+          ("X86_EFLAGS_OF_BIT" . ((number "11" 1085 . 1087)))
+          ("X86_CR0_MP" . ((symbol "_BITUL" 2326 . 2332) (semantic-list "(X86_CR0_MP_BIT)" 2332 . 2348)))
+          ("X86_CR0_AM" . ((symbol "_BITUL" 2860 . 2866) (semantic-list "(X86_CR0_AM_BIT)" 2866 . 2882)))
+          ("X86_CR0_PG" . ((symbol "_BITUL" 3127 . 3133) (semantic-list "(X86_CR0_PG_BIT)" 3133 . 3149)))
+          ("X86_CR3_PCD" . ((symbol "_BITUL" 3353 . 3359) (semantic-list "(X86_CR3_PCD_BIT)" 3359 . 3376)))
+          ("X86_CR4_PVI" . ((symbol "_BITUL" 3661 . 3667) (semantic-list "(X86_CR4_PVI_BIT)" 3667 . 3684)))
+          ("X86_CR4_PSE" . ((symbol "_BITUL" 3976 . 3982) (semantic-list "(X86_CR4_PSE_BIT)" 3982 . 3999)))
+          ("X86_CR4_MCE_BIT" . ((number "6" 4138 . 4139)))
+          ("X86_CR4_PGE_BIT" . ((number "7" 4237 . 4238)))
+          ("X86_CR4_VMXE" . ((symbol "_BITUL" 4755 . 4761) (semantic-list "(X86_CR4_VMXE_BIT)" 4761 . 4779)))
+          ("X86_CR4_FSGSBASE" . ((symbol "_BITUL" 4972 . 4978) (semantic-list "(X86_CR4_FSGSBASE_BIT)" 4978 . 5000)))
+          ("X86_CR8_TPR" . ((symbol "_AC" 5490 . 5493) (semantic-list "(0x0000000f,UL)" 5493 . 5508)))
+          ("CX86_CCR7" . ((number "0xeb" 5902 . 5906)))
+          ("X86_EFLAGS_NT" . ((symbol "_BITUL" 1353 . 1359) (semantic-list "(X86_EFLAGS_NT_BIT)" 1359 . 1378)))
+          ("X86_EFLAGS_RF_BIT" . ((number "16" 1405 . 1407)))
+          ("X86_CR0_EM_BIT" . ((number "2" 2373 . 2374)))
+          ("X86_EFLAGS_SF" . ((symbol "_BITUL" 743 . 749) (semantic-list "(X86_EFLAGS_SF_BIT)" 749 . 768)))
+          ("X86_EFLAGS_IOPL" . ((semantic-list "(_AC(3,UL) << X86_EFLAGS_IOPL_BIT)" 1248 . 1282)))
+          ("X86_EFLAGS_OF" . ((symbol "_BITUL" 1131 . 1137) (semantic-list "(X86_EFLAGS_OF_BIT)" 1137 . 1156)))
+          ("X86_CR0_WP_BIT" . ((number "16" 2726 . 2728)))
+          ("X86_CR3_PCID_MASK" . ((symbol "_AC" 3403 . 3406) (semantic-list "(0x00000fff,UL)" 3406 . 3421)))
+          ("X86_CR4_MCE" . ((symbol "_BITUL" 4188 . 4194) (semantic-list "(X86_CR4_MCE_BIT)" 4194 . 4211)))
+          ("X86_CR4_PGE" . ((symbol "_BITUL" 4286 . 4292) (semantic-list "(X86_CR4_PGE_BIT)" 4292 . 4309)))
+          ("X86_CR4_PCE_BIT" . ((number "8" 4335 . 4336)))
+          ("X86_CR4_SMEP_BIT" . ((number "20" 5246 . 5248)))
+          ("X86_CR4_SMEP" . ((symbol "_BITUL" 5297 . 5303) (semantic-list "(X86_CR4_SMEP_BIT)" 5303 . 5321)))
+          ("CX86_RCR_BASE" . ((number "0xdc" 6025 . 6029)))
+          ("X86_EFLAGS_AF_BIT" . ((number "4" 505 . 506)))
+          ("X86_CR0_MP_BIT" . ((number "1" 2278 . 2279)))
+          ("X86_CR0_WP" . ((symbol "_BITUL" 2769 . 2775) (semantic-list "(X86_CR0_WP_BIT)" 2775 . 2791)))
+          ("X86_CR0_AM_BIT" . ((number "18" 2816 . 2818)))
+          ("X86_CR0_PG_BIT" . ((number "31" 3091 . 3093)))
+          ("X86_CR3_PCD_BIT" . ((number "4" 3305 . 3306)))
+          ("X86_CR4_PVI_BIT" . ((number "1" 3601 . 3602)))
+          ("X86_CR4_PSE_BIT" . ((number "4" 3919 . 3920)))
+          ("X86_CR4_PCE" . ((symbol "_BITUL" 4401 . 4407) (semantic-list "(X86_CR4_PCE_BIT)" 4407 . 4424)))
+          ("X86_CR4_SMAP" . ((symbol "_BITUL" 5398 . 5404) (semantic-list "(X86_CR4_SMAP_BIT)" 5404 . 5422)))
+          ("X86_EFLAGS_TF" . ((symbol "_BITUL" 836 . 842) (semantic-list "(X86_EFLAGS_TF_BIT)" 842 . 861)))
+          ("X86_EFLAGS_DF_BIT" . ((number "10" 986 . 988)))
+          ("X86_EFLAGS_VM" . ((symbol "_BITUL" 1546 . 1552) (semantic-list "(X86_EFLAGS_VM_BIT)" 1552 . 1571)))
+          ("X86_EFLAGS_VIP" . ((symbol "_BITUL" 1998 . 2004) (semantic-list "(X86_EFLAGS_VIP_BIT)" 2004 . 2024)))
+          ("X86_EFLAGS_ID_BIT" . ((number "21" 2051 . 2053)))
+          ("X86_CR0_NE" . ((symbol "_BITUL" 2679 . 2685) (semantic-list "(X86_CR0_NE_BIT)" 2685 . 2701)))
+          ("X86_CR4_TSD_BIT" . ((number "2" 3710 . 3711)))
+          ("X86_CR4_DE" . ((symbol "_BITUL" 3871 . 3877) (semantic-list "(X86_CR4_DE_BIT)" 3877 . 3893)))
+          ("X86_CR4_OSXMMEXCPT_BIT" . ((number "10" 4575 . 4577)))
+          ("X86_CR4_FSGSBASE_BIT" . ((number "16" 4914 . 4916)))
+          ("X86_EFLAGS_CF" . ((symbol "_BITUL" 249 . 255) (semantic-list "(X86_EFLAGS_CF_BIT)" 255 . 274)))
+          ("X86_EFLAGS_FIXED_BIT" . ((number "1" 304 . 305)))
+          ("X86_EFLAGS_PF" . ((symbol "_BITUL" 453 . 459) (semantic-list "(X86_EFLAGS_PF_BIT)" 459 . 478)))
+          ("X86_EFLAGS_TF_BIT" . ((number "8" 795 . 796)))
+          ("X86_EFLAGS_VM_BIT" . ((number "17" 1501 . 1503)))
+          ("X86_EFLAGS_VIF_BIT" . ((number "19" 1829 . 1831)))
+          ("X86_CR0_ET" . ((symbol "_BITUL" 2590 . 2596) (semantic-list "(X86_CR0_ET_BIT)" 2596 . 2612)))
+          ("X86_CR0_NE_BIT" . ((number "5" 2637 . 2638)))
+          ("X86_CR4_DE_BIT" . ((number "3" 3815 . 3816)))
+          ("X86_CR4_SMAP_BIT" . ((number "21" 5347 . 5349)))
+          ("CX86_PCR0" . ((number "0x20" 5696 . 5700)))
+          ("CX86_CCR0" . ((number "0xc0" 5741 . 5745)))
+          ("CX86_ARR_BASE" . ((number "0xc4" 5998 . 6002)))
+          ("X86_EFLAGS_NT_BIT" . ((number "14" 1309 . 1311)))
+          ("X86_CR4_VMXE_BIT" . ((number "13" 4698 . 4700)))
+          ("X86_CR4_PCIDE" . ((symbol "_BITUL" 5079 . 5085) (semantic-list "(X86_CR4_PCIDE_BIT)" 5085 . 5104)))
+          ("CX86_CCR1" . ((number "0xc1" 5764 . 5768)))
+          ("CX86_PCR1" . ((number "0xf0" 5925 . 5929)))
+          ("X86_EFLAGS_ZF_BIT" . ((number "6" 609 . 610)))
+          ("X86_EFLAGS_AC_BIT" . ((number "18" 1713 . 1715)))
+          ("X86_EFLAGS_VIF" . ((symbol "_BITUL" 1885 . 1891) (semantic-list "(X86_EFLAGS_VIF_BIT)" 1891 . 1911)))
+          ("X86_CR0_NW_BIT" . ((number "29" 2907 . 2909)))
+          ("X86_CR0_CD_BIT" . ((number "30" 3001 . 3003)))
+          ("X86_CR4_VME_BIT" . ((number "0" 3500 . 3501)))
+          ("CX86_CCR2" . ((number "0xc2" 5787 . 5791)))
+          ("X86_EFLAGS_CF_BIT" . ((number "0" 207 . 208)))
+          ("X86_EFLAGS_FIXED" . ((symbol "_BITUL" 355 . 361) (semantic-list "(X86_EFLAGS_FIXED_BIT)" 361 . 383)))
+          ("X86_EFLAGS_PF_BIT" . ((number "2" 410 . 411)))
+          ("X86_EFLAGS_DF" . ((symbol "_BITUL" 1033 . 1039) (semantic-list "(X86_EFLAGS_DF_BIT)" 1039 . 1058)))
+          ("X86_EFLAGS_ID" . ((symbol "_BITUL" 2099 . 2105) (semantic-list "(X86_EFLAGS_ID_BIT)" 2105 . 2124)))
+          ("X86_CR0_ET_BIT" . ((number "4" 2547 . 2548)))
+          ("X86_CR4_TSD" . ((symbol "_BITUL" 3767 . 3773) (semantic-list "(X86_CR4_TSD_BIT)" 3773 . 3790)))
+          ("CX86_GCR" . ((number "0xb8" 5718 . 5722)))
+          ("CX86_CCR3" . ((number "0xc3" 5810 . 5814)))
+          ("CX86_DIR0" . ((number "0xfe" 5948 . 5952)))
+          ("X86_EFLAGS_ZF" . ((symbol "_BITUL" 650 . 656) (semantic-list "(X86_EFLAGS_ZF_BIT)" 656 . 675)))
+          ("X86_EFLAGS_SF_BIT" . ((number "7" 702 . 703)))
+          ("X86_EFLAGS_AC" . ((symbol "_BITUL" 1776 . 1782) (semantic-list "(X86_EFLAGS_AC_BIT)" 1782 . 1801)))
+          ("X86_EFLAGS_VIP_BIT" . ((number "20" 1939 . 1941)))
+          ("X86_CR0_NW" . ((symbol "_BITUL" 2954 . 2960) (semantic-list "(X86_CR0_NW_BIT)" 2960 . 2976)))
+          ("X86_CR0_CD" . ((symbol "_BITUL" 3044 . 3050) (semantic-list "(X86_CR0_CD_BIT)" 3050 . 3066)))
+          ("X86_CR4_VME" . ((symbol "_BITUL" 3552 . 3558) (semantic-list "(X86_CR4_VME_BIT)" 3558 . 3575)))
+          ("X86_CR4_OSFXSR" . ((symbol "_BITUL" 4517 . 4523) (semantic-list "(X86_CR4_OSFXSR_BIT)" 4523 . 4543)))
+          ("X86_CR4_SMXE" . ((symbol "_BITUL" 4860 . 4866) (semantic-list "(X86_CR4_SMXE_BIT)" 4866 . 4884)))
+          ("CX86_CCR4" . ((number "0xe8" 5833 . 5837)))
+          ("CX86_DIR1" . ((number "0xff" 5971 . 5975)))
+          ("X86_EFLAGS_IF_BIT" . ((number "9" 888 . 889)))
+          ("X86_EFLAGS_IF" . ((symbol "_BITUL" 934 . 940) (semantic-list "(X86_EFLAGS_IF_BIT)" 940 . 959)))
+          ("X86_EFLAGS_IOPL_BIT" . ((number "12" 1185 . 1187)))
+          ("X86_CR0_PE_BIT" . ((number "0" 2185 . 2186)))
+          ("X86_CR0_PE" . ((symbol "_BITUL" 2231 . 2237) (semantic-list "(X86_CR0_PE_BIT)" 2237 . 2253)))
+          ("X86_CR0_TS_BIT" . ((number "3" 2458 . 2459)))
+          ("X86_CR0_TS" . ((symbol "_BITUL" 2500 . 2506) (semantic-list "(X86_CR0_TS_BIT)" 2506 . 2522)))
+          ("X86_CR3_PWT_BIT" . ((number "3" 3208 . 3209)))
+          ("X86_CR3_PWT" . ((symbol "_BITUL" 3256 . 3262) (semantic-list "(X86_CR3_PWT_BIT)" 3262 . 3279)))
+          ("X86_CR4_PAE_BIT" . ((number "5" 4025 . 4026)))
+          ("X86_CR4_PAE" . ((symbol "_BITUL" 4089 . 4095) (semantic-list "(X86_CR4_PAE_BIT)" 4095 . 4112)))
+          ("X86_CR4_OSXMMEXCPT" . ((symbol "_BITUL" 4642 . 4648) (semantic-list "(X86_CR4_OSXMMEXCPT_BIT)" 4648 . 4672)))
+          ("X86_CR4_SMXE_BIT" . ((number "14" 4805 . 4807)))
+          ("X86_CR4_OSXSAVE" . ((symbol "_BITUL" 5193 . 5199) (semantic-list "(X86_CR4_OSXSAVE_BIT)" 5199 . 5220)))
+          ("CX86_CCR5" . ((number "0xe9" 5856 . 5860)))
+          ("X86_EFLAGS_RF" . ((symbol "_BITUL" 1449 . 1455) (semantic-list "(X86_EFLAGS_RF_BIT)" 1455 . 1474)))
+          ("X86_CR0_EM" . ((symbol "_BITUL" 2411 . 2417) (semantic-list "(X86_CR0_EM_BIT)" 2417 . 2433)))
+          ("X86_CR4_OSFXSR_BIT" . ((number "9" 4452 . 4453)))
+          ("X86_CR4_PCIDE_BIT" . ((number "17" 5027 . 5029)))
+          ("X86_CR4_OSXSAVE_BIT" . ((number "18" 5133 . 5135)))
+          ("CX86_CCR6" . ((number "0xea" 5879 . 5883)))
+          )
+)
+    (semanticdb-table "ioctl.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("asm-generic/ioctl.h" include (:system-flag t) nil [1 31]))          
+      :file "ioctl.h"
+      :pointmax 32
+      :fsize 31
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "posix_types.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("asm/posix_types_64.h" include (:system-flag t) nil [120 153]))          
+      :file "posix_types.h"
+      :pointmax 162
+      :fsize 161
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "param.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("asm-generic/param.h" include (:system-flag t) nil [1 31]))          
+      :file "param.h"
+      :pointmax 32
+      :fsize 31
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "fcntl.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("asm-generic/fcntl.h" include (:system-flag t) nil [1 31]))          
+      :file "fcntl.h"
+      :pointmax 32
+      :fsize 31
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "posix_types_64.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ASM_X86_POSIX_TYPES_64_H" variable (:constant-flag t) nil [43 68])
+            ("__kernel_old_uid_t" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [248 290])
+            ("__kernel_old_gid_t" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [291 333])
+            ("__kernel_old_uid_t" variable (:constant-flag t) nil [342 360])
+            ("__kernel_old_dev_t" type
+               (:typedef ("unsigned long")
+                :superclasses "unsigned long"
+                :type "typedef")
+                nil [381 422])
+            ("__kernel_old_dev_t" variable (:constant-flag t) nil [431 449])
+            ("asm-generic/posix_types.h" include (:system-flag t) nil [470 506]))          
+      :file "posix_types_64.h"
+      :pointmax 547
+      :fsize 546
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ASM_X86_POSIX_TYPES_64_H")
+          ("__kernel_old_uid_t" . ((symbol "__kernel_old_uid_t" 361 . 379)))
+          ("__kernel_old_dev_t" . ((symbol "__kernel_old_dev_t" 450 . 468)))
+          )
+)
+    (semanticdb-table "bitsperlong.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__ASM_X86_BITSPERLONG_H" variable (:constant-flag t) nil [41 64])
+            ("__BITS_PER_LONG" variable (:constant-flag t) nil [93 108])
+            ("asm-generic/bitsperlong.h" include (:system-flag t) nil [154 190]))          
+      :file "bitsperlong.h"
+      :pointmax 230
+      :fsize 229
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ASM_X86_BITSPERLONG_H")
+          ("__BITS_PER_LONG" . ((number "64" 109 . 111)))
+          )
+)
+    (semanticdb-table "swab.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ASM_X86_SWAB_H" variable (:constant-flag t) nil [33 48])
+            ("linux/types.h" include (:system-flag t) nil [50 74])
+            ("__arch_swab32" function
+               (:arguments 
+                  ( ("val" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116 126]))                  
+                :type ("__u32" type (:type "class") nil nil))
+                nil [96 191])
+            ("__arch_swab32" variable (:constant-flag t) nil [200 213])
+            ("__arch_swab64" function
+               (:arguments 
+                  ( ("val" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [268 278]))                  
+                :type ("__u64" type (:type "class") nil nil))
+                nil [248 595])
+            ("__arch_swab64" variable (:constant-flag t) nil [604 617]))          
+      :file "swab.h"
+      :pointmax 662
+      :fsize 661
+      :lastmodtime '(21095 35917 0 0)
+      :unmatched-syntax '((symbol 236 . 246) (STATIC 229 . 235) (symbol 84 . 94) (STATIC 77 . 83))
+      :lexical-table 
+        '(("__arch_swab32" . ((symbol "__arch_swab32" 214 . 227)))
+          ("_ASM_X86_SWAB_H")
+          ("__arch_swab64" . ((symbol "__arch_swab64" 618 . 631)))
+          )
+))
+  :file "!usr!include!x86_64-linux-gnu!asm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

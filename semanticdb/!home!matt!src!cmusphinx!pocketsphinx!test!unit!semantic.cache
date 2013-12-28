@@ -1,0 +1,29 @@
+;; Object unit/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unit/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("gst_programs" variable nil nil [1 16])
+            ("gst_tests" variable nil nil [16 28])
+            ("gst_programs" variable (:default-value ("test_gst")) nil [41 66])
+            ("gst_tests" variable (:default-value ("test_gst")) nil [66 88])
+            ("check_PROGRAMS" variable (:default-value ("test_ps_init")) nil [95 697])
+            ("TESTS" variable (:default-value ("$(check_PROGRAMS)")) nil [698 724])
+            ("EXTRA_DIST" variable (:default-value ("ps_test.c")) nil [725 748])
+            ("noinst_HEADERS" variable (:default-value ("test_macros.h")) nil [749 780])
+            ("test_gst_LDADD" variable (:default-value ("$(GST_LIBS)")) nil [781 810])
+            ("INCLUDES" variable (:default-value ("$(GST_CFLAGS)" "-I$(top_srcdir)/include" "-I$(top_srcdir)/src/libpocketsphinx" "-I$(top_builddir)/include" "-I$(srcdir)" "-DMODELDIR=\\\"${top_srcdir}/model\\\"" "-DDATADIR=\\\"${top_srcdir}/test/data\\\"")) nil [811 1025])
+            ("LDADD" variable (:default-value ("$(top_builddir)/src/libpocketsphinx/libpocketsphinx.la" "-lsphinxbase")) nil [1026 1108])
+            ("CLEANFILES" variable (:default-value ("*.log" "*.out" "*.lat" "*.mfc" "*.raw" "*.dic" "*.sen")) nil [1109 1164])
+            ("valgrind-check" function nil nil [1165 1295]))          
+      :file "Makefile.am"
+      :pointmax 1296
+      :fsize 1295
+      :lastmodtime '(21161 13793 143369 78000)
+      :unmatched-syntax nil))
+  :file "!home!matt!src!cmusphinx!pocketsphinx!test!unit!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

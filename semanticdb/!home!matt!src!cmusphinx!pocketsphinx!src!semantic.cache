@@ -1,0 +1,17 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("SUBDIRS" variable (:default-value ("libpocketsphinx" "programs" "gst-plugin")) nil [1 53]))          
+      :file "Makefile.am"
+      :pointmax 53
+      :fsize 52
+      :lastmodtime '(21161 13803 556369 732000)
+      :unmatched-syntax nil))
+  :file "!home!matt!src!cmusphinx!pocketsphinx!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

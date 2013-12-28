@@ -1,0 +1,18 @@
+;; Object swig/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "swig/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("SUBDIRS" variable (:default-value ("python")) nil [1 18])
+            ("EXTRA_DIST" variable (:default-value ("pocketsphinx.i" "ps_decoder.i" "ps_lattice.i")) nil [19 82]))          
+      :file "Makefile.am"
+      :pointmax 82
+      :fsize 81
+      :lastmodtime '(21161 13849 647372 624000)
+      :unmatched-syntax nil))
+  :file "!home!matt!src!cmusphinx!pocketsphinx!swig!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

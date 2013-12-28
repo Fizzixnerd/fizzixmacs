@@ -1,0 +1,704 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "pocketsphinx.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__POCKETSPHINX_H__" variable (:constant-flag t) nil [1733 1751])
+            ("C" extern nil nil [1772 1799])
+            ("stdio.h" include (:system-flag t) nil [1838 1856])
+            ("sphinxbase/cmd_ln.h" include (:system-flag t) nil [1892 1922])
+            ("sphinxbase/logmath.h" include (:system-flag t) nil [1923 1954])
+            ("sphinxbase/fe.h" include (:system-flag t) nil [1955 1981])
+            ("sphinxbase/feat.h" include (:system-flag t) nil [1982 2010])
+            ("sphinxbase/fsg_model.h" include (:system-flag t) nil [2011 2044])
+            ("sphinxbase/ngram_model.h" include (:system-flag t) nil [2045 2080])
+            ("pocketsphinx_export.h" include (:system-flag t) nil [2129 2161])
+            ("cmdln_macro.h" include (:system-flag t) nil [2162 2186])
+            ("ps_lattice.h" include (:system-flag t) nil [2187 2210])
+            ("ps_mllr.h" include (:system-flag t) nil [2211 2231])
+            ("PS_DEFAULT_SEARCH" variable (:constant-flag t) nil [2241 2258])
+            ("PS_SEARCH_FSG" variable (:constant-flag t) nil [2279 2292])
+            ("PS_SEARCH_NGRAM" variable (:constant-flag t) nil [2310 2325])
+            ("ps_decoder_t" type
+               (:typedef ("ps_decoder_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ps_decoder_s"
+                :type "typedef")
+                nil [2386 2427])
+            ("ps_nbest_t" type
+               (:typedef ("ps_astar_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ps_astar_s"
+                :type "typedef")
+                nil [2488 2525])
+            ("ps_seg_t" type
+               (:typedef ("ps_seg_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ps_seg_s"
+                :type "typedef")
+                nil [2581 2614])
+            ("ps_default_search_args" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("cmd_ln_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2793 2804]))                  
+                :type "void")
+                nil [2765 2805])
+            ("ps_init" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("config" variable
+                       (:pointer 1
+                        :type ("cmd_ln_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3210 3227]))                  
+                :type ("ps_decoder_t" type (:type "class") nil nil))
+                nil [3188 3228])
+            ("ps_reinit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3917 3934])
+                    ("config" variable
+                       (:pointer 1
+                        :type ("cmd_ln_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3935 3952]))                  
+                :type "int")
+                nil [3903 3953])
+            ("ps_args" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4187 4192]))                  
+                :type ("arg_t" type (:type "class") nil nil))
+                nil [4166 4193])
+            ("ps_retain" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4580 4597]))                  
+                :type ("ps_decoder_t" type (:type "class") nil nil))
+                nil [4556 4598])
+            ("ps_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4945 4962]))                  
+                :type "int")
+                nil [4933 4963])
+            ("ps_get_config" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5308 5325]))                  
+                :type ("cmd_ln_t" type (:type "class") nil nil))
+                nil [5284 5326])
+            ("ps_get_logmath" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5676 5693]))                  
+                :type ("logmath_t" type (:type "class") nil nil))
+                nil [5650 5694])
+            ("ps_get_fe" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6037 6054]))                  
+                :type ("fe_t" type (:type "class") nil nil))
+                nil [6021 6055])
+            ("ps_get_feat" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6422 6439]))                  
+                :type ("feat_t" type (:type "class") nil nil))
+                nil [6402 6440])
+            ("ps_update_mllr" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6945 6962])
+                    ("mllr" variable
+                       (:pointer 1
+                        :type ("ps_mllr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6963 6979]))                  
+                :type ("ps_mllr_t" type (:type "class") nil nil))
+                nil [6919 6980])
+            ("ps_set_search" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7235 7252])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7253 7270]))                  
+                :type "int")
+                nil [7217 7271])
+            ("ps_get_lm" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7753 7770])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7771 7788]))                  
+                :type ("ngram_model_t" type (:type "class") nil nil))
+                nil [7727 7789])
+            ("ps_set_lm" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8020 8037])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8038 8055])
+                    ("lm" variable
+                       (:pointer 1
+                        :type ("ngram_model_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8056 8074]))                  
+                :type "int")
+                nil [8006 8075])
+            ("ps_get_fsg" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8390 8407])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8408 8425]))                  
+                :type ("fsg_model_t" type (:type "class") nil nil))
+                nil [8365 8426])
+            ("ps_set_fsg" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8652 8669])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8670 8687])
+                    ("fsg" variable
+                       (:pointer 1
+                        :type ("fsg_model_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8688 8705]))                  
+                :type "int")
+                nil [8637 8706])
+            ("ps_load_dict" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9354 9371])
+                    ("dictfile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9372 9393])
+                    ("fdictfile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9411 9433])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9434 9453]))                  
+                :type "int")
+                nil [9337 9454])
+            ("ps_save_dict" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9836 9853])
+                    ("dictfile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9854 9875])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9876 9895]))                  
+                :type "int")
+                nil [9819 9896])
+            ("ps_add_word" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10804 10821])
+                    ("word" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10838 10855])
+                    ("phones" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10872 10891])
+                    ("update" variable (:type "int") (reparse-symbol arg-sub-list) [10908 10919]))                  
+                :type "int")
+                nil [10788 10920])
+            ("ps_decode_raw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11558 11575])
+                    ("rawfh" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11576 11588])
+                    ("uttid" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11607 11625])
+                    ("maxsamps" variable (:type "long") (reparse-symbol arg-sub-list) [11626 11640]))                  
+                :type "int")
+                nil [11540 11641])
+            ("ps_decode_senscr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11924 11941])
+                    ("senfh" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11942 11954])
+                    ("uttid" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11976 11994]))                  
+                :type "int")
+                nil [11903 11995])
+            ("ps_start_utt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12436 12453])
+                    ("uttid" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12454 12472]))                  
+                :type "int")
+                nil [12419 12473])
+            ("ps_get_uttid" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12714 12731]))                  
+                :type "char")
+                nil [12689 12732])
+            ("ps_process_raw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13322 13339])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int16" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13359 13377])
+                    ("n_samples" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13397 13414])
+                    ("no_search" variable (:type "int") (reparse-symbol arg-sub-list) [13434 13448])
+                    ("full_utt" variable (:type "int") (reparse-symbol arg-sub-list) [13468 13481]))                  
+                :type "int")
+                nil [13303 13482])
+            ("ps_process_cep" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14080 14097])
+                    ("data" variable
+                       (:pointer 2
+                        :type ("mfcc_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14117 14131])
+                    ("n_frames" variable (:type "int") (reparse-symbol arg-sub-list) [14151 14164])
+                    ("no_search" variable (:type "int") (reparse-symbol arg-sub-list) [14184 14198])
+                    ("full_utt" variable (:type "int") (reparse-symbol arg-sub-list) [14218 14231]))                  
+                :type "int")
+                nil [14061 14232])
+            ("ps_get_n_frames" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14735 14752]))                  
+                :type "int")
+                nil [14715 14753])
+            ("ps_end_utt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14890 14907]))                  
+                :type "int")
+                nil [14875 14908])
+            ("ps_get_hyp" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15286 15303])
+                    ("out_best_score" variable
+                       (:pointer 1
+                        :type ("int32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15304 15326])
+                    ("out_uttid" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15350 15373]))                  
+                :type "char")
+                nil [15263 15374])
+            ("ps_get_hyp_final" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15708 15725])
+                    ("out_is_final" variable
+                       (:pointer 1
+                        :type ("int32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15726 15746]))                  
+                :type "char")
+                nil [15679 15747])
+            ("ps_get_prob" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16357 16374])
+                    ("out_uttid" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16375 16398]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [16339 16399])
+            ("ps_get_lattice" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16924 16941]))                  
+                :type ("ps_lattice_t" type (:type "class") nil nil))
+                nil [16895 16942])
+            ("ps_seg_iter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17283 17300])
+                    ("out_best_score" variable
+                       (:pointer 1
+                        :type ("int32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17301 17323]))                  
+                :type ("ps_seg_t" type (:type "class") nil nil))
+                nil [17261 17324])
+            ("ps_seg_next" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("seg" variable
+                       (:pointer 1
+                        :type ("ps_seg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17590 17604]))                  
+                :type ("ps_seg_t" type (:type "class") nil nil))
+                nil [17568 17605])
+            ("ps_seg_word" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("seg" variable
+                       (:pointer 1
+                        :type ("ps_seg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17868 17882]))                  
+                :type "char")
+                nil [17844 17883])
+            ("ps_seg_frames" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("seg" variable
+                       (:pointer 1
+                        :type ("ps_seg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18352 18366])
+                    ("out_sf" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [18367 18379])
+                    ("out_ef" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [18380 18392]))                  
+                :type "void")
+                nil [18333 18393])
+            ("ps_seg_prob" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("seg" variable
+                       (:pointer 1
+                        :type ("ps_seg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19526 19540])
+                    ("out_ascr" variable
+                       (:pointer 1
+                        :type ("int32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19541 19557])
+                    ("out_lscr" variable
+                       (:pointer 1
+                        :type ("int32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19558 19574])
+                    ("out_lback" variable
+                       (:pointer 1
+                        :type ("int32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19575 19592]))                  
+                :type ("int32" type (:type "class") nil nil))
+                nil [19508 19593])
+            ("ps_seg_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("seg" variable
+                       (:pointer 1
+                        :type ("ps_seg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19711 19725]))                  
+                :type "void")
+                nil [19694 19726])
+            ("ps_nbest" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20448 20465])
+                    ("sf" variable (:type "int") (reparse-symbol arg-sub-list) [20466 20473])
+                    ("ef" variable (:type "int") (reparse-symbol arg-sub-list) [20474 20481])
+                    ("ctx1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20503 20520])
+                    ("ctx2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20521 20538]))                  
+                :type ("ps_nbest_t" type (:type "class") nil nil))
+                nil [20427 20539])
+            ("ps_nbest_next" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("nbest" variable
+                       (:pointer 1
+                        :type ("ps_nbest_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20798 20816]))                  
+                :type ("ps_nbest_t" type (:type "class") nil nil))
+                nil [20772 20817])
+            ("ps_nbest_hyp" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("nbest" variable
+                       (:pointer 1
+                        :type ("ps_nbest_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21078 21096])
+                    ("out_score" variable
+                       (:pointer 1
+                        :type ("int32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21097 21114]))                  
+                :type "char")
+                nil [21053 21115])
+            ("ps_nbest_seg" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("nbest" variable
+                       (:pointer 1
+                        :type ("ps_nbest_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21374 21392])
+                    ("out_score" variable
+                       (:pointer 1
+                        :type ("int32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21393 21410]))                  
+                :type ("ps_seg_t" type (:type "class") nil nil))
+                nil [21351 21411])
+            ("ps_nbest_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nbest" variable
+                       (:pointer 1
+                        :type ("ps_nbest_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21548 21566]))                  
+                :type "void")
+                nil [21529 21567])
+            ("ps_get_utt_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21893 21910])
+                    ("out_nspeech" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [21911 21931])
+                    ("out_ncpu" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [21953 21970])
+                    ("out_nwall" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [21971 21989]))                  
+                :type "void")
+                nil [21872 21990])
+            ("ps_get_all_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("ps_decoder_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22298 22315])
+                    ("out_nspeech" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [22316 22336])
+                    ("out_ncpu" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [22358 22375])
+                    ("out_nwall" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [22376 22394]))                  
+                :type "void")
+                nil [22277 22395]))          
+      :file "pocketsphinx.h"
+      :pointmax 22803
+      :fsize 22802
+      :lastmodtime '(21182 11590 495653 839000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PS_DEFAULT_SEARCH" . ((string "\"default\"" 2260 . 2269)))
+          ("__POCKETSPHINX_H__")
+          ("PS_SEARCH_FSG" . ((string "\"fsg\"" 2296 . 2301)))
+          ("PS_SEARCH_NGRAM" . ((string "\"ngram\"" 2327 . 2334)))
+          )
+)
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("pkginclude_HEADERS" variable (:default-value ("cmdln_macro.h" "ps_lattice.h" "ps_mllr.h" "pocketsphinx_export.h" "pocketsphinx.h")) nil [1 149]))          
+      :file "Makefile.am"
+      :pointmax 154
+      :fsize 153
+      :lastmodtime '(21161 13799 206369 459000)
+      :unmatched-syntax nil)
+    (semanticdb-table "pocketsphinx_export.h"
+      :file "pocketsphinx_export.h"
+      :fsize 497
+      :lastmodtime '(21161 13799 205369 459000))
+    (semanticdb-table "cmdln_macro.h"
+      :file "cmdln_macro.h"
+      :fsize 22975
+      :lastmodtime '(21161 13799 205369 459000))
+    (semanticdb-table "ps_lattice.h"
+      :file "ps_lattice.h"
+      :fsize 13443
+      :lastmodtime '(21161 13799 206369 459000))
+    (semanticdb-table "ps_mllr.h"
+      :file "ps_mllr.h"
+      :fsize 2578
+      :lastmodtime '(21161 13799 206369 459000)))
+  :file "!home!matt!src!cmusphinx!pocketsphinx!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

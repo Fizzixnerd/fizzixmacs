@@ -1,0 +1,1437 @@
+;; Object mouse/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mouse/"
+  :tables
+  (list
+    (semanticdb-table "elantech.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/delay.h" include (:system-flag t) nil [356 380])
+            ("linux/slab.h" include (:system-flag t) nil [381 404])
+            ("linux/module.h" include (:system-flag t) nil [405 430])
+            ("linux/input.h" include (:system-flag t) nil [431 455])
+            ("linux/input/mt.h" include (:system-flag t) nil [456 483])
+            ("linux/serio.h" include (:system-flag t) nil [484 508])
+            ("linux/libps2.h" include (:system-flag t) nil [509 534])
+            ("psmouse.h" include nil nil [535 555])
+            ("elantech.h" include nil nil [556 577])
+            ("elantech_debug" variable (:constant-flag t) nil [587 601])
+            ("synaptics_send_cmd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [827 851])
+                    ("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [852 868])
+                    ("param" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [873 894]))                  
+                :type "int")
+                nil [797 1101])
+            ("elantech_send_cmd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1181 1205])
+                    ("c" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1206 1222])
+                    ("param" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1227 1248]))                  
+                :type "int")
+                nil [1152 1541])
+            ("elantech_ps2_command" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1619 1643])
+                    ("param" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1648 1669])
+                    ("command" variable (:type "int") (reparse-symbol arg-sub-list) [1670 1682]))                  
+                :type "int")
+                nil [1587 2128])
+            ("elantech_read_reg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2240 2264])
+                    ("reg" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [2265 2283])
+                    ("val" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2288 2307]))                  
+                :type "int")
+                nil [2211 3613])
+            ("elantech_write_reg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3727 3751])
+                    ("reg" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [3752 3770])
+                    ("val" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [3775 3793]))                  
+                :type "int")
+                nil [3697 5936])
+            ("elantech_packet_dump" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6033 6057]))                  
+                :type "void")
+                nil [6000 6240])
+            ("elantech_report_absolute_v1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6406 6430]))                  
+                :type "void")
+                nil [6366 8071])
+            ("elantech_set_slot" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("input_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8103 8125])
+                    ("slot" variable (:type "int") (reparse-symbol arg-sub-list) [8126 8135])
+                    ("active" variable (:type "bool") (reparse-symbol arg-sub-list) [8136 8148])
+                    ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8158 8173])
+                    ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8174 8189]))                  
+                :type "void")
+                nil [8073 8390])
+            ("elantech_report_semi_mt_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("input_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8504 8526])
+                    ("num_fingers" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8533 8558])
+                    ("x1" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8565 8581])
+                    ("y1" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8582 8598])
+                    ("x2" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8605 8621])
+                    ("y2" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8622 8638]))                  
+                :type "void")
+                nil [8463 8750])
+            ("elantech_report_absolute_v2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8916 8940]))                  
+                :type "void")
+                nil [8876 11340])
+            ("elantech_report_absolute_v3" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11523 11547])
+                    ("packet_type" variable (:type "int") (reparse-symbol arg-sub-list) [11553 11569]))                  
+                :type "void")
+                nil [11483 13620])
+            ("elantech_input_sync_v4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13657 13681]))                  
+                :type "void")
+                nil [13622 13884])
+            ("process_packet_status_v4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13923 13947]))                  
+                :type "void")
+                nil [13886 14326])
+            ("process_packet_head_v4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14363 14387]))                  
+                :type "void")
+                nil [14328 15263])
+            ("process_packet_motion_v4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15302 15326]))                  
+                :type "void")
+                nil [15265 16549])
+            ("elantech_report_absolute_v4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16591 16615])
+                    ("packet_type" variable (:type "int") (reparse-symbol arg-sub-list) [16621 16637]))                  
+                :type "void")
+                nil [16551 16949])
+            ("elantech_packet_check_v1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16987 17011]))                  
+                :type "int")
+                nil [16951 17595])
+            ("elantech_debounce_check_v2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17635 17659]))                  
+                :type "int")
+                nil [17597 18036])
+            ("elantech_packet_check_v2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18074 18098]))                  
+                :type "int")
+                nil [18038 18992])
+            ("elantech_packet_check_v3" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19167 19191]))                  
+                :type "int")
+                nil [19131 20014])
+            ("elantech_packet_check_v4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20052 20076]))                  
+                :type "int")
+                nil [20016 20821])
+            ("elantech_process_byte" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20935 20959]))                  
+                :type ("psmouse_ret_t" type (:type "class") nil nil))
+                nil [20892 22085])
+            ("elantech_set_absolute_mode" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22171 22195]))                  
+                :type "int")
+                nil [22133 23958])
+            ("elantech_set_range" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23990 24014])
+                    ("x_min" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [24024 24044])
+                    ("y_min" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [24045 24065])
+                    ("x_max" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [24075 24095])
+                    ("y_max" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [24096 24116])
+                    ("width" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [24126 24146]))                  
+                :type "int")
+                nil [23960 25893])
+            ("elantech_convert_res" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("val" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26061 26078]))                  
+                :type "unsigned int")
+                nil [26020 26119])
+            ("elantech_get_resolution_v4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26159 26183])
+                    ("x_res" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [26194 26214])
+                    ("y_res" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [26225 26245]))                  
+                :type "int")
+                nil [26121 26468])
+            ("elantech_set_input_params" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26572 26596]))                  
+                :type "int")
+                nil [26535 29917])
+            ("elantech_attr_data" type
+               (:members 
+                  ( ("field_offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [29948 29969])
+                    ("reg" variable (:type "unsigned char") (reparse-symbol classsubparts) [29971 29989]))                  
+                :type "struct")
+                nil [29919 29992])
+            ("elantech_show_int_attr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30092 30116])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30117 30128])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30134 30144]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [30054 30449])
+            ("elantech_set_int_attr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30546 30570])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30580 30591])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30592 30608])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30609 30622]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [30509 31275])
+            ("ELANTECH_INT_ATTR" variable (:constant-flag t) nil [31285 31302])
+            ("elantech_attr_reg_07" variable
+               (:typemodifiers ("static")
+                :type ("elantech_attr_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31638 31669])
+            ("PSMOUSE_DEFINE_ATTR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("reg_07" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_attr_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("reg_07" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_show_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_set_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [31638 31670])
+            ("elantech_attr_reg_10" variable
+               (:typemodifiers ("static")
+                :type ("elantech_attr_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31671 31702])
+            ("PSMOUSE_DEFINE_ATTR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("reg_10" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_attr_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("reg_10" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_show_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_set_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [31671 31703])
+            ("elantech_attr_reg_11" variable
+               (:typemodifiers ("static")
+                :type ("elantech_attr_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31704 31735])
+            ("PSMOUSE_DEFINE_ATTR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("reg_11" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_attr_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("reg_11" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_show_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_set_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [31704 31736])
+            ("elantech_attr_reg_20" variable
+               (:typemodifiers ("static")
+                :type ("elantech_attr_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31737 31768])
+            ("PSMOUSE_DEFINE_ATTR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("reg_20" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_attr_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("reg_20" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_show_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_set_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [31737 31769])
+            ("elantech_attr_reg_21" variable
+               (:typemodifiers ("static")
+                :type ("elantech_attr_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31770 31801])
+            ("PSMOUSE_DEFINE_ATTR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("reg_21" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_attr_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("reg_21" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_show_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_set_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [31770 31802])
+            ("elantech_attr_reg_22" variable
+               (:typemodifiers ("static")
+                :type ("elantech_attr_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31803 31834])
+            ("PSMOUSE_DEFINE_ATTR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("reg_22" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_attr_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("reg_22" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_show_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_set_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [31803 31835])
+            ("elantech_attr_reg_23" variable
+               (:typemodifiers ("static")
+                :type ("elantech_attr_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31836 31867])
+            ("PSMOUSE_DEFINE_ATTR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("reg_23" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_attr_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("reg_23" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_show_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_set_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [31836 31868])
+            ("elantech_attr_reg_24" variable
+               (:typemodifiers ("static")
+                :type ("elantech_attr_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31869 31900])
+            ("PSMOUSE_DEFINE_ATTR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("reg_24" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_attr_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("reg_24" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_show_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_set_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [31869 31901])
+            ("elantech_attr_reg_25" variable
+               (:typemodifiers ("static")
+                :type ("elantech_attr_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31902 31933])
+            ("PSMOUSE_DEFINE_ATTR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("reg_25" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_attr_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("reg_25" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_show_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_set_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [31902 31934])
+            ("elantech_attr_reg_26" variable
+               (:typemodifiers ("static")
+                :type ("elantech_attr_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31935 31966])
+            ("PSMOUSE_DEFINE_ATTR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("reg_26" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_attr_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("reg_26" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_show_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_set_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [31935 31967])
+            ("elantech_attr_debug" variable
+               (:typemodifiers ("static")
+                :type ("elantech_attr_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31968 31995])
+            ("PSMOUSE_DEFINE_ATTR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("debug" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_attr_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("debug" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_show_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_set_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [31968 31996])
+            ("elantech_attr_paritycheck" variable
+               (:typemodifiers ("static")
+                :type ("elantech_attr_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31997 32030])
+            ("PSMOUSE_DEFINE_ATTR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("paritycheck" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_attr_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("paritycheck" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_show_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("elantech_set_int_attr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [31997 32031])
+            ("elantech_attrs" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("attribute" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [32033 32499])
+            ("elantech_attr_group" variable
+               (:typemodifiers ("static")
+                :type ("attribute_group" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [32501 32583])
+            ("elantech_is_signature_valid" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [32625 32652]))                  
+                :type "bool")
+                nil [32585 32911])
+            ("elantech_detect" function
+               (:arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32987 33011])
+                    ("set_properties" variable (:type "bool") (reparse-symbol arg-sub-list) [33012 33032]))                  
+                :type "int")
+                nil [32967 34593])
+            ("elantech_disconnect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34679 34703]))                  
+                :type "void")
+                nil [34647 34842])
+            ("elantech_reconnect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34943 34967]))                  
+                :type "int")
+                nil [34913 35201])
+            ("elantech_set_properties" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("etd" variable
+                       (:pointer 1
+                        :type ("elantech_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35316 35342]))                  
+                :type "int")
+                nil [35281 36620])
+            ("elantech_init" function
+               (:arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36699 36723]))                  
+                :type "int")
+                nil [36681 38662]))          
+      :file "elantech.c"
+      :pointmax 38663
+      :fsize 38662
+      :lastmodtime '(21150 4511 833173 880000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ELANTECH_INT_ATTR" (spp-arg-list ("_name" "_register") 31302 . 31320) . 
+              ((STATIC "static" 31327 . 31333) (STRUCT "struct" 31334 . 31340) (symbol "elantech_attr_data" 31341 . 31359) (spp-symbol-merge ((symbol "elantech_attr_" 31360 . 31374) (symbol "_name" 31376 . 31381)) 31360 . 31381) (punctuation "=" 31382 . 31383) (semantic-list "{	\\
+		.field_offset = offsetof(struct elantech_data, _name),	\\
+		.reg = _register,					\\
+	}" 31384 . 31475) (punctuation ";" 31475 . 31476) (symbol "PSMOUSE_DEFINE_ATTR" 31487 . 31506) (semantic-list "(_name, S_IWUSR | S_IRUGO,			\\
+			    &elantech_attr_##_name,			\\
+			    elantech_show_int_attr,			\\
+			    elantech_set_int_attr)" 31506 . 31636)))
+          ("elantech_debug" (spp-arg-list ("fmt" "...") 601 . 611) . 
+              ((DO "do" 619 . 621) (semantic-list "{								\\
+		if (etd->debug)						\\
+			psmouse_printk(KERN_DEBUG, psmouse,		\\
+					fmt, ##__VA_ARGS__);		\\
+	}" 622 . 731) (WHILE "while" 732 . 737) (semantic-list "(0)" 738 . 741)))
+          )
+)
+    (semanticdb-table "psmouse.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_PSMOUSE_H" variable (:constant-flag t) nil [28 38])
+            ("PSMOUSE_CMD_SETSCALE11" variable (:constant-flag t) nil [48 70])
+            ("PSMOUSE_CMD_SETSCALE21" variable (:constant-flag t) nil [86 108])
+            ("PSMOUSE_CMD_SETRES" variable (:constant-flag t) nil [124 142])
+            ("PSMOUSE_CMD_GETINFO" variable (:constant-flag t) nil [158 177])
+            ("PSMOUSE_CMD_SETSTREAM" variable (:constant-flag t) nil [193 214])
+            ("PSMOUSE_CMD_SETPOLL" variable (:constant-flag t) nil [230 249])
+            ("PSMOUSE_CMD_POLL" variable (:constant-flag t) nil [265 281])
+            ("PSMOUSE_CMD_RESET_WRAP" variable (:constant-flag t) nil [342 364])
+            ("PSMOUSE_CMD_GETID" variable (:constant-flag t) nil [380 397])
+            ("PSMOUSE_CMD_SETRATE" variable (:constant-flag t) nil [413 432])
+            ("PSMOUSE_CMD_ENABLE" variable (:constant-flag t) nil [448 466])
+            ("PSMOUSE_CMD_DISABLE" variable (:constant-flag t) nil [482 501])
+            ("PSMOUSE_CMD_RESET_DIS" variable (:constant-flag t) nil [517 538])
+            ("PSMOUSE_CMD_RESET_BAT" variable (:constant-flag t) nil [554 575])
+            ("PSMOUSE_RET_BAT" variable (:constant-flag t) nil [592 607])
+            ("PSMOUSE_RET_ID" variable (:constant-flag t) nil [622 636])
+            ("PSMOUSE_RET_ACK" variable (:constant-flag t) nil [651 666])
+            ("PSMOUSE_RET_NAK" variable (:constant-flag t) nil [681 696])
+            ("psmouse_state" type
+               (:members 
+                  ( ("PSMOUSE_IGNORE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [726 741])
+                    ("PSMOUSE_INITIALIZING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [743 764])
+                    ("PSMOUSE_RESYNCING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [766 784])
+                    ("PSMOUSE_CMD_MODE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [786 803])
+                    ("PSMOUSE_ACTIVATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [805 823]))                  
+                :type "enum")
+                nil [704 826])
+            ("psmouse_ret_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("PSMOUSE_BAD_DATA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [888 905])
+                          ("PSMOUSE_GOOD_DATA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [907 925])
+                          ("PSMOUSE_FULL_PACKET" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [927 948]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [872 963])
+            ("psmouse" type
+               (:members 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("input_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [999 1021])
+                    ("ps2dev" variable (:type ("ps2dev" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1023 1044])
+                    ("resync_work" variable (:type ("delayed_work" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1046 1078])
+                    ("vendor" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1080 1093])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1095 1106])
+                    ("packet" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1108 1132])
+                    ("badbyte" variable (:type "unsigned char") (reparse-symbol classsubparts) [1134 1156])
+                    ("pktcnt" variable (:type "unsigned char") (reparse-symbol classsubparts) [1158 1179])
+                    ("pktsize" variable (:type "unsigned char") (reparse-symbol classsubparts) [1181 1203])
+                    ("type" variable (:type "unsigned char") (reparse-symbol classsubparts) [1205 1224])
+                    ("ignore_parity" variable (:type "bool") (reparse-symbol classsubparts) [1226 1245])
+                    ("acks_disable_command" variable (:type "bool") (reparse-symbol classsubparts) [1247 1273])
+                    ("model" variable (:type "unsigned int") (reparse-symbol classsubparts) [1275 1294])
+                    ("last" variable (:type "unsigned long") (reparse-symbol classsubparts) [1296 1315])
+                    ("out_of_sync_cnt" variable (:type "unsigned long") (reparse-symbol classsubparts) [1317 1347])
+                    ("num_resyncs" variable (:type "unsigned long") (reparse-symbol classsubparts) [1349 1375])
+                    ("state" variable (:type ("psmouse_state" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [1377 1402])
+                    ("devname" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1404 1421])
+                    ("phys" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1423 1437])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol classsubparts) [1440 1458])
+                    ("resolution" variable (:type "unsigned int") (reparse-symbol classsubparts) [1460 1484])
+                    ("resetafter" variable (:type "unsigned int") (reparse-symbol classsubparts) [1486 1510])
+                    ("resync_time" variable (:type "unsigned int") (reparse-symbol classsubparts) [1512 1537])
+                    ("smartscroll" variable (:type "bool") (reparse-symbol classsubparts) [1539 1556])
+                    ("protocol_handler" variable
+                       (:functionpointer-flag t
+                        :type ("psmouse_ret_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1579 1638])
+                    ("set_rate" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1640 1701])
+                    ("set_resolution" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1703 1776])
+                    ("reconnect" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1779 1821])
+                    ("disconnect" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1823 1867])
+                    ("cleanup" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1869 1910])
+                    ("poll" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1912 1949])
+                    ("pt_activate" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1952 1997])
+                    ("pt_deactivate" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1999 2046]))                  
+                :type "struct")
+                nil [965 2049])
+            ("psmouse_type" type
+               (:members 
+                  ( ("PSMOUSE_NONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2072 2085])
+                    ("PSMOUSE_PS2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2087 2099])
+                    ("PSMOUSE_PS2PP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2101 2115])
+                    ("PSMOUSE_THINKPS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2117 2133])
+                    ("PSMOUSE_GENPS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2135 2149])
+                    ("PSMOUSE_IMPS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2151 2164])
+                    ("PSMOUSE_IMEX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2166 2179])
+                    ("PSMOUSE_SYNAPTICS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2181 2199])
+                    ("PSMOUSE_ALPS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2201 2214])
+                    ("PSMOUSE_LIFEBOOK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2216 2233])
+                    ("PSMOUSE_TRACKPOINT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2235 2254])
+                    ("PSMOUSE_TOUCHKIT_PS2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2256 2277])
+                    ("PSMOUSE_CORTRON" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2279 2295])
+                    ("PSMOUSE_HGPK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2297 2310])
+                    ("PSMOUSE_ELANTECH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2312 2329])
+                    ("PSMOUSE_FSP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2331 2343])
+                    ("PSMOUSE_SYNAPTICS_RELATIVE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2345 2372])
+                    ("PSMOUSE_CYPRESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2374 2390])
+                    ("PSMOUSE_AUTO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2392 2444]))                  
+                :type "enum")
+                nil [2051 2445])
+            ("psmouse_queue_work" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2471 2495])
+                    ("work" variable
+                       (:pointer 1
+                        :type ("delayed_work" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2496 2522])
+                    ("delay" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2525 2545]))                  
+                :type "void")
+                nil [2447 2546])
+            ("psmouse_sliced_command" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2574 2598])
+                    ("command" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [2599 2621]))                  
+                :type "int")
+                nil [2547 2622])
+            ("psmouse_reset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2641 2665]))                  
+                :type "int")
+                nil [2623 2666])
+            ("psmouse_set_state" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2690 2714])
+                    ("new_state" variable (:type ("psmouse_state" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [2715 2744]))                  
+                :type "void")
+                nil [2667 2745])
+            ("psmouse_set_resolution" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2774 2798])
+                    ("resolution" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2799 2823]))                  
+                :type "void")
+                nil [2746 2824])
+            ("psmouse_process_byte" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2860 2884]))                  
+                :type ("psmouse_ret_t" type (:type "class") nil nil))
+                nil [2825 2885])
+            ("psmouse_activate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2907 2931]))                  
+                :type "int")
+                nil [2886 2932])
+            ("psmouse_deactivate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2956 2980]))                  
+                :type "int")
+                nil [2933 2981])
+            ("psmouse_attribute" type
+               (:members 
+                  ( ("dattr" variable (:type ("device_attribute" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3011 3041])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3043 3054])
+                    ("show" variable
+                       (:functionpointer-flag t
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3056 3120])
+                    ("set" variable
+                       (:functionpointer-flag t
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3122 3208])
+                    ("protect" variable (:type "bool") (reparse-symbol classsubparts) [3210 3223]))                  
+                :type "struct")
+                nil [2983 3226])
+            ("to_psmouse_attr" variable (:constant-flag t) nil [3235 3250])
+            ("psmouse_attr_show_helper" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3339 3358])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3359 3389])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3395 3405]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [3306 3406])
+            ("psmouse_attr_set_helper" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3439 3458])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3459 3489])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3494 3510])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3511 3524]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [3407 3525])
+            ("__PSMOUSE_DEFINE_ATTR_VAR" variable (:constant-flag t) nil [3535 3560])
+            ("__PSMOUSE_DEFINE_ATTR" variable (:constant-flag t) nil [3991 4012])
+            ("PSMOUSE_DEFINE_ATTR" variable (:constant-flag t) nil [4272 4291])
+            ("PSMOUSE_DEFINE_RO_ATTR" variable (:constant-flag t) nil [4402 4424])
+            ("PSMOUSE_DEFINE_WO_ATTR" variable (:constant-flag t) nil [4594 4616])
+            ("psmouse_fmt" variable (:constant-flag t) nil [4815 4826])
+            ("psmouse_dbg" variable (:constant-flag t) nil [4873 4884])
+            ("psmouse_info" variable (:constant-flag t) nil [4999 5011])
+            ("psmouse_warn" variable (:constant-flag t) nil [5128 5140])
+            ("psmouse_err" variable (:constant-flag t) nil [5257 5268])
+            ("psmouse_notice" variable (:constant-flag t) nil [5383 5397])
+            ("psmouse_printk" variable (:constant-flag t) nil [5517 5531]))          
+      :file "psmouse.h"
+      :pointmax 5692
+      :fsize 5691
+      :lastmodtime '(21135 45295 0 0)
+      :unmatched-syntax '((punctuation 996 . 997) (PRIVATE 989 . 996) (punctuation 988 . 989) (VOID 983 . 987))
+      :lexical-table 
+        '(("PSMOUSE_CMD_SETSCALE11" . ((number "0x00e6" 71 . 77)))
+          ("PSMOUSE_CMD_SETPOLL" . ((number "0x00f0" 250 . 256)))
+          ("psmouse_err" (spp-arg-list ("psmouse" "format" "...") 5268 . 5290) . ((symbol "dev_err" 5295 . 5302) (semantic-list "(&(psmouse)->ps2dev.serio->dev,		\\
+		psmouse_fmt(format), ##__VA_ARGS__)" 5302 . 5374)))
+          ("psmouse_notice" (spp-arg-list ("psmouse" "format" "...") 5397 . 5419) . ((symbol "dev_notice" 5424 . 5434) (semantic-list "(&(psmouse)->ps2dev.serio->dev,	\\
+		   psmouse_fmt(format), ##__VA_ARGS__)" 5434 . 5508)))
+          ("psmouse_warn" (spp-arg-list ("psmouse" "format" "...") 5140 . 5162) . ((symbol "dev_warn" 5167 . 5175) (semantic-list "(&(psmouse)->ps2dev.serio->dev,		\\
+		 psmouse_fmt(format), ##__VA_ARGS__)" 5175 . 5248)))
+          ("psmouse_printk" (spp-arg-list ("level" "psmouse" "format" "...") 5531 . 5560) . ((symbol "dev_printk" 5564 . 5574) (semantic-list "(level,				\\
+		   &(psmouse)->ps2dev.serio->dev,	\\
+		   psmouse_fmt(format), ##__VA_ARGS__)" 5574 . 5665)))
+          ("PSMOUSE_CMD_ENABLE" . ((number "0x00f4" 467 . 473)))
+          ("PSMOUSE_CMD_SETSCALE21" . ((number "0x00e7" 109 . 115)))
+          ("PSMOUSE_CMD_RESET_WRAP" . ((number "0x00ec" 365 . 371)))
+          ("psmouse_info" (spp-arg-list ("psmouse" "format" "...") 5011 . 5033) . ((symbol "dev_info" 5038 . 5046) (semantic-list "(&(psmouse)->ps2dev.serio->dev,		\\
+		 psmouse_fmt(format), ##__VA_ARGS__)" 5046 . 5119)))
+          ("PSMOUSE_CMD_SETSTREAM" . ((number "0x00ea" 215 . 221)))
+          ("PSMOUSE_CMD_POLL" . ((number "0x00eb" 282 . 288)))
+          ("PSMOUSE_CMD_RESET_BAT" . ((number "0x02ff" 576 . 582)))
+          ("PSMOUSE_RET_NAK" . ((number "0xfe" 698 . 702)))
+          ("PSMOUSE_DEFINE_RO_ATTR" (spp-arg-list ("_name" "_mode" "_data" "_show") 4424 . 4452) . 
+              ((STATIC "static" 4458 . 4464) (symbol "ssize_t" 4465 . 4472) (symbol "_show" 4473 . 4478) (semantic-list "(struct psmouse *, void *, char *)" 4478 . 4512) (punctuation ";" 4512 . 4513) (symbol "__PSMOUSE_DEFINE_ATTR_VAR" 4519 . 4544) (semantic-list "(_name, _mode, _data, _show, NULL, true)" 4544 . 4584)))
+          ("PSMOUSE_CMD_RESET_DIS" . ((number "0x00f6" 539 . 545)))
+          ("to_psmouse_attr" (spp-arg-list ("a") 3250 . 3253) . ((symbol "container_of" 3254 . 3266) (semantic-list "((a), struct psmouse_attribute, dattr)" 3266 . 3304)))
+          ("__PSMOUSE_DEFINE_ATTR_VAR" (spp-arg-list ("_name" "_mode" "_data" "_show" "_set" "_protect") 3560 . 3604) . 
+              ((STATIC "static" 3607 . 3613) (STRUCT "struct" 3614 . 3620) (symbol "psmouse_attribute" 3621 . 3638) (spp-symbol-merge ((symbol "psmouse_attr_" 3639 . 3652) (symbol "_name" 3654 . 3659)) 3639 . 3659) (punctuation "=" 3660 . 3661) (semantic-list "{			\\
+	.dattr	= {								\\
+		.attr	= {							\\
+			.name	= __stringify(_name),				\\
+			.mode	= _mode,					\\
+		},								\\
+		.show	= psmouse_attr_show_helper,				\\
+		.store	= psmouse_attr_set_helper,				\\
+	},									\\
+	.data	= _data,							\\
+	.show	= _show,							\\
+	.set	= _set,								\\
+	.protect = _protect,							\\
+}" 3662 . 3981)))
+          ("PSMOUSE_CMD_GETID" . ((number "0x02f2" 398 . 404)))
+          ("PSMOUSE_RET_ID" . ((number "0x00" 638 . 642)))
+          ("_PSMOUSE_H")
+          ("PSMOUSE_CMD_GETINFO" . ((number "0x03e9" 178 . 184)))
+          ("PSMOUSE_CMD_DISABLE" . ((number "0x00f5" 502 . 508)))
+          ("PSMOUSE_DEFINE_ATTR" (spp-arg-list ("_name" "_mode" "_data" "_show" "_set") 4291 . 4325) . ((symbol "__PSMOUSE_DEFINE_ATTR" 4331 . 4352) (semantic-list "(_name, _mode, _data, _show, _set, true)" 4352 . 4392)))
+          ("psmouse_fmt" (spp-arg-list ("fmt") 4826 . 4831) . 
+              ((symbol "KBUILD_BASENAME" 4832 . 4847) (string "\": \"" 4848 . 4852) (symbol "fmt" 4853 . 4856)))
+          ("PSMOUSE_CMD_SETRES" . ((number "0x10e8" 143 . 149)))
+          ("PSMOUSE_CMD_SETRATE" . ((number "0x10f3" 433 . 439)))
+          ("PSMOUSE_RET_BAT" . ((number "0xaa" 609 . 613)))
+          ("PSMOUSE_DEFINE_WO_ATTR" (spp-arg-list ("_name" "_mode" "_data" "_set") 4616 . 4643) . 
+              ((STATIC "static" 4649 . 4655) (symbol "ssize_t" 4656 . 4663) (symbol "_set" 4664 . 4668) (semantic-list "(struct psmouse *, void *, const char *, size_t)" 4668 . 4716) (punctuation ";" 4716 . 4717) (symbol "__PSMOUSE_DEFINE_ATTR_VAR" 4721 . 4746) (semantic-list "(_name, _mode, _data, NULL, _set, true)" 4746 . 4785)))
+          ("psmouse_dbg" (spp-arg-list ("psmouse" "format" "...") 4884 . 4906) . ((symbol "dev_dbg" 4911 . 4918) (semantic-list "(&(psmouse)->ps2dev.serio->dev,		\\
+		psmouse_fmt(format), ##__VA_ARGS__)" 4918 . 4990)))
+          ("PSMOUSE_RET_ACK" . ((number "0xfa" 668 . 672)))
+          ("__PSMOUSE_DEFINE_ATTR" (spp-arg-list ("_name" "_mode" "_data" "_show" "_set" "_protect") 4012 . 4056) . 
+              ((STATIC "static" 4060 . 4066) (symbol "ssize_t" 4067 . 4074) (symbol "_show" 4075 . 4080) (semantic-list "(struct psmouse *, void *, char *)" 4080 . 4114) (punctuation ";" 4114 . 4115) (STATIC "static" 4121 . 4127) (symbol "ssize_t" 4128 . 4135) (symbol "_set" 4136 . 4140) (semantic-list "(struct psmouse *, void *, const char *, size_t)" 4140 . 4188) (punctuation ";" 4188 . 4189) (symbol "__PSMOUSE_DEFINE_ATTR_VAR" 4193 . 4218) (semantic-list "(_name, _mode, _data, _show, _set, _protect)" 4218 . 4262)))
+          )
+)
+    (semanticdb-table "elantech.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ELANTECH_H" variable (:constant-flag t) nil [384 395])
+            ("ETP_FW_ID_QUERY" variable (:constant-flag t) nil [458 473])
+            ("ETP_FW_VERSION_QUERY" variable (:constant-flag t) nil [489 509])
+            ("ETP_CAPABILITIES_QUERY" variable (:constant-flag t) nil [524 546])
+            ("ETP_SAMPLE_QUERY" variable (:constant-flag t) nil [561 577])
+            ("ETP_RESOLUTION_QUERY" variable (:constant-flag t) nil [592 612])
+            ("ETP_REGISTER_READ" variable (:constant-flag t) nil [685 702])
+            ("ETP_REGISTER_WRITE" variable (:constant-flag t) nil [717 735])
+            ("ETP_REGISTER_READWRITE" variable (:constant-flag t) nil [750 772])
+            ("ETP_PS2_CUSTOM_COMMAND" variable (:constant-flag t) nil [843 865])
+            ("ETP_PS2_COMMAND_TRIES" variable (:constant-flag t) nil [956 977])
+            ("ETP_PS2_COMMAND_DELAY" variable (:constant-flag t) nil [989 1010])
+            ("ETP_READ_BACK_TRIES" variable (:constant-flag t) nil [1108 1127])
+            ("ETP_READ_BACK_DELAY" variable (:constant-flag t) nil [1139 1158])
+            ("ETP_R10_ABSOLUTE_MODE" variable (:constant-flag t) nil [1225 1246])
+            ("ETP_R11_4_BYTE_MODE" variable (:constant-flag t) nil [1261 1280])
+            ("ETP_CAP_HAS_ROCKER" variable (:constant-flag t) nil [1326 1344])
+            ("ETP_EDGE_FUZZ_V1" variable (:constant-flag t) nil [1565 1581])
+            ("ETP_XMIN_V1" variable (:constant-flag t) nil [1595 1606])
+            ("ETP_XMAX_V1" variable (:constant-flag t) nil [1642 1653])
+            ("ETP_YMIN_V1" variable (:constant-flag t) nil [1689 1700])
+            ("ETP_YMAX_V1" variable (:constant-flag t) nil [1736 1747])
+            ("ETP_XMIN_V2" variable (:constant-flag t) nil [1898 1909])
+            ("ETP_XMAX_V2" variable (:constant-flag t) nil [1922 1933])
+            ("ETP_YMIN_V2" variable (:constant-flag t) nil [1949 1960])
+            ("ETP_YMAX_V2" variable (:constant-flag t) nil [1973 1984])
+            ("ETP_PMIN_V2" variable (:constant-flag t) nil [2000 2011])
+            ("ETP_PMAX_V2" variable (:constant-flag t) nil [2024 2035])
+            ("ETP_WMIN_V2" variable (:constant-flag t) nil [2050 2061])
+            ("ETP_WMAX_V2" variable (:constant-flag t) nil [2074 2085])
+            ("PACKET_UNKNOWN" variable (:constant-flag t) nil [2173 2187])
+            ("PACKET_DEBOUNCE" variable (:constant-flag t) nil [2203 2218])
+            ("PACKET_V3_HEAD" variable (:constant-flag t) nil [2234 2248])
+            ("PACKET_V3_TAIL" variable (:constant-flag t) nil [2264 2278])
+            ("PACKET_V4_HEAD" variable (:constant-flag t) nil [2294 2308])
+            ("PACKET_V4_MOTION" variable (:constant-flag t) nil [2324 2340])
+            ("PACKET_V4_STATUS" variable (:constant-flag t) nil [2355 2371])
+            ("ETP_MAX_FINGERS" variable (:constant-flag t) nil [2435 2450])
+            ("ETP_WEIGHT_VALUE" variable (:constant-flag t) nil [2503 2519])
+            ("finger_pos" type
+               (:members 
+                  ( ("x" variable (:type "unsigned int") (reparse-symbol classsubparts) [2601 2616])
+                    ("y" variable (:type "unsigned int") (reparse-symbol classsubparts) [2618 2633]))                  
+                :type "struct")
+                nil [2580 2636])
+            ("elantech_data" type
+               (:members 
+                  ( ("reg_07" variable (:type "unsigned char") (reparse-symbol classsubparts) [2662 2683])
+                    ("reg_10" variable (:type "unsigned char") (reparse-symbol classsubparts) [2685 2706])
+                    ("reg_11" variable (:type "unsigned char") (reparse-symbol classsubparts) [2708 2729])
+                    ("reg_20" variable (:type "unsigned char") (reparse-symbol classsubparts) [2731 2752])
+                    ("reg_21" variable (:type "unsigned char") (reparse-symbol classsubparts) [2754 2775])
+                    ("reg_22" variable (:type "unsigned char") (reparse-symbol classsubparts) [2777 2798])
+                    ("reg_23" variable (:type "unsigned char") (reparse-symbol classsubparts) [2800 2821])
+                    ("reg_24" variable (:type "unsigned char") (reparse-symbol classsubparts) [2823 2844])
+                    ("reg_25" variable (:type "unsigned char") (reparse-symbol classsubparts) [2846 2867])
+                    ("reg_26" variable (:type "unsigned char") (reparse-symbol classsubparts) [2869 2890])
+                    ("debug" variable (:type "unsigned char") (reparse-symbol classsubparts) [2892 2912])
+                    ("capabilities" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [2914 2944])
+                    ("paritycheck" variable (:type "bool") (reparse-symbol classsubparts) [2946 2963])
+                    ("jumpy_cursor" variable (:type "bool") (reparse-symbol classsubparts) [2965 2983])
+                    ("reports_pressure" variable (:type "bool") (reparse-symbol classsubparts) [2985 3007])
+                    ("crc_enabled" variable (:type "bool") (reparse-symbol classsubparts) [3009 3026])
+                    ("hw_version" variable (:type "unsigned char") (reparse-symbol classsubparts) [3028 3053])
+                    ("fw_version" variable (:type "unsigned int") (reparse-symbol classsubparts) [3055 3079])
+                    ("single_finger_reports" variable (:type "unsigned int") (reparse-symbol classsubparts) [3081 3116])
+                    ("y_max" variable (:type "unsigned int") (reparse-symbol classsubparts) [3118 3137])
+                    ("width" variable (:type "unsigned int") (reparse-symbol classsubparts) [3139 3158])
+                    ("mt" variable
+                       (:dereference 1
+                        :type ("finger_pos" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3160 3198])
+                    ("parity" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [3200 3226])
+                    ("send_cmd" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3228 3308]))                  
+                :type "struct")
+                nil [2638 3311])
+            ("elantech_detect" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3497 3521])
+                    ("set_properties" variable (:type "bool") (reparse-symbol arg-sub-list) [3522 3542]))                  
+                :type "int")
+                nil [3463 3563])
+            ("elantech_init" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("psmouse" variable
+                       (:pointer 1
+                        :type ("psmouse" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3596 3620]))                  
+                :type "int")
+                nil [3564 3641]))          
+      :file "elantech.h"
+      :pointmax 3689
+      :fsize 3688
+      :lastmodtime '(21135 45295 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ETP_PS2_CUSTOM_COMMAND" . ((number "0xf8" 867 . 871)))
+          ("ETP_PS2_COMMAND_DELAY" . ((number "500" 1012 . 1015)))
+          ("ETP_READ_BACK_TRIES" . ((number "5" 1129 . 1130)))
+          ("ETP_XMIN_V1" . ((semantic-list "(  0 + ETP_EDGE_FUZZ_V1)" 1609 . 1633)))
+          ("ETP_YMAX_V1" . ((semantic-list "(384 - ETP_EDGE_FUZZ_V1)" 1750 . 1774)))
+          ("ETP_XMAX_V2" . ((number "1152" 1936 . 1940)))
+          ("ETP_WMIN_V2" . ((number "0" 2064 . 2065)))
+          ("ETP_CAPABILITIES_QUERY" . ((number "0x02" 548 . 552)))
+          ("ETP_PS2_COMMAND_TRIES" . ((number "3" 979 . 980)))
+          ("ETP_YMIN_V1" . ((semantic-list "(  0 + ETP_EDGE_FUZZ_V1)" 1703 . 1727)))
+          ("ETP_XMIN_V2" . ((number "0" 1912 . 1913)))
+          ("ETP_YMAX_V2" . ((number "768" 1987 . 1990)))
+          ("ETP_FW_VERSION_QUERY" . ((number "0x01" 511 . 515)))
+          ("ETP_YMIN_V2" . ((number "0" 1963 . 1964)))
+          ("PACKET_UNKNOWN" . ((number "0x01" 2190 . 2194)))
+          ("ETP_MAX_FINGERS" . ((number "5" 2453 . 2454)))
+          ("ETP_FW_ID_QUERY" . ((number "0x00" 476 . 480)))
+          ("_ELANTECH_H")
+          ("ETP_R10_ABSOLUTE_MODE" . ((number "0x04" 1248 . 1252)))
+          ("ETP_PMAX_V2" . ((number "255" 2038 . 2041)))
+          ("ETP_PMIN_V2" . ((number "0" 2014 . 2015)))
+          ("ETP_REGISTER_READ" . ((number "0x10" 704 . 708)))
+          ("ETP_EDGE_FUZZ_V1" . ((number "32" 1583 . 1585)))
+          ("PACKET_V3_TAIL" . ((number "0x04" 2281 . 2285)))
+          ("ETP_R11_4_BYTE_MODE" . ((number "0x02" 1282 . 1286)))
+          ("ETP_CAP_HAS_ROCKER" . ((number "0x04" 1346 . 1350)))
+          ("PACKET_V4_HEAD" . ((number "0x05" 2311 . 2315)))
+          ("ETP_REGISTER_READWRITE" . ((number "0x00" 774 . 778)))
+          ("PACKET_V4_MOTION" . ((number "0x06" 2342 . 2346)))
+          ("ETP_SAMPLE_QUERY" . ((number "0x03" 579 . 583)))
+          ("ETP_RESOLUTION_QUERY" . ((number "0x04" 614 . 618)))
+          ("ETP_WEIGHT_VALUE" . ((number "5" 2521 . 2522)))
+          ("PACKET_DEBOUNCE" . ((number "0x02" 2221 . 2225)))
+          ("ETP_REGISTER_WRITE" . ((number "0x11" 737 . 741)))
+          ("ETP_READ_BACK_DELAY" . ((number "2000" 1160 . 1164)))
+          ("ETP_XMAX_V1" . ((semantic-list "(576 - ETP_EDGE_FUZZ_V1)" 1656 . 1680)))
+          ("ETP_WMAX_V2" . ((number "15" 2088 . 2090)))
+          ("PACKET_V3_HEAD" . ((number "0x03" 2251 . 2255)))
+          ("PACKET_V4_STATUS" . ((number "0x07" 2373 . 2377)))
+          )
+))
+  :file "!home!matt!src!linux-3.13-rc1!drivers!input!mouse!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
