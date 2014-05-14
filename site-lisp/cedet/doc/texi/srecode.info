@@ -1,4 +1,4 @@
-This is srecode.info, produced by makeinfo version 4.13 from
+This is srecode.info, produced by makeinfo version 5.2 from
 srecode.texi.
 
 Copyright (C) 2007-2013 Free Software Foundation, Inc.
@@ -13,7 +13,6 @@ Copyright (C) 2007-2013 Free Software Foundation, Inc.
 
      (a) The FSF's Back-Cover Text is: "You have the freedom to copy and
      modify this GNU manual."
-
 INFO-DIR-SECTION Emacs misc features
 START-INFO-DIR-ENTRY
 * SRecode: (srecode).           Template code generator.
@@ -25,10 +24,9 @@ File: srecode.info,  Node: Top,  Next: Quick Start,  Up: (dir)
 SRecoder Manual
 ***************
 
-SRecode is the Semantic Recoder.  Where Semantic will parse source
-files into lists of tags, the Semantic Recoder will aid in converting
-Semantic tags and various other information back into various types of
-code.
+SRecode is the Semantic Recoder.  Where Semantic will parse source files
+into lists of tags, the Semantic Recoder will aid in converting Semantic
+tags and various other information back into various types of code.
 
    While the SRecode tool provides a template language, templates for
 several languages, and even a sequence of heuristics that aid the user
@@ -72,7 +70,7 @@ File: srecode.info,  Node: Quick Start,  Next: User Templates,  Prev: Top,  Up: 
 1 Quick Start
 *************
 
-When you install CEDET and enable SRecode, an `SRecoder' menu item
+When you install CEDET and enable SRecode, an 'SRecoder' menu item
 should appear.
 
    To toggle SRecode minor mode on and off use:
@@ -86,13 +84,13 @@ should appear.
      (srecode-minor-mode 1)
 
    into a language hook function to force it on (which is the default)
-or pass in `-1' to force it off.
+or pass in '-1' to force it off.
 
    See *note SRecode Minor Mode:: for more on using the minor mode.
 
    Use the menu to insert templates into the current file.
 
-   You can add your own templates in `~/.srecode', or update the
+   You can add your own templates in '~/.srecode', or update the
 template map path:
 
  -- Option: srecode-map-load-path
@@ -107,8 +105,8 @@ the command:
 
    SRecode Insert will prompt for a template name.  Template names are
 specific to each major mode.  A typical name is of the form:
-`CONTEXT:NAME' where a CONTEXT might be something like `file' or
-`declaration'.  The same NAME can occur in multiple contexts.
+'CONTEXT:NAME' where a CONTEXT might be something like 'file' or
+'declaration'.  The same NAME can occur in multiple contexts.
 
 
 File: srecode.info,  Node: User Templates,  Next: Parts of SRecode,  Prev: Quick Start,  Up: Top
@@ -118,40 +116,40 @@ File: srecode.info,  Node: User Templates,  Next: Parts of SRecode,  Prev: Quick
 
 SRecode builds and maintains a map of all template files.  The root
 template files resides in the SRecode distribution.  User written
-templates files are saved in `~/.srecode', along with the SRecode map
+templates files are saved in '~/.srecode', along with the SRecode map
 file.
 
  -- Variable: srecode-map-save-file
      The save location for SRecode's map file.
 
-   Template files end with a `.srt' extension.  Details on how to write
+   Template files end with a '.srt' extension.  Details on how to write
 templates are in *note Template Writing::.
 
    Each template file you write is dedicated to a single major mode.  In
 it, you can write templates within the same context and with the same
 name as core templates.  You can force your templates to override the
-core templates for a particular major mode by setting the priority.
-See *note Special Variables::.
+core templates for a particular major mode by setting the priority.  See
+*note Special Variables::.
 
-   To get going quickly, open a new `.srt' file.  It will start in the
+   To get going quickly, open a new '.srt' file.  It will start in the
 SRecode template writing mode.  Use the SRecode minor mode menu to
-insert the `empty' file template.
+insert the 'empty' file template.
 
    When using templates in other modes (such as C++ or Emacs Lisp
 templates), use the "Edit Template" menu to find a template you would
 like to update.  Copy it into your user template file, and change it.
 
-   If you were to update `declaration:function' in your user template
-file, then you would get this new template instead of the one that
-comes with SRecode.  Higher level applications should always use
-`declaration:function' when generating their own code, so higher level
+   If you were to update 'declaration:function' in your user template
+file, then you would get this new template instead of the one that comes
+with SRecode.  Higher level applications should always use
+'declaration:function' when generating their own code, so higher level
 templates will then adopt user template changes to
-`declaration:function' into themselves.
+'declaration:function' into themselves.
 
    You can also override variables.  Core variables are stored in the
-SRecode root template file `default.srt', and that contains the
+SRecode root template file 'default.srt', and that contains the
 copyright usually used, and some basic file setup formats.  Override
-variables like this by specifying a `mode' of `default' like this:
+variables like this by specifying a 'mode' of 'default' like this:
 
      set mode "default"
 
@@ -171,18 +169,18 @@ The template layer provides a way to write, and compile templates.  The
 template layer is the scheme used to insert text into an Emacs buffer.
 
    The SRecode template layer is more advanced than other modes like the
-Emacs packages `skeleton' or `tempo' in that it allows multiple layers
-of templates to be created with the same names.  This means that
-SRecode can provide a wide range of templates, and users can override
-only the small sections they want, instead of either accepting someone
-else's template, or writing large new templates of their own.
+Emacs packages 'skeleton' or 'tempo' in that it allows multiple layers
+of templates to be created with the same names.  This means that SRecode
+can provide a wide range of templates, and users can override only the
+small sections they want, instead of either accepting someone else's
+template, or writing large new templates of their own.
 
-   Templates are written in `.srt' files.  You can learn how to author
-new `.srt' files *note Template Writing::.
+   Templates are written in '.srt' files.  You can learn how to author
+new '.srt' files *note Template Writing::.
 
-   While the template system was designed for SRecode based
-applications it can also be used independently for simple template
-insertion during typical coding.
+   While the template system was designed for SRecode based applications
+it can also be used independently for simple template insertion during
+typical coding.
 
 3.2 Template Manager
 ====================
@@ -203,7 +201,7 @@ used in macros in a template.  Variables are what allows a generic
 template such as a function to be made specific, such as a function
 named foo.  The value of a variable can be one of three things; a
 string, a list of more dictionaries, or a special
-`srecode-dictionary-compound-value' object subclass.  See *note
+'srecode-dictionary-compound-value' object subclass.  See *note
 Variables:: for more.
 
 3.4 Template Insertion
@@ -217,7 +215,7 @@ derived data as macros into the plain text of a template.
 arguments represent predetermined sets of dictionary values, such as
 features of the current file name, user name, time, etc.
 
-   Some arguments are major-mode specific, such as the `:el' or `:cpp'
+   Some arguments are major-mode specific, such as the ':el' or ':cpp'
 arguments.
 
 3.5 Template Insertion Context
@@ -225,8 +223,8 @@ arguments.
 
 A context can be provided for templates in a file.  This helps
 auto-selection of templates by name, or allows templates in different
-contexts to have the same name.  Some standard contexts are `file',
-`declaration', and `classdecl'.
+contexts to have the same name.  Some standard contexts are 'file',
+'declaration', and 'classdecl'.
 
    A context can be automatically derived as well based on the parsing
 state from Semantic.  *note Semantic Manual: (semantic)Top.
@@ -235,22 +233,21 @@ state from Semantic.  *note Semantic Manual: (semantic)Top.
 ================
 
 Commands that do a particular user task which involves also writing
-Emacs Lisp code.  Applications are at the top layer.  These
-applications have their own template files and logic needed to fill in
-dictionaries or position a cursor.  SRecode comes with an example
-`srecode-document' application for creating comments for Semantic tags.
-The CEDET application EDE has a project type that is an SRecode
-application.
+Emacs Lisp code.  Applications are at the top layer.  These applications
+have their own template files and logic needed to fill in dictionaries
+or position a cursor.  SRecode comes with an example 'srecode-document'
+application for creating comments for Semantic tags.  The CEDET
+application EDE has a project type that is an SRecode application.
 
 3.7 Field Editing
 =================
 
-If the variable `srecode-insert-ask-variable-method' is set to 'field,
+If the variable 'srecode-insert-ask-variable-method' is set to 'field,
 then variables that would normally ask a question, will instead create
 "fields" in the buffer.  A field-editing layer provides simple
 interaction through the fields.  Typing in a field will cause all
-variable locations that are the same to edit at the same time.
-Pressing TAB on a field will move you to the next field.
+variable locations that are the same to edit at the same time.  Pressing
+TAB on a field will move you to the next field.
 
 
 File: srecode.info,  Node: SRecode Minor Mode,  Next: Template Writing,  Prev: Parts of SRecode,  Up: Top
@@ -263,28 +260,24 @@ simple access to different templates or template applications.
 
    The key prefix is <C-c />.
 
-   If the variable `srecode-takeover-INS-key' is set, then the key
+   If the variable 'srecode-takeover-INS-key' is set, then the key
 <<insert>> can also be used.
 
-   The most important key is bound to `srecode-insert' which is <C-c /
+   The most important key is bound to 'srecode-insert' which is <C-c /
 />, or <insert insert>.  *note Quick Start::.
 
    Major keybindings are:
 
 <C-c / />
      Insert a template whose name is typed into the minibuffer.
-
 <C-c / <lower case letter>>
      Reserved for direct binding of simple templates to keys using a
      keybinding command in the template file.
-
 <C-c / <upper case letter>>
      Reserved for template applications (Such as comment or get/set
      inserter.)
-
 <C-c / E>
      Edit the code of a template.
-
 <C-c / .>
      Insert template again.  This will cause the previously inserted
      template to be inserted again.
@@ -302,22 +295,21 @@ can be used instead.  To enable it set:
      template.  Only the ASK style inserter will query the user for a
      value.  Dictionary value references that ask begin with the ?
      character.  Possible values are:
-    `ask'
+     'ask'
           Prompt in the minibuffer as the value is inserted.
-
-    `field'
-          Use the dictionary macro name as the inserted value, and
-          place a field there.  Matched fields change together.
+     'field'
+          Use the dictionary macro name as the inserted value, and place
+          a field there.  Matched fields change together.
 
      NOTE: The field feature does not yet work with XEmacs.
 
-   Field editing mode is supported in newer versions of Emacs.  You
-will not be prompted to fill in values while the template is inserted.
+   Field editing mode is supported in newer versions of Emacs.  You will
+not be prompted to fill in values while the template is inserted.
 Instead, short regions will be highlighted, and the cursor placed in a
-field.  Typing in the field will then fill in the value.  Several
-fields might be linked together.  In that case, typing in one area will
-modify the other linked areas.  Pressing TAB will move between editable
-fields in the template.
+field.  Typing in the field will then fill in the value.  Several fields
+might be linked together.  In that case, typing in one area will modify
+the other linked areas.  Pressing TAB will move between editable fields
+in the template.
 
    Once the cursor moves out of the are inserted by the template, all
 the fields are cancelled.
@@ -331,33 +323,28 @@ File: srecode.info,  Node: Template Writing,  Next: Dictionaries,  Prev: SRecode
 5 Template Writing
 ******************
 
-`srecode-template-mode' is the major mode used for designing new
-templates.  SRecode files (Extension `.srt') are made up of variable
+'srecode-template-mode' is the major mode used for designing new
+templates.  SRecode files (Extension '.srt') are made up of variable
 settings and template declarations.
 
    Here is an overview of the terminology you will need for the next few
 sections:
 
 template file
-     A file with a `.srt' extension which contains settings, variables,
+     A file with a '.srt' extension which contains settings, variables,
      and templates.
-
 template
      One named entity which represents a block of text that will be
      inserted.  The text is compiled into a sequence of insertable
      entities.  The entities are string constants, and macros.
-
 macro
      A macro is a text sequence within template text that is replaced
      with some other value.
-
 dictionary
      A table of variable names and values.
-
 subdictionary
      A dictionary that is subordinate under another dictionary as a
      value to some variable.
-
 variable
      A variable is an entry in a dictionary which has a value.
 
@@ -405,7 +392,7 @@ File: srecode.info,  Node: String Values,  Next: Multi-string Values,  Up: Varia
 
 Variables can be set to strings.  Strings may contain newlines or any
 other characters.  Strings are interpreted by the Emacs Lisp reader so
-`\n', `\t', and `\"' work.
+'\n', '\t', and '\"' work.
 
    When a string is inserted as part of a template, nothing within the
 string is interperted, such as template escape characters.
@@ -417,8 +404,8 @@ File: srecode.info,  Node: Multi-string Values,  Next: Section Show,  Prev: Stri
 -------------------------
 
 A variable can be set to multiple strings.  A compound value is usually
-used when you want to use dictionary entries as part of a variable
-later on.
+used when you want to use dictionary entries as part of a variable later
+on.
 
    Multi-string variable values are set like string values except there
 are more than one.  For example
@@ -443,7 +430,7 @@ File: srecode.info,  Node: Section Show,  Next: Special Variables,  Prev: Multi-
 5.1.3 Section Show
 ------------------
 
-To set a variable to show a template section, use the `show' command.
+To set a variable to show a template section, use the 'show' command.
 Sections are blocks of a template wrapped in section macros.  If there
 is a section macro using NAME it will be shown for each dictionary
 associated with the NAME macro.
@@ -464,13 +451,12 @@ File: srecode.info,  Node: Special Variables,  Next: Automatic Loop Variables,  
 Some variables have special meaning that changes attributes when
 templates are compiled, including:
 
-`escape-start'
+'escape-start'
      This is the character sequence that escapes from raw text to
      template macro names.  The ability to change the escape characters
-     are key for enabling SRecode templates to work across many kinds
-     of languages.
-
-`escape-end'
+     are key for enabling SRecode templates to work across many kinds of
+     languages.
+'escape-end'
      This is the character sequence that escapes the end of a template
      macro name.
 
@@ -479,17 +465,17 @@ templates are compiled, including:
           set escape_end "$"
 
      If you need to insert the characters that belong to the variables
-     `escape_start' or `escape_end', then place those into a variable,
+     'escape_start' or 'escape_end', then place those into a variable,
      and use that variable.  For example
 
           set escape_start "$"
           set escape_end "$"
           set DOLLAR "$"
 
-`mode'
-     This is the major mode, as a string with the full Emacs Lisp
-     symbol in it.  All templates in this file will be installed into
-     the template table for this major mode.
+'mode'
+     This is the major mode, as a string with the full Emacs Lisp symbol
+     in it.  All templates in this file will be installed into the
+     template table for this major mode.
 
      Multiple template files can use the same mode, and all those
      templates will be available in buffers of that mode.
@@ -497,7 +483,7 @@ templates are compiled, including:
      Example:
           set mode "emacs-lisp-mode"
 
-`priority'
+'priority'
      The priority of a file is a number in a string constant that
      indicates where it lies in the template search order.  System
      templates default to low priority numbers.  User templates default
@@ -513,11 +499,11 @@ templates are compiled, including:
      Example:
           set priority "35"
 
-`application'
+'application'
      If a template file contains templates only needed for a particular
      application, then specify an application.  Template files for an
-     application are stored in the template repository, but are not
-     used in the generic template insertion case.
+     application are stored in the template repository, but are not used
+     in the generic template insertion case.
 
      The application with a particular name will access these templates
      from Lisp code.
@@ -525,7 +511,7 @@ templates are compiled, including:
      Example:
           set application "document"
 
-`project'
+'project'
      If a template file contains templates, or template overrides
      specific to a set of files under a particular directory, then that
      template file can specify a "project" that it belongs to.
@@ -541,7 +527,6 @@ templates are compiled, including:
      Example:
           set project "/tmp/testproject"
 
-
 
 File: srecode.info,  Node: Automatic Loop Variables,  Next: Compound Variable Values,  Prev: Special Variables,  Up: Variables
 
@@ -556,11 +541,8 @@ macros which will enable different SECTIONS.  The automatic section
 variables are.
 
    * FIRST--The first entry in the table.
-
    * NOTFIRST--Not the first entry in the table.
-
    * LAST--The last entry in the table
-
    * NOTLAST--Not the last entry in the table.
 
 
@@ -571,7 +553,7 @@ File: srecode.info,  Node: Compound Variable Values,  Prev: Automatic Loop Varia
 
 A variable can also have a compound value.  This means the value of the
 variable is an EIEIO object, which is a subclass of
-`srecode-dictionary-compound-value'.
+'srecode-dictionary-compound-value'.
 
    New compound variables can only be setup from Lisp code.  See *note
 Compound Dictionary Values:: for details on setting up compound
@@ -601,7 +583,7 @@ the TEMPLATENAME provided.
 be used to aid users in selecting which template they want to use.
 
    The code that makes up the raw template occurs between the lines that
-contain the text "----".
+contain the text "---".
 
 * Menu:
 
@@ -629,8 +611,7 @@ like this:
      ----
 
    In this example, the NAME variable gets the value "foo", but only
-while it is inside section macro A.  The outer scoped NAME will be
-empty.
+while it is inside section macro A. The outer scoped NAME will be empty.
 
    This is particularly useful while using an include macro to pull in a
 second template.  In this way, you can pass values known from one
@@ -651,11 +632,11 @@ character):
      ----
 
    then you can see that there is a NAME and DOC that is needed.  The
-`^' point inserter is also a handy key here.
+'^' point inserter is also a handy key here.
 
    The syntax table wants a variable, but knows the values of some of
 these variables, and can recast the problem like this by using template
-specific `sectiondictionary' macro declarations.
+specific 'sectiondictionary' macro declarations.
 
      template syntax-table
      "Create a syntax table."
@@ -676,7 +657,7 @@ with "-mode-syntax-table" appended.  A simplified doc string will also
 be inserted.
 
    Lastly, the A section contains more macro text which is inserted at
-the `^' point marker.
+the '^' point marker.
 
    By creating useful base templates for things like function or
 variable declarations, and recycling them in higher-order templates, an
@@ -706,7 +687,7 @@ example, the macro above could be augmented with an Emacs Lisp function.
 
      ;; Author: {{AUTHOR:upcase}}
 
-   In this case, the Emacs Lisp function `upcase' will be called on the
+   In this case, the Emacs Lisp function 'upcase' will be called on the
 text value of the AUTHOR variable.
 
    Macros can also be specialized to have different behaviors by using a
@@ -714,7 +695,7 @@ prefix, non-alpha character or symbol.  For example:
 
      {{! This is a comment inside macro escape characters }}
 
-   shows that the "!" symbol is for comments.
+   shows that the "!"  symbol is for comments.
 
    Alternately, a macro could query the user during insertion:
 
@@ -722,7 +703,7 @@ prefix, non-alpha character or symbol.  For example:
         {{^}}
         ) ;; End of {{NAME}}
 
-   the "?" symbol indicates that if the symbol NAME isn't in the
+   the "?"  symbol indicates that if the symbol NAME isn't in the
 dictionary, then the user should be queried for the NAME variable.  If
 NAME appears again in the template, the original value specified by the
 user will be inserted again.
@@ -735,8 +716,8 @@ example:
         | {{|THIS:4}} | {{|THAT:4}} |{{/A}}
 
    For each repeated section "#A" the dictionary values for THIS and
-THAT will be inserted and either trimmed to, or expanded to 4
-characters in width.
+THAT will be inserted and either trimmed to, or expanded to 4 characters
+in width.
 
    Macros that are prefixed with the "#" symbol denote a section.  A
 macro of the same name with a "/" prefix denotes the end of that
@@ -760,10 +741,10 @@ macros would look like this:
 
      {{>FOO:defun}}
 
-   where `FOO' is the dictionary variable for the sub-dictionary used
-for expanding the template `defun'.  The `defun' template will be
-looked up in the template repository for the current mode, or in any
-inherited modes.
+   where 'FOO' is the dictionary variable for the sub-dictionary used
+for expanding the template 'defun'.  The 'defun' template will be looked
+up in the template repository for the current mode, or in any inherited
+modes.
 
    Another way to include another template is with an include macro that
 will also wrap section text.  The includewrap insertion method looks
@@ -771,16 +752,16 @@ like this:
 
      {{<FOO:defun}}Handy Text goes here{{/FOO}}
 
-   In this case, `defun' is included just as above.  If the `defun'
-template has a {{^}} macro in it, then the section text "Handy Text
-goes here" will be inserted at that point, and that location will not
-be saved as the cursor location.
+   In this case, 'defun' is included just as above.  If the 'defun'
+template has a {{^}} macro in it, then the section text "Handy Text goes
+here" will be inserted at that point, and that location will not be
+saved as the cursor location.
 
    If there is no {{^}}, then the text will not be inserted.
 
    For both kinds of include macros, you may need to include a template
-from a different context.  You can use `:' separate the context from
-the name, like this:
+from a different context.  You can use ':' separate the context from the
+name, like this:
 
      {{>FOO:declaration:function}}
 
@@ -791,8 +772,8 @@ File: srecode.info,  Node: Contexts,  Next: Prompts,  Prev: Templates,  Up: Temp
 ===========
 
 Each template belongs to a context.  When promting for a template by
-name, such as with `C-c / /', the name is prefixed by the current
-context.  If there is no context, it defaults to `declaration'.
+name, such as with 'C-c / /', the name is prefixed by the current
+context.  If there is no context, it defaults to 'declaration'.
 
    You can change context like this:
 
@@ -817,12 +798,12 @@ next context statement.  Thus:
      ----
      ----
 
-   creates two `foo' templates.  The first one is when in context C1.
+   creates two 'foo' templates.  The first one is when in context C1.
 The second is available in context C2.
 
    This is useful if there are multiple ways to declare something like a
 function or variable that differ only by where it is in the syntax of
-the lanugage.  The name `foo' is not ambiguous because each is in a
+the lanugage.  The name 'foo' is not ambiguous because each is in a
 different context.
 
 
@@ -836,7 +817,7 @@ prompt looks like this:
 
      {{?NAME}}
 
-   where ? comes after the first escape character.
+   where ?  comes after the first escape character.
 
    by default, it will use a prompt like this when it is encountered:
 
@@ -864,20 +845,20 @@ and subsequent occurances of that dictionary entry use the same value.
 
      prompt VARNAME "VARNAME: " default "srecode" read y-or-n-p
 
-   In this case, the `default' keyword indicates that `"srecode"' is
-the default string to use, and `y-or-n-p' is the function to use to ask
-the question.
+   In this case, the 'default' keyword indicates that '"srecode"' is the
+default string to use, and 'y-or-n-p' is the function to use to ask the
+question.
 
-   For `y-or-n-p' if you type "y" it inserts the default string,
+   For 'y-or-n-p' if you type "y" it inserts the default string,
 otherwise it inserts empty.
 
-   For any other symbol that occurs after the `read' token, it is
-expected to take the same argument list as `read-string'.  As such, you
+   For any other symbol that occurs after the 'read' token, it is
+expected to take the same argument list as 'read-string'.  As such, you
 can create your own prompts that do completing reads on deterministic
 values.
 
    To have the default be calculated later from a dictionary entry, you
-need to use the `defaultmacro' keyword instead.
+need to use the 'defaultmacro' keyword instead.
 
      prompt VARNAME "Varname: " defaultmacro "PREFIX"
 
@@ -898,8 +879,8 @@ variable names could be anything, but how it is handled is dependent on
 the type of macro being inserted.
 
    Most of this chapter is for writing Lisp programs that use SRecode.
-If you only want to write template files, then you only need to read
-the *note Template Argument Dictionary Entries:: section.
+If you only want to write template files, then you only need to read the
+*note Template Argument Dictionary Entries:: section.
 
 * Menu:
 
@@ -920,8 +901,8 @@ File: srecode.info,  Node: Create a Dictionary,  Next: Setting Dictionary Values
  -- Function: srecode-create-dictionary &optional buffer
      Create a dictionary for BUFFER.  If BUFFER is not specified, use
      the current buffer.  The dictionary is initialized with no
-     variables or enabled sections.  Any variables defined with `set'
-     in the template, however, becomes a name in the dictionary.
+     variables or enabled sections.  Any variables defined with 'set' in
+     the template, however, becomes a name in the dictionary.
 
 
 File: srecode.info,  Node: Setting Dictionary Values,  Next: Compound Dictionary Values,  Prev: Create a Dictionary,  Up: Dictionaries
@@ -954,7 +935,7 @@ either be toggled as visible, or it can act as a loop.
      each dictionary added to a variable, the block of codes in the
      template will be repeated.
 
-     If optional argument SHOW-ONLY is non-`nil', then don't add a new
+     If optional argument SHOW-ONLY is non-'nil', then don't add a new
      dictionarly if there is already one in place.  Also, don't add
      FIRST/LAST entries.  These entries are not needed when we are just
      showing a section.
@@ -962,16 +943,13 @@ either be toggled as visible, or it can act as a loop.
      Each dictionary added will automatically get values for positional
      macros which will enable SECTIONS to be enabled.
 
-    FIRST
+     FIRST
           The first entry in the table.
-
-    NOTFIRST
+     NOTFIRST
           Not the first entry in the table.
-
-    LAST
+     LAST
           The last entry in the table
-
-    NOTLAST
+     NOTLAST
           Not the last entry in the table.
 
      Adding a new dictionary will alter these values in previously
@@ -985,24 +963,23 @@ File: srecode.info,  Node: Compound Dictionary Values,  Next: Argument Resolutio
 
 If you want to associate a non-string value with a dictionary variable,
 then you will need to use a compound value.  Compound dictionary values
-are derived using EIEIO from a base class for handling arbitrary data
-in a macro.
+are derived using EIEIO from a base class for handling arbitrary data in
+a macro.
 
  -- Type: srecode-dictionary-compound-value
-     A compound dictionary value.  Values stored in a dictionary must
-     be a STRING, a dictionary for showing sections, or an instance of
-     a subclass of this class.
+     A compound dictionary value.  Values stored in a dictionary must be
+     a STRING, a dictionary for showing sections, or an instance of a
+     subclass of this class.
 
-     Compound dictionary values derive from this class, and must
-     provide a sequence of method implementations to convert into a
-     string.
+     Compound dictionary values derive from this class, and must provide
+     a sequence of method implementations to convert into a string.
 
    Your new subclass of the compound value needs to implement these
 methods:
 
  -- Function: srecode-compound-toString cp function dictionary
      Convert the compound dictionary value CP to a string.  If FUNCTION
-     is non-`nil', then FUNCTION is somehow applied to an aspect of the
+     is non-'nil', then FUNCTION is somehow applied to an aspect of the
      compound value.  The FUNCTION could be a fraction of some function
      symbol with a logical prefix excluded.
 
@@ -1059,7 +1036,7 @@ File: srecode.info,  Node: Creating new Arguments,  Next: Querying a Dictionary,
 
 You can create new arguments for use in template files by writing new
 Emacs Lisp functions.  Doing so is easy.  Here is an example for the
-`:user' argument:
+':user' argument:
 
      (defun srecode-semantic-handle-:user (dict)
        "Add macros into the dictionary DICT based on the current :user."
@@ -1069,8 +1046,8 @@ Emacs Lisp functions.  Doing so is easy.  Here is an example for the
        )
 
    In this case, a function with the name prefix
-`srecode-semantic-handle-' that ends in `:user' creates a new argument
-`:user' that can be used in a template.
+'srecode-semantic-handle-' that ends in ':user' creates a new argument
+':user' that can be used in a template.
 
    Your argument handler must take one argument DICT, which is the
 dictionary to fill in.  Inside your function, you can do whatever you
@@ -1083,8 +1060,8 @@ File: srecode.info,  Node: Querying a Dictionary,  Next: Template Argument Dicti
 =========================
 
 When creating a new argument, it may be useful to ask the dicitonary
-what entries are already set there, and conditionally create new
-entries based on those.
+what entries are already set there, and conditionally create new entries
+based on those.
 
    In this way, a template author can get additional logic through more
 advanced arguments.
@@ -1130,28 +1107,28 @@ File: srecode.info,  Node: Base Arguments,  Next: Semantic Arguments,  Up: Templ
 6.7.1.1 Argument :indent
 ........................
 
-Supplies the `INDENT' macro.  When `INDENT' is non-nil, then each line
-is individually indented with `indent-according-to-mode' during macro
+Supplies the 'INDENT' macro.  When 'INDENT' is non-nil, then each line
+is individually indented with 'indent-according-to-mode' during macro
 processing.
 
 6.7.1.2 Argument :blank
 .......................
 
-Specifying this argument adds a special `:blank' handler at the
-beginning and end of the template.  This handler will insert `\n' if
-the insertion point is not on a line by itself.
+Specifying this argument adds a special ':blank' handler at the
+beginning and end of the template.  This handler will insert '\n' if the
+insertion point is not on a line by itself.
 
 6.7.1.3 Argument :region
 ........................
 
-If there is an active region via `transient-mark-mode', or
-`mouse-drag-region', then the `REGION' section will be enabled.
+If there is an active region via 'transient-mark-mode', or
+'mouse-drag-region', then the 'REGION' section will be enabled.
 
-   In addition, `REGIONTEXT' will be set the the text in the region,
-and that region of text will be "killed" from the current buffer.
+   In addition, 'REGIONTEXT' will be set the the text in the region, and
+that region of text will be "killed" from the current buffer.
 
    If standard-output is NOT the current buffer, then the region will
-not be deleted.  In this way, you can safely use `:region' using
+not be deleted.  In this way, you can safely use ':region' using
 templates in arbitrary output streams.
 
 6.7.1.4 Argument :user
@@ -1159,19 +1136,15 @@ templates in arbitrary output streams.
 
 Sets up variables about the current user.
 
-`AUTHOR'
-     Value of the Emacs function `user-full-name'
-
-`EMAIL'
+'AUTHOR'
+     Value of the Emacs function 'user-full-name'
+'EMAIL'
      Current Emacs user's email address.
-
-`LOGIN'
+'LOGIN'
      Current Emacs user's login name.
-
-`UID'
+'UID'
      Current Emacs user's login ID.
-
-`EMACSINITFILE'
+'EMACSINITFILE'
      This Emacs sessions' init file.
 
 6.7.1.5 Argument :time
@@ -1179,43 +1152,31 @@ Sets up variables about the current user.
 
 Sets up variables with the current date and time.
 
-`YEAR'
+'YEAR'
      The current year.
-
-`MONTH'
+'MONTH'
      The current month as a number.
-
-`MONTHNAME'
+'MONTHNAME'
      The current month name, unabbreviated.
-
-`DAY'
+'DAY'
      The current day as a number.
-
-`WEEKDAY'
+'WEEKDAY'
      The current day of the week as an abbreviated name
-
-`HOUR'
+'HOUR'
      The current hour in 24 hour format.
-
-`HOUR12'
+'HOUR12'
      The current hour in 12 hour format.
-
-`AMPM'
-     Locale equivalent of AM or PM.  Usefule with HOUR12.
-
-`MINUTE'
+'AMPM'
+     Locale equivalent of AM or PM. Usefule with HOUR12.
+'MINUTE'
      The current minute.
-
-`SECOND'
+'SECOND'
      The current second.
-
-`TIMEZONE'
+'TIMEZONE'
      The timezone string.
-
-`DATE'
+'DATE'
      The Locale supported date (%D).
-
-`TIME'
+'TIME'
      The Locale supported time format (%X).
 
 6.7.1.6 Argument :file
@@ -1223,26 +1184,20 @@ Sets up variables with the current date and time.
 
 Sets up variables with details about the current file.
 
-`FILENAME'
+'FILENAME'
      The filename without the directory part of the current buffer.
-
-`FILE'
+'FILE'
      The filename without the directory or extension
-
-`EXTENSION'
+'EXTENSION'
      The filename extension.
-
-`DIRECTORY'
+'DIRECTORY'
      The directory in which the current buffer resides.
-
-`MODE'
+'MODE'
      Major mode of this buffer.
-
-`SHORTMODE'
+'SHORTMODE'
      Major mode of this buffer without "-mode".  Useful for inserting
      the Emacs mode specifier.
-
-`section RCS'
+'section RCS'
      Show the section RCS if there is a CVS or RCS directory here.
 
 6.7.1.7 Argument :system
@@ -1250,31 +1205,25 @@ Sets up variables with details about the current file.
 
 Sets up variables with computer system information.
 
-`SYSTEMCONF'
+'SYSTEMCONF'
      The "system-configuration".
-
-`SYSTEMTYPE'
+'SYSTEMTYPE'
      The "system-type".
-
-`SYSTEMNAME'
+'SYSTEMNAME'
      The "system-name".
-
-`MAILHOST'
+'MAILHOST'
      The name of the machine Emacs derived mail "comes from".
 
 6.7.1.8 Argument :kill
 ......................
 
-`KILL'
+'KILL'
      The top-most item from the kill ring.
-
-`KILL2'
+'KILL2'
      The second item in the kill ring.
-
-`KILL3'
+'KILL3'
      The third item in the kill ring.
-
-`KILL4'
+'KILL4'
      The fourth item in the kill ring.
 
 
@@ -1290,67 +1239,60 @@ The :tag argument is filled in with information from Semantic.  The tag
 in question is queried from the senator tag ring, or passed in from
 SRecode utilities that use tags in templates.
 
-`TAG'
+'TAG'
      This is a compound value for the tag in the current senator kill
      ring, or something handled via the variable
-     `srecode-semantic-selected-tag'.
+     'srecode-semantic-selected-tag'.
 
       -- Variable: srecode-semantic-selected-tag
-          The tag selected by a `:tag' template argument.  If this is
-          `nil', then `senator-tag-ring' is used.
+          The tag selected by a ':tag' template argument.  If this is
+          'nil', then 'senator-tag-ring' is used.
 
-     Use the function part of a macro insert to extract obscure parts
-     of the tag.
-
-`NAME'
+     Use the function part of a macro insert to extract obscure parts of
+     the tag.
+'NAME'
      The name of the tag as a string.
-
-`TYPE'
+'TYPE'
      The data type of the tag as a string.
 
    If TAG is a function, you will get these additional dictionary
 entries.
 
-`ARGS'
-     A Loop macro value.  Each argument is inserted in ARGS.  To create
-     a comma separated list of arguments, you might do this:
+'ARGS'
+     A Loop macro value.  Each argument is inserted in ARGS. To create a
+     comma separated list of arguments, you might do this:
 
           {{#ARGS}}{{TYPE}} {{NAME}}{{#NOTLAST}},{{/NOTLAST}}{{/ARGS}}
 
      Within the section dictionaries for each argument, you will find
-     both NAME and TYPE, in addition to the automatic section values
-     for FIRST, LAST, NOTFIRST, and NOTLAST.
-
-`PARENT'
+     both NAME and TYPE, in addition to the automatic section values for
+     FIRST, LAST, NOTFIRST, and NOTLAST.
+'PARENT'
      The string name of the parent of this function, if the function is
      a method of some class.
-
-`THROWS'
+'THROWS'
      In each THROWS entry, the NAME of the signal thrown is specified.
 
    If TAG is a variable, you will get these dictionary entries.
 
-`DEFAULTVALUE'
+'DEFAULTVALUE'
      Enabled if there is a VALUE.
-
-`VALUE'
+'VALUE'
      An entry in the HAVEDEFAULT subdictionary that represents the
      textual representation of the default value of this variable.
 
    If TAG is a datatype, you will get these dictionary entries.
 
-`PARENTS'
+'PARENTS'
      Section dictionaries for the parents of this class.  Each parent
      will have a NAME.
-
-`INTERFACES'
+'INTERFACES'
      Section dictionaries for all the implemented interfaces of this
      class.  Each interface will have a NAME.
 
-   Note that data type templates should always have a `{{^}}' macro in
-it where the core contents of that type will go.  This is why data
-types don't have subdictionaries full of the slots in the classes or
-structs.
+   Note that data type templates should always have a '{{^}}' macro in
+it where the core contents of that type will go.  This is why data types
+don't have subdictionaries full of the slots in the classes or structs.
 
 
 File: srecode.info,  Node: Language Arguments,  Prev: Semantic Arguments,  Up: Template Argument Dictionary Entries
@@ -1366,42 +1308,37 @@ used to fill in language specific values that will be useful.
 
 Used for SRecoder template files.
 
-`ESCAPE_START'
+'ESCAPE_START'
      The characters used for an escape start
-
-`ESCAPE_END'
+'ESCAPE_END'
      The characters used for an escape end
 
 6.7.3.2 Argument :cpp
 .....................
 
-`HEADER'
+'HEADER'
      Shows this section if the current file is a header file.
-
-`NOTHEADER'
-     The opposite of `HEADER'.
-
-`FILENAME_SYMBOL'
+'NOTHEADER'
+     The opposite of 'HEADER'.
+'FILENAME_SYMBOL'
      The current filename reformatted as a C friendly symbol.
 
 6.7.4 Argument :java
 --------------------
 
-`FILENAME_AS_PACKAGE'
+'FILENAME_AS_PACKAGE'
      Converts the filename into text that would be suitable as a package
      name.
-
-`FILENAME_AS_CLASS'
+'FILENAME_AS_CLASS'
      Converts the filename into text that would be suitable as a
      class-name for the main class in the file.
-
-`CURRENT_PACKAGE'
+'CURRENT_PACKAGE'
      Finds the occurance of "package" and gets its value.
 
 6.7.4.1 Argument :el
 ....................
 
-Sets `PRENAME'.  This would be a common prefix from all the tags in the
+Sets 'PRENAME'.  This would be a common prefix from all the tags in the
 current buffer.
 
    Most Emacs Lisp packages have some common prefix used in a way
@@ -1410,38 +1347,36 @@ similar to namespaces in other languages.
 6.7.4.2 Argument :el-custom
 ...........................
 
-`GROUP'
-     The name of the Emacs Custom group that instances of `defcustom'
+'GROUP'
+     The name of the Emacs Custom group that instances of 'defcustom'
      ought to use.
-
-`FACEGROUP'
+'FACEGROUP'
      The name of the Emacs Custom group that faces delcared with
-     `defface' ought to use.
+     'defface' ought to use.
 
 6.7.4.3 Argument :texi
 ......................
 
-`LEVEL'
-     The current section level, such as `chapter' or `section'.
-
-`NEXTLEVEL'
-     The next level down, so if `LEVEL' is `chapter', then `NEXTLEVEL'
-     would be `section'.
+'LEVEL'
+     The current section level, such as 'chapter' or 'section'.
+'NEXTLEVEL'
+     The next level down, so if 'LEVEL' is 'chapter', then 'NEXTLEVEL'
+     would be 'section'.
 
 6.7.4.4 Argument :texitag
 .........................
 
-The `:texitag' argument is like the `:tag' argument, except that
-additional variable `TAGDOC' is provided for each tag.
+The ':texitag' argument is like the ':tag' argument, except that
+additional variable 'TAGDOC' is provided for each tag.
 
-   The `TAGDOC' is filled with derived documentation from the tag in
+   The 'TAGDOC' is filled with derived documentation from the tag in
 question, and that documentation is also reformatted to be mostly
 texinfo compatible.
 
 6.7.5 Argument :android
 -----------------------
 
-The `:android' argument pulls in information from your current project.
+The ':android' argument pulls in information from your current project.
 
    @TODO - add more here.
 
@@ -1526,10 +1461,10 @@ look the template up in.
           context application
      Find in the template in mode table TAB, the template with
      TEMPLATE-NAME.  Optional argument CONTEXT specifies a context a
-     particular template would belong to.  Optional argument
-     APPLICATION restricts searches to only template tables belonging
-     to a specific application.  If APPLICATION is `nil', then only
-     tables that do not belong to an application will be searched.
+     particular template would belong to.  Optional argument APPLICATION
+     restricts searches to only template tables belonging to a specific
+     application.  If APPLICATION is 'nil', then only tables that do not
+     belong to an application will be searched.
 
    For purposes of an SRecode application, it is important to decide
 what to call yoru application, and use that with this method call.
@@ -1538,17 +1473,14 @@ what to call yoru application, and use that with this method call.
 =========================
 
 Several dictionary calls are made in this example, including:
-`srecode-create-dictionary'
-
-`srecode-dictionary-set-value'
-
-`srecode-dictionary-show-section'
-
-`srecode-dictionary-add-section-dictionary'
+'srecode-create-dictionary'
+'srecode-dictionary-set-value'
+'srecode-dictionary-show-section'
+'srecode-dictionary-add-section-dictionary'
 
    These are documented more fully *note Dictionaries::.
 
-   Also used is `srecode-resolve-arguments'.  To learn more about that,
+   Also used is 'srecode-resolve-arguments'.  To learn more about that,
 see *note Argument Resolution::.
 
 7.4 Template Insertion Commands
@@ -1569,13 +1501,13 @@ File: srecode.info,  Node: Template Naming Conventions,  Next: Inserting Tag Lis
 
 For SRecode to work across langauges reliably, templates need to follow
 a predictable pattern.  For every language of similar nature (OO,
-functional, doc based) if they all provide the same base templates,
-then an application can be written against the base templates, and it
-will work in each of the supported language.
+functional, doc based) if they all provide the same base templates, then
+an application can be written against the base templates, and it will
+work in each of the supported language.
 
    Having consistent templates also makes it easy to use those templates
 from a user perspective during basic interactive insertion via
-`srecode-minor-mode'.
+'srecode-minor-mode'.
 
    NOTES ON THIS CHAPTER:
 
@@ -1586,7 +1518,7 @@ provide your opinions on this topic.  Any help is appreciated.
 8.1 Context: File
 =================
 
-Each language should support the `file:empty' template.  This will
+Each language should support the 'file:empty' template.  This will
 generally use the default copyright insertion mechanism.
 
 8.2 Context: Declaration
@@ -1594,33 +1526,28 @@ generally use the default copyright insertion mechanism.
 
 Functional languages should attempt to support the following:
 
-`function'
+'function'
      A standalone function.  Not a method, external method, or other.
-
-`method'
+'method'
      A method belonging to some class declaired outside the textual
      bounds of that class' declaration.
-
-`variable'
+'variable'
      A global variable.
-
-`type'
+'type'
      A data type.  If the language supports several types of datatypes
      then do not use this, use more specific ones instead.
-
-`class'
-     For OO languages, use this instead of `type'.
-
-`include'
+'class'
+     For OO languages, use this instead of 'type'.
+'include'
      Include files.
 
    For any Semantic tag class in your language, you will likely want to
 have a corresponding template.
 
-   In order for the SRecode function `srecode-semantic-insert-tag' to
+   In order for the SRecode function 'srecode-semantic-insert-tag' to
 work, you can create templates similar to those mentioned above, except
-with `-tag' appended to the end.  This lets a template like `function'
-have user conveniences when referencing `function-tag', while also
+with '-tag' appended to the end.  This lets a template like 'function'
+have user conveniences when referencing 'function-tag', while also
 allowing the tag inserter to do its job with a simpler template.
 
 8.3 Context: Classdef
@@ -1629,14 +1556,12 @@ allowing the tag inserter to do its job with a simpler template.
 Inside a class definition.  These are to be inserted inside the textual
 bounds of a class declaration.
 
-`function'
+'function'
      This would be a method of the class being inserted into.
-
-`constructor'
-`destructor'
-     Like `function' but specific to alloc/delete of an object.
-
-`variable'
+'constructor'
+'destructor'
+     Like 'function' but specific to alloc/delete of an object.
+'variable'
      This would be a field of the class being inserted into.
 
 8.4 Context: Code
@@ -1655,30 +1580,25 @@ application.
 
 NAME
      The name of the declaration being created.
-
 PARENT
      If the item belongs to some parent type, it would be the full name
      of that type, including namespaces.
-
 TYPE
      A datatype name for a variable, or the return value of a function.
-
 DOC
      If there is some documentation associated with the item, then DOC
      should contain the value.  (Optional)
-
 ARGS
      The ARGS variable defines a section for 0 or more arguments to a
      function or method.  Each entry in ARGS will follow the rest of
      these naming conventions, such as for NAME and TYPE.
 
-   For templates used by `srecode-semantic-insert-tag', there is also
+   For templates used by 'srecode-semantic-insert-tag', there is also
 the following useful dictionary values.
 
 TAG
-     A special insertion value TAG.  You can use semantic functions to
+     A special insertion value TAG. You can use semantic functions to
      turn the tag into a string.
-
 HAVEDEFAULT
 DEFAULT
      Default value for a variable.
@@ -1701,8 +1621,8 @@ templates to make it work.
      Insert TAG into a buffer using srecode templates at point.
 
      Optional STYLE-OPTION is a list of minor configuration of styles,
-     such as the symbol `'prototype' for prototype functions, or
-     `'system' for system includes, and `'doxygen', for a doxygen style
+     such as the symbol ''prototype' for prototype functions, or
+     ''system' for system includes, and ''doxygen', for a doxygen style
      comment.
 
      Optional third argument POINT-INSERT-FCN is a hook that is run
@@ -1710,19 +1630,18 @@ templates to make it work.
      body of some thing.  This hook function is called with one
      argument, the TAG being inserted.
 
-     The rest of the arguments are DICT-ENTRIES.  DICT-ENTRIES is of
-     the form ( NAME1 VALUE1 NAME2 VALUE2 ... NAMEn VALUEn).
+     The rest of the arguments are DICT-ENTRIES.  DICT-ENTRIES is of the
+     form ( NAME1 VALUE1 NAME2 VALUE2 ... NAMEn VALUEn).
 
      The exact template used is based on the current context.  The
-     template used is found within the toplevel context as calculated
-     by "srecode-calculate-context", such as `declaration', `classdecl',
-     or `code'.
+     template used is found within the toplevel context as calculated by
+     "srecode-calculate-context", such as 'declaration', 'classdecl', or
+     'code'.
 
-     For various conditions, this function looks for a template with
-     the name CLASS-tag, where CLASS is the tag class.  If it cannot
-     find that, it will look for that template in the
-     `declaration'context (if the current context was not
-     `declaration').
+     For various conditions, this function looks for a template with the
+     name CLASS-tag, where CLASS is the tag class.  If it cannot find
+     that, it will look for that template in the 'declaration'context
+     (if the current context was not 'declaration').
 
      If PROTOTYPE is specified, it will first look for templates with
      the name CLASS-tag-prototype, or CLASS-prototype as above.
@@ -1762,9 +1681,9 @@ and then the application specific templates.
 
  -- Function: srecode-load-tables-for-mode mmode &optional appname
      Load all the template files for MMODE.  Templates are found in the
-     SRecode Template Map.  See "srecode-get-maps" for more.  APPNAME
-     is the name of an application.  In this case, all template files
-     for that application will be loaded.
+     SRecode Template Map.  See "srecode-get-maps" for more.  APPNAME is
+     the name of an application.  In this case, all template files for
+     that application will be loaded.
 
    todo: Add examples.  Most core stuff is already described above.
 
@@ -1777,7 +1696,7 @@ Appendix A GNU Free Documentation License
                      Version 1.3, 3 November 2008
 
      Copyright (C) 2000, 2001, 2002, 2007, 2008, 2009 Free Software Foundation, Inc.
-     `http://fsf.org/'
+     <http://fsf.org/>
 
      Everyone is permitted to copy and distribute verbatim copies
      of this license document, but changing it is not allowed.
@@ -1802,21 +1721,21 @@ Appendix A GNU Free Documentation License
      free program should come with manuals providing the same freedoms
      that the software does.  But this License is not limited to
      software manuals; it can be used for any textual work, regardless
-     of subject matter or whether it is published as a printed book.
-     We recommend this License principally for works whose purpose is
+     of subject matter or whether it is published as a printed book.  We
+     recommend this License principally for works whose purpose is
      instruction or reference.
 
   1. APPLICABILITY AND DEFINITIONS
 
      This License applies to any manual or other work, in any medium,
-     that contains a notice placed by the copyright holder saying it
-     can be distributed under the terms of this License.  Such a notice
+     that contains a notice placed by the copyright holder saying it can
+     be distributed under the terms of this License.  Such a notice
      grants a world-wide, royalty-free license, unlimited in duration,
      to use that work under the conditions stated herein.  The
      "Document", below, refers to any such manual or work.  Any member
-     of the public is a licensee, and is addressed as "you".  You
-     accept the license if you copy, modify or distribute the work in a
-     way requiring permission under copyright law.
+     of the public is a licensee, and is addressed as "you".  You accept
+     the license if you copy, modify or distribute the work in a way
+     requiring permission under copyright law.
 
      A "Modified Version" of the Document means any work containing the
      Document or a portion of it, either copied verbatim, or with
@@ -1834,12 +1753,12 @@ Appendix A GNU Free Documentation License
      regarding them.
 
      The "Invariant Sections" are certain Secondary Sections whose
-     titles are designated, as being those of Invariant Sections, in
-     the notice that says that the Document is released under this
-     License.  If a section does not fit the above definition of
-     Secondary then it is not allowed to be designated as Invariant.
-     The Document may contain zero Invariant Sections.  If the Document
-     does not identify any Invariant Sections then there are none.
+     titles are designated, as being those of Invariant Sections, in the
+     notice that says that the Document is released under this License.
+     If a section does not fit the above definition of Secondary then it
+     is not allowed to be designated as Invariant.  The Document may
+     contain zero Invariant Sections.  If the Document does not identify
+     any Invariant Sections then there are none.
 
      The "Cover Texts" are certain short passages of text that are
      listed, as Front-Cover Texts or Back-Cover Texts, in the notice
@@ -1850,27 +1769,27 @@ Appendix A GNU Free Documentation License
      A "Transparent" copy of the Document means a machine-readable copy,
      represented in a format whose specification is available to the
      general public, that is suitable for revising the document
-     straightforwardly with generic text editors or (for images
-     composed of pixels) generic paint programs or (for drawings) some
-     widely available drawing editor, and that is suitable for input to
-     text formatters or for automatic translation to a variety of
-     formats suitable for input to text formatters.  A copy made in an
-     otherwise Transparent file format whose markup, or absence of
-     markup, has been arranged to thwart or discourage subsequent
-     modification by readers is not Transparent.  An image format is
-     not Transparent if used for any substantial amount of text.  A
-     copy that is not "Transparent" is called "Opaque".
+     straightforwardly with generic text editors or (for images composed
+     of pixels) generic paint programs or (for drawings) some widely
+     available drawing editor, and that is suitable for input to text
+     formatters or for automatic translation to a variety of formats
+     suitable for input to text formatters.  A copy made in an otherwise
+     Transparent file format whose markup, or absence of markup, has
+     been arranged to thwart or discourage subsequent modification by
+     readers is not Transparent.  An image format is not Transparent if
+     used for any substantial amount of text.  A copy that is not
+     "Transparent" is called "Opaque".
 
      Examples of suitable formats for Transparent copies include plain
      ASCII without markup, Texinfo input format, LaTeX input format,
-     SGML or XML using a publicly available DTD, and
-     standard-conforming simple HTML, PostScript or PDF designed for
-     human modification.  Examples of transparent image formats include
-     PNG, XCF and JPG.  Opaque formats include proprietary formats that
-     can be read and edited only by proprietary word processors, SGML or
-     XML for which the DTD and/or processing tools are not generally
-     available, and the machine-generated HTML, PostScript or PDF
-     produced by some word processors for output purposes only.
+     SGML or XML using a publicly available DTD, and standard-conforming
+     simple HTML, PostScript or PDF designed for human modification.
+     Examples of transparent image formats include PNG, XCF and JPG.
+     Opaque formats include proprietary formats that can be read and
+     edited only by proprietary word processors, SGML or XML for which
+     the DTD and/or processing tools are not generally available, and
+     the machine-generated HTML, PostScript or PDF produced by some word
+     processors for output purposes only.
 
      The "Title Page" means, for a printed book, the title page itself,
      plus such following pages as are needed to hold, legibly, the
@@ -1908,8 +1827,8 @@ Appendix A GNU Free Documentation License
      may not use technical measures to obstruct or control the reading
      or further copying of the copies you make or distribute.  However,
      you may accept compensation in exchange for copies.  If you
-     distribute a large enough number of copies you must also follow
-     the conditions in section 3.
+     distribute a large enough number of copies you must also follow the
+     conditions in section 3.
 
      You may also lend copies, under the same conditions stated above,
      and you may publicly display copies.
@@ -1923,12 +1842,11 @@ Appendix A GNU Free Documentation License
      these Cover Texts: Front-Cover Texts on the front cover, and
      Back-Cover Texts on the back cover.  Both covers must also clearly
      and legibly identify you as the publisher of these copies.  The
-     front cover must present the full title with all words of the
-     title equally prominent and visible.  You may add other material
-     on the covers in addition.  Copying with changes limited to the
-     covers, as long as they preserve the title of the Document and
-     satisfy these conditions, can be treated as verbatim copying in
-     other respects.
+     front cover must present the full title with all words of the title
+     equally prominent and visible.  You may add other material on the
+     covers in addition.  Copying with changes limited to the covers, as
+     long as they preserve the title of the Document and satisfy these
+     conditions, can be treated as verbatim copying in other respects.
 
      If the required texts for either cover are too voluminous to fit
      legibly, you should put the first ones listed (as many as fit
@@ -1936,40 +1854,39 @@ Appendix A GNU Free Documentation License
      adjacent pages.
 
      If you publish or distribute Opaque copies of the Document
-     numbering more than 100, you must either include a
-     machine-readable Transparent copy along with each Opaque copy, or
-     state in or with each Opaque copy a computer-network location from
-     which the general network-using public has access to download
-     using public-standard network protocols a complete Transparent
-     copy of the Document, free of added material.  If you use the
-     latter option, you must take reasonably prudent steps, when you
-     begin distribution of Opaque copies in quantity, to ensure that
-     this Transparent copy will remain thus accessible at the stated
-     location until at least one year after the last time you
-     distribute an Opaque copy (directly or through your agents or
-     retailers) of that edition to the public.
+     numbering more than 100, you must either include a machine-readable
+     Transparent copy along with each Opaque copy, or state in or with
+     each Opaque copy a computer-network location from which the general
+     network-using public has access to download using public-standard
+     network protocols a complete Transparent copy of the Document, free
+     of added material.  If you use the latter option, you must take
+     reasonably prudent steps, when you begin distribution of Opaque
+     copies in quantity, to ensure that this Transparent copy will
+     remain thus accessible at the stated location until at least one
+     year after the last time you distribute an Opaque copy (directly or
+     through your agents or retailers) of that edition to the public.
 
      It is requested, but not required, that you contact the authors of
-     the Document well before redistributing any large number of
-     copies, to give them a chance to provide you with an updated
-     version of the Document.
+     the Document well before redistributing any large number of copies,
+     to give them a chance to provide you with an updated version of the
+     Document.
 
   4. MODIFICATIONS
 
      You may copy and distribute a Modified Version of the Document
      under the conditions of sections 2 and 3 above, provided that you
-     release the Modified Version under precisely this License, with
-     the Modified Version filling the role of the Document, thus
-     licensing distribution and modification of the Modified Version to
-     whoever possesses a copy of it.  In addition, you must do these
-     things in the Modified Version:
+     release the Modified Version under precisely this License, with the
+     Modified Version filling the role of the Document, thus licensing
+     distribution and modification of the Modified Version to whoever
+     possesses a copy of it.  In addition, you must do these things in
+     the Modified Version:
 
        A. Use in the Title Page (and on the covers, if any) a title
-          distinct from that of the Document, and from those of
-          previous versions (which should, if there were any, be listed
-          in the History section of the Document).  You may use the
-          same title as a previous version if the original publisher of
-          that version gives permission.
+          distinct from that of the Document, and from those of previous
+          versions (which should, if there were any, be listed in the
+          History section of the Document).  You may use the same title
+          as a previous version if the original publisher of that
+          version gives permission.
 
        B. List on the Title Page, as authors, one or more persons or
           entities responsible for authorship of the modifications in
@@ -1999,31 +1916,30 @@ Appendix A GNU Free Documentation License
 
        I. Preserve the section Entitled "History", Preserve its Title,
           and add to it an item stating at least the title, year, new
-          authors, and publisher of the Modified Version as given on
-          the Title Page.  If there is no section Entitled "History" in
-          the Document, create one stating the title, year, authors,
-          and publisher of the Document as given on its Title Page,
-          then add an item describing the Modified Version as stated in
-          the previous sentence.
+          authors, and publisher of the Modified Version as given on the
+          Title Page.  If there is no section Entitled "History" in the
+          Document, create one stating the title, year, authors, and
+          publisher of the Document as given on its Title Page, then add
+          an item describing the Modified Version as stated in the
+          previous sentence.
 
        J. Preserve the network location, if any, given in the Document
           for public access to a Transparent copy of the Document, and
           likewise the network locations given in the Document for
-          previous versions it was based on.  These may be placed in
-          the "History" section.  You may omit a network location for a
-          work that was published at least four years before the
-          Document itself, or if the original publisher of the version
-          it refers to gives permission.
+          previous versions it was based on.  These may be placed in the
+          "History" section.  You may omit a network location for a work
+          that was published at least four years before the Document
+          itself, or if the original publisher of the version it refers
+          to gives permission.
 
        K. For any section Entitled "Acknowledgements" or "Dedications",
-          Preserve the Title of the section, and preserve in the
-          section all the substance and tone of each of the contributor
+          Preserve the Title of the section, and preserve in the section
+          all the substance and tone of each of the contributor
           acknowledgements and/or dedications given therein.
 
-       L. Preserve all the Invariant Sections of the Document,
-          unaltered in their text and in their titles.  Section numbers
-          or the equivalent are not considered part of the section
-          titles.
+       L. Preserve all the Invariant Sections of the Document, unaltered
+          in their text and in their titles.  Section numbers or the
+          equivalent are not considered part of the section titles.
 
        M. Delete any section Entitled "Endorsements".  Such a section
           may not be included in the Modified Version.
@@ -2036,11 +1952,11 @@ Appendix A GNU Free Documentation License
 
      If the Modified Version includes new front-matter sections or
      appendices that qualify as Secondary Sections and contain no
-     material copied from the Document, you may at your option
-     designate some or all of these sections as invariant.  To do this,
-     add their titles to the list of Invariant Sections in the Modified
-     Version's license notice.  These titles must be distinct from any
-     other section titles.
+     material copied from the Document, you may at your option designate
+     some or all of these sections as invariant.  To do this, add their
+     titles to the list of Invariant Sections in the Modified Version's
+     license notice.  These titles must be distinct from any other
+     section titles.
 
      You may add a section Entitled "Endorsements", provided it contains
      nothing but endorsements of your Modified Version by various
@@ -2049,15 +1965,15 @@ Appendix A GNU Free Documentation License
      definition of a standard.
 
      You may add a passage of up to five words as a Front-Cover Text,
-     and a passage of up to 25 words as a Back-Cover Text, to the end
-     of the list of Cover Texts in the Modified Version.  Only one
-     passage of Front-Cover Text and one of Back-Cover Text may be
-     added by (or through arrangements made by) any one entity.  If the
-     Document already includes a cover text for the same cover,
-     previously added by you or by arrangement made by the same entity
-     you are acting on behalf of, you may not add another; but you may
-     replace the old one, on explicit permission from the previous
-     publisher that added the old one.
+     and a passage of up to 25 words as a Back-Cover Text, to the end of
+     the list of Cover Texts in the Modified Version.  Only one passage
+     of Front-Cover Text and one of Back-Cover Text may be added by (or
+     through arrangements made by) any one entity.  If the Document
+     already includes a cover text for the same cover, previously added
+     by you or by arrangement made by the same entity you are acting on
+     behalf of, you may not add another; but you may replace the old
+     one, on explicit permission from the previous publisher that added
+     the old one.
 
      The author(s) and publisher(s) of the Document do not by this
      License give permission to use their names for publicity for or to
@@ -2067,8 +1983,8 @@ Appendix A GNU Free Documentation License
 
      You may combine the Document with other documents released under
      this License, under the terms defined in section 4 above for
-     modified versions, provided that you include in the combination
-     all of the Invariant Sections of all of the original documents,
+     modified versions, provided that you include in the combination all
+     of the Invariant Sections of all of the original documents,
      unmodified, and list them all as Invariant Sections of your
      combined work in its license notice, and that you preserve all
      their Warranty Disclaimers.
@@ -2095,20 +2011,20 @@ Appendix A GNU Free Documentation License
      documents released under this License, and replace the individual
      copies of this License in the various documents with a single copy
      that is included in the collection, provided that you follow the
-     rules of this License for verbatim copying of each of the
-     documents in all other respects.
+     rules of this License for verbatim copying of each of the documents
+     in all other respects.
 
      You may extract a single document from such a collection, and
      distribute it individually under this License, provided you insert
-     a copy of this License into the extracted document, and follow
-     this License in all other respects regarding verbatim copying of
-     that document.
+     a copy of this License into the extracted document, and follow this
+     License in all other respects regarding verbatim copying of that
+     document.
 
   7. AGGREGATION WITH INDEPENDENT WORKS
 
      A compilation of the Document or its derivatives with other
-     separate and independent documents or works, in or on a volume of
-     a storage or distribution medium, is called an "aggregate" if the
+     separate and independent documents or works, in or on a volume of a
+     storage or distribution medium, is called an "aggregate" if the
      copyright resulting from the compilation is not used to limit the
      legal rights of the compilation's users beyond what the individual
      works permit.  When the Document is included in an aggregate, this
@@ -2153,8 +2069,8 @@ Appendix A GNU Free Documentation License
 
      However, if you cease all violation of this License, then your
      license from a particular copyright holder is reinstated (a)
-     provisionally, unless and until the copyright holder explicitly
-     and finally terminates your license, and (b) permanently, if the
+     provisionally, unless and until the copyright holder explicitly and
+     finally terminates your license, and (b) permanently, if the
      copyright holder fails to notify you of the violation by some
      reasonable means prior to 60 days after the cessation.
 
@@ -2166,33 +2082,33 @@ Appendix A GNU Free Documentation License
      after your receipt of the notice.
 
      Termination of your rights under this section does not terminate
-     the licenses of parties who have received copies or rights from
-     you under this License.  If your rights have been terminated and
-     not permanently reinstated, receipt of a copy of some or all of
-     the same material does not give you any rights to use it.
+     the licenses of parties who have received copies or rights from you
+     under this License.  If your rights have been terminated and not
+     permanently reinstated, receipt of a copy of some or all of the
+     same material does not give you any rights to use it.
 
- 10. FUTURE REVISIONS OF THIS LICENSE
+  10. FUTURE REVISIONS OF THIS LICENSE
 
      The Free Software Foundation may publish new, revised versions of
      the GNU Free Documentation License from time to time.  Such new
      versions will be similar in spirit to the present version, but may
      differ in detail to address new problems or concerns.  See
-     `http://www.gnu.org/copyleft/'.
+     <http://www.gnu.org/copyleft/>.
 
      Each version of the License is given a distinguishing version
      number.  If the Document specifies that a particular numbered
      version of this License "or any later version" applies to it, you
      have the option of following the terms and conditions either of
      that specified version or of any later version that has been
-     published (not as a draft) by the Free Software Foundation.  If
-     the Document does not specify a version number of this License,
-     you may choose any version ever published (not as a draft) by the
-     Free Software Foundation.  If the Document specifies that a proxy
-     can decide which future versions of this License can be used, that
+     published (not as a draft) by the Free Software Foundation.  If the
+     Document does not specify a version number of this License, you may
+     choose any version ever published (not as a draft) by the Free
+     Software Foundation.  If the Document specifies that a proxy can
+     decide which future versions of this License can be used, that
      proxy's public statement of acceptance of a version permanently
      authorizes you to choose that version for the Document.
 
- 11. RELICENSING
+  11. RELICENSING
 
      "Massive Multiauthor Collaboration Site" (or "MMC Site") means any
      World Wide Web server that publishes copyrightable works and also
@@ -2222,7 +2138,6 @@ Appendix A GNU Free Documentation License
      site under CC-BY-SA on the same site at any time before August 1,
      2009, provided the MMC is eligible for relicensing.
 
-
 ADDENDUM: How to use this License for your documents
 ====================================================
 
@@ -2239,7 +2154,7 @@ notices just after the title page:
        Free Documentation License''.
 
    If you have Invariant Sections, Front-Cover Texts and Back-Cover
-Texts, replace the "with...Texts." line with this:
+Texts, replace the "with...Texts."  line with this:
 
          with the Invariant Sections being LIST THEIR TITLES, with
          the Front-Cover Texts being LIST, and with the Back-Cover Texts
@@ -2250,9 +2165,9 @@ combination of the three, merge those two alternatives to suit the
 situation.
 
    If your document contains nontrivial examples of program code, we
-recommend releasing these examples in parallel under your choice of
-free software license, such as the GNU General Public License, to
-permit their use in free software.
+recommend releasing these examples in parallel under your choice of free
+software license, such as the GNU General Public License, to permit
+their use in free software.
 
 
 File: srecode.info,  Node: Index,  Prev: GNU Free Documentation License,  Up: Top
@@ -2264,95 +2179,95 @@ Index
 * Menu:
 
 * srecode-compound-toString:             Compound Dictionary Values.
-                                                              (line  24)
-* srecode-create-dictionary:             Create a Dictionary. (line   7)
+                                                              (line  22)
+* srecode-create-dictionary:             Create a Dictionary. (line   6)
 * srecode-dictionary-add-section-dictionary: Setting Dictionary Values.
-                                                              (line  24)
+                                                              (line  22)
 * srecode-dictionary-compound-value:     Compound Dictionary Values.
-                                                              (line  12)
+                                                              (line  11)
 * srecode-dictionary-lookup-name:        Querying a Dictionary.
-                                                              (line  14)
-* srecode-dictionary-set-value:          Setting Dictionary Values.
                                                               (line  13)
+* srecode-dictionary-set-value:          Setting Dictionary Values.
+                                                              (line  12)
 * srecode-dictionary-show-section:       Setting Dictionary Values.
-                                                              (line  19)
+                                                              (line  18)
 * srecode-dump:                          Compound Dictionary Values.
-                                                              (line  32)
-* srecode-insert:                        Quick Start.         (line  36)
-* srecode-insert-ask-variable-method:    SRecode Minor Mode.  (line  46)
+                                                              (line  30)
+* srecode-insert:                        Quick Start.         (line  35)
+* srecode-insert-ask-variable-method:    SRecode Minor Mode.  (line  41)
 * srecode-insert-fcn:                    Developing Template Functions.
-                                                              (line 113)
-* srecode-load-tables-for-mode:          Application Writing. (line  26)
-* srecode-map-load-path:                 Quick Start.         (line  30)
-* srecode-map-save-file:                 User Templates.      (line  12)
+                                                              (line 109)
+* srecode-load-tables-for-mode:          Application Writing. (line  25)
+* srecode-map-load-path:                 Quick Start.         (line  29)
+* srecode-map-save-file:                 User Templates.      (line  11)
 * srecode-read-template-name:            Developing Template Functions.
-                                                              (line  63)
-* srecode-resolve-arguments:             Argument Resolution. (line  13)
-* srecode-semantic-insert-tag:           Inserting Tag Lists. (line  15)
-* srecode-semantic-selected-tag:         Semantic Arguments.  (line  19)
+                                                              (line  62)
+* srecode-resolve-arguments:             Argument Resolution. (line  12)
+* srecode-semantic-insert-tag:           Inserting Tag Lists. (line  13)
+* srecode-semantic-selected-tag:         Semantic Arguments.  (line  18)
 * srecode-table:                         Developing Template Functions.
-                                                              (line  74)
+                                                              (line  73)
 * srecode-template-get-table:            Developing Template Functions.
-                                                              (line  79)
+                                                              (line  77)
 
 
 
 Tag Table:
-Node: Top825
-Node: Quick Start2895
-Ref: srecode-map-load-path3614
-Ref: srecode-insert3812
-Node: User Templates4205
-Ref: srecode-map-save-file4587
-Node: Parts of SRecode6105
-Node: SRecode Minor Mode9992
-Ref: srecode-insert-ask-variable-method11385
-Node: Template Writing12572
-Ref: `SRecode-template-mode'12716
-Node: Variables13835
-Node: String Values14861
-Node: Multi-string Values15290
-Node: Section Show16124
-Node: Special Variables16646
-Node: Automatic Loop Variables19645
-Node: Compound Variable Values20280
-Node: Templates20766
-Node: Template Section Dictionaries21641
-Node: Template Macros24151
-Node: Contexts27566
-Node: Prompts28608
-Node: Dictionaries30482
-Node: Create a Dictionary31425
-Ref: srecode-create-dictionary31634
-Node: Setting Dictionary Values31904
-Ref: srecode-dictionary-set-value32379
-Ref: srecode-dictionary-show-section32610
-Ref: srecode-dictionary-add-section-dictionary32777
-Node: Compound Dictionary Values33728
-Ref: srecode-dictionary-compound-value34200
-Ref: srecode-compound-toString34661
-Ref: srecode-dump35033
-Node: Argument Resolution36104
-Ref: srecode-resolve-arguments36574
-Node: Creating new Arguments36688
-Node: Querying a Dictionary37670
-Ref: srecode-dictionary-lookup-name38177
-Node: Template Argument Dictionary Entries38430
-Node: Base Arguments39056
-Node: Semantic Arguments42323
-Ref: srecode-semantic-selected-tag42961
-Node: Language Arguments44706
-Node: Developing Template Functions47021
-Ref: srecode-read-template-name49453
-Ref: srecode-table49832
-Ref: srecode-template-get-table50066
-Ref: srecode-insert-fcn51259
-Node: Template Naming Conventions51364
-Node: Inserting Tag Lists55036
-Ref: srecode-semantic-insert-tag55625
-Node: Application Writing57309
-Ref: srecode-load-tables-for-mode58263
-Node: GNU Free Documentation License58587
-Node: Index83767
+Node: Top823
+Node: Quick Start2893
+Ref: srecode-map-load-path3612
+Ref: srecode-insert3810
+Node: User Templates4203
+Ref: srecode-map-save-file4585
+Node: Parts of SRecode6104
+Node: SRecode Minor Mode9993
+Ref: srecode-insert-ask-variable-method11382
+Node: Template Writing12570
+Ref: 'SRecode-template-mode'12714
+Node: Variables13828
+Node: String Values14854
+Node: Multi-string Values15283
+Node: Section Show16117
+Node: Special Variables16639
+Node: Automatic Loop Variables19636
+Node: Compound Variable Values20268
+Node: Templates20754
+Node: Template Section Dictionaries21628
+Node: Template Macros24137
+Node: Contexts27554
+Node: Prompts28596
+Node: Dictionaries30471
+Node: Create a Dictionary31414
+Ref: srecode-create-dictionary31623
+Node: Setting Dictionary Values31893
+Ref: srecode-dictionary-set-value32368
+Ref: srecode-dictionary-show-section32599
+Ref: srecode-dictionary-add-section-dictionary32766
+Node: Compound Dictionary Values33718
+Ref: srecode-dictionary-compound-value34190
+Ref: srecode-compound-toString34646
+Ref: srecode-dump35018
+Node: Argument Resolution36089
+Ref: srecode-resolve-arguments36559
+Node: Creating new Arguments36673
+Node: Querying a Dictionary37655
+Ref: srecode-dictionary-lookup-name38162
+Node: Template Argument Dictionary Entries38415
+Node: Base Arguments39041
+Node: Semantic Arguments42279
+Ref: srecode-semantic-selected-tag42917
+Node: Language Arguments44655
+Node: Developing Template Functions46963
+Ref: srecode-read-template-name49395
+Ref: srecode-table49774
+Ref: srecode-template-get-table50008
+Ref: srecode-insert-fcn51198
+Node: Template Naming Conventions51303
+Node: Inserting Tag Lists54962
+Ref: srecode-semantic-insert-tag55551
+Node: Application Writing57230
+Ref: srecode-load-tables-for-mode58184
+Node: GNU Free Documentation License58508
+Node: Index83669
 
 End Tag Table

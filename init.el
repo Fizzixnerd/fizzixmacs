@@ -15,20 +15,15 @@
 ;   and all the subdirectories thereof if the variable 'load-dir-recursive
 ;   is t.
 
-(add-to-list 'load-path "~/.emacs.d/site-lisp/cedet/")
-(add-to-list 'load-path "~/.emacs.d/site-lisp/cedet/lisp")
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/cedet/")
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/cedet/lisp")
 ;; Prevents regular CEDET from loading, which would screw everything up
-(load-file "~/.emacs.d/site-lisp/cedet/cedet-devel-load.el")
+;(load-file "~/.emacs.d/site-lisp/cedet/cedet-devel-load.el")
 
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/cc-mode-5.32.5/")
 (add-to-list 'load-path "~/.emacs.d/elpa/")
-(add-to-list 'load-path "~/.emacs.d/elpa/popup-0.5/")
-(add-to-list 'load-path "~/.emacs.d/elpa/auto-complete-1.4/")
-(add-to-list 'load-path "~/.emacs.d/elpa/ac-slime-0.3/")
-(add-to-list 'load-path "~/.emacs.d/elpa/load-dir-0.0.3/")
-(add-to-list 'load-path "~/.emacs.d/elpa/pos-tip-0.4.5/")
 
 ; Fuck, I don't know what to do with these. I will leave them here, I
 ; guess.
@@ -38,12 +33,18 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
- '(ede-project-directories (quote ("/home/matt/src/cl/ncurses" "/home/matt/Documents/src/matt/python/pygame/bouncing_ball" "/home/matt/Documents/sources/matt/java/DotComBust" "/home/matt/Documents/sources/matt/go/echo")))
+ '(doc-view-continuous t)
+ '(ede-project-directories (quote ("/home/matt/src/silveretta/src" "/home/matt/src/simple-lisp" "/home/matt/src/simple-lisp/src" "/home/matt/src/cl/ncurses" "/home/matt/Documents/src/matt/python/pygame/bouncing_ball" "/home/matt/Documents/sources/matt/java/DotComBust" "/home/matt/Documents/sources/matt/go/echo")))
+ '(global-semantic-decoration-mode t)
+ '(global-semantic-idle-completions-mode t nil (semantic/idle))
+ '(global-semantic-idle-summary-mode t)
+ '(global-semanticdb-minor-mode t)
  '(inhibit-startup-screen t)
  '(preview-auto-cache-preamble t)
  '(preview-gs-options (quote ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4")))
  '(save-place t nil (saveplace))
  '(scroll-bar-mode (quote right))
+ '(semantic-c-dependency-system-include-path (quote ("/usr/include" "~/src/simple-lisp/src/include")))
  '(semantic-complete-inline-analyzer-displayor-class (quote semantic-displayor-tooltip))
  '(semantic-complete-inline-analyzer-idle-displayor-class (quote semantic-displayor-tooltip))
  '(semantic-java-dependency-system-include-path (quote ("/usr/share/java/")))
@@ -53,9 +54,9 @@
  '(tool-bar-mode nil))
 
 ;; These libraries should always be loaded.
+(load-library "customizations/package-customizations.el")
 (load-library "customizations/ede-customizations.el")
 (load-library "customizations/ac-customizations.el")
-(load-library "customizations/package-customizations.el")
 (load-library "customizations/ido-customizations.el")
 (load-library "customizations/ispell-customizations.el")
 (load-library "customizations/hs-customizations.el")
@@ -80,3 +81,9 @@
 
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

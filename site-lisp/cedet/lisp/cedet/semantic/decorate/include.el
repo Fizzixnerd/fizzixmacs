@@ -335,6 +335,9 @@ This mode provides a nice context menu on the include statements."
 (defun semantic-decoration-on-includes-highlight-default (tag)
   "Highlight the include TAG to show that semantic can't find it."
   (let* ((file (semantic-dependency-tag-file tag))
+	 ;; Don't actually load includes
+	 (semanticdb-find-default-throttle
+	  (remq 'unloaded semanticdb-find-default-throttle))
 	 (table (semanticdb-find-table-for-include tag (current-buffer)))
 	 (face nil)
 	 (map nil)
@@ -365,8 +368,8 @@ This mode provides a nice context menu on the include statements."
 	(semanticdb-cache-get
 	 table 'semantic-decoration-unparsed-include-cache)
 	;; Add a dependency.
-	(let ((table semanticdb-current-table))
-	  (semanticdb-add-reference table tag))
+	(let ((currenttable semanticdb-current-table))
+	  (semanticdb-add-reference currenttable tag))
 	)
       ))
 
@@ -397,7 +400,7 @@ Argument EVENT is the mouse clicked event."
 		  (semanticdb-file-table-object file t))))
     (with-output-to-temp-buffer (help-buffer) ; "*Help*"
       (help-setup-xref (list #'semantic-decoration-include-describe)
-		       (cedet-called-interactively-p 'interactive))
+		       (called-interactively-p 'interactive))
       (princ "Include File: ")
       (princ (semantic-format-tag-name tag nil t))
       (princ "\n")
@@ -496,7 +499,7 @@ Argument EVENT is the mouse clicked event."
 	(mm major-mode))
     (with-output-to-temp-buffer (help-buffer) ; "*Help*"
       (help-setup-xref (list #'semantic-decoration-unknown-include-describe)
-		       (cedet-called-interactively-p 'interactive))
+		       (called-interactively-p 'interactive))
       (princ "Include File: ")
       (princ (semantic-format-tag-name tag nil t))
       (princ "\n\n")
@@ -580,7 +583,7 @@ Argument EVENT is the mouse clicked event."
 	 (mm major-mode))
     (with-output-to-temp-buffer (help-buffer) ; "*Help*"
       (help-setup-xref (list #'semantic-decoration-fileless-include-describe)
-		       (cedet-called-interactively-p 'interactive))
+		       (called-interactively-p 'interactive))
       (princ "Include Tag: ")
       (princ (semantic-format-tag-name tag nil t))
       (princ "\n\n")
@@ -621,7 +624,7 @@ Argument EVENT is the mouse clicked event."
   (let ((tag (semantic-current-tag)))
     (with-output-to-temp-buffer (help-buffer); "*Help*"
       (help-setup-xref (list #'semantic-decoration-unparsed-include-describe)
-		       (cedet-called-interactively-p 'interactive))
+		       (called-interactively-p 'interactive))
 
       (princ "Include File: ")
       (princ (semantic-format-tag-name tag nil t))
@@ -702,7 +705,7 @@ Argument EVENT describes the event that caused this function to be called."
 	 )
     (with-output-to-temp-buffer (help-buffer) ;"*Help*"
       (help-setup-xref (list #'semantic-decoration-all-include-summary)
-		       (cedet-called-interactively-p 'interactive))
+		       (called-interactively-p 'interactive))
 
       (princ "Include Summary for File: ")
       (princ (file-truename (buffer-file-name)))

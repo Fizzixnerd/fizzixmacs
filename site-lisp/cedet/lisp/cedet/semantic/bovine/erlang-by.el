@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003 Vladimir G. Sekissov
 
-;; Author: Matt Walker <matt@walkerbook>
-;; Created: 2013-05-29 13:45:43-0400
+;; Author: Matt Walker <matt@ultrawalker>
+;; Created: 2014-05-13 16:49:50-0400
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
@@ -1809,8 +1809,9 @@
 (defun semantic-erlang-by--install-parser ()
   "Setup the Semantic Parser."
   (setq semantic--parse-table semantic-erlang-by--parse-table
-	semantic-debug-parser-source "erlang.by"
+	semantic-debug-parser-source "semantic/bovine/erlang.by"
 	semantic-debug-parser-class 'semantic-bovine-debug-parser
+	semantic-debug-parser-debugger-source 'semantic/bovine/debug
 	semantic-flex-keywords-obarray semantic-erlang-by--keyword-table
 	))
 

@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003, 2004 David Ponce
 
-;; Author: Matt Walker <matt@walkerbook>
-;; Created: 2013-05-29 13:44:57-0400
+;; Author: Matt Walker <matt@ultrawalker>
+;; Created: 2014-05-13 16:49:31-0400
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

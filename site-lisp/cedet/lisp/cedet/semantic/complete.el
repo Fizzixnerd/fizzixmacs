@@ -119,6 +119,8 @@
   ;; For the semantic-find-tags-for-completion macro.
   (require 'semantic/find))
 
+(declare-function semanticdb-find-tags-by-name-method "semantic/db-find.el")
+
 ;;; Code:
 
 (defvar semantic-complete-inline-overlay nil
@@ -345,6 +347,7 @@ Return value can be:
        ((setq matchlist (semantic-collector-current-exact-match collector))
 	(if (= (semanticdb-find-result-length matchlist) 1)
 	    (setq answer (semanticdb-find-result-nth-in-buffer matchlist 0))
+	  (setq matchlist (semantic-complete-merge-tags matchlist))
 	  (if (semantic-displayor-focus-abstract-child-p displayor)
 	      ;; For focusing displayors, we can claim this is
 	      ;; not unique.  Multiple focuses can choose the correct
@@ -390,6 +393,61 @@ Return value can be:
     ;; Return it
     answer
     ))
+
+(defun semantic-complete-merge-tags (result)
+  "Merge results from find result RESULT.
+This removes duplicates from a search result and also replaces
+'faux' tags with complete tags if possible; otherwise they are
+removed."
+  ;; Everything is done in-place here on 'result'.
+  ;; First let's resolve faux tags from things like Global.
+  (mapc
+   (lambda (element)
+     (let ((tags (cdr element))
+	   newtags)
+       (while tags
+	 (when (semantic-tag-faux-p (car tags))
+	   (let ((newresult (semanticdb-find-tags-by-name-method
+			     (car element) (semantic-tag-name (car tags)))))
+	     (setcar tags nil)
+	     (when newresult
+	       (setq newtags (append newtags (cdr newresult))))))
+	 (setq tags (cdr tags)))
+       (when newtags
+	 (setcdr element (append (remq nil (cdr element))
+				 newtags)))))
+   result)
+
+  ;; Now remove duplicates
+  (let (foundtags)
+    (mapc
+     (lambda (element)
+       (let ((tags (cdr element)))
+	 ;; Go through all tags from one table
+  	 (while tags
+  	   (let ((temptags foundtags)
+  		 found ex)
+  	     (while (and (not found)
+  			 temptags)
+  	       (setq ex (car temptags))
+	       ;; If name and bounds are identical, we say this is a duplicate.
+  	       (if (and (string= (semantic-tag-name (car tags)) (semantic-tag-name ex))
+  			(equal (semantic-tag-bounds (car tags)) (semantic-tag-bounds ex)))
+  		   (setq found t)
+  		 (setq temptags (cdr temptags))))
+  	     (if found
+  		 ;; Delete this tag from result
+  		 (setcar tags nil)
+	       ;; Save this tag for future comparisons
+  	       (push (car tags) foundtags)
+	       ;; Change its name to be more meaningful
+	       (setcar tags (semantic-tag-clone (car tags)
+						(semantic-format-tag-concise-prototype (car tags))))
+	       ))
+  	   (setq tags (cdr tags))))
+       (setcdr element (remq nil (cdr element))))
+     result))
+  result)
 
 
 ;;; Keybindings
@@ -1719,9 +1777,14 @@ Display mechanism using tooltip for a list of possible completions.")
   "Return the location of POINT as positioned on the selected frame.
 Return a cons cell (X . Y)"
   (let* ((frame (selected-frame))
-	 (left (or (car-safe (cdr-safe (frame-parameter frame 'left)))
-		   (frame-parameter frame 'left)))
-         (top (or (car-safe (cdr-safe (frame-parameter frame 'top)))
+	 (toolbarleft
+	  (if (eq (cdr (assoc 'tool-bar-position default-frame-alist)) 'left)
+	      (tool-bar-pixel-width)
+	    0))
+	 (left (+ (or (car-safe (cdr-safe (frame-parameter frame 'left)))
+		      (frame-parameter frame 'left))
+		  toolbarleft))
+	 (top (or (car-safe (cdr-safe (frame-parameter frame 'top)))
 		  (frame-parameter frame 'top)))
 	 (point-pix-pos (posn-x-y (posn-at-point)))
 	 (edges (window-inside-pixel-edges (selected-window))))
@@ -2174,7 +2237,7 @@ how completion options are displayed."
       (semantic-complete-inline-analyzer
        (semantic-analyze-current-context (point))))
   ;; Report a message if things didn't startup.
-  (if (and (cedet-called-interactively-p 'any)
+  (if (and (called-interactively-p 'any)
 	   (not (semantic-completion-inline-active-p)))
       (message "Inline completion not needed.")
     ;; Since this is most likely bound to something, and not used
@@ -2196,7 +2259,7 @@ to change how completion options are displayed."
       (semantic-complete-inline-analyzer-idle
        (semantic-analyze-current-context (point))))
   ;; Report a message if things didn't startup.
-  (if (and (cedet-called-interactively-p 'interactive)
+  (if (and (called-interactively-p 'interactive)
 	   (not (semantic-completion-inline-active-p)))
       (message "Inline completion not needed.")))
 
@@ -2243,7 +2306,7 @@ will perform the completion."
   (if (not (semantic-completion-inline-active-p))
       (semantic-complete-inline-tag-project))
   ;; Report a message if things didn't startup.
-  (if (and (cedet-called-interactively-p 'interactive)
+  (if (and (called-interactively-p 'interactive)
 	   (not (semantic-completion-inline-active-p)))
       (message "Inline completion not needed."))
   )

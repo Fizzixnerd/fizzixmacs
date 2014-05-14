@@ -1,4 +1,4 @@
-This is cedet.info, produced by makeinfo version 4.13 from cedet.texi.
+This is cedet.info, produced by makeinfo version 5.2 from cedet.texi.
 
 This manual documents CEDET, a collection of other tools.
 
@@ -9,15 +9,14 @@ This manual documents CEDET, a collection of other tools.
      Version 1.1 or any later version published by the Free Software
      Foundation; with the Invariant Sections being list their titles,
      with the Front-Cover Texts being list, and with the Back-Cover
-     Texts being list.  A copy of the license is included in the
-     section entitled "GNU Free Documentation License".
-
+     Texts being list.  A copy of the license is included in the section
+     entitled "GNU Free Documentation License".
 INFO-DIR-SECTION Emacs
 START-INFO-DIR-ENTRY
 * CEDET: (cedet).       Collection of Emacs Development Environment Tools
 END-INFO-DIR-ENTRY
 
-   This file documents CEDET.  _Collection of Emacs Development
+   This file documents CEDET. _Collection of Emacs Development
 Environment Tools_
 
    Copyright (C) 2007 Eric M. Ludlam
@@ -41,28 +40,28 @@ accomplish some tasks.
 
    To send bug reports, or participate in discussions about CEDET, use
 the mailing list cedet-devel.net via the URL:
-`http://lists.sourceforge.net/lists/listinfo/cedet-devel'
+<http://lists.sourceforge.net/lists/listinfo/cedet-devel>
 
 * Menu:
 
-* Overview::
+* Overview::                    
 * Installation/Basic Configuration::
-* CEDET Context Menu::
+* CEDET Context Menu::                
 * JDEE Target::
 * ECB Target::
 * Project Management::
 * Code Completion::
-* Code Generation::
-* C++ Features::
-* Arduino Features::
+* Code Generation::     
+* C++ Features::        
+* Arduino Features::    
 * Java Features::
-* Android Features::
-* GNU Global::
-* ID Utils::
-* CScope::
+* Android Features::    
+* GNU Global::  
+* ID Utils::    
+* CScope::      
 * Maintenance:: Maintaining your CEDET Data files
-* GNU Free Documentation License::
-* Index::
+* GNU Free Documentation License::  
+* Index::                       
 
 
 File: cedet.info,  Node: Overview,  Next: Installation/Basic Configuration,  Prev: Top,  Up: Top
@@ -70,8 +69,8 @@ File: cedet.info,  Node: Overview,  Next: Installation/Basic Configuration,  Pre
 1 Overview
 **********
 
-The CEDET collection is made up of several tools.  Each tool has its
-own manual with details for that tool.
+The CEDET collection is made up of several tools.  Each tool has its own
+manual with details for that tool.
 
    At the core of the CEDET suite is EIEIO, which is an Implementation
 of Emacs Interpreted Objects.  This provides a CLOS like interface to
@@ -83,9 +82,9 @@ project management, EDE provides a simple way to create projects.  You
 can create an EDE centric project, which uses either Makefiles, or
 AutoMakefiles, or it can wrap an automake based program you've already
 developed.  You can also create simple EDE wrappers on top of any style
-of project.  EDE provides a backgrop for any other CEDET tool that
-needs to know the filesystem scope of a code base, where include
-directories might be.
+of project.  EDE provides a backgrop for any other CEDET tool that needs
+to know the filesystem scope of a code base, where include directories
+might be.
 
    semantic provides another mid-level layer.  semantic provides a set
 of tools for developing parsers for different languages, and an API for
@@ -98,13 +97,13 @@ Completion" feature.
 is a template management system designed with the goal of providing a
 way to build code-generating applications that are easily modified or
 extended by users.  At its core is a template authoring and insertion
-system.  A minor mode provides a simple way to insert templates from
-the various template libraries.
+system.  A minor mode provides a simple way to insert templates from the
+various template libraries.
 
    Speedbar is a user interface tool that provides a narrow view into
 your filesystem and tags.  Speedbar is also an API for designing other
-tools and is used for displaying EDE project information, Semantic
-smart completion options, Email, Info, and even GDB stack information.
+tools and is used for displaying EDE project information, Semantic smart
+completion options, Email, Info, and even GDB stack information.
 
    Lastly, COGRE is a COnnected GRaph Editor.  The core is an object
 design and library for drawing, saving, and restoring simple connected
@@ -132,14 +131,14 @@ File: cedet.info,  Node: EIEIO,  Next: Semantic,  Up: Overview
 1.1 EIEIO
 =========
 
-EIEIO contains the core object library for CEDET.  You can define
-classes, and methods for those classes using CLOS style syntax.
-Objects can be customized using the Emacs customization tool, which
-allows easy creation of dialog box style UIs.  A series of base classes
-allows the creation of Emacs centric tools, wrapping up the details of
-persistence, instance tracking, or instance inheritance.
+EIEIO contains the core object library for CEDET. You can define
+classes, and methods for those classes using CLOS style syntax.  Objects
+can be customized using the Emacs customization tool, which allows easy
+creation of dialog box style UIs.  A series of base classes allows the
+creation of Emacs centric tools, wrapping up the details of persistence,
+instance tracking, or instance inheritance.
 
-   EIEIO also includes an example tool, `chart.el' for drawing simple
+   EIEIO also includes an example tool, 'chart.el' for drawing simple
 charts.
 
    Lastly, EIEIO has baseclasses for writing Speedbar interfaces.  Take
@@ -196,7 +195,7 @@ specific templates, and some sample applications that also uses
 templates to write code.
 
    For more details on SRecode, read the *note SRecode Manual:
-(srecode)top;
+(srecode)top.;
 
 
 File: cedet.info,  Node: Speedbar,  Next: EDE,  Prev: SRecode,  Up: Overview
@@ -204,9 +203,9 @@ File: cedet.info,  Node: Speedbar,  Next: EDE,  Prev: SRecode,  Up: Overview
 1.4 Speedbar
 ============
 
-Speedbar is an abbreviated everything browser.  If you can
-conceptualize browsable information into 20 columns, then Speedbar can
-display it for you.
+Speedbar is an abbreviated everything browser.  If you can conceptualize
+browsable information into 20 columns, then Speedbar can display it for
+you.
 
    Speedbar comes with several interfaces, with the primary one being
 for files and tags.  It can also display buffer lists, RMAIL boxes, and
@@ -239,16 +238,16 @@ or Automake files, and provides menus and keybindings for compiling any
 target, debugging programs by providing the arguments to your debugger,
 and will make sure you don't forget to include some file in your
 targets.  It will help you build distribution files, and post them to
-the web (such as with SourceForge).  EDE will track revision numbers
-and make sure they are updated in multiple places.
+the web (such as with SourceForge).  EDE will track revision numbers and
+make sure they are updated in multiple places.
 
    Projects that are merely wrapped with EDE can support a small subset
-of the above.  All project provide an API to other programs that need
-to know the scope of a project, such as which files belong together,
-where include directories might be, how to find documentation, and
-details of that nature.  You can even create project-local variables,
-which are Emacs variables with specific values within the scope of an
-EDE controlled project.
+of the above.  All project provide an API to other programs that need to
+know the scope of a project, such as which files belong together, where
+include directories might be, how to find documentation, and details of
+that nature.  You can even create project-local variables, which are
+Emacs variables with specific values within the scope of an EDE
+controlled project.
 
    Read more about it in the *note EDE reference manual: (ede)top.
 
@@ -260,8 +259,8 @@ File: cedet.info,  Node: COGRE,  Next: Other Library Functions,  Prev: EDE,  Up:
 
 COGRE is a COnnected GRaph Editor.  You can use it to create simple
 connected graphs and diagrams.  You can also create more complex UML
-class diagrams in it, or even bind UML diagrams directly to source
-code, navigating your source via the UML diagram.
+class diagrams in it, or even bind UML diagrams directly to source code,
+navigating your source via the UML diagram.
 
    While COGRE does have a lot of functionality, it still needs more
 work.  Consider improving COGRE.
@@ -274,24 +273,22 @@ File: cedet.info,  Node: Other Library Functions,  Prev: COGRE,  Up: Overview
 1.7 Other CEDET Library functions
 =================================
 
-CEDET provides several other useful libraries in the `common/'
+CEDET provides several other useful libraries in the 'common/'
 directory.  These libraries supply most of their documentation through
 the Commentary section of the Emacs Lisp file.
 
    Some of the libraries are:
 
-   `' cedet-edebug.el Collection of extensions to support custom CEDET
+   '' cedet-edebug.el Collection of extensions to support custom CEDET
      datatypes.
-
-   `' pulse.el Simple way to briefly highlight a region or line.  For
+   '' pulse.el Simple way to briefly highlight a region or line.  For
      Emacs 22, it will pulse the line, with the color drifting from one
-     shade to another.  For older versions Emacs, it will just
-     highlight the line briefly.
-
-   `' mode-local.el Specify functions that have different behaviors
-     based on major-mode, or variables with different local values
-     based on major mode.  Setting a value to a specific mode causes
-     the value to change for all buffers of that mode.
+     shade to another.  For older versions Emacs, it will just highlight
+     the line briefly.
+   '' mode-local.el Specify functions that have different behaviors
+     based on major-mode, or variables with different local values based
+     on major mode.  Setting a value to a specific mode causes the value
+     to change for all buffers of that mode.
 
      mode-local is also aware of mode inheritance, such that C++ mode
      inherits some C configurations.  You can also run code, or access
@@ -340,17 +337,17 @@ move on to the next section.
      For general discussions on development of these tools, use the
      mailing list cedet-devel@sourceforge.net via the URL:
 
-     `http://lists.sourceforge.net/lists/listinfo/cedet-devel'
+     <http://lists.sourceforge.net/lists/listinfo/cedet-devel>
 
      For semantic development use the mailing list cedet-semantic.net
      via the URL:
 
-     `http://lists.sourceforge.net/lists/listinfo/cedet-semantic'
+     <http://lists.sourceforge.net/lists/listinfo/cedet-semantic>
 
      For EIEIO use the mailing list cedet-eieio@sourceforge.net via the
      URL:
 
-     `http://lists.sourceforge.net/lists/listinfo/cedet-eieio'
+     <http://lists.sourceforge.net/lists/listinfo/cedet-eieio>
 
   3. Install Additional Tools
 
@@ -358,25 +355,24 @@ move on to the next section.
      obscure features.
 
      To use the JavaScript parser: javascript-mode.el :
-     `http://www.emacswiki.org/cgi-bin/wiki/JavaScriptMode'
+     <http://www.emacswiki.org/cgi-bin/wiki/JavaScriptMode>
 
      To use Exuberent ctags to emable Semantic support in more major
      modes, or as an extra database backend parser, install ctags:
-     `http://ctags.sourceforge.net/'
+     <http://ctags.sourceforge.net/>
 
      For developing Android programs:
-     `http://developer.android.com/sdk/index.html'.
+     <http://developer.android.com/sdk/index.html>.
 
      For developing Arduino programs: Major Mode:
-     `https://github.com/bookest/arduino-mode' Arduino
-     IDE:`http://arduino.cc/en/Main/Software'
+     <https://github.com/bookest/arduino-mode> Arduino
+     IDE:<http://arduino.cc/en/Main/Software>
 
-     To use the UML chart generation from `M-x semantic-dot' graphviz
-     dot programs, including `dotty' `http://www.graphviz.org/'
+     To use the UML chart generation from 'M-x semantic-dot' graphviz
+     dot programs, including 'dotty' <http://www.graphviz.org/>
 
-     To use the graphviz dot parser: `graphviz-dot-mode.el' see the
+     To use the graphviz dot parser: 'graphviz-dot-mode.el' see the
      commentary in cogre/wisent-dot.el
-
 
 
 File: cedet.info,  Node: CEDET Context Menu,  Next: JDEE Target,  Prev: Installation/Basic Configuration,  Up: Top
@@ -386,13 +382,13 @@ File: cedet.info,  Node: CEDET Context Menu,  Next: JDEE Target,  Prev: Installa
 
 CEDET is a collection of different tools, but it includes a minor mode
 of it's own that enables a context menu.  If you enable CEDET's context
-menu by adding this to your `.emacs':
+menu by adding this to your '.emacs':
 
      (global-cedet-m3-minor-mode 1)
 
    Once enabled, you can activate the context menu by right-clicking
-(with `mouse-3').  You could bind this menu to a key with a command
-such as this which binds it to `C-c SPC':
+(with 'mouse-3').  You could bind this menu to a key with a command such
+as this which binds it to 'C-c SPC':
 
      (define-key cedet-m3-mode-map "\C-c " 'cedet-m3-menu-kbd)
 
@@ -411,7 +407,7 @@ EIEIO, the object system, and Semantic, for parsing and providing
 tagging information.
 
    In addition to the basic CEDET configuration, you will likely want to
-add the following Semantic configuration to your `.emacs' file.
+add the following Semantic configuration to your '.emacs' file.
 
      (require 'semantic/canned-configs)
      (semantic-load-enable-minimum-features)
@@ -437,7 +433,7 @@ section of the semantic manual for more details about these features.
 manage smart completion.  As such, you will need to also have a Java
 based project associated with your JDEE project.
 
-   You can set this up using the `java-root' project type.  Basic setup
+   You can set this up using the 'java-root' project type.  Basic setup
 is like this:
 
      (ede-java-root-project "MYPROJ" :file "/home/user/projects/myProj"
@@ -453,14 +449,14 @@ File: cedet.info,  Node: ECB Target,  Next: Project Management,  Prev: JDEE Targ
 5 ECB Target
 ************
 
-ECB, or the Emacs Code Browser depends on CEDET for the semantic
-parsing engine, and several other features.  ECB can display a window
-that shows semantic tag information.
+ECB, or the Emacs Code Browser depends on CEDET for the semantic parsing
+engine, and several other features.  ECB can display a window that shows
+semantic tag information.
 
    ECB can also be used with JDEE.
 
    In addition to the basic CEDET configuration, you will likely want to
-add the following Semantic configuration to your `.emacs' file.
+add the following Semantic configuration to your '.emacs' file.
 
      (require 'semantic/canned-configs)
      (semantic-load-enable-code-helpers)
@@ -482,7 +478,7 @@ File: cedet.info,  Node: Project Management,  Next: Code Completion,  Prev: ECB 
 If you are looking for CEDET to help you manage a project full of
 sourcecode, then you will be using EDE and semantic.
 
-   To enable EDE add this to your `.emacs' file after CEDET is loaded:
+   To enable EDE add this to your '.emacs' file after CEDET is loaded:
 
      (global-ede-mode 1)
 
@@ -500,7 +496,7 @@ dired to populate your targets with files.
    For more details, see the *note EDE reference manual: (ede)Top.
 
    In addition to EDE and basic CEDET configuration, you will likely
-want to add the following semantic configuration to your `.emacs' file.
+want to add the following semantic configuration to your '.emacs' file.
 
      (require 'semantic/canned-configs)
      (semantic-load-enable-code-helpers)
@@ -521,10 +517,9 @@ File: cedet.info,  Node: Code Completion,  Next: Code Generation,  Prev: Project
 7 Code Completion
 *****************
 
-Code Completion, or perhaps "Intellisense" is a difficult problem to
-get working in Emacs.  To use the CEDET suite to do it, you will need
-to start by augmenting the basic CEDET install in your `.emacs' file
-with:
+Code Completion, or perhaps "Intellisense" is a difficult problem to get
+working in Emacs.  To use the CEDET suite to do it, you will need to
+start by augmenting the basic CEDET install in your '.emacs' file with:
 
      (require 'semantic/canned-configs)
      (semantic-load-enable-code-helpers)
@@ -538,8 +533,8 @@ idle-completions mode, and some more decorative features, use:
    TODO - add other handy bindings here.
 
    For more on configuration *note Semantic Configuration:
-(semantic)Canned Configuration.  section of the semantic manual for
-more details about these features.
+(semantic)Canned Configuration.  section of the semantic manual for more
+details about these features.
 
    The basic idea is that Semantic will need to parse your source code
 and build lookup tables.  The tables are then searched to provide the
@@ -554,8 +549,8 @@ definitions are.
 (semantic-user)Semanticdb Search Configuration.
 
    Once you've optimized semantic's ability to find your sources, there
-are several code completion options.  For more, *note semantic
-analyzer: (semantic-user)Analyzer.
+are several code completion options.  For more, *note semantic analyzer:
+(semantic-user)Analyzer.
 
    If code completion doesn't work on your code right away, please read
 the section on *note Smart Completion Debugging: (semantic-user)Smart
@@ -569,15 +564,15 @@ File: cedet.info,  Node: Code Generation,  Next: C++ Features,  Prev: Code Compl
 
 Code Generation, or the ability to automatically write code from some
 set of static data is done through the SRecode library.  SRecode is a
-template manager that uses the semantic infrastructure to support
-common concepts across multiple languages.
+template manager that uses the semantic infrastructure to support common
+concepts across multiple languages.
 
    To effectively create a code-generation library, you need to
-configure semantic.  Read *note Semantic Configuration:
-(semantic)Canned Configuration.  for more.
+configure semantic.  Read *note Semantic Configuration: (semantic)Canned
+Configuration.  for more.
 
    Secondly, you will need to configure SRecode.  Read *note SRecode
-Manual: (srecode)Quick Start;
+Manual: (srecode)Quick Start.;
 
    Once installed, you can jump right in to writing your Lisp and *note
 Template Writing: (screcode)Template Writing.
@@ -594,36 +589,35 @@ specific options you may need to update.
 9.1 C Pre-processor
 ===================
 
-C and C++ use pre-processor directives, and the semantic parser has
-some basic support for a pre-processor.  As such, you may need to set
-up some macros.  You can do that in two ways.
+C and C++ use pre-processor directives, and the semantic parser has some
+basic support for a pre-processor.  As such, you may need to set up some
+macros.  You can do that in two ways.
 
    The first option is to create your own symbol map in Emacs Lisp.  You
 can customize the preprocessor symbol map.
 
  -- Variable: semantic-lex-c-preprocessor-symbol-map
      Table of C Preprocessor keywords used by the Semantic C lexer.
-     Each entry is a cons cell like this:   ( "KEYWORD" . "REPLACEMENT"
-     ) Where KEYWORD is the macro that gets replaced in the lexical
-     phase, and REPLACEMENT is a string that is inserted in its place.
-     Empty string implies that the lexical analyzer will discard
-     KEYWORD when it is encountered.
+     Each entry is a cons cell like this: ( "KEYWORD" .  "REPLACEMENT" )
+     Where KEYWORD is the macro that gets replaced in the lexical phase,
+     and REPLACEMENT is a string that is inserted in its place.  Empty
+     string implies that the lexical analyzer will discard KEYWORD when
+     it is encountered.
 
-     Alternately, it can be of the form:   ( "KEYWORD" ( LEXSYM1 "str"
-     1 1 ) ... ( LEXSYMN "str" 1 1 ) ) where LEXSYM is a symbol that
-     would normally be produced by the lexical analyzer, such as
-     `symbol' or "string".  The string in the second position is the
-     text that makes up the replacement.  This is the way to have
-     multiple lexical symbols in a replacement.  Using the first way to
-     specify text like "foo::bar" would not work, because : is a
-     separate lexical symbol.
+     Alternately, it can be of the form: ( "KEYWORD" ( LEXSYM1 "str" 1 1
+     ) ... ( LEXSYMN "str" 1 1 ) ) where LEXSYM is a symbol that would
+     normally be produced by the lexical analyzer, such as 'symbol' or
+     "string".  The string in the second position is the text that makes
+     up the replacement.  This is the way to have multiple lexical
+     symbols in a replacement.  Using the first way to specify text like
+     "foo::bar" would not work, because : is a separate lexical symbol.
 
      A quick way to see what you would need to insert is to place a
      definition such as:
 
      #define MYSYM foo::bar
 
-     into a C file, and do this:   `M-x' semantic-lex-spp-describe
+     into a C file, and do this: 'M-x' semantic-lex-spp-describe
 
      The output table will describe the symbols needed.
 
@@ -633,26 +627,26 @@ preprocessor list.
 
  -- Variable: semantic-lex-c-preprocessor-symbol-file
      List of C/C++ files that contain preprocessor macros for the C
-     lexer.  Each entry is a filename and each file is parsed, and
-     those macros are included in every C/C++ file parsed by semantic.
-     You can use this variable instead of
-     `semantic-lex-c-preprocessor-symbol-map' to store your global
+     lexer.  Each entry is a filename and each file is parsed, and those
+     macros are included in every C/C++ file parsed by semantic.  You
+     can use this variable instead of
+     'semantic-lex-c-preprocessor-symbol-map' to store your global
      macros in a more natural way.
 
-   Some such symbols for `stdio.h' as found on Linux are defined in
-`semantic-lex-c-preprocessor-symbol-map-builtin'.
+   Some such symbols for 'stdio.h' as found on Linux are defined in
+'semantic-lex-c-preprocessor-symbol-map-builtin'.
 
    Lastly, you could just opt to ignore conditional parsing.
 
  -- Option: semantic-c-obey-conditional-section-parsing-flag
-     Non-`nil' means to interpret preprocessor #if sections.  This
+     Non-'nil' means to interpret preprocessor #if sections.  This
      implies that some blocks of code will not be parsed based on the
      values of the conditions in the #if blocks.
 
  -- Function: semantic-lex-c-nested-namespace-ignore-second
      Should _GLIBCXX_BEGIN_NESTED_NAMESPACE ignore the second namespace?
-     It is really there, but if a majority of uses is to squeeze out
-     the second namespace in use, then it should not be included.
+     It is really there, but if a majority of uses is to squeeze out the
+     second namespace in use, then it should not be included.
 
      If you are having problems with smart completion and STL templates,
      it may that this is set incorrectly.  After changing the value of
@@ -662,22 +656,22 @@ preprocessor list.
 9.2 System Include path
 =======================
 
-If you want the code-completion to work with C++ system header file,
-you will need to update `semantic-dependency-system-include-path' for
-C++ mode.
+If you want the code-completion to work with C++ system header file, you
+will need to update 'semantic-dependency-system-include-path' for C++
+mode.
 
      M-x customize-variable RET semantic-c-dependency-system-include-path RET
 
-   Customizing this variable will allow you to setup your system
-include path and will update all files when you use custom to do it.
+   Customizing this variable will allow you to setup your system include
+path and will update all files when you use custom to do it.
 
 9.3 EDE Setup
 =============
 
-For large C or C++ programs, it is important to setup EDE for it.
-While EDE can be used to create Makefiles or use Automake files, EDE
-also provides a way to merely describe a project so that tools like
-semantic can find your sources.
+For large C or C++ programs, it is important to setup EDE for it.  While
+EDE can be used to create Makefiles or use Automake files, EDE also
+provides a way to merely describe a project so that tools like semantic
+can find your sources.
 
    If your project already uses Automake, or if your project is Emacs or
 the Linux Kernel, there are pre-existing EDE project types that will
@@ -686,12 +680,12 @@ automatically detect these projects.
    If you use a generic project type, such as Make (using a Makefile),
 SCons, or CMake, you can use a *note Generic: (ede)Generic project.
 Generic projects allow some basic customization for C/C++.  Enable
-generic projects with `ede-enable-generic-projects'.
+generic projects with 'ede-enable-generic-projects'.
 
    If the options there are insufficient, or if Generic projects can't
 identify your build system you will need to use the very simple
-`ede-cpp-root-project' type.  To use it, add this to your `.emacs'
-file, or other configuration:
+'ede-cpp-root-project' type.  To use it, add this to your '.emacs' file,
+or other configuration:
 
      (global-ede-mode 1) ;; Enable EDE
      (ede-cpp-root-project "SOMENAME" :file "/dir/to/some/file")
@@ -699,9 +693,9 @@ file, or other configuration:
    where SOMENAME is a name for this project, and the file is a file
 name that exists at the root of your project directory.  There are many
 more options for the optimization of finding your header files.  For
-more on this option, including include path setting, and providing
-macro to the C pre-processor, see *note ede-cpp-root: (ede)the
-ede-cpp-root chapter.
+more on this option, including include path setting, and providing macro
+to the C pre-processor, see *note ede-cpp-root: (ede)the ede-cpp-root
+chapter.
 
 
 File: cedet.info,  Node: Arduino Features,  Next: Java Features,  Prev: C++ Features,  Up: Top
@@ -714,18 +708,18 @@ and EDE in Emacs as a replacement.  So far, I have only verified usage
 of Arduino development with CEDET on Linux.
 
    First, you need to install both the Arduino IDE
-`http://arduino.cc/en/Main/Software', and arduino-mode for Emacs.
-`https://github.com/bookest/arduino-mode'
+<http://arduino.cc/en/Main/Software>, and arduino-mode for Emacs.
+<https://github.com/bookest/arduino-mode>
 
 10.1 Create an Arduino Sketch (Project)
 =======================================
 
-To create an arduino sketch, you will need to first use the Arduino
-IDE.  Use the preferences to set the location of your sketchbook (where
-your arduino sketches will be kept.)  You should also plug your Arduino
-into your computer, and try out one of the examples using the IDE.
-This will force the IDE to select the correct serial terminal to use,
-and it will configure other aspects of your Arduino.
+To create an arduino sketch, you will need to first use the Arduino IDE.
+Use the preferences to set the location of your sketchbook (where your
+arduino sketches will be kept.)  You should also plug your Arduino into
+your computer, and try out one of the examples using the IDE. This will
+force the IDE to select the correct serial terminal to use, and it will
+configure other aspects of your Arduino.
 
    Once the IDE has save your Arduino's information, Emacs will read the
 preferences file from the arduino IDE, and use that to development.
@@ -749,13 +743,11 @@ arduino sketches into your arduino.
 <C-c . c>
 <C-c . C>
      Compile your arduino project.
-
 <C-c . U>
      Upload your arduino project to your Arduino.
-
 <Menu: Project -> Project Options -> Serial Monitor>
      Open a serial monitor to your arduino so you can interact with you
-     sketch.  This uses the Emacs `serial-term' command.
+     sketch.  This uses the Emacs 'serial-term' command.
 
 10.3 Serial Monitor
 ===================
@@ -775,16 +767,16 @@ sure to kill it before uploading new sketches.
 ================================
 
 You can create macros for use with arduino-mode.  (Files that end in
-`.pde', or `.ino'.)  By default, a handy empty file macro can be used
-to create the standard setup and loop functions.
+'.pde', or '.ino'.)  By default, a handy empty file macro can be used to
+create the standard setup and loop functions.
 
 10.5 Arduino and smart completion
 =================================
 
 The Arduino environment hides a common include file for wither
-`WProgram.h' or `Arduino.h', depending on the version of your IDE.  The
+'WProgram.h' or 'Arduino.h', depending on the version of your IDE. The
 smart completion engine will automatically load these header files for
-buffers in `arduino-mode' for use in smart completion.
+buffers in 'arduino-mode' for use in smart completion.
 
 
 File: cedet.info,  Node: Java Features,  Next: Android Features,  Prev: Arduino Features,  Up: Top
@@ -798,15 +790,15 @@ options you may need to configure for your system.
 11.1 Java programs
 ==================
 
-You can configure CEDET to use programs from the JDK, such as `java'
-and `javap'.
+You can configure CEDET to use programs from the JDK, such as 'java' and
+'javap'.
 
  -- Variable: cedet-java-command
      The command for running the java program.
 
  -- Variable: cedet-javap-command
-     The command for running the javap program.  This program is used
-     by semantic to extract symbols from Jar files.
+     The command for running the javap program.  This program is used by
+     semantic to extract symbols from Jar files.
 
 11.2 Using JAR files for Semantic data
 ======================================
@@ -814,7 +806,7 @@ and `javap'.
 Semantic can use your system Jar files to look up data for smart
 completion and other uses.  To enable the system, you need to use the
 javap extension for semanticdb.  To do that, require the semantic javap
-database in your `.emacs' file
+database in your '.emacs' file
 
      (require 'semantic/db-javap)
 
@@ -822,8 +814,8 @@ database in your `.emacs' file
 ======================
 
 In order for semantic to find your sources, or jar files for use with
-the javap database extension, you need a way to customize the
-classpaths used.
+the javap database extension, you need a way to customize the classpaths
+used.
 
    You can do that through a couple variables, and through EDE.
 
@@ -835,14 +827,14 @@ classpaths used.
 
  -- Variable: semanticdb-javap-classpath
      List of extended classpath directories and Jar files used by
-     `semantic/db-javap' when searching for classes.  This classpath is
+     'semantic/db-javap' when searching for classes.  This classpath is
      NOT passed to java when invoking java commands.
 
 11.4 EDE Setup
 ==============
 
-For large Java programs, it is important to setup EDE for it.  While
-EDE can be used to create Makefiles or use Automake files for several
+For large Java programs, it is important to setup EDE for it.  While EDE
+can be used to create Makefiles or use Automake files for several
 languages, EDE also provides a way to merely describe a project so that
 tools like semantic can find your sources.
 
@@ -851,7 +843,7 @@ EDE project type for that.  See *note Android Features:: for more.
 
    If you aren't programming with a supported EDE Java projec type, you
 can identify your build system with the very simple
-`ede-java-root-project' type.  To use it, add this to your `.emacs'
+'ede-java-root-project' type.  To use it, add this to your '.emacs'
 file, or other configuration:
 
      (global-ede-mode 1) ;; Enable EDE
@@ -872,25 +864,25 @@ File: cedet.info,  Node: Android Features,  Next: GNU Global,  Prev: Java Featur
 If you are building Android applications using CEDET, there are several
 features that can help with this task.
 
-   First, you need to download the android SDK.  You can get that from
-`http://developer.android.com/sdk/index.html'.  Make sure all the tools
+   First, you need to download the android SDK. You can get that from
+<http://developer.android.com/sdk/index.html>.  Make sure all the tools
 the android sdk needs has been installed.
 
 12.1 Create an Android project
 ==============================
 
-The Android SDK has a command called `android' which is used to do
+The Android SDK has a command called 'android' which is used to do
 several things, one of which is to create a template project directory
-hierarcy.  In order for Emacs to detect your SDK and find `android',
-you may need to configure the CEDET android support.
+hierarcy.  In order for Emacs to detect your SDK and find 'android', you
+may need to configure the CEDET android support.
 
  -- Function: cedet-android-sdk-root
      The root to the android SDK.
 
    You can then create a project from Emacs:
 
- -- Function: cedet-android-create-project name package target
-          &optional dir
+ -- Function: cedet-android-create-project name package target &optional
+          dir
      Create an android project with NAME.  Your activity class will be
      created in the java PACKAGE.  You need to specify a TARGET, which
      is a number specifying the desired type of package you intend to
@@ -899,7 +891,7 @@ you may need to configure the CEDET android support.
      project.
 
    It may be better, however, to let EDE do it for you instead by
-calling `ede-new'.  For example:
+calling 'ede-new'.  For example:
 
      C-x C-f ~/subdir/newprojectdir RET     ; go to an empty directory
      M-x ede-new RET                        ; Create the project.  Answer
@@ -918,33 +910,27 @@ sub-directory of your project first.
 
 <C-c . e>
      This will always jump to the AndroidManifest.xml file.
-
 <C-c . c>
 <C-c . C>
      This will compile your project using ant.  To change what type of
      build you do, you will need to change the current configuration.
      You can select a configuration such as install or release from the
      Project menu.
-
 <C-c . D>
      Debug your project.  This will also start ddms, the debug proxy for
      your android emulator or device.
-
 <C-c . E>
      Visit a resource file from a buffer from a Java buffer.  Cursor
      must be on the code representing the resource, such as:
           R.layout.mylayout
-
 <c-c . A>
      Visit a Java Activity buffer from the XML manifest file.  Cursor
      must be in an activity element for Emacs to figure out which
      activity to visit.
-
 <C-c . S>
      Visit the strings.xml file from anywhere.
-
 <C-c . g>
-     Rescan the `AndroidManifest.xml' file for version, package, etc.
+     Rescan the 'AndroidManifest.xml' file for version, package, etc.
 
    There are other items in the menu as well, such as calling layoutopt
 to debug your layout files or starting the ADB shell.
@@ -953,16 +939,14 @@ to debug your layout files or starting the ADB shell.
 configuration mode.  In the Project->Project Options menu, select
 "Default Configuration" and select one of the options.  These options
 map directly to the command line arguments of ant, so if you select
-"debug", then the compile command will be: `ant debug'.
+"debug", then the compile command will be: 'ant debug'.
 
-`debug'
+'debug'
      Builds the project in debug mode.
-
-`install'
+'install'
      Builds the project in debug mode, and installs in your emulator or
      device.
-
-`release'
+'release'
      Builds the project in release mode.
 
 12.3 ADB Features
@@ -970,13 +954,11 @@ map directly to the command line arguments of ant, so if you select
 
 CEDET supports several calls to ADB, including the following:
 
-`cedet-android-adb-devices'
+'cedet-android-adb-devices'
      Show the list of devices available.
-
-`cedet-android-adb-version-check'
+'cedet-android-adb-version-check'
      Check that the ADB install is supported by CEDET.
-
-`cedet-android-adb-shell'
+'cedet-android-adb-shell'
      Create a shell buffer in Emacs which provides a unix-like shell
      into your running Android device or emulator.
 
@@ -1004,13 +986,13 @@ Several tools in CEDET can support the use of GNU Global.  If you use
 GNU Global in your project, you should enable the use of it to enhance
 or speed up various tools in CEDET.
 
-   You can download GNU Global from `http://www.gnu.org/software/global'
+   You can download GNU Global from <http://www.gnu.org/software/global>
 
    To make sure your GNU Global installation is good, use the command
 
      M-x cedet-gnu-global-version-check RET
 
-   You can wrap any CEDET / GNU Global configurations in your `.emacs'
+   You can wrap any CEDET / GNU Global configurations in your '.emacs'
 file like this:
 
      (setq cedet-global-command "global") ; Change to path of global as needed
@@ -1022,12 +1004,12 @@ file like this:
 =======================
 
 The EDE project system can use GNU Global to accelerate finding files
-within a project.  The EDE command to `ede-find-file' bound to `C-c .
-f' is one direct application.  semantic also makes heavy use of of the
+within a project.  The EDE command to 'ede-find-file' bound to 'C-c . f'
+is one direct application.  semantic also makes heavy use of of the
 feature to find header files.
 
-   To enable it, configure the variable `ede-locate-setup-options'.
-Something like this can work in your `.emacs' file.
+   To enable it, configure the variable 'ede-locate-setup-options'.
+Something like this can work in your '.emacs' file.
 
      (setq ede-locate-setup-options
            '(ede-locate-global
@@ -1041,23 +1023,22 @@ enable it, use:
 
      (semanticdb-enable-gnu-global-databases 'c++-mode)
 
-   where the first argument is a `major-mode' in which to use it.
+   where the first argument is a 'major-mode' in which to use it.
 
    GNU Global will then be used for project-wide searches as a backup
 when pre-existing semantic database searches may not have parsed all
 your files.
 
-13.3 semantic
-=============
+13.3 semantic Symref
+====================
 
 The semantic symref tool can use GNU Global to local symbol references.
 This tool will automatically detect GNU Global and use it.  You can
 search for references via the commands:
 
-`semantic-symref'
+'semantic-symref'
      Find references to the tag under the cursor.
-
-`semantic-symref-symbol'
+'semantic-symref-symbol'
      Find references to an arbitrary symbol.
 
 
@@ -1070,13 +1051,13 @@ Several tools in CEDET can support the use of ID Utils.  If you use ID
 Utils in your project, you should enable the use of it to enhance or
 speed up various tools in CEDET.
 
-   You can download ID Utils from `http://www.gnu.org/software/idutils/'
+   You can download ID Utils from <http://www.gnu.org/software/idutils/>
 
    To make sure your ID Utils installation is good, use the command
 
      M-x cedet-idutils-version-check RET
 
-   You can wrap any CEDET / ID Utils configurations in your `.emacs'
+   You can wrap any CEDET / ID Utils configurations in your '.emacs'
 file like this:
 
      (when (cedet-idutils-version-check t)  ; Is it ok?
@@ -1087,28 +1068,27 @@ file like this:
 =====================
 
 The EDE project system can use ID Utils to accelerate finding files
-within a project.  The EDE command to `ede-find-file' bound to `C-c .
-f' is one direct application.  semantic also makes heavy use of of the
+within a project.  The EDE command to 'ede-find-file' bound to 'C-c . f'
+is one direct application.  semantic also makes heavy use of of the
 feature to find header files.
 
-   To enable it, configure the variable `ede-locate-setup-options'.
-Something like this can work in your `.emacs' file.
+   To enable it, configure the variable 'ede-locate-setup-options'.
+Something like this can work in your '.emacs' file.
 
      (setq ede-locate-setup-options
            '(ede-locate-idutils
              ede-locate-base))
 
-14.2 semantic
-=============
+14.2 semantic Symref
+====================
 
 The semantic symref tool can use ID Utils to local symbol references.
-This tool will automatically detect ID Utils and use it.  You can
-search for references via the commands:
+This tool will automatically detect ID Utils and use it.  You can search
+for references via the commands:
 
-`semantic-symref'
+'semantic-symref'
      Find references to the tag under the cursor.
-
-`semantic-symref-symbol'
+'semantic-symref-symbol'
      Find references to an arbitrary symbol.
 
 
@@ -1117,17 +1097,17 @@ File: cedet.info,  Node: CScope,  Next: Maintenance,  Prev: ID Utils,  Up: Top
 15 CScope
 *********
 
-Several tools in CEDET can support the use of CScope.  If you use
-CScope in your project, you can enable the use of it to enhance or
-speed up various tools in CEDET.
+Several tools in CEDET can support the use of CScope.  If you use CScope
+in your project, you can enable the use of it to enhance or speed up
+various tools in CEDET.
 
-   You can download CScope from `http://cscope.sourceforge.net/'
+   You can download CScope from <http://cscope.sourceforge.net/>
 
    To make sure your CScope installation is good, use the command
 
      M-x cedet-cscope-version-check RET
 
-   You can wrap any CEDET / CScope configurations in your `.emacs' file
+   You can wrap any CEDET / CScope configurations in your '.emacs' file
 like this:
 
      (when (cedet-cscope-version-check t)  ; Is it ok?
@@ -1137,11 +1117,11 @@ like this:
 15.1 Detecting CScope
 =====================
 
-CScope is detected by the presense of a `cscope.out' file at the ROOT
-of your current project, as specified by EDE.  CScope the program
-supports multiple `cscope.out' files spread out through your project,
-but this is not detected by CEDET.  It will also use a `cscope.out' in
-the same directory as your sources if you do not use EDE
+CScope is detected by the presense of a 'cscope.out' file at the ROOT of
+your current project, as specified by EDE. CScope the program supports
+multiple 'cscope.out' files spread out through your project, but this is
+not detected by CEDET. It will also use a 'cscope.out' in the same
+directory as your sources if you do not use EDE
 
    If you use CScope and need this feature, please consider fixing it.
 Contact the cedet-devel mailing list.
@@ -1149,13 +1129,13 @@ Contact the cedet-devel mailing list.
 15.2 EDE and CScope
 ===================
 
-The EDE project system can use CScope to accelerate finding files
-within a project.  The EDE command to `ede-find-file' bound to `C-c .
-f' is one direct application.  semantic also makes heavy use of of the
-feature to find header files for C and C++.
+The EDE project system can use CScope to accelerate finding files within
+a project.  The EDE command to 'ede-find-file' bound to 'C-c . f' is one
+direct application.  semantic also makes heavy use of of the feature to
+find header files for C and C++.
 
-   To enable it, configure the variable `ede-locate-setup-options'.
-Something like this can work in your `.emacs' file.
+   To enable it, configure the variable 'ede-locate-setup-options'.
+Something like this can work in your '.emacs' file.
 
      (setq ede-locate-setup-options
            '(ede-locate-cscope
@@ -1175,17 +1155,16 @@ it, use:
 pre-existing semantic database searches may not have parsed all your
 files.
 
-15.4 semantic
-=============
+15.4 semantic Symref
+====================
 
 The semantic symref tool can use CScope to local symbol references.
 This tool will automatically detect CScope and use it.  You can search
 for references via the commands:
 
-`semantic-symref'
+'semantic-symref'
      Find references to the tag under the cursor.
-
-`semantic-symref-symbol'
+'semantic-symref-symbol'
      Find references to an arbitrary symbol.
 
 
@@ -1216,7 +1195,6 @@ Appendix A GNU Free Documentation License
      Everyone is permitted to copy and distribute verbatim copies
      of this license document, but changing it is not allowed.
 
-
   0. PREAMBLE
 
      The purpose of this License is to make a manual, textbook, or other
@@ -1237,8 +1215,8 @@ Appendix A GNU Free Documentation License
      free program should come with manuals providing the same freedoms
      that the software does.  But this License is not limited to
      software manuals; it can be used for any textual work, regardless
-     of subject matter or whether it is published as a printed book.
-     We recommend this License principally for works whose purpose is
+     of subject matter or whether it is published as a printed book.  We
+     recommend this License principally for works whose purpose is
      instruction or reference.
 
 
@@ -1254,21 +1232,20 @@ Appendix A GNU Free Documentation License
      Document or a portion of it, either copied verbatim, or with
      modifications and/or translated into another language.
 
-     A "Secondary Section" is a named appendix or a front-matter
-     section of the Document that deals exclusively with the
-     relationship of the publishers or authors of the Document to the
-     Document's overall subject (or to related matters) and contains
-     nothing that could fall directly within that overall subject.
-     (For example, if the Document is in part a textbook of
-     mathematics, a Secondary Section may not explain any mathematics.)
-     The relationship could be a matter of historical connection with
-     the subject or with related matters, or of legal, commercial,
-     philosophical, ethical or political position regarding them.
+     A "Secondary Section" is a named appendix or a front-matter section
+     of the Document that deals exclusively with the relationship of the
+     publishers or authors of the Document to the Document's overall
+     subject (or to related matters) and contains nothing that could
+     fall directly within that overall subject.  (For example, if the
+     Document is in part a textbook of mathematics, a Secondary Section
+     may not explain any mathematics.)  The relationship could be a
+     matter of historical connection with the subject or with related
+     matters, or of legal, commercial, philosophical, ethical or
+     political position regarding them.
 
      The "Invariant Sections" are certain Secondary Sections whose
-     titles are designated, as being those of Invariant Sections, in
-     the notice that says that the Document is released under this
-     License.
+     titles are designated, as being those of Invariant Sections, in the
+     notice that says that the Document is released under this License.
 
      The "Cover Texts" are certain short passages of text that are
      listed, as Front-Cover Texts or Back-Cover Texts, in the notice
@@ -1282,19 +1259,19 @@ Appendix A GNU Free Documentation License
      widely available drawing editor, and that is suitable for input to
      text formatters or for automatic translation to a variety of
      formats suitable for input to text formatters.  A copy made in an
-     otherwise Transparent file format whose markup has been designed
-     to thwart or discourage subsequent modification by readers is not
+     otherwise Transparent file format whose markup has been designed to
+     thwart or discourage subsequent modification by readers is not
      Transparent.  A copy that is not "Transparent" is called "Opaque".
 
      Examples of suitable formats for Transparent copies include plain
      ASCII without markup, Texinfo input format, LaTeX input format,
-     SGML or XML using a publicly available DTD, and
-     standard-conforming simple HTML designed for human modification.
-     Opaque formats include PostScript, PDF, proprietary formats that
-     can be read and edited only by proprietary word processors, SGML
-     or XML for which the DTD and/or processing tools are not generally
-     available, and the machine-generated HTML produced by some word
-     processors for output purposes only.
+     SGML or XML using a publicly available DTD, and standard-conforming
+     simple HTML designed for human modification.  Opaque formats
+     include PostScript, PDF, proprietary formats that can be read and
+     edited only by proprietary word processors, SGML or XML for which
+     the DTD and/or processing tools are not generally available, and
+     the machine-generated HTML produced by some word processors for
+     output purposes only.
 
      The "Title Page" means, for a printed book, the title page itself,
      plus such following pages as are needed to hold, legibly, the
@@ -1313,8 +1290,8 @@ Appendix A GNU Free Documentation License
      may not use technical measures to obstruct or control the reading
      or further copying of the copies you make or distribute.  However,
      you may accept compensation in exchange for copies.  If you
-     distribute a large enough number of copies you must also follow
-     the conditions in section 3.
+     distribute a large enough number of copies you must also follow the
+     conditions in section 3.
 
      You may also lend copies, under the same conditions stated above,
      and you may publicly display copies.
@@ -1327,12 +1304,11 @@ Appendix A GNU Free Documentation License
      all these Cover Texts: Front-Cover Texts on the front cover, and
      Back-Cover Texts on the back cover.  Both covers must also clearly
      and legibly identify you as the publisher of these copies.  The
-     front cover must present the full title with all words of the
-     title equally prominent and visible.  You may add other material
-     on the covers in addition.  Copying with changes limited to the
-     covers, as long as they preserve the title of the Document and
-     satisfy these conditions, can be treated as verbatim copying in
-     other respects.
+     front cover must present the full title with all words of the title
+     equally prominent and visible.  You may add other material on the
+     covers in addition.  Copying with changes limited to the covers, as
+     long as they preserve the title of the Document and satisfy these
+     conditions, can be treated as verbatim copying in other respects.
 
      If the required texts for either cover are too voluminous to fit
      legibly, you should put the first ones listed (as many as fit
@@ -1340,110 +1316,107 @@ Appendix A GNU Free Documentation License
      adjacent pages.
 
      If you publish or distribute Opaque copies of the Document
-     numbering more than 100, you must either include a
-     machine-readable Transparent copy along with each Opaque copy, or
-     state in or with each Opaque copy a publicly-accessible
-     computer-network location containing a complete Transparent copy
-     of the Document, free of added material, which the general
-     network-using public has access to download anonymously at no
-     charge using public-standard network protocols.  If you use the
-     latter option, you must take reasonably prudent steps, when you
-     begin distribution of Opaque copies in quantity, to ensure that
-     this Transparent copy will remain thus accessible at the stated
-     location until at least one year after the last time you
-     distribute an Opaque copy (directly or through your agents or
-     retailers) of that edition to the public.
+     numbering more than 100, you must either include a machine-readable
+     Transparent copy along with each Opaque copy, or state in or with
+     each Opaque copy a publicly-accessible computer-network location
+     containing a complete Transparent copy of the Document, free of
+     added material, which the general network-using public has access
+     to download anonymously at no charge using public-standard network
+     protocols.  If you use the latter option, you must take reasonably
+     prudent steps, when you begin distribution of Opaque copies in
+     quantity, to ensure that this Transparent copy will remain thus
+     accessible at the stated location until at least one year after the
+     last time you distribute an Opaque copy (directly or through your
+     agents or retailers) of that edition to the public.
 
      It is requested, but not required, that you contact the authors of
-     the Document well before redistributing any large number of
-     copies, to give them a chance to provide you with an updated
-     version of the Document.
+     the Document well before redistributing any large number of copies,
+     to give them a chance to provide you with an updated version of the
+     Document.
 
   4. MODIFICATIONS
 
      You may copy and distribute a Modified Version of the Document
      under the conditions of sections 2 and 3 above, provided that you
-     release the Modified Version under precisely this License, with
-     the Modified Version filling the role of the Document, thus
-     licensing distribution and modification of the Modified Version to
-     whoever possesses a copy of it.  In addition, you must do these
-     things in the Modified Version:
+     release the Modified Version under precisely this License, with the
+     Modified Version filling the role of the Document, thus licensing
+     distribution and modification of the Modified Version to whoever
+     possesses a copy of it.  In addition, you must do these things in
+     the Modified Version:
 
      A. Use in the Title Page (and on the covers, if any) a title
-     distinct    from that of the Document, and from those of previous
-     versions    (which should, if there were any, be listed in the
-     History section    of the Document).  You may use the same title
-     as a previous version    if the original publisher of that version
-     gives permission.
+     distinct from that of the Document, and from those of previous
+     versions (which should, if there were any, be listed in the History
+     section of the Document).  You may use the same title as a previous
+     version if the original publisher of that version gives permission.
      B. List on the Title Page, as authors, one or more persons or
-     entities    responsible for authorship of the modifications in the
-     Modified    Version, together with at least five of the principal
-     authors of the    Document (all of its principal authors, if it
-     has less than five).
+     entities responsible for authorship of the modifications in the
+     Modified Version, together with at least five of the principal
+     authors of the Document (all of its principal authors, if it has
+     less than five).
      C. State on the Title page the name of the publisher of the
      Modified Version, as the publisher.
      D. Preserve all the copyright notices of the Document.
      E. Add an appropriate copyright notice for your modifications
      adjacent to the other copyright notices.
      F. Include, immediately after the copyright notices, a license
-     notice    giving the public permission to use the Modified Version
-     under the    terms of this License, in the form shown in the
-     Addendum below.
+     notice giving the public permission to use the Modified Version
+     under the terms of this License, in the form shown in the Addendum
+     below.
      G. Preserve in that license notice the full lists of Invariant
-     Sections    and required Cover Texts given in the Document's
-     license notice.
+     Sections and required Cover Texts given in the Document's license
+     notice.
      H. Include an unaltered copy of this License.
      I. Preserve the section entitled "History", and its title, and add
-     to    it an item stating at least the title, year, new authors, and
-       publisher of the Modified Version as given on the Title Page.  If
-       there is no section entitled "History" in the Document, create
-     one    stating the title, year, authors, and publisher of the
-     Document as    given on its Title Page, then add an item
-     describing the Modified    Version as stated in the previous
-     sentence.
+     to it an item stating at least the title, year, new authors, and
+     publisher of the Modified Version as given on the Title Page.  If
+     there is no section entitled "History" in the Document, create one
+     stating the title, year, authors, and publisher of the Document as
+     given on its Title Page, then add an item describing the Modified
+     Version as stated in the previous sentence.
      J. Preserve the network location, if any, given in the Document for
-       public access to a Transparent copy of the Document, and likewise
-       the network locations given in the Document for previous versions
-       it was based on.  These may be placed in the "History" section.
-       You may omit a network location for a work that was published at
-       least four years before the Document itself, or if the original
-      publisher of the version it refers to gives permission.
+     public access to a Transparent copy of the Document, and likewise
+     the network locations given in the Document for previous versions
+     it was based on.  These may be placed in the "History" section.
+     You may omit a network location for a work that was published at
+     least four years before the Document itself, or if the original
+     publisher of the version it refers to gives permission.
      K. In any section entitled "Acknowledgements" or "Dedications",
      preserve the section's title, and preserve in the section all the
-      substance and tone of each of the contributor acknowledgements
+     substance and tone of each of the contributor acknowledgements
      and/or dedications given therein.
-     L. Preserve all the Invariant Sections of the Document,
-     unaltered in their text and in their titles.  Section numbers
-     or the equivalent are not considered part of the section titles.
-     M. Delete any section entitled "Endorsements".  Such a section
-     may not be included in the Modified Version.
-     N. Do not retitle any existing section as "Endorsements"    or to
+     L. Preserve all the Invariant Sections of the Document, unaltered
+     in their text and in their titles.  Section numbers or the
+     equivalent are not considered part of the section titles.
+     M. Delete any section entitled "Endorsements".  Such a section may
+     not be included in the Modified Version.
+     N. Do not retitle any existing section as "Endorsements" or to
      conflict in title with any Invariant Section.
 
      If the Modified Version includes new front-matter sections or
      appendices that qualify as Secondary Sections and contain no
-     material copied from the Document, you may at your option
-     designate some or all of these sections as invariant.  To do this,
-     add their titles to the list of Invariant Sections in the Modified
-     Version's license notice.  These titles must be distinct from any
-     other section titles.
+     material copied from the Document, you may at your option designate
+     some or all of these sections as invariant.  To do this, add their
+     titles to the list of Invariant Sections in the Modified Version's
+     license notice.  These titles must be distinct from any other
+     section titles.
 
      You may add a section entitled "Endorsements", provided it contains
      nothing but endorsements of your Modified Version by various
      parties-for example, statements of peer review or that the text has
-     been approved by an organization as the authoritative definition
-     of a standard.
+     been approved by an organization as the authoritative definition of
+     a standard.
 
      You may add a passage of up to five words as a Front-Cover Text,
-     and a passage of up to 25 words as a Back-Cover Text, to the end
-     of the list of Cover Texts in the Modified Version.  Only one
-     passage of Front-Cover Text and one of Back-Cover Text may be
-     added by (or through arrangements made by) any one entity.  If the
-     Document already includes a cover text for the same cover,
-     previously added by you or by arrangement made by the same entity
-     you are acting on behalf of, you may not add another; but you may
-     replace the old one, on explicit permission from the previous
-     publisher that added the old one.
+     and a passage of up to 25 words as a Back-Cover Text, to the end of
+     the list of Cover Texts in the Modified Version.  Only one passage
+     of Front-Cover Text and one of Back-Cover Text may be added by (or
+     through arrangements made by) any one entity.  If the Document
+     already includes a cover text for the same cover, previously added
+     by you or by arrangement made by the same entity you are acting on
+     behalf of, you may not add another; but you may replace the old
+     one, on explicit permission from the previous publisher that added
+     the old one.
 
      The author(s) and publisher(s) of the Document do not by this
      License give permission to use their names for publicity for or to
@@ -1453,8 +1426,8 @@ Appendix A GNU Free Documentation License
 
      You may combine the Document with other documents released under
      this License, under the terms defined in section 4 above for
-     modified versions, provided that you include in the combination
-     all of the Invariant Sections of all of the original documents,
+     modified versions, provided that you include in the combination all
+     of the Invariant Sections of all of the original documents,
      unmodified, and list them all as Invariant Sections of your
      combined work in its license notice.
 
@@ -1480,26 +1453,26 @@ Appendix A GNU Free Documentation License
      documents released under this License, and replace the individual
      copies of this License in the various documents with a single copy
      that is included in the collection, provided that you follow the
-     rules of this License for verbatim copying of each of the
-     documents in all other respects.
+     rules of this License for verbatim copying of each of the documents
+     in all other respects.
 
      You may extract a single document from such a collection, and
      distribute it individually under this License, provided you insert
-     a copy of this License into the extracted document, and follow
-     this License in all other respects regarding verbatim copying of
-     that document.
+     a copy of this License into the extracted document, and follow this
+     License in all other respects regarding verbatim copying of that
+     document.
 
   7. AGGREGATION WITH INDEPENDENT WORKS
 
      A compilation of the Document or its derivatives with other
-     separate and independent documents or works, in or on a volume of
-     a storage or distribution medium, does not as a whole count as a
-     Modified Version of the Document, provided no compilation
-     copyright is claimed for the compilation.  Such a compilation is
-     called an "aggregate", and this License does not apply to the
-     other self-contained works thus compiled with the Document, on
-     account of their being thus compiled, if they are not themselves
-     derivative works of the Document.
+     separate and independent documents or works, in or on a volume of a
+     storage or distribution medium, does not as a whole count as a
+     Modified Version of the Document, provided no compilation copyright
+     is claimed for the compilation.  Such a compilation is called an
+     "aggregate", and this License does not apply to the other
+     self-contained works thus compiled with the Document, on account of
+     their being thus compiled, if they are not themselves derivative
+     works of the Document.
 
      If the Cover Text requirement of section 3 is applicable to these
      copies of the Document, then if the Document is less than one
@@ -1528,10 +1501,10 @@ Appendix A GNU Free Documentation License
      attempt to copy, modify, sublicense or distribute the Document is
      void, and will automatically terminate your rights under this
      License.  However, parties who have received copies, or rights,
-     from you under this License will not have their licenses
-     terminated so long as such parties remain in full compliance.
+     from you under this License will not have their licenses terminated
+     so long as such parties remain in full compliance.
 
- 10. FUTURE REVISIONS OF THIS LICENSE
+  10. FUTURE REVISIONS OF THIS LICENSE
 
      The Free Software Foundation may publish new, revised versions of
      the GNU Free Documentation License from time to time.  Such new
@@ -1544,11 +1517,10 @@ Appendix A GNU Free Documentation License
      version of this License "or any later version" applies to it, you
      have the option of following the terms and conditions either of
      that specified version or of any later version that has been
-     published (not as a draft) by the Free Software Foundation.  If
-     the Document does not specify a version number of this License,
-     you may choose any version ever published (not as a draft) by the
-     Free Software Foundation.
-
+     published (not as a draft) by the Free Software Foundation.  If the
+     Document does not specify a version number of this License, you may
+     choose any version ever published (not as a draft) by the Free
+     Software Foundation.
 
 ADDENDUM: How to use this License for your documents
 ====================================================
@@ -1566,15 +1538,15 @@ notices just after the title page:
        Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST.
        A copy of the license is included in the section entitled ``GNU
        Free Documentation License''.
-If you have no Invariant Sections, write "with no Invariant Sections"
+   If you have no Invariant Sections, write "with no Invariant Sections"
 instead of saying which ones are invariant.  If you have no Front-Cover
 Texts, write "no Front-Cover Texts" instead of "Front-Cover Texts being
 LIST"; likewise for Back-Cover Texts.
 
    If your document contains nontrivial examples of program code, we
-recommend releasing these examples in parallel under your choice of
-free software license, such as the GNU General Public License, to
-permit their use in free software.
+recommend releasing these examples in parallel under your choice of free
+software license, such as the GNU General Public License, to permit
+their use in free software.
 
 
 File: cedet.info,  Node: Index,  Prev: GNU Free Documentation License,  Up: Top
@@ -1582,49 +1554,47 @@ File: cedet.info,  Node: Index,  Prev: GNU Free Documentation License,  Up: Top
 Index
 *****
 
- [index ]
-* Menu:
 
 
 Tag Table:
-Node: Top929
-Node: Overview2041
-Node: EIEIO4952
-Node: Semantic5764
-Node: SRecode7081
-Node: Speedbar7568
-Node: EDE8518
-Node: COGRE9841
-Node: Other Library Functions10376
-Node: Installation/Basic Configuration11605
-Node: CEDET Context Menu14446
-Node: JDEE Target15246
-Node: ECB Target16785
-Node: Project Management17588
-Node: Code Completion18963
-Node: Code Generation20667
-Node: C++ Features21436
-Ref: semantic-lex-c-preprocessor-symbol-map22070
-Ref: semantic-lex-c-preprocessor-symbol-file23422
-Ref: semantic-c-obey-conditional-section-parsing-flag24015
-Ref: semantic-lex-c-nested-namespace-ignore-second24262
-Node: Arduino Features26546
-Ref: ede-arduino-preferences-file27723
-Ref: cedet-arduino-serial-monitor28756
-Node: Java Features29615
-Ref: cedet-java-command30028
-Ref: cedet-javap-command30110
-Ref: cedet-java-classpath-extension30893
-Ref: semanticdb-javap-classpath31197
-Node: Android Features32499
-Ref: cedet-android-sdk-root33295
-Ref: cedet-android-create-project33463
-Ref: cedet-android-visit-sample36713
-Node: GNU Global36971
-Node: ID Utils39019
-Node: CScope40541
-Node: Maintenance42916
-Node: GNU Free Documentation License43326
-Node: Index63049
+Node: Top926
+Node: Overview2132
+Node: EIEIO5043
+Node: Semantic5855
+Node: SRecode7172
+Node: Speedbar7660
+Node: EDE8610
+Node: COGRE9933
+Node: Other Library Functions10468
+Node: Installation/Basic Configuration11695
+Node: CEDET Context Menu14535
+Node: JDEE Target15335
+Node: ECB Target16874
+Node: Project Management17677
+Node: Code Completion19052
+Node: Code Generation20756
+Node: C++ Features21526
+Ref: semantic-lex-c-preprocessor-symbol-map22160
+Ref: semantic-lex-c-preprocessor-symbol-file23503
+Ref: semantic-c-obey-conditional-section-parsing-flag24097
+Ref: semantic-lex-c-nested-namespace-ignore-second24344
+Node: Arduino Features26629
+Ref: ede-arduino-preferences-file27805
+Ref: cedet-arduino-serial-monitor28836
+Node: Java Features29694
+Ref: cedet-java-command30107
+Ref: cedet-javap-command30189
+Ref: cedet-java-classpath-extension30972
+Ref: semanticdb-javap-classpath31276
+Node: Android Features32578
+Ref: cedet-android-sdk-root33373
+Ref: cedet-android-create-project33541
+Ref: cedet-android-visit-sample36781
+Node: GNU Global37039
+Node: ID Utils39100
+Node: CScope40635
+Node: Maintenance43021
+Node: GNU Free Documentation License43431
+Node: Index63074
 
 End Tag Table

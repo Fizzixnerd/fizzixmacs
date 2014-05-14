@@ -1,9 +1,9 @@
 ;;; c-by.el --- Generated parser support file
 
-;; Copyright (C) 1999-2012 Free Software Foundation, Inc.
+;; Copyright (C) 1999-2012, 2014 Free Software Foundation, Inc.
 
-;; Author: Matt Walker <matt@walkerbook>
-;; Created: 2013-05-29 13:45:35-0400
+;; Author: Matt Walker <matt@ultrawalker>
+;; Created: 2014-05-13 16:49:47-0400
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
@@ -182,6 +182,7 @@
       (GREATER . "\\`[>]\\'")
       (LESS . "\\`[<]\\'")
       (EQUAL . "\\`[=]\\'")
+      (QUESTION . "\\`[?]\\'")
       (BANG . "\\`[!]\\'")
       (MINUS . "\\`[-]\\'")
       (PLUS . "\\`[+]\\'")
@@ -1470,10 +1471,13 @@
       cv-declmods
       opt-ref
       variablearg-opt-name
+      opt-assign
       ,(semantic-lambda
 	(semantic-tag-new-variable
 	 (list
-	  (nth 4 vals))
+	  (append
+	   (nth 4 vals)
+	   (nth 5 vals)))
 	 (nth 1 vals) nil :constant-flag
 	 (if
 	     (member
@@ -1495,6 +1499,19 @@
      (varname
       ,(semantic-lambda
 	(nth 0 vals))
+      )
+     (semantic-list
+      arg-list
+      ,(semantic-lambda
+	(list
+	 (car
+	  (semantic-bovinate-from-nonterminal
+	   (car
+	    (nth 0 vals))
+	   (cdr
+	    (nth 0 vals))
+	   'function-pointer))
+	 (nth 1 vals)))
       )
      (opt-stars
       ,(semantic-lambda
@@ -1521,7 +1538,9 @@
       varnamelist
       ,(semantic-lambda
 	(cons
-	 (nth 1 vals)
+	 (append
+	  (nth 1 vals)
+	  (nth 2 vals))
 	 (nth 4 vals)))
       )
      (opt-ref
@@ -1529,7 +1548,9 @@
       varname-opt-initializer
       ,(semantic-lambda
 	(list
-	 (nth 1 vals)))
+	 (append
+	  (nth 1 vals)
+	  (nth 2 vals))))
       )
      ) ;; end varnamelist
 
@@ -1999,14 +2020,15 @@
       "("
       punctuation
       "\\`[*]\\'"
-      symbol
+      opt-symbol
       close-paren
       ")"
       ,(semantic-lambda
 	(list
 	 (concat
 	  "*"
-	  (nth 2 vals))))
+	  (car
+	   (nth 2 vals)))))
       )
      (open-paren
       "("
@@ -2093,30 +2115,48 @@
       close-paren)
      ) ;; end type-cast-list
 
-    (opt-stuff-after-symbol
+    (opt-brackets-after-symbol
+     (brackets-after-symbol)
+     ( ;;EMPTY
+      )
+     ) ;; end opt-brackets-after-symbol
+
+    (brackets-after-symbol
      (semantic-list
       "^(")
      (semantic-list
       "\\[.*\\]$")
-     ( ;;EMPTY
-      )
-     ) ;; end opt-stuff-after-symbol
+     ) ;; end brackets-after-symbol
 
     (multi-stage-dereference
      (namespace-symbol
-      opt-stuff-after-symbol
+      opt-brackets-after-symbol
       punctuation
       "\\`[.]\\'"
       multi-stage-dereference)
      (namespace-symbol
-      opt-stuff-after-symbol
+      opt-brackets-after-symbol
       punctuation
       "\\`[-]\\'"
       punctuation
       "\\`[>]\\'"
       multi-stage-dereference)
      (namespace-symbol
-      opt-stuff-after-symbol)
+      opt-brackets-after-symbol
+      punctuation
+      "\\`[.]\\'"
+      namespace-symbol
+      opt-brackets-after-symbol)
+     (namespace-symbol
+      opt-brackets-after-symbol
+      punctuation
+      "\\`[-]\\'"
+      punctuation
+      "\\`[>]\\'"
+      namespace-symbol
+      opt-brackets-after-symbol)
+     (namespace-symbol
+      brackets-after-symbol)
      ) ;; end multi-stage-dereference
 
     (string-seq
@@ -2168,9 +2208,23 @@
       "\\`[|]\\'")
      (punctuation
       "\\`[|]\\'")
+     (punctuation
+      "\\`[%]\\'")
      ) ;; end expr-binop
 
     (expression
+     (unaryexpression
+      punctuation
+      "\\`[?]\\'"
+      unaryexpression
+      punctuation
+      "\\`[:]\\'"
+      unaryexpression
+      ,(semantic-lambda
+	(list
+	 (identity start)
+	 (identity end)))
+      )
      (unaryexpression
       expr-binop
       unaryexpression
@@ -2195,7 +2249,7 @@
      (NEW
       builtintype-types
       semantic-list)
-     (namespace-symbol)
+     (symbol)
      (string-seq)
      (type-cast
       expression)
@@ -2211,8 +2265,9 @@
 (defun semantic-c-by--install-parser ()
   "Setup the Semantic Parser."
   (setq semantic--parse-table semantic-c-by--parse-table
-	semantic-debug-parser-source "c.by"
+	semantic-debug-parser-source "semantic/bovine/c.by"
 	semantic-debug-parser-class 'semantic-bovine-debug-parser
+	semantic-debug-parser-debugger-source 'semantic/bovine/debug
 	semantic-flex-keywords-obarray semantic-c-by--keyword-table
 	semantic-equivalent-major-modes '(c-mode c++-mode arduino-mode)
 	))

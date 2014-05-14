@@ -1,6 +1,6 @@
 ;;; semantic/ia-utest.el --- Analyzer unit tests
 
-;; Copyright (C) 2008, 2009, 2010, 2011 Eric M. Ludlam
+;; Copyright (C) 2008, 2009, 2010, 2011, 2014 Eric M. Ludlam
 
 ;; Author: Eric M. Ludlam <eric@siege-engine.com>
 
@@ -47,9 +47,11 @@
     "tests/testfriends.cpp"
     "tests/testusing.cpp"
     "tests/testnsp.cpp"
+    "tests/testlocalvars.cpp"
     "tests/testsppcomplete.c"
     "tests/testvarnames.c"
     "tests/testjavacomp.java"
+    "tests/testvarnames.java"
     "tests/testf90.f90"
     )
   "List of files with analyzer completion test points.")
@@ -561,7 +563,7 @@ tag that contains point, and return that."
        target (lambda (start end prefix) (setq Lcount (1+ Lcount)))
        (semantic-tag-start tag)
        (semantic-tag-end tag))
-      (when (cedet-called-interactively-p)
+      (when (called-interactively-p 'any)
 	(message "Found %d occurances of %s in %.2f seconds"
 		 Lcount (semantic-tag-name target)
 		 (semantic-elapsed-time start (current-time))))

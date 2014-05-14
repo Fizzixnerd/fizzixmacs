@@ -5,10 +5,10 @@
 ;     * added slime-setup and set default lisp program to sbcl
 
 ;; This line says not to invoke linedit when running sbcl from emacs.
-;;(setq inferior-lisp-program "/usr/bin/sbcl --noinform --no-linedit")
+(setq inferior-lisp-program "/usr/bin/sbcl --noinform --no-linedit")
 (setq slime-lisp-implementations
       '((sbcl ("sbcl" "--core" "/home/matt/.emacs.d/sbcl.core-for-slime"))))
-(add-to-list 'load-path "~/Documents/src/matt/cl/")
+(add-to-list 'load-path "~/src/")
 
 ;; from `info slime', section 7.3 (tips and tricks): Connects to lisp
 ;; whenever you open a lisp file.

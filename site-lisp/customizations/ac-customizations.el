@@ -65,7 +65,9 @@
 (progn 
   (add-hook 'slime-mode-hook 'set-up-slime-ac)
   (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
-  (add-hook 'common-lisp-mode-hook 'my-ac-common-lisp-mode-hook))
+  (add-hook 'common-lisp-mode-hook 'my-ac-common-lisp-mode-hook)
+  (eval-after-load "autocomplete"
+    '(add-to-list 'ac-modes 'slime-repl-mode)))
 
 (global-auto-complete-mode)
 

@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 1999-2012 Free Software Foundation, Inc.
 
-;; Author: Matt Walker <matt@walkerbook>
-;; Created: 2013-05-29 13:45:39-0400
+;; Author: Matt Walker <matt@ultrawalker>
+;; Created: 2014-05-13 16:49:48-0400
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
@@ -383,8 +383,9 @@
 (defun semantic-make-by--install-parser ()
   "Setup the Semantic Parser."
   (setq semantic--parse-table semantic-make-by--parse-table
-	semantic-debug-parser-source "make.by"
+	semantic-debug-parser-source "semantic/bovine/make.by"
 	semantic-debug-parser-class 'semantic-bovine-debug-parser
+	semantic-debug-parser-debugger-source 'semantic/bovine/debug
 	semantic-flex-keywords-obarray semantic-make-by--keyword-table
 	))
 

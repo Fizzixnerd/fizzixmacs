@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2005, 2007, 2008, 2009, 2010, 2013 Eric M. Ludlam
 
-;; Author: Matt Walker <matt@walkerbook>
-;; Created: 2013-05-29 13:43:59-0400
+;; Author: Matt Walker <matt@ultrawalker>
+;; Created: 2014-05-13 16:49:09-0400
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

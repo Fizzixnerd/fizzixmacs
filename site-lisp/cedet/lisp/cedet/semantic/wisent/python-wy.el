@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002-2012 Free Software Foundation, Inc.
 
-;; Author: Matt Walker <matt@walkerbook>
-;; Created: 2013-05-29 13:45:16-0400
+;; Author: Matt Walker <matt@ultrawalker>
+;; Created: 2014-05-13 16:49:39-0400
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

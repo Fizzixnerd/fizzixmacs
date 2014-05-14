@@ -1,4 +1,4 @@
-This is wisent.info, produced by makeinfo version 4.13 from wisent.texi.
+This is wisent.info, produced by makeinfo version 5.2 from wisent.texi.
 
 Copyright (C) 1988-1993, 1995, 1998-2004, 2007, 2012-2013 Free Software
 Foundation, Inc.
@@ -13,7 +13,6 @@ Foundation, Inc.
 
      (a) The FSF's Back-Cover Text is: "You have the freedom to copy and
      modify this GNU manual."
-
 INFO-DIR-SECTION Emacs misc features
 START-INFO-DIR-ENTRY
 * Wisent: (wisent).             Semantic Wisent parser development.
@@ -65,7 +64,7 @@ File: wisent.info,  Node: Wisent Overview,  Next: Wisent Grammar,  Prev: Top,  U
 *****************
 
 "Wisent" (the European Bison) is an implementation in Emacs Lisp of the
-GNU Compiler Compiler Bison. Its code is a port of the C code of GNU
+GNU Compiler Compiler Bison.  Its code is a port of the C code of GNU
 Bison 1.28 & 1.31.
 
    For more details on the basic concepts for understanding Wisent, it
@@ -78,21 +77,19 @@ See the *note Semantic Manual: (semantic)Top.
 
    * It uses a fast but not so space-efficient encoding for the parse
      tables, described in Corbett's PhD thesis from Berkeley:
-
-          `Static Semantics in Compiler Error Recovery'
-          June 1985, Report No. UCB/CSD 85/251.
+          'Static Semantics in Compiler Error Recovery'
+          June 1985, Report No.  UCB/CSD 85/251.
 
    * For generating the lookahead sets, Wisent uses the well-known
      technique of F. DeRemer and A. Pennello they described in:
-
-          `Efficient Construction of LALR(1) Lookahead Sets'
+          'Efficient Construction of LALR(1) Lookahead Sets'
           October 1982, ACM TOPLS Vol 4 No 4.
 
    * Wisent resolves shift/reduce conflicts using operator precedence
      and associativity.
 
    * Parser error recovery is accomplished using rules which match the
-     special token `error'.
+     special token 'error'.
 
    Nevertheless there are some fundamental differences between Bison and
 Wisent.
@@ -111,8 +108,8 @@ Wisent.
    * Wisent allows multiple start nonterminals and allows a call to the
      parsing function to be made for a particular start nonterminal.
      For example, this is particularly useful to parse a region of an
-     Emacs buffer.  Semantic heavily depends on the availability of
-     this feature.
+     Emacs buffer.  Semantic heavily depends on the availability of this
+     feature.
 
 
 File: wisent.info,  Node: Wisent Grammar,  Next: Wisent Parsing,  Prev: Wisent Overview,  Up: Top
@@ -123,7 +120,7 @@ File: wisent.info,  Node: Wisent Grammar,  Next: Wisent Parsing,  Prev: Wisent O
 In order for Wisent to parse a language, it must be described by a
 "context-free grammar".  That is a grammar specified as rules that can
 be applied regardless of context.  For more information, see *note
-Language and Grammar: (bison)Language and Grammar, in the Bison manual.
+(bison)Language and Grammar::, in the Bison manual.
 
    The formal grammar is formulated using "terminal" and "nonterminal"
 items.  Terminals can be Emacs Lisp symbols or characters, and
@@ -132,13 +129,13 @@ nonterminals are symbols only.
    Terminals (also known as "tokens") represent the lexical elements of
 the language like numbers, strings, etc..
 
-   For example `PLUS' can represent the operator `+'.
+   For example 'PLUS' can represent the operator '+'.
 
    Nonterminal symbols are described by rules:
 
      RESULT == COMPONENTS...
 
-   `RESULT' is a nonterminal that this rule describes and `COMPONENTS'
+   'RESULT' is a nonterminal that this rule describes and 'COMPONENTS'
 are various terminals and nonterminals that are put together by this
 rule.
 
@@ -146,8 +143,8 @@ rule.
 
      exp == exp PLUS exp
 
-   Says that two groupings of type `exp', with a `PLUS' token in
-between, can be combined into a larger grouping of type `exp'.
+   Says that two groupings of type 'exp', with a 'PLUS' token in
+between, can be combined into a larger grouping of type 'exp'.
 
 * Menu:
 
@@ -166,39 +163,38 @@ To be acceptable by Wisent a context-free grammar must respect a
 particular format.  That is, must be represented as an Emacs Lisp list
 of the form:
 
-   `(TERMINALS ASSOCS . NON-TERMINALS)'
+   '(TERMINALS ASSOCS . NON-TERMINALS)'
 
 TERMINALS
      Is the list of terminal symbols used in the grammar.
 
 ASSOCS
-     Specify the associativity of TERMINALS.  It is `nil' when there is
-     no associativity defined, or an alist of
-     `(ASSOC-TYPE . ASSOC-VALUE)' elements.
+     Specify the associativity of TERMINALS.  It is 'nil' when there is
+     no associativity defined, or an alist of '(ASSOC-TYPE . ASSOC-VALUE)'
+     elements.
 
-     ASSOC-TYPE must be one of the `default-prec', `nonassoc', `left'
-     or `right' symbols.  When ASSOC-TYPE is `default-prec',
-     ASSOC-VALUE must be `nil' or `t' (the default).  Otherwise it is a
-     list of tokens which must have been previously declared in
-     TERMINALS.
+     ASSOC-TYPE must be one of the 'default-prec', 'nonassoc', 'left' or
+     'right' symbols.  When ASSOC-TYPE is 'default-prec', ASSOC-VALUE
+     must be 'nil' or 't' (the default).  Otherwise it is a list of
+     tokens which must have been previously declared in TERMINALS.
 
-     For details, see *note Contextual Precedence: (bison)Contextual
-     Precedence, in the Bison manual.
+     For details, see *note (bison)Contextual Precedence::, in the Bison
+     manual.
 
 NON-TERMINALS
      Is the list of nonterminal definitions.  Each definition has the
      form:
 
-     `(NONTERM . RULES)'
+     '(NONTERM . RULES)'
 
      Where NONTERM is the nonterminal symbol defined and RULES the list
      of rules that describe this nonterminal.  Each rule is a list:
 
-     `(COMPONENTS [PRECEDENCE] [ACTION])'
+     '(COMPONENTS [PRECEDENCE] [ACTION])'
 
      Where:
 
-    COMPONENTS
+     COMPONENTS
           Is a list of various terminals and nonterminals that are put
           together by this rule.
 
@@ -207,24 +203,24 @@ NON-TERMINALS
                (exp ((exp ?+ exp))          ;; exp: exp '+' exp
                     )                       ;;    ;
 
-          Says that two groupings of type `exp', with a `+' token in
-          between, can be combined into a larger grouping of type `exp'.
+          Says that two groupings of type 'exp', with a '+' token in
+          between, can be combined into a larger grouping of type 'exp'.
 
           By convention, a nonterminal symbol should be in lower case,
-          such as `exp', `stmt' or `declaration'.  Terminal symbols
+          such as 'exp', 'stmt' or 'declaration'.  Terminal symbols
           should be upper case to distinguish them from nonterminals:
-          for example, `INTEGER', `IDENTIFIER', `IF' or `RETURN'.  A
+          for example, 'INTEGER', 'IDENTIFIER', 'IF' or 'RETURN'.  A
           terminal symbol that represents a particular keyword in the
           language is conventionally the same as that keyword converted
-          to upper case.  The terminal symbol `error' is reserved for
+          to upper case.  The terminal symbol 'error' is reserved for
           error recovery.
 
           Scattered among the components can be "middle-rule" actions.
           Usually only ACTION is provided (*note action::).
 
-          If COMPONENTS in a rule is `nil', it means that the rule can
+          If COMPONENTS in a rule is 'nil', it means that the rule can
           match the empty string.  For example, here is how to define a
-          comma-separated sequence of zero or more `exp' groupings:
+          comma-separated sequence of zero or more 'exp' groupings:
 
                (expseq  (nil)               ;; expseq: ;; empty
                         ((expseq1))         ;;       | expseq1
@@ -234,7 +230,7 @@ NON-TERMINALS
                         ((expseq1 ?, exp))  ;;        | expseq1 ',' exp
                         )                   ;;        ;
 
-    PRECEDENCE
+     PRECEDENCE
           Assign the rule the precedence of the given terminal item,
           overriding the precedence that would be deduced for it, that
           is the one of the last terminal in it.  Notice that only
@@ -246,7 +242,7 @@ NON-TERMINALS
 
           Here is how PRECEDENCE solves the problem of unary minus.
           First, declare a precedence for a fictitious terminal symbol
-          named `UMINUS'.  There are no tokens of this type, but the
+          named 'UMINUS'.  There are no tokens of this type, but the
           symbol serves to stand for its precedence:
 
                ...
@@ -255,7 +251,7 @@ NON-TERMINALS
                 (left '*')
                 (left UMINUS))
 
-          Now the precedence of `UMINUS' can be used in specific rules:
+          Now the precedence of 'UMINUS' can be used in specific rules:
 
                (exp    ...                  ;; exp:    ...
                         ((exp ?- exp))      ;;         | exp '-' exp
@@ -264,19 +260,19 @@ NON-TERMINALS
                        ...                  ;;         ...
                        )                    ;;         ;
 
-          If you forget to append `[UMINUS]' to the rule for unary
+          If you forget to append '[UMINUS]' to the rule for unary
           minus, Wisent silently assumes that minus has its usual
           precedence.  This kind of problem can be tricky to debug,
           since one typically discovers the mistake only by testing the
           code.
 
-          Using `(default-prec nil)' declaration makes it easier to
-          discover this kind of problem systematically.  It causes
-          rules that lack a PRECEDENCE modifier to have no precedence,
-          even if the last terminal symbol mentioned in their
-          components has a declared precedence.
+          Using '(default-prec nil)' declaration makes it easier to
+          discover this kind of problem systematically.  It causes rules
+          that lack a PRECEDENCE modifier to have no precedence, even if
+          the last terminal symbol mentioned in their components has a
+          declared precedence.
 
-          If `(default-prec nil)' is in effect, you must specify
+          If '(default-prec nil)' is in effect, you must specify
           PRECEDENCE for all rules that participate in precedence
           conflict resolution.  Then you will see any shift/reduce
           conflict until you tell Wisent how to resolve it, either by
@@ -284,26 +280,25 @@ NON-TERMINALS
           This will probably add declarations to the grammar, but it
           helps to protect against incorrect rule precedences.
 
-          The effect of `(default-prec nil)' can be reversed by giving
-          `(default-prec t)', which is the default.
+          The effect of '(default-prec nil)' can be reversed by giving
+          '(default-prec t)', which is the default.
 
-          For more details, see *note Contextual Precedence:
-          (bison)Contextual Precedence, in the Bison manual.
+          For more details, see *note (bison)Contextual Precedence::, in
+          the Bison manual.
 
           It is important to understand that ASSOCS declarations defines
-          associativity but also assign a precedence level to
-          terminals.  All terminals declared in the same `left',
-          `right' or `nonassoc' association get the same precedence
-          level.  The precedence level is increased at each new
-          association.
+          associativity but also assign a precedence level to terminals.
+          All terminals declared in the same 'left', 'right' or
+          'nonassoc' association get the same precedence level.  The
+          precedence level is increased at each new association.
 
           On the other hand, PRECEDENCE explicitly assign the precedence
           level of the given terminal to a rule.
 
-    ACTION
+     ACTION
           An action is an optional Emacs Lisp function call, like this:
 
-          `(identity $1)'
+          '(identity $1)'
 
           The result of an action determines the semantic value of a
           rule.
@@ -312,43 +307,43 @@ NON-TERMINALS
           embedded in a lambda expression, and several useful local
           variables will be defined:
 
-         `$N'
+          '$N'
                Where N is a positive integer.  Like in Bison, the value
-               of `$N' is the semantic value of the Nth element of
+               of '$N' is the semantic value of the Nth element of
                COMPONENTS, starting from 1.  It can be of any Lisp data
                type.
 
-         `$regionN'
-               Where N is a positive integer.  For each `$N' variable
-               defined there is a corresponding `$regionN' variable.
-               Its value is a pair `(START-POS .  END-POS)' that
+          '$regionN'
+               Where N is a positive integer.  For each '$N' variable
+               defined there is a corresponding '$regionN' variable.
+               Its value is a pair '(START-POS . END-POS)' that
                represent the start and end positions (in the lexical
-               input stream) of the `$N' value.  It can be `nil' when
+               input stream) of the '$N' value.  It can be 'nil' when
                the component positions are not available, like for an
                empty string component for example.
 
-         `$region'
+          '$region'
                Its value is the leftmost and rightmost positions of
                input data matched by all COMPONENTS in the rule.  This
-               is a pair `(LEFTMOST-POS .  RIGHTMOST-POS)'.  It can be
-               `nil' when components positions are not available.
+               is a pair '(LEFTMOST-POS . RIGHTMOST-POS)'.  It can be
+               'nil' when components positions are not available.
 
-         `$nterm'
+          '$nterm'
                This variable is initialized with the nonterminal symbol
                (NONTERM) the rule belongs to.  It could be useful to
-               improve error reporting or debugging.  It is also used
-               to automatically provide incremental re-parse entry
-               points for Semantic tags (*note Wisent Semantic::).
+               improve error reporting or debugging.  It is also used to
+               automatically provide incremental re-parse entry points
+               for Semantic tags (*note Wisent Semantic::).
 
-         `$action'
-               The value of `$action' is the symbolic name of the
+          '$action'
+               The value of '$action' is the symbolic name of the
                current semantic action (*note Debugging actions::).
 
           When an action is not specified a default value is supplied,
-          it is `(identity $1)'.  This means that the default semantic
-          value of a rule is the value of its first component.
-          Excepted for a rule matching the empty string, for which the
-          default action is to return `nil'.
+          it is '(identity $1)'.  This means that the default semantic
+          value of a rule is the value of its first component.  Excepted
+          for a rule matching the empty string, for which the default
+          action is to return 'nil'.
 
 
 File: wisent.info,  Node: Example,  Next: Compiling a grammar,  Prev: Grammar format,  Up: Wisent Grammar
@@ -357,7 +352,7 @@ File: wisent.info,  Node: Example,  Next: Compiling a grammar,  Prev: Grammar fo
 ===========
 
 Here is an example to parse simple infix arithmetic expressions.  See
-*note Infix Calc: (bison)Infix Calc, in the Bison manual for details.
+*note (bison)Infix Calc::, in the Bison manual for details.
 
      '(
        ;; Terminals
@@ -472,8 +467,8 @@ derive the parser.  Like Bison, Wisent translates grammars that must be
 
    A grammar is LALR(1) if it is possible to tell how to parse any
 portion of an input string with just a single token of look-ahead: the
-"look-ahead token".  See *note Language and Grammar: (bison)Language
-and Grammar, in the Bison manual for more information.
+"look-ahead token".  See *note (bison)Language and Grammar::, in the
+Bison manual for more information.
 
    Grammar translation (compilation) is achieved by the function:
 
@@ -481,33 +476,33 @@ and Grammar, in the Bison manual for more information.
      Compile GRAMMAR and return an LALR(1) automaton.
 
      Optional argument START-LIST is a list of start symbols
-     (nonterminals).  If `nil' the first nonterminal defined in the
+     (nonterminals).  If 'nil' the first nonterminal defined in the
      grammar is the default start symbol.  If START-LIST contains only
      one element, it defines the start symbol.  If START-LIST contains
      more than one element, all are defined as potential start symbols,
-     unless `wisent-single-start-flag' is non-`nil'.  In that case the
-     first element of START-LIST defines the start symbol and others
-     are ignored.
+     unless 'wisent-single-start-flag' is non-'nil'.  In that case the
+     first element of START-LIST defines the start symbol and others are
+     ignored.
 
      The LALR(1) automaton is a vector of the form:
 
-     `[ACTIONS GOTOS STARTS FUNCTIONS]'
+     '[ACTIONS GOTOS STARTS FUNCTIONS]'
 
-    ACTIONS
+     ACTIONS
           A state/token matrix telling the parser what to do at every
           state based on the current look-ahead token.  That is shift,
           reduce, accept or error.  See also *note Wisent Parsing::.
 
-    GOTOS
+     GOTOS
           A state/nonterminal matrix telling the parser the next state
           to go to after reducing with each rule.
 
-    STARTS
+     STARTS
           An alist which maps the allowed start symbols (nonterminals)
           to lexical tokens that will be first shifted into the parser
           stack.
 
-    FUNCTIONS
+     FUNCTIONS
           An obarray of semantic action symbols.  A semantic action is
           actually an Emacs Lisp function (lambda expression).
 
@@ -526,8 +521,8 @@ states, there are more than one action possible.  Such a grammar is
 
    The parser can't be driven by an automaton which isn't completely
 "deterministic", that is which contains conflicts.  It is necessary to
-resolve the conflicts to eliminate them.  Wisent resolves conflicts
-like Bison does.
+resolve the conflicts to eliminate them.  Wisent resolves conflicts like
+Bison does.
 
    There are two sorts of conflicts:
 
@@ -537,8 +532,7 @@ like Bison does.
 
      Such conflicts are resolved by choosing to shift, unless otherwise
      directed by operator precedence declarations.  See *note
-     Shift/Reduce: (bison)Shift/Reduce, in the Bison manual for more
-     information.
+     (bison)Shift/Reduce::, in the Bison manual for more information.
 
 "reduce/reduce conflicts"
      That occurs if there are two or more rules that apply to the same
@@ -546,10 +540,10 @@ like Bison does.
      grammar.
 
      Such conflicts are resolved by choosing to use the rule that
-     appears first in the grammar, but it is very risky to rely on
-     this.  Every reduce/reduce conflict must be studied and usually
-     eliminated.  See *note Reduce/Reduce: (bison)Reduce/Reduce, in the
-     Bison manual for more information.
+     appears first in the grammar, but it is very risky to rely on this.
+     Every reduce/reduce conflict must be studied and usually
+     eliminated.  See *note (bison)Reduce/Reduce::, in the Bison manual
+     for more information.
 
 * Menu:
 
@@ -562,22 +556,22 @@ File: wisent.info,  Node: Grammar Debugging,  Next: Understanding the automaton,
 2.4.1 Grammar debugging
 -----------------------
 
-To help writing a new grammar, `wisent-compile-grammar' can produce a
+To help writing a new grammar, 'wisent-compile-grammar' can produce a
 verbose report containing a detailed description of the grammar and
-parser (equivalent to what Bison reports with the `--verbose' option).
+parser (equivalent to what Bison reports with the '--verbose' option).
 
-   To enable the verbose report you can set to non-`nil' the variable:
+   To enable the verbose report you can set to non-'nil' the variable:
 
  -- Option: wisent-verbose-flag
-     non-`nil' means to report verbose information on generated parser.
+     non-'nil' means to report verbose information on generated parser.
 
    Or interactively use the command:
 
  -- Command: wisent-toggle-verbose-flag
      Toggle whether to report verbose information on generated parser.
 
-   The verbose report is printed in the temporary buffer `*wisent-log*'
-when running interactively, or in file `wisent.output' when running in
+   The verbose report is printed in the temporary buffer '*wisent-log*'
+when running interactively, or in file 'wisent.output' when running in
 batch mode.  Different reports are separated from each other by a line
 like this:
 
@@ -592,7 +586,7 @@ on the verbose report.
      variable to print the content of some internal data structures:
 
       -- Variable: wisent-debug-flag
-          non-`nil' means enable some debug stuff.
+          non-'nil' means enable some debug stuff.
 
 
 File: wisent.info,  Node: Understanding the automaton,  Prev: Grammar Debugging,  Up: Conflicts
@@ -601,8 +595,8 @@ File: wisent.info,  Node: Understanding the automaton,  Prev: Grammar Debugging,
 ---------------------------------
 
 This section (took from the manual of Bison 1.49) describes how to use
-the verbose report printed by `wisent-compile-grammar' to understand
-the generated automaton, to tune or fix a grammar.
+the verbose report printed by 'wisent-compile-grammar' to understand the
+generated automaton, to tune or fix a grammar.
 
    We will use the following example:
 
@@ -634,7 +628,7 @@ issues the following two clear messages:
      Grammar contains 1 useless nonterminals and 1 useless rules
      Grammar contains 7 shift/reduce conflicts
 
-   The `*wisent-log*' buffer details things!
+   The '*wisent-log*' buffer details things!
 
    The first section reports conflicts that were solved using precedence
 and/or associativity:
@@ -705,7 +699,7 @@ that useless tokens might be used by the scanner):
 
    The report then details the automaton itself, describing each state
 with it set of "items", also known as "pointed rules".  Each item is a
-production rule together with a point (marked by `.') that the input
+production rule together with a point (marked by '.') that the input
 cursor.
 
      state 0
@@ -715,10 +709,10 @@ cursor.
          exp go to state 2
 
    State 0 corresponds to being at the very beginning of the parsing, in
-the initial rule, right before the start symbol (`exp').  When the
+the initial rule, right before the start symbol ('exp').  When the
 parser returns to this state right after having reduced a rule that
-produced an `exp', it jumps to state 2.  If there is no such transition
-on a nonterminal symbol, and the lookahead is a `NUM', then this token
+produced an 'exp', it jumps to state 2.  If there is no such transition
+on a nonterminal symbol, and the lookahead is a 'NUM', then this token
 is shifted on the parse stack, and the control flow jumps to state 1.
 Any other lookahead triggers a parse error.
 
@@ -730,10 +724,10 @@ Any other lookahead triggers a parse error.
 
          $default    reduce using rule 5 (exp)
 
-   the rule 5, `exp: NUM;', is completed.  Whatever the lookahead
-(`$default'), the parser will reduce it.  If it was coming from state
-0, then, after this reduction it will return to state 0, and will jump
-to state 2 (`exp: go to state 2').
+   the rule 5, 'exp: NUM;', is completed.  Whatever the lookahead
+('$default'), the parser will reduce it.  If it was coming from state 0,
+then, after this reduction it will return to state 0, and will jump to
+state 2 ('exp: go to state 2').
 
      state 2
 
@@ -749,9 +743,9 @@ to state 2 (`exp: go to state 2').
          '/' shift, and go to state 6
 
    In state 2, the automaton can only shift a symbol.  For instance,
-because of the item `exp -> exp . '+' exp', if the lookahead if `+', it
+because of the item 'exp -> exp . '+' exp', if the lookahead if '+', it
 will be shifted on the parse stack, and the automaton control will jump
-to state 3, corresponding to the item `exp -> exp . '+' exp':
+to state 3, corresponding to the item 'exp -> exp . '+' exp':
 
      state 3
 
@@ -794,7 +788,7 @@ above will trigger a parse error.
 
          exp go to state 10
 
-   As was announced in beginning of the report, `State 7 contains 1
+   As was announced in beginning of the report, 'State 7 contains 1
 shift/reduce conflict.':
 
      state 7
@@ -811,14 +805,13 @@ shift/reduce conflict.':
          '/' [reduce using rule 1 (exp)]
          $default    reduce using rule 1 (exp)
 
-   Indeed, there are two actions associated to the lookahead `/':
-either shifting (and going to state 6), or reducing rule 1.  The
-conflict means that either the grammar is ambiguous, or the parser
-lacks information to make the right decision.  Indeed the grammar is
-ambiguous, as, since we did not specify the precedence of `/', the
-sentence `NUM + NUM / NUM' can be parsed as `NUM + (NUM / NUM)', which
-corresponds to shifting `/', or as `(NUM + NUM) / NUM', which
-corresponds to reducing rule 1.
+   Indeed, there are two actions associated to the lookahead '/': either
+shifting (and going to state 6), or reducing rule 1.  The conflict means
+that either the grammar is ambiguous, or the parser lacks information to
+make the right decision.  Indeed the grammar is ambiguous, as, since we
+did not specify the precedence of '/', the sentence 'NUM + NUM / NUM'
+can be parsed as 'NUM + (NUM / NUM)', which corresponds to shifting '/',
+or as '(NUM + NUM) / NUM', which corresponds to reducing rule 1.
 
    Because in LALR(1) parsing a single decision can be made, Wisent
 arbitrarily chose to disable the reduction, see *note Conflicts::.
@@ -829,10 +822,10 @@ either shifting the next token and going to the corresponding state, or
 reducing a single rule.  In the other cases, i.e., when shifting _and_
 reducing is possible or when _several_ reductions are possible, the
 lookahead is required to select the action.  State 7 is one such state:
-if the lookahead is `*' or `/' then the action is shifting, otherwise
+if the lookahead is '*' or '/' then the action is shifting, otherwise
 the action is reducing rule 1.  In other words, the first two items,
-corresponding to rule 1, are not eligible when the lookahead is `*',
-since we specified that `*' has higher precedence that `+'.  More
+corresponding to rule 1, are not eligible when the lookahead is '*',
+since we specified that '*' has higher precedence that '+'.  More
 generally, some items are eligible only with some set of possible
 lookaheads.
 
@@ -887,8 +880,8 @@ lookaheads.
          $default    reduce using rule 4 (exp)
 
    Observe that state 10 contains conflicts due to the lack of
-precedence of `/' wrt `+', `-', and `*', but also because the
-associativity of `/' is not specified.
+precedence of '/' wrt '+', '-', and '*', but also because the
+associativity of '/' is not specified.
 
    Finally, the state 11 (plus 12) is named the "final state", or the
 "accepting state":
@@ -903,8 +896,8 @@ associativity of `/' is not specified.
 
          $default    accept
 
-   The end of input is shifted `$EOI shift,' and the parser exits
-successfully (`go to state 12', that terminates).
+   The end of input is shifted '$EOI shift,' and the parser exits
+successfully ('go to state 12', that terminates).
 
 
 File: wisent.info,  Node: Wisent Parsing,  Next: Wisent Semantic,  Prev: Wisent Grammar,  Up: Top
@@ -937,27 +930,27 @@ parser which repeatedly:
      either stops or calls a recovery routine to try to resume parsing.
 
    The above elementary actions are driven by the LALR(1) automaton
-built by `wisent-compile-grammar' from a context-free grammar.
+built by 'wisent-compile-grammar' from a context-free grammar.
 
    The Wisent's parser is entered by calling the function:
 
  -- Function: wisent-parse automaton lexer &optional error start
      Parse input using the automaton specified in AUTOMATON.
 
-    AUTOMATON
-          Is an LALR(1) automaton generated by `wisent-compile-grammar'
+     AUTOMATON
+          Is an LALR(1) automaton generated by 'wisent-compile-grammar'
           (*note Wisent Grammar::).
 
-    LEXER
+     LEXER
           Is a function with no argument called by the parser to obtain
           the next terminal (token) in input (*note Writing a lexer::).
 
-    ERROR
+     ERROR
           Is an optional reporting function called when a parse error
           occurs.  It receives a message string to report.  It defaults
-          to the function `wisent-message' (*note Report errors::).
+          to the function 'wisent-message' (*note Report errors::).
 
-    START
+     START
           Specify the start symbol (nonterminal) used by the parser as
           its goal.  It defaults to the start symbol defined in the
           grammar (*note Wisent Grammar::).
@@ -985,9 +978,9 @@ File: wisent.info,  Node: Writing a lexer,  Next: Actions goodies,  Up: Wisent P
 3.1 What the parser must receive
 ================================
 
-It is important to understand that the parser does not parse
-characters, but lexical tokens, and does not know anything about
-characters in text streams!
+It is important to understand that the parser does not parse characters,
+but lexical tokens, and does not know anything about characters in text
+streams!
 
    Reading input data to produce lexical tokens is performed by a lexer
 (also called a scanner) in a lexical analysis step, before the syntax
@@ -997,7 +990,7 @@ the lexer when it needs the next token to parse.
    A Wisent's lexer is an Emacs Lisp function with no argument.  It must
 return a valid lexical token of the form:
 
-   `(TOKEN-CLASS VALUE [START . END])'
+   '(TOKEN-CLASS VALUE [START . END])'
 
 TOKEN-CLASS
      Is a category of lexical token identifying a terminal as specified
@@ -1010,21 +1003,21 @@ VALUE
 
 START
 END
-     Are the optionals beginning and end positions of VALUE in the
-     input stream.
+     Are the optionals beginning and end positions of VALUE in the input
+     stream.
 
    When there are no more tokens to read the lexer must return the token
-`(list wisent-eoi-term)' to each request.
+'(list wisent-eoi-term)' to each request.
 
  -- Variable: wisent-eoi-term
      Predefined constant, End-Of-Input terminal symbol.
 
-   `wisent-lex' is an example of a lexer that reads lexical tokens
+   'wisent-lex' is an example of a lexer that reads lexical tokens
 produced by a Semantic lexer, and translates them into lexical tokens
 suitable to the Wisent parser.  See also *note Wisent Lex::.
 
    To call the lexer in a semantic action use the function
-`wisent-lexer'.  See also *note Actions goodies::.
+'wisent-lexer'.  See also *note Actions goodies::.
 
 
 File: wisent.info,  Node: Actions goodies,  Next: Report errors,  Prev: Writing a lexer,  Up: Wisent Parsing
@@ -1034,17 +1027,16 @@ File: wisent.info,  Node: Actions goodies,  Next: Report errors,  Prev: Writing 
 
  -- Variable: wisent-input
      The last token read.  This variable only has meaning in the scope
-     of `wisent-parse'.
+     of 'wisent-parse'.
 
  -- Function: wisent-lexer
      Obtain the next terminal in input.
 
  -- Function: wisent-region &rest positions
      Return the start/end positions of the region including POSITIONS.
-     Each element of POSITIONS is a pair `(START-POS .  END-POS)' or
-     `nil'.  The returned value is the pair
-     `(MIN-START-POS . MAX-END-POS)' or `nil' if no POSITIONS are
-     available.
+     Each element of POSITIONS is a pair '(START-POS .  END-POS)' or
+     'nil'.  The returned value is the pair '(MIN-START-POS . MAX-END-POS)'
+     or 'nil' if no POSITIONS are available.
 
 
 File: wisent.info,  Node: Report errors,  Next: Error recovery,  Prev: Actions goodies,  Up: Wisent Parsing
@@ -1053,17 +1045,17 @@ File: wisent.info,  Node: Report errors,  Next: Error recovery,  Prev: Actions g
 ================================
 
 When the parser encounters a syntax error it calls a user-defined
-function.  It must be an Emacs Lisp function with one argument: a
-string containing the message to report.
+function.  It must be an Emacs Lisp function with one argument: a string
+containing the message to report.
 
    By default the parser uses this function to report error messages:
 
  -- Function: wisent-message string &rest args
-     Print a one-line message if `wisent-parse-verbose-flag' is set.
+     Print a one-line message if 'wisent-parse-verbose-flag' is set.
      Pass STRING and ARGS arguments to "message".
 
 *Please Note:*
-     `wisent-message' uses the following function to print lexical
+     'wisent-message' uses the following function to print lexical
      tokens:
 
       -- Function: wisent-token-to-string token
@@ -1071,13 +1063,13 @@ string containing the message to report.
 
      The general printed form of a lexical token is:
 
-     `TOKEN(VALUE)@LOCATION'
+     'TOKEN(VALUE)@LOCATION'
 
-   To control the verbosity of the parser you can set to non-`nil' this
+   To control the verbosity of the parser you can set to non-'nil' this
 variable:
 
  -- Option: wisent-parse-verbose-flag
-     non-`nil' means to issue more messages while parsing.
+     non-'nil' means to issue more messages while parsing.
 
    Or interactively use the command:
 
@@ -1085,12 +1077,12 @@ variable:
      Toggle whether to issue more messages while parsing.
 
    When the error reporting function is entered the variable
-`wisent-input' contains the unexpected token as returned by the lexer.
+'wisent-input' contains the unexpected token as returned by the lexer.
 
    The error reporting function can be called from a semantic action too
-using the special macro `wisent-error'.  When called from a semantic
+using the special macro 'wisent-error'.  When called from a semantic
 action entered by error recovery (*note Error recovery::) the value of
-the variable `wisent-recovering' is non-`nil'.
+the variable 'wisent-recovering' is non-'nil'.
 
 
 File: wisent.info,  Node: Error recovery,  Next: Debugging actions,  Prev: Report errors,  Up: Wisent Parsing
@@ -1099,22 +1091,22 @@ File: wisent.info,  Node: Error recovery,  Next: Debugging actions,  Prev: Repor
 ==================
 
 The error recovery mechanism of the Wisent's parser conforms to the one
-Bison uses.  See *note Error Recovery: (bison)Error Recovery, in the
-Bison manual for details.
+Bison uses.  See *note (bison)Error Recovery::, in the Bison manual for
+details.
 
    To recover from a syntax error you must write rules to recognize the
-special token `error'.  This is a terminal symbol that is automatically
+special token 'error'.  This is a terminal symbol that is automatically
 defined and reserved for error handling.
 
    When the parser encounters a syntax error, it pops the state stack
-until it finds a state that allows shifting the `error' token.  After
-it has been shifted, if the old look-ahead token is not acceptable to
-be shifted next, the parser reads tokens and discards them until it
-finds a token which is acceptable.
+until it finds a state that allows shifting the 'error' token.  After it
+has been shifted, if the old look-ahead token is not acceptable to be
+shifted next, the parser reads tokens and discards them until it finds a
+token which is acceptable.
 
    Strategies for error recovery depend on the choice of error rules in
-the grammar.  A simple and useful strategy is simply to skip the rest
-of the current statement if an error is detected:
+the grammar.  A simple and useful strategy is simply to skip the rest of
+the current statement if an error is detected:
 
      (stmnt (( error ?; )) ;; on error, skip until ';' is read
             )
@@ -1135,8 +1127,8 @@ macros, useful in such actions:
      The number of parse errors encountered so far.
 
  -- Variable: wisent-recovering
-     non-`nil' means that the parser is recovering.  This variable only
-     has meaning in the scope of `wisent-parse'.
+     non-'nil' means that the parser is recovering.  This variable only
+     has meaning in the scope of 'wisent-parse'.
 
  -- Function: wisent-error msg
      Call the user supplied error reporting function with message MSG
@@ -1152,25 +1144,25 @@ macros, useful in such actions:
      shortly after the first, until three consecutive input tokens have
      been successfully shifted.
 
-     Calling `wisent-errok' in an action, make error messages resume
+     Calling 'wisent-errok' in an action, make error messages resume
      immediately.  No error messages will be suppressed if you call it
      in an error rule's action.
 
      For an example of use, *Note wisent-skip-token::.
 
  -- Function: wisent-clearin
-     Discard the current lookahead token.  This will cause a new
-     lexical token to be read.
+     Discard the current lookahead token.  This will cause a new lexical
+     token to be read.
 
      In an error rule's action the previous lookahead token is
-     reanalyzed immediately.  `wisent-clearin' may be called to clear
+     reanalyzed immediately.  'wisent-clearin' may be called to clear
      this token.
 
      For example, suppose that on a parse error, an error handling
      routine is called that advances the input stream to some point
-     where parsing should once again commence.  The next symbol
-     returned by the lexical scanner is probably correct.  The previous
-     lookahead token ought to be discarded with `wisent-clearin'.
+     where parsing should once again commence.  The next symbol returned
+     by the lexical scanner is probably correct.  The previous lookahead
+     token ought to be discarded with 'wisent-clearin'.
 
      For an example of use, *Note wisent-skip-token::.
 
@@ -1182,22 +1174,22 @@ macros, useful in such actions:
      START and END are respectively the beginning and end positions of
      the region occupied by the group of components associated to this
      nonterminal.  If START or END values are not a valid positions the
-     region is set to `nil'.
+     region is set to 'nil'.
 
      For an example of use, *Note wisent-skip-token::.
 
  -- Variable: wisent-discarding-token-functions
      List of functions to be called when discarding a lexical token.
      These functions receive the lexical token discarded.  When the
-     parser encounters unexpected tokens, it can discards them, based
-     on what directed by error recovery rules.  Either when the parser
+     parser encounters unexpected tokens, it can discards them, based on
+     what directed by error recovery rules.  Either when the parser
      reads tokens until one is found that can be shifted, or when an
-     semantic action calls the function `wisent-skip-token' or
-     `wisent-skip-block'.  For language specific hooks, make sure you
+     semantic action calls the function 'wisent-skip-token' or
+     'wisent-skip-block'.  For language specific hooks, make sure you
      define this as a local hook.
 
      For example, in Semantic, this hook is set to the function
-     `wisent-collect-unmatched-syntax' to collect unmatched lexical
+     'wisent-collect-unmatched-syntax' to collect unmatched lexical
      tokens (*note Useful functions::).
 
  -- Function: wisent-skip-token
@@ -1217,16 +1209,16 @@ macros, useful in such actions:
      Safely skip a block in order to resume parsing.  Return nil.  Must
      be used in error recovery semantic actions.
 
-     A block is data between an open-delimiter (syntax class `(') and a
-     matching close-delimiter (syntax class `)'):
+     A block is data between an open-delimiter (syntax class '(') and a
+     matching close-delimiter (syntax class ')'):
 
           (a parenthesized block)
           [a block between brackets]
           {a block between braces}
 
-     The following example uses `wisent-skip-block' to safely skip a
-     block delimited by `LBRACE' (`{') and `RBRACE' (`}') tokens, when
-     a syntax error occurs in `other-components':
+     The following example uses 'wisent-skip-block' to safely skip a
+     block delimited by 'LBRACE' ('{') and 'RBRACE' ('}') tokens, when a
+     syntax error occurs in 'other-components':
 
           (block ((LBRACE other-components RBRACE))
                  ((LBRACE RBRACE))
@@ -1240,29 +1232,29 @@ File: wisent.info,  Node: Debugging actions,  Prev: Error recovery,  Up: Wisent 
 3.5 Debugging semantic actions
 ==============================
 
-Each semantic action is represented by a symbol interned in an
-"obarray" that is part of the LALR(1) automaton (*note Compiling a
-grammar::).  `symbol-function' on a semantic action symbol return the
-semantic action lambda expression.
+Each semantic action is represented by a symbol interned in an "obarray"
+that is part of the LALR(1) automaton (*note Compiling a grammar::).
+'symbol-function' on a semantic action symbol return the semantic action
+lambda expression.
 
-   A semantic action symbol name has the form `NONTERMINAL:INDEX',
-where NONTERMINAL is the name of the nonterminal symbol the action
-belongs to, and INDEX is an action sequence number within the scope of
-NONTERMINAL.  For example, this nonterminal definition:
+   A semantic action symbol name has the form 'NONTERMINAL:INDEX', where
+NONTERMINAL is the name of the nonterminal symbol the action belongs to,
+and INDEX is an action sequence number within the scope of NONTERMINAL.
+For example, this nonterminal definition:
 
      input:
-        line                     [`input:0']
+        line                     [input:0]
       | input line
-        (format "%s %s" $1 $2)   [`input:1']
+        (format "%s %s" $1 $2)   [input:1]
       ;
 
    Will produce two semantic actions, and associated symbols:
 
-`input:0'
-     A default action that returns `$1'.
+'input:0'
+     A default action that returns '$1'.
 
-`input:1'
-     That returns `(format "%s %s" $1 $2)'.
+'input:1'
+     That returns '(format "%s %s" $1 $2)'.
 
    Debugging uses the Lisp debugger to investigate what is happening
 during execution of semantic actions.  Three commands are available to
@@ -1278,7 +1270,7 @@ debug semantic actions.  They receive two arguments:
      AUTOMATON.
 
  -- Command: wisent-cancel-debug-on-entry automaton function
-     Undo effect of `wisent-debug-on-entry' on AUTOMATON's FUNCTION.
+     Undo effect of 'wisent-debug-on-entry' on AUTOMATON's FUNCTION.
      FUNCTION must be a semantic action symbol that exists in AUTOMATON.
 
  -- Command: wisent-debug-show-entry automaton function
@@ -1295,15 +1287,15 @@ This section presents how the Wisent's parser can be used to produce
 "tags" for the Semantic tool set.
 
    Semantic tags form a hierarchy of Emacs Lisp data structures that
-describes a program in a way independent of programming languages.
-Tags map program declarations, like functions, methods, variables, data
+describes a program in a way independent of programming languages.  Tags
+map program declarations, like functions, methods, variables, data
 types, classes, includes, grammar rules, etc..
 
    To use the Wisent parser with Semantic you have to define your
 grammar in "WY" form, a grammar format very close to the one used by
 Bison.
 
-   Please *note Semantic Grammar Framework Manual: (grammar-fw)top for
+   Please *note Semantic Grammar Framework Manual: (grammar-fw)top. for
 more information on Semantic grammars.
 
 * Menu:
@@ -1319,9 +1311,9 @@ File: wisent.info,  Node: Grammar styles,  Next: Wisent Lex,  Up: Wisent Semanti
 
 Semantic parsing heavily depends on how you wrote the grammar.  There
 are mainly two styles to write a Wisent's grammar intended to be used
-with the Semantic tool set: the "Iterative style" and the "Bison
-style".  Each one has pros and cons, and in certain cases it can be
-worth a mix of the two styles!
+with the Semantic tool set: the "Iterative style" and the "Bison style".
+Each one has pros and cons, and in certain cases it can be worth a mix
+of the two styles!
 
 * Menu:
 
@@ -1343,22 +1335,22 @@ nonterminals one at a time and automagically skips unexpected lexical
 tokens in input.
 
    Compared to rule-based iterative functions (*note Bison style::),
-iterative parsers are better in that they can handle obscure errors
-more cleanly.
+iterative parsers are better in that they can handle obscure errors more
+cleanly.
 
    Each start nonterminal must produces a "raw tag" by calling a
-`TAG'-like grammar macro with appropriate parameters.  See also *note
+'TAG'-like grammar macro with appropriate parameters.  See also *note
 Start nonterminals::.
 
    Then, each parsing iteration automatically translates a raw tag into
-"expanded tags", updating the raw tag structure with internal
-properties and buffer related data.
+"expanded tags", updating the raw tag structure with internal properties
+and buffer related data.
 
    After parsing completes, it results in a tree of expanded tags.
 
    The following example is a snippet of the iterative style Java
 grammar provided in the Semantic distribution in the file
-`semantic/wisent/java-tags.wy'.
+'semantic/wisent/java-tags.wy'.
 
      ...
      ;; Alternate entry points
@@ -1388,24 +1380,24 @@ grammar provided in the Semantic distribution in the file
          (VARIABLE-TAG $3 $2 nil :typemodifiers $1)
        ;
 
-   It shows the use of the `EXPANDFULL' grammar macro to parse a
-`PAREN_BLOCK' which contains a `formal_parameter_list'.  `EXPANDFULL'
-tells to recursively parse `formal_parameters' inside `PAREN_BLOCK'.
+   It shows the use of the 'EXPANDFULL' grammar macro to parse a
+'PAREN_BLOCK' which contains a 'formal_parameter_list'.  'EXPANDFULL'
+tells to recursively parse 'formal_parameters' inside 'PAREN_BLOCK'.
 The parser iterates until it digested all available input data inside
-the `PAREN_BLOCK', trying to match any of the `formal_parameters' rules:
+the 'PAREN_BLOCK', trying to match any of the 'formal_parameters' rules:
 
-   * `LPAREN'
+   * 'LPAREN'
 
-   * `RPAREN'
+   * 'RPAREN'
 
-   * `formal_parameter COMMA'
+   * 'formal_parameter COMMA'
 
-   * `formal_parameter RPAREN'
+   * 'formal_parameter RPAREN'
 
-   At each iteration it will return a `formal_parameter' raw tag, or
-`nil' to skip unwanted (single `LPAREN' or `RPAREN' for example) or
-unexpected input data.  Those raw tags will be automatically expanded
-by the iterative back-end parser.
+   At each iteration it will return a 'formal_parameter' raw tag, or
+'nil' to skip unwanted (single 'LPAREN' or 'RPAREN' for example) or
+unexpected input data.  Those raw tags will be automatically expanded by
+the iterative back-end parser.
 
 
 File: wisent.info,  Node: Bison style,  Next: Mixed style,  Prev: Iterative style,  Up: Grammar styles
@@ -1414,8 +1406,8 @@ File: wisent.info,  Node: Bison style,  Next: Mixed style,  Prev: Iterative styl
 -----------------
 
 What we call the "Bison style" is the traditional style of Bison's
-grammars.  Compared to iterative style, it is not straightforward to
-use grammars written in Bison style in Semantic.  Mainly because such
+grammars.  Compared to iterative style, it is not straightforward to use
+grammars written in Bison style in Semantic.  Mainly because such
 grammars are designed to parse the whole input data in one pass, and
 don't use the iterative parser back-end mechanism (*note Iterative
 style::).  With Bison style the parser is called once to parse the
@@ -1423,7 +1415,7 @@ grammar start nonterminal.
 
    The following example is a snippet of the Bison style Java grammar
 provided in the Semantic distribution in the file
-`semantic/wisent/java.wy'.
+'semantic/wisent/java.wy'.
 
      %start formal_parameter
      ...
@@ -1443,14 +1435,14 @@ provided in the Semantic distribution in the file
        ;
 
    The first consequence is that syntax errors are not automatically
-handled by Semantic.  Thus, it is necessary to explicitly handle them
-at the grammar level, providing error recovery rules to skip unexpected
+handled by Semantic.  Thus, it is necessary to explicitly handle them at
+the grammar level, providing error recovery rules to skip unexpected
 input data.
 
    The second consequence is that the iterative parser can't do
 automatic tag expansion, except for the start nonterminal value.  It is
 necessary to explicitly expand tags from concerned semantic actions by
-calling the grammar macro `EXPANDTAG' with a raw tag as parameter.  See
+calling the grammar macro 'EXPANDTAG' with a raw tag as parameter.  See
 also *note Start nonterminals::, for incremental re-parse
 considerations.
 
@@ -1503,22 +1495,22 @@ File: wisent.info,  Node: Mixed style,  Next: Start nonterminals,  Prev: Bison s
             ))
        ;
 
-This example shows how iterative and Bison styles can be combined in
+   This example shows how iterative and Bison styles can be combined in
 the same grammar to obtain a good compromise between grammar complexity
 and an efficient parsing strategy in an interactive environment.
 
-   `nonterminal' is parsed using iterative style via the main `grammar'
-rule.  The semantic action uses the `TAG' macro to produce a raw tag,
+   'nonterminal' is parsed using iterative style via the main 'grammar'
+rule.  The semantic action uses the 'TAG' macro to produce a raw tag,
 automagically expanded by Semantic.
 
-   But `rules' part is parsed in Bison style! Why?
+   But 'rules' part is parsed in Bison style!  Why?
 
-   Rule delimiters are the colon (`:'), that follows the nonterminal
-name, and a final semicolon (`;').  Unfortunately these delimiters are
-not `open-paren'/`close-paren' type, and the Emacs' syntactic analyzer
-can't easily isolate data between them to produce a `RULES_PART'
+   Rule delimiters are the colon (':'), that follows the nonterminal
+name, and a final semicolon (';').  Unfortunately these delimiters are
+not 'open-paren'/'close-paren' type, and the Emacs' syntactic analyzer
+can't easily isolate data between them to produce a 'RULES_PART'
 parenthesis-block-like lexical token.  Consequently it is not possible
-to use `EXPANDFULL' to iterate in `RULES_PART', like this:
+to use 'EXPANDFULL' to iterate in 'RULES_PART', like this:
 
      nonterminal:
          SYMBOL COLON rules SEMI
@@ -1560,54 +1552,52 @@ File: wisent.info,  Node: Start nonterminals,  Next: Useful functions,  Prev: Mi
 ------------------------
 
 When you write a grammar for Semantic, it is important to carefully
-indicate the start nonterminals.  Each one defines an entry point in
-the grammar, and after parsing its semantic value is returned to the
+indicate the start nonterminals.  Each one defines an entry point in the
+grammar, and after parsing its semantic value is returned to the
 back-end iterative engine.  Consequently:
 
    *The semantic value of a start nonterminal must be a produced by a
 TAG like grammar macro*.
 
-   Start nonterminals are declared by `%start' statements.  When
-nothing is specified the first nonterminal that appears in the grammar
-is the start nonterminal.
+   Start nonterminals are declared by '%start' statements.  When nothing
+is specified the first nonterminal that appears in the grammar is the
+start nonterminal.
 
    Generally, the following nonterminals must be declared as start
 symbols:
 
    * The main grammar entry point
-
           Of course!
 
-   * nonterminals passed to `EXPAND'/`EXPANDFULL'
-
+   * nonterminals passed to 'EXPAND'/'EXPANDFULL'
           These grammar macros recursively parse a part of input data,
           based on rules of the given nonterminal.
 
-          For example, the following will parse `PAREN_BLOCK' data using
-          the `formal_parameters' rules:
+          For example, the following will parse 'PAREN_BLOCK' data using
+          the 'formal_parameters' rules:
 
                formal_parameter_list
                  : PAREN_BLOCK
                    (EXPANDFULL $1 formal_parameters)
                  ;
 
-          The semantic value of `formal_parameters' becomes the value of
-          the `EXPANDFULL' expression.  It is a list of Semantic tags
+          The semantic value of 'formal_parameters' becomes the value of
+          the 'EXPANDFULL' expression.  It is a list of Semantic tags
           spliced in the tags tree.
 
-          Because the automaton must know that `formal_parameters' is a
+          Because the automaton must know that 'formal_parameters' is a
           start symbol, you must declare it like this:
 
                %start formal_parameters
 
-   The `EXPANDFULL' macro has a side effect it is important to know,
+   The 'EXPANDFULL' macro has a side effect it is important to know,
 related to the incremental re-parse mechanism of Semantic: the
-nonterminal symbol parameter passed to `EXPANDFULL' also becomes the
-`reparse-symbol' property of the tag returned by the `EXPANDFULL'
+nonterminal symbol parameter passed to 'EXPANDFULL' also becomes the
+'reparse-symbol' property of the tag returned by the 'EXPANDFULL'
 expression.
 
-   When buffer's data mapped by a tag is modified, Semantic schedules
-an incremental re-parse of that data, using the tag's `reparse-symbol'
+   When buffer's data mapped by a tag is modified, Semantic schedules an
+incremental re-parse of that data, using the tag's 'reparse-symbol'
 property as start nonterminal.
 
    *The rules associated to such start symbols must be carefully
@@ -1616,8 +1606,8 @@ reviewed to ensure that the incremental parser will work!*
    Things are a little bit different when the grammar is written in
 Bison style.
 
-   *The `reparse-symbol' property is set to the nonterminal symbol the
-rule that explicitly uses `EXPANDTAG' belongs to.*
+   *The 'reparse-symbol' property is set to the nonterminal symbol the
+rule that explicitly uses 'EXPANDTAG' belongs to.*
 
    For example:
 
@@ -1631,10 +1621,10 @@ rule that explicitly uses `EXPANDTAG' belongs to.*
             ))
        ;
 
-   Set the `reparse-symbol' property of the expanded tag to `rule'.  A
+   Set the 'reparse-symbol' property of the expanded tag to 'rule'.  A
 important consequence is that:
 
-   *Every nonterminal having any rule that calls `EXPANDTAG' in a
+   *Every nonterminal having any rule that calls 'EXPANDTAG' in a
 semantic action, should be declared as a start symbol!*
 
 
@@ -1643,14 +1633,14 @@ File: wisent.info,  Node: Useful functions,  Prev: Start nonterminals,  Up: Gram
 4.1.5 Useful functions
 ----------------------
 
-Here is a description of some predefined functions it might be useful
-to know when writing new code to use Wisent in Semantic:
+Here is a description of some predefined functions it might be useful to
+know when writing new code to use Wisent in Semantic:
 
  -- Function: wisent-collect-unmatched-syntax input
      Add INPUT lexical token to the cache of unmatched tokens, in
-     variable `semantic-unmatched-syntax-cache'.
+     variable 'semantic-unmatched-syntax-cache'.
 
-     See implementation of the function `wisent-skip-token' in *note
+     See implementation of the function 'wisent-skip-token' in *note
      Error recovery::, for an example of use.
 
 
@@ -1660,16 +1650,16 @@ File: wisent.info,  Node: Wisent Lex,  Prev: Grammar styles,  Up: Wisent Semanti
 ========================
 
 The lexical analysis step of Semantic is performed by the general
-function `semantic-lex'.  For more information, *note
+function 'semantic-lex'.  For more information, *note
 (semantic-langdev)Writing Lexers::.
 
-   `semantic-lex' produces lexical tokens of the form:
+   'semantic-lex' produces lexical tokens of the form:
 
-     `(TOKEN-CLASS START . END)'
+     (TOKEN-CLASS START . END)
 
 TOKEN-CLASS
-     Is a symbol that identifies a lexical token class, like `symbol',
-     `string', `number', or `PAREN_BLOCK'.
+     Is a symbol that identifies a lexical token class, like 'symbol',
+     'string', 'number', or 'PAREN_BLOCK'.
 
 START
 END
@@ -1679,24 +1669,24 @@ END
 stream (buffer, string, etc.), and requires that lexical tokens have a
 different form (*note Writing a lexer::):
 
-     `(TOKEN-CLASS VALUE [START . END])'
+     (TOKEN-CLASS VALUE [START . END])
 
-   `wisent-lex' is the default Wisent's lexer used in Semantic.
+   'wisent-lex' is the default Wisent's lexer used in Semantic.
 
  -- Function: wisent-lex
      Return the next available lexical token in Wisent's form.
 
-     The variable `wisent-lex-istream' contains the list of lexical
-     tokens produced by `semantic-lex'.  Pop the next token available
+     The variable 'wisent-lex-istream' contains the list of lexical
+     tokens produced by 'semantic-lex'.  Pop the next token available
      and convert it to a form suitable for the Wisent's parser.
 
-   Mapping of lexical tokens as produced by `semantic-lex' into
+   Mapping of lexical tokens as produced by 'semantic-lex' into
 equivalent Wisent lexical tokens is straightforward:
 
      (TOKEN-CLASS START . END)
           => (TOKEN-CLASS VALUE START . END)
 
-   VALUE is the input `buffer-substring' from START to END.
+   VALUE is the input 'buffer-substring' from START to END.
 
 
 File: wisent.info,  Node: GNU Free Documentation License,  Next: Index,  Prev: Wisent Semantic,  Up: Top
@@ -1707,7 +1697,7 @@ Appendix A GNU Free Documentation License
                      Version 1.3, 3 November 2008
 
      Copyright (C) 2000, 2001, 2002, 2007, 2008, 2009 Free Software Foundation, Inc.
-     `http://fsf.org/'
+     <http://fsf.org/>
 
      Everyone is permitted to copy and distribute verbatim copies
      of this license document, but changing it is not allowed.
@@ -1732,21 +1722,21 @@ Appendix A GNU Free Documentation License
      free program should come with manuals providing the same freedoms
      that the software does.  But this License is not limited to
      software manuals; it can be used for any textual work, regardless
-     of subject matter or whether it is published as a printed book.
-     We recommend this License principally for works whose purpose is
+     of subject matter or whether it is published as a printed book.  We
+     recommend this License principally for works whose purpose is
      instruction or reference.
 
   1. APPLICABILITY AND DEFINITIONS
 
      This License applies to any manual or other work, in any medium,
-     that contains a notice placed by the copyright holder saying it
-     can be distributed under the terms of this License.  Such a notice
+     that contains a notice placed by the copyright holder saying it can
+     be distributed under the terms of this License.  Such a notice
      grants a world-wide, royalty-free license, unlimited in duration,
      to use that work under the conditions stated herein.  The
      "Document", below, refers to any such manual or work.  Any member
-     of the public is a licensee, and is addressed as "you".  You
-     accept the license if you copy, modify or distribute the work in a
-     way requiring permission under copyright law.
+     of the public is a licensee, and is addressed as "you".  You accept
+     the license if you copy, modify or distribute the work in a way
+     requiring permission under copyright law.
 
      A "Modified Version" of the Document means any work containing the
      Document or a portion of it, either copied verbatim, or with
@@ -1764,12 +1754,12 @@ Appendix A GNU Free Documentation License
      regarding them.
 
      The "Invariant Sections" are certain Secondary Sections whose
-     titles are designated, as being those of Invariant Sections, in
-     the notice that says that the Document is released under this
-     License.  If a section does not fit the above definition of
-     Secondary then it is not allowed to be designated as Invariant.
-     The Document may contain zero Invariant Sections.  If the Document
-     does not identify any Invariant Sections then there are none.
+     titles are designated, as being those of Invariant Sections, in the
+     notice that says that the Document is released under this License.
+     If a section does not fit the above definition of Secondary then it
+     is not allowed to be designated as Invariant.  The Document may
+     contain zero Invariant Sections.  If the Document does not identify
+     any Invariant Sections then there are none.
 
      The "Cover Texts" are certain short passages of text that are
      listed, as Front-Cover Texts or Back-Cover Texts, in the notice
@@ -1780,27 +1770,27 @@ Appendix A GNU Free Documentation License
      A "Transparent" copy of the Document means a machine-readable copy,
      represented in a format whose specification is available to the
      general public, that is suitable for revising the document
-     straightforwardly with generic text editors or (for images
-     composed of pixels) generic paint programs or (for drawings) some
-     widely available drawing editor, and that is suitable for input to
-     text formatters or for automatic translation to a variety of
-     formats suitable for input to text formatters.  A copy made in an
-     otherwise Transparent file format whose markup, or absence of
-     markup, has been arranged to thwart or discourage subsequent
-     modification by readers is not Transparent.  An image format is
-     not Transparent if used for any substantial amount of text.  A
-     copy that is not "Transparent" is called "Opaque".
+     straightforwardly with generic text editors or (for images composed
+     of pixels) generic paint programs or (for drawings) some widely
+     available drawing editor, and that is suitable for input to text
+     formatters or for automatic translation to a variety of formats
+     suitable for input to text formatters.  A copy made in an otherwise
+     Transparent file format whose markup, or absence of markup, has
+     been arranged to thwart or discourage subsequent modification by
+     readers is not Transparent.  An image format is not Transparent if
+     used for any substantial amount of text.  A copy that is not
+     "Transparent" is called "Opaque".
 
      Examples of suitable formats for Transparent copies include plain
      ASCII without markup, Texinfo input format, LaTeX input format,
-     SGML or XML using a publicly available DTD, and
-     standard-conforming simple HTML, PostScript or PDF designed for
-     human modification.  Examples of transparent image formats include
-     PNG, XCF and JPG.  Opaque formats include proprietary formats that
-     can be read and edited only by proprietary word processors, SGML or
-     XML for which the DTD and/or processing tools are not generally
-     available, and the machine-generated HTML, PostScript or PDF
-     produced by some word processors for output purposes only.
+     SGML or XML using a publicly available DTD, and standard-conforming
+     simple HTML, PostScript or PDF designed for human modification.
+     Examples of transparent image formats include PNG, XCF and JPG.
+     Opaque formats include proprietary formats that can be read and
+     edited only by proprietary word processors, SGML or XML for which
+     the DTD and/or processing tools are not generally available, and
+     the machine-generated HTML, PostScript or PDF produced by some word
+     processors for output purposes only.
 
      The "Title Page" means, for a printed book, the title page itself,
      plus such following pages as are needed to hold, legibly, the
@@ -1838,8 +1828,8 @@ Appendix A GNU Free Documentation License
      may not use technical measures to obstruct or control the reading
      or further copying of the copies you make or distribute.  However,
      you may accept compensation in exchange for copies.  If you
-     distribute a large enough number of copies you must also follow
-     the conditions in section 3.
+     distribute a large enough number of copies you must also follow the
+     conditions in section 3.
 
      You may also lend copies, under the same conditions stated above,
      and you may publicly display copies.
@@ -1853,12 +1843,11 @@ Appendix A GNU Free Documentation License
      these Cover Texts: Front-Cover Texts on the front cover, and
      Back-Cover Texts on the back cover.  Both covers must also clearly
      and legibly identify you as the publisher of these copies.  The
-     front cover must present the full title with all words of the
-     title equally prominent and visible.  You may add other material
-     on the covers in addition.  Copying with changes limited to the
-     covers, as long as they preserve the title of the Document and
-     satisfy these conditions, can be treated as verbatim copying in
-     other respects.
+     front cover must present the full title with all words of the title
+     equally prominent and visible.  You may add other material on the
+     covers in addition.  Copying with changes limited to the covers, as
+     long as they preserve the title of the Document and satisfy these
+     conditions, can be treated as verbatim copying in other respects.
 
      If the required texts for either cover are too voluminous to fit
      legibly, you should put the first ones listed (as many as fit
@@ -1866,40 +1855,39 @@ Appendix A GNU Free Documentation License
      adjacent pages.
 
      If you publish or distribute Opaque copies of the Document
-     numbering more than 100, you must either include a
-     machine-readable Transparent copy along with each Opaque copy, or
-     state in or with each Opaque copy a computer-network location from
-     which the general network-using public has access to download
-     using public-standard network protocols a complete Transparent
-     copy of the Document, free of added material.  If you use the
-     latter option, you must take reasonably prudent steps, when you
-     begin distribution of Opaque copies in quantity, to ensure that
-     this Transparent copy will remain thus accessible at the stated
-     location until at least one year after the last time you
-     distribute an Opaque copy (directly or through your agents or
-     retailers) of that edition to the public.
+     numbering more than 100, you must either include a machine-readable
+     Transparent copy along with each Opaque copy, or state in or with
+     each Opaque copy a computer-network location from which the general
+     network-using public has access to download using public-standard
+     network protocols a complete Transparent copy of the Document, free
+     of added material.  If you use the latter option, you must take
+     reasonably prudent steps, when you begin distribution of Opaque
+     copies in quantity, to ensure that this Transparent copy will
+     remain thus accessible at the stated location until at least one
+     year after the last time you distribute an Opaque copy (directly or
+     through your agents or retailers) of that edition to the public.
 
      It is requested, but not required, that you contact the authors of
-     the Document well before redistributing any large number of
-     copies, to give them a chance to provide you with an updated
-     version of the Document.
+     the Document well before redistributing any large number of copies,
+     to give them a chance to provide you with an updated version of the
+     Document.
 
   4. MODIFICATIONS
 
      You may copy and distribute a Modified Version of the Document
      under the conditions of sections 2 and 3 above, provided that you
-     release the Modified Version under precisely this License, with
-     the Modified Version filling the role of the Document, thus
-     licensing distribution and modification of the Modified Version to
-     whoever possesses a copy of it.  In addition, you must do these
-     things in the Modified Version:
+     release the Modified Version under precisely this License, with the
+     Modified Version filling the role of the Document, thus licensing
+     distribution and modification of the Modified Version to whoever
+     possesses a copy of it.  In addition, you must do these things in
+     the Modified Version:
 
        A. Use in the Title Page (and on the covers, if any) a title
-          distinct from that of the Document, and from those of
-          previous versions (which should, if there were any, be listed
-          in the History section of the Document).  You may use the
-          same title as a previous version if the original publisher of
-          that version gives permission.
+          distinct from that of the Document, and from those of previous
+          versions (which should, if there were any, be listed in the
+          History section of the Document).  You may use the same title
+          as a previous version if the original publisher of that
+          version gives permission.
 
        B. List on the Title Page, as authors, one or more persons or
           entities responsible for authorship of the modifications in
@@ -1929,31 +1917,30 @@ Appendix A GNU Free Documentation License
 
        I. Preserve the section Entitled "History", Preserve its Title,
           and add to it an item stating at least the title, year, new
-          authors, and publisher of the Modified Version as given on
-          the Title Page.  If there is no section Entitled "History" in
-          the Document, create one stating the title, year, authors,
-          and publisher of the Document as given on its Title Page,
-          then add an item describing the Modified Version as stated in
-          the previous sentence.
+          authors, and publisher of the Modified Version as given on the
+          Title Page.  If there is no section Entitled "History" in the
+          Document, create one stating the title, year, authors, and
+          publisher of the Document as given on its Title Page, then add
+          an item describing the Modified Version as stated in the
+          previous sentence.
 
        J. Preserve the network location, if any, given in the Document
           for public access to a Transparent copy of the Document, and
           likewise the network locations given in the Document for
-          previous versions it was based on.  These may be placed in
-          the "History" section.  You may omit a network location for a
-          work that was published at least four years before the
-          Document itself, or if the original publisher of the version
-          it refers to gives permission.
+          previous versions it was based on.  These may be placed in the
+          "History" section.  You may omit a network location for a work
+          that was published at least four years before the Document
+          itself, or if the original publisher of the version it refers
+          to gives permission.
 
        K. For any section Entitled "Acknowledgements" or "Dedications",
-          Preserve the Title of the section, and preserve in the
-          section all the substance and tone of each of the contributor
+          Preserve the Title of the section, and preserve in the section
+          all the substance and tone of each of the contributor
           acknowledgements and/or dedications given therein.
 
-       L. Preserve all the Invariant Sections of the Document,
-          unaltered in their text and in their titles.  Section numbers
-          or the equivalent are not considered part of the section
-          titles.
+       L. Preserve all the Invariant Sections of the Document, unaltered
+          in their text and in their titles.  Section numbers or the
+          equivalent are not considered part of the section titles.
 
        M. Delete any section Entitled "Endorsements".  Such a section
           may not be included in the Modified Version.
@@ -1966,11 +1953,11 @@ Appendix A GNU Free Documentation License
 
      If the Modified Version includes new front-matter sections or
      appendices that qualify as Secondary Sections and contain no
-     material copied from the Document, you may at your option
-     designate some or all of these sections as invariant.  To do this,
-     add their titles to the list of Invariant Sections in the Modified
-     Version's license notice.  These titles must be distinct from any
-     other section titles.
+     material copied from the Document, you may at your option designate
+     some or all of these sections as invariant.  To do this, add their
+     titles to the list of Invariant Sections in the Modified Version's
+     license notice.  These titles must be distinct from any other
+     section titles.
 
      You may add a section Entitled "Endorsements", provided it contains
      nothing but endorsements of your Modified Version by various
@@ -1979,15 +1966,15 @@ Appendix A GNU Free Documentation License
      definition of a standard.
 
      You may add a passage of up to five words as a Front-Cover Text,
-     and a passage of up to 25 words as a Back-Cover Text, to the end
-     of the list of Cover Texts in the Modified Version.  Only one
-     passage of Front-Cover Text and one of Back-Cover Text may be
-     added by (or through arrangements made by) any one entity.  If the
-     Document already includes a cover text for the same cover,
-     previously added by you or by arrangement made by the same entity
-     you are acting on behalf of, you may not add another; but you may
-     replace the old one, on explicit permission from the previous
-     publisher that added the old one.
+     and a passage of up to 25 words as a Back-Cover Text, to the end of
+     the list of Cover Texts in the Modified Version.  Only one passage
+     of Front-Cover Text and one of Back-Cover Text may be added by (or
+     through arrangements made by) any one entity.  If the Document
+     already includes a cover text for the same cover, previously added
+     by you or by arrangement made by the same entity you are acting on
+     behalf of, you may not add another; but you may replace the old
+     one, on explicit permission from the previous publisher that added
+     the old one.
 
      The author(s) and publisher(s) of the Document do not by this
      License give permission to use their names for publicity for or to
@@ -1997,8 +1984,8 @@ Appendix A GNU Free Documentation License
 
      You may combine the Document with other documents released under
      this License, under the terms defined in section 4 above for
-     modified versions, provided that you include in the combination
-     all of the Invariant Sections of all of the original documents,
+     modified versions, provided that you include in the combination all
+     of the Invariant Sections of all of the original documents,
      unmodified, and list them all as Invariant Sections of your
      combined work in its license notice, and that you preserve all
      their Warranty Disclaimers.
@@ -2025,20 +2012,20 @@ Appendix A GNU Free Documentation License
      documents released under this License, and replace the individual
      copies of this License in the various documents with a single copy
      that is included in the collection, provided that you follow the
-     rules of this License for verbatim copying of each of the
-     documents in all other respects.
+     rules of this License for verbatim copying of each of the documents
+     in all other respects.
 
      You may extract a single document from such a collection, and
      distribute it individually under this License, provided you insert
-     a copy of this License into the extracted document, and follow
-     this License in all other respects regarding verbatim copying of
-     that document.
+     a copy of this License into the extracted document, and follow this
+     License in all other respects regarding verbatim copying of that
+     document.
 
   7. AGGREGATION WITH INDEPENDENT WORKS
 
      A compilation of the Document or its derivatives with other
-     separate and independent documents or works, in or on a volume of
-     a storage or distribution medium, is called an "aggregate" if the
+     separate and independent documents or works, in or on a volume of a
+     storage or distribution medium, is called an "aggregate" if the
      copyright resulting from the compilation is not used to limit the
      legal rights of the compilation's users beyond what the individual
      works permit.  When the Document is included in an aggregate, this
@@ -2083,8 +2070,8 @@ Appendix A GNU Free Documentation License
 
      However, if you cease all violation of this License, then your
      license from a particular copyright holder is reinstated (a)
-     provisionally, unless and until the copyright holder explicitly
-     and finally terminates your license, and (b) permanently, if the
+     provisionally, unless and until the copyright holder explicitly and
+     finally terminates your license, and (b) permanently, if the
      copyright holder fails to notify you of the violation by some
      reasonable means prior to 60 days after the cessation.
 
@@ -2096,33 +2083,33 @@ Appendix A GNU Free Documentation License
      after your receipt of the notice.
 
      Termination of your rights under this section does not terminate
-     the licenses of parties who have received copies or rights from
-     you under this License.  If your rights have been terminated and
-     not permanently reinstated, receipt of a copy of some or all of
-     the same material does not give you any rights to use it.
+     the licenses of parties who have received copies or rights from you
+     under this License.  If your rights have been terminated and not
+     permanently reinstated, receipt of a copy of some or all of the
+     same material does not give you any rights to use it.
 
- 10. FUTURE REVISIONS OF THIS LICENSE
+  10. FUTURE REVISIONS OF THIS LICENSE
 
      The Free Software Foundation may publish new, revised versions of
      the GNU Free Documentation License from time to time.  Such new
      versions will be similar in spirit to the present version, but may
      differ in detail to address new problems or concerns.  See
-     `http://www.gnu.org/copyleft/'.
+     <http://www.gnu.org/copyleft/>.
 
      Each version of the License is given a distinguishing version
      number.  If the Document specifies that a particular numbered
      version of this License "or any later version" applies to it, you
      have the option of following the terms and conditions either of
      that specified version or of any later version that has been
-     published (not as a draft) by the Free Software Foundation.  If
-     the Document does not specify a version number of this License,
-     you may choose any version ever published (not as a draft) by the
-     Free Software Foundation.  If the Document specifies that a proxy
-     can decide which future versions of this License can be used, that
+     published (not as a draft) by the Free Software Foundation.  If the
+     Document does not specify a version number of this License, you may
+     choose any version ever published (not as a draft) by the Free
+     Software Foundation.  If the Document specifies that a proxy can
+     decide which future versions of this License can be used, that
      proxy's public statement of acceptance of a version permanently
      authorizes you to choose that version for the Document.
 
- 11. RELICENSING
+  11. RELICENSING
 
      "Massive Multiauthor Collaboration Site" (or "MMC Site") means any
      World Wide Web server that publishes copyrightable works and also
@@ -2152,7 +2139,6 @@ Appendix A GNU Free Documentation License
      site under CC-BY-SA on the same site at any time before August 1,
      2009, provided the MMC is eligible for relicensing.
 
-
 ADDENDUM: How to use this License for your documents
 ====================================================
 
@@ -2169,7 +2155,7 @@ notices just after the title page:
        Free Documentation License''.
 
    If you have Invariant Sections, Front-Cover Texts and Back-Cover
-Texts, replace the "with...Texts." line with this:
+Texts, replace the "with...Texts."  line with this:
 
          with the Invariant Sections being LIST THEIR TITLES, with
          the Front-Cover Texts being LIST, and with the Back-Cover Texts
@@ -2180,9 +2166,9 @@ combination of the three, merge those two alternatives to suit the
 situation.
 
    If your document contains nontrivial examples of program code, we
-recommend releasing these examples in parallel under your choice of
-free software license, such as the GNU General Public License, to
-permit their use in free software.
+recommend releasing these examples in parallel under your choice of free
+software license, such as the GNU General Public License, to permit
+their use in free software.
 
 
 File: wisent.info,  Node: Index,  Prev: GNU Free Documentation License,  Up: Top
@@ -2193,11 +2179,11 @@ Index
  [index ]
 * Menu:
 
-* $action:                               Grammar format.      (line 184)
-* $N:                                    Grammar format.      (line 156)
-* $nterm:                                Grammar format.      (line 177)
-* $region:                               Grammar format.      (line 171)
-* $regionN:                              Grammar format.      (line 162)
+* $action:                               Grammar format.      (line 183)
+* $N:                                    Grammar format.      (line 155)
+* $nterm:                                Grammar format.      (line 176)
+* $region:                               Grammar format.      (line 170)
+* $regionN:                              Grammar format.      (line 161)
 * accept:                                Wisent Parsing.      (line  21)
 * ambiguous grammar:                     Conflicts.           (line   9)
 * associativity:                         Grammar format.      (line  15)
@@ -2226,7 +2212,7 @@ Index
 * grammar mixed style:                   Mixed style.         (line   6)
 * grammar styles:                        Grammar styles.      (line   6)
 * grammar verbose description:           Grammar Debugging.   (line   6)
-* incremental re-parse:                  Start nonterminals.  (line  47)
+* incremental re-parse:                  Start nonterminals.  (line  45)
 * LALR(1) grammar:                       Compiling a grammar. (line  11)
 * lexer:                                 Writing a lexer.     (line  10)
 * lexical analysis:                      Writing a lexer.     (line  10)
@@ -2238,13 +2224,13 @@ Index
 * precedence level:                      Grammar format.      (line  78)
 * raw tag:                               Iterative style.     (line  15)
 * reduce:                                Wisent Parsing.      (line  13)
-* reduce/reduce conflicts:               Conflicts.           (line  29)
-* reparse-symbol:                        Start nonterminals.  (line  47)
-* reparse-symbol property:               Start nonterminals.  (line   6)
+* reduce/reduce conflicts:               Conflicts.           (line  28)
+* reparse-symbol:                        Start nonterminals.  (line  45)
+* 'reparse-symbol' property:             Start nonterminals.  (line   6)
 * rule:                                  Wisent Grammar.      (line   6)
 * scanner:                               Writing a lexer.     (line  10)
 * semantic action symbols:               Debugging actions.   (line   6)
-* semantic actions:                      Grammar format.      (line 144)
+* semantic actions:                      Grammar format.      (line 143)
 * semantic-lex:                          Wisent Lex.          (line   6)
 * shift:                                 Wisent Parsing.      (line   9)
 * shift-reduce parser:                   Wisent Parsing.      (line   6)
@@ -2258,68 +2244,97 @@ Index
 * understanding the automaton:           Understanding the automaton.
                                                               (line   6)
 * wisent-abort:                          Error recovery.      (line  82)
+* wisent-abort <1>:                      Error recovery.      (line  82)
 * wisent-cancel-debug-on-entry:          Debugging actions.   (line  43)
+* wisent-cancel-debug-on-entry <1>:      Debugging actions.   (line  43)
 * wisent-clearin:                        Error recovery.      (line  66)
+* wisent-clearin <1>:                    Error recovery.      (line  66)
 * wisent-collect-unmatched-syntax:       Useful functions.    (line   9)
+* wisent-collect-unmatched-syntax <1>:   Useful functions.    (line   9)
 * wisent-compile-grammar:                Compiling a grammar. (line  18)
+* wisent-compile-grammar <1>:            Compiling a grammar. (line  18)
 * wisent-debug-flag:                     Grammar Debugging.   (line  35)
+* wisent-debug-flag <1>:                 Grammar Debugging.   (line  35)
 * wisent-debug-on-entry:                 Debugging actions.   (line  38)
+* wisent-debug-on-entry <1>:             Debugging actions.   (line  38)
 * wisent-debug-show-entry:               Debugging actions.   (line  47)
+* wisent-debug-show-entry <1>:           Debugging actions.   (line  47)
 * wisent-discarding-token-functions:     Error recovery.      (line  94)
+* wisent-discarding-token-functions <1>: Error recovery.      (line  94)
 * wisent-eoi-term:                       Writing a lexer.     (line  37)
+* wisent-eoi-term <1>:                   Writing a lexer.     (line  37)
 * wisent-errok:                          Error recovery.      (line  52)
+* wisent-errok <1>:                      Error recovery.      (line  52)
 * wisent-error:                          Error recovery.      (line  46)
+* wisent-error <1>:                      Error recovery.      (line  46)
 * wisent-input:                          Actions goodies.     (line   6)
+* wisent-input <1>:                      Actions goodies.     (line   6)
 * wisent-lex:                            Wisent Lex.          (line  30)
+* wisent-lex <1>:                        Wisent Lex.          (line  30)
 * wisent-lex-istream:                    Wisent Lex.          (line  30)
 * wisent-lexer:                          Actions goodies.     (line  10)
+* wisent-lexer <1>:                      Actions goodies.     (line  10)
 * wisent-message:                        Report errors.       (line  12)
+* wisent-message <1>:                    Report errors.       (line  12)
 * wisent-nerrs:                          Error recovery.      (line  39)
+* wisent-nerrs <1>:                      Error recovery.      (line  39)
 * wisent-parse:                          Wisent Parsing.      (line  35)
+* wisent-parse <1>:                      Wisent Parsing.      (line  35)
 * wisent-parse-toggle-verbose-flag:      Report errors.       (line  35)
+* wisent-parse-toggle-verbose-flag <1>:  Report errors.       (line  35)
 * wisent-parse-verbose-flag:             Report errors.       (line  30)
+* wisent-parse-verbose-flag <1>:         Report errors.       (line  30)
 * wisent-post-parse-hook:                Wisent Parsing.      (line  62)
+* wisent-post-parse-hook <1>:            Wisent Parsing.      (line  62)
 * wisent-pre-parse-hook:                 Wisent Parsing.      (line  59)
+* wisent-pre-parse-hook <1>:             Wisent Parsing.      (line  59)
 * wisent-recovering:                     Error recovery.      (line  42)
+* wisent-recovering <1>:                 Error recovery.      (line  42)
 * wisent-region:                         Actions goodies.     (line  13)
+* wisent-region <1>:                     Actions goodies.     (line  13)
 * wisent-set-region:                     Error recovery.      (line  85)
+* wisent-set-region <1>:                 Error recovery.      (line  85)
 * wisent-single-start-flag:              Compiling a grammar. (line  18)
 * wisent-skip-block:                     Error recovery.      (line 121)
+* wisent-skip-block <1>:                 Error recovery.      (line 121)
 * wisent-skip-token:                     Error recovery.      (line 108)
+* wisent-skip-token <1>:                 Error recovery.      (line 108)
 * wisent-toggle-verbose-flag:            Grammar Debugging.   (line  17)
-* wisent-token-to-string:                Report errors.       (line  21)
+* wisent-toggle-verbose-flag <1>:        Grammar Debugging.   (line  17)
+* wisent-token-to-string:                Report errors.       (line  20)
 * wisent-verbose-flag:                   Grammar Debugging.   (line  12)
+* wisent-verbose-flag <1>:               Grammar Debugging.   (line  12)
 * WY grammar format:                     Wisent Semantic.     (line  14)
 
 
 
 Tag Table:
-Node: Top868
-Node: Wisent Overview2155
-Node: Wisent Grammar4376
-Node: Grammar format5613
-Ref: action11686
-Node: Example13924
-Node: Compiling a grammar15968
-Node: Conflicts18069
-Node: Grammar Debugging19651
-Node: Understanding the automaton21019
-Node: Wisent Parsing30684
-Node: Writing a lexer33192
-Node: Actions goodies34811
-Node: Report errors35530
-Node: Error recovery37133
-Ref: wisent-skip-token41477
-Node: Debugging actions42651
-Node: Wisent Semantic44494
-Node: Grammar styles45338
-Node: Iterative style45873
-Node: Bison style48249
-Node: Mixed style49932
-Node: Start nonterminals52542
-Node: Useful functions55391
-Node: Wisent Lex55944
-Node: GNU Free Documentation License57377
-Node: Index82552
+Node: Top866
+Node: Wisent Overview2153
+Node: Wisent Grammar4374
+Node: Grammar format5591
+Ref: action11604
+Node: Example13851
+Node: Compiling a grammar15885
+Node: Conflicts17970
+Node: Grammar Debugging19521
+Node: Understanding the automaton20889
+Node: Wisent Parsing30554
+Node: Writing a lexer33066
+Node: Actions goodies34685
+Node: Report errors35399
+Node: Error recovery37002
+Ref: wisent-skip-token41332
+Node: Debugging actions42506
+Node: Wisent Semantic44343
+Node: Grammar styles45189
+Node: Iterative style45723
+Node: Bison style48099
+Node: Mixed style49782
+Node: Start nonterminals52396
+Node: Useful functions55243
+Node: Wisent Lex55796
+Node: GNU Free Documentation License57225
+Node: Index82381
 
 End Tag Table

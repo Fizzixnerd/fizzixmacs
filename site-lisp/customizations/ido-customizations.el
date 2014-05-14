@@ -5,6 +5,8 @@
 ;     * Moved everything out of init.el
 ;     November 5, 2012
 ;     * Added smex
+(require 'ido)
+(require 'smex)
 
 ;; Regular ido completion
 (ido-mode)
