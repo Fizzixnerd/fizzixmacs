@@ -1,0 +1,27 @@
+;; Object AddressBook/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AddressBook/"
+  :tables (list 
+   (semanticdb-table "jsontest.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "jsontest.json"
+    :pointmax 195
+    :fsize 194
+    :lastmodtime '(21508 41991 893317 532000)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 194) (BRACK_BLOCK 1 . 180) (BRACK_BLOCK 1 . 162))
+    )
+   (semanticdb-table "jsontestsimple.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "jsontestsimple.json"
+    :pointmax 218
+    :fsize 217
+    :lastmodtime '(21509 58876 388022 992000)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 217) (BRACK_BLOCK 1 . 179) (BRACK_BLOCK 1 . 180) (BRACK_BLOCK 1 . 173) (BRACK_BLOCK 1 . 160) (BRACK_BLOCK 1 . 154) (BRACK_BLOCK 1 . 146) (BRACK_BLOCK 1 . 145) (BRACK_BLOCK 1 . 144) (BRACK_BLOCK 1 . 121) (BRACK_BLOCK 1 . 113) (BRACK_BLOCK 1 . 112) ($EOI 6 . 6))
+    )
+   )
+  :file "!home!matt!src!rust-tutorial!AddressBook!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

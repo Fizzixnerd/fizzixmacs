@@ -1,0 +1,54 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "shader_utils.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GL/glew.h" include (:system-flag t) nil [15 35])
+            ("read_file" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52 73]))                  
+                :type "char")
+                nil [36 74])
+            ("get_log" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("object" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89 103]))                  
+                :type "char")
+                nil [75 104])
+            ("print_log" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("object" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120 134]))                  
+                :type "void")
+                nil [105 135])
+            ("create_shader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [157 178])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179 191]))                  
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [136 192]))          
+    :file "shader_utils.hpp"
+    :pointmax 193
+    :fsize 192
+    :lastmodtime '(21458 22201 203848 943000)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   )
+  :file "!home!matt!src!opengl!c++!most-illustrious-of-cubes!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

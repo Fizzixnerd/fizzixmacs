@@ -18,7 +18,6 @@
 ;     * Updated requires so that it works with the new version of CEDET 1.1...
 ;       sigh...
 
-(require 'ac-slime)
 (require 'auto-complete)
 (require 'auto-complete-config)
 (require 'cedet)
@@ -32,44 +31,38 @@
 ;; form in that file for details.
 (require 'slime)
 ;; Workaround for the compile error.  See above.
-(delete-other-windows)
+(require 'ac-slime)
 
 (ac-config-default)
 
 (defun my-ac-cc-mode-hook ()
-  (setq ac-sources (append '(ac-source-semantic
-;;			     ac-source-gtags
-;;			     ac-source-yasnippet
-			     )
+  (setq ac-sources (append '(ac-source-semantic)
 			   ac-sources)))
 
 (defun my-ac-python-mode-hook ()
-  (setq ac-sources (append '(ac-source-semantic-raw
-			     ac-source-yasnippet)
+  (setq ac-sources (append '(ac-source-semantic)
 			   ac-sources)))
 
 (defun my-ac-java-mode-hook ()
-  (setq ac-sources (append '(ac-source-semantic
-			     ac-source-yasnippet)
+  (setq ac-sources (append '(ac-source-semantic)
 			   ac-sources)))
 
 (defun my-ac-common-lisp-mode-hook ()
-  (setq ac-sources (append '(ac-source-slime
-			     ac-source-yasnippet)
+  (setf ac-sources (append '(ac-source-slime-simple)
 			   ac-sources)))
 
 (add-hook 'c-mode-common-hook 'my-ac-cc-mode-hook)
 (add-hook 'python-mode-hook 'my-ac-python-mode-hook)
 (add-hook 'java-mode-hook 'my-ac-java-mode-hook)
 ; This block must be eval'd in this order
-(progn 
-  (add-hook 'slime-mode-hook 'set-up-slime-ac)
-  (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
-  (add-hook 'common-lisp-mode-hook 'my-ac-common-lisp-mode-hook)
-  (eval-after-load "autocomplete"
-    '(add-to-list 'ac-modes 'slime-repl-mode)))
+;(progn 
+(add-hook 'slime-mode-hook 'my-ac-common-lisp-mode-hook)
+(add-hook 'slime-repl-mode-hook 'my-ac-common-lisp-mode-hook)
+(add-hook 'slime-mode-hook 'set-up-slime-ac)
+(eval-after-load "autocomplete"
+  '(add-to-list 'ac-modes 'slime-repl-mode))
 
 (global-auto-complete-mode)
 
-(setq ac-auto-show-menu 0.3)
-(setq ac-quick-help-delay 1)
+(setq ac-auto-show-menu 1.5)
+(setq ac-quick-help-delay 1.5)

@@ -1,0 +1,1062 @@
+;; Object editline/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "editline/"
+  :tables (list 
+   (semanticdb-table "readline.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_READLINE_H_" variable (:constant-flag t) nil [1590 1602])
+            ("sys/types.h" include (:system-flag t) nil [1604 1626])
+            ("stdio.h" include (:system-flag t) nil [1627 1645])
+            ("Function" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1764 1777])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1778 1782]))                  
+                :type "int")
+                nil [1749 1783])
+            ("VFunction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1809 1814]))                  
+                :type "void")
+                nil [1792 1815])
+            ("VCPFunction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1843 1850]))                  
+                :type "void")
+                nil [1824 1851])
+            ("CPFunction" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1878 1891])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1892 1896]))                  
+                :type "char")
+                nil [1860 1897])
+            ("CPPFunction" function
+               (:prototype-flag t
+                :pointer 2
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1925 1938])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1939 1943])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1944 1948]))                  
+                :type "char")
+                nil [1906 1949])
+            ("rl_compentry_func_t" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1988 2001])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2002 2006]))                  
+                :type "char")
+                nil [1958 2007])
+            ("rl_command_func_t" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2040 2044])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2045 2049]))                  
+                :type "int")
+                nil [2016 2050])
+            ("HISTORY_STATE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("length" variable (:type "int") (reparse-symbol classsubparts) [2097 2108]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2079 2125])
+            ("histdata_t" type
+               (:typedef ("void")
+                :pointer 1
+                :superclasses "void"
+                :type "typedef")
+                nil [2127 2152])
+            ("HIST_ENTRY" type
+               (:typedef ("_hist_entry" type (:type "struct") nil nil)
+                :superclasses "_hist_entry"
+                :type "typedef")
+                nil [2154 2235])
+            ("_hist_entry" type
+               (:members 
+                  ( ("line" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2184 2201])
+                    ("data" variable (:type ("histdata_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2203 2221]))                  
+                :type "struct")
+                nil [2154 2235])
+            ("KEYMAP_ENTRY" type
+               (:typedef ("_keymap_entry" type (:type "struct") nil nil)
+                :superclasses "_keymap_entry"
+                :type "typedef")
+                nil [2237 2367])
+            ("_keymap_entry" type
+               (:members 
+                  ( ("type" variable (:type "char") (reparse-symbol classsubparts) [2269 2279])
+                    ("ISFUNC" variable (:constant-flag t) (reparse-symbol classsubparts) [2288 2294])
+                    ("ISKMAP" variable (:constant-flag t) (reparse-symbol classsubparts) [2305 2311])
+                    ("ISMACR" variable (:constant-flag t) (reparse-symbol classsubparts) [2322 2328])
+                    ("function" variable
+                       (:pointer 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2332 2351]))                  
+                :type "struct")
+                nil [2237 2367])
+            ("KEYMAP_SIZE" variable (:constant-flag t) nil [2377 2388])
+            ("KEYMAP_ENTRY_ARRAY" type
+               (:typedef ("KEYMAP_ENTRY" type (:type "class") nil nil)
+                :superclasses "KEYMAP_ENTRY"
+                :type "typedef")
+                nil [2394 2447])
+            ("Keymap" type
+               (:typedef ("KEYMAP_ENTRY" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "KEYMAP_ENTRY"
+                :type "typedef")
+                nil [2448 2477])
+            ("control_character_threshold" variable (:constant-flag t) nil [2487 2514])
+            ("control_character_bit" variable (:constant-flag t) nil [2528 2549])
+            ("sys/ioctl.h" include (:system-flag t) nil [2570 2592])
+            ("sys/ttydefaults.h" include (:system-flag t) nil [2651 2679])
+            ("CTRL" variable (:constant-flag t) nil [2708 2712])
+            ("UNCTRL" variable (:constant-flag t) nil [2766 2772])
+            ("RUBOUT" variable (:constant-flag t) nil [2834 2840])
+            ("ABORT_CHAR" variable (:constant-flag t) nil [2855 2865])
+            ("RL_READLINE_VERSION" variable (:constant-flag t) nil [2884 2903])
+            ("RL_PROMPT_START_IGNORE" variable (:constant-flag t) nil [2920 2942])
+            ("RL_PROMPT_END_IGNORE" variable (:constant-flag t) nil [2956 2976])
+            ("rl_library_version" variable
+               (:type "char"
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3083 3121])
+            ("rl_readline_version" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [3122 3155])
+            ("rl_readline_name" variable
+               (:type "char"
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3157 3188])
+            ("rl_instream" variable
+               (:type ("FILE" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3189 3215])
+            ("rl_outstream" variable
+               (:type ("FILE" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3216 3243])
+            ("rl_line_buffer" variable
+               (:type "char"
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3244 3273])
+            ("rl_end" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [3274 3304])
+            ("rl_point" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [3274 3304])
+            ("history_length" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [3305 3347])
+            ("history_base" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [3305 3347])
+            ("max_input_history" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [3348 3379])
+            ("rl_basic_word_break_characters" variable
+               (:type "char"
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3380 3425])
+            ("rl_completer_word_break_characters" variable
+               (:type "char"
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3426 3475])
+            ("rl_completer_quote_characters" variable
+               (:type "char"
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3476 3520])
+            ("rl_completion_entry_function" variable
+               (:type ("Function" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3521 3568])
+            ("rl_completion_word_break_hook" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [3569 3622])
+            ("rl_attempted_completion_function" variable
+               (:type ("CPPFunction" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3623 3676])
+            ("rl_attempted_completion_over" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [3677 3719])
+            ("rl_completion_type" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [3720 3751])
+            ("rl_completion_query_items" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [3752 3790])
+            ("rl_special_prefixes" variable
+               (:type "char"
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3791 3825])
+            ("rl_completion_append_character" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [3826 3869])
+            ("rl_inhibit_completion" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [3870 3904])
+            ("rl_pre_input_hook" variable
+               (:type ("Function" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3905 3941])
+            ("rl_startup_hook" variable
+               (:type ("Function" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3942 3976])
+            ("rl_terminal_name" variable
+               (:type "char"
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3977 4008])
+            ("rl_already_prompted" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [4009 4041])
+            ("rl_prompt" variable
+               (:type "char"
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [4042 4066])
+            ("rl_catch_signals" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [4110 4139])
+            ("rl_catch_sigwinch" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [4140 4170])
+            ("emacs_ctlx_keymap" variable
+               (:type ("KEYMAP_ENTRY_ARRAY" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [4171 4263])
+            ("emacs_meta_keymap" variable
+               (:type ("KEYMAP_ENTRY_ARRAY" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [4171 4263])
+            ("emacs_standard_keymap" variable
+               (:type ("KEYMAP_ENTRY_ARRAY" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [4171 4263])
+            ("rl_filename_completion_desired" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [4264 4307])
+            ("rl_ignore_completion_duplicates" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [4308 4352])
+            ("rl_getc_function" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [4353 4393])
+            ("rl_redisplay_function" variable
+               (:type ("VFunction" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [4394 4434])
+            ("rl_completion_display_matches_hook" variable
+               (:type ("VFunction" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [4435 4488])
+            ("rl_prep_term_function" variable
+               (:type ("VFunction" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [4489 4529])
+            ("rl_deprep_term_function" variable
+               (:type ("VFunction" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [4530 4572])
+            ("readline_echoing_p" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [4573 4604])
+            ("_rl_print_completions_horizontally" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [4605 4652])
+            ("readline" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4696 4709]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4680 4710])
+            ("rl_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4731 4736]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4711 4737])
+            ("using_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4760 4765]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4739 4766])
+            ("add_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4785 4798]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4767 4799])
+            ("clear_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4821 4826]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4800 4827])
+            ("stifle_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [4850 4854]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4828 4855])
+            ("unstifle_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4879 4884]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4856 4885])
+            ("history_is_stifled" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4911 4916]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4886 4917])
+            ("where_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4938 4943]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4918 4944])
+            ("current_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("HIST_ENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4973 4978]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4945 4979])
+            ("history_get" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("HIST_ENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5004 5008]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4980 5009])
+            ("remove_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("HIST_ENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5037 5041]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5010 5042])
+            ("replace_history_entry" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("HIST_ENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5077 5081])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5082 5095])
+                    ("" variable (:type ("histdata_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5096 5107]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5043 5108])
+            ("history_total_bytes" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5135 5140]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5109 5141])
+            ("history_set_pos" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5164 5168]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5142 5169])
+            ("previous_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("HIST_ENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5199 5204]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5170 5205])
+            ("next_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("HIST_ENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5231 5236]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5206 5237])
+            ("history_search" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5259 5272])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5273 5277]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5238 5278])
+            ("history_search_prefix" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5307 5320])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5321 5325]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5279 5326])
+            ("history_search_pos" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5352 5365])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5366 5370])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5371 5375]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5327 5376])
+            ("read_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5396 5409]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5377 5410])
+            ("write_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5431 5444]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5411 5445])
+            ("history_truncate_file" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5475 5488])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5489 5493]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5446 5494])
+            ("history_expand" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5516 5523])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5524 5532]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5495 5533])
+            ("history_tokenize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5565 5578]))                  
+                :pointer 2
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5534 5579])
+            ("get_history_event" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5610 5623])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5624 5630])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5631 5635]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5580 5636])
+            ("history_arg_extract" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5664 5668])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5669 5673])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5674 5687]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5637 5688])
+            ("tilde_expand" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5710 5717]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5690 5718])
+            ("filename_completion_function" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5755 5768])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5769 5773]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5719 5774])
+            ("username_completion_function" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5811 5824])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5825 5829]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5775 5830])
+            ("rl_complete" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5849 5853])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5854 5858]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5831 5859])
+            ("rl_read_key" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5878 5883]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5860 5884])
+            ("completion_matches" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5918 5931])
+                    ("" variable
+                       (:pointer 1
+                        :type ("CPFunction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5932 5945]))                  
+                :pointer 2
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5885 5946])
+            ("rl_display_match_list" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5976 5984])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5985 5989])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5990 5994]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5947 5995])
+            ("rl_insert" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [6013 6017])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [6018 6022]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5997 6023])
+            ("rl_insert_text" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6045 6058]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6024 6059])
+            ("rl_reset_terminal" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6085 6098]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6060 6099])
+            ("rl_bind_key" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [6118 6122])
+                    ("" variable
+                       (:pointer 1
+                        :type ("rl_command_func_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6123 6143]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6100 6144])
+            ("rl_newline" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [6162 6166])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [6167 6171]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6145 6172])
+            ("rl_callback_read_char" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6202 6207]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6173 6208])
+            ("rl_callback_handler_install" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6244 6257])
+                    ("" variable
+                       (:pointer 1
+                        :type ("VCPFunction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6258 6272]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6209 6273])
+            ("rl_callback_handler_remove" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6308 6313]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6274 6314])
+            ("rl_redisplay" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6335 6340]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6315 6341])
+            ("rl_get_previous_history" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [6372 6376])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [6377 6381]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6342 6382])
+            ("rl_prep_terminal" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [6407 6411]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6383 6412])
+            ("rl_deprep_terminal" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6439 6444]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6413 6445])
+            ("rl_read_init_file" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6470 6483]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6446 6484])
+            ("rl_parse_and_bind" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6509 6522]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6485 6523])
+            ("rl_variable_bind" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6547 6560])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6561 6574]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6524 6575])
+            ("rl_stuff_char" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [6597 6601]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6576 6602])
+            ("rl_add_defun" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6622 6635])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6636 6647])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [6648 6652]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6603 6653])
+            ("history_get_history_state" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("HISTORY_STATE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6695 6700]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6654 6701])
+            ("rl_get_screen_size" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6728 6734])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6735 6741]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6702 6742])
+            ("rl_set_screen_size" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [6769 6773])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [6774 6778]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6743 6779])
+            ("rl_filename_completion_function" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6821 6834])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [6835 6839]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6780 6840])
+            ("_rl_abort_internal" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6866 6871]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6841 6872])
+            ("_rl_qsort_string_compare" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6904 6912])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6913 6921]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6873 6922])
+            ("rl_completion_matches" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6960 6973])
+                    ("" variable
+                       (:pointer 1
+                        :type ("rl_compentry_func_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6974 6996]))                  
+                :pointer 2
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6923 6997])
+            ("rl_forced_update_display" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7030 7035]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6998 7036])
+            ("rl_set_prompt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7057 7070]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7037 7071])
+            ("rl_on_new_line" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7093 7098]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7072 7099])
+            ("rl_kill_text" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [7164 7168])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [7169 7173]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7145 7174])
+            ("rl_get_keymap" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("Keymap" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7198 7203]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7175 7204])
+            ("rl_set_keymap" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type ("Keymap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7226 7233]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7205 7234])
+            ("rl_make_bare_keymap" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("Keymap" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7264 7269]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7235 7270])
+            ("rl_generic_bind" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [7293 7297])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7298 7311])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7312 7325])
+                    ("" variable (:type ("Keymap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7326 7333]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7271 7334])
+            ("rl_bind_key_in_map" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [7360 7364])
+                    ("" variable
+                       (:pointer 1
+                        :type ("rl_command_func_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7365 7385])
+                    ("" variable (:type ("Keymap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7386 7393]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7335 7394])
+            ("rl_cleanup_after_signal" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7426 7431]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7395 7432])
+            ("rl_free_line_state" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7459 7464]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7433 7465]))          
+    :file "readline.h"
+    :pointmax 7521
+    :fsize 7520
+    :lastmodtime '(21093 12628 0 0)
+    :unmatched-syntax '((TYPEDEF 2008 . 2015) (TYPEDEF 1950 . 1957) (TYPEDEF 1898 . 1905) (TYPEDEF 1852 . 1859) (TYPEDEF 1816 . 1823) (TYPEDEF 1784 . 1791) (TYPEDEF 1741 . 1748))
+    :lexical-table 
+        '(("_READLINE_H_")
+          ("CTRL" (spp-arg-list ("c") 2712 . 2715) . ((semantic-list "((c) & 037)" 2717 . 2728)))
+          ("ISFUNC" . ((number "0" 2295 . 2296)))
+          ("RUBOUT" . ((number "0x7f" 2842 . 2846)))
+          ("KEYMAP_SIZE" . ((number "256" 2389 . 2392)))
+          ("control_character_threshold" . ((number "0x20" 2515 . 2519)))
+          ("RL_PROMPT_START_IGNORE" . ((string "'\\1'" 2943 . 2947)))
+          ("RL_PROMPT_END_IGNORE" . ((string "'\\2'" 2977 . 2981)))
+          ("ISMACR" . ((number "2" 2329 . 2330)))
+          ("control_character_bit" . ((number "0x40" 2551 . 2555)))
+          ("ABORT_CHAR" . ((symbol "CTRL" 2866 . 2870) (semantic-list "('G')" 2870 . 2875)))
+          ("RL_READLINE_VERSION" . ((number "0x0402" 2905 . 2911)))
+          ("UNCTRL" (spp-arg-list ("c") 2772 . 2775) . ((semantic-list "(((c) - 'a' + 'A')|control_character_bit)" 2776 . 2817)))
+          ("ISKMAP" . ((number "1" 2312 . 2313)))
+          )
+
+    )
+   )
+  :file "!usr!include!editline!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

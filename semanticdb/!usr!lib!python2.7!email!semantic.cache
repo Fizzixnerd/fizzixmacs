@@ -1,0 +1,327 @@
+;; Object email/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "email/"
+  :tables (list 
+   (semanticdb-table "utils.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"Miscellaneous utilities.\"\"\"" code nil nil [110 140])
+            ("__all__" variable nil nil [142 414])
+            ("os" include nil nil [416 425])
+            ("re" include nil nil [426 435])
+            ("time" include nil nil [436 447])
+            ("base64" include nil nil [448 461])
+            ("random" include nil nil [462 475])
+            ("socket" include nil nil [476 489])
+            ("urllib" include nil nil [490 503])
+            ("warnings" include nil nil [504 519])
+            ("email._parseaddr" include nil nil [521 555])
+            ("email._parseaddr" include nil nil [556 612])
+            ("email._parseaddr" include nil nil [613 651])
+            ("email._parseaddr" include nil nil [730 782])
+            ("email._parseaddr" include nil nil [783 841])
+            ("quopri" include nil nil [843 886])
+            ("email.encoders" include nil nil [911 956])
+            ("COMMASPACE" variable nil nil [958 975])
+            ("EMPTYSTRING" variable nil nil [976 992])
+            ("UEMPTYSTRING" variable nil nil [993 1011])
+            ("CRLF" variable nil nil [1012 1025])
+            ("TICK" variable nil nil [1026 1036])
+            ("specialsre" variable nil nil [1038 1082])
+            ("escapesre" variable nil nil [1083 1119])
+            ("_identity" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [1149 1150]))              ) nil [1135 1166])
+            ("_bdecode" function
+               (:documentation "Decodes a base64 string.
+
+    This function is equivalent to base64.decodestring and it's retained only
+    for backward compatibility. It used to remove the last \\\\n of the decoded
+    string, if it had any (see issue 7143).
+    "
+                :arguments 
+                  ( ("s" variable nil (reparse-symbol function_parameters) [1181 1182]))                  )
+                nil [1168 1491])
+            ("fix_eols" function
+               (:documentation "Replace all line-ending characters with \\\\r\\\\n."
+                :arguments 
+                  ( ("s" variable nil (reparse-symbol function_parameters) [1508 1509]))                  )
+                nil [1495 1764])
+            ("formataddr" function
+               (:documentation "The inverse of parseaddr(), this takes a 2-tuple of the form
+    (realname, email_address) and returns the string value suitable
+    for an RFC 2822 From, To or Cc header.
+
+    If the first element of pair is false, then the second element is
+    returned unmodified.
+    "
+                :arguments 
+                  ( ("pair" variable nil (reparse-symbol function_parameters) [1783 1787]))                  )
+                nil [1768 2321])
+            ("getaddresses" function
+               (:documentation "Return a list of (REALNAME, EMAIL) for each fieldvalue."
+                :arguments 
+                  ( ("fieldvalues" variable nil (reparse-symbol function_parameters) [2342 2353]))                  )
+                nil [2325 2512])
+            ("ecre" variable nil nil [2516 2921])
+            ("formatdate" function
+               (:documentation "Returns a date string as specified by RFC 2822, e.g.:
+
+    Fri, 09 Nov 2001 01:08:47 -0000
+
+    Optional timeval if given is a floating point time value as accepted by
+    gmtime() and localtime(), otherwise the current time is used.
+
+    Optional localtime is a flag that when True, interprets timeval, and
+    returns a date relative to the local timezone instead of UTC, properly
+    taking daylight savings time into account.
+
+    Optional argument usegmt means that the timezone is written out as
+    an ascii string, not numeric one (so \"GMT\" instead of \"+0000\"). This
+    is needed for HTTP, and is only used when localtime==False.
+    "
+                :arguments 
+                  ( ("timeval" variable nil (reparse-symbol function_parameters) [2941 2948])
+                    ("localtime" variable nil (reparse-symbol function_parameters) [2955 2964])
+                    ("usegmt" variable nil (reparse-symbol function_parameters) [2972 2978]))                  )
+                nil [2926 4956])
+            ("make_msgid" function
+               (:documentation "Returns a string suitable for RFC 2822 compliant Message-ID, e.g:
+
+    <20020201195627.33539.96671@nightshade.la.mastaler.com>
+
+    Optional idstring if given is a string used to strengthen the
+    uniqueness of the message id.
+    "
+                :arguments 
+                  ( ("idstring" variable nil (reparse-symbol function_parameters) [4975 4983]))                  )
+                nil [4960 5599])
+            ("parsedate" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [5803 5807]))              ) nil [5789 5875])
+            ("parsedate_tz" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [5894 5898]))              ) nil [5877 5969])
+            ("parseaddr" function (:arguments 
+              ( ("addr" variable nil (reparse-symbol function_parameters) [5985 5989]))              ) nil [5971 6095])
+            ("unquote" function
+               (:documentation "Remove quotes from a string."
+                :arguments 
+                  ( ("str" variable nil (reparse-symbol function_parameters) [6181 6184]))                  )
+                nil [6169 9864]))          
+    :file "utils.py"
+    :pointmax 9864
+    :fsize 9863
+    :lastmodtime '(21294 8928 0 0)
+    :unmatched-syntax '((INDENT_BLOCK 9513 . 9864) (INDENT_BLOCK 9456 . 9513) (DEDENT 9404 . 9404) (DEF 9404 . 9407) (LPAREN 9430 . 9431) (NEWLINE 7302 . 7303) (COLON 7301 . 7302) (RPAREN 7300 . 7301) (LPAREN 7293 . 7294) (NEWLINE 7274 . 7275) (RPAREN 7273 . 7274) (DEDENT 7198 . 7198) (NAME 7198 . 7218) (LPAREN 7231 . 7232) (NEWLINE 6757 . 6758) (COLON 6756 . 6757) (RPAREN 6755 . 6756) (DEDENT 6706 . 6706) (DEF 6706 . 6709) (LPAREN 6724 . 6725) (NEWLINE 6558 . 6559) (COLON 6557 . 6558) (RPAREN 6556 . 6557) (DEF 6536 . 6539) (LPAREN 6554 . 6555) (NEWLINE 6425 . 6426) (COLON 6424 . 6425) (RPAREN 6423 . 6424) (LPAREN 6419 . 6420) (AND 6403 . 6406) (RPAREN 6401 . 6402) (DEDENT 6372 . 6380) (IF 6380 . 6382) (LPAREN 6397 . 6398))
+    )
+   (semanticdb-table "base64mime.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"Base64 content transfer encoding per RFCs 2045-2047.
+
+This module handles the content transfer encoding method defined in RFC 2045
+to encode arbitrary 8-bit data using the three 8-bit bytes in four 7-bit
+characters encoding known as Base64.
+
+It is used in the MIME standards for email to attach images, audio, and text
+using some 8-bit character sets to messages.
+
+This module provides an interface to encode and decode both headers and bodies
+with Base64 encoding.
+
+RFC 2045 defines a method for including character set information in an
+`encoded-word' in a header.  This method is commonly used for 8-bit real names
+in To:, From:, Cc:, etc. fields, as well as Subject: lines.
+
+This module does not do the line wrapping or end-of-line character conversion
+necessary for proper internationalized headers; it only does dumb encoding and
+decoding.  To deal with the various line wrapping issues, use the email.header
+module.
+\"\"\"" code nil nil [112 1041])
+            ("__all__" variable nil nil [1043 1205])
+            ("binascii" include nil nil [1208 1251])
+            ("email.utils" include nil nil [1252 1284])
+            ("CRLF" variable nil nil [1286 1299])
+            ("NL" variable nil nil [1300 1309])
+            ("EMPTYSTRING" variable nil nil [1310 1326])
+            ("MISC_LEN" variable nil nil [1350 1362])
+            ("base64_len" function
+               (:documentation "Return the length of s when it is encoded with base64."
+                :arguments 
+                  ( ("s" variable nil (reparse-symbol function_parameters) [1392 1393]))                  )
+                nil [1377 1664])
+            ("header_encode" function
+               (:documentation "Encode a single header line with Base64 encoding in a given charset.
+
+    Defined in RFC 2045, this Base64 encoding is identical to normal Base64
+    encoding, except that each line must be intelligently wrapped (respecting
+    the Base64 encoding), and subsequent lines must start with a space.
+
+    charset names the character set to use to encode the header.  It defaults
+    to iso-8859-1.
+
+    End-of-line characters (\\\\r, \\\\n, \\\\r\\\\n) will be automatically converted
+    to the canonical email line separator \\\\r\\\\n unless the keep_eols
+    parameter is True (the default is False).
+
+    Each line of the header will be terminated in the value of eol, which
+    defaults to \"\\\\n\".  Set this to \"\\\\r\\\\n\" if you are using the result of
+    this function directly in email.
+
+    The resulting string will be in the form:
+
+    \"=?charset?b?WW/5ciBtYXp66XLrIHf8eiBhIGhhbXBzdGHuciBBIFlv+XIgbWF6euly?=\\\\n
+      =?charset?b?6yB3/HogYSBoYW1wc3Rh7nIgQkMgWW/5ciBtYXp66XLrIHf8eiBhIGhh?=\"
+
+    with each line wrapped at, at most, maxlinelen characters (defaults to 76
+    characters).
+    "
+                :arguments 
+                  ( ("header" variable nil (reparse-symbol function_parameters) [1686 1692])
+                    ("charset" variable nil (reparse-symbol function_parameters) [1694 1701])
+                    ("keep_eols" variable nil (reparse-symbol function_parameters) [1716 1725])
+                    ("maxlinelen" variable nil (reparse-symbol function_parameters) [1751 1761])
+                    ("eol" variable nil (reparse-symbol function_parameters) [1766 1769]))                  )
+                nil [1668 3836])
+            ("encode" function
+               (:documentation "Encode a string with base64.
+
+    Each line will be wrapped at, at most, maxlinelen characters (defaults to
+    76 characters).
+
+    If binary is False, end-of-line characters will be converted to the
+    canonical email end-of-line sequence \\\\r\\\\n.  Otherwise they will be left
+    verbatim (this is the default).
+
+    Each line of encoded text will end with eol, which defaults to \"\\\\n\".  Set
+    this to \"\\\\r\\\\n\" if you will be using the result of this function directly
+    in an email.
+    "
+                :arguments 
+                  ( ("s" variable nil (reparse-symbol function_parameters) [3851 3852])
+                    ("binary" variable nil (reparse-symbol function_parameters) [3854 3860])
+                    ("maxlinelen" variable nil (reparse-symbol function_parameters) [3867 3877])
+                    ("eol" variable nil (reparse-symbol function_parameters) [3882 3885]))                  )
+                nil [3840 4887])
+            ("body_encode" variable nil nil [4961 4981])
+            ("encodestring" variable nil nil [4982 5003])
+            ("decode" function
+               (:documentation "Decode a raw base64 string.
+
+    If convert_eols is set to a string value, all canonical email linefeeds,
+    e.g. \"\\\\r\\\\n\", in the decoded text will be converted to the value of
+    convert_eols.  os.linesep is a good choice for convert_eols if you are
+    decoding a text attachment.
+
+    This function does not parse a full MIME header value encoded with
+    base64 (like =?iso-8895-1?b?bmloISBuaWgh?=) -- please use the high
+    level email.header class for that functionality.
+    "
+                :arguments 
+                  ( ("s" variable nil (reparse-symbol function_parameters) [5019 5020])
+                    ("convert_eols" variable nil (reparse-symbol function_parameters) [5022 5034]))                  )
+                nil [5008 5678])
+            ("body_decode" variable nil nil [5752 5772])
+            ("decodestring" variable nil nil [5773 5794]))          
+    :file "base64mime.py"
+    :pointmax 5795
+    :fsize 5794
+    :lastmodtime '(21294 8928 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "_parseaddr.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"Email address parsing code.
+
+Lifted directly from rfc822.py.  This should eventually be rewritten.
+\"\"\"" code nil nil [87 192])
+            ("__all__" variable nil nil [194 278])
+            ("time" include nil nil [280 301])
+            ("calendar" include nil nil [280 301])
+            ("SPACE" variable nil nil [303 314])
+            ("EMPTYSTRING" variable nil nil [315 331])
+            ("COMMASPACE" variable nil nil [332 349])
+            ("_monthnames" variable nil nil [372 637])
+            ("_daynames" variable nil nil [639 700])
+            ("_timezones" variable nil nil [1006 1342])
+            ("parsedate_tz" function
+               (:documentation "Convert a date string to a time tuple.
+
+    Accounts for military timezones.
+    "
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [1362 1366]))                  )
+                nil [1345 4137])
+            ("parsedate" function
+               (:documentation "Convert a time string to a time tuple."
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [4153 4157]))                  )
+                nil [4139 4313])
+            ("mktime_tz" function
+               (:documentation "Turn a 10-tuple as returned by parsedate_tz() into a POSIX timestamp."
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [4329 4333]))                  )
+                nil [4315 4623])
+            ("quote" function
+               (:documentation "Prepare string to be used in a quoted string.
+
+    Turns backslash and double quote characters into quoted pairs.  These
+    are the only characters that need to be quoted inside a quoted string.
+    Does not add the surrounding double quotes.
+    "
+                :arguments 
+                  ( ("str" variable nil (reparse-symbol function_parameters) [4635 4638]))                  )
+                nil [4625 15734]))          
+    :file "_parseaddr.py"
+    :pointmax 15734
+    :fsize 15733
+    :lastmodtime '(21294 8928 0 0)
+    :unmatched-syntax '((NEWLINE 14355 . 14356) (COLON 14354 . 14355) (RPAREN 14353 . 14354) (DEDENT 14322 . 14322) (CLASS 14322 . 14327) (LPAREN 14339 . 14340))
+    )
+   (semanticdb-table "encoders.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"Encodings and related functions.\"\"\"" code nil nil [110 148])
+            ("__all__" variable nil nil [150 250])
+            ("base64" include nil nil [252 265])
+            ("quopri" include nil nil [267 315])
+            ("_qencode" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [333 334]))              ) nil [320 480])
+            ("_bencode" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [495 496]))              ) nil [482 787])
+            ("encode_base64" function
+               (:documentation "Encode the message's payload in Base64.
+
+    Also, add an appropriate Content-Transfer-Encoding header.
+    "
+                :arguments 
+                  ( ("msg" variable nil (reparse-symbol function_parameters) [809 812]))                  )
+                nil [791 1069])
+            ("encode_quopri" function
+               (:documentation "Encode the message's payload in quoted-printable.
+
+    Also, add an appropriate Content-Transfer-Encoding header.
+    "
+                :arguments 
+                  ( ("msg" variable nil (reparse-symbol function_parameters) [1091 1094]))                  )
+                nil [1073 1371])
+            ("encode_7or8bit" function
+               (:documentation "Set the Content-Transfer-Encoding header to 7bit or 8bit."
+                :arguments 
+                  ( ("msg" variable nil (reparse-symbol function_parameters) [1394 1397]))                  )
+                nil [1375 1968])
+            ("encode_noop" function
+               (:documentation "Do nothing."
+                :arguments 
+                  ( ("msg" variable nil (reparse-symbol function_parameters) [1988 1991]))                  )
+                nil [1972 2016]))          
+    :file "encoders.py"
+    :pointmax 2016
+    :fsize 2015
+    :lastmodtime '(21294 8928 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!lib!python2.7!email!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

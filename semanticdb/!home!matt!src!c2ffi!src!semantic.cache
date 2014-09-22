@@ -1,0 +1,24 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("$(top_srcdir)/make-extras" include nil nil [62 96])
+            ("CLANG_LIBS" variable (:default-value ("-lclangTooling")) nil [215 815])
+            ("bin_PROGRAMS" variable (:default-value ("c2ffi")) nil [816 837])
+            ("c2ffi_CXXFLAGS" variable (:default-value ("-fno-rtti" "$(PTHREAD_CFLAGS)" "$(LLVM_CXXFLAGS)")) nil [837 899])
+            ("c2ffi_LDADD" variable (:default-value ("$(PTHREAD_LIBS)" "$(LLVM_LDFLAGS)" "$(CLANG_LIBS)" "$(LLVM_LIBS)" "$(LIBDL)" "$(LIBCURSES)")) nil [899 1010])
+            ("c2ffi_SOURCES" variable (:default-value ("c2ffi.cpp" "init.cpp" "options.cpp" "OutputDriver.cpp" "Decl.cpp" "Type.cpp" "AST.cpp" "Expr.cpp" "drivers/Sexp.cpp" "drivers/JSON.cpp" "drivers/Null.cpp")) nil [1011 1169]))          
+    :file "Makefile.am"
+    :pointmax 1169
+    :fsize 1168
+    :lastmodtime '(21399 6263 738433 299000)
+    :unmatched-syntax '((symbol 115 . 119) (INCLUDE 107 . 114) (punctuation 105 . 106) (symbol 97 . 104) (bol 97 . 97))
+    )
+   )
+  :file "!home!matt!src!c2ffi!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

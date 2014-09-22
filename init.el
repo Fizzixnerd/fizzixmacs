@@ -22,8 +22,10 @@
 
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/glsl-mode/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/cc-mode-5.32.5/")
 (add-to-list 'load-path "~/.emacs.d/elpa/")
+(require 'slime)
 
 ; Fuck, I don't know what to do with these. I will leave them here, I
 ; guess.
@@ -34,17 +36,13 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(doc-view-continuous t)
- '(ede-project-directories (quote ("/home/matt/src/silveretta/src" "/home/matt/src/simple-lisp" "/home/matt/src/simple-lisp/src" "/home/matt/src/cl/ncurses" "/home/matt/Documents/src/matt/python/pygame/bouncing_ball" "/home/matt/Documents/sources/matt/java/DotComBust" "/home/matt/Documents/sources/matt/go/echo")))
- '(global-semantic-decoration-mode t)
- '(global-semantic-idle-completions-mode t nil (semantic/idle))
- '(global-semantic-idle-summary-mode t)
- '(global-semanticdb-minor-mode t)
+ '(ede-project-directories (quote ("/home/matt/src/silveretta/src")))
  '(inhibit-startup-screen t)
  '(preview-auto-cache-preamble t)
  '(preview-gs-options (quote ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4")))
  '(save-place t nil (saveplace))
  '(scroll-bar-mode (quote right))
- '(semantic-c-dependency-system-include-path (quote ("/usr/include" "~/src/simple-lisp/src/include")))
+ '(semantic-c-dependency-system-include-path (quote ("/usr/include" "~/src/silveretta/src/include")))
  '(semantic-complete-inline-analyzer-displayor-class (quote semantic-displayor-tooltip))
  '(semantic-complete-inline-analyzer-idle-displayor-class (quote semantic-displayor-tooltip))
  '(semantic-java-dependency-system-include-path (quote ("/usr/share/java/")))
@@ -71,6 +69,7 @@
 (load-library "customizations/tex-customizations.el")
 (load-library "customizations/cl-customizations.el")
 (load-library "customizations/c++-customizations.el")
+(load-library "customizations/visual-customizations.el")
 
 ;; These libraries should only be loaded in their respective major
 ;; modes.

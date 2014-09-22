@@ -1,0 +1,1183 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "debug.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [15 33])
+            ("debugloc" variable (:constant-flag t) nil [99 107])
+            ("AG_DEBUG" variable (:constant-flag t) nil [211 219])
+            ("DEBUG" variable (:constant-flag t) nil [230 235])
+            ("dprint" variable (:constant-flag t) nil [244 250])
+            ("dputln" variable (:constant-flag t) nil [308 314])
+            ("eprintf" variable (:constant-flag t) nil [372 379])
+            ("AG_DEBUG" variable (:constant-flag t) nil [447 455])
+            ("dprint" variable (:constant-flag t) nil [466 472])
+            ("dputln" variable (:constant-flag t) nil [487 493])
+            ("eprintf" variable (:constant-flag t) nil [507 514])
+            ("eputln" variable (:constant-flag t) nil [607 613]))          
+    :file "debug.h"
+    :pointmax 640
+    :fsize 639
+    :lastmodtime '(21371 30951 284586 147000)
+    :unmatched-syntax '((thing 9 . 13) (thing 2 . 8) (thing 1 . 2))
+    :lexical-table 
+        '(("AG_DEBUG" . ((number "1" 220 . 221)))
+          ("eprintf" (spp-arg-list ("...") 379 . 384) . ((symbol "dprint" 385 . 391) (semantic-list "(__VA_ARGS__)" 391 . 404)))
+          ("eputln" (spp-arg-list ("str") 599 . 604) . ((symbol "eprintf" 605 . 612) (semantic-list "(\"%s\\n\", str)" 612 . 625)))
+          ("debugloc" (spp-arg-list nil 107 . 109) . ((symbol "fprintf" 110 . 117) (semantic-list "(stderr, \"%s:%s:%d: \", __FILE__, __func__, __LINE__)" 117 . 169)))
+          ("dputln" (spp-arg-list ("str") 314 . 319) . ((semantic-list "{debugloc(); fprintf(stderr, \"%s\\n\", str);}" 320 . 363)))
+          ("DEBUG")
+          ("dprint" (spp-arg-list ("...") 250 . 255) . ((semantic-list "{debugloc(); fprintf(stderr, __VA_ARGS__);}" 256 . 299)))
+          )
+
+    )
+   (semanticdb-table "read.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("types.h" include nil nil [15 33])
+            ("mpc.h" include nil nil [35 51])
+            ("ag_read" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69 84]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [53 85])
+            ("ag_read_long" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107 122]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [86 123])
+            ("ag_read_nil" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [144 159]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [124 160])
+            ("ag_read_symbol" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [184 199]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [161 200])
+            ("ag_read_list" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [222 237]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [201 238]))          
+    :file "read.h"
+    :pointmax 240
+    :fsize 239
+    :lastmodtime '(21367 28203 740231 909000)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   (semanticdb-table "print.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("types.h" include nil nil [15 33])
+            ("ag_asprint" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52 62]))                  
+                :type "char")
+                nil [35 63])
+            ("ag_print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78 88]))                  
+                :type "void")
+                nil [64 89]))          
+    :file "print.h"
+    :pointmax 90
+    :fsize 89
+    :lastmodtime '(21371 30951 284586 147000)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   (semanticdb-table "eval.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("val.h" include nil nil [15 31])
+            ("types.h" include nil nil [32 50])
+            ("variable.h" include nil nil [51 72])
+            ("mpc.h" include nil nil [74 90])
+            ("GETS_STR" variable (:constant-flag t) nil [100 108])
+            ("ag_eval" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("sexp" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133 146])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147 154]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [117 155])
+            ("ag_eval_long" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [177 187])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [188 195]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [156 196])
+            ("ag_eval_symbol" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [220 230])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [231 238]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [197 239])
+            ("ag_eval_err" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [260 270])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [271 278]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [240 279])
+            ("ag_eval_list" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [301 311])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [312 319]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [280 320])
+            ("ag_try_builtin" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("sym" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [345 357])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [358 371])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [372 379]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [322 380])
+            ("ag_builtin_op_assert_valid_list" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("op_sym" variable (:type ("val_symbol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [421 439])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [440 453]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [381 454])
+            ("ag_let" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [471 484])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [485 492]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [456 493])
+            ("ag_if" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [508 521])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [522 529]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [494 530])
+            ("ag_while" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [548 561])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [562 569]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [531 570])
+            ("ag_do" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [585 598])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [599 606]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [571 607])
+            ("ag_set" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [623 636])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [637 644]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [608 645])
+            ("ag_setBang" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [665 678])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [679 686]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [646 687])
+            ("ag_plus" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [704 717])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [718 725]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [688 726])
+            ("ag_minus" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [744 757])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [758 765]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [727 766])
+            ("ag_multiply" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [787 800])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [801 808]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [767 809])
+            ("ag_divide" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [828 841])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [842 849]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [810 850]))          
+    :file "eval.h"
+    :pointmax 853
+    :fsize 658
+    :lastmodtime '(21393 7937 75574 818000)
+    :unmatched-syntax '((thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2))
+    :lexical-table 
+        '(("GETS_STR" . ((string "\"gets\"" 109 . 115)))
+          )
+
+    )
+   (semanticdb-table "val.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("string-helpers.h" include nil nil [15 42])
+            ("types.h" include nil nil [43 61])
+            ("mk_ag_val" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [110 130])
+            ("del_ag_val" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147 157]))                  
+                :type "void")
+                nil [131 158])
+            ("mk_ag_val_long" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable (:type ("val_long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [183 194]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [160 195])
+            ("mk_ag_val_err" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("e" variable (:type ("val_err" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [218 228]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [196 229])
+            ("mk_ag_val_bool" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("b" variable (:type ("val_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [253 264]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [230 265])
+            ("mk_ag_val_list" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("val_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [289 304]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [266 305])
+            ("mk_ag_val_symbol" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("sym" variable (:type ("val_symbol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [331 346]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [306 347])
+            ("ag_pop" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [363 373]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [348 374]))          
+    :file "val.h"
+    :pointmax 375
+    :fsize 374
+    :lastmodtime '(21371 30951 284586 147000)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   (semanticdb-table "types.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("complex" variable (:constant-flag t) nil [23 30])
+            ("bool" variable (:constant-flag t) nil [48 52])
+            ("string" type
+               (:typedef ("char")
+                :pointer 1
+                :superclasses "char"
+                :type "typedef")
+                nil [59 80])
+            ("true" variable (:constant-flag t) nil [90 94])
+            ("false" variable (:constant-flag t) nil [105 110])
+            ("val_type" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("AG_TYPE_ERR" variable
+                             (:constant-flag t
+                              :default-value (490 491)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [466 481])
+                          ("AG_TYPE_BOOL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [500 513])
+                          ("AG_TYPE_CHAR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [516 529])
+                          ("AG_TYPE_UCHAR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [557 571])
+                          ("AG_TYPE_INT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [574 586])
+                          ("AG_TYPE_UINT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [589 602])
+                          ("AG_TYPE_LONG" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [605 618])
+                          ("AG_TYPE_ULONG" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [621 635])
+                          ("AG_TYPE_LLONG" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [638 652])
+                          ("AG_TYPE_ULLONG" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [655 670])
+                          ("AG_TYPE_FLOAT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [676 690])
+                          ("AG_TYPE_CFLOAT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [726 741])
+                          ("AG_TYPE_DOUBLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [800 815])
+                          ("AG_TYPE_CDOUBLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [818 834])
+                          ("AG_TYPE_LDOUBLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [837 853])
+                          ("AG_TYPE_CLDOUBLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [856 873])
+                          ("AG_TYPE_PTR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [876 888])
+                          ("AG_TYPE_FPTR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [915 928])
+                          ("AG_TYPE_LOBJ" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [959 972])
+                          ("AG_TYPE_LIST" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [991 1004])
+                          ("AG_TYPE_SYMBOL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1007 1022]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [449 1034])
+            ("val_err" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("msg" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1055 1066]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1036 1077])
+            ("val_bool" type
+               (:typedef ("_Bool" type (:type "class") nil nil)
+                :superclasses "_Bool"
+                :type "typedef")
+                nil [1079 1101])
+            ("val_char" type
+               (:typedef ("signed char")
+                :superclasses "signed char"
+                :type "typedef")
+                nil [1102 1131])
+            ("val_uchar" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [1132 1164])
+            ("val_int" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [1165 1185])
+            ("val_uint" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [1186 1216])
+            ("val_long" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [1217 1239])
+            ("val_ulong" type
+               (:typedef ("unsigned long")
+                :superclasses "unsigned long"
+                :type "typedef")
+                nil [1240 1272])
+            ("val_llong" type
+               (:typedef ("long long")
+                :superclasses "long long"
+                :type "typedef")
+                nil [1273 1301])
+            ("val_ullong" type
+               (:typedef ("unsigned long long")
+                :superclasses "unsigned long long"
+                :type "typedef")
+                nil [1302 1340])
+            ("val_float" type
+               (:typedef ("float")
+                :superclasses "float"
+                :type "typedef")
+                nil [1342 1366])
+            ("val_cfloat" variable (:type "float") nil [1383 1400])
+            ("val_double" type
+               (:typedef ("double")
+                :superclasses "double"
+                :type "typedef")
+                nil [1401 1427])
+            ("val_cdouble" variable (:type "double") nil [1444 1463])
+            ("val_ldouble" type
+               (:typedef ("long double")
+                :superclasses "long double"
+                :type "typedef")
+                nil [1464 1496])
+            ("val_cldouble" variable (:type "long double") nil [1513 1538])
+            ("val_ptr" type
+               (:typedef ("void")
+                :pointer 1
+                :superclasses "void"
+                :type "typedef")
+                nil [1540 1562])
+            ("val_fptr" type
+               (:typedef ("void")
+                :pointer 1
+                :superclasses "void"
+                :type "typedef")
+                nil [1655 1678])
+            ("val_obj" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ptr" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [1698 1708])
+                          ("type" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1711 1723]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1679 1734])
+            ("val_symbol" type
+               (:typedef ("string" type (:type "class") nil nil)
+                :superclasses "string"
+                :type "typedef")
+                nil [1736 1762])
+            ("val_list" type
+               (:members 
+                  ( ("head" variable
+                       (:pointer 1
+                        :type ("ag_val" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1784 1804])
+                    ("tail" variable
+                       (:pointer 1
+                        :type ("ag_val" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1807 1827]))                  
+                :type "struct")
+                nil [1764 1830])
+            ("val_list" type
+               (:typedef ("val_list" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "val_list"
+                :type "typedef")
+                nil [1831 1864])
+            ("val_value" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("Error" variable (:type ("val_err" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1884 1898])
+                          ("Bool" variable (:type ("val_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1901 1915])
+                          ("Char" variable (:type ("val_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1918 1932])
+                          ("UChar" variable (:type ("val_uchar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1935 1951])
+                          ("Int" variable (:type ("val_int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1954 1966])
+                          ("UInt" variable (:type ("val_uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1969 1983])
+                          ("Long" variable (:type ("val_long" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1986 2000])
+                          ("ULong" variable (:type ("val_ulong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2003 2019])
+                          ("LLong" variable (:type ("val_llong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2022 2038])
+                          ("ULLong" variable (:type ("val_ullong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2041 2059])
+                          ("Float" variable (:type ("val_float" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2062 2078])
+                          ("CFloat" variable (:type ("val_cfloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2081 2099])
+                          ("Double" variable (:type ("val_double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2102 2120])
+                          ("CDouble" variable (:type ("val_cdouble" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2123 2143])
+                          ("LDouble" variable (:type ("val_ldouble" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2146 2166])
+                          ("CLDouble" variable (:type ("val_cldouble" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2169 2191])
+                          ("Ptr" variable (:type ("val_ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2194 2206])
+                          ("Fptr" variable (:type ("val_fptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2209 2223])
+                          ("Obj" variable (:type ("val_obj" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2226 2238])
+                          ("List" variable
+                             (:pointer 1
+                              :type ("val_list" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2241 2256])
+                          ("Symbol" variable (:type ("val_symbol" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2259 2277]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [1866 2290])
+            ("ag_val" type
+               (:members 
+                  ( ("val" variable (:type ("val_value" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2384 2398])
+                    ("type" variable (:type ("val_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2401 2415]))                  
+                :type "struct")
+                nil [2366 2418])
+            ("ag_val" type
+               (:typedef ("ag_val" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ag_val"
+                :type "typedef")
+                nil [2419 2448]))          
+    :file "types.h"
+    :pointmax 2450
+    :fsize 2449
+    :lastmodtime '(21371 30951 284586 147000)
+    :unmatched-syntax '((thing 9 . 13) (thing 2 . 8) (thing 1 . 2) (thing 1367 . 1374) (thing 1375 . 1382) (thing 1428 . 1435) (thing 1436 . 1443) (thing 1497 . 1504) (thing 1505 . 1512))
+    :lexical-table 
+        '(("false" . ((number "0" 111 . 112)))
+          ("bool" . ((symbol "_Bool" 53 . 58)))
+          ("complex" . ((symbol "_Complex" 31 . 39)))
+          ("true")
+          )
+
+    )
+   (semanticdb-table "linedit.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_SIMPLE_LISP_LINEDIT_H" variable (:constant-flag t) nil [40 62])
+            ("editline/readline.h" include (:system-flag t) nil [496 526])
+            ("editline/history.h" include (:system-flag t) nil [527 556]))          
+    :file "linedit.h"
+    :pointmax 615
+    :fsize 614
+    :lastmodtime '(21367 28203 740231 909000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_SIMPLE_LISP_LINEDIT_H")
+          )
+
+    )
+   (semanticdb-table "string-helpers.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("types.h" include nil nil [15 33])
+            ("str_list" type
+               (:members 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [55 65])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("str_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [68 90]))                  
+                :type "struct")
+                nil [35 93])
+            ("str_list" type
+               (:typedef ("str_list" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "str_list"
+                :type "typedef")
+                nil [94 127])
+            ("val_list_alprint" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("val_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [156 168]))                  
+                :type ("str_list" type (:type "class") nil nil))
+                nil [129 169])
+            ("str_list_del" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sl" variable
+                       (:pointer 1
+                        :type ("str_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [188 208]))                  
+                :type "void")
+                nil [170 209]))          
+    :file "string-helpers.h"
+    :pointmax 210
+    :fsize 209
+    :lastmodtime '(21367 28203 740231 909000)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   (semanticdb-table "variable.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("types.h" include nil nil [15 33])
+            ("uthash.h" include nil nil [34 53])
+            ("bind" type
+               (:members 
+                  ( ("sym" variable (:type ("val_symbol" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71 86])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [89 101])
+                    ("dyn" variable (:type "bool") (reparse-symbol classsubparts) [104 113])
+                    ("hh" variable (:type ("UT_hash_handle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [116 134]))                  
+                :type "struct")
+                nil [55 137])
+            ("bind" type
+               (:typedef ("bind" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "bind"
+                :type "typedef")
+                nil [138 163])
+            ("env" type
+               (:members 
+                  ( ("bhash" variable
+                       (:pointer 2
+                        :type ("bind" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [180 193])
+                    ("global" variable (:type "bool") (reparse-symbol classsubparts) [196 208])
+                    ("boundary" variable (:type "bool") (reparse-symbol classsubparts) [211 225])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("env" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [228 245]))                  
+                :type "struct")
+                nil [165 248])
+            ("env" type
+               (:typedef ("env" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "env"
+                :type "typedef")
+                nil [249 272])
+            ("mk_bind" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [288 298])
+                    ("sym" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [299 311])
+                    ("dyn" variable (:type "bool") (reparse-symbol arg-sub-list) [312 321]))                  
+                :type ("bind" type (:type "class") nil nil))
+                nil [274 322])
+            ("mk_env" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("env" type (:type "class") nil nil))
+                nil [323 337])
+            ("del_bind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bind" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [352 360]))                  
+                :type "void")
+                nil [338 361])
+            ("del_env" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [375 382]))                  
+                :type "void")
+                nil [362 383])
+            ("ag_lex_add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [400 407])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("bind" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [408 416]))                  
+                :type "void")
+                nil [384 417])
+            ("ag_lex_replace" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [439 446])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("bind" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [447 455]))                  
+                :type ("bind" type (:type "class") nil nil))
+                nil [418 456])
+            ("ag_lex_rm" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [473 480])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("bind" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [481 489]))                  
+                :type ("bind" type (:type "class") nil nil))
+                nil [457 490])
+            ("ag_lex_find" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [509 516])
+                    ("sym" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [517 529]))                  
+                :type ("bind" type (:type "class") nil nil))
+                nil [491 530])
+            ("ag_lex_find_rm" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [552 559])
+                    ("sym" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [560 572]))                  
+                :type ("bind" type (:type "class") nil nil))
+                nil [531 573])
+            ("ag_lex_cp_bind" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bind" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [595 603]))                  
+                :type ("bind" type (:type "class") nil nil))
+                nil [574 604])
+            ("ag_lex_push" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [622 629])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [630 637]))                  
+                :type "void")
+                nil [605 638])
+            ("ag_lex_pop" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [656 663])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [664 671]))                  
+                :type ("bind" type (:type "class") nil nil))
+                nil [639 672])
+            ("ag_lex_cp" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [689 696]))                  
+                :type ("bind" type (:type "class") nil nil))
+                nil [673 697])
+            ("ag_lex_cp_top" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [718 725]))                  
+                :type ("bind" type (:type "class") nil nil))
+                nil [698 726])
+            ("test_ag_lex_add__single_add" function
+               (:prototype-flag t
+                :type "void")
+                nil [727 762])
+            ("test_ag_lex_add__multi_add" function
+               (:prototype-flag t
+                :type "void")
+                nil [763 797])
+            ("test_ag_lex_push__multi_push" function
+               (:prototype-flag t
+                :type "void")
+                nil [798 834])
+            ("test_variable" function
+               (:prototype-flag t
+                :type "void")
+                nil [835 856]))          
+    :file "variable.h"
+    :pointmax 857
+    :fsize 894
+    :lastmodtime '(21393 7937 75574 818000)
+    :unmatched-syntax '((thing 9 . 13) (thing 9 . 13) (thing 2 . 8) (thing 2 . 8) (thing 1 . 2) (thing 1 . 2))
+    )
+   (semanticdb-table "list.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("types.h" include nil nil [15 33])
+            ("mk_val_list" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("head" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57 70])
+                    ("tail" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71 84]))                  
+                :type ("val_list" type (:type "class") nil nil))
+                nil [35 85])
+            ("del_val_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("val_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104 119]))                  
+                :type "void")
+                nil [86 120])
+            ("ag_list_append" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [144 154])
+                    ("tail" variable
+                       (:pointer 1
+                        :type ("ag_val" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [155 168]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [121 169])
+            ("val_list_pop" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("val_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [191 203]))                  
+                :type ("ag_val" type (:type "class") nil nil))
+                nil [170 204]))          
+    :file "list.h"
+    :pointmax 205
+    :fsize 204
+    :lastmodtime '(21393 7937 75574 818000)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   (semanticdb-table "error.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("val.h" include nil nil [15 31])
+            ("types.h" include nil nil [32 50])
+            ("string.h" include (:system-flag t) nil [52 71])
+            ("mk_val_err" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92 102]))                  
+                :type ("val_err" type (:type "class") nil nil))
+                nil [73 103])
+            ("del_val_err" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("e" variable (:type ("val_err" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121 131]))                  
+                :type "void")
+                nil [104 132])
+            ("OUT_OF_MEMORY_ERR" variable (:constant-flag t) nil [142 159])
+            ("DIV_ZERO_ERR" variable (:constant-flag t) nil [200 212])
+            ("SYMBOL_UNDEFINED_ERR" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("val_err" type (:type "class") nil nil))
+                nil [248 330])
+            ("FEATURE_INCOMPLETE_ERR" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("val_err" type (:type "class") nil nil))
+                nil [331 416])
+            ("UNREACHABLE_ERR" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("val_err" type (:type "class") nil nil))
+                nil [417 550]))          
+    :file "error.h"
+    :pointmax 554
+    :fsize 553
+    :lastmodtime '(21371 30951 284586 147000)
+    :unmatched-syntax '((thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2))
+    :lexical-table 
+        '(("OUT_OF_MEMORY_ERR" . ((symbol "strdup" 162 . 168) (semantic-list "(\"ERROR: Out of memory.\")" 168 . 193)))
+          ("DIV_ZERO_ERR" . ((symbol "strdup" 215 . 221) (semantic-list "(\"ERROR: Division by zero.\")" 221 . 249)))
+          )
+
+    )
+   (semanticdb-table "symbol.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("types.h" include nil nil [15 33])
+            ("mk_val_symbol" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60 69]))                  
+                :type ("val_symbol" type (:type "class") nil nil))
+                nil [35 70])
+            ("del_val_symbol" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sym" variable (:type ("val_symbol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91 106]))                  
+                :type "void")
+                nil [71 107]))          
+    :file "symbol.h"
+    :pointmax 108
+    :fsize 107
+    :lastmodtime '(21371 30951 284586 147000)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+    )
+  :file "!home!matt!src!silveretta!src!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

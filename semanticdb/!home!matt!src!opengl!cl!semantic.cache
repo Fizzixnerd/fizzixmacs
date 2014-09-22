@@ -1,0 +1,18 @@
+;; Object cl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cl/"
+  :tables (list 
+   (semanticdb-table "vs.glsl"
+    :major-mode 'c-mode
+    :tags nil
+    :file "vs.glsl"
+    :pointmax 21
+    :fsize 18
+    :lastmodtime '(21447 49697 65634 630000)
+    :unmatched-syntax '((symbol 20 . 21) (symbol 14 . 18) (number 10 . 13) (symbol 2 . 9) (punctuation 1 . 2) (symbol 14 . 18) (number 10 . 13) (symbol 2 . 9) (punctuation 1 . 2))
+    )
+   )
+  :file "!home!matt!src!opengl!cl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

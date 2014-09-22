@@ -3,8 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads (set-up-slime-ac) "ac-slime" "ac-slime.el" (21362
-;;;;;;  37960 572387 239000))
+;;;### (autoloads (set-up-slime-ac) "ac-slime" "ac-slime.el" (21415
+;;;;;;  13501 342452 880000))
 ;;; Generated autoloads from ac-slime.el
 
 (defface ac-slime-menu-face '((t (:inherit ac-candidate-face))) "\
@@ -26,8 +26,8 @@ Add an optionally-fuzzy slime completion source to `ac-sources'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("ac-slime-pkg.el") (21362 37960 588804
-;;;;;;  884000))
+;;;### (autoloads nil nil ("ac-slime-pkg.el") (21415 13501 750668
+;;;;;;  521000))
 
 ;;;***
 

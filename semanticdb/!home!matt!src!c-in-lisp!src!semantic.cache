@@ -1,0 +1,93 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "example.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("stdlib.h" include (:system-flag t) nil [21 40])
+            ("int_list" type
+               (:members 
+                  ( ("val" variable (:type "int") (reparse-symbol classsubparts) [59 67])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("int_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [68 90]))                  
+                :type "struct")
+                nil [41 93])
+            ("int_list" type
+               (:typedef ("int_list" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "int_list"
+                :type "typedef")
+                nil [94 127])
+            ("print_hello" function (:type "void") nil [128 191])
+            ("print_int_list" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("int_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [213 228]))                  
+                :type "void")
+                nil [193 341])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [352 361])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [362 374]))                  
+                :type "int")
+                nil [343 654])
+            ("nt_hello" function
+               (:prototype-flag t
+                :type "int")
+                nil [657 668])
+            ("EXIT_SUCCESS" variable (:type "int") nil [676 689]))          
+    :file "example.c"
+    :pointmax 783
+    :fsize 656
+    :lastmodtime '(21390 1622 194038 239000)
+    :unmatched-syntax '((thing 669 . 675) (thing 690 . 691) (thing 693 . 695) (thing 696 . 697) (thing 697 . 706) (thing 706 . 707) (thing 708 . 709) (thing 710 . 727) (thing 727 . 728) (thing 729 . 730) (thing 731 . 735) (thing 736 . 737) (thing 738 . 755) (thing 755 . 756) (thing 757 . 778) (thing 778 . 779) (thing 780 . 781))
+    )
+   (semanticdb-table "silveretta.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("debug.h" include nil nil [2 20])
+            ("read.h" include nil nil [21 38])
+            ("print.h" include nil nil [39 57])
+            ("eval.h" include nil nil [58 75])
+            ("val.h" include nil nil [76 92])
+            ("types.h" include nil nil [93 111])
+            ("variable.h" include nil nil [112 133])
+            ("mpc.h" include nil nil [134 150])
+            ("stdio.h" include (:system-flag t) nil [151 169])
+            ("stdlib.h" include (:system-flag t) nil [170 189])
+            ("string.h" include (:system-flag t) nil [190 209])
+            ("linedit.h" include (:system-flag t) nil [210 230])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [240 249])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [250 262]))                  
+                :type "int")
+                nil [231 1137]))          
+    :file "silveretta.c"
+    :pointmax 1140
+    :fsize 1139
+    :lastmodtime '(21391 1408 32205 56000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!c-in-lisp!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

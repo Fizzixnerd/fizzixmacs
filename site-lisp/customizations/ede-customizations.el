@@ -25,11 +25,22 @@
 
 ;; Note: apparently cedet can get pissy if you enable using "t"
 ;; instead of "1". I'm looking at you, global-semanticdb-minor-mode!
+(semantic-mode 1)
 (global-ede-mode 1)
 (ede-enable-generic-projects)
+(setq ede-project-directories t)
+
+(global-semanticdb-minor-mode 1)
+(global-semantic-idle-summary-mode 1)
+(global-semantic-idle-scheduler-mode 1)
+(global-semantic-decoration-mode 1)
+(global-semantic-show-unmatched-syntax-mode 1)
+(global-semantic-stickyfunc-mode 1)
+(global-semantic-idle-local-symbol-highlight-mode 1)
+
 (semantic-gcc-setup)
 
-;; uses exuberant-ctags to parse for new languages only
+;; Uses exuberant-ctags to parse for new languages only
 ;(semantic-load-enable-primary-exuberent-ctags-support)
 
 (add-hook 'semantic-init-hooks
@@ -42,9 +53,7 @@
 (defun semantic-enable-other-helpers ()
   (semantic-idle-completions-mode 1)
   (semantic-idle-summary-mode 1)
-  (semantic-idle-local-symbol-highlight-mode 1)
   (semantic-auto-parse-mode 1)
-  (semantic-stickyfunc-mode 1)
   (semantic-mru-bookmark-mode 1)
   (semanticdb-minor-mode 1))
 
@@ -60,10 +69,12 @@
   (when (cedet-ectag-version-check)
     (semantic-load-enable-primary-exuberant-ctags-support)))
 
-(add-hook 'c-mode-common-hook 'c-like-semantic-hook)
+;(add-hook 'c-mode-common-hook 'c-like-semantic-hook)
 (add-hook 'java-mode-common-hook 'c-like-semantic-hook)
 (add-hook 'python-mode-common-hook 'c-like-semantic-hook)
-(add-hook 'common-lisp-mode-hook 'lisp-semantic-hook)
+
+;; Load projects
+(load-library "../../ede/projects/silveretta.el")
 
 ;;;;;;;;;;;;;;;
 ;; THIS IS ALL FOR OLD CEDET STUFF (version 1.0)

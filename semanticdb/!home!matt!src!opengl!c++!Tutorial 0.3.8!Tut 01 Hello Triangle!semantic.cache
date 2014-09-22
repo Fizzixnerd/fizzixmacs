@@ -1,0 +1,33 @@
+;; Object Tut 01 Hello Triangle/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Tut 01 Hello Triangle/"
+  :tables (list 
+   (semanticdb-table "tut1.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "tut1.cpp"
+    :pointmax 4510
+    :fsize 4690
+    :lastmodtime '(20305 41898 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("PROJECTS" variable (:default-value ("framework" "Tut\\" "01\\" "Main")) nil [140 176])
+            (".PHONY" function (:arguments ("all" "clean" "help" "$(PROJECTS)")) nil [177 212])
+            ("all" function (:arguments ("$(PROJECTS)")) nil [213 230])
+            ("framework" function nil nil [231 352])
+            ("clean" function nil nil [489 625])
+            ("help" function nil nil [626 958]))          
+    :file "Makefile"
+    :pointmax 958
+    :fsize 957
+    :lastmodtime '(21449 23702 966609 889000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!opengl!c++!Tutorial 0.3.8!Tut 01 Hello Triangle!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,46 @@
+;; Object cicl-src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cicl-src/"
+  :tables (list 
+   (semanticdb-table "silveretta.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("debug.h" include nil nil [2 20])
+            ("read.h" include nil nil [21 38])
+            ("print.h" include nil nil [39 57])
+            ("eval.h" include nil nil [58 75])
+            ("val.h" include nil nil [76 92])
+            ("types.h" include nil nil [93 111])
+            ("variable.h" include nil nil [112 133])
+            ("mpc.h" include nil nil [134 150])
+            ("stdio.h" include (:system-flag t) nil [151 169])
+            ("stdlib.h" include (:system-flag t) nil [170 189])
+            ("string.h" include (:system-flag t) nil [190 209])
+            ("linedit.h" include (:system-flag t) nil [210 230])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [240 249])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [250 262]))                  
+                :type "int")
+                nil [231 1603]))          
+    :file "silveretta.c"
+    :pointmax 1606
+    :fsize 1605
+    :lastmodtime '(21391 2777 544221 251000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "read.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "read.c"
+    :pointmax 1
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!c-in-cl!src!cicl-src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

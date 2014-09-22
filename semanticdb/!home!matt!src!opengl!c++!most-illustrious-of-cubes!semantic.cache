@@ -1,0 +1,141 @@
+;; Object most-illustrious-of-cubes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "most-illustrious-of-cubes/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("LDDEPS" variable (:default-value ("-lglut" "-lGL" "-lGLEW" "-lm")) nil [1 31])
+            ("CXX" variable (:default-value ("g++" "-g" "-std=gnu++11")) nil [31 56])
+            ("CXX_COMPILE" variable (:default-value ("$(CXX)" "$(DEFS)" "$(INCLUDES)" "$(CPPFLAGS)" "$(CFLAGS)")) nil [56 117])
+            ("CXX_DEPENDENCIES" variable (:default-value ("-Wp,-MD,.deps/$(*F).P")) nil [117 156])
+            ("CXX_LINK" variable (:default-value ("$(CXX)" "$(CFLAGS)" "$(LDFLAGS)" "-L.")) nil [156 197])
+            ("most-illustrious-of-cubes_SOURCES" variable (:default-value ("mioc.cpp" "lib/shader_utils.cpp")) nil [197 261])
+            ("most-illustrious-of-cubes_OBJ" variable (:default-value ("mioc.o" "lib/shader_utils.o")) nil [261 318])
+            ("VERSION" variable (:default-value ("1.0")) nil [318 330])
+            ("DISTDIR" variable (:default-value ("$(top)C++" "OpenGL" "Fun-$(VERSION)")) nil [330 370])
+            ("top_builddir" variable nil nil [370 386])
+            ("DEP_FILES" variable (:default-value (".deps/main.P" ".deps/main2.P")) nil [387 424])
+            ("DEPS_MAGIC" variable (:default-value ("$(shell mkdir .deps > /dev/null 2>&1 || :)")) nil [425 482])
+            ("all" function (:arguments ("most-illustrious-of-cubes")) nil [506 569])
+            ("install-deps" function nil nil [570 665])
+            ("%.o" function (:arguments ("%.cpp")) nil [666 758])
+            ("lib/%.o" function (:arguments ("lib/%.cpp")) nil [759 858])
+            ("most-illustrious-of-cubes" function (:arguments ("$(most-illustrious-of-cubes_OBJ)")) nil [860 952])
+            ("tags" function nil nil [953 960])
+            ("clean" function nil nil [962 1014])
+            (".PHONY" function (:arguments ("dist")) nil [1015 1015])
+            ("dist" function nil nil [1015 1015]))          
+    :file "Makefile"
+    :pointmax 1015
+    :fsize 1014
+    :lastmodtime '(21458 22335 707850 534000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "mioc.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_USE_MATH_DEFINES" variable (:constant-flag t) nil [9 26])
+            ("GLM_FORCE_RADIANS" variable (:constant-flag t) nil [35 52])
+            ("cmath" include (:system-flag t) nil [54 70])
+            ("cstdio" include (:system-flag t) nil [71 88])
+            ("cstdlib" include (:system-flag t) nil [89 107])
+            ("string" include (:system-flag t) nil [108 125])
+            ("GL/glew.h" include (:system-flag t) nil [126 146])
+            ("GL/freeglut.h" include (:system-flag t) nil [147 171])
+            ("glm/glm.hpp" include (:system-flag t) nil [173 195])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [196 235])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [236 267])
+            ("include/shader_utils.hpp" include nil nil [269 304])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [306 326])
+            ("glm" using (:type ("glm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [327 347])
+            ("program" variable (:type ("GLuint" type (:type "class") nil nil)) nil [349 364])
+            ("vbo_cube" variable (:type ("GLuint" type (:type "class") nil nil)) nil [365 381])
+            ("ibo_cube" variable (:type ("GLuint" type (:type "class") nil nil)) nil [382 398])
+            ("attribute_color" variable (:type ("GLint" type (:type "class") nil nil)) nil [399 436])
+            ("attribute_pos" variable (:type ("GLint" type (:type "class") nil nil)) nil [399 436])
+            ("uniform_mvp" variable (:type ("GLint" type (:type "class") nil nil)) nil [437 455])
+            ("height" variable (:type "int") nil [456 487])
+            ("width" variable (:type "int") nil [456 487])
+            ("Vertex" type
+               (:members 
+                  ( ("pos" variable (:type ("vec3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [507 516])
+                    ("color" variable (:type ("vec3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [519 530]))                  
+                :type "struct")
+                nil [489 533])
+            ("check_bind" function
+               (:arguments 
+                  ( ("bind_ret_val" variable (:type "int") (reparse-symbol arg-sub-list) [550 567])
+                    ("bind_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [568 590])
+                    ("attr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [591 608]))                  
+                :type "int")
+                nil [535 747])
+            ("check_attribute_bind" function
+               (:arguments 
+                  ( ("bind_ret_val" variable (:type "int") (reparse-symbol arg-sub-list) [774 791])
+                    ("attribute_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [792 819]))                  
+                :type "int")
+                nil [749 887])
+            ("check_uniform_bind" function
+               (:arguments 
+                  ( ("bind_ret_val" variable (:type "int") (reparse-symbol arg-sub-list) [912 929])
+                    ("uniform_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [930 955]))                  
+                :type "int")
+                nil [889 1019])
+            ("init_resources" function (:type "int") nil [1021 3159])
+            ("onIdle" function (:type "void") nil [3161 3765])
+            ("onDisplay" function (:type "void") nil [3767 4702])
+            ("onReshape" function
+               (:arguments 
+                  ( ("new_width" variable (:type "int") (reparse-symbol arg-sub-list) [4719 4733])
+                    ("new_height" variable (:type "int") (reparse-symbol arg-sub-list) [4734 4749]))                  
+                :type "void")
+                nil [4704 4832])
+            ("free_resources" function (:type "void") nil [4834 4920])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4932 4941])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4942 4954]))                  
+                :type "int")
+                nil [4922 5712]))          
+    :file "mioc.cpp"
+    :pointmax 5713
+    :fsize 5712
+    :lastmodtime '(21458 23570 847865 140000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_USE_MATH_DEFINES")
+          ("GLM_FORCE_RADIANS")
+          )
+
+    )
+   )
+  :file "!home!matt!src!opengl!c++!most-illustrious-of-cubes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

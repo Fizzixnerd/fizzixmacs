@@ -1,0 +1,49 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "miner-watchdog"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [24 33])
+            ("subprocess" include nil nil [34 51])
+            ("smtplib" include nil nil [52 66])
+            ("email_smtp_data" variable nil nil [68 215])
+            ("restart" function
+               (:documentation "Decrement and reboot the computer if the number on line 1 of
+restart_filename is greater than zero, otherwise do nothing.
+
+    "
+                :arguments 
+                  ( ("restart_filename" variable nil (reparse-symbol function_parameters) [229 245]))                  )
+                nil [217 779])
+            ("listen_for_failure" function
+               (:documentation "Listen on fifo_filename in reading mode for the strings \"SICK\" and
+\"DEAD\".  If found:
+    1) Call restart.
+    2) Set the first line of the file indicated by restart_filename to 3.
+    3) Email owners.
+    4) Call restart.
+    
+    "
+                :arguments 
+                  ( ("fifo_filename" variable nil (reparse-symbol function_parameters) [803 816])
+                    ("restart_filename" variable nil (reparse-symbol function_parameters) [818 834]))                  )
+                nil [780 1447])
+            ("failure_info" function (:arguments 
+              ( ("line" variable nil (reparse-symbol function_parameters) [1465 1469]))              ) nil [1448 1549])
+            ("failure_email" function (:arguments 
+              ( ("list_of_recipients" variable nil (reparse-symbol function_parameters) [1568 1586])
+                ("failure_info" variable nil (reparse-symbol function_parameters) [1588 1600]))              ) nil [1550 2330])
+            ("if" code nil nil [2332 2445]))          
+    :file "miner-watchdog"
+    :pointmax 2368
+    :fsize 2426
+    :lastmodtime '(21374 2670 753508 966000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

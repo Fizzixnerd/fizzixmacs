@@ -1,0 +1,2058 @@
+;; Object GLFW/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "GLFW/"
+  :tables (list 
+   (semanticdb-table "glfw3.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_glfw3_h_" variable (:constant-flag t) nil [1317 1326])
+            ("APIENTRY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3376 3384])
+            ("stddef.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [4715 4735])
+            ("GL/gl.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [5342 5364])
+            ("GLFWAPI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6318 6325])
+            ("GLFW_VERSION_MAJOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6788 6806])
+            ("GLFW_VERSION_MINOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7007 7025])
+            ("GLFW_VERSION_REVISION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7220 7241])
+            ("GLFW_RELEASE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7378 7390])
+            ("GLFW_PRESS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7481 7491])
+            ("GLFW_REPEAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7594 7605])
+            ("GLFW_KEY_UNKNOWN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8461 8477])
+            ("GLFW_KEY_SPACE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8522 8536])
+            ("GLFW_KEY_APOSTROPHE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8561 8580])
+            ("GLFW_KEY_COMMA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8609 8623])
+            ("GLFW_KEY_MINUS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8657 8671])
+            ("GLFW_KEY_PERIOD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8705 8720])
+            ("GLFW_KEY_SLASH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8753 8767])
+            ("GLFW_KEY_0" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8801 8811])
+            ("GLFW_KEY_1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8840 8850])
+            ("GLFW_KEY_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8879 8889])
+            ("GLFW_KEY_3" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8918 8928])
+            ("GLFW_KEY_4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8957 8967])
+            ("GLFW_KEY_5" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8996 9006])
+            ("GLFW_KEY_6" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9035 9045])
+            ("GLFW_KEY_7" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9074 9084])
+            ("GLFW_KEY_8" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9113 9123])
+            ("GLFW_KEY_9" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9152 9162])
+            ("GLFW_KEY_SEMICOLON" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9191 9209])
+            ("GLFW_KEY_EQUAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9239 9253])
+            ("GLFW_KEY_A" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9287 9297])
+            ("GLFW_KEY_B" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9326 9336])
+            ("GLFW_KEY_C" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9365 9375])
+            ("GLFW_KEY_D" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9404 9414])
+            ("GLFW_KEY_E" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9443 9453])
+            ("GLFW_KEY_F" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9482 9492])
+            ("GLFW_KEY_G" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9521 9531])
+            ("GLFW_KEY_H" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9560 9570])
+            ("GLFW_KEY_I" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9599 9609])
+            ("GLFW_KEY_J" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9638 9648])
+            ("GLFW_KEY_K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9677 9687])
+            ("GLFW_KEY_L" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9716 9726])
+            ("GLFW_KEY_M" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9755 9765])
+            ("GLFW_KEY_N" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9794 9804])
+            ("GLFW_KEY_O" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9833 9843])
+            ("GLFW_KEY_P" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9872 9882])
+            ("GLFW_KEY_Q" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9911 9921])
+            ("GLFW_KEY_R" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9950 9960])
+            ("GLFW_KEY_S" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9989 9999])
+            ("GLFW_KEY_T" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10028 10038])
+            ("GLFW_KEY_U" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10067 10077])
+            ("GLFW_KEY_V" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10106 10116])
+            ("GLFW_KEY_W" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10145 10155])
+            ("GLFW_KEY_X" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10184 10194])
+            ("GLFW_KEY_Y" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10223 10233])
+            ("GLFW_KEY_Z" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10262 10272])
+            ("GLFW_KEY_LEFT_BRACKET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10301 10322])
+            ("GLFW_KEY_BACKSLASH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10349 10367])
+            ("GLFW_KEY_RIGHT_BRACKET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10397 10419])
+            ("GLFW_KEY_GRAVE_ACCENT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10445 10466])
+            ("GLFW_KEY_WORLD_1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10493 10509])
+            ("GLFW_KEY_WORLD_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10549 10565])
+            ("GLFW_KEY_ESCAPE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10626 10641])
+            ("GLFW_KEY_ENTER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10666 10680])
+            ("GLFW_KEY_TAB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10706 10718])
+            ("GLFW_KEY_BACKSPACE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10746 10764])
+            ("GLFW_KEY_INSERT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10786 10801])
+            ("GLFW_KEY_DELETE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10826 10841])
+            ("GLFW_KEY_RIGHT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10866 10880])
+            ("GLFW_KEY_LEFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10906 10919])
+            ("GLFW_KEY_DOWN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10946 10959])
+            ("GLFW_KEY_UP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10986 10997])
+            ("GLFW_KEY_PAGE_UP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11026 11042])
+            ("GLFW_KEY_PAGE_DOWN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11066 11084])
+            ("GLFW_KEY_HOME" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11106 11119])
+            ("GLFW_KEY_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11146 11158])
+            ("GLFW_KEY_CAPS_LOCK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11186 11204])
+            ("GLFW_KEY_SCROLL_LOCK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11226 11246])
+            ("GLFW_KEY_NUM_LOCK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11266 11283])
+            ("GLFW_KEY_PRINT_SCREEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11306 11327])
+            ("GLFW_KEY_PAUSE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11346 11360])
+            ("GLFW_KEY_F1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11386 11397])
+            ("GLFW_KEY_F2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11426 11437])
+            ("GLFW_KEY_F3" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11466 11477])
+            ("GLFW_KEY_F4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11506 11517])
+            ("GLFW_KEY_F5" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11546 11557])
+            ("GLFW_KEY_F6" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11586 11597])
+            ("GLFW_KEY_F7" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11626 11637])
+            ("GLFW_KEY_F8" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11666 11677])
+            ("GLFW_KEY_F9" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11706 11717])
+            ("GLFW_KEY_F10" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11746 11758])
+            ("GLFW_KEY_F11" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11786 11798])
+            ("GLFW_KEY_F12" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11826 11838])
+            ("GLFW_KEY_F13" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11866 11878])
+            ("GLFW_KEY_F14" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11906 11918])
+            ("GLFW_KEY_F15" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11946 11958])
+            ("GLFW_KEY_F16" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11986 11998])
+            ("GLFW_KEY_F17" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12026 12038])
+            ("GLFW_KEY_F18" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12066 12078])
+            ("GLFW_KEY_F19" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12106 12118])
+            ("GLFW_KEY_F20" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12146 12158])
+            ("GLFW_KEY_F21" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12186 12198])
+            ("GLFW_KEY_F22" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12226 12238])
+            ("GLFW_KEY_F23" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12266 12278])
+            ("GLFW_KEY_F24" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12306 12318])
+            ("GLFW_KEY_F25" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12346 12358])
+            ("GLFW_KEY_KP_0" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12386 12399])
+            ("GLFW_KEY_KP_1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12426 12439])
+            ("GLFW_KEY_KP_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12466 12479])
+            ("GLFW_KEY_KP_3" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12506 12519])
+            ("GLFW_KEY_KP_4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12546 12559])
+            ("GLFW_KEY_KP_5" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12586 12599])
+            ("GLFW_KEY_KP_6" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12626 12639])
+            ("GLFW_KEY_KP_7" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12666 12679])
+            ("GLFW_KEY_KP_8" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12706 12719])
+            ("GLFW_KEY_KP_9" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12746 12759])
+            ("GLFW_KEY_KP_DECIMAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12786 12805])
+            ("GLFW_KEY_KP_DIVIDE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12826 12844])
+            ("GLFW_KEY_KP_MULTIPLY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12866 12886])
+            ("GLFW_KEY_KP_SUBTRACT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12906 12926])
+            ("GLFW_KEY_KP_ADD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12946 12961])
+            ("GLFW_KEY_KP_ENTER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12986 13003])
+            ("GLFW_KEY_KP_EQUAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13026 13043])
+            ("GLFW_KEY_LEFT_SHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13066 13085])
+            ("GLFW_KEY_LEFT_CONTROL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13106 13127])
+            ("GLFW_KEY_LEFT_ALT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13146 13163])
+            ("GLFW_KEY_LEFT_SUPER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13186 13205])
+            ("GLFW_KEY_RIGHT_SHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13226 13246])
+            ("GLFW_KEY_RIGHT_CONTROL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13266 13288])
+            ("GLFW_KEY_RIGHT_ALT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13306 13324])
+            ("GLFW_KEY_RIGHT_SUPER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13346 13366])
+            ("GLFW_KEY_MENU" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13386 13399])
+            ("GLFW_KEY_LAST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13426 13439])
+            ("GLFW_MOD_SHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13629 13643])
+            ("GLFW_MOD_CONTROL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13744 13760])
+            ("GLFW_MOD_ALT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13855 13867])
+            ("GLFW_MOD_SUPER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13968 13982])
+            ("GLFW_MOUSE_BUTTON_1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14085 14104])
+            ("GLFW_MOUSE_BUTTON_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14123 14142])
+            ("GLFW_MOUSE_BUTTON_3" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14161 14180])
+            ("GLFW_MOUSE_BUTTON_4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14199 14218])
+            ("GLFW_MOUSE_BUTTON_5" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14237 14256])
+            ("GLFW_MOUSE_BUTTON_6" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14275 14294])
+            ("GLFW_MOUSE_BUTTON_7" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14313 14332])
+            ("GLFW_MOUSE_BUTTON_8" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14351 14370])
+            ("GLFW_MOUSE_BUTTON_LAST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14389 14411])
+            ("GLFW_MOUSE_BUTTON_LEFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14445 14467])
+            ("GLFW_MOUSE_BUTTON_RIGHT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14501 14524])
+            ("GLFW_MOUSE_BUTTON_MIDDLE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14557 14581])
+            ("GLFW_JOYSTICK_1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14687 14702])
+            ("GLFW_JOYSTICK_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14725 14740])
+            ("GLFW_JOYSTICK_3" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14763 14778])
+            ("GLFW_JOYSTICK_4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14801 14816])
+            ("GLFW_JOYSTICK_5" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14839 14854])
+            ("GLFW_JOYSTICK_6" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14877 14892])
+            ("GLFW_JOYSTICK_7" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14915 14930])
+            ("GLFW_JOYSTICK_8" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14953 14968])
+            ("GLFW_JOYSTICK_9" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14991 15006])
+            ("GLFW_JOYSTICK_10" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15029 15045])
+            ("GLFW_JOYSTICK_11" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15067 15083])
+            ("GLFW_JOYSTICK_12" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15106 15122])
+            ("GLFW_JOYSTICK_13" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15145 15161])
+            ("GLFW_JOYSTICK_14" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15184 15200])
+            ("GLFW_JOYSTICK_15" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15223 15239])
+            ("GLFW_JOYSTICK_16" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15262 15278])
+            ("GLFW_JOYSTICK_LAST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15301 15319])
+            ("GLFW_NOT_INITIALIZED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15473 15493])
+            ("GLFW_NO_CURRENT_CONTEXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15574 15597])
+            ("GLFW_INVALID_ENUM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15711 15728])
+            ("GLFW_INVALID_VALUE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15840 15858])
+            ("GLFW_OUT_OF_MEMORY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15930 15948])
+            ("GLFW_API_UNAVAILABLE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16068 16088])
+            ("GLFW_VERSION_UNAVAILABLE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16181 16205])
+            ("GLFW_PLATFORM_ERROR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16339 16358])
+            ("GLFW_FORMAT_UNAVAILABLE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16461 16484])
+            ("GLFW_FOCUSED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16519 16531])
+            ("GLFW_ICONIFIED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16566 16580])
+            ("GLFW_RESIZABLE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16613 16627])
+            ("GLFW_VISIBLE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16660 16672])
+            ("GLFW_DECORATED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16707 16721])
+            ("GLFW_RED_BITS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16755 16768])
+            ("GLFW_GREEN_BITS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16802 16817])
+            ("GLFW_BLUE_BITS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16849 16863])
+            ("GLFW_ALPHA_BITS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16896 16911])
+            ("GLFW_DEPTH_BITS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16943 16958])
+            ("GLFW_STENCIL_BITS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16990 17007])
+            ("GLFW_ACCUM_RED_BITS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17037 17056])
+            ("GLFW_ACCUM_GREEN_BITS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17084 17105])
+            ("GLFW_ACCUM_BLUE_BITS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17131 17151])
+            ("GLFW_ACCUM_ALPHA_BITS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17178 17199])
+            ("GLFW_AUX_BUFFERS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17225 17241])
+            ("GLFW_STEREO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17272 17283])
+            ("GLFW_SAMPLES" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17319 17331])
+            ("GLFW_SRGB_CAPABLE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17366 17383])
+            ("GLFW_REFRESH_RATE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17413 17430])
+            ("GLFW_CLIENT_API" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17461 17476])
+            ("GLFW_CONTEXT_VERSION_MAJOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17508 17534])
+            ("GLFW_CONTEXT_VERSION_MINOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17555 17581])
+            ("GLFW_CONTEXT_REVISION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17602 17623])
+            ("GLFW_CONTEXT_ROBUSTNESS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17649 17672])
+            ("GLFW_OPENGL_FORWARD_COMPAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17696 17722])
+            ("GLFW_OPENGL_DEBUG_CONTEXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17743 17768])
+            ("GLFW_OPENGL_PROFILE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17790 17809])
+            ("GLFW_OPENGL_API" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17838 17853])
+            ("GLFW_OPENGL_ES_API" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17885 17903])
+            ("GLFW_NO_ROBUSTNESS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17933 17951])
+            ("GLFW_NO_RESET_NOTIFICATION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17980 18006])
+            ("GLFW_LOSE_CONTEXT_ON_RESET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18027 18053])
+            ("GLFW_OPENGL_ANY_PROFILE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18075 18098])
+            ("GLFW_OPENGL_CORE_PROFILE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18122 18146])
+            ("GLFW_OPENGL_COMPAT_PROFILE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18169 18195])
+            ("GLFW_CURSOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18217 18228])
+            ("GLFW_STICKY_KEYS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18264 18280])
+            ("GLFW_STICKY_MOUSE_BUTTONS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18311 18336])
+            ("GLFW_CURSOR_NORMAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18359 18377])
+            ("GLFW_CURSOR_HIDDEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18406 18424])
+            ("GLFW_CURSOR_DISABLED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18453 18473])
+            ("GLFW_CONNECTED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18501 18515])
+            ("GLFW_DISCONNECTED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18548 18565])
+            ("GLFWglproc" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [18971 18996])
+            ("GLFWmonitor" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "GLFWmonitor"
+                :typedef ("GLFWmonitor" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [19090 19129])
+            ("GLFWwindow" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "GLFWwindow"
+                :typedef ("GLFWwindow" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [19220 19257])
+            ("GLFWerrorfun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [19574 19613])
+            ("GLFWwindowposfun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [20142 20189])
+            ("GLFWwindowsizefun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [20609 20657])
+            ("GLFWwindowclosefun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [20939 20980])
+            ("GLFWwindowrefreshfun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [21279 21322])
+            ("GLFWwindowfocusfun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [21708 21753])
+            ("GLFWwindowiconifyfun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [22161 22208])
+            ("GLFWframebuffersizefun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [22643 22696])
+            ("GLFWmousebuttonfun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [23212 23265])
+            ("GLFWcursorposfun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [23701 23754])
+            ("GLFWcursorenterfun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [24152 24197])
+            ("GLFWscrollfun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [24570 24620])
+            ("GLFWkeyfun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [25200 25249])
+            ("GLFWcharfun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [25590 25637])
+            ("GLFWmonitorfun" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [26007 26049])
+            ("GLFWvidmode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "GLFWvidmode"
+                :typedef ("GLFWvidmode" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [26150 26705])
+            ("GLFWvidmode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("width" variable (:type "int") (reparse-symbol classsubparts) [26252 26262])
+                    ("height" variable (:type "int") (reparse-symbol classsubparts) [26337 26348])
+                    ("redBits" variable (:type "int") (reparse-symbol classsubparts) [26421 26433])
+                    ("greenBits" variable (:type "int") (reparse-symbol classsubparts) [26508 26522])
+                    ("blueBits" variable (:type "int") (reparse-symbol classsubparts) [26596 26609])
+                    ("refreshRate" variable (:type "int") (reparse-symbol classsubparts) [26674 26690]))                  )
+                (reparse-symbol extern-c-contents) [26150 26705])
+            ("GLFWgammaramp" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "GLFWgammaramp"
+                :typedef ("GLFWgammaramp" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [26855 27294])
+            ("GLFWgammaramp" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("red" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [26968 26988])
+                    ("green" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [27073 27095])
+                    ("blue" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [27179 27200])
+                    ("size" variable (:type "unsigned int") (reparse-symbol classsubparts) [27259 27277]))                  )
+                (reparse-symbol extern-c-contents) [26855 27294])
+            ("glfwInit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [28559 28564]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28546 28565])
+            ("glfwTerminate" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29421 29426]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [29402 29427])
+            ("glfwGetVersion" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("major" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [30143 30154])
+                    ("minor" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [30155 30166])
+                    ("rev" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [30167 30176]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30123 30177])
+            ("glfwGetVersionString" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [31139 31144]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [31106 31145])
+            ("glfwSetErrorCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWerrorfun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("cbfun" variable (:type ("GLFWerrorfun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32144 32163]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [32110 32164])
+            ("glfwGetMonitors" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWmonitor" type (:type "class") nil nil)
+                :arguments 
+                  ( ("count" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [32882 32893]))                  
+                :pointer 2
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [32852 32894])
+            ("glfwGetPrimaryMonitor" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWmonitor" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [33259 33264]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [33224 33265])
+            ("glfwGetMonitorPos" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("monitor" variable
+                       (:pointer 1
+                        :type ("GLFWmonitor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33722 33743])
+                    ("xpos" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [33744 33754])
+                    ("ypos" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [33755 33765]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [33699 33766])
+            ("glfwGetMonitorPhysicalSize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("monitor" variable
+                       (:pointer 1
+                        :type ("GLFWmonitor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34433 34454])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [34455 34466])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [34467 34479]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [34401 34480])
+            ("glfwGetMonitorName" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("monitor" variable
+                       (:pointer 1
+                        :type ("GLFWmonitor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34941 34962]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [34910 34963])
+            ("glfwSetMonitorCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWmonitorfun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("cbfun" variable (:type ("GLFWmonitorfun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35565 35586]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [35527 35587])
+            ("glfwGetVideoModes" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWvidmode" type (:type "class") nil nil)
+                :arguments 
+                  ( ("monitor" variable
+                       (:pointer 1
+                        :type ("GLFWmonitor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36502 36523])
+                    ("count" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [36524 36535]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [36465 36536])
+            ("glfwGetVideoMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWvidmode" type (:type "class") nil nil)
+                :arguments 
+                  ( ("monitor" variable
+                       (:pointer 1
+                        :type ("GLFWmonitor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37120 37141]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [37084 37142])
+            ("glfwSetGamma" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("monitor" variable
+                       (:pointer 1
+                        :type ("GLFWmonitor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37511 37532])
+                    ("gamma" variable (:type "float") (reparse-symbol arg-sub-list) [37533 37545]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [37493 37546])
+            ("glfwGetGammaRamp" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWgammaramp" type (:type "class") nil nil)
+                :arguments 
+                  ( ("monitor" variable
+                       (:pointer 1
+                        :type ("GLFWmonitor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38012 38033]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [37974 38034])
+            ("glfwSetGammaRamp" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("monitor" variable
+                       (:pointer 1
+                        :type ("GLFWmonitor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38422 38443])
+                    ("ramp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLFWgammaramp" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38444 38470]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [38400 38471])
+            ("glfwDefaultWindowHints" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [38792 38797]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [38764 38798])
+            ("glfwWindowHint" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("target" variable (:type "int") (reparse-symbol arg-sub-list) [39580 39591])
+                    ("hint" variable (:type "int") (reparse-symbol arg-sub-list) [39592 39601]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [39560 39602])
+            ("glfwCreateWindow" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWwindow" type (:type "class") nil nil)
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [42846 42856])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [42857 42868])
+                    ("title" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42869 42887])
+                    ("monitor" variable
+                       (:pointer 1
+                        :type ("GLFWmonitor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42888 42909])
+                    ("share" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42910 42928]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [42817 42929])
+            ("glfwDestroyWindow" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43594 43613]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [43571 43614])
+            ("glfwWindowShouldClose" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43972 43991]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [43946 43992])
+            ("glfwSetWindowShouldClose" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44472 44491])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [44492 44502]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [44442 44503])
+            ("glfwSetWindowTitle" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44886 44905])
+                    ("title" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44906 44924]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [44862 44925])
+            ("glfwGetWindowPos" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45503 45522])
+                    ("xpos" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [45523 45533])
+                    ("ypos" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [45534 45544]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [45481 45545])
+            ("glfwSetWindowPos" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46570 46589])
+                    ("xpos" variable (:type "int") (reparse-symbol arg-sub-list) [46590 46599])
+                    ("ypos" variable (:type "int") (reparse-symbol arg-sub-list) [46600 46609]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [46548 46610])
+            ("glfwGetWindowSize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47260 47279])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [47280 47291])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [47292 47304]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [47237 47305])
+            ("glfwSetWindowSize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48147 48166])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [48167 48177])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [48178 48189]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [48124 48190])
+            ("glfwGetFramebufferSize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48828 48847])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [48848 48859])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [48860 48872]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [48800 48873])
+            ("glfwIconifyWindow" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49398 49417]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [49375 49418])
+            ("glfwRestoreWindow" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49941 49960]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [49918 49961])
+            ("glfwShowWindow" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50395 50414]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [50375 50415])
+            ("glfwHideWindow" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50825 50844]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [50805 50845])
+            ("glfwGetWindowMonitor" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWmonitor" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51213 51232]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [51179 51233])
+            ("glfwGetWindowAttrib" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51713 51732])
+                    ("attrib" variable (:type "int") (reparse-symbol arg-sub-list) [51733 51744]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [51689 51745])
+            ("glfwSetWindowUserPointer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52178 52197])
+                    ("pointer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [52198 52212]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [52148 52213])
+            ("glfwGetWindowUserPointer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52573 52592]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [52542 52593])
+            ("glfwSetWindowPosCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWwindowposfun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53219 53238])
+                    ("cbfun" variable (:type ("GLFWwindowposfun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53239 53262]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [53177 53263])
+            ("glfwSetWindowSizeCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWwindowsizefun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53873 53892])
+                    ("cbfun" variable (:type ("GLFWwindowsizefun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53893 53917]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [53829 53918])
+            ("glfwSetWindowCloseCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWwindowclosefun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54910 54929])
+                    ("cbfun" variable (:type ("GLFWwindowclosefun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54930 54955]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [54864 54956])
+            ("glfwSetWindowRefreshCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWwindowrefreshfun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55984 56003])
+                    ("cbfun" variable (:type ("GLFWwindowrefreshfun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56004 56031]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [55934 56032])
+            ("glfwSetWindowFocusCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWwindowfocusfun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56826 56845])
+                    ("cbfun" variable (:type ("GLFWwindowfocusfun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56846 56871]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [56780 56872])
+            ("glfwSetWindowIconifyCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWwindowiconifyfun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57412 57431])
+                    ("cbfun" variable (:type ("GLFWwindowiconifyfun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57432 57459]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [57362 57460])
+            ("glfwSetFramebufferSizeCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWframebuffersizefun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58035 58054])
+                    ("cbfun" variable (:type ("GLFWframebuffersizefun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58055 58084]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [57981 58085])
+            ("glfwPollEvents" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [59245 59250]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [59225 59251])
+            ("glfwWaitEvents" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [60619 60624]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [60599 60625])
+            ("glfwGetInputMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60927 60946])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [60947 60956]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [60906 60957])
+            ("glfwSetInputMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62856 62875])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [62876 62885])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [62886 62896]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [62834 62897])
+            ("glfwGetKey" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63940 63959])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [63960 63968]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [63925 63969])
+            ("glfwGetMouseButton" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64629 64648])
+                    ("button" variable (:type "int") (reparse-symbol arg-sub-list) [64649 64660]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [64606 64661])
+            ("glfwGetCursorPos" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65697 65716])
+                    ("xpos" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [65717 65730])
+                    ("ypos" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [65731 65744]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [65675 65745])
+            ("glfwSetCursorPos" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66613 66632])
+                    ("xpos" variable (:type "double") (reparse-symbol arg-sub-list) [66633 66645])
+                    ("ypos" variable (:type "double") (reparse-symbol arg-sub-list) [66646 66658]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [66591 66659])
+            ("glfwSetKeyCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWkeyfun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68174 68193])
+                    ("cbfun" variable (:type ("GLFWkeyfun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68194 68211]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [68144 68212])
+            ("glfwSetCharCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWcharfun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68898 68917])
+                    ("cbfun" variable (:type ("GLFWcharfun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68918 68936]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [68866 68937])
+            ("glfwSetMouseButtonCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWmousebuttonfun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69814 69833])
+                    ("cbfun" variable (:type ("GLFWmousebuttonfun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69834 69859]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [69768 69860])
+            ("glfwSetCursorPosCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWcursorposfun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70504 70523])
+                    ("cbfun" variable (:type ("GLFWcursorposfun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70524 70547]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [70462 70548])
+            ("glfwSetCursorEnterCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWcursorenterfun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71105 71124])
+                    ("cbfun" variable (:type ("GLFWcursorenterfun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71125 71150]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [71059 71151])
+            ("glfwSetScrollCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWscrollfun" type (:type "class") nil nil)
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71820 71839])
+                    ("cbfun" variable (:type ("GLFWscrollfun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71840 71860]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [71784 71861])
+            ("glfwJoystickPresent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("joy" variable (:type "int") (reparse-symbol arg-sub-list) [72175 72183]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [72151 72184])
+            ("glfwGetJoystickAxes" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "float"
+                :arguments 
+                  ( ("joy" variable (:type "int") (reparse-symbol arg-sub-list) [72860 72868])
+                    ("count" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [72869 72880]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [72827 72881])
+            ("glfwGetJoystickButtons" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned char"
+                :arguments 
+                  ( ("joy" variable (:type "int") (reparse-symbol arg-sub-list) [73577 73585])
+                    ("count" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [73586 73597]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [73533 73598])
+            ("glfwGetJoystickName" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("joy" variable (:type "int") (reparse-symbol arg-sub-list) [74169 74177]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [74137 74178])
+            ("glfwSetClipboardString" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74701 74720])
+                    ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [74721 74740]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [74673 74741])
+            ("glfwGetClipboardString" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75533 75552]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [75498 75553])
+            ("glfwGetTime" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "double"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [76192 76197]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [76173 76198])
+            ("glfwSetTime" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("time" variable (:type "double") (reparse-symbol arg-sub-list) [76651 76663]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [76634 76664])
+            ("glfwMakeContextCurrent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77265 77284]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [77237 77285])
+            ("glfwGetCurrentContext" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWwindow" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [77730 77735]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [77696 77736])
+            ("glfwSwapBuffers" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78378 78397]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [78357 78398])
+            ("glfwSwapInterval" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("interval" variable (:type "int") (reparse-symbol arg-sub-list) [79937 79950]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [79915 79951])
+            ("glfwExtensionSupported" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("extension" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [80827 80849]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [80800 80850])
+            ("glfwGetProcAddress" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GLFWglproc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("procname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [81584 81605]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [81554 81606]))          
+    :file "glfw3.h"
+    :pointmax 82173
+    :fsize 82172
+    :lastmodtime '(21187 5546 0 0)
+    :unmatched-syntax '((TYPEDEF 25999 . 26006) (TYPEDEF 25582 . 25589) (TYPEDEF 25192 . 25199) (TYPEDEF 24562 . 24569) (TYPEDEF 24144 . 24151) (TYPEDEF 23693 . 23700) (TYPEDEF 23204 . 23211) (TYPEDEF 22635 . 22642) (TYPEDEF 22153 . 22160) (TYPEDEF 21700 . 21707) (TYPEDEF 21271 . 21278) (TYPEDEF 20931 . 20938) (TYPEDEF 20601 . 20608) (TYPEDEF 20134 . 20141) (TYPEDEF 19566 . 19573) (TYPEDEF 18963 . 18970))
+    :lexical-table 
+        '(("GLFWAPI")
+          ("GLFW_KEY_6" . ((number "54" 9063 . 9065)))
+          ("GLFW_KEY_C" . ((number "67" 9393 . 9395)))
+          ("GLFW_KEY_P" . ((number "80" 9900 . 9902)))
+          ("GLFW_KEY_BACKSLASH" . ((number "92" 10377 . 10379)))
+          ("GLFW_KEY_F8" . ((number "297" 11694 . 11697)))
+          ("GLFW_KEY_KP_5" . ((number "325" 12614 . 12617)))
+          ("GLFW_KEY_KP_SUBTRACT" . ((number "333" 12934 . 12937)))
+          ("GLFW_KEY_LEFT_CONTROL" . ((number "341" 13134 . 13137)))
+          ("GLFW_MOUSE_BUTTON_4" . ((number "3" 14227 . 14228)))
+          ("GLFW_JOYSTICK_10" . ((number "9" 15057 . 15058)))
+          ("GLFW_RESIZABLE" . ((number "0x00020003" 16641 . 16651)))
+          ("GLFW_GREEN_BITS" . ((number "0x00021002" 16830 . 16840)))
+          ("GLFW_ACCUM_ALPHA_BITS" . ((number "0x0002100A" 17206 . 17216)))
+          ("GLFW_AUX_BUFFERS" . ((number "0x0002100B" 17253 . 17263)))
+          ("GLFW_STEREO" . ((number "0x0002100C" 17300 . 17310)))
+          ("GLFW_SRGB_CAPABLE" . ((number "0x0002100E" 17394 . 17404)))
+          ("GLFW_CURSOR_DISABLED" . ((number "0x00034003" 18481 . 18491)))
+          ("GLFW_KEY_7" . ((number "55" 9102 . 9104)))
+          ("GLFW_KEY_D" . ((number "68" 9432 . 9434)))
+          ("GLFW_KEY_Q" . ((number "81" 9939 . 9941)))
+          ("GLFW_KEY_LEFT" . ((number "263" 10934 . 10937)))
+          ("GLFW_KEY_PAGE_DOWN" . ((number "267" 11094 . 11097)))
+          ("GLFW_KEY_F9" . ((number "298" 11734 . 11737)))
+          ("GLFW_KEY_F10" . ((number "299" 11774 . 11777)))
+          ("GLFW_KEY_KP_6" . ((number "326" 12654 . 12657)))
+          ("GLFW_KEY_MENU" . ((number "348" 13414 . 13417)))
+          ("GLFW_MOD_CONTROL" . ((number "0x0002" 13769 . 13775)))
+          ("GLFW_MOUSE_BUTTON_5" . ((number "4" 14265 . 14266)))
+          ("GLFW_MOUSE_BUTTON_LEFT" . ((symbol "GLFW_MOUSE_BUTTON_1" 14473 . 14492)))
+          ("GLFW_JOYSTICK_11" . ((number "10" 15095 . 15097)))
+          ("GLFW_NO_CURRENT_CONTEXT" . ((number "0x00010002" 15602 . 15612)))
+          ("GLFW_VERSION_UNAVAILABLE" . ((number "0x00010007" 16209 . 16219)))
+          ("GLFW_FORMAT_UNAVAILABLE" . ((number "0x00010009" 16489 . 16499)))
+          ("GLFW_ICONIFIED" . ((number "0x00020002" 16594 . 16604)))
+          ("GLFW_LOSE_CONTEXT_ON_RESET" . ((number "0x00031002" 18055 . 18065)))
+          ("GLFW_CURSOR_NORMAL" . ((number "0x00034001" 18387 . 18397)))
+          ("GLFW_CONNECTED" . ((number "0x00040001" 18529 . 18539)))
+          ("GLFW_REPEAT" . ((number "2" 7622 . 7623)))
+          ("GLFW_KEY_COMMA" . ((number "44" 8637 . 8639)))
+          ("GLFW_KEY_8" . ((number "56" 9141 . 9143)))
+          ("GLFW_KEY_E" . ((number "69" 9471 . 9473)))
+          ("GLFW_KEY_R" . ((number "82" 9978 . 9980)))
+          ("GLFW_KEY_LEFT_BRACKET" . ((number "91" 10329 . 10331)))
+          ("GLFW_KEY_WORLD_1" . ((number "161" 10521 . 10524)))
+          ("GLFW_KEY_HOME" . ((number "268" 11134 . 11137)))
+          ("GLFW_KEY_F11" . ((number "300" 11814 . 11817)))
+          ("GLFW_KEY_KP_7" . ((number "327" 12694 . 12697)))
+          ("GLFW_KEY_RIGHT_SHIFT" . ((number "344" 13254 . 13257)))
+          ("GLFW_KEY_RIGHT_ALT" . ((number "346" 13334 . 13337)))
+          ("GLFW_MOUSE_BUTTON_6" . ((number "5" 14303 . 14304)))
+          ("GLFW_JOYSTICK_12" . ((number "11" 15134 . 15136)))
+          ("GLFW_DECORATED" . ((number "0x00020005" 16735 . 16745)))
+          ("GLFW_ALPHA_BITS" . ((number "0x00021004" 16924 . 16934)))
+          ("GLFW_CONTEXT_VERSION_MINOR" . ((number "0x00022003" 17583 . 17593)))
+          ("GLFW_KEY_PERIOD" . ((number "46" 8733 . 8735)))
+          ("GLFW_KEY_SLASH" . ((number "47" 8781 . 8783)))
+          ("GLFW_KEY_9" . ((number "57" 9180 . 9182)))
+          ("GLFW_KEY_F" . ((number "70" 9510 . 9512)))
+          ("GLFW_KEY_S" . ((number "83" 10017 . 10019)))
+          ("GLFW_KEY_WORLD_2" . ((number "162" 10577 . 10580)))
+          ("GLFW_KEY_CAPS_LOCK" . ((number "280" 11214 . 11217)))
+          ("GLFW_KEY_SCROLL_LOCK" . ((number "281" 11254 . 11257)))
+          ("GLFW_KEY_F12" . ((number "301" 11854 . 11857)))
+          ("GLFW_KEY_KP_8" . ((number "328" 12734 . 12737)))
+          ("GLFW_KEY_KP_DECIMAL" . ((number "330" 12814 . 12817)))
+          ("GLFW_KEY_KP_ADD" . ((number "334" 12974 . 12977)))
+          ("GLFW_KEY_LEFT_SUPER" . ((number "343" 13214 . 13217)))
+          ("GLFW_KEY_RIGHT_CONTROL" . ((number "345" 13294 . 13297)))
+          ("GLFW_MOUSE_BUTTON_7" . ((number "6" 14341 . 14342)))
+          ("GLFW_JOYSTICK_13" . ((number "12" 15173 . 15175)))
+          ("GLFW_API_UNAVAILABLE" . ((number "0x00010006" 16096 . 16106)))
+          ("GLFW_ACCUM_RED_BITS" . ((number "0x00021007" 17065 . 17075)))
+          ("GLFW_OPENGL_ANY_PROFILE" . ((number "0" 18112 . 18113)))
+          ("GLFW_VERSION_MINOR" . ((number "0" 7035 . 7036)))
+          ("GLFW_VERSION_REVISION" . ((number "4" 7248 . 7249)))
+          ("GLFW_KEY_G" . ((number "71" 9549 . 9551)))
+          ("GLFW_KEY_T" . ((number "84" 10056 . 10058)))
+          ("GLFW_KEY_RIGHT" . ((number "262" 10894 . 10897)))
+          ("GLFW_KEY_UP" . ((number "265" 11014 . 11017)))
+          ("GLFW_KEY_PAUSE" . ((number "284" 11374 . 11377)))
+          ("GLFW_KEY_F13" . ((number "302" 11894 . 11897)))
+          ("GLFW_KEY_F20" . ((number "309" 12174 . 12177)))
+          ("GLFW_KEY_KP_9" . ((number "329" 12774 . 12777)))
+          ("GLFW_KEY_KP_DIVIDE" . ((number "331" 12854 . 12857)))
+          ("GLFW_KEY_LAST" . ((symbol "GLFW_KEY_MENU" 13454 . 13467)))
+          ("GLFW_MOUSE_BUTTON_8" . ((number "7" 14379 . 14380)))
+          ("GLFW_MOUSE_BUTTON_LAST" . ((symbol "GLFW_MOUSE_BUTTON_8" 14417 . 14436)))
+          ("GLFW_JOYSTICK_1" . ((number "0" 14715 . 14716)))
+          ("GLFW_JOYSTICK_14" . ((number "13" 15212 . 15214)))
+          ("GLFW_RED_BITS" . ((number "0x00021001" 16783 . 16793)))
+          ("GLFW_DEPTH_BITS" . ((number "0x00021005" 16971 . 16981)))
+          ("GLFW_REFRESH_RATE" . ((number "0x0002100F" 17441 . 17451)))
+          ("GLFW_CONTEXT_ROBUSTNESS" . ((number "0x00022005" 17677 . 17687)))
+          ("GLFW_OPENGL_CORE_PROFILE" . ((number "0x00032001" 18150 . 18160)))
+          ("GLFW_CURSOR_HIDDEN" . ((number "0x00034002" 18434 . 18444)))
+          ("GLFW_KEY_APOSTROPHE" . ((number "39" 8589 . 8591)))
+          ("GLFW_KEY_EQUAL" . ((number "61" 9267 . 9269)))
+          ("GLFW_KEY_H" . ((number "72" 9588 . 9590)))
+          ("GLFW_KEY_U" . ((number "85" 10095 . 10097)))
+          ("GLFW_KEY_RIGHT_BRACKET" . ((number "93" 10425 . 10427)))
+          ("GLFW_KEY_BACKSPACE" . ((number "259" 10774 . 10777)))
+          ("GLFW_KEY_NUM_LOCK" . ((number "282" 11294 . 11297)))
+          ("GLFW_KEY_PRINT_SCREEN" . ((number "283" 11334 . 11337)))
+          ("GLFW_KEY_F14" . ((number "303" 11934 . 11937)))
+          ("GLFW_KEY_F21" . ((number "310" 12214 . 12217)))
+          ("GLFW_KEY_KP_ENTER" . ((number "335" 13014 . 13017)))
+          ("GLFW_JOYSTICK_2" . ((number "1" 14753 . 14754)))
+          ("GLFW_JOYSTICK_15" . ((number "14" 15251 . 15253)))
+          ("GLFW_OPENGL_FORWARD_COMPAT" . ((number "0x00022006" 17724 . 17734)))
+          ("GLFW_CURSOR" . ((number "0x00033001" 18245 . 18255)))
+          ("GLFW_KEY_I" . ((number "73" 9627 . 9629)))
+          ("GLFW_KEY_V" . ((number "86" 10134 . 10136)))
+          ("GLFW_KEY_ESCAPE" . ((number "256" 10654 . 10657)))
+          ("GLFW_KEY_F1" . ((number "290" 11414 . 11417)))
+          ("GLFW_KEY_F15" . ((number "304" 11974 . 11977)))
+          ("GLFW_KEY_F22" . ((number "311" 12254 . 12257)))
+          ("GLFW_MOD_SHIFT" . ((number "0x0001" 13654 . 13660)))
+          ("GLFW_JOYSTICK_3" . ((number "2" 14791 . 14792)))
+          ("GLFW_JOYSTICK_16" . ((number "15" 15290 . 15292)))
+          ("GLFW_INVALID_VALUE" . ((number "0x00010004" 15868 . 15878)))
+          ("GLFW_SAMPLES" . ((number "0x0002100D" 17347 . 17357)))
+          ("GLFW_NO_RESET_NOTIFICATION" . ((number "0x00031001" 18008 . 18018)))
+          ("GLFW_OPENGL_COMPAT_PROFILE" . ((number "0x00032002" 18197 . 18207)))
+          ("GLFW_STICKY_KEYS" . ((number "0x00033002" 18292 . 18302)))
+          ("GLFW_STICKY_MOUSE_BUTTONS" . ((number "0x00033003" 18339 . 18349)))
+          ("APIENTRY")
+          ("GLFW_KEY_0" . ((number "48" 8829 . 8831)))
+          ("GLFW_KEY_J" . ((number "74" 9666 . 9668)))
+          ("GLFW_KEY_W" . ((number "87" 10173 . 10175)))
+          ("GLFW_KEY_GRAVE_ACCENT" . ((number "96" 10473 . 10475)))
+          ("GLFW_KEY_F2" . ((number "291" 11454 . 11457)))
+          ("GLFW_KEY_F16" . ((number "305" 12014 . 12017)))
+          ("GLFW_KEY_F23" . ((number "312" 12294 . 12297)))
+          ("GLFW_MOUSE_BUTTON_MIDDLE" . ((symbol "GLFW_MOUSE_BUTTON_3" 14585 . 14604)))
+          ("GLFW_JOYSTICK_4" . ((number "3" 14829 . 14830)))
+          ("GLFW_INVALID_ENUM" . ((number "0x00010003" 15739 . 15749)))
+          ("GLFW_OUT_OF_MEMORY" . ((number "0x00010005" 15958 . 15968)))
+          ("GLFW_STENCIL_BITS" . ((number "0x00021006" 17018 . 17028)))
+          ("GLFW_RELEASE" . ((number "0" 7406 . 7407)))
+          ("GLFW_KEY_SPACE" . ((number "32" 8550 . 8552)))
+          ("GLFW_KEY_1" . ((number "49" 8868 . 8870)))
+          ("GLFW_KEY_K" . ((number "75" 9705 . 9707)))
+          ("GLFW_KEY_X" . ((number "88" 10212 . 10214)))
+          ("GLFW_KEY_PAGE_UP" . ((number "266" 11054 . 11057)))
+          ("GLFW_KEY_END" . ((number "269" 11174 . 11177)))
+          ("GLFW_KEY_F3" . ((number "292" 11494 . 11497)))
+          ("GLFW_KEY_F17" . ((number "306" 12054 . 12057)))
+          ("GLFW_KEY_F24" . ((number "313" 12334 . 12337)))
+          ("GLFW_KEY_KP_0" . ((number "320" 12414 . 12417)))
+          ("GLFW_KEY_RIGHT_SUPER" . ((number "347" 13374 . 13377)))
+          ("GLFW_JOYSTICK_5" . ((number "4" 14867 . 14868)))
+          ("GLFW_KEY_2" . ((number "50" 8907 . 8909)))
+          ("GLFW_KEY_L" . ((number "76" 9744 . 9746)))
+          ("GLFW_KEY_Y" . ((number "89" 10251 . 10253)))
+          ("GLFW_KEY_INSERT" . ((number "260" 10814 . 10817)))
+          ("GLFW_KEY_F4" . ((number "293" 11534 . 11537)))
+          ("GLFW_KEY_F18" . ((number "307" 12094 . 12097)))
+          ("GLFW_KEY_F25" . ((number "314" 12374 . 12377)))
+          ("GLFW_KEY_KP_1" . ((number "321" 12454 . 12457)))
+          ("GLFW_KEY_KP_MULTIPLY" . ((number "332" 12894 . 12897)))
+          ("GLFW_MOUSE_BUTTON_RIGHT" . ((symbol "GLFW_MOUSE_BUTTON_2" 14529 . 14548)))
+          ("GLFW_JOYSTICK_6" . ((number "5" 14905 . 14906)))
+          ("GLFW_PLATFORM_ERROR" . ((number "0x00010008" 16367 . 16377)))
+          ("GLFW_VISIBLE" . ((number "0x00020004" 16688 . 16698)))
+          ("GLFW_ACCUM_BLUE_BITS" . ((number "0x00021009" 17159 . 17169)))
+          ("GLFW_OPENGL_DEBUG_CONTEXT" . ((number "0x00022007" 17771 . 17781)))
+          ("GLFW_OPENGL_API" . ((number "0x00030001" 17866 . 17876)))
+          ("GLFW_NO_ROBUSTNESS" . ((number "0" 17970 . 17971)))
+          ("GLFW_DISCONNECTED" . ((number "0x00040002" 18576 . 18586)))
+          ("GLFW_PRESS" . ((number "1" 7509 . 7510)))
+          ("GLFW_KEY_3" . ((number "51" 8946 . 8948)))
+          ("GLFW_KEY_SEMICOLON" . ((number "59" 9219 . 9221)))
+          ("GLFW_KEY_M" . ((number "77" 9783 . 9785)))
+          ("GLFW_KEY_Z" . ((number "90" 10290 . 10292)))
+          ("GLFW_KEY_F5" . ((number "294" 11574 . 11577)))
+          ("GLFW_KEY_F19" . ((number "308" 12134 . 12137)))
+          ("GLFW_KEY_KP_2" . ((number "322" 12494 . 12497)))
+          ("GLFW_KEY_LEFT_SHIFT" . ((number "340" 13094 . 13097)))
+          ("GLFW_MOUSE_BUTTON_1" . ((number "0" 14113 . 14114)))
+          ("GLFW_JOYSTICK_7" . ((number "6" 14943 . 14944)))
+          ("GLFW_NOT_INITIALIZED" . ((number "0x00010001" 15501 . 15511)))
+          ("GLFW_CONTEXT_VERSION_MAJOR" . ((number "0x00022002" 17536 . 17546)))
+          ("GLFW_KEY_UNKNOWN" . ((punctuation "-" 8489 . 8490) (number "1" 8490 . 8491)))
+          ("GLFW_KEY_4" . ((number "52" 8985 . 8987)))
+          ("GLFW_KEY_A" . ((number "65" 9315 . 9317)))
+          ("GLFW_KEY_N" . ((number "78" 9822 . 9824)))
+          ("GLFW_KEY_ENTER" . ((number "257" 10694 . 10697)))
+          ("GLFW_KEY_TAB" . ((number "258" 10734 . 10737)))
+          ("GLFW_KEY_DOWN" . ((number "264" 10974 . 10977)))
+          ("GLFW_KEY_F6" . ((number "295" 11614 . 11617)))
+          ("GLFW_KEY_KP_3" . ((number "323" 12534 . 12537)))
+          ("GLFW_KEY_LEFT_ALT" . ((number "342" 13174 . 13177)))
+          ("GLFW_MOD_ALT" . ((number "0x0004" 13880 . 13886)))
+          ("GLFW_MOUSE_BUTTON_2" . ((number "1" 14151 . 14152)))
+          ("GLFW_JOYSTICK_8" . ((number "7" 14981 . 14982)))
+          ("GLFW_ACCUM_GREEN_BITS" . ((number "0x00021008" 17112 . 17122)))
+          ("GLFW_CONTEXT_REVISION" . ((number "0x00022004" 17630 . 17640)))
+          ("GLFW_OPENGL_PROFILE" . ((number "0x00022008" 17818 . 17828)))
+          ("GLFW_OPENGL_ES_API" . ((number "0x00030002" 17913 . 17923)))
+          ("_glfw3_h_")
+          ("GLFW_VERSION_MAJOR" . ((number "3" 6816 . 6817)))
+          ("GLFW_KEY_MINUS" . ((number "45" 8685 . 8687)))
+          ("GLFW_KEY_5" . ((number "53" 9024 . 9026)))
+          ("GLFW_KEY_B" . ((number "66" 9354 . 9356)))
+          ("GLFW_KEY_O" . ((number "79" 9861 . 9863)))
+          ("GLFW_KEY_DELETE" . ((number "261" 10854 . 10857)))
+          ("GLFW_KEY_F7" . ((number "296" 11654 . 11657)))
+          ("GLFW_KEY_KP_4" . ((number "324" 12574 . 12577)))
+          ("GLFW_KEY_KP_EQUAL" . ((number "336" 13054 . 13057)))
+          ("GLFW_MOD_SUPER" . ((number "0x0008" 13993 . 13999)))
+          ("GLFW_MOUSE_BUTTON_3" . ((number "2" 14189 . 14190)))
+          ("GLFW_JOYSTICK_9" . ((number "8" 15019 . 15020)))
+          ("GLFW_JOYSTICK_LAST" . ((symbol "GLFW_JOYSTICK_16" 15329 . 15345)))
+          ("GLFW_FOCUSED" . ((number "0x00020001" 16547 . 16557)))
+          ("GLFW_BLUE_BITS" . ((number "0x00021003" 16877 . 16887)))
+          ("GLFW_CLIENT_API" . ((number "0x00022001" 17489 . 17499)))
+          )
+
+    )
+   )
+  :file "!usr!include!GLFW!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

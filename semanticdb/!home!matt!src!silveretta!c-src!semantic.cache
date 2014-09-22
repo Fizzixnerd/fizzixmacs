@@ -1,0 +1,18 @@
+;; Object c-src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c-src/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags nil
+    :file "Makefile"
+    :pointmax 1534
+    :fsize 1533
+    :lastmodtime '(21371 30951 284586 147000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!silveretta!c-src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

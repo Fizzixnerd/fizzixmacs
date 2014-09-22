@@ -1,0 +1,19 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("$(top_srcdir)/make-extras" include nil nil [62 96]))          
+    :file "Makefile.am"
+    :pointmax 108
+    :fsize 107
+    :lastmodtime '(21399 6263 738433 299000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!c2ffi!src!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,18 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "shader_utils.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "shader_utils.cpp"
+    :pointmax 2106
+    :fsize 2116
+    :lastmodtime '(21458 22226 547849 243000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!opengl!c++!most-illustrious-of-cubes!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

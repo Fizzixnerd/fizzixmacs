@@ -1,0 +1,18 @@
+;; Object silveretta/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "silveretta/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags nil
+    :file "Makefile"
+    :pointmax 834
+    :fsize 833
+    :lastmodtime '(21366 6136 912332 743000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!silveretta!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

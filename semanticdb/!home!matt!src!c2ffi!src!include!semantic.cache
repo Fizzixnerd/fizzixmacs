@@ -1,0 +1,21 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("$(top_srcdir)/make-extras" include nil nil [62 96])
+            ("noinst_HEADERS" variable (:default-value ("c2ffi.h")) nil [97 122])
+            ("SUBDIRS" variable (:default-value ("c2ffi")) nil [123 139]))          
+    :file "Makefile.am"
+    :pointmax 139
+    :fsize 138
+    :lastmodtime '(21399 6263 738433 299000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!c2ffi!src!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

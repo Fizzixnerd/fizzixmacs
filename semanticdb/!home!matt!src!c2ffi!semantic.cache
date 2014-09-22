@@ -1,0 +1,27 @@
+;; Object c2ffi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c2ffi/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("$(top_srcdir)/make-extras" include nil nil [9 43])
+            ("SUBDIRS" variable (:default-value ("src")) nil [44 58])
+            ("EXTRA_DIST" variable (:default-value ("autogen" "gen-functions" "autoclean" "TODO" "make-extras" "depcomp")) nil [59 129])
+            ("noinst_HEADERS" variable (:default-value ("config.h" "defs.h")) nil [129 162]))          
+    :file "Makefile.am"
+    :pointmax 162
+    :fsize 161
+    :lastmodtime '(21399 6263 738433 299000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "make-extras"
+    :file "make-extras"
+    :fsize 185
+    :lastmodtime '(21399 6263 738433 299000)
+    )
+   )
+  :file "!home!matt!src!c2ffi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

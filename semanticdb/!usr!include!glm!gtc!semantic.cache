@@ -1,0 +1,1972 @@
+;; Object gtc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gtc/"
+  :tables (list 
+   (semanticdb-table "matrix_transform.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GLM_GTC_matrix_transform" variable (:constant-flag t) nil [2267 2291])
+            ("../mat4x4.hpp" include nil nil [2308 2332])
+            ("../vec2.hpp" include nil nil [2333 2355])
+            ("../vec3.hpp" include nil nil [2356 2378])
+            ("../vec4.hpp" include nil nil [2379 2401])
+            ("glm" type
+               (:members 
+                  ( ("translate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tmat4x4" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3692 3724])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3727 3757]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3657 3758])
+                    ("rotate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tmat4x4" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4484 4516])
+                            ("angle" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4519 4535])
+                            ("axis" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4538 4571]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [4452 4572])
+                    ("scale" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tmat4x4" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5188 5220])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5223 5253]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [5157 5254])
+                    ("ortho" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("left" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5750 5765])
+                            ("right" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5768 5784])
+                            ("bottom" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5787 5804])
+                            ("top" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5807 5821])
+                            ("zNear" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5824 5840])
+                            ("zFar" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5843 5858]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [5712 5859])
+                    ("ortho" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("left" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6366 6381])
+                            ("right" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6384 6400])
+                            ("bottom" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6403 6420])
+                            ("top" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6423 6437]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6328 6438])
+                    ("frustum" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("left" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6815 6830])
+                            ("right" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6833 6849])
+                            ("bottom" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6852 6869])
+                            ("top" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6872 6886])
+                            ("near" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6889 6904])
+                            ("far" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6907 6921]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6782 6922])
+                    ("perspective" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fovy" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7372 7387])
+                            ("aspect" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7390 7407])
+                            ("near" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7410 7425])
+                            ("far" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7428 7442]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7335 7443])
+                    ("perspectiveFov" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fov" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7921 7935])
+                            ("width" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7938 7954])
+                            ("height" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7957 7974])
+                            ("near" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7977 7992])
+                            ("far" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7995 8009]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7881 8010])
+                    ("infinitePerspective" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fovy" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8479 8486])
+                            ("aspect" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8487 8496])
+                            ("near" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8497 8504]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8434 8505])
+                    ("tweakedInfinitePerspective" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fovy" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9039 9046])
+                            ("aspect" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9047 9056])
+                            ("near" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9057 9064]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8987 9065])
+                    ("project" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("obj" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9553 9585])
+                            ("model" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tmat4x4" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9588 9624])
+                            ("proj" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tmat4x4" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9627 9662])
+                            ("viewport" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec4" type
+                                     (:template-specifier 
+                                        ( ("U" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9665 9702]))                          
+                        :type ("detail::tvec3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [9522 9703])
+                    ("unProject" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("win" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10189 10221])
+                            ("model" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tmat4x4" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10224 10260])
+                            ("proj" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tmat4x4" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10263 10298])
+                            ("viewport" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec4" type
+                                     (:template-specifier 
+                                        ( ("U" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10301 10338]))                          
+                        :type ("detail::tvec3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10156 10339])
+                    ("pickMatrix" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("center" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10754 10789])
+                            ("delta" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10792 10826])
+                            ("viewport" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec4" type
+                                     (:template-specifier 
+                                        ( ("U" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10829 10866]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10718 10867])
+                    ("lookAt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eye" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11439 11471])
+                            ("center" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11474 11509])
+                            ("up" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11512 11543]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11407 11544]))                  
+                :type "namespace")
+                nil [2537 11555])
+            ("matrix_transform.inl" include nil nil [11572 11603]))          
+    :file "matrix_transform.hpp"
+    :pointmax 11638
+    :fsize 11931
+    :lastmodtime '(21192 32144 0 0)
+    :unmatched-syntax '((symbol 11393 . 11406) (punctuation 11390 . 11391) (symbol 11389 . 11390) (symbol 11379 . 11388) (punctuation 11377 . 11378) (symbol 11376 . 11377) (TYPENAME 11367 . 11375) (punctuation 11366 . 11367) (TEMPLATE 11357 . 11365) (symbol 10704 . 10717) (punctuation 10701 . 10702) (symbol 10700 . 10701) (TYPENAME 10691 . 10699) (punctuation 10689 . 10690) (symbol 10688 . 10689) (symbol 10678 . 10687) (punctuation 10676 . 10677) (symbol 10675 . 10676) (TYPENAME 10666 . 10674) (punctuation 10665 . 10666) (TEMPLATE 10656 . 10664) (symbol 10142 . 10155) (punctuation 10139 . 10140) (symbol 10138 . 10139) (symbol 10128 . 10137) (punctuation 10126 . 10127) (symbol 10125 . 10126) (TYPENAME 10116 . 10124) (punctuation 10114 . 10115) (symbol 10113 . 10114) (TYPENAME 10104 . 10112) (punctuation 10103 . 10104) (TEMPLATE 10094 . 10102) (symbol 9508 . 9521) (punctuation 9505 . 9506) (symbol 9504 . 9505) (symbol 9494 . 9503) (punctuation 9492 . 9493) (symbol 9491 . 9492) (TYPENAME 9482 . 9490) (punctuation 9480 . 9481) (symbol 9479 . 9480) (TYPENAME 9470 . 9478) (punctuation 9469 . 9470) (TEMPLATE 9460 . 9468) (symbol 8973 . 8986) (punctuation 8970 . 8971) (symbol 8969 . 8970) (symbol 8959 . 8968) (punctuation 8957 . 8958) (symbol 8956 . 8957) (TYPENAME 8947 . 8955) (punctuation 8946 . 8947) (TEMPLATE 8937 . 8945) (symbol 8420 . 8433) (punctuation 8417 . 8418) (symbol 8416 . 8417) (symbol 8406 . 8415) (punctuation 8404 . 8405) (symbol 8403 . 8404) (TYPENAME 8394 . 8402) (punctuation 8393 . 8394) (TEMPLATE 8384 . 8392) (symbol 7867 . 7880) (punctuation 7864 . 7865) (symbol 7863 . 7864) (symbol 7853 . 7862) (punctuation 7851 . 7852) (symbol 7850 . 7851) (TYPENAME 7841 . 7849) (punctuation 7840 . 7841) (TEMPLATE 7831 . 7839) (symbol 7321 . 7334) (punctuation 7318 . 7319) (symbol 7317 . 7318) (symbol 7307 . 7316) (punctuation 7305 . 7306) (symbol 7304 . 7305) (TYPENAME 7295 . 7303) (punctuation 7294 . 7295) (TEMPLATE 7285 . 7293) (symbol 6768 . 6781) (punctuation 6765 . 6766) (symbol 6764 . 6765) (symbol 6754 . 6763) (punctuation 6752 . 6753) (symbol 6751 . 6752) (TYPENAME 6742 . 6750) (punctuation 6741 . 6742) (TEMPLATE 6732 . 6740) (symbol 6314 . 6327) (punctuation 6311 . 6312) (symbol 6310 . 6311) (TYPENAME 6301 . 6309) (punctuation 6300 . 6301) (TEMPLATE 6291 . 6299) (symbol 5698 . 5711) (punctuation 5695 . 5696) (symbol 5694 . 5695) (TYPENAME 5685 . 5693) (punctuation 5684 . 5685) (TEMPLATE 5675 . 5683) (symbol 5143 . 5156) (punctuation 5140 . 5141) (symbol 5139 . 5140) (symbol 5129 . 5138) (punctuation 5127 . 5128) (symbol 5126 . 5127) (TYPENAME 5117 . 5125) (punctuation 5116 . 5117) (TEMPLATE 5107 . 5115) (symbol 4438 . 4451) (punctuation 4435 . 4436) (symbol 4434 . 4435) (symbol 4424 . 4433) (punctuation 4422 . 4423) (symbol 4421 . 4422) (TYPENAME 4412 . 4420) (punctuation 4411 . 4412) (TEMPLATE 4402 . 4410) (symbol 3643 . 3656) (punctuation 3640 . 3641) (symbol 3639 . 3640) (symbol 3629 . 3638) (punctuation 3627 . 3628) (symbol 3626 . 3627) (TYPENAME 3617 . 3625) (punctuation 3616 . 3617) (TEMPLATE 3607 . 3615))
+    :lexical-table 
+        '(("GLM_GTC_matrix_transform")
+          )
+
+    )
+   (semanticdb-table "matrix_transform.inl"
+    :file "matrix_transform.inl"
+    :fsize 14183
+    :lastmodtime '(21192 41546 0 0)
+    )
+   (semanticdb-table "type_ptr.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GLM_GTC_type_ptr" variable (:constant-flag t) nil [2518 2534])
+            ("../gtc/quaternion.hpp" include nil nil [2551 2583])
+            ("../vec2.hpp" include nil nil [2584 2606])
+            ("../vec3.hpp" include nil nil [2607 2629])
+            ("../vec4.hpp" include nil nil [2630 2652])
+            ("../mat2x2.hpp" include nil nil [2653 2677])
+            ("../mat2x3.hpp" include nil nil [2678 2702])
+            ("../mat2x4.hpp" include nil nil [2703 2727])
+            ("../mat3x2.hpp" include nil nil [2728 2752])
+            ("../mat3x3.hpp" include nil nil [2753 2777])
+            ("../mat3x4.hpp" include nil nil [2778 2802])
+            ("../mat4x2.hpp" include nil nil [2803 2827])
+            ("../mat4x3.hpp" include nil nil [2828 2852])
+            ("../mat4x4.hpp" include nil nil [2853 2877])
+            ("cstring" include (:system-flag t) nil [2878 2896])
+            ("glm" type
+               (:members 
+                  ( ("value_ptr" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("typename")
+                        :arguments 
+                          ( ("vec" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("genType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3261 3281]))                          
+                        :type ("genType::value_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3214 3282])
+                    ("make_vec2" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3417 3437]))                          
+                        :type ("detail::tvec2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3380 3438])
+                    ("make_vec3" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3573 3593]))                          
+                        :type ("detail::tvec3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3536 3594])
+                    ("make_vec4" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3729 3749]))                          
+                        :type ("detail::tvec4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3692 3750])
+                    ("make_mat2x2" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3889 3909]))                          
+                        :type ("detail::tmat2x2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3848 3910])
+                    ("make_mat2x3" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4049 4069]))                          
+                        :type ("detail::tmat2x3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [4008 4070])
+                    ("make_mat2x4" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4209 4229]))                          
+                        :type ("detail::tmat2x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [4168 4230])
+                    ("make_mat3x2" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4369 4389]))                          
+                        :type ("detail::tmat3x2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [4328 4390])
+                    ("make_mat3x3" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4529 4549]))                          
+                        :type ("detail::tmat3x3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [4488 4550])
+                    ("make_mat3x4" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4689 4709]))                          
+                        :type ("detail::tmat3x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [4648 4710])
+                    ("make_mat4x2" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4852 4872]))                          
+                        :type ("detail::tmat4x2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [4808 4873])
+                    ("make_mat4x3" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5012 5032]))                          
+                        :type ("detail::tmat4x3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [4971 5033])
+                    ("make_mat4x4" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5172 5192]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [5131 5193])
+                    ("make_mat2" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5331 5351]))                          
+                        :type ("detail::tmat2x2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [5292 5352])
+                    ("make_mat3" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5489 5509]))                          
+                        :type ("detail::tmat3x3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [5450 5510])
+                    ("make_mat4" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5649 5669]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [5610 5670])
+                    ("make_quat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5809 5829]))                          
+                        :type ("detail::tquat" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("defaultp" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [5772 5830]))                  
+                :type "namespace")
+                nil [3024 5841])
+            ("type_ptr.inl" include nil nil [5858 5881]))          
+    :file "type_ptr.hpp"
+    :pointmax 5909
+    :fsize 6087
+    :lastmodtime '(21192 32144 0 0)
+    :unmatched-syntax '((symbol 5758 . 5771) (punctuation 5755 . 5756) (symbol 5754 . 5755) (TYPENAME 5745 . 5753) (punctuation 5744 . 5745) (TEMPLATE 5736 . 5744) (symbol 5596 . 5609) (punctuation 5593 . 5594) (symbol 5592 . 5593) (TYPENAME 5583 . 5591) (punctuation 5582 . 5583) (TEMPLATE 5574 . 5582) (symbol 5436 . 5449) (punctuation 5433 . 5434) (symbol 5432 . 5433) (TYPENAME 5423 . 5431) (punctuation 5422 . 5423) (TEMPLATE 5414 . 5422) (symbol 5278 . 5291) (punctuation 5275 . 5276) (symbol 5274 . 5275) (TYPENAME 5265 . 5273) (punctuation 5264 . 5265) (TEMPLATE 5256 . 5264) (symbol 5117 . 5130) (punctuation 5114 . 5115) (symbol 5113 . 5114) (TYPENAME 5104 . 5112) (punctuation 5103 . 5104) (TEMPLATE 5095 . 5103) (symbol 4957 . 4970) (punctuation 4954 . 4955) (symbol 4953 . 4954) (TYPENAME 4944 . 4952) (punctuation 4943 . 4944) (TEMPLATE 4935 . 4943) (symbol 4794 . 4807) (punctuation 4791 . 4792) (symbol 4790 . 4791) (TYPENAME 4781 . 4789) (punctuation 4780 . 4781) (TEMPLATE 4772 . 4780) (symbol 4634 . 4647) (punctuation 4631 . 4632) (symbol 4630 . 4631) (TYPENAME 4621 . 4629) (punctuation 4620 . 4621) (TEMPLATE 4612 . 4620) (symbol 4474 . 4487) (punctuation 4471 . 4472) (symbol 4470 . 4471) (TYPENAME 4461 . 4469) (punctuation 4460 . 4461) (TEMPLATE 4452 . 4460) (symbol 4314 . 4327) (punctuation 4311 . 4312) (symbol 4310 . 4311) (TYPENAME 4301 . 4309) (punctuation 4300 . 4301) (TEMPLATE 4292 . 4300) (symbol 4154 . 4167) (punctuation 4151 . 4152) (symbol 4150 . 4151) (TYPENAME 4141 . 4149) (punctuation 4140 . 4141) (TEMPLATE 4132 . 4140) (symbol 3994 . 4007) (punctuation 3991 . 3992) (symbol 3990 . 3991) (TYPENAME 3981 . 3989) (punctuation 3980 . 3981) (TEMPLATE 3972 . 3980) (symbol 3834 . 3847) (punctuation 3831 . 3832) (symbol 3830 . 3831) (TYPENAME 3821 . 3829) (punctuation 3820 . 3821) (TEMPLATE 3812 . 3820) (symbol 3678 . 3691) (punctuation 3675 . 3676) (symbol 3674 . 3675) (TYPENAME 3665 . 3673) (punctuation 3664 . 3665) (TEMPLATE 3656 . 3664) (symbol 3522 . 3535) (punctuation 3519 . 3520) (symbol 3518 . 3519) (TYPENAME 3509 . 3517) (punctuation 3508 . 3509) (TEMPLATE 3500 . 3508) (symbol 3366 . 3379) (punctuation 3363 . 3364) (symbol 3362 . 3363) (TYPENAME 3353 . 3361) (punctuation 3352 . 3353) (TEMPLATE 3344 . 3352) (symbol 3200 . 3213) (punctuation 3197 . 3198) (symbol 3190 . 3197) (TYPENAME 3181 . 3189) (punctuation 3180 . 3181) (TEMPLATE 3172 . 3180))
+    :lexical-table 
+        '(("GLM_GTC_type_ptr")
+          )
+
+    )
+   (semanticdb-table "quaternion.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GLM_GTC_quaternion" variable (:constant-flag t) nil [1872 1890])
+            ("../mat3x3.hpp" include nil nil [1907 1931])
+            ("../mat4x4.hpp" include nil nil [1932 1956])
+            ("../vec3.hpp" include nil nil [1957 1979])
+            ("../vec4.hpp" include nil nil [1980 2002])
+            ("../gtc/constants.hpp" include nil nil [2003 2034])
+            ("glm" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("tquat" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("precision" type nil nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("ctor" type
+                                       (:members 
+                                          ( ("null" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2263 2268]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [2253 2269])
+                                    ("bool_type" type
+                                       (:typedef ("tvec4" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil)
+                                                  ("P" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "tvec4"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2273 2306])
+                                    ("public" label nil (reparse-symbol classsubparts) [2309 2316])
+                                    ("w" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2319 2332])
+                                    ("z" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2319 2332])
+                                    ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2319 2332])
+                                    ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2319 2332])
+                                    ("length" function
+                                       (:prototype-flag t
+                                        :type ("length_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2364 2388])
+                                    ("tquat" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("GLM_FUNC_DECL" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2410 2432])
+                                    ("tquat" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("q" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tquat" type
+                                                     (:template-specifier 
+                                                        ( ("U" type nil nil nil)
+                                                          ("Q" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2505 2527]))                                          
+                                        :type ("tquat" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2495 2528])
+                                    ("tquat" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2564 2576])
+                                            ("v" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tvec3" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("P" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2580 2602]))                                          
+                                        :type ("tquat" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2554 2603])
+                                    ("tquat" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("w" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2639 2651])
+                                            ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2655 2667])
+                                            ("y" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2671 2683])
+                                            ("z" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2687 2699]))                                          
+                                        :type ("tquat" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2629 2700])
+                                    ("tquat" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("u" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("detail::tvec3" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("P" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3147 3177])
+                                            ("v" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("detail::tvec3" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("P" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3181 3211]))                                          
+                                        :type ("tquat" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [3137 3212])
+                                    ("tquat" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("eulerAngles" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tvec3" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("P" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3323 3355]))                                          
+                                        :type ("tquat" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [3313 3356])
+                                    ("tquat" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tmat3x3" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("P" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3392 3416]))                                          
+                                        :type ("tquat" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [3382 3417])
+                                    ("tquat" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tmat4x4" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("P" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3453 3477]))                                          
+                                        :type ("tquat" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [3443 3478])
+                                    ("[]" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("i" variable (:type ("length_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3525 3536]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3510 3537])
+                                    ("[]" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("i" variable (:type ("length_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3575 3586]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3554 3593])
+                                    ("+=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("q" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tquat" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("P" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3651 3673]))                                          
+                                        :type ("tquat" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("P" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [3626 3674])
+                                    ("=" variable
+                                       (:functionpointer-flag t
+                                        :type ("tquat" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("P" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [3691 3739])
+                                    ("=" variable
+                                       (:functionpointer-flag t
+                                        :type ("tquat" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("P" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [3756 3794])
+                                    ("/=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3836 3848]))                                          
+                                        :type ("tquat" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("P" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [3811 3849]))                                  )
+                                (reparse-symbol namespacesubparts) [2199 3853])
+                            ("-" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("detail::tquat" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("P" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3940 3970]))                                  
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [3906 3971])
+                            ("+" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("detail::tquat" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("P" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4058 4088])
+                                    ("p" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("detail::tquat" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("P" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4091 4121]))                                  
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [4024 4122])
+                            ("" variable
+                               (:functionpointer-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [4175 4273])
+                            ("" variable
+                               (:functionpointer-flag t
+                                :type ("detail::tvec3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [4326 4424])
+                            ("" variable
+                               (:functionpointer-flag t
+                                :type ("detail::tvec3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [4477 4575])
+                            ("" variable
+                               (:functionpointer-flag t
+                                :type ("detail::tvec4" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [4628 4727])
+                            ("" variable
+                               (:functionpointer-flag t
+                                :type ("detail::tvec4" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [4780 4878])
+                            ("" variable
+                               (:functionpointer-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [4931 5011])
+                            ("" variable
+                               (:functionpointer-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [5064 5144])
+                            ("/" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("detail::tquat" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("P" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5231 5261])
+                                    ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5264 5276]))                                  
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [5197 5277]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2179 5280])
+                    ("length" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("q" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5479 5509]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5467 5510])
+                    ("normalize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("q" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5667 5697]))                          
+                        :type ("detail::tquat" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [5634 5698])
+                    ("dot" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("quatType" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5921 5946])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("quatType" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5949 5974]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5912 5975])
+                    ("mix" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6629 6659])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6662 6692])
+                            ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6695 6707]))                          
+                        :type ("detail::tquat" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6602 6708])
+                    ("lerp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7132 7162])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7165 7195])
+                            ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7198 7210]))                          
+                        :type ("detail::tquat" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7104 7211])
+                    ("slerp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7713 7743])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7746 7776])
+                            ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7779 7791]))                          
+                        :type ("detail::tquat" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7684 7792])
+                    ("conjugate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("q" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7939 7969]))                          
+                        :type ("detail::tquat" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7906 7970])
+                    ("inverse" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("q" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8113 8143]))                          
+                        :type ("detail::tquat" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8082 8144])
+                    ("rotate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("q" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8508 8538])
+                            ("angle" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8541 8557])
+                            ("axis" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8560 8593]))                          
+                        :type ("detail::tquat" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8478 8594])
+                    ("eulerAngles" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8867 8897]))                          
+                        :type ("detail::tvec3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8832 8898])
+                    ("roll" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9103 9133]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9096 9134])
+                    ("pitch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9341 9371]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9333 9372])
+                    ("yaw" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9575 9605]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9569 9606])
+                    ("mat3_cast" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9771 9801]))                          
+                        :type ("detail::tmat3x3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [9736 9802])
+                    ("mat4_cast" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9967 9997]))                          
+                        :type ("detail::tmat4x4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [9932 9998])
+                    ("quat_cast" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tmat3x3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10161 10193]))                          
+                        :type ("detail::tquat" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10128 10194])
+                    ("quat_cast" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tmat4x4" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10357 10389]))                          
+                        :type ("detail::tquat" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10324 10390])
+                    ("angle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10525 10555]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10517 10556])
+                    ("axis" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10701 10731]))                          
+                        :type ("detail::tvec3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10673 10732])
+                    ("angleAxis" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("angle" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11073 11089])
+                            ("axis" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tvec3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11092 11125]))                          
+                        :type ("detail::tquat" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11040 11126])
+                    ("lessThan" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11365 11395])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11399 11429]))                          
+                        :type ("detail::tvec4" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11330 11430])
+                    ("lessThanEqual" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11674 11704])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11708 11738]))                          
+                        :type ("detail::tvec4" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11634 11739])
+                    ("greaterThan" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11980 12010])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12014 12044]))                          
+                        :type ("detail::tvec4" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11942 12045])
+                    ("greaterThanEqual" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12292 12322])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12326 12356]))                          
+                        :type ("detail::tvec4" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [12249 12357])
+                    ("equal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12593 12623])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12627 12657]))                          
+                        :type ("detail::tvec4" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [12561 12658])
+                    ("notEqual" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12898 12928])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::tquat" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12932 12962]))                          
+                        :type ("detail::tvec4" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil)
+                                  ("P" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [12863 12963]))                  
+                :type "namespace")
+                nil [2164 12974])
+            ("quaternion.inl" include nil nil [12992 13017]))          
+    :file "quaternion.hpp"
+    :pointmax 13046
+    :fsize 13453
+    :lastmodtime '(21192 32150 0 0)
+    :unmatched-syntax '((symbol 12849 . 12862) (punctuation 12846 . 12847) (symbol 12845 . 12846) (symbol 12835 . 12844) (punctuation 12833 . 12834) (symbol 12832 . 12833) (TYPENAME 12823 . 12831) (punctuation 12822 . 12823) (TEMPLATE 12813 . 12821) (symbol 12547 . 12560) (punctuation 12544 . 12545) (symbol 12543 . 12544) (symbol 12533 . 12542) (punctuation 12531 . 12532) (symbol 12530 . 12531) (TYPENAME 12521 . 12529) (punctuation 12520 . 12521) (TEMPLATE 12511 . 12519) (symbol 12235 . 12248) (punctuation 12232 . 12233) (symbol 12231 . 12232) (symbol 12221 . 12230) (punctuation 12219 . 12220) (symbol 12218 . 12219) (TYPENAME 12209 . 12217) (punctuation 12208 . 12209) (TEMPLATE 12199 . 12207) (symbol 11928 . 11941) (punctuation 11925 . 11926) (symbol 11924 . 11925) (symbol 11914 . 11923) (punctuation 11912 . 11913) (symbol 11911 . 11912) (TYPENAME 11902 . 11910) (punctuation 11901 . 11902) (TEMPLATE 11892 . 11900) (symbol 11620 . 11633) (punctuation 11617 . 11618) (symbol 11616 . 11617) (symbol 11606 . 11615) (punctuation 11604 . 11605) (symbol 11603 . 11604) (TYPENAME 11594 . 11602) (punctuation 11593 . 11594) (TEMPLATE 11584 . 11592) (symbol 11316 . 11329) (punctuation 11313 . 11314) (symbol 11312 . 11313) (symbol 11302 . 11311) (punctuation 11300 . 11301) (symbol 11299 . 11300) (TYPENAME 11290 . 11298) (punctuation 11289 . 11290) (TEMPLATE 11280 . 11288) (symbol 11026 . 11039) (punctuation 11023 . 11024) (symbol 11022 . 11023) (symbol 11012 . 11021) (punctuation 11010 . 11011) (symbol 11009 . 11010) (TYPENAME 11000 . 11008) (punctuation 10999 . 11000) (TEMPLATE 10990 . 10998) (symbol 10659 . 10672) (punctuation 10656 . 10657) (symbol 10655 . 10656) (symbol 10645 . 10654) (punctuation 10643 . 10644) (symbol 10642 . 10643) (TYPENAME 10633 . 10641) (punctuation 10632 . 10633) (TEMPLATE 10623 . 10631) (symbol 10503 . 10516) (punctuation 10500 . 10501) (symbol 10499 . 10500) (symbol 10489 . 10498) (punctuation 10487 . 10488) (symbol 10486 . 10487) (TYPENAME 10477 . 10485) (punctuation 10476 . 10477) (TEMPLATE 10467 . 10475) (symbol 10310 . 10323) (punctuation 10307 . 10308) (symbol 10306 . 10307) (symbol 10296 . 10305) (punctuation 10294 . 10295) (symbol 10293 . 10294) (TYPENAME 10284 . 10292) (punctuation 10283 . 10284) (TEMPLATE 10274 . 10282) (symbol 10114 . 10127) (punctuation 10111 . 10112) (symbol 10110 . 10111) (symbol 10100 . 10109) (punctuation 10098 . 10099) (symbol 10097 . 10098) (TYPENAME 10088 . 10096) (punctuation 10087 . 10088) (TEMPLATE 10078 . 10086) (symbol 9918 . 9931) (punctuation 9915 . 9916) (symbol 9914 . 9915) (symbol 9904 . 9913) (punctuation 9902 . 9903) (symbol 9901 . 9902) (TYPENAME 9892 . 9900) (punctuation 9891 . 9892) (TEMPLATE 9882 . 9890) (symbol 9722 . 9735) (punctuation 9719 . 9720) (symbol 9718 . 9719) (symbol 9708 . 9717) (punctuation 9706 . 9707) (symbol 9705 . 9706) (TYPENAME 9696 . 9704) (punctuation 9695 . 9696) (TEMPLATE 9686 . 9694) (symbol 9555 . 9568) (punctuation 9552 . 9553) (symbol 9551 . 9552) (symbol 9541 . 9550) (punctuation 9539 . 9540) (symbol 9538 . 9539) (TYPENAME 9529 . 9537) (punctuation 9528 . 9529) (TEMPLATE 9519 . 9527) (symbol 9319 . 9332) (punctuation 9316 . 9317) (symbol 9315 . 9316) (symbol 9305 . 9314) (punctuation 9303 . 9304) (symbol 9302 . 9303) (TYPENAME 9293 . 9301) (punctuation 9292 . 9293) (TEMPLATE 9283 . 9291) (symbol 9082 . 9095) (punctuation 9079 . 9080) (symbol 9078 . 9079) (symbol 9068 . 9077) (punctuation 9066 . 9067) (symbol 9065 . 9066) (TYPENAME 9056 . 9064) (punctuation 9055 . 9056) (TEMPLATE 9046 . 9054) (symbol 8818 . 8831) (punctuation 8815 . 8816) (symbol 8814 . 8815) (symbol 8804 . 8813) (punctuation 8802 . 8803) (symbol 8801 . 8802) (TYPENAME 8792 . 8800) (punctuation 8791 . 8792) (TEMPLATE 8782 . 8790) (symbol 8464 . 8477) (punctuation 8461 . 8462) (symbol 8460 . 8461) (symbol 8450 . 8459) (punctuation 8448 . 8449) (symbol 8447 . 8448) (TYPENAME 8438 . 8446) (punctuation 8437 . 8438) (TEMPLATE 8428 . 8436) (symbol 8068 . 8081) (punctuation 8065 . 8066) (symbol 8064 . 8065) (symbol 8054 . 8063) (punctuation 8052 . 8053) (symbol 8051 . 8052) (TYPENAME 8042 . 8050) (punctuation 8041 . 8042) (TEMPLATE 8032 . 8040) (symbol 7892 . 7905) (punctuation 7889 . 7890) (symbol 7888 . 7889) (symbol 7878 . 7887) (punctuation 7876 . 7877) (symbol 7875 . 7876) (TYPENAME 7866 . 7874) (punctuation 7865 . 7866) (TEMPLATE 7856 . 7864) (symbol 7670 . 7683) (punctuation 7667 . 7668) (symbol 7666 . 7667) (symbol 7656 . 7665) (punctuation 7654 . 7655) (symbol 7653 . 7654) (TYPENAME 7644 . 7652) (punctuation 7643 . 7644) (TEMPLATE 7634 . 7642) (symbol 7090 . 7103) (punctuation 7087 . 7088) (symbol 7086 . 7087) (symbol 7076 . 7085) (punctuation 7074 . 7075) (symbol 7073 . 7074) (TYPENAME 7064 . 7072) (punctuation 7063 . 7064) (TEMPLATE 7054 . 7062) (symbol 6588 . 6601) (punctuation 6585 . 6586) (symbol 6584 . 6585) (symbol 6574 . 6583) (punctuation 6572 . 6573) (symbol 6571 . 6572) (TYPENAME 6562 . 6570) (punctuation 6561 . 6562) (TEMPLATE 6552 . 6560) (symbol 5898 . 5911) (punctuation 5895 . 5896) (symbol 5887 . 5895) (CLASS 5881 . 5886) (punctuation 5879 . 5880) (symbol 5870 . 5879) (punctuation 5868 . 5869) (TYPENAME 5860 . 5868) (punctuation 5859 . 5860) (TEMPLATE 5850 . 5858) (punctuation 5848 . 5849) (symbol 5847 . 5848) (symbol 5837 . 5846) (punctuation 5835 . 5836) (symbol 5834 . 5835) (TYPENAME 5825 . 5833) (punctuation 5824 . 5825) (TEMPLATE 5815 . 5823) (symbol 5620 . 5633) (punctuation 5617 . 5618) (symbol 5616 . 5617) (symbol 5606 . 5615) (punctuation 5604 . 5605) (symbol 5603 . 5604) (TYPENAME 5594 . 5602) (punctuation 5593 . 5594) (TEMPLATE 5584 . 5592) (symbol 5453 . 5466) (punctuation 5450 . 5451) (symbol 5449 . 5450) (symbol 5439 . 5448) (punctuation 5437 . 5438) (symbol 5436 . 5437) (TYPENAME 5427 . 5435) (punctuation 5426 . 5427) (TEMPLATE 5417 . 5425) (symbol 5183 . 5196) (punctuation 5180 . 5181) (symbol 5179 . 5180) (symbol 5169 . 5178) (punctuation 5167 . 5168) (symbol 5166 . 5167) (TYPENAME 5157 . 5165) (punctuation 5156 . 5157) (TEMPLATE 5147 . 5155) (symbol 5050 . 5063) (punctuation 5047 . 5048) (symbol 5046 . 5047) (symbol 5036 . 5045) (punctuation 5034 . 5035) (symbol 5033 . 5034) (TYPENAME 5024 . 5032) (punctuation 5023 . 5024) (TEMPLATE 5014 . 5022) (symbol 4917 . 4930) (punctuation 4914 . 4915) (symbol 4913 . 4914) (symbol 4903 . 4912) (punctuation 4901 . 4902) (symbol 4900 . 4901) (TYPENAME 4891 . 4899) (punctuation 4890 . 4891) (TEMPLATE 4881 . 4889) (symbol 4766 . 4779) (punctuation 4763 . 4764) (symbol 4762 . 4763) (symbol 4752 . 4761) (punctuation 4750 . 4751) (symbol 4749 . 4750) (TYPENAME 4740 . 4748) (punctuation 4739 . 4740) (TEMPLATE 4730 . 4738) (symbol 4614 . 4627) (punctuation 4611 . 4612) (symbol 4610 . 4611) (symbol 4600 . 4609) (punctuation 4598 . 4599) (symbol 4597 . 4598) (TYPENAME 4588 . 4596) (punctuation 4587 . 4588) (TEMPLATE 4578 . 4586) (symbol 4463 . 4476) (punctuation 4460 . 4461) (symbol 4459 . 4460) (symbol 4449 . 4458) (punctuation 4447 . 4448) (symbol 4446 . 4447) (TYPENAME 4437 . 4445) (punctuation 4436 . 4437) (TEMPLATE 4427 . 4435) (symbol 4312 . 4325) (punctuation 4309 . 4310) (symbol 4308 . 4309) (symbol 4298 . 4307) (punctuation 4296 . 4297) (symbol 4295 . 4296) (TYPENAME 4286 . 4294) (punctuation 4285 . 4286) (TEMPLATE 4276 . 4284) (symbol 4161 . 4174) (punctuation 4158 . 4159) (symbol 4157 . 4158) (symbol 4147 . 4156) (punctuation 4145 . 4146) (symbol 4144 . 4145) (TYPENAME 4135 . 4143) (punctuation 4134 . 4135) (TEMPLATE 4125 . 4133) (symbol 4010 . 4023) (punctuation 4007 . 4008) (symbol 4006 . 4007) (symbol 3996 . 4005) (punctuation 3994 . 3995) (symbol 3993 . 3994) (TYPENAME 3984 . 3992) (punctuation 3983 . 3984) (TEMPLATE 3974 . 3982) (symbol 3892 . 3905) (punctuation 3889 . 3890) (symbol 3888 . 3889) (symbol 3878 . 3887) (punctuation 3876 . 3877) (symbol 3875 . 3876) (TYPENAME 3866 . 3874) (punctuation 3865 . 3866) (TEMPLATE 3856 . 3864) (symbol 3797 . 3810) (symbol 3742 . 3755) (symbol 3677 . 3690) (symbol 3612 . 3625) (symbol 3540 . 3553) (symbol 3496 . 3509) (EXPLICIT 3434 . 3442) (symbol 3420 . 3433) (EXPLICIT 3373 . 3381) (symbol 3359 . 3372) (EXPLICIT 3304 . 3312) (symbol 3290 . 3303) (EXPLICIT 3128 . 3136) (symbol 3114 . 3127) (EXPLICIT 2620 . 2628) (symbol 2606 . 2619) (EXPLICIT 2545 . 2553) (symbol 2531 . 2544) (EXPLICIT 2486 . 2494) (symbol 2472 . 2485) (punctuation 2468 . 2469) (symbol 2467 . 2468) (symbol 2457 . 2466) (punctuation 2455 . 2456) (symbol 2454 . 2455) (TYPENAME 2445 . 2453) (punctuation 2444 . 2445) (TEMPLATE 2435 . 2443) (symbol 2350 . 2363) (symbol 2336 . 2349))
+    :lexical-table 
+        '(("GLM_GTC_quaternion")
+          )
+
+    )
+   (semanticdb-table "type_ptr.inl"
+    :file "type_ptr.inl"
+    :fsize 12353
+    :lastmodtime '(21192 32144 0 0)
+    )
+   (semanticdb-table "constants.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GLM_GTC_constants" variable (:constant-flag t) nil [1802 1819])
+            ("../detail/setup.hpp" include nil nil [1837 1867])
+            ("glm" type
+               (:members 
+                  ( ("epsilon" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2248 2266])
+                    ("zero" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2351 2366])
+                    ("one" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2451 2465])
+                    ("pi" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2564 2577])
+                    ("root_pi" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2678 2696])
+                    ("half_pi" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2786 2804])
+                    ("quarter_pi" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2894 2915])
+                    ("one_over_pi" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3005 3027])
+                    ("two_over_pi" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3117 3139])
+                    ("two_over_root_pi" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3235 3262])
+                    ("one_over_root_two" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3357 3385])
+                    ("root_half_pi" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3481 3504])
+                    ("root_two_pi" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3600 3622])
+                    ("root_ln_four" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3717 3740])
+                    ("e" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3834 3846])
+                    ("euler" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3946 3962])
+                    ("root_two" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4053 4072])
+                    ("root_three" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4163 4184])
+                    ("root_five" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4275 4295])
+                    ("ln_two" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4384 4401])
+                    ("ln_ten" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4491 4508])
+                    ("ln_ln_two" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4601 4621])
+                    ("third" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4710 4726])
+                    ("two_thirds" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4815 4836])
+                    ("golden_ratio" function
+                       (:prototype-flag t
+                        :type ("genType" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4945 4968]))                  
+                :type "namespace")
+                nil [1996 4979])
+            ("constants.inl" include nil nil [4997 5021]))          
+    :file "constants.hpp"
+    :pointmax 5049
+    :fsize 5233
+    :lastmodtime '(21192 32150 0 0)
+    :unmatched-syntax '((symbol 4931 . 4944) (punctuation 4928 . 4929) (symbol 4921 . 4928) (TYPENAME 4912 . 4920) (punctuation 4911 . 4912) (TEMPLATE 4902 . 4910) (symbol 4801 . 4814) (punctuation 4798 . 4799) (symbol 4791 . 4798) (TYPENAME 4782 . 4790) (punctuation 4781 . 4782) (TEMPLATE 4772 . 4780) (symbol 4696 . 4709) (punctuation 4693 . 4694) (symbol 4686 . 4693) (TYPENAME 4677 . 4685) (punctuation 4676 . 4677) (TEMPLATE 4667 . 4675) (symbol 4587 . 4600) (punctuation 4584 . 4585) (symbol 4577 . 4584) (TYPENAME 4568 . 4576) (punctuation 4567 . 4568) (TEMPLATE 4558 . 4566) (symbol 4477 . 4490) (punctuation 4474 . 4475) (symbol 4467 . 4474) (TYPENAME 4458 . 4466) (punctuation 4457 . 4458) (TEMPLATE 4448 . 4456) (symbol 4370 . 4383) (punctuation 4367 . 4368) (symbol 4360 . 4367) (TYPENAME 4351 . 4359) (punctuation 4350 . 4351) (TEMPLATE 4341 . 4349) (symbol 4261 . 4274) (punctuation 4258 . 4259) (symbol 4251 . 4258) (TYPENAME 4242 . 4250) (punctuation 4241 . 4242) (TEMPLATE 4232 . 4240) (symbol 4149 . 4162) (punctuation 4146 . 4147) (symbol 4139 . 4146) (TYPENAME 4130 . 4138) (punctuation 4129 . 4130) (TEMPLATE 4120 . 4128) (symbol 4039 . 4052) (punctuation 4036 . 4037) (symbol 4029 . 4036) (TYPENAME 4020 . 4028) (punctuation 4019 . 4020) (TEMPLATE 4010 . 4018) (symbol 3932 . 3945) (punctuation 3929 . 3930) (symbol 3922 . 3929) (TYPENAME 3913 . 3921) (punctuation 3912 . 3913) (TEMPLATE 3903 . 3911) (symbol 3820 . 3833) (punctuation 3817 . 3818) (symbol 3810 . 3817) (TYPENAME 3801 . 3809) (punctuation 3800 . 3801) (TEMPLATE 3791 . 3799) (symbol 3703 . 3716) (punctuation 3700 . 3701) (symbol 3693 . 3700) (TYPENAME 3684 . 3692) (punctuation 3683 . 3684) (TEMPLATE 3674 . 3682) (symbol 3586 . 3599) (punctuation 3583 . 3584) (symbol 3576 . 3583) (TYPENAME 3567 . 3575) (punctuation 3566 . 3567) (TEMPLATE 3557 . 3565) (symbol 3467 . 3480) (punctuation 3464 . 3465) (symbol 3457 . 3464) (TYPENAME 3448 . 3456) (punctuation 3447 . 3448) (TEMPLATE 3438 . 3446) (symbol 3343 . 3356) (punctuation 3340 . 3341) (symbol 3333 . 3340) (TYPENAME 3324 . 3332) (punctuation 3323 . 3324) (TEMPLATE 3314 . 3322) (symbol 3221 . 3234) (punctuation 3218 . 3219) (symbol 3211 . 3218) (TYPENAME 3202 . 3210) (punctuation 3201 . 3202) (TEMPLATE 3192 . 3200) (symbol 3103 . 3116) (punctuation 3100 . 3101) (symbol 3093 . 3100) (TYPENAME 3084 . 3092) (punctuation 3083 . 3084) (TEMPLATE 3074 . 3082) (symbol 2991 . 3004) (punctuation 2988 . 2989) (symbol 2981 . 2988) (TYPENAME 2972 . 2980) (punctuation 2971 . 2972) (TEMPLATE 2962 . 2970) (symbol 2880 . 2893) (punctuation 2877 . 2878) (symbol 2870 . 2877) (TYPENAME 2861 . 2869) (punctuation 2860 . 2861) (TEMPLATE 2851 . 2859) (symbol 2772 . 2785) (punctuation 2769 . 2770) (symbol 2762 . 2769) (TYPENAME 2753 . 2761) (punctuation 2752 . 2753) (TEMPLATE 2743 . 2751) (symbol 2664 . 2677) (punctuation 2661 . 2662) (symbol 2654 . 2661) (TYPENAME 2645 . 2653) (punctuation 2644 . 2645) (TEMPLATE 2635 . 2643) (symbol 2550 . 2563) (punctuation 2547 . 2548) (symbol 2540 . 2547) (TYPENAME 2531 . 2539) (punctuation 2530 . 2531) (TEMPLATE 2521 . 2529) (symbol 2437 . 2450) (punctuation 2434 . 2435) (symbol 2427 . 2434) (TYPENAME 2418 . 2426) (punctuation 2417 . 2418) (TEMPLATE 2408 . 2416) (symbol 2337 . 2350) (punctuation 2334 . 2335) (symbol 2327 . 2334) (TYPENAME 2318 . 2326) (punctuation 2317 . 2318) (TEMPLATE 2308 . 2316) (symbol 2234 . 2247) (punctuation 2231 . 2232) (symbol 2224 . 2231) (TYPENAME 2215 . 2223) (punctuation 2214 . 2215) (TEMPLATE 2205 . 2213))
+    :lexical-table 
+        '(("GLM_GTC_constants")
+          )
+
+    )
+   (semanticdb-table "quaternion.inl"
+    :file "quaternion.inl"
+    :fsize 23612
+    :lastmodtime '(21192 32150 0 0)
+    )
+   (semanticdb-table "constants.inl"
+    :file "constants.inl"
+    :fsize 4854
+    :lastmodtime '(21192 32150 0 0)
+    )
+   )
+  :file "!usr!include!glm!gtc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

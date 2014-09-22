@@ -1,4 +1,4 @@
-;;; auto-complete.el --- Auto Completion for GNU Emacs
+;; auto-complete.el --- Auto Completion for GNU Emacs
 
 ;; Copyright (C) 2008, 2009, 2010, 2011, 2012  Tomohiro Matsuyama
 
@@ -24,7 +24,7 @@
 ;;
 ;; This extension provides a way to complete with popup menu like:
 ;;
-;;     def-!-
+;;     def!-
 ;;     +-----------------+
 ;;     |defun::::::::::::|
 ;;     |defvar           |

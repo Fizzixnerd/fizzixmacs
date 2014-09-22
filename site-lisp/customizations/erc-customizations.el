@@ -33,14 +33,20 @@
 ;; logging
 (setq erc-log-channels-directory (expand-file-name "~/.erc/logs"))
 (erc-log-mode)
+
 ;; autoaway
 ;(setq erc-away-nickname "Fizzixnerd|autoaway|"
 ;      erc-autoaway-idle-seconds (* 15 60))
 ;(erc-autoaway-mode)
+
 ;; default server settings
-(setq erc-server "irc.ponychat.net"
+;; (setq erc-server "irc.ponychat.net"
+;;       erc-port 6667
+;;       erc-nick "Fizzixnerd")
+
+(setq erc-server "chat.freenode.net"
       erc-port 6667
       erc-nick "Fizzixnerd")
 ;; autojoin settings
-(setq erc-autojoin-channels-alist '(("ponychat.net" "#bronystate")))
+(setq erc-autojoin-channels-alist '(("ponychat.net" "#bronystate") ("freenode.net" "#lisp")))
 

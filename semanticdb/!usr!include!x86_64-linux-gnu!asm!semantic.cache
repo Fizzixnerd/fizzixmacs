@@ -1,0 +1,29 @@
+;; Object asm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "asm/"
+  :tables (list 
+   (semanticdb-table "ioctls.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("asm-generic/ioctls.h" include (:system-flag t) nil [1 32]))          
+    :file "ioctls.h"
+    :pointmax 33
+    :fsize 32
+    :lastmodtime '(21348 14456 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ioctl.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("asm-generic/ioctl.h" include (:system-flag t) nil [1 31]))          
+    :file "ioctl.h"
+    :pointmax 32
+    :fsize 31
+    :lastmodtime '(21348 14456 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!x86_64-linux-gnu!asm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

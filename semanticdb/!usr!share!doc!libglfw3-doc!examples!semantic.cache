@@ -1,0 +1,50 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables (list 
+   (semanticdb-table "simple.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLFW/glfw3.h" include (:system-flag t) nil [1127 1150])
+            ("stdlib.h" include (:system-flag t) nil [1152 1171])
+            ("stdio.h" include (:system-flag t) nil [1172 1190])
+            ("error_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("error" variable (:type "int") (reparse-symbol arg-sub-list) [1219 1229])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1230 1254]))                  
+                :type "void")
+                nil [1192 1290])
+            ("key_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1317 1336])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [1337 1345])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [1346 1359])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [1360 1371])
+                    ("mods" variable (:type "int") (reparse-symbol arg-sub-list) [1372 1381]))                  
+                :type "void")
+                nil [1292 1492])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1503 1508]))                  
+                :type "int")
+                nil [1494 2796]))          
+    :file "simple.c"
+    :pointmax 2808
+    :fsize 2808
+    :lastmodtime '(21187 5546 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!share!doc!libglfw3-doc!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

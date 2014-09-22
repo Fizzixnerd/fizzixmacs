@@ -1,0 +1,1113 @@
+;; Object EGL/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "EGL/"
+  :tables (list 
+   (semanticdb-table "egl.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__egl_h_" variable (:constant-flag t) nil [1362 1370])
+            ("EGL/eglplatform.h" include (:system-flag t) nil [1494 1522])
+            ("EGLBoolean" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "unsigned int"
+                :typedef ("unsigned int"))
+                (reparse-symbol extern-c-contents) [1621 1653])
+            ("EGLenum" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "unsigned int"
+                :typedef ("unsigned int"))
+                (reparse-symbol extern-c-contents) [1654 1683])
+            ("EGLConfig" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "void"
+                :pointer 1
+                :typedef ("void"))
+                (reparse-symbol extern-c-contents) [1684 1708])
+            ("EGLContext" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "void"
+                :pointer 1
+                :typedef ("void"))
+                (reparse-symbol extern-c-contents) [1709 1734])
+            ("EGLDisplay" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "void"
+                :pointer 1
+                :typedef ("void"))
+                (reparse-symbol extern-c-contents) [1735 1760])
+            ("EGLSurface" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "void"
+                :pointer 1
+                :typedef ("void"))
+                (reparse-symbol extern-c-contents) [1761 1786])
+            ("EGLClientBuffer" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "void"
+                :pointer 1
+                :typedef ("void"))
+                (reparse-symbol extern-c-contents) [1787 1817])
+            ("EGL_VERSION_1_0" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1848 1863])
+            ("EGL_VERSION_1_1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1876 1891])
+            ("EGL_VERSION_1_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1904 1919])
+            ("EGL_VERSION_1_3" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1932 1947])
+            ("EGL_VERSION_1_4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1960 1975])
+            ("EGL_FALSE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2136 2145])
+            ("EGL_TRUE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2158 2166])
+            ("EGL_DEFAULT_DISPLAY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2212 2231])
+            ("EGL_NO_CONTEXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2267 2281])
+            ("EGL_NO_DISPLAY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2308 2322])
+            ("EGL_NO_SURFACE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2349 2363])
+            ("EGL_DONT_CARE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2425 2438])
+            ("EGL_SUCCESS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2501 2512])
+            ("EGL_NOT_INITIALIZED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2530 2549])
+            ("EGL_BAD_ACCESS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2566 2580])
+            ("EGL_BAD_ALLOC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2598 2611])
+            ("EGL_BAD_ATTRIBUTE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2629 2646])
+            ("EGL_BAD_CONFIG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2663 2677])
+            ("EGL_BAD_CONTEXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2695 2710])
+            ("EGL_BAD_CURRENT_SURFACE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2728 2751])
+            ("EGL_BAD_DISPLAY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2768 2783])
+            ("EGL_BAD_MATCH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2801 2814])
+            ("EGL_BAD_NATIVE_PIXMAP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2832 2853])
+            ("EGL_BAD_NATIVE_WINDOW" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2870 2891])
+            ("EGL_BAD_PARAMETER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2908 2925])
+            ("EGL_BAD_SURFACE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2942 2957])
+            ("EGL_CONTEXT_LOST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2975 2991])
+            ("EGL_BUFFER_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3122 3137])
+            ("EGL_ALPHA_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3155 3169])
+            ("EGL_BLUE_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3187 3200])
+            ("EGL_GREEN_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3218 3232])
+            ("EGL_RED_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3250 3262])
+            ("EGL_DEPTH_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3280 3294])
+            ("EGL_STENCIL_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3312 3328])
+            ("EGL_CONFIG_CAVEAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3345 3362])
+            ("EGL_CONFIG_ID" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3379 3392])
+            ("EGL_LEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3410 3419])
+            ("EGL_MAX_PBUFFER_HEIGHT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3437 3459])
+            ("EGL_MAX_PBUFFER_PIXELS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3476 3498])
+            ("EGL_MAX_PBUFFER_WIDTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3515 3536])
+            ("EGL_NATIVE_RENDERABLE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3553 3574])
+            ("EGL_NATIVE_VISUAL_ID" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3591 3611])
+            ("EGL_NATIVE_VISUAL_TYPE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3628 3650])
+            ("EGL_SAMPLES" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3667 3678])
+            ("EGL_SAMPLE_BUFFERS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3696 3714])
+            ("EGL_SURFACE_TYPE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3731 3747])
+            ("EGL_TRANSPARENT_TYPE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3764 3784])
+            ("EGL_TRANSPARENT_BLUE_VALUE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3801 3827])
+            ("EGL_TRANSPARENT_GREEN_VALUE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3843 3870])
+            ("EGL_TRANSPARENT_RED_VALUE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3886 3911])
+            ("EGL_NONE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3927 3935])
+            ("EGL_BIND_TO_TEXTURE_RGB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3982 4005])
+            ("EGL_BIND_TO_TEXTURE_RGBA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4022 4046])
+            ("EGL_MIN_SWAP_INTERVAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4062 4083])
+            ("EGL_MAX_SWAP_INTERVAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4100 4121])
+            ("EGL_LUMINANCE_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4138 4156])
+            ("EGL_ALPHA_MASK_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4173 4192])
+            ("EGL_COLOR_BUFFER_TYPE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4209 4230])
+            ("EGL_RENDERABLE_TYPE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4247 4266])
+            ("EGL_MATCH_NATIVE_PIXMAP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4283 4306])
+            ("EGL_CONFORMANT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4362 4376])
+            ("EGL_SLOW_CONFIG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4488 4503])
+            ("EGL_NON_CONFORMANT_CONFIG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4551 4576])
+            ("EGL_TRANSPARENT_RGB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4622 4641])
+            ("EGL_RGB_BUFFER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4691 4705])
+            ("EGL_LUMINANCE_BUFFER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4757 4777])
+            ("EGL_NO_TEXTURE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4888 4902])
+            ("EGL_TEXTURE_RGB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4920 4935])
+            ("EGL_TEXTURE_RGBA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4953 4969])
+            ("EGL_TEXTURE_2D" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4986 5000])
+            ("EGL_PBUFFER_BIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5052 5067])
+            ("EGL_PIXMAP_BIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5118 5132])
+            ("EGL_WINDOW_BIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5183 5197])
+            ("EGL_VG_COLORSPACE_LINEAR_BIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5248 5276])
+            ("EGL_VG_ALPHA_FORMAT_PRE_BIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5325 5352])
+            ("EGL_MULTISAMPLE_RESOLVE_BOX_BIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5401 5432])
+            ("EGL_SWAP_BEHAVIOR_PRESERVED_BIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5481 5512])
+            ("EGL_OPENGL_ES_BIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5562 5579])
+            ("EGL_OPENVG_BIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5632 5646])
+            ("EGL_OPENGL_ES2_BIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5700 5718])
+            ("EGL_OPENGL_BIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5771 5785])
+            ("EGL_VENDOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5866 5876])
+            ("EGL_VERSION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5894 5905])
+            ("EGL_EXTENSIONS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5923 5937])
+            ("EGL_CLIENT_APIS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5955 5970])
+            ("EGL_HEIGHT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6055 6065])
+            ("EGL_WIDTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6083 6092])
+            ("EGL_LARGEST_PBUFFER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6110 6129])
+            ("EGL_TEXTURE_FORMAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6146 6164])
+            ("EGL_TEXTURE_TARGET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6181 6199])
+            ("EGL_MIPMAP_TEXTURE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6216 6234])
+            ("EGL_MIPMAP_LEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6251 6267])
+            ("EGL_RENDER_BUFFER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6284 6301])
+            ("EGL_VG_COLORSPACE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6318 6335])
+            ("EGL_VG_ALPHA_FORMAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6352 6371])
+            ("EGL_HORIZONTAL_RESOLUTION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6388 6413])
+            ("EGL_VERTICAL_RESOLUTION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6429 6452])
+            ("EGL_PIXEL_ASPECT_RATIO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6469 6491])
+            ("EGL_SWAP_BEHAVIOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6508 6525])
+            ("EGL_MULTISAMPLE_RESOLVE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6542 6565])
+            ("EGL_BACK_BUFFER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6662 6677])
+            ("EGL_SINGLE_BUFFER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6695 6712])
+            ("EGL_VG_COLORSPACE_sRGB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6756 6778])
+            ("EGL_VG_COLORSPACE_LINEAR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6825 6849])
+            ("EGL_VG_ALPHA_FORMAT_NONPRE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6923 6949])
+            ("EGL_VG_ALPHA_FORMAT_PRE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6994 7017])
+            ("EGL_DISPLAY_SCALING" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7194 7213])
+            ("EGL_UNKNOWN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7276 7287])
+            ("EGL_BUFFER_PRESERVED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7345 7365])
+            ("EGL_BUFFER_DESTROYED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7412 7432])
+            ("EGL_OPENVG_IMAGE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7529 7545])
+            ("EGL_CONTEXT_CLIENT_TYPE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7590 7613])
+            ("EGL_CONTEXT_CLIENT_VERSION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7662 7688])
+            ("EGL_MULTISAMPLE_RESOLVE_DEFAULT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7744 7775])
+            ("EGL_MULTISAMPLE_RESOLVE_BOX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7827 7854])
+            ("EGL_OPENGL_ES_API" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7938 7955])
+            ("EGL_OPENVG_API" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7972 7986])
+            ("EGL_OPENGL_API" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8004 8018])
+            ("EGL_DRAW" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8069 8077])
+            ("EGL_READ" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8095 8103])
+            ("EGL_CORE_NATIVE_ENGINE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8147 8169])
+            ("EGL_COLORSPACE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8243 8257])
+            ("EGL_ALPHA_FORMAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8286 8302])
+            ("EGL_COLORSPACE_sRGB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8332 8351])
+            ("EGL_COLORSPACE_LINEAR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8384 8405])
+            ("EGL_ALPHA_FORMAT_NONPRE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8440 8463])
+            ("EGL_ALPHA_FORMAT_PRE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8500 8520])
+            ("eglGetError" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8790 8795]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8766 8796])
+            ("eglGetDisplay" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("display_id" variable (:type ("EGLNativeDisplayType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8842 8874]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8816 8875])
+            ("eglInitialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8920 8935])
+                    ("major" variable
+                       (:pointer 1
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8936 8950])
+                    ("minor" variable
+                       (:pointer 1
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8951 8965]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8894 8966])
+            ("eglTerminate" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9010 9025]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8985 9026])
+            ("eglQueryString" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9075 9090])
+                    ("name" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9091 9103]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9048 9104])
+            ("eglGetConfigs" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9150 9165])
+                    ("configs" variable
+                       (:pointer 1
+                        :type ("EGLConfig" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9166 9185])
+                    ("config_size" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9190 9209])
+                    ("num_config" variable
+                       (:pointer 1
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9210 9229]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9124 9230])
+            ("eglChooseConfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9277 9292])
+                    ("attrib_list" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9293 9319])
+                    ("configs" variable
+                       (:pointer 1
+                        :type ("EGLConfig" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9326 9345])
+                    ("config_size" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9346 9365])
+                    ("num_config" variable
+                       (:pointer 1
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9372 9391]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9249 9392])
+            ("eglGetConfigAttrib" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9442 9457])
+                    ("config" variable (:type ("EGLConfig" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9458 9475])
+                    ("attribute" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9485 9502])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9503 9517]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9411 9518])
+            ("eglCreateWindowSurface" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9573 9588])
+                    ("config" variable (:type ("EGLConfig" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9589 9606])
+                    ("win" variable (:type ("EGLNativeWindowType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9613 9637])
+                    ("attrib_list" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9644 9670]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9538 9671])
+            ("eglCreatePbufferSurface" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9726 9741])
+                    ("config" variable (:type ("EGLConfig" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9742 9759])
+                    ("attrib_list" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9767 9793]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9690 9794])
+            ("eglCreatePixmapSurface" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9848 9863])
+                    ("config" variable (:type ("EGLConfig" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9864 9881])
+                    ("pixmap" variable (:type ("EGLNativePixmapType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9888 9915])
+                    ("attrib_list" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9922 9948]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9813 9949])
+            ("eglDestroySurface" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9998 10013])
+                    ("surface" variable (:type ("EGLSurface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10014 10033]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9968 10034])
+            ("eglQuerySurface" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10081 10096])
+                    ("surface" variable (:type ("EGLSurface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10097 10116])
+                    ("attribute" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10123 10140])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10141 10155]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10053 10156])
+            ("eglBindAPI" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("api" variable (:type ("EGLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10199 10211]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10176 10212])
+            ("eglQueryAPI" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10252 10257]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10228 10258])
+            ("eglWaitClient" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10304 10309]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10278 10310])
+            ("eglReleaseThread" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10359 10364]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10330 10365])
+            ("eglCreatePbufferFromClientBuffer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10438 10453])
+                    ("buftype" variable (:type ("EGLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10454 10470])
+                    ("buffer" variable (:type ("EGLClientBuffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10471 10494])
+                    ("config" variable (:type ("EGLConfig" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10502 10519])
+                    ("attrib_list" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10520 10546]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10385 10547])
+            ("eglSurfaceAttrib" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10596 10611])
+                    ("surface" variable (:type ("EGLSurface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10612 10631])
+                    ("attribute" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10639 10656])
+                    ("value" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10657 10670]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10567 10671])
+            ("eglBindTexImage" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10718 10733])
+                    ("surface" variable (:type ("EGLSurface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10734 10753])
+                    ("buffer" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10754 10768]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10690 10769])
+            ("eglReleaseTexImage" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10819 10834])
+                    ("surface" variable (:type ("EGLSurface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10835 10854])
+                    ("buffer" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10855 10869]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10788 10870])
+            ("eglSwapInterval" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10919 10934])
+                    ("interval" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10935 10951]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10891 10952])
+            ("eglCreateContext" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11002 11017])
+                    ("config" variable (:type ("EGLConfig" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11018 11035])
+                    ("share_context" variable (:type ("EGLContext" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11043 11068])
+                    ("attrib_list" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11076 11102]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10973 11103])
+            ("eglDestroyContext" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11152 11167])
+                    ("ctx" variable (:type ("EGLContext" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11168 11183]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11122 11184])
+            ("eglMakeCurrent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11230 11245])
+                    ("draw" variable (:type ("EGLSurface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11246 11262])
+                    ("read" variable (:type ("EGLSurface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11268 11284])
+                    ("ctx" variable (:type ("EGLContext" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11285 11300]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11203 11301])
+            ("eglGetCurrentContext" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11354 11359]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11321 11360])
+            ("eglGetCurrentSurface" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("readdraw" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11412 11428]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11379 11429])
+            ("eglGetCurrentDisplay" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11481 11486]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11448 11487])
+            ("eglQueryContext" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11534 11549])
+                    ("ctx" variable (:type ("EGLContext" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11550 11565])
+                    ("attribute" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11572 11589])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("EGLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11590 11604]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11506 11605])
+            ("eglWaitGL" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11647 11652]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11625 11653])
+            ("eglWaitNative" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("engine" variable (:type ("EGLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11698 11712]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11672 11713])
+            ("eglSwapBuffers" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11759 11774])
+                    ("surface" variable (:type ("EGLSurface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11775 11794]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11732 11795])
+            ("eglCopyBuffers" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dpy" variable (:type ("EGLDisplay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11841 11856])
+                    ("surface" variable (:type ("EGLSurface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11857 11876])
+                    ("target" variable (:type ("EGLNativePixmapType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11882 11909]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11814 11910])
+            ("__eglMustCastToProperFunctionPointerType" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [12064 12119])
+            ("eglGetProcAddress" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("EGLAPIENTRY" type (:type "class") nil nil)
+                :arguments 
+                  ( ("procname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12279 12300]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12242 12301]))          
+    :file "egl.h"
+    :pointmax 12354
+    :fsize 12353
+    :lastmodtime '(21447 25615 0 0)
+    :unmatched-syntax '((symbol 12201 . 12241) (symbol 12194 . 12200) (TYPEDEF 12056 . 12063) (symbol 11803 . 11813) (symbol 11796 . 11802) (symbol 11721 . 11731) (symbol 11714 . 11720) (symbol 11661 . 11671) (symbol 11654 . 11660) (symbol 11614 . 11624) (symbol 11607 . 11613) (symbol 11495 . 11505) (symbol 11488 . 11494) (symbol 11437 . 11447) (symbol 11430 . 11436) (symbol 11368 . 11378) (symbol 11361 . 11367) (symbol 11310 . 11320) (symbol 11303 . 11309) (symbol 11192 . 11202) (symbol 11185 . 11191) (symbol 11111 . 11121) (symbol 11104 . 11110) (symbol 10962 . 10972) (symbol 10955 . 10961) (symbol 10880 . 10890) (symbol 10873 . 10879) (symbol 10777 . 10787) (symbol 10770 . 10776) (symbol 10679 . 10689) (symbol 10672 . 10678) (symbol 10556 . 10566) (symbol 10549 . 10555) (symbol 10374 . 10384) (symbol 10367 . 10373) (symbol 10319 . 10329) (symbol 10312 . 10318) (symbol 10267 . 10277) (symbol 10260 . 10266) (symbol 10220 . 10227) (symbol 10213 . 10219) (symbol 10165 . 10175) (symbol 10158 . 10164) (symbol 10042 . 10052) (symbol 10035 . 10041) (symbol 9957 . 9967) (symbol 9950 . 9956) (symbol 9802 . 9812) (symbol 9795 . 9801) (symbol 9679 . 9689) (symbol 9672 . 9678) (symbol 9527 . 9537) (symbol 9520 . 9526) (symbol 9400 . 9410) (symbol 9393 . 9399) (symbol 9238 . 9248) (symbol 9231 . 9237) (symbol 9113 . 9123) (symbol 9106 . 9112) (punctuation 9046 . 9047) (CHAR 9041 . 9045) (CONST 9035 . 9040) (symbol 9028 . 9034) (symbol 8974 . 8984) (symbol 8967 . 8973) (symbol 8883 . 8893) (symbol 8876 . 8882) (symbol 8805 . 8815) (symbol 8798 . 8804) (symbol 8759 . 8765) (symbol 8752 . 8758))
+    :lexical-table 
+        '(("EGL_VERSION_1_0" . ((number "1" 1866 . 1867)))
+          ("EGL_FALSE" . ((number "0" 2148 . 2149)))
+          ("EGL_BAD_CURRENT_SURFACE" . ((number "0x3007" 2753 . 2759)))
+          ("EGL_RED_SIZE" . ((number "0x3024" 3265 . 3271)))
+          ("EGL_RENDERABLE_TYPE" . ((number "0x3040" 4268 . 4274)))
+          ("EGL_TEXTURE_RGBA" . ((number "0x305E" 4971 . 4977)))
+          ("EGL_OPENGL_ES2_BIT" . ((number "0x0004" 5720 . 5726)))
+          ("EGL_HORIZONTAL_RESOLUTION" . ((number "0x3090" 6414 . 6420)))
+          ("EGL_VERSION_1_1" . ((number "1" 1894 . 1895)))
+          ("EGL_TRUE" . ((number "1" 2169 . 2170)))
+          ("EGL_NO_DISPLAY" . ((semantic-list "((EGLDisplay)0)" 2325 . 2340)))
+          ("EGL_DONT_CARE" . ((semantic-list "((EGLint)-1)" 2441 . 2453)))
+          ("EGL_SUCCESS" . ((number "0x3000" 2515 . 2521)))
+          ("EGL_MAX_PBUFFER_WIDTH" . ((number "0x302C" 3538 . 3544)))
+          ("EGL_NON_CONFORMANT_CONFIG" . ((number "0x3051" 4577 . 4583)))
+          ("EGL_VERTICAL_RESOLUTION" . ((number "0x3091" 6454 . 6460)))
+          ("EGL_VERSION_1_2" . ((number "1" 1922 . 1923)))
+          ("EGL_BUFFER_SIZE" . ((number "0x3020" 3140 . 3146)))
+          ("EGL_NATIVE_RENDERABLE" . ((number "0x302D" 3576 . 3582)))
+          ("EGL_SAMPLES" . ((number "0x3031" 3681 . 3687)))
+          ("EGL_TRANSPARENT_GREEN_VALUE" . ((number "0x3036" 3871 . 3877)))
+          ("EGL_BIND_TO_TEXTURE_RGBA" . ((number "0x303A" 4047 . 4053)))
+          ("EGL_CONFORMANT" . ((number "0x3042" 4379 . 4385)))
+          ("EGL_MIPMAP_TEXTURE" . ((number "0x3082" 6236 . 6242)))
+          ("EGL_BUFFER_PRESERVED" . ((number "0x3094" 7367 . 7373)))
+          ("EGL_COLORSPACE_sRGB" . ((symbol "EGL_VG_COLORSPACE_sRGB" 8353 . 8375)))
+          ("EGL_VERSION_1_3" . ((number "1" 1950 . 1951)))
+          ("EGL_BAD_NATIVE_WINDOW" . ((number "0x300B" 2893 . 2899)))
+          ("EGL_SAMPLE_BUFFERS" . ((number "0x3032" 3716 . 3722)))
+          ("EGL_SURFACE_TYPE" . ((number "0x3033" 3749 . 3755)))
+          ("EGL_TRANSPARENT_RED_VALUE" . ((number "0x3037" 3912 . 3918)))
+          ("EGL_BIND_TO_TEXTURE_RGB" . ((number "0x3039" 4007 . 4013)))
+          ("EGL_MAX_SWAP_INTERVAL" . ((number "0x303C" 4123 . 4129)))
+          ("EGL_SLOW_CONFIG" . ((number "0x3050" 4506 . 4512)))
+          ("EGL_CLIENT_APIS" . ((number "0x308D" 5973 . 5979)))
+          ("EGL_VG_ALPHA_FORMAT" . ((number "0x3088" 6373 . 6379)))
+          ("EGL_PIXEL_ASPECT_RATIO" . ((number "0x3092" 6493 . 6499)))
+          ("EGL_VG_COLORSPACE_sRGB" . ((number "0x3089" 6780 . 6786)))
+          ("EGL_READ" . ((number "0x305A" 8106 . 8112)))
+          ("EGL_COLORSPACE" . ((symbol "EGL_VG_COLORSPACE" 8260 . 8277)))
+          ("__egl_h_")
+          ("EGL_VERSION_1_4" . ((number "1" 1978 . 1979)))
+          ("EGL_BAD_SURFACE" . ((number "0x300D" 2960 . 2966)))
+          ("EGL_GREEN_SIZE" . ((number "0x3023" 3235 . 3241)))
+          ("EGL_TRANSPARENT_TYPE" . ((number "0x3034" 3786 . 3792)))
+          ("EGL_LUMINANCE_SIZE" . ((number "0x303D" 4158 . 4164)))
+          ("EGL_RGB_BUFFER" . ((number "0x308E" 4708 . 4714)))
+          ("EGL_VG_COLORSPACE_LINEAR_BIT" . ((number "0x0020" 5277 . 5283)))
+          ("EGL_SWAP_BEHAVIOR_PRESERVED_BIT" . ((number "0x0400" 5513 . 5519)))
+          ("EGL_OPENGL_ES_BIT" . ((number "0x0001" 5581 . 5587)))
+          ("EGL_OPENGL_BIT" . ((number "0x0008" 5788 . 5794)))
+          ("EGL_SWAP_BEHAVIOR" . ((number "0x3093" 6527 . 6533)))
+          ("EGL_SINGLE_BUFFER" . ((number "0x3085" 6714 . 6720)))
+          ("EGL_VG_COLORSPACE_LINEAR" . ((number "0x308A" 6850 . 6856)))
+          ("EGL_MULTISAMPLE_RESOLVE_DEFAULT" . ((number "0x309A" 7776 . 7782)))
+          ("EGL_ALPHA_FORMAT" . ((symbol "EGL_VG_ALPHA_FORMAT" 8304 . 8323)))
+          ("EGL_ALPHA_FORMAT_NONPRE" . ((symbol "EGL_VG_ALPHA_FORMAT_NONPRE" 8465 . 8491)))
+          ("EGL_NO_CONTEXT" . ((semantic-list "((EGLContext)0)" 2284 . 2299)))
+          ("EGL_BAD_CONFIG" . ((number "0x3005" 2680 . 2686)))
+          ("EGL_CONTEXT_LOST" . ((number "0x300E" 2993 . 2999)))
+          ("EGL_CONFIG_CAVEAT" . ((number "0x3027" 3364 . 3370)))
+          ("EGL_VG_ALPHA_FORMAT_PRE_BIT" . ((number "0x0040" 5353 . 5359)))
+          ("EGL_VENDOR" . ((number "0x3053" 5879 . 5885)))
+          ("EGL_VERSION" . ((number "0x3054" 5908 . 5914)))
+          ("EGL_LARGEST_PBUFFER" . ((number "0x3058" 6131 . 6137)))
+          ("EGL_MIPMAP_LEVEL" . ((number "0x3083" 6269 . 6275)))
+          ("EGL_RENDER_BUFFER" . ((number "0x3086" 6303 . 6309)))
+          ("EGL_BACK_BUFFER" . ((number "0x3084" 6680 . 6686)))
+          ("EGL_OPENGL_ES_API" . ((number "0x30A0" 7957 . 7963)))
+          ("EGL_OPENGL_API" . ((number "0x30A2" 8021 . 8027)))
+          ("EGL_CORE_NATIVE_ENGINE" . ((number "0x305B" 8171 . 8177)))
+          ("EGL_ALPHA_SIZE" . ((number "0x3021" 3172 . 3178)))
+          ("EGL_STENCIL_SIZE" . ((number "0x3026" 3330 . 3336)))
+          ("EGL_WINDOW_BIT" . ((number "0x0004" 5200 . 5206)))
+          ("EGL_WIDTH" . ((number "0x3057" 6095 . 6101)))
+          ("EGL_BUFFER_DESTROYED" . ((number "0x3095" 7434 . 7440)))
+          ("EGL_ALPHA_FORMAT_PRE" . ((symbol "EGL_VG_ALPHA_FORMAT_PRE" 8522 . 8545)))
+          ("EGL_BAD_DISPLAY" . ((number "0x3008" 2786 . 2792)))
+          ("EGL_CONFIG_ID" . ((number "0x3028" 3395 . 3401)))
+          ("EGL_COLOR_BUFFER_TYPE" . ((number "0x303F" 4232 . 4238)))
+          ("EGL_TEXTURE_RGB" . ((number "0x305D" 4938 . 4944)))
+          ("EGL_TEXTURE_2D" . ((number "0x305F" 5003 . 5009)))
+          ("EGL_OPENVG_BIT" . ((number "0x0002" 5649 . 5655)))
+          ("EGL_TEXTURE_FORMAT" . ((number "0x3080" 6166 . 6172)))
+          ("EGL_VG_ALPHA_FORMAT_NONPRE" . ((number "0x308B" 6950 . 6956)))
+          ("EGL_UNKNOWN" . ((semantic-list "((EGLint)-1)" 7290 . 7302)))
+          ("EGL_CONTEXT_CLIENT_VERSION" . ((number "0x3098" 7689 . 7695)))
+          ("EGL_BAD_NATIVE_PIXMAP" . ((number "0x300A" 2855 . 2861)))
+          ("EGL_DEPTH_SIZE" . ((number "0x3025" 3297 . 3303)))
+          ("EGL_NATIVE_VISUAL_ID" . ((number "0x302E" 3613 . 3619)))
+          ("EGL_TRANSPARENT_BLUE_VALUE" . ((number "0x3035" 3828 . 3834)))
+          ("EGL_MATCH_NATIVE_PIXMAP" . ((number "0x3041" 4308 . 4314)))
+          ("EGL_LUMINANCE_BUFFER" . ((number "0x308F" 4779 . 4785)))
+          ("EGL_NO_TEXTURE" . ((number "0x305C" 4905 . 4911)))
+          ("EGL_PIXMAP_BIT" . ((number "0x0002" 5135 . 5141)))
+          ("EGL_CONTEXT_CLIENT_TYPE" . ((number "0x3097" 7615 . 7621)))
+          ("EGL_OPENVG_API" . ((number "0x30A1" 7989 . 7995)))
+          ("EGL_DRAW" . ((number "0x3059" 8080 . 8086)))
+          ("EGL_COLORSPACE_LINEAR" . ((symbol "EGL_VG_COLORSPACE_LINEAR" 8407 . 8431)))
+          ("EGL_PBUFFER_BIT" . ((number "0x0001" 5070 . 5076)))
+          ("EGL_MULTISAMPLE_RESOLVE_BOX_BIT" . ((number "0x0200" 5433 . 5439)))
+          ("EGL_EXTENSIONS" . ((number "0x3055" 5940 . 5946)))
+          ("EGL_VG_COLORSPACE" . ((number "0x3087" 6337 . 6343)))
+          ("EGL_VG_ALPHA_FORMAT_PRE" . ((number "0x308C" 7019 . 7025)))
+          ("EGL_OPENVG_IMAGE" . ((number "0x3096" 7547 . 7553)))
+          ("EGL_BLUE_SIZE" . ((number "0x3022" 3203 . 3209)))
+          ("EGL_ALPHA_MASK_SIZE" . ((number "0x303E" 4194 . 4200)))
+          ("EGL_TEXTURE_TARGET" . ((number "0x3081" 6201 . 6207)))
+          ("EGL_DISPLAY_SCALING" . ((number "10000" 7215 . 7220)))
+          ("EGL_MULTISAMPLE_RESOLVE_BOX" . ((number "0x309B" 7855 . 7861)))
+          ("EGL_DEFAULT_DISPLAY" . ((semantic-list "((EGLNativeDisplayType)0)" 2233 . 2258)))
+          ("EGL_NO_SURFACE" . ((semantic-list "((EGLSurface)0)" 2366 . 2381)))
+          ("EGL_NOT_INITIALIZED" . ((number "0x3001" 2551 . 2557)))
+          ("EGL_BAD_ALLOC" . ((number "0x3003" 2614 . 2620)))
+          ("EGL_BAD_ATTRIBUTE" . ((number "0x3004" 2648 . 2654)))
+          ("EGL_BAD_CONTEXT" . ((number "0x3006" 2713 . 2719)))
+          ("EGL_MAX_PBUFFER_HEIGHT" . ((number "0x302A" 3461 . 3467)))
+          ("EGL_NATIVE_VISUAL_TYPE" . ((number "0x302F" 3652 . 3658)))
+          ("EGL_MULTISAMPLE_RESOLVE" . ((number "0x3099" 6567 . 6573)))
+          ("EGL_BAD_ACCESS" . ((number "0x3002" 2583 . 2589)))
+          ("EGL_BAD_MATCH" . ((number "0x3009" 2817 . 2823)))
+          ("EGL_BAD_PARAMETER" . ((number "0x300C" 2927 . 2933)))
+          ("EGL_LEVEL" . ((number "0x3029" 3422 . 3428)))
+          ("EGL_MAX_PBUFFER_PIXELS" . ((number "0x302B" 3500 . 3506)))
+          ("EGL_NONE" . ((number "0x3038" 3938 . 3944)))
+          ("EGL_MIN_SWAP_INTERVAL" . ((number "0x303B" 4085 . 4091)))
+          ("EGL_TRANSPARENT_RGB" . ((number "0x3052" 4643 . 4649)))
+          ("EGL_HEIGHT" . ((number "0x3056" 6068 . 6074)))
+          )
+
+    )
+   (semanticdb-table "eglplatform.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__eglplatform_h_" variable (:constant-flag t) nil [34 50])
+            ("KHR/khrplatform.h" include (:system-flag t) nil [1717 1745])
+            ("EGLAPI" variable (:constant-flag t) nil [2082 2088])
+            ("EGLAPIENTRY" variable (:constant-flag t) nil [2141 2152])
+            ("EGLAPIENTRYP" variable (:constant-flag t) nil [2186 2198])
+            ("X11/Xlib.h" include (:system-flag t) nil [4145 4166])
+            ("X11/Xutil.h" include (:system-flag t) nil [4167 4189])
+            ("EGLNativeDisplayType" type
+               (:typedef ("Display" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "Display"
+                :type "typedef")
+                nil [4191 4229])
+            ("EGLNativePixmapType" type
+               (:typedef ("Pixmap" type (:type "class") nil nil)
+                :superclasses "Pixmap"
+                :type "typedef")
+                nil [4230 4267])
+            ("EGLNativeWindowType" type
+               (:typedef ("Window" type (:type "class") nil nil)
+                :superclasses "Window"
+                :type "typedef")
+                nil [4268 4305])
+            ("NativeDisplayType" type
+               (:typedef ("EGLNativeDisplayType" type (:type "class") nil nil)
+                :superclasses "EGLNativeDisplayType"
+                :type "typedef")
+                nil [4448 4495])
+            ("NativePixmapType" type
+               (:typedef ("EGLNativePixmapType" type (:type "class") nil nil)
+                :superclasses "EGLNativePixmapType"
+                :type "typedef")
+                nil [4496 4542])
+            ("NativeWindowType" type
+               (:typedef ("EGLNativeWindowType" type (:type "class") nil nil)
+                :superclasses "EGLNativeWindowType"
+                :type "typedef")
+                nil [4543 4589])
+            ("EGLint" type
+               (:typedef ("khronos_int32_t" type (:type "class") nil nil)
+                :superclasses "khronos_int32_t"
+                :type "typedef")
+                nil [4993 5024]))          
+    :file "eglplatform.h"
+    :pointmax 5055
+    :fsize 5054
+    :lastmodtime '(21447 25615 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("EGLAPI" . ((symbol "KHRONOS_APICALL" 2089 . 2104)))
+          ("EGLAPIENTRY" . ((symbol "KHRONOS_APIENTRY" 2154 . 2170)))
+          ("__eglplatform_h_")
+          ("EGLAPIENTRYP" . ((symbol "EGLAPIENTRY" 2199 . 2210) (punctuation "*" 2210 . 2211)))
+          )
+
+    )
+   )
+  :file "!usr!include!EGL!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
