@@ -70,6 +70,7 @@
 (load-library "customizations/cl-customizations.el")
 (load-library "customizations/c++-customizations.el")
 (load-library "customizations/visual-customizations.el")
+(load-library "customizations/haskell-customizations.el")
 
 ;; These libraries should only be loaded in their respective major
 ;; modes.

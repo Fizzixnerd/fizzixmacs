@@ -33,6 +33,9 @@
 ;; Workaround for the compile error.  See above.
 (require 'ac-slime)
 
+(require 'ghc)
+(require 'haskell-mode)
+
 (ac-config-default)
 
 (defun my-ac-cc-mode-hook ()
@@ -51,6 +54,10 @@
   (setf ac-sources (append '(ac-source-slime-simple)
 			   ac-sources)))
 
+(defun my-ac-haskell-mode-hook ()
+  (setf ac-sources (append ('ac-source-ghc-mod)
+			   ac-sources)))
+
 (add-hook 'c-mode-common-hook 'my-ac-cc-mode-hook)
 (add-hook 'python-mode-hook 'my-ac-python-mode-hook)
 (add-hook 'java-mode-hook 'my-ac-java-mode-hook)
@@ -59,6 +66,7 @@
 (add-hook 'slime-mode-hook 'my-ac-common-lisp-mode-hook)
 (add-hook 'slime-repl-mode-hook 'my-ac-common-lisp-mode-hook)
 (add-hook 'slime-mode-hook 'set-up-slime-ac)
+(add-hook 'haskell-mode-hook 'my-ac-haskell-mode-hook)
 (eval-after-load "autocomplete"
   '(add-to-list 'ac-modes 'slime-repl-mode))
 
