@@ -15,6 +15,7 @@
 ;   and all the subdirectories thereof if the variable 'load-dir-recursive
 ;   is t.
 
+
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/cedet/")
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/cedet/lisp")
 ;; Prevents regular CEDET from loading, which would screw everything up
@@ -25,7 +26,9 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/glsl-mode/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/cc-mode-5.32.5/")
 (add-to-list 'load-path "~/.emacs.d/elpa/")
+
 (require 'slime)
+
 
 ; Fuck, I don't know what to do with these. I will leave them here, I
 ; guess.
@@ -34,12 +37,19 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(LaTeX-command "latex --enable-write18")
  '(column-number-mode t)
  '(doc-view-continuous t)
  '(ede-project-directories (quote ("/home/matt/src/silveretta/src")))
+ '(haskell-program-name "cabal repl")
+ '(inferior-haskell-use-web-docs (quote always))
+ '(inferior-haskell-wait-and-jump t)
  '(inhibit-startup-screen t)
+ '(org-agenda-files (quote ("~/Documents/school/jph311/project/proposal/proposal.org")))
  '(preview-auto-cache-preamble t)
  '(preview-gs-options (quote ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4")))
+ '(quack-pretty-lambda-p t)
+ '(quack-smart-open-paren-p t)
  '(save-place t nil (saveplace))
  '(scroll-bar-mode (quote right))
  '(semantic-c-dependency-system-include-path (quote ("/usr/include" "~/src/silveretta/src/include")))
@@ -47,12 +57,18 @@
  '(semantic-complete-inline-analyzer-idle-displayor-class (quote semantic-displayor-tooltip))
  '(semantic-java-dependency-system-include-path (quote ("/usr/share/java/")))
  '(semantic-mode t)
- '(semantic-python-dependency-system-include-path (quote ("/usr/lib/python2.7")) t)
+ '(semantic-python-dependency-system-include-path (quote ("/usr/lib/python2.7" "/usr/lib/python2.7/dist-packages")))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 
+
+
 ;; These libraries should always be loaded.
 (load-library "customizations/package-customizations.el")
+
+(require 'yasnippet)
+(yas-global-mode 1)
+
 (load-library "customizations/ede-customizations.el")
 (load-library "customizations/ac-customizations.el")
 (load-library "customizations/ido-customizations.el")
@@ -67,6 +83,7 @@
 ;; know how to deal with that at the moment... I should change this to
 ;; autoloads at some point.
 (load-library "customizations/tex-customizations.el")
+(load-library "customizations/racket-customizations.el")
 (load-library "customizations/cl-customizations.el")
 (load-library "customizations/c++-customizations.el")
 (load-library "customizations/visual-customizations.el")

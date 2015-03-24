@@ -1,0 +1,264 @@
+;; Object p2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "p2/"
+  :tables (list 
+   (semanticdb-table "physics.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("parameters4" include nil nil [1 26])
+            ("numpy" include nil nil [28 46])
+            ("dA" function
+               (:documentation "Calculate and return the contribution of to the magnetic vector
+potential at the location r = (r_x, r_y) of the filament located at
+location (x,y).  Can also handle multiple xs, ys from numpy
+arrays/matrices.
+
+    "
+                :arguments 
+                  ( ("x" variable nil (reparse-symbol function_parameters) [114 115])
+                    ("y" variable nil (reparse-symbol function_parameters) [117 118])
+                    ("r" variable nil (reparse-symbol function_parameters) [120 121]))                  )
+                nil [107 570])
+            ("A_at_r" function
+               (:documentation "Calculate and return the magnetic vector potential at the location
+r = (r_x, r_y), given a bundle of filaments with centres (xs[i],
+ys[i]).
+
+    "
+                :arguments 
+                  ( ("xs" variable nil (reparse-symbol function_parameters) [582 584])
+                    ("ys" variable nil (reparse-symbol function_parameters) [586 588])
+                    ("r" variable nil (reparse-symbol function_parameters) [590 591]))                  )
+                nil [571 847])
+            ("A" function
+               (:documentation "rs = (r_xs, r_ys)."
+                :arguments 
+                  ( ("xs" variable nil (reparse-symbol function_parameters) [854 856])
+                    ("ys" variable nil (reparse-symbol function_parameters) [858 860])
+                    ("rs" variable nil (reparse-symbol function_parameters) [862 864]))                  )
+                nil [848 1241])
+            ("circular_A" function
+               (:documentation "rs = (r_xs, r_ys)."
+                :arguments 
+                  ( ("center" variable nil (reparse-symbol function_parameters) [1304 1310])
+                    ("radius" variable nil (reparse-symbol function_parameters) [1312 1318])
+                    ("rs" variable nil (reparse-symbol function_parameters) [1320 1322]))                  )
+                nil [1289 1532])
+            ("planar_A" function
+               (:documentation " "
+                :arguments 
+                  ( ("length" variable nil (reparse-symbol function_parameters) [1546 1552])
+                    ("y_center" variable nil (reparse-symbol function_parameters) [1554 1562])
+                    ("rs" variable nil (reparse-symbol function_parameters) [1564 1566]))                  )
+                nil [1533 1644])
+            ("two_wires_A" function (:arguments 
+              ( ("xs" variable nil (reparse-symbol function_parameters) [1661 1663])
+                ("ys" variable nil (reparse-symbol function_parameters) [1665 1667])
+                ("rs" variable nil (reparse-symbol function_parameters) [1669 1671])
+                ("relative_size" variable nil (reparse-symbol function_parameters) [1673 1686]))              ) nil [1645 1763]))          
+    :file "physics.py"
+    :pointmax 1763
+    :fsize 1762
+    :lastmodtime '(21771 9498 430146 733000)
+    :unmatched-syntax '((thing 1763 . 1763))
+    )
+   (semanticdb-table "parameters.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("question4" variable nil nil [21 37])
+            ("m" variable nil nil [198 207])
+            ("mu_0" variable nil nil [229 239])
+            ("wire_length" variable nil nil [271 288])
+            ("wire_width" variable nil nil [289 305])
+            ("n" code nil nil [306 338])
+            ("filament_width_bounds" variable nil nil [339 480])
+            ("filament_length_bounds" variable nil nil [481 622])
+            ("xs, ys" code nil nil [623 690])
+            ("radius" variable nil nil [799 849])
+            ("center" variable nil nil [850 896])
+            ("x_min, x_max" code nil nil [1206 1264])
+            ("y_min, y_max" code nil nil [1265 1325])
+            ("grid_accuracy" code nil nil [1326 1361])
+            ("x_bounds" variable nil nil [1362 1413])
+            ("y_bounds" variable nil nil [1414 1465])
+            ("r_xs, r_ys" code nil nil [1466 1510]))          
+    :file "parameters.py"
+    :pointmax 1512
+    :fsize 1565
+    :lastmodtime '(21769 52742 402168 726000)
+    :unmatched-syntax 'nil
+    )
+    (semanticdb-table "__main__.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("plot" include nil nil [1 12])
+            ("if" code nil nil [14 57]))          
+    :file "__main__.py"
+    :pointmax 62
+    :fsize 61
+    :lastmodtime '(21771 10228 589108 960000)
+    :unmatched-syntax '(($EOI 89 . 89) (IMPORT 26 . 32) ($EOI 88 . 88) (IF 28 . 30) ($EOI 59 . 59) ($EOI 32 . 32))
+    )
+   (semanticdb-table "calculation.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("physics" include nil nil [1 22])
+            ("abs_difference" function (:arguments 
+              ( ("xs" variable nil (reparse-symbol function_parameters) [43 45])
+                ("ys" variable nil (reparse-symbol function_parameters) [47 49]))              ) nil [24 79])
+            ("normalized_difference" function (:arguments 
+              ( ("xs" variable nil (reparse-symbol function_parameters) [106 108])
+                ("ys" variable nil (reparse-symbol function_parameters) [110 112]))              ) nil [80 149])
+            ("if" code nil nil [150 253])
+            ("if" code nil nil [258 593])
+            ("if" code nil nil [594 677])
+            ("if" code nil nil [678 891]))          
+    :file "calculation.py"
+    :pointmax 891
+    :fsize 890
+    :lastmodtime '(21771 10033 109101 670000)
+    :unmatched-syntax '((thing 220 . 253) (thing 220 . 253))
+    )
+   (semanticdb-table "plot.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("calculation" include nil nil [23 48])
+            ("matplotlib.pyplot" include nil nil [50 81])
+            ("contour_plot" function (:arguments 
+              ( ("xs" variable nil (reparse-symbol function_parameters) [100 102])
+                ("ys" variable nil (reparse-symbol function_parameters) [104 106])
+                ("zs" variable nil (reparse-symbol function_parameters) [108 110])
+                ("figure_name" variable nil (reparse-symbol function_parameters) [112 123])
+                ("fmt" variable nil (reparse-symbol function_parameters) [125 128])
+                ("num_contour_lines" variable nil (reparse-symbol function_parameters) [136 153])
+                ("show" variable nil (reparse-symbol function_parameters) [158 162]))              ) nil [83 500])
+            ("main" function nil nil [501 3266]))          
+    :file "plot.py"
+    :pointmax 3266
+    :fsize 3265
+    :lastmodtime '(21771 9374 628272 119000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "parameters1.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("question1" variable nil nil [21 37])
+            ("question2" variable nil nil [38 55])
+            ("question3" variable nil nil [56 73])
+            ("question4" variable nil nil [74 91])
+            ("m" variable nil nil [252 261])
+            ("mu_0" variable nil nil [283 293])
+            ("wire_length" variable nil nil [325 342])
+            ("wire_width" variable nil nil [343 359])
+            ("n" code nil nil [360 392])
+            ("filament_width_bounds" variable nil nil [393 534])
+            ("filament_length_bounds" variable nil nil [535 676])
+            ("xs, ys" code nil nil [677 744])
+            ("radius" variable nil nil [853 903])
+            ("center" variable nil nil [904 950])
+            ("x_min, x_max" code nil nil [1260 1318])
+            ("y_min, y_max" code nil nil [1319 1379])
+            ("x_bounds" variable nil nil [1398 1449])
+            ("y_bounds" variable nil nil [1450 1501])
+            ("r_xs, r_ys" code nil nil [1502 1546]))          
+    :file "parameters1.py"
+    :pointmax 1548
+    :fsize 1547
+    :lastmodtime '(21772 3956 751558 672000)
+    :unmatched-syntax '((thing 74 . 83) (thing 1548 . 1548))
+    )
+   (semanticdb-table "parameters2.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("question1" variable nil nil [21 38])
+            ("question2" variable nil nil [39 55])
+            ("question3" variable nil nil [56 73])
+            ("question4" variable nil nil [74 91])
+            ("m" variable nil nil [252 261])
+            ("mu_0" variable nil nil [283 293])
+            ("wire_length" variable nil nil [325 342])
+            ("wire_width" variable nil nil [343 359])
+            ("n" code nil nil [360 392])
+            ("filament_width_bounds" variable nil nil [393 534])
+            ("filament_length_bounds" variable nil nil [535 676])
+            ("xs, ys" code nil nil [677 744])
+            ("radius" variable nil nil [853 903])
+            ("center" variable nil nil [904 950])
+            ("x_min, x_max" code nil nil [1260 1317])
+            ("grid_accuracy" variable nil nil [1383 1400])
+            ("x_bounds" variable nil nil [1401 1452])
+            ("y_bounds" variable nil nil [1453 1504])
+            ("r_xs, r_ys" code nil nil [1505 1549]))          
+    :file "parameters2.py"
+    :pointmax 1551
+    :fsize 1550
+    :lastmodtime '(21770 64959 190398 795000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "parameters3.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("question1" variable nil nil [21 38])
+            ("question2" variable nil nil [39 56])
+            ("question3" variable nil nil [57 73])
+            ("question4" variable nil nil [74 91])
+            ("m" variable nil nil [252 261])
+            ("mu_0" variable nil nil [283 293])
+            ("wire_length" variable nil nil [325 342])
+            ("wire_width" variable nil nil [343 361])
+            ("n" code nil nil [362 372])
+            ("filament_width_bounds" variable nil nil [373 514])
+            ("filament_length_bounds" variable nil nil [515 656])
+            ("xs, ys" code nil nil [657 724])
+            ("radius" variable nil nil [833 883])
+            ("center" variable nil nil [884 930])
+            ("x_min, x_max" code nil nil [1240 1297])
+            ("y_min, y_max" code nil nil [1298 1358])
+            ("grid_accuracy" variable nil nil [1359 1376])
+            ("x_bounds" variable nil nil [1377 1428])
+            ("y_bounds" variable nil nil [1429 1480])
+            ("r_xs, r_ys" code nil nil [1481 1525]))          
+    :file "parameters3.py"
+    :pointmax 1527
+    :fsize 1526
+    :lastmodtime '(21771 792 730449 868000)
+    :unmatched-syntax '(($EOI 1523 . 1523) (NAME 1240 . 1245) ($EOI 1513 . 1513) (NAME 1240 . 1245) (COMMA 1272 . 1273) (NAME 1240 . 1245) (COMMA 1272 . 1273))
+    )
+   (semanticdb-table "parameters4.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("question1" variable nil nil [21 38])
+            ("question2" variable nil nil [39 56])
+            ("question3" variable nil nil [57 74])
+            ("question4" variable nil nil [75 91])
+            ("m" variable nil nil [252 261])
+            ("mu_0" variable nil nil [283 293])
+            ("wire_length" variable nil nil [325 342])
+            ("wire_width" variable nil nil [343 359])
+            ("n" code nil nil [360 392])
+            ("filament_width_bounds" variable nil nil [393 534])
+            ("filament_length_bounds" variable nil nil [535 676])
+            ("xs, ys" code nil nil [677 744])
+            ("radius" variable nil nil [853 903])
+            ("center" variable nil nil [904 950])
+            ("x_min, x_max" code nil nil [1260 1318])
+            ("y_min, y_max" code nil nil [1319 1379])
+            ("x_bounds" variable nil nil [1398 1449])
+            ("y_bounds" variable nil nil [1450 1501])
+            ("r_xs, r_ys" code nil nil [1502 1546]))          
+    :file "parameters4.py"
+    :pointmax 1553
+    :fsize 1547
+    :lastmodtime '(21771 10112 341104 625000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!Documents!school!phy250!python!p2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

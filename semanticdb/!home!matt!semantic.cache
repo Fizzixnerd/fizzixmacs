@@ -2,22 +2,15 @@
 ;; SEMANTICDB Tags save file
 (semanticdb-project-database-file "matt/"
   :tables (list 
-   (semanticdb-table "test.c"
+    (semanticdb-table "main.c"
     :major-mode 'c-mode
     :tags 
-        '( ("print_int_list" function
-               (:arguments 
-                  ( ("list" variable
-                       (:pointer 1
-                        :type ("int_list" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [22 37]))                  
-                :type "void")
-                nil [2 183]))          
-    :file "test.c"
-    :pointmax 184
-    :fsize 183
-    :lastmodtime '(21387 50476 475168 442000)
-    :unmatched-syntax 'nil
+        '( ("main" function (:type "int") nil [1 14]))          
+    :file "main.c"
+    :pointmax 15
+    :fsize 14
+    :lastmodtime '(21769 61865 694508 956000)
+    :unmatched-syntax '((symbol 5 . 9) (INT 1 . 4) (symbol 1 . 2))
     )
    )
   :file "!home!matt!semantic.cache"

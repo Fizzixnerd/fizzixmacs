@@ -18,5 +18,6 @@
 (add-to-list 'package-archives
 	     '("elpa" . "http://tromey.com/elpa/"))
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa-stable.milkbox.net/package/"))
+	     '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
+

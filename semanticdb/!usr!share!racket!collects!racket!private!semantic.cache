@@ -1,0 +1,18 @@
+;; Object private/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "private/"
+  :tables (list 
+   (semanticdb-table "kw.rkt"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "kw.rkt"
+    :pointmax 80991
+    :fsize 80993
+    :lastmodtime '(21188 43193 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!share!racket!collects!racket!private!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

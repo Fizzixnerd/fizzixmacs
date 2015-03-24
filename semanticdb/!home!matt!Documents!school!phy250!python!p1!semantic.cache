@@ -1,0 +1,378 @@
+;; Object p1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "p1/"
+  :tables (list 
+   (semanticdb-table "scratch.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("n" variable nil nil [82 91])
+            ("a" variable nil nil [92 99])
+            ("sigma" variable nil nil [100 111])
+            ("epsilon0" variable nil nil [112 138])
+            ("h" code nil nil [140 149])
+            ("grid_1d" variable nil nil [151 181])
+            ("grid" variable nil nil [221 286])
+            ("zmin" variable nil nil [448 459])
+            ("zmax" variable nil nil [460 471])
+            ("zstep" variable nil nil [472 484])
+            ("integrate" function
+               (:documentation "Integrate a differential df over a grid given by grid."
+                :arguments 
+                  ( ("df" variable nil (reparse-symbol function_parameters) [508 510])
+                    ("grid" variable nil (reparse-symbol function_parameters) [512 516]))                  )
+                nil [494 777])
+            ("fmap" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [787 788])
+                ("upperbound" variable nil (reparse-symbol function_parameters) [790 800])
+                ("lowerbound" variable nil (reparse-symbol function_parameters) [802 812])
+                ("step" variable nil (reparse-symbol function_parameters) [814 818]))              ) nil [778 880])
+            ("difference" function
+               (:documentation "Return the normalized difference between fmap and gmap.  Normalized
+by gmap.
+    "
+                :arguments 
+                  ( ("fmap" variable nil (reparse-symbol function_parameters) [896 900])
+                    ("gmap" variable nil (reparse-symbol function_parameters) [902 906]))                  )
+                nil [881 1066])
+            ("largest_difference" function
+               (:documentation "Return the largest absolute difference of the fmaps (assumed to be
+created by fmap with the same upperbound, lowerbound, and step size)
+fmap and gmap, normalized by gmap.
+    "
+                :arguments 
+                  ( ("fmap" variable nil (reparse-symbol function_parameters) [1094 1098])
+                    ("gmap" variable nil (reparse-symbol function_parameters) [1100 1104]))                  )
+                nil [1071 1332])
+            ("dV" function
+               (:documentation "Calculate the contribution to V at position (0, 0, z) of the
+\"infinitesimal\" element with centre (x, y, 0).
+    "
+                :arguments 
+                  ( ("x" variable nil (reparse-symbol function_parameters) [1351 1352])
+                    ("y" variable nil (reparse-symbol function_parameters) [1354 1355])
+                    ("z" variable nil (reparse-symbol function_parameters) [1357 1358]))                  )
+                nil [1344 1574])
+            ("V" function
+               (:documentation "Return the numerically caluclated value of V at the location (0, 0,
+z).
+    "
+                :arguments 
+                  ( ("z" variable nil (reparse-symbol function_parameters) [1585 1586]))                  )
+                nil [1579 1730])
+            ("analyticV" function (:arguments 
+              ( ("z" variable nil (reparse-symbol function_parameters) [1745 1746])
+                ("a" variable nil (reparse-symbol function_parameters) [1748 1749]))              ) nil [1731 2025])
+            ("pointV" function
+               (:documentation "Return the analytical value of V at location (0, 0, z) if all the
+charge was located at the point (0, 0, 0) (used in question 3).
+    "
+                :arguments 
+                  ( ("z" variable nil (reparse-symbol function_parameters) [2037 2038]))                  )
+                nil [2026 2251])
+            ("V_map" function
+               (:documentation "Return a range of values for V for z between upperbound and
+    lowerbound, with step size step.
+    "
+                :arguments 
+                  ( ("upperbound" variable nil (reparse-symbol function_parameters) [2262 2272])
+                    ("lowerbound" variable nil (reparse-symbol function_parameters) [2274 2284])
+                    ("step" variable nil (reparse-symbol function_parameters) [2286 2290]))                  )
+                nil [2252 2454])
+            ("analyticV_map" function (:arguments 
+              ( ("upperbound" variable nil (reparse-symbol function_parameters) [2477 2487])
+                ("lowerbound" variable nil (reparse-symbol function_parameters) [2489 2499])
+                ("step" variable nil (reparse-symbol function_parameters) [2501 2505])
+                ("a" variable nil (reparse-symbol function_parameters) [2507 2508]))              ) nil [2459 2586])
+            ("pointV_map" function (:arguments 
+              ( ("upperbound" variable nil (reparse-symbol function_parameters) [2602 2612])
+                ("lowerbound" variable nil (reparse-symbol function_parameters) [2614 2624])
+                ("step" variable nil (reparse-symbol function_parameters) [2626 2630]))              ) nil [2587 2687])
+            ("calculate" function
+               (:documentation "Return, as a tuple (zm, vm, avm, error, max_error):
+zm: an array of z values
+vm: a list of numerical V values, calculated at each z in zm
+avm: a list of analytical V values, calculated at each z in zm
+error: a list of normalized errors between vm and avm, calculated at each z in zm.
+max_error: the largest value in error
+    "
+                :arguments 
+                  ( ("zmin" variable nil (reparse-symbol function_parameters) [2717 2721])
+                    ("zmax" variable nil (reparse-symbol function_parameters) [2723 2727])
+                    ("zstep" variable nil (reparse-symbol function_parameters) [2729 2734]))                  )
+                nil [2703 3296])
+            ("matplotlib.backends.backend_ps" include nil nil [3308 3381])
+            ("matplotlib.figure" include nil nil [3382 3418])
+            ("plot" function
+               (:documentation "Return a tuple of (Figure, FigureCanvasPS, Axes) for the plot of xs
+vs ys, with title title and ylabel ylabel.
+    "
+                :arguments 
+                  ( ("xs" variable nil (reparse-symbol function_parameters) [3429 3431])
+                    ("ys" variable nil (reparse-symbol function_parameters) [3433 3435])
+                    ("title" variable nil (reparse-symbol function_parameters) [3437 3442])
+                    ("ylabel" variable nil (reparse-symbol function_parameters) [3444 3450]))                  )
+                nil [3420 3790])
+            ("plot_v" function
+               (:documentation "Plot the potential ys as a function of xs."
+                :arguments 
+                  ( ("xs" variable nil (reparse-symbol function_parameters) [3802 3804])
+                    ("ys" variable nil (reparse-symbol function_parameters) [3806 3808])
+                    ("title" variable nil (reparse-symbol function_parameters) [3810 3815]))                  )
+                nil [3791 3915])
+            ("plot_error" function
+               (:documentation "Plot the normalized error ys as a function of xs."
+                :arguments 
+                  ( ("xs" variable nil (reparse-symbol function_parameters) [3931 3933])
+                    ("ys" variable nil (reparse-symbol function_parameters) [3935 3937])
+                    ("title" variable nil (reparse-symbol function_parameters) [3939 3944]))                  )
+                nil [3916 4058])
+            ("plot_and_save" function (:arguments 
+              ( ("numerical_savename" variable nil (reparse-symbol function_parameters) [4077 4095])
+                ("analytical_savename" variable nil (reparse-symbol function_parameters) [4097 4116])
+                ("error_savename" variable nil (reparse-symbol function_parameters) [4118 4132]))              ) nil [4059 4644])
+            ("if" code nil nil [4645 4735])
+            ("plot_a_range_and_save" function nil nil [4752 5055])
+            ("if" code nil nil [5056 5111])
+            ("calculate_large_z" function nil nil [5124 5420])
+            ("plot_large_z_and_save" function nil nil [5421 5792])
+            ("if" code nil nil [5793 5848]))          
+    :file "scratch.py"
+    :pointmax 5848
+    :fsize 5847
+    :lastmodtime '(21716 52051 66315 761000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "plot.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("matplotlib.backends.backend_ps" include nil nil [12 85])
+            ("matplotlib.figure" include nil nil [86 122])
+            ("plot" function
+               (:documentation "Return a tuple of (Figure, FigureCanvasPS, Axes) for the plot of xs
+vs ys, with title title and ylabel ylabel.
+    "
+                :arguments 
+                  ( ("xs" variable nil (reparse-symbol function_parameters) [133 135])
+                    ("ys" variable nil (reparse-symbol function_parameters) [137 139])
+                    ("title" variable nil (reparse-symbol function_parameters) [141 146])
+                    ("ylabel" variable nil (reparse-symbol function_parameters) [148 154]))                  )
+                nil [124 494])
+            ("plot_v" function
+               (:documentation "Plot the potential ys as a function of xs."
+                :arguments 
+                  ( ("xs" variable nil (reparse-symbol function_parameters) [506 508])
+                    ("ys" variable nil (reparse-symbol function_parameters) [510 512])
+                    ("title" variable nil (reparse-symbol function_parameters) [514 519]))                  )
+                nil [495 619])
+            ("plot_error" function
+               (:documentation "Plot the normalized error ys as a function of xs."
+                :arguments 
+                  ( ("xs" variable nil (reparse-symbol function_parameters) [635 637])
+                    ("ys" variable nil (reparse-symbol function_parameters) [639 641])
+                    ("title" variable nil (reparse-symbol function_parameters) [643 648]))                  )
+                nil [620 762]))          
+    :file "plot.py"
+    :pointmax 762
+    :fsize 761
+    :lastmodtime '(21716 51370 994307 719000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "plots1.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("plot" include nil nil [14 32])
+            ("comparison" include nil nil [33 57])
+            ("parameters" include nil nil [58 82])
+            ("plot_and_save" function (:arguments 
+              ( ("numerical_savename" variable nil (reparse-symbol function_parameters) [102 120])
+                ("analytical_savename" variable nil (reparse-symbol function_parameters) [122 141])
+                ("error_savename" variable nil (reparse-symbol function_parameters) [143 157]))              ) nil [84 648])
+            ("if" code nil nil [649 739]))          
+    :file "plots1.py"
+    :pointmax 739
+    :fsize 738
+    :lastmodtime '(21716 52208 986317 629000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "plots2.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("plot" include nil nil [14 32])
+            ("physics" include nil nil [33 54])
+            ("plot_a_range_and_save" function nil nil [56 359])
+            ("if" code nil nil [360 415]))          
+    :file "plots2.py"
+    :pointmax 417
+    :fsize 416
+    :lastmodtime '(21716 55755 598359 569000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "physics.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("mymath" include nil nil [15 35])
+            ("parameters" include nil nil [36 60])
+            ("dV" function
+               (:documentation "Calculate the contribution to V at position (0, 0, z) of the
+\"infinitesimal\" element with centre (x, y, 0).
+    "
+                :arguments 
+                  ( ("x" variable nil (reparse-symbol function_parameters) [69 70])
+                    ("y" variable nil (reparse-symbol function_parameters) [72 73])
+                    ("z" variable nil (reparse-symbol function_parameters) [75 76]))                  )
+                nil [62 302])
+            ("V" function
+               (:documentation "Return the numerically caluclated value of V at the location (0, 0,
+z).
+    "
+                :arguments 
+                  ( ("z" variable nil (reparse-symbol function_parameters) [313 314]))                  )
+                nil [307 457])
+            ("analyticV" function (:arguments 
+              ( ("z" variable nil (reparse-symbol function_parameters) [472 473])
+                ("a" variable nil (reparse-symbol function_parameters) [475 476]))              ) nil [458 752])
+            ("pointV" function
+               (:documentation "Return the analytical value of V at location (0, 0, z) if all the
+charge was located at the point (0, 0, 0) (used in question 3).
+    "
+                :arguments 
+                  ( ("z" variable nil (reparse-symbol function_parameters) [764 765]))                  )
+                nil [753 978])
+            ("V_map" function
+               (:documentation "Return a range of values for V for z between upperbound and
+    lowerbound, with step size step.
+    "
+                :arguments 
+                  ( ("upperbound" variable nil (reparse-symbol function_parameters) [989 999])
+                    ("lowerbound" variable nil (reparse-symbol function_parameters) [1001 1011])
+                    ("step" variable nil (reparse-symbol function_parameters) [1013 1017]))                  )
+                nil [979 1181])
+            ("analyticV_map" function (:arguments 
+              ( ("upperbound" variable nil (reparse-symbol function_parameters) [1204 1214])
+                ("lowerbound" variable nil (reparse-symbol function_parameters) [1216 1226])
+                ("step" variable nil (reparse-symbol function_parameters) [1228 1232])
+                ("a" variable nil (reparse-symbol function_parameters) [1234 1235]))              ) nil [1186 1313])
+            ("pointV_map" function (:arguments 
+              ( ("upperbound" variable nil (reparse-symbol function_parameters) [1329 1339])
+                ("lowerbound" variable nil (reparse-symbol function_parameters) [1341 1351])
+                ("step" variable nil (reparse-symbol function_parameters) [1353 1357]))              ) nil [1314 1414]))          
+    :file "physics.py"
+    :pointmax 1414
+    :fsize 1413
+    :lastmodtime '(21716 52236 534317 955000)
+    :unmatched-syntax '((thing 1414 . 1414))
+    )
+   (semanticdb-table "plots3.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("plot" include nil nil [14 32])
+            ("physics" include nil nil [33 54])
+            ("calculate_large_z" function nil nil [56 352])
+            ("plot_large_z_and_save" function nil nil [353 724])
+            ("if" code nil nil [725 780]))          
+    :file "plots3.py"
+    :pointmax 781
+    :fsize 780
+    :lastmodtime '(21716 51651 182311 33000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "parameters.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("numpy" include nil nil [18 36])
+            ("n" variable nil nil [85 94])
+            ("a" variable nil nil [95 102])
+            ("sigma" variable nil nil [103 114])
+            ("epsilon0" variable nil nil [115 141])
+            ("h" code nil nil [143 152])
+            ("grid_1d" variable nil nil [154 184])
+            ("grid" variable nil nil [224 289])
+            ("zmin" variable nil nil [451 462])
+            ("zmax" variable nil nil [463 474])
+            ("zstep" variable nil nil [475 487]))          
+    :file "parameters.py"
+    :pointmax 489
+    :fsize 488
+    :lastmodtime '(21716 51916 478314 170000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "mymath.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("numpy" include nil nil [14 32])
+            ("integrate" function
+               (:documentation "Integrate a differential df over a grid given by grid."
+                :arguments 
+                  ( ("df" variable nil (reparse-symbol function_parameters) [48 50])
+                    ("grid" variable nil (reparse-symbol function_parameters) [52 56]))                  )
+                nil [34 317])
+            ("fmap" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [327 328])
+                ("upperbound" variable nil (reparse-symbol function_parameters) [330 340])
+                ("lowerbound" variable nil (reparse-symbol function_parameters) [342 352])
+                ("step" variable nil (reparse-symbol function_parameters) [354 358]))              ) nil [318 420])
+            ("difference" function
+               (:documentation "Return the normalized difference between fmap and gmap.  Normalized
+by gmap.
+    "
+                :arguments 
+                  ( ("fmap" variable nil (reparse-symbol function_parameters) [436 440])
+                    ("gmap" variable nil (reparse-symbol function_parameters) [442 446]))                  )
+                nil [421 606])
+            ("largest_difference" function
+               (:documentation "Return the largest absolute difference of the fmaps (assumed to be
+created by fmap with the same upperbound, lowerbound, and step size)
+fmap and gmap, normalized by gmap.
+    "
+                :arguments 
+                  ( ("fmap" variable nil (reparse-symbol function_parameters) [634 638])
+                    ("gmap" variable nil (reparse-symbol function_parameters) [640 644]))                  )
+                nil [611 872]))          
+    :file "mymath.py"
+    :pointmax 872
+    :fsize 871
+    :lastmodtime '(21716 51855 326313 447000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "main.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("plots1" include nil nil [12 32])
+            ("plots2" include nil nil [33 53])
+            ("plots3" include nil nil [54 74])
+            ("if" code nil nil [76 222]))          
+    :file "main.py"
+    :pointmax 222
+    :fsize 221
+    :lastmodtime '(21716 52104 562316 394000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "comparison.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("physics" include nil nil [18 39])
+            ("calculate" function
+               (:documentation "Return, as a tuple (zm, vm, avm, error, max_error):
+zm: an array of z values
+vm: a list of numerical V values, calculated at each z in zm
+avm: a list of analytical V values, calculated at each z in zm
+error: a list of normalized errors between vm and avm, calculated at each z in zm.
+max_error: the largest value in error
+    "
+                :arguments 
+                  ( ("zmin" variable nil (reparse-symbol function_parameters) [55 59])
+                    ("zmax" variable nil (reparse-symbol function_parameters) [61 65])
+                    ("zstep" variable nil (reparse-symbol function_parameters) [67 72]))                  )
+                nil [41 634]))          
+    :file "comparison.py"
+    :pointmax 635
+    :fsize 634
+    :lastmodtime '(21716 52261 406318 249000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!Documents!school!phy250!python!p1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

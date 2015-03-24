@@ -1,0 +1,18 @@
+;; Object proposal/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "proposal/"
+  :tables (list 
+   (semanticdb-table "proposal.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "proposal.html"
+    :pointmax 335
+    :fsize 333
+    :lastmodtime '(21709 157 718734 199000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!Documents!school!jph311!project!proposal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

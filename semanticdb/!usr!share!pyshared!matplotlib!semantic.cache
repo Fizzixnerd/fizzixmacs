@@ -1,0 +1,988 @@
+;; Object matplotlib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "matplotlib/"
+  :tables (list 
+   (semanticdb-table "colors.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+A module for converting numbers or color arguments to *RGB* or *RGBA*
+
+*RGB* and *RGBA* are sequences of, respectively, 3 or 4 floats in the
+range 0-1.
+
+This module includes functions and classes for color specification
+conversions, and for mapping numbers to colors in a 1-D array of colors called
+a colormap. Colormapping typically involves two steps: a data array is first
+mapped onto the range 0-1 using an instance of :class:`Normalize` or of a
+subclass; then this number in the 0-1 range is mapped to a color using an
+instance of a subclass of :class:`Colormap`.  Two are provided here:
+:class:`LinearSegmentedColormap`, which is used to generate all the built-in
+colormap instances, but is also useful for making custom colormaps, and
+:class:`ListedColormap`, which is used for generating a custom colormap from a
+list of color specifications.
+
+The module also provides a single instance, *colorConverter*, of the
+:class:`ColorConverter` class providing methods for converting single color
+specifications or sequences of them to *RGB* or *RGBA*.
+
+Commands which take color arguments can use several formats to specify
+the colors.  For the basic built-in colors, you can use a single letter
+
+    - b: blue
+    - g: green
+    - r: red
+    - c: cyan
+    - m: magenta
+    - y: yellow
+    - k: black
+    - w: white
+
+Gray shades can be given as a string encoding a float in the 0-1 range, e.g.::
+
+    color = '0.75'
+
+For a greater range of colors, you have two options.  You can specify the
+color using an html hex string, as in::
+
+      color = '#eeefff'
+
+or you can pass an *R* , *G* , *B* tuple, where each of *R* , *G* , *B* are in
+the range [0,1].
+
+Finally, legal html names for colors, like 'red', 'burlywood' and 'chartreuse'
+are supported.
+\"\"\"" code nil nil [1 1757])
+            ("__future__" include nil nil [1758 1805])
+            ("re" include nil nil [1806 1815])
+            ("numpy" include nil nil [1816 1834])
+            ("numpy" include nil nil [1835 1855])
+            ("matplotlib.cbook" include nil nil [1856 1888])
+            ("parts" variable nil nil [1890 1923])
+            ("NP_MAJOR, NP_MINOR" code nil nil [1924 1964])
+            ("NP_CLIP_OUT" code nil nil [2003 2048])
+            ("cnames" variable nil nil [2050 7520])
+            ("for" code nil nil [7544 7660])
+            ("is_color_like" function (:arguments 
+              ( ("c" variable nil (reparse-symbol function_parameters) [7680 7681]))              ) nil [7662 7843])
+            ("rgb2hex" function (:arguments 
+              ( ("rgb" variable nil (reparse-symbol function_parameters) [7857 7860]))              ) nil [7845 8013])
+            ("hexColorPattern" variable nil nil [8014 8065])
+            ("hex2color" function
+               (:documentation "
+    Take a hex string *s* and return the corresponding rgb 3-tuple
+    Example: #efefef -> (0.93725, 0.93725, 0.93725)
+    "
+                :arguments 
+                  ( ("s" variable nil (reparse-symbol function_parameters) [8082 8083]))                  )
+                nil [8068 8499])
+            ("ColorConverter" type
+               (:documentation "
+    Provides methods for converting color specifications to *RGB* or *RGBA*
+
+    Caching is used for more efficient conversion upon repeated calls
+    with the same argument.
+
+    Ordinarily only the single instance instantiated in this module,
+    *colorConverter*, is needed.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("colors" variable nil (reparse-symbol indented_block_body) [8829 9083])
+                    ("cache" variable nil (reparse-symbol indented_block_body) [9089 9099])
+                    ("to_rgb" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9116 9120])
+                            ("arg" variable nil (reparse-symbol function_parameters) [9122 9125]))                          
+                        :documentation "
+        Returns an *RGB* tuple of three floats from 0-1.
+
+        *arg* can be an *RGB* or *RGBA* sequence or a string in any of
+        several forms:
+
+            1) a letter from the set 'rgbcmykw'
+            2) a hex color string, like '#00FFFF'
+            3) a standard name, like 'aqua'
+            4) a float, like '0.4', indicating gray on a 0-1 scale
+
+        if *arg* is *RGBA*, the *A* will simply be discarded.
+        ")
+                        (reparse-symbol indented_block_body) [9105 11626])
+                    ("to_rgba" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11643 11647])
+                            ("arg" variable nil (reparse-symbol function_parameters) [11649 11652])
+                            ("alpha" variable nil (reparse-symbol function_parameters) [11654 11659]))                          
+                        :documentation "
+        Returns an *RGBA* tuple of four floats from 0-1.
+
+        For acceptable values of *arg*, see :meth:`to_rgb`.
+        In addition, if *arg* is \"none\" (case-insensitive),
+        then (0,0,0,0) will be returned.
+        If *arg* is an *RGBA* sequence and *alpha* is not *None*,
+        *alpha* will replace the original *A*.
+        ")
+                        (reparse-symbol indented_block_body) [11631 13316])
+                    ("to_rgba_array" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13339 13343])
+                            ("c" variable nil (reparse-symbol function_parameters) [13345 13346])
+                            ("alpha" variable nil (reparse-symbol function_parameters) [13348 13353]))                          
+                        :documentation "
+        Returns a numpy array of *RGBA* tuples.
+
+        Accepts a single mpl color spec or a sequence of specs.
+
+        Special case to handle \"no color\": if *c* is \"none\" (case-insensitive),
+        then an empty array will be returned.  Same for an empty list.
+        ")
+                        (reparse-symbol indented_block_body) [13321 15408]))                  
+                :type "class")
+                nil [8501 15408])
+            ("colorConverter" variable nil nil [15410 15443])
+            ("makeMappingArray" function
+               (:documentation "Create an *N* -element 1-d lookup table
+
+    *data* represented by a list of x,y0,y1 mapping correspondences.
+    Each element in this list represents how a value between 0 and 1
+    (inclusive) represented by x is mapped to a corresponding value
+    between 0 and 1 (inclusive). The two values of y are to allow
+    for discontinuous mapping functions (say as might be found in a
+    sawtooth) where y0 represents the value of y for values of x
+    <= to that given, and y1 is the value to be used for x > than
+    that given). The list must start with x=0, end with x=1, and
+    all values of x must be in increasing order. Values between
+    the given mapping points are determined by simple linear interpolation.
+
+    Alternatively, data can be a function mapping values between 0 - 1
+    to 0 - 1.
+
+    The function returns an array \"result\" where ``result[x*(N-1)]``
+    gives the closest value for values of x between 0 and 1.
+    "
+                :arguments 
+                  ( ("N" variable nil (reparse-symbol function_parameters) [15467 15468])
+                    ("data" variable nil (reparse-symbol function_parameters) [15470 15474])
+                    ("gamma" variable nil (reparse-symbol function_parameters) [15476 15481]))                  )
+                nil [15446 17700])
+            ("Colormap" type
+               (:documentation "
+    Baseclass for all scalar to RGBA mappings.
+
+    Typically Colormap instances are used to convert data values (floats) from
+    the interval ``[0, 1]`` to the RGBA color that the respective Colormap
+    represents. For scaling of data into the ``[0, 1]`` interval see
+    :class:`matplotlib.colors.Normalize`. It is worth noting that
+    :class:`matplotlib.cm.ScalarMappable` subclasses make heavy use of this
+    ``data->normalize->map-to-color`` processing chain.
+
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("r\"\"\"
+        Parameters
+        ----------
+        name : str
+            The name of the colormap.
+        N : int
+            The number of rgb quantization levels.
+
+        \"\"\"" code nil (reparse-symbol indented_block_body) [18257 18436])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18445 18461])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18470 18480])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18489 18526])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18568 18591])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18600 18622])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18631 18648])
+                            ("self" code nil (reparse-symbol indented_block_body) [18657 18677])
+                            ("self" code nil (reparse-symbol indented_block_body) [18686 18705])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18714 18734])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19026 19054]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18229 18233])
+                            ("name" variable nil (reparse-symbol function_parameters) [18235 18239])
+                            ("N" variable nil (reparse-symbol function_parameters) [18241 18242]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [18216 19055])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19073 19077])
+                            ("X" variable nil (reparse-symbol function_parameters) [19079 19080])
+                            ("alpha" variable nil (reparse-symbol function_parameters) [19082 19087])
+                            ("bytes" variable nil (reparse-symbol function_parameters) [19094 19099]))                          
+                        :documentation "
+        Parameters
+        ----------
+        X : scalar, ndarray
+            The data value(s) to convert to RGBA.
+            For floats, X should be in the interval ``[0.0, 1.0]`` to
+            return the RGBA values ``X*100`` percent along the Colormap line.
+            For integers, X should be in the interval ``[0, Colormap.N)`` to
+            return RGBA values *indexed* from the Colormap with index ``X``.
+        alpha : float, None
+            Alpha must be a scalar between 0 and 1, or None.
+        bytes : bool
+            If False (default), the returned RGBA values will be floats in the
+            interval ``[0, 1]`` otherwise they will be uint8s in the interval
+            ``[0, 255]``.
+
+        Returns
+        -------
+        Tuple of RGBA values if X is scalar, othewise an array of
+        RGBA values with a shape of ``X.shape + (4, )``.
+
+        ")
+                        (reparse-symbol indented_block_body) [19060 23111])
+                    ("set_bad" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23128 23132])
+                            ("color" variable nil (reparse-symbol function_parameters) [23134 23139])
+                            ("alpha" variable nil (reparse-symbol function_parameters) [23145 23150]))                          )
+                        (reparse-symbol indented_block_body) [23116 23341])
+                    ("set_under" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23360 23364])
+                            ("color" variable nil (reparse-symbol function_parameters) [23366 23371])
+                            ("alpha" variable nil (reparse-symbol function_parameters) [23377 23382]))                          )
+                        (reparse-symbol indented_block_body) [23346 23623])
+                    ("set_over" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23641 23645])
+                            ("color" variable nil (reparse-symbol function_parameters) [23647 23652])
+                            ("alpha" variable nil (reparse-symbol function_parameters) [23658 23663]))                          )
+                        (reparse-symbol indented_block_body) [23628 23904])
+                    ("_set_extremes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23927 23931]))                          )
+                        (reparse-symbol indented_block_body) [23909 24289])
+                    ("_init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24304 24308]))                          )
+                        (reparse-symbol indented_block_body) [24294 24419])
+                    ("is_gray" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24436 24440]))                          )
+                        (reparse-symbol indented_block_body) [24424 24628]))                  
+                :type "class")
+                nil [17702 24628])
+            ("LinearSegmentedColormap" type
+               (:documentation "Colormap objects based on lookup tables using linear segments.
+
+    The lookup table is generated using linear interpolation for each
+    primary color, with the 0-1 domain divided into any number of
+    segments.
+    "
+                :superclasses ("Colormap")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Create color map from linear mapping segments
+
+        segmentdata argument is a dictionary with a red, green and blue
+        entries. Each entry should be a list of *x*, *y0*, *y1* tuples,
+        forming rows in a table. Entries for alpha are optional.
+
+        Example: suppose you want red to increase from 0 to 1 over
+        the bottom half, green to do the same over the middle half,
+        and blue over the top half.  Then you would use::
+
+            cdict = {'red':   [(0.0,  0.0, 0.0),
+                               (0.5,  1.0, 1.0),
+                               (1.0,  1.0, 1.0)],
+
+                     'green': [(0.0,  0.0, 0.0),
+                               (0.25, 0.0, 0.0),
+                               (0.75, 1.0, 1.0),
+                               (1.0,  1.0, 1.0)],
+
+                     'blue':  [(0.0,  0.0, 0.0),
+                               (0.5,  0.0, 0.0),
+                               (1.0,  1.0, 1.0)]}
+
+        Each row in the table for a given color is a sequence of
+        *x*, *y0*, *y1* tuples.  In each sequence, *x* must increase
+        monotonically from 0 to 1.  For any input value *z* falling
+        between *x[i]* and *x[i+1]*, the output value of a given color
+        will be linearly interpolated between *y1[i]* and *y0[i+1]*::
+
+            row i:   x  y0  y1
+                           /
+                          /
+            row i+1: x  y0  y1
+
+        Hence y0 in the first row and y1 in the last row are never used.
+
+
+        .. seealso::
+
+               :meth:`LinearSegmentedColormap.from_list`
+               Static method; factory function for generating a
+               smoothly-varying LinearSegmentedColormap.
+
+               :func:`makeMappingArray`
+               For information about making a mapping array.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [24969 26771])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26859 26882])
+                            ("Colormap" code nil (reparse-symbol indented_block_body) [26891 26923])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26932 26963])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26972 26991]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24917 24921])
+                            ("name" variable nil (reparse-symbol function_parameters) [24923 24927])
+                            ("segmentdata" variable nil (reparse-symbol function_parameters) [24929 24940])
+                            ("N" variable nil (reparse-symbol function_parameters) [24942 24943])
+                            ("gamma" variable nil (reparse-symbol function_parameters) [24949 24954]))                          
+                        :documentation "Create color map from linear mapping segments
+
+        segmentdata argument is a dictionary with a red, green and blue
+        entries. Each entry should be a list of *x*, *y0*, *y1* tuples,
+        forming rows in a table. Entries for alpha are optional.
+
+        Example: suppose you want red to increase from 0 to 1 over
+        the bottom half, green to do the same over the middle half,
+        and blue over the top half.  Then you would use::
+
+            cdict = {'red':   [(0.0,  0.0, 0.0),
+                               (0.5,  1.0, 1.0),
+                               (1.0,  1.0, 1.0)],
+
+                     'green': [(0.0,  0.0, 0.0),
+                               (0.25, 0.0, 0.0),
+                               (0.75, 1.0, 1.0),
+                               (1.0,  1.0, 1.0)],
+
+                     'blue':  [(0.0,  0.0, 0.0),
+                               (0.5,  0.0, 0.0),
+                               (1.0,  1.0, 1.0)]}
+
+        Each row in the table for a given color is a sequence of
+        *x*, *y0*, *y1* tuples.  In each sequence, *x* must increase
+        monotonically from 0 to 1.  For any input value *z* falling
+        between *x[i]* and *x[i+1]*, the output value of a given color
+        will be linearly interpolated between *y1[i]* and *y0[i+1]*::
+
+            row i:   x  y0  y1
+                           /
+                          /
+            row i+1: x  y0  y1
+
+        Hence y0 in the first row and y1 in the last row are never used.
+
+
+        .. seealso::
+
+               :meth:`LinearSegmentedColormap.from_list`
+               Static method; factory function for generating a
+               smoothly-varying LinearSegmentedColormap.
+
+               :func:`makeMappingArray`
+               For information about making a mapping array.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [24904 26992])
+                    ("_init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27007 27011]))                          )
+                        (reparse-symbol indented_block_body) [26997 27590])
+                    ("set_gamma" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27609 27613])
+                            ("gamma" variable nil (reparse-symbol function_parameters) [27615 27620]))                          
+                        :documentation "
+        Set a new gamma value and regenerate color map.
+        ")
+                        (reparse-symbol indented_block_body) [27595 27752])
+                    ("from_list" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("name" variable nil (reparse-symbol function_parameters) [27789 27793])
+                            ("colors" variable nil (reparse-symbol function_parameters) [27795 27801])
+                            ("N" variable nil (reparse-symbol function_parameters) [27803 27804])
+                            ("gamma" variable nil (reparse-symbol function_parameters) [27810 27815]))                          
+                        :documentation "
+        Make a linear segmented colormap with *name* from a sequence
+        of *colors* which evenly transitions from colors[0] at val=0
+        to colors[-1] at val=1.  *N* is the number of rgb quantization
+        levels.
+        Alternatively, a list of (value, color) tuples can be given
+        to divide the range unevenly.
+        ")
+                        (reparse-symbol indented_block_body) [27757 28948]))                  
+                :type "class")
+                nil [24630 28948])
+            ("ListedColormap" type
+               (:documentation "Colormap object generated from a list of colors.
+
+    This may be most useful when indexing directly into a colormap,
+    but it can also be used to generate special colormaps for ordinary
+    mapping.
+    "
+                :superclasses ("Colormap")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Make a colormap from a list of colors.
+
+        *colors*
+            a list of matplotlib color specifications,
+            or an equivalent Nx3 or Nx4 floating point array
+            (*N* rgb or rgba values)
+        *name*
+            a string to identify the colormap
+        *N*
+            the number of entries in the map.  The default is *None*,
+            in which case there is one colormap entry for each
+            element in the list of colors.  If::
+
+                N < len(colors)
+
+            the list will be truncated at *N*.  If::
+
+                N > len(colors)
+
+            the list will be extended by repetition.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [29265 29927])
+                            ("self" variable nil (reparse-symbol indented_block_body) [29936 29956])
+                            ("self" variable nil (reparse-symbol indented_block_body) [29965 29988])
+                            ("if" code nil (reparse-symbol indented_block_body) [30104 30891])
+                            ("Colormap" code nil (reparse-symbol indented_block_body) [30899 30931]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29216 29220])
+                            ("colors" variable nil (reparse-symbol function_parameters) [29222 29228])
+                            ("name" variable nil (reparse-symbol function_parameters) [29230 29234])
+                            ("N" variable nil (reparse-symbol function_parameters) [29248 29249]))                          
+                        :documentation "
+        Make a colormap from a list of colors.
+
+        *colors*
+            a list of matplotlib color specifications,
+            or an equivalent Nx3 or Nx4 floating point array
+            (*N* rgb or rgba values)
+        *name*
+            a string to identify the colormap
+        *N*
+            the number of entries in the map.  The default is *None*,
+            in which case there is one colormap entry for each
+            element in the list of colors.  If::
+
+                N < len(colors)
+
+            the list will be truncated at *N*.  If::
+
+                N > len(colors)
+
+            the list will be extended by repetition.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [29203 30932])
+                    ("_init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30947 30951]))                          )
+                        (reparse-symbol indented_block_body) [30937 31154]))                  
+                :type "class")
+                nil [28950 31154])
+            ("Normalize" type
+               (:documentation "
+    A class which, when called, can normalize data into
+    the ``[0.0, 1.0]`` interval.
+
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        If *vmin* or *vmax* is not given, they are taken from the input's
+        minimum and maximum value respectively.  If *clip* is *True* and
+        the given value falls outside the range, the returned value
+        will be 0 or 1, whichever is closer. Returns 0 if::
+
+            vmin==vmax
+
+        Works with scalars or arrays, including masked arrays.  If
+        *clip* is *True*, masked values are set to 1; otherwise they
+        remain masked.  Clipping silently defeats the purpose of setting
+        the over, under, and masked colors in the colormap, so it is
+        likely to lead to surprises; therefore the default is
+        *clip* = *False*.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [31353 32034])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32043 32059])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32068 32084])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32093 32109]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31304 31308])
+                            ("vmin" variable nil (reparse-symbol function_parameters) [31310 31314])
+                            ("vmax" variable nil (reparse-symbol function_parameters) [31321 31325])
+                            ("clip" variable nil (reparse-symbol function_parameters) [31332 31336]))                          
+                        :documentation "
+        If *vmin* or *vmax* is not given, they are taken from the input's
+        minimum and maximum value respectively.  If *clip* is *True* and
+        the given value falls outside the range, the returned value
+        will be 0 or 1, whichever is closer. Returns 0 if::
+
+            vmin==vmax
+
+        Works with scalars or arrays, including masked arrays.  If
+        *clip* is *True*, masked values are set to 1; otherwise they
+        remain masked.  Clipping silently defeats the purpose of setting
+        the over, under, and masked colors in the colormap, so it is
+        likely to lead to surprises; therefore the default is
+        *clip* = *False*.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [31291 32110])
+                    ("process_value" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("value" variable nil (reparse-symbol function_parameters) [32151 32156]))                          
+                        :documentation "
+        Homogenize the input *value* for easy and efficient normalization.
+
+        *value* can be a scalar or sequence.
+
+        Returns *result*, *is_scalar*, where *result* is a
+        masked array matching *value*.  Float dtypes are preserved;
+        integer types with two bytes or smaller are converted to
+        np.float32, and larger types are converted to np.float.
+        Preserving float32 when possible, and using in-place operations,
+        can greatly improve speed for large arrays.
+
+        Experimental; we may want to add an option to force the
+        use of float32.
+        ")
+                        (reparse-symbol indented_block_body) [32115 33306])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33324 33328])
+                            ("value" variable nil (reparse-symbol function_parameters) [33330 33335])
+                            ("clip" variable nil (reparse-symbol function_parameters) [33337 33341]))                          )
+                        (reparse-symbol indented_block_body) [33311 34301])
+                    ("inverse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34318 34322])
+                            ("value" variable nil (reparse-symbol function_parameters) [34324 34329]))                          )
+                        (reparse-symbol indented_block_body) [34306 34665])
+                    ("autoscale" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34684 34688])
+                            ("A" variable nil (reparse-symbol function_parameters) [34690 34691]))                          )
+                        (reparse-symbol indented_block_body) [34670 34825])
+                    ("autoscale_None" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34849 34853])
+                            ("A" variable nil (reparse-symbol function_parameters) [34855 34856]))                          )
+                        (reparse-symbol indented_block_body) [34830 35076])
+                    ("scaled" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35092 35096]))                          )
+                        (reparse-symbol indented_block_body) [35081 35207]))                  
+                :type "class")
+                nil [31156 35207])
+            ("LogNorm" type
+               (:documentation "
+    Normalize a given value to the 0-1 range on a log scale
+    "
+                :superclasses ("Normalize")
+                :members 
+                  ( ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35328 35332])
+                            ("value" variable nil (reparse-symbol function_parameters) [35334 35339])
+                            ("clip" variable nil (reparse-symbol function_parameters) [35341 35345]))                          )
+                        (reparse-symbol indented_block_body) [35315 36602])
+                    ("inverse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36619 36623])
+                            ("value" variable nil (reparse-symbol function_parameters) [36625 36630]))                          )
+                        (reparse-symbol indented_block_body) [36607 36957])
+                    ("autoscale" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36976 36980])
+                            ("A" variable nil (reparse-symbol function_parameters) [36982 36983]))                          )
+                        (reparse-symbol indented_block_body) [36962 37168])
+                    ("autoscale_None" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37192 37196])
+                            ("A" variable nil (reparse-symbol function_parameters) [37198 37199]))                          )
+                        (reparse-symbol indented_block_body) [37173 37511]))                  
+                :type "class")
+                nil [35209 37511])
+            ("SymLogNorm" type
+               (:documentation "
+    The symmetrical logarithmic scale is logarithmic in both the
+    positive and negative directions from the origin.
+
+    Since the values close to zero tend toward infinity, there is a
+    need to have a range around zero that is linear.  The parameter
+    *linthresh* allows the user to specify the size of this range
+    (-*linthresh*, *linthresh*).
+    "
+                :superclasses ("Normalize")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        *linthresh*:
+        The range within which the plot is linear (to
+        avoid having the plot go to infinity around zero).
+
+        *linscale*:
+        This allows the linear range (-*linthresh* to *linthresh*)
+        to be stretched relative to the logarithmic range.  Its
+        value is the number of decades to use for each half of the
+        linear range.  For example, when *linscale* == 1.0 (the
+        default), the space used for the positive and negative
+        halves of the linear range will be equal to one decade in
+        the logarithmic range. Defaults to 1.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [38022 38629])
+                            ("Normalize" code nil (reparse-symbol indented_block_body) [38638 38680])
+                            ("self" variable nil (reparse-symbol indented_block_body) [38689 38715])
+                            ("self" variable nil (reparse-symbol indented_block_body) [38724 38776]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37930 37934])
+                            ("linthresh" variable nil (reparse-symbol function_parameters) [37937 37946])
+                            ("linscale" variable nil (reparse-symbol function_parameters) [37948 37956])
+                            ("vmin" variable nil (reparse-symbol function_parameters) [37979 37983])
+                            ("vmax" variable nil (reparse-symbol function_parameters) [37990 37994])
+                            ("clip" variable nil (reparse-symbol function_parameters) [38001 38005]))                          
+                        :documentation "
+        *linthresh*:
+        The range within which the plot is linear (to
+        avoid having the plot go to infinity around zero).
+
+        *linscale*:
+        This allows the linear range (-*linthresh* to *linthresh*)
+        to be stretched relative to the logarithmic range.  Its
+        value is the number of decades to use for each half of the
+        linear range.  For example, when *linscale* == 1.0 (the
+        default), the space used for the positive and negative
+        halves of the linear range will be equal to one decade in
+        the logarithmic range. Defaults to 1.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [37917 38777])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38795 38799])
+                            ("value" variable nil (reparse-symbol function_parameters) [38801 38806])
+                            ("clip" variable nil (reparse-symbol function_parameters) [38808 38812]))                          )
+                        (reparse-symbol indented_block_body) [38782 39636])
+                    ("_transform" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39656 39660])
+                            ("a" variable nil (reparse-symbol function_parameters) [39662 39663]))                          
+                        :documentation "
+        Inplace transformation.
+        ")
+                        (reparse-symbol indented_block_body) [39641 39999])
+                    ("_inv_transform" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40023 40027])
+                            ("a" variable nil (reparse-symbol function_parameters) [40029 40030]))                          
+                        :documentation "
+        Inverse inplace Transformation.
+        ")
+                        (reparse-symbol indented_block_body) [40004 40394])
+                    ("_transform_vmin_vmax" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40424 40428]))                          
+                        :documentation "
+        Calculates vmin and vmax in the transformed system.
+        ")
+                        (reparse-symbol indented_block_body) [40399 40650])
+                    ("inverse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40667 40671])
+                            ("value" variable nil (reparse-symbol function_parameters) [40673 40678]))                          )
+                        (reparse-symbol indented_block_body) [40655 40905])
+                    ("autoscale" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40924 40928])
+                            ("A" variable nil (reparse-symbol function_parameters) [40930 40931]))                          
+                        :documentation "
+        Set *vmin*, *vmax* to min, max of *A*.
+        ")
+                        (reparse-symbol indented_block_body) [40910 41101])
+                    ("autoscale_None" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41125 41129])
+                            ("A" variable nil (reparse-symbol function_parameters) [41131 41132]))                          
+                        :documentation " autoscale only None-valued vmin or vmax ")
+                        (reparse-symbol indented_block_body) [41106 41432]))                  
+                :type "class")
+                nil [37513 41432])
+            ("BoundaryNorm" type
+               (:superclasses ("Normalize")
+                :members 
+                  ( ("'''
+    Generate a colormap index based on discrete intervals.
+
+    Unlike :class:`Normalize` or :class:`LogNorm`,
+    :class:`BoundaryNorm` maps values to integers instead of to the
+    interval 0-1.
+
+    Mapping to the 0-1 interval could have been done via
+    piece-wise linear interpolation, but using integers seems
+    simpler, and reduces the number of conversions back and forth
+    between integer and floating point.
+    '''" code nil (reparse-symbol indented_block_body) [41469 41903])
+                    ("__init__" function
+                       (:suite 
+                          ( ("'''
+        *boundaries*
+            a monotonically increasing sequence
+        *ncolors*
+            number of colors in the colormap to be used
+
+        If::
+
+            b[i] <= v < b[i+1]
+
+        then v is mapped to color j;
+        as i varies from 0 to len(boundaries)-2,
+        j goes from 0 to ncolors-1.
+
+        Out-of-range values are mapped to -1 if low and ncolors
+        if high; these are converted to valid indices by
+        :meth:`Colormap.__call__` .
+        '''" code nil (reparse-symbol indented_block_body) [41969 42454])
+                            ("self" variable nil (reparse-symbol indented_block_body) [42463 42479])
+                            ("self" variable nil (reparse-symbol indented_block_body) [42488 42513])
+                            ("self" variable nil (reparse-symbol indented_block_body) [42522 42548])
+                            ("self" variable nil (reparse-symbol indented_block_body) [42557 42597])
+                            ("self" variable nil (reparse-symbol indented_block_body) [42606 42635])
+                            ("self" variable nil (reparse-symbol indented_block_body) [42644 42664])
+                            ("if" code nil (reparse-symbol indented_block_body) [42673 42781]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41921 41925])
+                            ("boundaries" variable nil (reparse-symbol function_parameters) [41927 41937])
+                            ("ncolors" variable nil (reparse-symbol function_parameters) [41939 41946])
+                            ("clip" variable nil (reparse-symbol function_parameters) [41948 41952]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [41908 42781])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42799 42803])
+                            ("x" variable nil (reparse-symbol function_parameters) [42805 42806])
+                            ("clip" variable nil (reparse-symbol function_parameters) [42808 42812]))                          )
+                        (reparse-symbol indented_block_body) [42786 43528])
+                    ("inverse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43545 43549])
+                            ("value" variable nil (reparse-symbol function_parameters) [43551 43556]))                          )
+                        (reparse-symbol indented_block_body) [43533 43619]))                  
+                :type "class")
+                nil [41434 43619])
+            ("NoNorm" type
+               (:superclasses ("Normalize")
+                :members 
+                  ( ("'''
+    Dummy replacement for Normalize, for the case where we
+    want to use indices directly in a
+    :class:`~matplotlib.cm.ScalarMappable` .
+    '''" code nil (reparse-symbol indented_block_body) [43650 43803])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43821 43825])
+                            ("value" variable nil (reparse-symbol function_parameters) [43827 43832])
+                            ("clip" variable nil (reparse-symbol function_parameters) [43834 43838]))                          )
+                        (reparse-symbol indented_block_body) [43808 43867])
+                    ("inverse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43884 43888])
+                            ("value" variable nil (reparse-symbol function_parameters) [43890 43895]))                          )
+                        (reparse-symbol indented_block_body) [43872 43919]))                  
+                :type "class")
+                nil [43621 43919])
+            ("normalize" variable nil nil [43987 44158])
+            ("no_norm" variable nil nil [44159 44316])
+            ("rgb_to_hsv" function
+               (:documentation "
+    convert rgb values in a numpy array to hsv values
+    input and output arrays should have shape (M,N,3)
+    "
+                :arguments 
+                  ( ("arr" variable nil (reparse-symbol function_parameters) [44334 44337]))                  )
+                nil [44319 45154])
+            ("hsv_to_rgb" function
+               (:documentation "
+    convert hsv values in a numpy array to rgb values
+    both input and output arrays have shape (M,N,3)
+    "
+                :arguments 
+                  ( ("hsv" variable nil (reparse-symbol function_parameters) [45171 45174]))                  )
+                nil [45156 46234])
+            ("LightSource" type
+               (:documentation "
+    Create a light source coming from the specified azimuth and elevation.
+    Angles are in degrees, with the azimuth measured
+    clockwise from north and elevation up from the zero plane of the surface.
+    The :meth:`shade` is used to produce rgb values for a shaded relief image
+    given a data array.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Specify the azimuth (measured clockwise from south) and altitude
+        (measured up from the plane of the surface) of the light source
+        in degrees.
+
+        The color of the resulting image will be darkened
+        by moving the (s,v) values (in hsv colorspace) toward
+        (hsv_min_sat, hsv_min_val) in the shaded regions, or
+        lightened by sliding (s,v) toward
+        (hsv_max_sat hsv_max_val) in regions that are illuminated.
+        The default extremes are chose so that completely shaded points
+        are nearly black (s = 1, v = 0) and completely illuminated points
+        are nearly white (s = 0, v = 1).
+        \"\"\"" code nil (reparse-symbol indented_block_body) [46736 47394])
+                            ("self" variable nil (reparse-symbol indented_block_body) [47403 47421])
+                            ("self" variable nil (reparse-symbol indented_block_body) [47430 47450])
+                            ("self" variable nil (reparse-symbol indented_block_body) [47459 47489])
+                            ("self" variable nil (reparse-symbol indented_block_body) [47498 47528])
+                            ("self" variable nil (reparse-symbol indented_block_body) [47537 47567])
+                            ("self" variable nil (reparse-symbol indented_block_body) [47576 47606]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46604 46608])
+                            ("azdeg" variable nil (reparse-symbol function_parameters) [46610 46615])
+                            ("altdeg" variable nil (reparse-symbol function_parameters) [46621 46627])
+                            ("hsv_min_val" variable nil (reparse-symbol function_parameters) [46649 46660])
+                            ("hsv_max_val" variable nil (reparse-symbol function_parameters) [46664 46675])
+                            ("hsv_min_sat" variable nil (reparse-symbol function_parameters) [46679 46690])
+                            ("hsv_max_sat" variable nil (reparse-symbol function_parameters) [46711 46722]))                          
+                        :documentation "
+        Specify the azimuth (measured clockwise from south) and altitude
+        (measured up from the plane of the surface) of the light source
+        in degrees.
+
+        The color of the resulting image will be darkened
+        by moving the (s,v) values (in hsv colorspace) toward
+        (hsv_min_sat, hsv_min_val) in the shaded regions, or
+        lightened by sliding (s,v) toward
+        (hsv_max_sat hsv_max_val) in regions that are illuminated.
+        The default extremes are chose so that completely shaded points
+        are nearly black (s = 1, v = 0) and completely illuminated points
+        are nearly white (s = 0, v = 1).
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [46591 47607])
+                    ("shade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47622 47626])
+                            ("data" variable nil (reparse-symbol function_parameters) [47628 47632])
+                            ("cmap" variable nil (reparse-symbol function_parameters) [47634 47638]))                          
+                        :documentation "
+        Take the input data array, convert to HSV values in the
+        given colormap, then adjust those color values
+        to given the impression of a shaded relief map with a
+        specified light source.
+        RGBA values are returned, which can then be used to
+        plot the shaded image with imshow.
+        ")
+                        (reparse-symbol indented_block_body) [47612 48154])
+                    ("shade_rgb" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48173 48177])
+                            ("rgb" variable nil (reparse-symbol function_parameters) [48179 48182])
+                            ("elevation" variable nil (reparse-symbol function_parameters) [48184 48193])
+                            ("fraction" variable nil (reparse-symbol function_parameters) [48195 48203]))                          
+                        :documentation "
+        Take the input RGB array (ny*nx*3) adjust their color values
+        to given the impression of a shaded relief map with a
+        specified light source using the elevation (ny*nx).
+        A new RGB array ((ny*nx*3)) is returned.
+        ")
+                        (reparse-symbol indented_block_body) [48159 50935]))                  
+                :type "class")
+                nil [46236 50935])
+            ("from_levels_and_colors" function
+               (:documentation "
+    A helper routine to generate a cmap and a norm instance which
+    behave similar to contourf's levels and colors arguments.
+
+    Parameters
+    ----------
+    levels : sequence of numbers
+        The quantization levels used to construct the :class:`BoundaryNorm`.
+        Values ``v`` are quantizized to level ``i`` if
+        ``lev[i] <= v < lev[i+1]``.
+    colors : sequence of colors
+        The fill color to use for each level. If `extend` is \"neither\" there
+        must be ``n_level - 1`` colors. For an `extend` of \"min\" or \"max\" add
+        one extra color, and for an `extend` of \"both\" add two colors.
+    extend : {'neither', 'min', 'max', 'both'}, optional
+        The behaviour when a value falls out of range of the given levels.
+        See :func:`~matplotlib.pyplot.contourf` for details.
+
+    Returns
+    -------
+    (cmap, norm) : tuple containing a :class:`Colormap` and a \\
+                   :class:`Normalize` instance
+    "
+                :arguments 
+                  ( ("levels" variable nil (reparse-symbol function_parameters) [50964 50970])
+                    ("colors" variable nil (reparse-symbol function_parameters) [50972 50978])
+                    ("extend" variable nil (reparse-symbol function_parameters) [50980 50986]))                  )
+                nil [50937 53184]))          
+    :file "colors.py"
+    :pointmax 53184
+    :fsize 53183
+    :lastmodtime '(21078 41160 0 0)
+    :unmatched-syntax '((INDENT_BLOCK 13214 . 13316) (NEWLINE 13213 . 13214) (COLON 13212 . 13213) (TRY 12175 . 12178) (AS 13206 . 13208) (INDENT_BLOCK 11321 . 11421) (NEWLINE 11320 . 11321) (COLON 11319 . 11320) (TRY 10040 . 10043) (AS 11313 . 11315))
+    )
+   )
+  :file "!usr!share!pyshared!matplotlib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
