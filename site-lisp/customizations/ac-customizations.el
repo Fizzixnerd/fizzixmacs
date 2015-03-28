@@ -29,9 +29,9 @@
 ;; that at the end of slime.el, there is a problem.  See the
 ;; (let ... (#'byte-compile '(slime-...
 ;; form in that file for details.
-(require 'slime)
+;(require 'slime)
 ;; Workaround for the compile error.  See above.
-(require 'ac-slime)
+;(require 'ac-slime)
 (require 'ac-geiser)
 
 (ac-config-default)
@@ -61,12 +61,12 @@
 (add-hook 'java-mode-hook 'my-ac-java-mode-hook)
 ; This block must be eval'd in this order
 ;(progn 
-(add-hook 'slime-mode-hook 'my-ac-common-lisp-mode-hook)
-(add-hook 'slime-repl-mode-hook 'my-ac-common-lisp-mode-hook)
-(add-hook 'slime-mode-hook 'set-up-slime-ac)
+;(add-hook 'slime-mode-hook 'my-ac-common-lisp-mode-hook)
+;(add-hook 'slime-repl-mode-hook 'my-ac-common-lisp-mode-hook)
+;(add-hook 'slime-mode-hook 'set-up-slime-ac)
 (add-hook 'racket-mode-hook 'my-ac-racket-mode-hook)
-(eval-after-load 'auto-complete
-  '(add-to-list 'ac-modes 'slime-repl-mode))
+;(eval-after-load 'auto-complete
+;  '(add-to-list 'ac-modes 'slime-repl-mode))
 
 (setq ac-auto-show-menu 1.5)
 (setq ac-quick-help-delay 1.5)

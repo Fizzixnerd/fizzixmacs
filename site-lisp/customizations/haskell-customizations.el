@@ -5,6 +5,7 @@
 (require 'company)
 (require 'company-ghc)
 (require 'company-ghci)
+(require 'company-quickhelp)
 
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 
@@ -16,7 +17,8 @@
 (add-hook 'haskell-mode-hook
 	  (lambda ()
 	    (ghc-init)
-	    (company-mode)
+	    (company-mode 1)
+	    (company-quickhelp-mode 1)
 	    (auto-complete-mode 0)
 	    (local-set-key (kbd "C-M-d") 'company-show-doc-buffer)
 	    (subword-mode +1)

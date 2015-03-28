@@ -21,14 +21,12 @@
 ;; Prevents regular CEDET from loading, which would screw everything up
 ;(load-file "~/.emacs.d/site-lisp/cedet/cedet-devel-load.el")
 
-(add-to-list 'load-path "~/.emacs.d/")
+;(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/elpa/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/glsl-mode/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/cc-mode-5.32.5/")
-(add-to-list 'load-path "~/.emacs.d/elpa/")
-
-(require 'slime)
-
+(add-to-list 'load-path "~/.emacs.d/site-lisp/company-quickhelp-20150322.451.el")
 
 ; Fuck, I don't know what to do with these. I will leave them here, I
 ; guess.
@@ -42,7 +40,6 @@
  '(company-ghc-show-info t)
  '(doc-view-continuous t)
  '(ede-project-directories (quote ("/home/matt/src/silveretta/src")))
- ;'(haskell-mode-hook (quote ((lambda nil (ghc-init) (company-mode) (auto-complete-mode 0) (local-set-key (kbd "C-M-d") (quote company-show-doc-buffer)) (subword-mode 1) (flymake-mode 0) (turn-on-haskell-indentation) (turn-on-haskell-doc-mode) (turn-on-haskell-decl-scan) (setq haskell-process-suggest-remove-import-lines t) (setq haskell-process-auto-import-loaded-modules t) (setq haskell-process-log t)) interactive-haskell-mode)))
  '(haskell-process-auto-import-loaded-modules t)
  '(haskell-process-log t)
  '(haskell-process-suggest-remove-import-lines t)
@@ -50,9 +47,16 @@
  '(inferior-haskell-use-web-docs (quote always))
  '(inferior-haskell-wait-and-jump t)
  '(inhibit-startup-screen t)
- '(org-agenda-files (quote ("~/Documents/school/jph311/project/proposal/proposal.org")))
+ '(org-agenda-files
+   (quote
+    ("~/Documents/school/jph311/project/proposal/proposal.org")))
+ '(package-selected-packages
+   (quote
+    (wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode evernote-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
  '(preview-auto-cache-preamble t)
- '(preview-gs-options (quote ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4")))
+ '(preview-gs-options
+   (quote
+    ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4")))
  '(quack-pretty-lambda-p t)
  '(quack-smart-open-paren-p t)
  '(save-place t nil (saveplace))
@@ -62,7 +66,9 @@
  '(semantic-complete-inline-analyzer-idle-displayor-class (quote semantic-displayor-tooltip))
  '(semantic-java-dependency-system-include-path (quote ("/usr/share/java/")))
  '(semantic-mode t)
- '(semantic-python-dependency-system-include-path (quote ("/usr/lib/python2.7" "/usr/lib/python2.7/dist-packages")))
+ '(semantic-python-dependency-system-include-path
+   (quote
+    ("/usr/lib/python2.7" "/usr/lib/python2.7/dist-packages")))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 
