@@ -11,6 +11,36 @@
     :lastmodtime '(21371 30951 284586 147000)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "silveretta.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("debug.h" include nil nil [1 19])
+            ("read.h" include nil nil [20 37])
+            ("print.h" include nil nil [38 56])
+            ("eval.h" include nil nil [57 74])
+            ("val.h" include nil nil [75 91])
+            ("types.h" include nil nil [92 110])
+            ("variable.h" include nil nil [111 132])
+            ("mpc.h" include nil nil [134 150])
+            ("stdio.h" include (:system-flag t) nil [152 170])
+            ("stdlib.h" include (:system-flag t) nil [171 190])
+            ("string.h" include (:system-flag t) nil [191 210])
+            ("linedit.h" include (:system-flag t) nil [211 231])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [242 251])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [252 264]))                  
+                :type "int")
+                nil [233 1791]))          
+    :file "silveretta.c"
+    :pointmax 1792
+    :fsize 1791
+    :lastmodtime '(21777 61938 888123 363000)
+    :unmatched-syntax 'nil
+    )
    )
   :file "!home!matt!src!silveretta!c-src!semantic.cache"
   :semantic-tag-version "2.0"

@@ -1,0 +1,675 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "uthash.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTHASH_H" variable (:constant-flag t) nil [1174 1182])
+            ("string.h" include (:system-flag t) nil [1185 1204])
+            ("stddef.h" include (:system-flag t) nil [1227 1246])
+            ("stdlib.h" include (:system-flag t) nil [1265 1284])
+            ("DECLTYPE" variable (:constant-flag t) nil [1925 1933])
+            ("DECLTYPE_ASSIGN" variable (:constant-flag t) nil [2336 2351])
+            ("inttypes.h" include (:system-flag t) nil [2758 2779])
+            ("UTHASH_VERSION" variable (:constant-flag t) nil [2813 2827])
+            ("uthash_fatal" variable (:constant-flag t) nil [2864 2876])
+            ("uthash_malloc" variable (:constant-flag t) nil [2973 2986])
+            ("uthash_free" variable (:constant-flag t) nil [3080 3091])
+            ("uthash_noexpand_fyi" variable (:constant-flag t) nil [3196 3215])
+            ("uthash_expand_fyi" variable (:constant-flag t) nil [3309 3326])
+            ("HASH_INITIAL_NUM_BUCKETS" variable (:constant-flag t) nil [3429 3453])
+            ("HASH_INITIAL_NUM_BUCKETS_LOG2" variable (:constant-flag t) nil [3509 3538])
+            ("HASH_BKT_CAPACITY_THRESH" variable (:constant-flag t) nil [3589 3613])
+            ("ELMT_FROM_HH" variable (:constant-flag t) nil [3731 3743])
+            ("HASH_FIND" variable (:constant-flag t) nil [3803 3812])
+            ("HASH_BLOOM_MAKE" variable (:constant-flag t) nil [6233 6248])
+            ("HASH_BLOOM_FREE" variable (:constant-flag t) nil [6263 6278])
+            ("HASH_BLOOM_ADD" variable (:constant-flag t) nil [6293 6307])
+            ("HASH_BLOOM_TEST" variable (:constant-flag t) nil [6328 6343])
+            ("HASH_BLOOM_BYTELEN" variable (:constant-flag t) nil [6367 6385])
+            ("HASH_MAKE_TABLE" variable (:constant-flag t) nil [6404 6419])
+            ("HASH_ADD" variable (:constant-flag t) nil [7827 7835])
+            ("HASH_REPLACE" variable (:constant-flag t) nil [7978 7990])
+            ("HASH_ADD_KEYPTR" variable (:constant-flag t) nil [8655 8670])
+            ("HASH_TO_BKT" variable (:constant-flag t) nil [10576 10587])
+            ("HASH_DELETE" variable (:constant-flag t) nil [11513 11524])
+            ("HASH_FIND_STR" variable (:constant-flag t) nil [14321 14334])
+            ("HASH_ADD_STR" variable (:constant-flag t) nil [14455 14467])
+            ("HASH_REPLACE_STR" variable (:constant-flag t) nil [14598 14614])
+            ("HASH_FIND_INT" variable (:constant-flag t) nil [14749 14762])
+            ("HASH_ADD_INT" variable (:constant-flag t) nil [14879 14891])
+            ("HASH_REPLACE_INT" variable (:constant-flag t) nil [15009 15025])
+            ("HASH_FIND_PTR" variable (:constant-flag t) nil [15152 15165])
+            ("HASH_ADD_PTR" variable (:constant-flag t) nil [15285 15297])
+            ("HASH_REPLACE_PTR" variable (:constant-flag t) nil [15418 15434])
+            ("HASH_DEL" variable (:constant-flag t) nil [15564 15572])
+            ("HASH_FSCK" variable (:constant-flag t) nil [20116 20125])
+            ("HASH_EMIT_KEY" variable (:constant-flag t) nil [20837 20850])
+            ("HASH_FCN" variable (:constant-flag t) nil [21049 21057])
+            ("HASH_BER" variable (:constant-flag t) nil [21145 21153])
+            ("HASH_SAX" variable (:constant-flag t) nil [21887 21895])
+            ("HASH_FNV" variable (:constant-flag t) nil [22564 22572])
+            ("HASH_OAT" variable (:constant-flag t) nil [23242 23250])
+            ("HASH_JEN_MIX" variable (:constant-flag t) nil [24416 24428])
+            ("HASH_JEN" variable (:constant-flag t) nil [25342 25350])
+            ("get16bits" variable (:constant-flag t) nil [28883 28892])
+            ("HASH_SFH" variable (:constant-flag t) nil [29037 29045])
+            ("HASH_KEYCMP" variable (:constant-flag t) nil [37403 37414])
+            ("HASH_FIND_IN_BKT" variable (:constant-flag t) nil [37514 37530])
+            ("HASH_ADD_TO_BKT" variable (:constant-flag t) nil [38478 38493])
+            ("HASH_DEL_IN_BKT" variable (:constant-flag t) nil [39444 39459])
+            ("HASH_EXPAND_BUCKETS" variable (:constant-flag t) nil [41794 41813])
+            ("HASH_SORT" variable (:constant-flag t) nil [45828 45837])
+            ("HASH_SRT" variable (:constant-flag t) nil [45884 45892])
+            ("HASH_SELECT" variable (:constant-flag t) nil [53264 53275])
+            ("HASH_CLEAR" variable (:constant-flag t) nil [56265 56275])
+            ("HASH_OVERHEAD" variable (:constant-flag t) nil [57024 57037])
+            ("HASH_ITER" variable (:constant-flag t) nil [57657 57666])
+            ("HASH_COUNT" variable (:constant-flag t) nil [57937 57947])
+            ("HASH_CNT" variable (:constant-flag t) nil [57981 57989])
+            ("UT_hash_bucket" type
+               (:typedef ("UT_hash_bucket" type (:type "struct") nil nil)
+                :superclasses "UT_hash_bucket"
+                :type "typedef")
+                nil [58039 59010])
+            ("UT_hash_bucket" type
+               (:members 
+                  ( ("hh_head" variable
+                       (:pointer 1
+                        :type ("UT_hash_handle" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [58074 58105])
+                    ("count" variable (:type "unsigned int") (reparse-symbol classsubparts) [58109 58124])
+                    ("expand_mult" variable (:type "unsigned int") (reparse-symbol classsubparts) [58970 58991]))                  
+                :type "struct")
+                nil [58039 59010])
+            ("HASH_SIGNATURE" variable (:constant-flag t) nil [59094 59108])
+            ("HASH_BLOOM_SIGNATURE" variable (:constant-flag t) nil [59128 59148])
+            ("UT_hash_table" type
+               (:typedef ("UT_hash_table" type (:type "struct") nil nil)
+                :superclasses "UT_hash_table"
+                :type "typedef")
+                nil [59161 60635])
+            ("UT_hash_table" type
+               (:members 
+                  ( ("buckets" variable
+                       (:pointer 1
+                        :type ("UT_hash_bucket" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [59195 59219])
+                    ("log2_num_buckets" variable (:type "unsigned int") (reparse-symbol classsubparts) [59223 59262])
+                    ("num_buckets" variable (:type "unsigned int") (reparse-symbol classsubparts) [59223 59262])
+                    ("num_items" variable (:type "unsigned int") (reparse-symbol classsubparts) [59266 59285])
+                    ("tail" variable
+                       (:pointer 1
+                        :type ("UT_hash_handle" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [59289 59317])
+                    ("hho" variable (:type ("ptrdiff_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59368 59382])
+                    ("ideal_chain_maxlen" variable (:type "unsigned int") (reparse-symbol classsubparts) [59604 59632])
+                    ("nonideal_items" variable (:type "unsigned int") (reparse-symbol classsubparts) [59876 59900])
+                    ("noexpand" variable (:type "unsigned int") (reparse-symbol classsubparts) [60354 60387])
+                    ("ineff_expands" variable (:type "unsigned int") (reparse-symbol classsubparts) [60354 60387])
+                    ("signature" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60392 60411]))                  
+                :type "struct")
+                nil [59161 60635])
+            ("UT_hash_handle" type
+               (:typedef ("UT_hash_handle" type (:type "struct") nil nil)
+                :superclasses "UT_hash_handle"
+                :type "typedef")
+                nil [60637 61234])
+            ("UT_hash_handle" type
+               (:members 
+                  ( ("tbl" variable
+                       (:pointer 1
+                        :type ("UT_hash_table" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [60672 60698])
+                    ("prev" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [60702 60713])
+                    ("next" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [60776 60787])
+                    ("hh_prev" variable
+                       (:pointer 1
+                        :type ("UT_hash_handle" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [60850 60881])
+                    ("hh_next" variable
+                       (:pointer 1
+                        :type ("UT_hash_handle" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [60924 60955])
+                    ("key" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [60998 61008])
+                    ("keylen" variable (:type "unsigned int") (reparse-symbol classsubparts) [61072 61088])
+                    ("hashv" variable (:type "unsigned int") (reparse-symbol classsubparts) [61146 61161]))                  
+                :type "struct")
+                nil [60637 61234]))          
+    :file "uthash.h"
+    :pointmax 61258
+    :fsize 61257
+    :lastmodtime '(21367 37468 522050 328000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("HASH_BKT_CAPACITY_THRESH" . ((number "10" 3614 . 3616)))
+          ("HASH_BLOOM_ADD" (spp-arg-list ("tbl" "hashv") 6307 . 6318))
+          ("HASH_KEYCMP" (spp-arg-list ("a" "b" "len") 37414 . 37423) . ((symbol "memcmp" 37424 . 37430) (semantic-list "(a,b,len)" 37430 . 37439)))
+          ("HASH_ITER" (spp-arg-list ("hh" "head" "el" "tmp") 57666 . 57682) . ((FOR "for" 57732 . 57735) (semantic-list "((el)=(head),(tmp)=DECLTYPE(el)((head)?(head)->hh.next:NULL);                 \\
+  el; (el)=(tmp),(tmp)=DECLTYPE(el)((tmp)?(tmp)->hh.next:NULL))" 57735 . 57878)))
+          ("HASH_BLOOM_SIGNATURE" . ((number "0xb12220f2" 59149 . 59159)))
+          ("DECLTYPE_ASSIGN" (spp-arg-list ("dst" "src") 2351 . 2360) . 
+              ((DO "do" 2411 . 2413) (semantic-list "{                                                                             \\
+  (dst) = DECLTYPE(dst)(src);                                                    \\
+}" 2414 . 2578) (WHILE "while" 2579 . 2584) (semantic-list "(0)" 2584 . 2587)))
+          ("HASH_BLOOM_TEST" (spp-arg-list ("tbl" "hashv") 6343 . 6354) . ((semantic-list "(1)" 6355 . 6358)))
+          ("HASH_ADD_INT" (spp-arg-list ("head" "intfield" "add") 14891 . 14910) . ((symbol "HASH_ADD" 14958 . 14966) (semantic-list "(hh,head,intfield,sizeof(int),add)" 14966 . 15000)))
+          ("HASH_FSCK" (spp-arg-list ("hh" "head") 20125 . 20134))
+          ("HASH_FNV" (spp-arg-list ("key" "keylen" "num_bkts" "hashv" "bkt") 22572 . 22603) . 
+              ((DO "do" 22639 . 22641) (semantic-list "{                                                                             \\
+  unsigned _fn_i;                                                                \\
+  char *_hf_key=(char*)(key);                                                    \\
+  hashv = 2166136261UL;                                                          \\
+  for(_fn_i=0; _fn_i < keylen; _fn_i++)                                          \\
+      hashv = (hashv * 16777619) ^ _hf_key[_fn_i];                               \\
+  bkt = hashv & (num_bkts-1);                                                    \\
+}" 22642 . 23221) (WHILE "while" 23222 . 23227) (semantic-list "(0)" 23227 . 23230)))
+          ("HASH_OVERHEAD" (spp-arg-list ("hh" "head") 57037 . 57046) . ((semantic-list "(size_t)" 57100 . 57108) (semantic-list "((((head)->hh.tbl->num_items   * sizeof(UT_hash_handle))   +            \\
+           ((head)->hh.tbl->num_buckets * sizeof(UT_hash_bucket))   +            \\
+            (sizeof(UT_hash_table))                                 +            \\
+            (HASH_BLOOM_BYTELEN)))" 57108 . 57382)))
+          ("HASH_FIND" (spp-arg-list ("hh" "head" "keyptr" "keylen" "out") 3812 . 3839) . 
+              ((DO "do" 3878 . 3880) (semantic-list "{                                                                             \\
+  unsigned _hf_bkt,_hf_hashv;                                                    \\
+  out=NULL;                                                                      \\
+  if (head) {                                                                    \\
+     HASH_FCN(keyptr,keylen, (head)->hh.tbl->num_buckets, _hf_hashv, _hf_bkt);   \\
+     if (HASH_BLOOM_TEST((head)->hh.tbl, _hf_hashv)) {                           \\
+       HASH_FIND_IN_BKT((head)->hh.tbl, hh, (head)->hh.tbl->buckets[ _hf_bkt ],  \\
+                        keyptr,keylen,out);                                      \\
+     }                                                                           \\
+  }                                                                              \\
+}" 3881 . 4709) (WHILE "while" 4710 . 4715) (semantic-list "(0)" 4716 . 4719)))
+          ("HASH_BLOOM_BYTELEN" . ((number "0" 6386 . 6387)))
+          ("HASH_REPLACE" (spp-arg-list ("hh" "head" "fieldname" "keylen_in" "add" "replaced") 7990 . 8032) . 
+              ((DO "do" 8053 . 8055) (semantic-list "{                                                                             \\
+  replaced=NULL;                                                                 \\
+  HASH_FIND(hh,head,&((add)->fieldname),keylen_in,replaced);                     \\
+  if (replaced!=NULL) {                                                          \\
+     HASH_DELETE(hh,head,replaced);                                              \\
+  };                                                                             \\
+  HASH_ADD(hh,head,fieldname,keylen_in,add);                                     \\
+}" 8056 . 8635) (WHILE "while" 8636 . 8641) (semantic-list "(0)" 8641 . 8644)))
+          ("HASH_TO_BKT" (spp-arg-list ("hashv" "num_bkts" "bkt") 10587 . 10611) . 
+              ((DO "do" 10651 . 10653) (semantic-list "{                                                                             \\
+  bkt = ((hashv) & ((num_bkts) - 1));                                            \\
+}" 10654 . 10818) (WHILE "while" 10819 . 10824) (semantic-list "(0)" 10824 . 10827)))
+          ("HASH_REPLACE_INT" (spp-arg-list ("head" "intfield" "add" "replaced") 15025 . 15053) . ((symbol "HASH_REPLACE" 15088 . 15100) (semantic-list "(hh,head,intfield,sizeof(int),add,replaced)" 15100 . 15143)))
+          ("HASH_ADD_PTR" (spp-arg-list ("head" "ptrfield" "add") 15297 . 15316) . ((symbol "HASH_ADD" 15364 . 15372) (semantic-list "(hh,head,ptrfield,sizeof(void *),add)" 15372 . 15409)))
+          ("HASH_OAT" (spp-arg-list ("key" "keylen" "num_bkts" "hashv" "bkt") 23250 . 23281) . 
+              ((DO "do" 23317 . 23319) (semantic-list "{                                                                             \\
+  unsigned _ho_i;                                                                \\
+  char *_ho_key=(char*)(key);                                                    \\
+  hashv = 0;                                                                     \\
+  for(_ho_i=0; _ho_i < keylen; _ho_i++) {                                        \\
+      hashv += _ho_key[_ho_i];                                                   \\
+      hashv += (hashv << 10);                                                    \\
+      hashv ^= (hashv >> 6);                                                     \\
+  }                                                                              \\
+  hashv += (hashv << 3);                                                         \\
+  hashv ^= (hashv >> 11);                                                        \\
+  hashv += (hashv << 15);                                                        \\
+  bkt = hashv & (num_bkts-1);                                                    \\
+}" 23320 . 24397) (WHILE "while" 24398 . 24403) (semantic-list "(0)" 24403 . 24406)))
+          ("HASH_JEN" (spp-arg-list ("key" "keylen" "num_bkts" "hashv" "bkt") 25350 . 25381) . 
+              ((DO "do" 25417 . 25419) (semantic-list "{                                                                             \\
+  unsigned _hj_i,_hj_j,_hj_k;                                                    \\
+  unsigned char *_hj_key=(unsigned char*)(key);                                  \\
+  hashv = 0xfeedbeef;                                                            \\
+  _hj_i = _hj_j = 0x9e3779b9;                                                    \\
+  _hj_k = (unsigned)(keylen);                                                      \\
+  while (_hj_k >= 12) {                                                          \\
+    _hj_i +=    (_hj_key[0] + ( (unsigned)_hj_key[1] << 8 )                      \\
+        + ( (unsigned)_hj_key[2] << 16 )                                         \\
+        + ( (unsigned)_hj_key[3] << 24 ) );                                      \\
+    _hj_j +=    (_hj_key[4] + ( (unsigned)_hj_key[5] << 8 )                      \\
+        + ( (unsigned)_hj_key[6] << 16 )                                         \\
+        + ( (unsigned)_hj_key[7] << 24 ) );                                      \\
+    hashv += (_hj_key[8] + ( (unsigned)_hj_key[9] << 8 )                         \\
+        + ( (unsigned)_hj_key[10] << 16 )                                        \\
+        + ( (unsigned)_hj_key[11] << 24 ) );                                     \\
+                                                                                 \\
+     HASH_JEN_MIX(_hj_i, _hj_j, hashv);                                          \\
+                                                                                 \\
+     _hj_key += 12;                                                              \\
+     _hj_k -= 12;                                                                \\
+  }                                                                              \\
+  hashv += keylen;                                                               \\
+  switch ( _hj_k ) {                                                             \\
+     case 11: hashv += ( (unsigned)_hj_key[10] << 24 );                          \\
+     case 10: hashv += ( (unsigned)_hj_key[9] << 16 );                           \\
+     case 9:  hashv += ( (unsigned)_hj_key[8] << 8 );                            \\
+     case 8:  _hj_j += ( (unsigned)_hj_key[7] << 24 );                           \\
+     case 7:  _hj_j += ( (unsigned)_hj_key[6] << 16 );                           \\
+     case 6:  _hj_j += ( (unsigned)_hj_key[5] << 8 );                            \\
+     case 5:  _hj_j += _hj_key[4];                                               \\
+     case 4:  _hj_i += ( (unsigned)_hj_key[3] << 24 );                           \\
+     case 3:  _hj_i += ( (unsigned)_hj_key[2] << 16 );                           \\
+     case 2:  _hj_i += ( (unsigned)_hj_key[1] << 8 );                            \\
+     case 1:  _hj_i += _hj_key[0];                                               \\
+  }                                                                              \\
+  HASH_JEN_MIX(_hj_i, _hj_j, hashv);                                             \\
+  bkt = hashv & (num_bkts-1);                                                    \\
+}" 25420 . 28574) (WHILE "while" 28575 . 28580) (semantic-list "(0)" 28580 . 28583)))
+          ("HASH_SFH" (spp-arg-list ("key" "keylen" "num_bkts" "hashv" "bkt") 29045 . 29076) . 
+              ((DO "do" 29112 . 29114) (semantic-list "{                                                                             \\
+  unsigned char *_sfh_key=(unsigned char*)(key);                                 \\
+  uint32_t _sfh_tmp, _sfh_len = keylen;                                          \\
+                                                                                 \\
+  int _sfh_rem = _sfh_len & 3;                                                   \\
+  _sfh_len >>= 2;                                                                \\
+  hashv = 0xcafebabe;                                                            \\
+                                                                                 \\
+  /* Main loop */                                                                \\
+  for (;_sfh_len > 0; _sfh_len--) {                                              \\
+    hashv    += get16bits (_sfh_key);                                            \\
+    _sfh_tmp       = (uint32_t)(get16bits (_sfh_key+2)) << 11  ^ hashv;          \\
+    hashv     = (hashv << 16) ^ _sfh_tmp;                                        \\
+    _sfh_key += 2*sizeof (uint16_t);                                             \\
+    hashv    += hashv >> 11;                                                     \\
+  }                                                                              \\
+                                                                                 \\
+  /* Handle end cases */                                                         \\
+  switch (_sfh_rem) {                                                            \\
+    case 3: hashv += get16bits (_sfh_key);                                       \\
+            hashv ^= hashv << 16;                                                \\
+            hashv ^= (uint32_t)(_sfh_key[sizeof (uint16_t)] << 18);              \\
+            hashv += hashv >> 11;                                                \\
+            break;                                                               \\
+    case 2: hashv += get16bits (_sfh_key);                                       \\
+            hashv ^= hashv << 11;                                                \\
+            hashv += hashv >> 17;                                                \\
+            break;                                                               \\
+    case 1: hashv += *_sfh_key;                                                  \\
+            hashv ^= hashv << 10;                                                \\
+            hashv += hashv >> 1;                                                 \\
+  }                                                                              \\
+                                                                                 \\
+    /* Force \"avalanching\" of final 127 bits */                                  \\
+    hashv ^= hashv << 3;                                                         \\
+    hashv += hashv >> 5;                                                         \\
+    hashv ^= hashv << 4;                                                         \\
+    hashv += hashv >> 17;                                                        \\
+    hashv ^= hashv << 25;                                                        \\
+    hashv += hashv >> 6;                                                         \\
+    bkt = hashv & (num_bkts-1);                                                  \\
+}" 29115 . 32516) (WHILE "while" 32517 . 32522) (semantic-list "(0)" 32522 . 32525)))
+          ("HASH_DEL_IN_BKT" (spp-arg-list ("hh" "head" "hh_del") 39459 . 39475) . 
+              ((semantic-list "(head)" 39523 . 39529) (punctuation "." 39529 . 39530) (symbol "count" 39530 . 39535) (punctuation "-" 39535 . 39536) (punctuation "-" 39536 . 39537) (punctuation ";" 39537 . 39538) (IF "if" 39606 . 39608) (semantic-list "((head).hh_head == hh_del)" 39609 . 39635) (semantic-list "{                                              \\
+      (head).hh_head = hh_del->hh_next;                                          \\
+    }" 39636 . 39773) (IF "if" 39855 . 39857) (semantic-list "(hh_del->hh_prev)" 39858 . 39875) (semantic-list "{                                                       \\
+        hh_del->hh_prev->hh_next = hh_del->hh_next;                              \\
+    }" 39876 . 40022) (IF "if" 40104 . 40106) (semantic-list "(hh_del->hh_next)" 40107 . 40124) (semantic-list "{                                                       \\
+        hh_del->hh_next->hh_prev = hh_del->hh_prev;                              \\
+    }" 40125 . 40271)))
+          ("uthash_fatal" (spp-arg-list ("msg") 2876 . 2881) . ((symbol "exit" 2882 . 2886) (semantic-list "(-1)" 2886 . 2890)))
+          ("HASH_MAKE_TABLE" (spp-arg-list ("hh" "head") 6419 . 6428) . 
+              ((DO "do" 6479 . 6481) (semantic-list "{                                                                             \\
+  (head)->hh.tbl = (UT_hash_table*)uthash_malloc(                                \\
+                  sizeof(UT_hash_table));                                        \\
+  if (!((head)->hh.tbl))  { uthash_fatal( \"out of memory\"); }                    \\
+  memset((head)->hh.tbl, 0, sizeof(UT_hash_table));                              \\
+  (head)->hh.tbl->tail = &((head)->hh);                                          \\
+  (head)->hh.tbl->num_buckets = HASH_INITIAL_NUM_BUCKETS;                        \\
+  (head)->hh.tbl->log2_num_buckets = HASH_INITIAL_NUM_BUCKETS_LOG2;              \\
+  (head)->hh.tbl->hho = (char*)(&(head)->hh) - (char*)(head);                    \\
+  (head)->hh.tbl->buckets = (UT_hash_bucket*)uthash_malloc(                      \\
+          HASH_INITIAL_NUM_BUCKETS*sizeof(struct UT_hash_bucket));               \\
+  if (! (head)->hh.tbl->buckets) { uthash_fatal( \"out of memory\"); }             \\
+  memset((head)->hh.tbl->buckets, 0,                                             \\
+          HASH_INITIAL_NUM_BUCKETS*sizeof(struct UT_hash_bucket));               \\
+  HASH_BLOOM_MAKE((head)->hh.tbl);                                               \\
+  (head)->hh.tbl->signature = HASH_SIGNATURE;                                    \\
+}" 6482 . 7808) (WHILE "while" 7809 . 7814) (semantic-list "(0)" 7814 . 7817)))
+          ("HASH_ADD_STR" (spp-arg-list ("head" "strfield" "add") 14467 . 14486) . ((symbol "HASH_ADD" 14534 . 14542) (semantic-list "(hh,head,strfield[0],strlen(add->strfield),add)" 14542 . 14589)))
+          ("HASH_REPLACE_PTR" (spp-arg-list ("head" "ptrfield" "add" "replaced") 15434 . 15462) . ((symbol "HASH_REPLACE" 15497 . 15509) (semantic-list "(hh,head,ptrfield,sizeof(void *),add,replaced)" 15509 . 15555)))
+          ("HASH_SAX" (spp-arg-list ("key" "keylen" "num_bkts" "hashv" "bkt") 21895 . 21926) . 
+              ((DO "do" 21962 . 21964) (semantic-list "{                                                                             \\
+  unsigned _sx_i;                                                                \\
+  char *_hs_key=(char*)(key);                                                    \\
+  hashv = 0;                                                                     \\
+  for(_sx_i=0; _sx_i < keylen; _sx_i++)                                          \\
+      hashv ^= (hashv << 5) + (hashv >> 2) + _hs_key[_sx_i];                     \\
+  bkt = hashv & (num_bkts-1);                                                    \\
+}" 21965 . 22544) (WHILE "while" 22545 . 22550) (semantic-list "(0)" 22551 . 22554)))
+          ("HASH_ADD_TO_BKT" (spp-arg-list ("head" "addhh") 38493 . 38505) . 
+              ((DO "do" 38553 . 38555) (semantic-list "{                                                                             \\
+ head.count++;                                                                   \\
+ (addhh)->hh_next = head.hh_head;                                                \\
+ (addhh)->hh_prev = NULL;                                                        \\
+ if (head.hh_head) { (head).hh_head->hh_prev = (addhh); }                        \\
+ (head).hh_head=addhh;                                                           \\
+ if (head.count >= ((head.expand_mult+1) * HASH_BKT_CAPACITY_THRESH)             \\
+     && (addhh)->tbl->noexpand != 1) {                                           \\
+       HASH_EXPAND_BUCKETS((addhh)->tbl);                                        \\
+ }                                                                               \\
+}" 38556 . 39384) (WHILE "while" 39385 . 39390) (semantic-list "(0)" 39390 . 39393)))
+          ("uthash_noexpand_fyi" (spp-arg-list ("tbl") 3215 . 3220))
+          ("uthash_expand_fyi" (spp-arg-list ("tbl") 3326 . 3331))
+          ("HASH_INITIAL_NUM_BUCKETS_LOG2" . ((number "5" 3539 . 3540)))
+          ("HASH_DELETE" (spp-arg-list ("hh" "head" "delptr") 11524 . 11540) . 
+              ((DO "do" 11588 . 11590) (semantic-list "{                                                                             \\
+    unsigned _hd_bkt;                                                            \\
+    struct UT_hash_handle *_hd_hh_del;                                           \\
+    if ( ((delptr)->hh.prev == NULL) && ((delptr)->hh.next == NULL) )  {         \\
+        uthash_free((head)->hh.tbl->buckets,                                     \\
+                    (head)->hh.tbl->num_buckets*sizeof(struct UT_hash_bucket) ); \\
+        HASH_BLOOM_FREE((head)->hh.tbl);                                         \\
+        uthash_free((head)->hh.tbl, sizeof(UT_hash_table));                      \\
+        head = NULL;                                                             \\
+    } else {                                                                     \\
+        _hd_hh_del = &((delptr)->hh);                                            \\
+        if ((delptr) == ELMT_FROM_HH((head)->hh.tbl,(head)->hh.tbl->tail)) {     \\
+            (head)->hh.tbl->tail =                                               \\
+                (UT_hash_handle*)((ptrdiff_t)((delptr)->hh.prev) +               \\
+                (head)->hh.tbl->hho);                                            \\
+        }                                                                        \\
+        if ((delptr)->hh.prev) {                                                 \\
+            ((UT_hash_handle*)((ptrdiff_t)((delptr)->hh.prev) +                  \\
+                    (head)->hh.tbl->hho))->next = (delptr)->hh.next;             \\
+        } else {                                                                 \\
+            DECLTYPE_ASSIGN(head,(delptr)->hh.next);                             \\
+        }                                                                        \\
+        if (_hd_hh_del->next) {                                                  \\
+            ((UT_hash_handle*)((ptrdiff_t)_hd_hh_del->next +                     \\
+                    (head)->hh.tbl->hho))->prev =                                \\
+                    _hd_hh_del->prev;                                            \\
+        }                                                                        \\
+        HASH_TO_BKT( _hd_hh_del->hashv, (head)->hh.tbl->num_buckets, _hd_bkt);   \\
+        HASH_DEL_IN_BKT(hh,(head)->hh.tbl->buckets[_hd_bkt], _hd_hh_del);        \\
+        (head)->hh.tbl->num_items--;                                             \\
+    }                                                                            \\
+    HASH_FSCK(hh,head);                                                          \\
+}" 11591 . 14245) (WHILE "while" 14246 . 14251) (semantic-list "(0)" 14252 . 14255)))
+          ("HASH_REPLACE_STR" (spp-arg-list ("head" "strfield" "add" "replaced") 14614 . 14642) . ((symbol "HASH_REPLACE" 14675 . 14687) (semantic-list "(hh,head,strfield,strlen(add->strfield),add,replaced)" 14687 . 14740)))
+          ("HASH_SIGNATURE" . ((number "0xa0111fe1" 59109 . 59119)))
+          ("HASH_CLEAR" (spp-arg-list ("hh" "head") 56275 . 56284) . 
+              ((DO "do" 56340 . 56342) (semantic-list "{                                                                             \\
+  if (head) {                                                                    \\
+    uthash_free((head)->hh.tbl->buckets,                                         \\
+                (head)->hh.tbl->num_buckets*sizeof(struct UT_hash_bucket));      \\
+    HASH_BLOOM_FREE((head)->hh.tbl);                                             \\
+    uthash_free((head)->hh.tbl, sizeof(UT_hash_table));                          \\
+    (head)=NULL;                                                                 \\
+  }                                                                              \\
+}" 56343 . 57005) (WHILE "while" 57006 . 57011) (semantic-list "(0)" 57011 . 57014)))
+          ("HASH_INITIAL_NUM_BUCKETS" . ((number "32" 3454 . 3456)))
+          ("HASH_FIND_IN_BKT" (spp-arg-list ("tbl" "hh" "head" "keyptr" "keylen_in" "out") 37530 . 37564) . 
+              ((DO "do" 37589 . 37591) (semantic-list "{                                                                             \\
+ if (head.hh_head) DECLTYPE_ASSIGN(out,ELMT_FROM_HH(tbl,head.hh_head));          \\
+ else out=NULL;                                                                  \\
+ while (out) {                                                                   \\
+    if ((out)->hh.keylen == keylen_in) {                                           \\
+        if ((HASH_KEYCMP((out)->hh.key,keyptr,keylen_in)) == 0) break;             \\
+    }                                                                            \\
+    if ((out)->hh.hh_next) DECLTYPE_ASSIGN(out,ELMT_FROM_HH(tbl,(out)->hh.hh_next)); \\
+    else out = NULL;                                                             \\
+ }                                                                               \\
+}" 37592 . 38428) (WHILE "while" 38429 . 38434) (semantic-list "(0)" 38434 . 38437)))
+          ("HASH_SORT" (spp-arg-list ("head" "cmpfcn") 45837 . 45850) . ((symbol "HASH_SRT" 45851 . 45859) (semantic-list "(hh,head,cmpfcn)" 45859 . 45875)))
+          ("UTHASH_VERSION" . ((number "1.9" 2828 . 2831) (number ".9" 2831 . 2833)))
+          ("ELMT_FROM_HH" (spp-arg-list ("tbl" "hhp") 3743 . 3752) . ((semantic-list "((void*)(((char*)(hhp)) - ((tbl)->hho)))" 3753 . 3793)))
+          ("UTHASH_H")
+          ("HASH_BLOOM_FREE" (spp-arg-list ("tbl") 6278 . 6283))
+          ("HASH_JEN_MIX" (spp-arg-list ("a" "b" "c") 24428 . 24435) . 
+              ((DO "do" 24491 . 24493) (semantic-list "{                                                                             \\
+  a -= b; a -= c; a ^= ( c >> 13 );                                              \\
+  b -= c; b -= a; b ^= ( a << 8 );                                               \\
+  c -= a; c -= b; c ^= ( b >> 13 );                                              \\
+  a -= b; a -= c; a ^= ( c >> 12 );                                              \\
+  b -= c; b -= a; b ^= ( a << 16 );                                              \\
+  c -= a; c -= b; c ^= ( b >> 5 );                                               \\
+  a -= b; a -= c; a ^= ( c >> 3 );                                               \\
+  b -= c; b -= a; b ^= ( a << 10 );                                              \\
+  c -= a; c -= b; c ^= ( b >> 15 );                                              \\
+}" 24494 . 25322) (WHILE "while" 25323 . 25328) (semantic-list "(0)" 25329 . 25332)))
+          ("HASH_EXPAND_BUCKETS" (spp-arg-list ("tbl") 41813 . 41818) . 
+              ((DO "do" 41869 . 41871) (semantic-list "{                                                                             \\
+    unsigned _he_bkt;                                                            \\
+    unsigned _he_bkt_i;                                                          \\
+    struct UT_hash_handle *_he_thh, *_he_hh_nxt;                                 \\
+    UT_hash_bucket *_he_new_buckets, *_he_newbkt;                                \\
+    _he_new_buckets = (UT_hash_bucket*)uthash_malloc(                            \\
+             2 * tbl->num_buckets * sizeof(struct UT_hash_bucket));              \\
+    if (!_he_new_buckets) { uthash_fatal( \"out of memory\"); }                    \\
+    memset(_he_new_buckets, 0,                                                   \\
+            2 * tbl->num_buckets * sizeof(struct UT_hash_bucket));               \\
+    tbl->ideal_chain_maxlen =                                                    \\
+       (tbl->num_items >> (tbl->log2_num_buckets+1)) +                           \\
+       ((tbl->num_items & ((tbl->num_buckets*2)-1)) ? 1 : 0);                    \\
+    tbl->nonideal_items = 0;                                                     \\
+    for(_he_bkt_i = 0; _he_bkt_i < tbl->num_buckets; _he_bkt_i++)                \\
+    {                                                                            \\
+        _he_thh = tbl->buckets[ _he_bkt_i ].hh_head;                             \\
+        while (_he_thh) {                                                        \\
+           _he_hh_nxt = _he_thh->hh_next;                                        \\
+           HASH_TO_BKT( _he_thh->hashv, tbl->num_buckets*2, _he_bkt);            \\
+           _he_newbkt = &(_he_new_buckets[ _he_bkt ]);                           \\
+           if (++(_he_newbkt->count) > tbl->ideal_chain_maxlen) {                \\
+             tbl->nonideal_items++;                                              \\
+             _he_newbkt->expand_mult = _he_newbkt->count /                       \\
+                                        tbl->ideal_chain_maxlen;                 \\
+           }                                                                     \\
+           _he_thh->hh_prev = NULL;                                              \\
+           _he_thh->hh_next = _he_newbkt->hh_head;                               \\
+           if (_he_newbkt->hh_head) _he_newbkt->hh_head->hh_prev =               \\
+                _he_thh;                                                         \\
+           _he_newbkt->hh_head = _he_thh;                                        \\
+           _he_thh = _he_hh_nxt;                                                 \\
+        }                                                                        \\
+    }                                                                            \\
+    uthash_free( tbl->buckets, tbl->num_buckets*sizeof(struct UT_hash_bucket) ); \\
+    tbl->num_buckets *= 2;                                                       \\
+    tbl->log2_num_buckets++;                                                     \\
+    tbl->buckets = _he_new_buckets;                                              \\
+    tbl->ineff_expands = (tbl->nonideal_items > (tbl->num_items >> 1)) ?         \\
+        (tbl->ineff_expands+1) : 0;                                              \\
+    if (tbl->ineff_expands > 1) {                                                \\
+        tbl->noexpand=1;                                                         \\
+        uthash_noexpand_fyi(tbl);                                                \\
+    }                                                                            \\
+    uthash_expand_fyi(tbl);                                                      \\
+}" 41872 . 45605) (WHILE "while" 45606 . 45611) (semantic-list "(0)" 45611 . 45614)))
+          ("DECLTYPE" (spp-arg-list ("x") 1933 . 1936) . ((semantic-list "(__typeof(x))" 1937 . 1950)))
+          ("HASH_BLOOM_MAKE" (spp-arg-list ("tbl") 6248 . 6253))
+          ("HASH_FIND_INT" (spp-arg-list ("head" "findint" "out") 14762 . 14780) . ((symbol "HASH_FIND" 14828 . 14837) (semantic-list "(hh,head,findint,sizeof(int),out)" 14837 . 14870)))
+          ("HASH_EMIT_KEY" (spp-arg-list ("hh" "head" "keyptr" "fieldlen") 20850 . 20875))
+          ("get16bits" (spp-arg-list ("d") 28892 . 28895) . ((semantic-list "((((uint32_t)(((const uint8_t *)(d))[1])) << 8)             \\
+                       +(uint32_t)(((const uint8_t *)(d))[0]) )" 28896 . 29021)))
+          ("uthash_malloc" (spp-arg-list ("sz") 2986 . 2990) . ((symbol "malloc" 2991 . 2997) (semantic-list "(sz)" 2997 . 3001)))
+          ("HASH_ADD_KEYPTR" (spp-arg-list ("hh" "head" "keyptr" "keylen_in" "add") 8670 . 8700) . 
+              ((DO "do" 8730 . 8732) (semantic-list "{                                                                             \\
+ unsigned _ha_bkt;                                                               \\
+ (add)->hh.next = NULL;                                                          \\
+ (add)->hh.key = (char*)(keyptr);                                                \\
+ (add)->hh.keylen = (unsigned)(keylen_in);                                       \\
+ if (!(head)) {                                                                  \\
+    head = (add);                                                                \\
+    (head)->hh.prev = NULL;                                                      \\
+    HASH_MAKE_TABLE(hh,head);                                                    \\
+ } else {                                                                        \\
+    (head)->hh.tbl->tail->next = (add);                                          \\
+    (add)->hh.prev = ELMT_FROM_HH((head)->hh.tbl, (head)->hh.tbl->tail);         \\
+    (head)->hh.tbl->tail = &((add)->hh);                                         \\
+ }                                                                               \\
+ (head)->hh.tbl->num_items++;                                                    \\
+ (add)->hh.tbl = (head)->hh.tbl;                                                 \\
+ HASH_FCN(keyptr,keylen_in, (head)->hh.tbl->num_buckets,                         \\
+         (add)->hh.hashv, _ha_bkt);                                              \\
+ HASH_ADD_TO_BKT((head)->hh.tbl->buckets[_ha_bkt],&(add)->hh);                   \\
+ HASH_BLOOM_ADD((head)->hh.tbl,(add)->hh.hashv);                                 \\
+ HASH_EMIT_KEY(hh,head,keyptr,keylen_in);                                        \\
+ HASH_FSCK(hh,head);                                                             \\
+}" 8733 . 10557) (WHILE "while" 10558 . 10563) (semantic-list "(0)" 10563 . 10566)))
+          ("HASH_FIND_PTR" (spp-arg-list ("head" "findptr" "out") 15165 . 15183) . ((symbol "HASH_FIND" 15231 . 15240) (semantic-list "(hh,head,findptr,sizeof(void *),out)" 15240 . 15276)))
+          ("HASH_DEL" (spp-arg-list ("head" "delptr") 15572 . 15585) . ((symbol "HASH_DELETE" 15643 . 15654) (semantic-list "(hh,head,delptr)" 15654 . 15670)))
+          ("HASH_SRT" (spp-arg-list ("hh" "head" "cmpfcn") 45892 . 45908) . 
+              ((DO "do" 45959 . 45961) (semantic-list "{                                                                             \\
+  unsigned _hs_i;                                                                \\
+  unsigned _hs_looping,_hs_nmerges,_hs_insize,_hs_psize,_hs_qsize;               \\
+  struct UT_hash_handle *_hs_p, *_hs_q, *_hs_e, *_hs_list, *_hs_tail;            \\
+  if (head) {                                                                    \\
+      _hs_insize = 1;                                                            \\
+      _hs_looping = 1;                                                           \\
+      _hs_list = &((head)->hh);                                                  \\
+      while (_hs_looping) {                                                      \\
+          _hs_p = _hs_list;                                                      \\
+          _hs_list = NULL;                                                       \\
+          _hs_tail = NULL;                                                       \\
+          _hs_nmerges = 0;                                                       \\
+          while (_hs_p) {                                                        \\
+              _hs_nmerges++;                                                     \\
+              _hs_q = _hs_p;                                                     \\
+              _hs_psize = 0;                                                     \\
+              for ( _hs_i = 0; _hs_i  < _hs_insize; _hs_i++ ) {                  \\
+                  _hs_psize++;                                                   \\
+                  _hs_q = (UT_hash_handle*)((_hs_q->next) ?                      \\
+                          ((void*)((char*)(_hs_q->next) +                        \\
+                          (head)->hh.tbl->hho)) : NULL);                         \\
+                  if (! (_hs_q) ) break;                                         \\
+              }                                                                  \\
+              _hs_qsize = _hs_insize;                                            \\
+              while ((_hs_psize > 0) || ((_hs_qsize > 0) && _hs_q )) {           \\
+                  if (_hs_psize == 0) {                                          \\
+                      _hs_e = _hs_q;                                             \\
+                      _hs_q = (UT_hash_handle*)((_hs_q->next) ?                  \\
+                              ((void*)((char*)(_hs_q->next) +                    \\
+                              (head)->hh.tbl->hho)) : NULL);                     \\
+                      _hs_qsize--;                                               \\
+                  } else if ( (_hs_qsize == 0) || !(_hs_q) ) {                   \\
+                      _hs_e = _hs_p;                                             \\
+                      if (_hs_p){                                                \\
+                        _hs_p = (UT_hash_handle*)((_hs_p->next) ?                \\
+                                ((void*)((char*)(_hs_p->next) +                  \\
+                                (head)->hh.tbl->hho)) : NULL);                   \\
+                       }                                                         \\
+                      _hs_psize--;                                               \\
+                  } else if ((                                                   \\
+                      cmpfcn(DECLTYPE(head)(ELMT_FROM_HH((head)->hh.tbl,_hs_p)), \\
+                             DECLTYPE(head)(ELMT_FROM_HH((head)->hh.tbl,_hs_q))) \\
+                             ) <= 0) {                                           \\
+                      _hs_e = _hs_p;                                             \\
+                      if (_hs_p){                                                \\
+                        _hs_p = (UT_hash_handle*)((_hs_p->next) ?                \\
+                               ((void*)((char*)(_hs_p->next) +                   \\
+                               (head)->hh.tbl->hho)) : NULL);                    \\
+                       }                                                         \\
+                      _hs_psize--;                                               \\
+                  } else {                                                       \\
+                      _hs_e = _hs_q;                                             \\
+                      _hs_q = (UT_hash_handle*)((_hs_q->next) ?                  \\
+                              ((void*)((char*)(_hs_q->next) +                    \\
+                              (head)->hh.tbl->hho)) : NULL);                     \\
+                      _hs_qsize--;                                               \\
+                  }                                                              \\
+                  if ( _hs_tail ) {                                              \\
+                      _hs_tail->next = ((_hs_e) ?                                \\
+                            ELMT_FROM_HH((head)->hh.tbl,_hs_e) : NULL);          \\
+                  } else {                                                       \\
+                      _hs_list = _hs_e;                                          \\
+                  }                                                              \\
+                  if (_hs_e) {                                                   \\
+                  _hs_e->prev = ((_hs_tail) ?                                    \\
+                     ELMT_FROM_HH((head)->hh.tbl,_hs_tail) : NULL);              \\
+                  }                                                              \\
+                  _hs_tail = _hs_e;                                              \\
+              }                                                                  \\
+              _hs_p = _hs_q;                                                     \\
+          }                                                                      \\
+          if (_hs_tail){                                                         \\
+            _hs_tail->next = NULL;                                               \\
+          }                                                                      \\
+          if ( _hs_nmerges <= 1 ) {                                              \\
+              _hs_looping=0;                                                     \\
+              (head)->hh.tbl->tail = _hs_tail;                                   \\
+              DECLTYPE_ASSIGN(head,ELMT_FROM_HH((head)->hh.tbl, _hs_list));      \\
+          }                                                                      \\
+          _hs_insize *= 2;                                                       \\
+      }                                                                          \\
+      HASH_FSCK(hh,head);                                                        \\
+ }                                                                               \\
+}" 45962 . 52932) (WHILE "while" 52933 . 52938) (semantic-list "(0)" 52939 . 52942)))
+          ("HASH_COUNT" (spp-arg-list ("head") 57947 . 57953) . ((symbol "HASH_CNT" 57954 . 57962) (semantic-list "(hh,head)" 57962 . 57971)))
+          ("HASH_CNT" (spp-arg-list ("hh" "head") 57989 . 57998) . ((semantic-list "((head)?((head)->hh.tbl->num_items):0)" 57999 . 58037)))
+          ("uthash_free" (spp-arg-list ("ptr" "sz") 3091 . 3099) . ((symbol "free" 3100 . 3104) (semantic-list "(ptr)" 3104 . 3109)))
+          ("HASH_ADD" (spp-arg-list ("hh" "head" "fieldname" "keylen_in" "add") 7835 . 7868) . ((symbol "HASH_ADD_KEYPTR" 7910 . 7925) (semantic-list "(hh,head,&((add)->fieldname),keylen_in,add)" 7925 . 7968)))
+          ("HASH_FIND_STR" (spp-arg-list ("head" "findstr" "out") 14334 . 14352) . ((symbol "HASH_FIND" 14400 . 14409) (semantic-list "(hh,head,findstr,strlen(findstr),out)" 14409 . 14446)))
+          ("HASH_FCN" . ((symbol "HASH_JEN" 21058 . 21066)))
+          ("HASH_BER" (spp-arg-list ("key" "keylen" "num_bkts" "hashv" "bkt") 21153 . 21184) . 
+              ((DO "do" 21220 . 21222) (semantic-list "{                                                                             \\
+  unsigned _hb_keylen=keylen;                                                    \\
+  char *_hb_key=(char*)(key);                                                    \\
+  (hashv) = 0;                                                                   \\
+  while (_hb_keylen--)  { (hashv) = ((hashv) * 33) + *_hb_key++; }               \\
+  bkt = (hashv) & (num_bkts-1);                                                  \\
+}" 21223 . 21719) (WHILE "while" 21720 . 21725) (semantic-list "(0)" 21726 . 21729)))
+          ("HASH_SELECT" (spp-arg-list ("hh_dst" "dst" "hh_src" "src" "cond") 53275 . 53307) . 
+              ((DO "do" 53339 . 53341) (semantic-list "{                                                                             \\
+  unsigned _src_bkt, _dst_bkt;                                                   \\
+  void *_last_elt=NULL, *_elt;                                                   \\
+  UT_hash_handle *_src_hh, *_dst_hh, *_last_elt_hh=NULL;                         \\
+  ptrdiff_t _dst_hho = ((char*)(&(dst)->hh_dst) - (char*)(dst));                 \\
+  if (src) {                                                                     \\
+    for(_src_bkt=0; _src_bkt < (src)->hh_src.tbl->num_buckets; _src_bkt++) {     \\
+      for(_src_hh = (src)->hh_src.tbl->buckets[_src_bkt].hh_head;                \\
+          _src_hh;                                                               \\
+          _src_hh = _src_hh->hh_next) {                                          \\
+          _elt = ELMT_FROM_HH((src)->hh_src.tbl, _src_hh);                       \\
+          if (cond(_elt)) {                                                      \\
+            _dst_hh = (UT_hash_handle*)(((char*)_elt) + _dst_hho);               \\
+            _dst_hh->key = _src_hh->key;                                         \\
+            _dst_hh->keylen = _src_hh->keylen;                                   \\
+            _dst_hh->hashv = _src_hh->hashv;                                     \\
+            _dst_hh->prev = _last_elt;                                           \\
+            _dst_hh->next = NULL;                                                \\
+            if (_last_elt_hh) { _last_elt_hh->next = _elt; }                     \\
+            if (!dst) {                                                          \\
+              DECLTYPE_ASSIGN(dst,_elt);                                         \\
+              HASH_MAKE_TABLE(hh_dst,dst);                                       \\
+            } else {                                                             \\
+              _dst_hh->tbl = (dst)->hh_dst.tbl;                                  \\
+            }                                                                    \\
+            HASH_TO_BKT(_dst_hh->hashv, _dst_hh->tbl->num_buckets, _dst_bkt);    \\
+            HASH_ADD_TO_BKT(_dst_hh->tbl->buckets[_dst_bkt],_dst_hh);            \\
+            (dst)->hh_dst.tbl->num_items++;                                      \\
+            _last_elt = _elt;                                                    \\
+            _last_elt_hh = _dst_hh;                                              \\
+          }                                                                      \\
+      }                                                                          \\
+    }                                                                            \\
+  }                                                                              \\
+  HASH_FSCK(hh_dst,dst);                                                         \\
+}" 53342 . 56245) (WHILE "while" 56246 . 56251) (semantic-list "(0)" 56252 . 56255)))
+          )
+
+    )
+   )
+  :file "!home!matt!src!silveretta!c-src!extern!uthash!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,1662 @@
+;; Object mpc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mpc/"
+  :tables (list 
+   (semanticdb-table "mpc.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("mpc_h" variable (:constant-flag t) nil [188 193])
+            ("stdlib.h" include (:system-flag t) nil [195 214])
+            ("stdio.h" include (:system-flag t) nil [215 233])
+            ("stdarg.h" include (:system-flag t) nil [234 253])
+            ("string.h" include (:system-flag t) nil [254 273])
+            ("math.h" include (:system-flag t) nil [274 291])
+            ("errno.h" include (:system-flag t) nil [292 310])
+            ("mpc_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("pos" variable (:type "int") (reparse-symbol classsubparts) [352 360])
+                          ("row" variable (:type "int") (reparse-symbol classsubparts) [363 371])
+                          ("col" variable (:type "int") (reparse-symbol classsubparts) [374 382])
+                          ("next" variable (:type "char") (reparse-symbol classsubparts) [385 395]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [333 410])
+            ("mpc_err_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("state" variable (:type ("mpc_state_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [431 449])
+                          ("expected_num" variable (:type "int") (reparse-symbol classsubparts) [452 469])
+                          ("filename" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [472 487])
+                          ("failure" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [490 504])
+                          ("expected" variable
+                             (:pointer 2
+                              :type "char")
+                              (reparse-symbol classsubparts) [507 523]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [412 536])
+            ("mpc_err_delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("mpc_err_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [558 571]))                  
+                :type "void")
+                nil [538 572])
+            ("mpc_err_string" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("mpc_err_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [594 607]))                  
+                :type "char")
+                nil [573 608])
+            ("mpc_err_print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("mpc_err_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [628 641]))                  
+                :type "void")
+                nil [609 642])
+            ("mpc_err_print_to" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("mpc_err_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [665 678])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [679 687]))                  
+                :type "void")
+                nil [643 688])
+            ("mpc_val_t" type
+               (:typedef ("void")
+                :superclasses "void"
+                :type "typedef")
+                nil [708 731])
+            ("mpc_result_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("error" variable
+                             (:pointer 1
+                              :type ("mpc_err_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [751 768])
+                          ("output" variable
+                             (:pointer 1
+                              :type ("mpc_val_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [771 789]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [733 805])
+            ("mpc_parser_t" type
+               (:prototype t
+                :type "struct")
+                nil [807 827])
+            ("mpc_parser_t" type
+               (:typedef ("mpc_parser_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "mpc_parser_t"
+                :type "typedef")
+                nil [828 869])
+            ("mpc_parse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [885 906])
+                    ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [907 926])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [927 943])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("mpc_result_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [944 960]))                  
+                :type "int")
+                nil [871 961])
+            ("mpc_parse_file" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [981 1002])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1003 1014])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1015 1031])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("mpc_result_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1032 1048]))                  
+                :type "int")
+                nil [962 1049])
+            ("mpc_parse_pipe" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1069 1090])
+                    ("pipe" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1091 1102])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1103 1119])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("mpc_result_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1120 1136]))                  
+                :type "int")
+                nil [1050 1137])
+            ("mpc_parse_contents" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1161 1182])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1183 1199])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("mpc_result_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1200 1216]))                  
+                :type "int")
+                nil [1138 1217])
+            ("mpc_dtor_t" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [1252 1282])
+            ("mpc_ctor_t" variable
+               (:functionpointer-flag t
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [1291 1321])
+            ("mpc_apply_t" variable
+               (:functionpointer-flag t
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [1331 1368])
+            ("mpc_apply_to_t" variable
+               (:functionpointer-flag t
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [1377 1423])
+            ("mpc_fold_t" variable
+               (:functionpointer-flag t
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [1432 1473])
+            ("mpc_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1525 1542]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [1503 1543])
+            ("mpc_define" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1569 1585])
+                    ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1586 1602]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [1544 1603])
+            ("mpc_undefine" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1631 1647]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [1604 1648])
+            ("mpc_delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1666 1682]))                  
+                :type "void")
+                nil [1650 1683])
+            ("mpc_cleanup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1701 1707])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1708 1712]))                  
+                :type "void")
+                nil [1684 1713])
+            ("mpc_pass" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1762 1767]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [1739 1768])
+            ("mpc_fail" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1792 1806]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [1769 1807])
+            ("mpc_failf" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1832 1848])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1849 1853]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [1808 1854])
+            ("mpc_lift" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("f" variable (:type ("mpc_ctor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1878 1891]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [1855 1892])
+            ("mpc_lift_val" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1920 1933]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [1893 1934])
+            ("mpc_any" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1958 1963]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [1936 1964])
+            ("mpc_char" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [1988 1995]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [1965 1996])
+            ("mpc_range" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("s" variable (:type "char") (reparse-symbol arg-sub-list) [2021 2028])
+                    ("e" variable (:type "char") (reparse-symbol arg-sub-list) [2029 2036]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [1997 2037])
+            ("mpc_oneof" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2062 2076]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2038 2077])
+            ("mpc_noneof" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2103 2117]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2078 2118])
+            ("mpc_satisfy" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2145 2152]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2119 2160])
+            ("mpc_string" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2186 2200]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2161 2201])
+            ("mpc_expect" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2257 2273])
+                    ("e" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2274 2288]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2232 2289])
+            ("mpc_expectf" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2316 2332])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2333 2349])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2350 2354]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2290 2355])
+            ("mpc_apply" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2380 2396])
+                    ("f" variable (:type ("mpc_apply_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2397 2411]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2356 2412])
+            ("mpc_apply_to" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2440 2456])
+                    ("f" variable (:type ("mpc_apply_to_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2457 2474])
+                    ("x" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2475 2483]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2413 2484])
+            ("mpc_not" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2508 2524])
+                    ("da" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2525 2539]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2486 2540])
+            ("mpc_not_lift" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2568 2584])
+                    ("da" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2585 2599])
+                    ("lf" variable (:type ("mpc_ctor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2600 2614]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2541 2615])
+            ("mpc_maybe" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2640 2656]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2616 2657])
+            ("mpc_maybe_lift" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2687 2703])
+                    ("lf" variable (:type ("mpc_ctor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2704 2718]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2658 2719])
+            ("mpc_many" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("f" variable (:type ("mpc_fold_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2744 2757])
+                    ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2758 2774]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2721 2775])
+            ("mpc_many1" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("f" variable (:type ("mpc_fold_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2800 2813])
+                    ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2814 2830]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2776 2831])
+            ("mpc_count" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2856 2862])
+                    ("f" variable (:type ("mpc_fold_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2863 2876])
+                    ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2877 2893])
+                    ("da" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2894 2908]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2832 2909])
+            ("mpc_or" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2932 2938])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2939 2943]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2911 2944])
+            ("mpc_and" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2967 2973])
+                    ("f" variable (:type ("mpc_fold_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2974 2987])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2988 2992]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2945 2993])
+            ("mpc_predictive" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3024 3040]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [2995 3041])
+            ("mpc_eoi" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3090 3095]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3068 3096])
+            ("mpc_soi" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3119 3124]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3097 3125])
+            ("mpc_whitespace" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3156 3161]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3127 3162])
+            ("mpc_whitespaces" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3193 3198]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3163 3199])
+            ("mpc_blank" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3224 3229]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3200 3230])
+            ("mpc_newline" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3258 3263]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3232 3264])
+            ("mpc_tab" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3287 3292]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3265 3293])
+            ("mpc_escape" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3319 3324]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3294 3325])
+            ("mpc_digit" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3351 3356]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3327 3357])
+            ("mpc_hexdigit" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3385 3390]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3358 3391])
+            ("mpc_octdigit" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3419 3424]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3392 3425])
+            ("mpc_digits" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3451 3456]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3426 3457])
+            ("mpc_hexdigits" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3486 3491]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3458 3492])
+            ("mpc_octdigits" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3521 3526]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3493 3527])
+            ("mpc_lower" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3553 3558]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3529 3559])
+            ("mpc_upper" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3584 3589]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3560 3590])
+            ("mpc_alpha" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3615 3620]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3591 3621])
+            ("mpc_underscore" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3651 3656]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3622 3657])
+            ("mpc_alphanum" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3685 3690]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3658 3691])
+            ("mpc_int" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3715 3720]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3693 3721])
+            ("mpc_hex" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3744 3749]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3722 3750])
+            ("mpc_oct" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3773 3778]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3751 3779])
+            ("mpc_number" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3805 3810]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3780 3811])
+            ("mpc_real" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3836 3841]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3813 3842])
+            ("mpc_float" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3867 3872]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3843 3873])
+            ("mpc_char_lit" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3902 3907]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3875 3908])
+            ("mpc_string_lit" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3938 3943]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3909 3944])
+            ("mpc_regex_lit" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3973 3978]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3945 3979])
+            ("mpc_ident" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4005 4010]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [3981 4011])
+            ("mpc_startwith" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4066 4082]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4038 4083])
+            ("mpc_endwith" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4110 4126])
+                    ("da" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4127 4141]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4084 4142])
+            ("mpc_whole" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4167 4183])
+                    ("da" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4184 4198]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4143 4199])
+            ("mpc_stripl" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4226 4242]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4201 4243])
+            ("mpc_stripr" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4269 4285]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4244 4286])
+            ("mpc_strip" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4311 4327]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4287 4328])
+            ("mpc_tok" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4351 4367]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4329 4368])
+            ("mpc_sym" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4392 4406]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4370 4407])
+            ("mpc_total" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4432 4448])
+                    ("da" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4449 4463]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4408 4464])
+            ("mpc_between" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4492 4508])
+                    ("ad" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4509 4523])
+                    ("o" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4524 4538])
+                    ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4539 4553]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4466 4554])
+            ("mpc_parens" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4580 4596])
+                    ("ad" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4597 4611]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4555 4612])
+            ("mpc_braces" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4638 4654])
+                    ("ad" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4655 4669]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4613 4670])
+            ("mpc_brackets" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4698 4714])
+                    ("ad" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4715 4729]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4671 4730])
+            ("mpc_squares" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4757 4773])
+                    ("ad" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4774 4788]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4731 4789])
+            ("mpc_tok_between" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4821 4837])
+                    ("ad" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4838 4852])
+                    ("o" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4853 4867])
+                    ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4868 4882]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4791 4883])
+            ("mpc_tok_parens" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4913 4929])
+                    ("ad" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4930 4944]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4884 4945])
+            ("mpc_tok_braces" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4975 4991])
+                    ("ad" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4992 5006]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [4946 5007])
+            ("mpc_tok_brackets" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5039 5055])
+                    ("ad" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5056 5070]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [5008 5071])
+            ("mpc_tok_squares" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5102 5118])
+                    ("ad" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5119 5133]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [5072 5134])
+            ("mpcf_dtor_null" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5193 5206]))                  
+                :type "void")
+                nil [5173 5207])
+            ("mpcf_ctor_null" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5235 5240]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5209 5241])
+            ("mpcf_ctor_str" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5267 5272]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5242 5273])
+            ("mpcf_free" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5296 5309]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5275 5310])
+            ("mpcf_int" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5331 5344]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5311 5345])
+            ("mpcf_hex" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5366 5379]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5346 5380])
+            ("mpcf_oct" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5401 5414]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5381 5415])
+            ("mpcf_float" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5438 5451]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5416 5452])
+            ("mpcf_escape" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5477 5490]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5454 5491])
+            ("mpcf_escape_regex" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5521 5534]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5492 5535])
+            ("mpcf_escape_string_raw" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5570 5583]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5536 5584])
+            ("mpcf_escape_char_raw" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5617 5630]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5585 5631])
+            ("mpcf_unescape" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5658 5671]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5633 5672])
+            ("mpcf_unescape_regex" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5704 5717]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5673 5718])
+            ("mpcf_unescape_string_raw" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5755 5768]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5719 5769])
+            ("mpcf_unescape_char_raw" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5804 5817]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5770 5818])
+            ("mpcf_null" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [5841 5847])
+                    ("xs" variable
+                       (:pointer 2
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5848 5863]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5820 5864])
+            ("mpcf_fst" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [5885 5891])
+                    ("xs" variable
+                       (:pointer 2
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5892 5907]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5865 5908])
+            ("mpcf_snd" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [5929 5935])
+                    ("xs" variable
+                       (:pointer 2
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5936 5951]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5909 5952])
+            ("mpcf_trd" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [5973 5979])
+                    ("xs" variable
+                       (:pointer 2
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5980 5995]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5953 5996])
+            ("mpcf_fst_free" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [6023 6029])
+                    ("xs" variable
+                       (:pointer 2
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6030 6045]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [5998 6046])
+            ("mpcf_snd_free" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [6072 6078])
+                    ("xs" variable
+                       (:pointer 2
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6079 6094]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [6047 6095])
+            ("mpcf_trd_free" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [6121 6127])
+                    ("xs" variable
+                       (:pointer 2
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6128 6143]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [6096 6144])
+            ("mpcf_strfold" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [6170 6176])
+                    ("xs" variable
+                       (:pointer 2
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6177 6192]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [6146 6193])
+            ("mpcf_maths" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [6216 6222])
+                    ("xs" variable
+                       (:pointer 2
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6223 6238]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [6194 6239])
+            ("mpc_re" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("re" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6299 6314]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [6278 6315])
+            ("mpc_ast_t" type
+               (:typedef ("mpc_ast_t" type (:type "struct") nil nil)
+                :superclasses "mpc_ast_t"
+                :type "typedef")
+                nil [6333 6454])
+            ("mpc_ast_t" type
+               (:members 
+                  ( ("tag" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6362 6372])
+                    ("contents" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6375 6390])
+                    ("children_num" variable (:type "int") (reparse-symbol classsubparts) [6393 6410])
+                    ("children" variable
+                       (:pointer 2
+                        :type ("mpc_ast_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6413 6441]))                  
+                :type "struct")
+                nil [6333 6454])
+            ("mpc_ast_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("tag" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6479 6495])
+                    ("contents" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6496 6517]))                  
+                :type ("mpc_ast_t" type (:type "class") nil nil))
+                nil [6456 6518])
+            ("mpc_ast_build" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [6544 6550])
+                    ("tag" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6551 6567])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [6568 6572]))                  
+                :type ("mpc_ast_t" type (:type "class") nil nil))
+                nil [6519 6573])
+            ("mpc_ast_add_root" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6602 6615]))                  
+                :type ("mpc_ast_t" type (:type "class") nil nil))
+                nil [6574 6616])
+            ("mpc_ast_add_child" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6646 6659])
+                    ("a" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6660 6673]))                  
+                :type ("mpc_ast_t" type (:type "class") nil nil))
+                nil [6617 6674])
+            ("mpc_ast_add_tag" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6702 6715])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6716 6730]))                  
+                :type ("mpc_ast_t" type (:type "class") nil nil))
+                nil [6675 6731])
+            ("mpc_ast_tag" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6755 6768])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6769 6783]))                  
+                :type ("mpc_ast_t" type (:type "class") nil nil))
+                nil [6732 6784])
+            ("mpc_ast_delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6806 6819]))                  
+                :type "void")
+                nil [6786 6820])
+            ("mpc_ast_print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6840 6853]))                  
+                :type "void")
+                nil [6821 6854])
+            ("mpc_ast_eq" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6871 6884])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("mpc_ast_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6885 6898]))                  
+                :type "int")
+                nil [6856 6899])
+            ("mpcf_fold_ast" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [6926 6932])
+                    ("as" variable
+                       (:pointer 2
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6933 6948]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [6901 6949])
+            ("mpcf_str_ast" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("mpc_val_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6974 6987]))                  
+                :type ("mpc_val_t" type (:type "class") nil nil))
+                nil [6950 6988])
+            ("mpca_tag" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7013 7029])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7030 7044]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [6990 7045])
+            ("mpca_add_tag" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7073 7089])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7090 7104]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [7046 7105])
+            ("mpca_root" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7130 7146]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [7106 7147])
+            ("mpca_total" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7173 7189]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [7148 7190])
+            ("mpca_not" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7215 7231]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [7192 7232])
+            ("mpca_maybe" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7258 7274]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [7233 7275])
+            ("mpca_many" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7301 7317]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [7277 7318])
+            ("mpca_many1" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7344 7360]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [7319 7361])
+            ("mpca_count" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [7387 7393])
+                    ("a" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7394 7410]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [7362 7411])
+            ("mpca_or" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [7435 7441])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7442 7446]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [7413 7447])
+            ("mpca_and" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [7471 7477])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7478 7482]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [7448 7483])
+            ("" type
+               (:members 
+                  ( ("MPC_LANG_DEFAULT" variable
+                       (:constant-flag t
+                        :default-value (7526 7527)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7494 7527])
+                    ("MPC_LANG_PREDICTIVE" variable
+                       (:constant-flag t
+                        :default-value (7563 7564)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7531 7564])
+                    ("MPC_LANG_WHITESPACE_SENSITIVE" variable
+                       (:constant-flag t
+                        :default-value (7600 7601)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7568 7601]))                  
+                :type "enum")
+                nil [7485 7604])
+            ("mpca_grammar" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [7633 7643])
+                    ("grammar" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7644 7664])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7665 7669]))                  
+                :type ("mpc_parser_t" type (:type "class") nil nil))
+                nil [7606 7670])
+            ("mpca_lang" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [7693 7703])
+                    ("language" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7704 7725])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7726 7730]))                  
+                :type ("mpc_err_t" type (:type "class") nil nil))
+                nil [7672 7731])
+            ("mpca_lang_file" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [7758 7768])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7769 7777])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7778 7782]))                  
+                :type ("mpc_err_t" type (:type "class") nil nil))
+                nil [7732 7783])
+            ("mpca_lang_pipe" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [7810 7820])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7821 7829])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7830 7834]))                  
+                :type ("mpc_err_t" type (:type "class") nil nil))
+                nil [7784 7835])
+            ("mpca_lang_contents" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [7866 7876])
+                    ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7877 7898])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7899 7903]))                  
+                :type ("mpc_err_t" type (:type "class") nil nil))
+                nil [7836 7904])
+            ("mpc_print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7947 7963]))                  
+                :type "void")
+                nil [7932 7964])
+            ("mpc_unmatch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7982 7998])
+                    ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7999 8013])
+                    ("d" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8014 8022])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [8025 8037])
+                    ("destructor" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8055 8077])
+                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [8080 8094]))                  
+                :type "int")
+                nil [7966 8103])
+            ("mpc_match" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("mpc_parser_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8119 8135])
+                    ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8136 8150])
+                    ("d" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8151 8159])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [8162 8174])
+                    ("destructor" variable (:type ("mpc_dtor_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8193 8215])
+                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [8219 8233]))                  
+                :type "int")
+                nil [8105 8242]))          
+    :file "mpc.h"
+    :pointmax 8251
+    :fsize 8558
+    :lastmodtime '(21367 28203 740231 909000)
+    :unmatched-syntax '((semantic-list 8233 . 8240) (semantic-list 8223 . 8233) (semantic-list 8174 . 8188) (semantic-list 8165 . 8174) (semantic-list 8094 . 8101) (semantic-list 8084 . 8094) (semantic-list 8037 . 8051) (semantic-list 8028 . 8037) (semantic-list 2152 . 2158) (semantic-list 2148 . 2152) (TYPEDEF 1424 . 1431) (TYPEDEF 1369 . 1376) (TYPEDEF 1323 . 1330) (TYPEDEF 1283 . 1290) (TYPEDEF 1244 . 1251))
+    :lexical-table 
+        '(("mpc_h")
+          )
+
+    )
+   )
+  :file "!home!matt!src!silveretta!c-src!extern!mpc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

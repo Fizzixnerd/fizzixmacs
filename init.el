@@ -39,8 +39,13 @@
  ;; If there is more than one, they won't work right.
  '(LaTeX-command "latex --enable-write18")
  '(column-number-mode t)
+ '(company-ghc-show-info t)
  '(doc-view-continuous t)
  '(ede-project-directories (quote ("/home/matt/src/silveretta/src")))
+ ;'(haskell-mode-hook (quote ((lambda nil (ghc-init) (company-mode) (auto-complete-mode 0) (local-set-key (kbd "C-M-d") (quote company-show-doc-buffer)) (subword-mode 1) (flymake-mode 0) (turn-on-haskell-indentation) (turn-on-haskell-doc-mode) (turn-on-haskell-decl-scan) (setq haskell-process-suggest-remove-import-lines t) (setq haskell-process-auto-import-loaded-modules t) (setq haskell-process-log t)) interactive-haskell-mode)))
+ '(haskell-process-auto-import-loaded-modules t)
+ '(haskell-process-log t)
+ '(haskell-process-suggest-remove-import-lines t)
  '(haskell-program-name "cabal repl")
  '(inferior-haskell-use-web-docs (quote always))
  '(inferior-haskell-wait-and-jump t)

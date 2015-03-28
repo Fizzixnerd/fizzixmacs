@@ -76,4 +76,4 @@
 
 (global-set-key [home] 'smart-move-beginning-of-line)
 (global-set-key "\C-a" 'smart-move-beginning-of-line)
-(global-set-key "\M-f" 'skip-whitespace-or-forward-word)
+;(global-set-key "\M-f" 'skip-whitespace-or-forward-word)

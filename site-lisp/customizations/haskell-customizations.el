@@ -15,10 +15,12 @@
 (autoload 'ghc-debug "ghc" nil t)
 (add-hook 'haskell-mode-hook
 	  (lambda ()
+	    (ghc-init)
 	    (company-mode)
 	    (auto-complete-mode 0)
+	    (local-set-key (kbd "C-M-d") 'company-show-doc-buffer)
 	    (subword-mode +1)
-	    (ghc-init)
+	    (flymake-mode 0)
 	    (turn-on-haskell-indentation)
 	    (turn-on-haskell-doc-mode)
 	    (turn-on-haskell-decl-scan)

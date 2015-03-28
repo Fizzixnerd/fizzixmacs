@@ -37,7 +37,7 @@
 (ac-config-default)
 
 (defun my-ac-cc-mode-hook ()
-  (setq ac-sources (append '(ac-source-semantic)
+  (setq ac-sources (append '(ac-source-clang)
 			   ac-sources)))
 
 (defun my-ac-python-mode-hook ()

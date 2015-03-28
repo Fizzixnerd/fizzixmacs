@@ -4,6 +4,10 @@
 ;     * Initial creation
 ;     * Moved everything out of init.el
 
+(require 'latex)
+(require 'company)
+(require 'company-auctex)
+
 ;; (require 'flymake)
 
 ;; ; This seems to be related to flymake.  Not really sure what it does,
@@ -19,10 +23,12 @@
 
 ; I believe this allows for automatic TeX code folding, which is
 ; handy.  I do not know what outline mode does.
+(company-auctex-init)
+
 (add-hook 'LaTeX-mode-hook '(lambda ()
 			      (TeX-fold-mode 1)
 			      (outline-minor-mode 1)
-			      ))
+			      (company-mode)))
 
 ; I think these are pretty self explanatory, except maybe
 ; TeX-PDF-mode. Not sure what it does.
