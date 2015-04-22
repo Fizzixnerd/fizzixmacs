@@ -2,7 +2,519 @@
 ;; SEMANTICDB Tags save file
 (semanticdb-project-database-file "frontdown/"
   :tables (list 
+   (semanticdb-table "frontdown.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"See LICENSE file for redistribution terms.
+
+\"\"\"" code nil nil [107 157])
+            ("argparse" include nil nil [159 174])
+            ("importhelper" include nil nil [176 195])
+            ("system" include nil nil [229 254])
+            ("platform" include nil nil [255 284])
+            ("appsinstaller" include nil nil [285 324])
+            ("appconfigparser" include nil nil [325 368])
+            ("main" function nil nil [371 2072])
+            ("if" code nil nil [2073 2111]))          
+    :file "frontdown.py"
+    :pointmax 2111
+    :fsize 2110
+    :lastmodtime '(21802 37059 292114 506000)
+    :unmatched-syntax 'nil
     )
+   (semanticdb-table "system.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("System" type
+               (:documentation "The frontdown_dir contains the different app classes as
+    directories.  Each directory contains FIXME
+
+    "
+                :members 
+                  ( ("frontdown_dir" variable nil (reparse-symbol indented_block_body) [151 202])
+                    ("apps_file_suffix" variable nil (reparse-symbol indented_block_body) [207 233])
+                    ("app_classes" variable nil (reparse-symbol indented_block_body) [238 401])
+                    ("app_classes" code nil (reparse-symbol indented_block_body) [406 431]))                  
+                :type "class")
+                nil [13 432]))          
+    :file "system.py"
+    :pointmax 552
+    :fsize 551
+    :lastmodtime '(21801 24309 408849 855000)
+    :unmatched-syntax '(($EOI 522 . 522) ($EOI 521 . 521) (INDENT_BLOCK 203 . 380) (NEWLINE 202 . 203))
+    )
+   (semanticdb-table "appconfigfile.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("filemover" include nil nil [12 43])
+            ("AppConfigFile" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [168 208])
+                            ("self" variable nil (reparse-symbol indented_block_body) [290 330])
+                            ("if" code nil (reparse-symbol indented_block_body) [339 440]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [85 89])
+                            ("source" variable nil (reparse-symbol function_parameters) [91 97])
+                            ("target" variable nil (reparse-symbol function_parameters) [99 105])
+                            ("link" variable nil (reparse-symbol function_parameters) [107 111]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [72 440])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [457 461]))                          )
+                        (reparse-symbol indented_block_body) [445 571])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [589 593]))                          )
+                        (reparse-symbol indented_block_body) [576 626])
+                    ("restore" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [643 647]))                          )
+                        (reparse-symbol indented_block_body) [631 772])
+                    ("backup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [788 792]))                          )
+                        (reparse-symbol indented_block_body) [777 844]))                  
+                :type "class")
+                nil [46 844]))          
+    :file "appconfigfile.py"
+    :pointmax 844
+    :fsize 843
+    :lastmodtime '(21799 46334 728173 397000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "appconfigparser.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("yaml" include nil nil [12 23])
+            ("system" include nil nil [25 50])
+            ("appconfig" include nil nil [51 82])
+            ("appconfigfile" include nil nil [83 122])
+            ("AppConfigParser" type
+               (:members 
+                  ( ("parse_file" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("control_filename" variable nil (reparse-symbol function_parameters) [185 201]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [152 643])
+                    ("parse_directory" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("directory_name" variable nil (reparse-symbol function_parameters) [686 700]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [648 897]))                  
+                :type "class")
+                nil [125 1312]))          
+    :file "appconfigparser.py"
+    :pointmax 1312
+    :fsize 1311
+    :lastmodtime '(21801 31114 337365 445000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "appconfig.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("AppConfig" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [71 107]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35 39])
+                            ("app_config_files" variable nil (reparse-symbol function_parameters) [41 57]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [22 108])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [125 129]))                          )
+                        (reparse-symbol indented_block_body) [113 175])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [193 197]))                          )
+                        (reparse-symbol indented_block_body) [180 230])
+                    ("pre_backup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [250 254]))                          )
+                        (reparse-symbol indented_block_body) [235 270])
+                    ("post_backup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [291 295]))                          )
+                        (reparse-symbol indented_block_body) [275 311])
+                    ("pre_restore" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [332 336]))                          )
+                        (reparse-symbol indented_block_body) [316 352])
+                    ("post_restore" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [374 378]))                          )
+                        (reparse-symbol indented_block_body) [357 394])
+                    ("backup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [410 414]))                          )
+                        (reparse-symbol indented_block_body) [399 549])
+                    ("restore" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [566 570]))                          )
+                        (reparse-symbol indented_block_body) [554 708]))                  
+                :type "class")
+                nil [1 708]))          
+    :file "appconfig.py"
+    :pointmax 708
+    :fsize 707
+    :lastmodtime '(21801 24433 212851 320000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "installer.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("subprocess" include nil nil [1 18])
+            ("InstallError" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [56 60]))                  
+                :type "class")
+                nil [21 61])
+            ("AptError" type
+               (:superclasses ("InstallError")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [97 101]))                  
+                :type "class")
+                nil [63 102])
+            ("YumError" type
+               (:superclasses ("InstallError")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [138 142]))                  
+                :type "class")
+                nil [104 143])
+            ("UnsupportedInstallerError" type
+               (:superclasses ("InstallError")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [196 200]))                  
+                :type "class")
+                nil [145 201])
+            ("Installer" type
+               (:documentation "Abstract Base Class for an installer.  Represents the installation
+    system for the current platform (ie apt, yum, pacman, emerge,
+    etc).
+
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [412 425]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [397 401]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [384 426])
+                    ("install" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [443 447])
+                            ("apps" variable nil (reparse-symbol function_parameters) [449 453]))                          )
+                        (reparse-symbol indented_block_body) [431 542])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [558 562]))                          )
+                        (reparse-symbol indented_block_body) [547 648]))                  
+                :type "class")
+                nil [203 648])
+            ("AptInstaller" type
+               (:documentation "Installer for apt-based systems.
+
+    "
+                :superclasses ("Installer")
+                :members 
+                  ( ("_aptget" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [747 751])
+                            ("command" variable nil (reparse-symbol function_parameters) [753 760])
+                            ("args" variable nil (reparse-symbol function_parameters) [762 766]))                          )
+                        (reparse-symbol indented_block_body) [735 1098])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1114 1118]))                          )
+                        (reparse-symbol indented_block_body) [1103 1159])
+                    ("install" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1176 1180])
+                            ("apps" variable nil (reparse-symbol function_parameters) [1182 1186]))                          )
+                        (reparse-symbol indented_block_body) [1164 1237]))                  
+                :type "class")
+                nil [650 1237])
+            ("UnsupportedInstaller" type
+               (:superclasses ("Installer")
+                :members 
+                  ( ("install" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1295 1299])
+                            ("apps" variable nil (reparse-symbol function_parameters) [1301 1305]))                          )
+                        (reparse-symbol indented_block_body) [1283 1390])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1406 1410]))                          )
+                        (reparse-symbol indented_block_body) [1395 1492]))                  
+                :type "class")
+                nil [1239 1492])
+            ("YumInstaller" type
+               (:superclasses ("UnsupportedInstaller")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [1540 1544]))                  
+                :type "class")
+                nil [1494 1545])
+            ("ArchInstaller" type
+               (:superclasses ("UnsupportedInstaller")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [1594 1598]))                  
+                :type "class")
+                nil [1547 1599])
+            ("GentooInstaller" type
+               (:superclasses ("UnsupportedInstaller")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [1650 1654]))                  
+                :type "class")
+                nil [1601 1655]))          
+    :file "installer.py"
+    :pointmax 1655
+    :fsize 1654
+    :lastmodtime '(21802 37505 656131 152000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "filemover.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("shutil" include nil nil [11 24])
+            ("logging" include nil nil [25 39])
+            ("trash" include nil nil [41 64])
+            ("FileMover" type
+               (:members 
+                  ( ("copy" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("src" variable nil (reparse-symbol function_parameters) [116 119])
+                            ("tgt" variable nil (reparse-symbol function_parameters) [121 124]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [89 429])
+                    ("link" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("tgt" variable nil (reparse-symbol function_parameters) [461 464])
+                            ("lnk" variable nil (reparse-symbol function_parameters) [466 469]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [434 688]))                  
+                :type "class")
+                nil [67 688]))          
+    :file "filemover.py"
+    :pointmax 688
+    :fsize 687
+    :lastmodtime '(21800 6059 607613 336000)
+    :unmatched-syntax '((INDENT_BLOCK 103 . 688))
+    )
+   (semanticdb-table "trash.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [1 11])
+            ("trashcli.trash" include nil nil [13 51])
+            ("trash" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [64 72]))              ) nil [54 149]))          
+    :file "trash.py"
+    :pointmax 149
+    :fsize 148
+    :lastmodtime '(21799 47912 572192 56000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "appsfilereader.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("AppsFileReader" type
+               (:documentation "Reads a \".apps\" file and can return a list of the apps listed
+    within.
+
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [156 180]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [131 135])
+                            ("filename" variable nil (reparse-symbol function_parameters) [137 145]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [118 181])
+                    ("read_apps" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [200 204]))                          )
+                        (reparse-symbol indented_block_body) [186 365]))                  
+                :type "class")
+                nil [1 365]))          
+    :file "appsfilereader.py"
+    :pointmax 365
+    :fsize 364
+    :lastmodtime '(21801 23822 800844 101000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "appsinstaller.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("system" include nil nil [12 37])
+            ("appsfilereader" include nil nil [38 79])
+            ("AppClassDoesNotExistError" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [130 134]))                  
+                :type "class")
+                nil [82 135])
+            ("AppsInstaller" type
+               (:documentation "Installs classes of apps.  By default, uses the installer
+    determined by Platform.
+
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [334 360])
+                            ("self" variable nil (reparse-symbol indented_block_body) [369 716])
+                            ("self" variable nil (reparse-symbol indented_block_body) [725 890]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [278 282])
+                            ("installer" variable nil (reparse-symbol function_parameters) [284 293]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [265 861])
+                    ("install_class" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [884 888])
+                            ("class_" variable nil (reparse-symbol function_parameters) [890 896]))                          )
+                        (reparse-symbol indented_block_body) [866 1276]))                  
+                :type "class")
+                nil [137 1276]))          
+    :file "appsinstaller.py"
+    :pointmax 1276
+    :fsize 1275
+    :lastmodtime '(21801 31979 265375 673000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "platform.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("installer" include nil nil [1 81])
+            ("Platform" type
+               (:documentation "Create to determine the current platform.  Its `installer' member
+    is the appropriate installer for the platform.
+
+    Only works on debian-derived platforms currently.
+
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("with" code nil (reparse-symbol indented_block_body) [321 390])
+                            ("values" variable nil (reparse-symbol indented_block_body) [398 448])
+                            ("self" variable nil (reparse-symbol indented_block_body) [457 479])
+                            ("self" variable nil (reparse-symbol indented_block_body) [488 524])
+                            ("self" variable nil (reparse-symbol indented_block_body) [533 576]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [306 310]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [293 577])
+                    ("_os_release_lines_to_dict" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("lines" variable nil (reparse-symbol function_parameters) [630 635]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [582 781])
+                    ("determine_installer" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [810 814]))                          )
+                        (reparse-symbol indented_block_body) [786 1260]))                  
+                :type "class")
+                nil [84 1260]))          
+    :file "platform.py"
+    :pointmax 1260
+    :fsize 1259
+    :lastmodtime '(21802 37547 732132 721000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "importhelper.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("platform" include nil nil [1 30]))          
+    :file "importhelper.py"
+    :pointmax 423
+    :fsize 422
+    :lastmodtime '(21801 32832 601385 764000)
+    :unmatched-syntax '((INDENT_BLOCK 98 . 423) (COLON 96 . 97) (TRY 32 . 35) (AS 92 . 94) (INDENT_BLOCK 117 . 461) (COLON 115 . 116) (TRY 32 . 35) (AS 111 . 113) ($EOI 461 . 461) (INDENT_BLOCK 103 . 445) (COLON 101 . 102) (TRY 18 . 21) (AS 97 . 99) (INDENT_BLOCK 103 . 445) (COLON 101 . 102) (TRY 18 . 21) (AS 97 . 99) (INDENT_BLOCK 86 . 428) (COLON 84 . 85) (AS 80 . 82) (INDENT_BLOCK 95 . 437) (COLON 93 . 94) (NEWLINE 8 . 9) (TRY 10 . 13) (AS 89 . 91) (INDENT_BLOCK 109 . 451) (COLON 107 . 108) (TRY 24 . 27) (AS 103 . 105))
+    )
+   (semanticdb-table "platformhelper.py"
+    :file "platformhelper.py"
+    :fsize 0
+    :lastmodtime '(21798 55582 737628 169000)
+    )
+   (semanticdb-table "i18n.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("sys" include nil nil [11 21])
+            ("locale" include nil nil [22 35])
+            ("gettext" include nil nil [36 50])
+            ("APP_NAME" variable nil nil [186 208])
+            ("APP_DIR" variable nil nil [265 308])
+            ("LOCALE_DIR" variable nil nil [309 351])
+            ("DEFAULT_LANGUAGES" variable nil nil [647 704])
+            ("DEFAULT_LANGUAGES" variable nil nil [705 735])
+            ("lc, encoding" code nil nil [737 777])
+            ("if" code nil nil [778 806])
+            ("languages" variable nil nil [925 955])
+            ("mo_location" variable nil nil [956 980])
+            ("gettext" code nil nil [1055 1103])
+            ("gettext" code nil nil [1105 1140])
+            ("gettext" code nil nil [1142 1171])
+            ("gettext" code nil nil [1173 1223])
+            ("language" variable nil nil [1225 1314]))          
+    :file "i18n.py"
+    :pointmax 1315
+    :fsize 1314
+    :lastmodtime '(21802 35324 674825 815000)
+    :unmatched-syntax 'nil
+    )
+   )
   :file "!home!matt!src!frontdown!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2"

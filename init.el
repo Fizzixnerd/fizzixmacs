@@ -27,6 +27,7 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/glsl-mode/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/cc-mode-5.32.5/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/company-quickhelp-20150322.451.el")
+(add-to-list 'load-path "~/.emacs.d/site-list/company-rtags.el")
 
 ; Fuck, I don't know what to do with these. I will leave them here, I
 ; guess.
@@ -47,28 +48,20 @@
  '(inferior-haskell-use-web-docs (quote always))
  '(inferior-haskell-wait-and-jump t)
  '(inhibit-startup-screen t)
- '(org-agenda-files
-   (quote
-    ("~/Documents/school/jph311/project/proposal/proposal.org")))
- '(package-selected-packages
-   (quote
-    (wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode evernote-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
+ '(org-agenda-files (quote ("~/Documents/school/jph311/project/proposal/proposal.org")))
+ '(package-selected-packages (quote (wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode evernote-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
  '(preview-auto-cache-preamble t)
- '(preview-gs-options
-   (quote
-    ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4")))
+ '(preview-gs-options (quote ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4")))
  '(quack-pretty-lambda-p t)
  '(quack-smart-open-paren-p t)
  '(save-place t nil (saveplace))
  '(scroll-bar-mode (quote right))
- '(semantic-c-dependency-system-include-path (quote ("/usr/include" "~/src/silveretta/src/include")))
+ '(semantic-c-dependency-system-include-path (quote ("/usr/include")))
  '(semantic-complete-inline-analyzer-displayor-class (quote semantic-displayor-tooltip))
  '(semantic-complete-inline-analyzer-idle-displayor-class (quote semantic-displayor-tooltip))
  '(semantic-java-dependency-system-include-path (quote ("/usr/share/java/")))
  '(semantic-mode t)
- '(semantic-python-dependency-system-include-path
-   (quote
-    ("/usr/lib/python2.7" "/usr/lib/python2.7/dist-packages")))
+ '(semantic-python-dependency-system-include-path (quote ("/usr/lib/python2.7" "/usr/lib/python2.7/dist-packages")))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 

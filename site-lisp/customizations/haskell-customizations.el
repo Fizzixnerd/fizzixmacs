@@ -19,7 +19,6 @@
 	    (ghc-init)
 	    (company-mode 1)
 	    (company-quickhelp-mode 1)
-	    (auto-complete-mode 0)
 	    (local-set-key (kbd "C-M-d") 'company-show-doc-buffer)
 	    (subword-mode +1)
 	    (flymake-mode 0)

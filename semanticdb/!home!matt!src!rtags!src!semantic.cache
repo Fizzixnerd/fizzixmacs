@@ -1,0 +1,450 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Location.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("Location_h" variable (:constant-flag t) nil [685 695])
+            ("rct/String.h" include (:system-flag t) nil [697 720])
+            ("rct/Log.h" include (:system-flag t) nil [721 741])
+            ("rct/Path.h" include (:system-flag t) nil [742 763])
+            ("rct/Serializer.h" include (:system-flag t) nil [764 791])
+            ("assert.h" include (:system-flag t) nil [792 811])
+            ("clang-c/Index.h" include (:system-flag t) nil [812 838])
+            ("stdio.h" include (:system-flag t) nil [839 857])
+            ("mutex" include (:system-flag t) nil [941 957])
+            ("LOCK" variable (:constant-flag t) nil [966 970])
+            ("intCompare" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("l" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1094 1105])
+                    ("r" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1106 1117]))                  
+                :type "int")
+                nil [1065 1202])
+            ("comparePosition" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("lline" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1237 1252])
+                    ("lcol" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1253 1267])
+                    ("rline" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1268 1283])
+                    ("rcol" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1284 1298]))                  
+                :type "int")
+                nil [1203 1410])
+            ("Location" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1428 1435])
+                    ("value" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1440 1455])
+                    ("Location" function
+                       (:constructor-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1461 1497])
+                    ("Location" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("fileId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1512 1528])
+                            ("line" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1529 1543])
+                            ("col" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1544 1557]))                          
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1503 1695])
+                    ("fileId" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1731 1748]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1701 1816])
+                    ("path" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1845 1857]))                          
+                        :type ("Path" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1821 1923])
+                    ("lastId" function
+                       (:typemodifiers ("static")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1929 2005])
+                    ("insertFile" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2045 2062]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2011 2604])
+                    ("fileId" function
+                       (:typemodifiers ("inline")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2610 2695])
+                    ("line" function
+                       (:typemodifiers ("inline")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2700 2795])
+                    ("column" function
+                       (:typemodifiers ("inline")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2800 2912])
+                    ("path" function
+                       (:typemodifiers ("inline")
+                        :type ("Path" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2918 3104])
+                    ("isNull" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3109 3154])
+                    ("isValid" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3159 3204])
+                    ("clear" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3209 3264])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3292 3310]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3269 3437])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3465 3483]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3442 3610])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3638 3660]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3615 3699])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3727 3749]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3704 3788])
+                    ("compare" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3812 3834]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3793 4092])
+                    ("<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4119 4141]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4097 4194])
+                    (">" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4222 4244]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4200 4297])
+                    ("KeyFlag" type
+                       (:members 
+                          ( ("NoFlag" variable
+                               (:constant-flag t
+                                :default-value (4335 4338)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4326 4338])
+                            ("ShowContext" variable
+                               (:constant-flag t
+                                :default-value (4362 4365)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4348 4365])
+                            ("NoColor" variable
+                               (:constant-flag t
+                                :default-value (4385 4388)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4375 4388]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [4303 4395])
+                    ("key" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4412 4432])
+                            ("" variable (:type ("NoFlag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4433 4440]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4401 4447])
+                    ("context" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4467 4486]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4452 4493])
+                    ("decode" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4522 4541]))                          
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4499 5171])
+                    ("encode" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5197 5215])
+                            ("pwd" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5216 5233])
+                            ("" variable (:type ("Path" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5234 5240]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5176 5691])
+                    ("fromPathLineAndColumn" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5735 5753])
+                            ("pwd" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5754 5771])
+                            ("" variable (:type ("Path" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5772 5778]))                          
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5697 6187])
+                    ("idsToPaths" function
+                       (:typemodifiers ("static")
+                        :type ("Hash" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil)
+                                  ("Path" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6192 6288])
+                    ("pathsToIds" function
+                       (:typemodifiers ("static")
+                        :type ("Hash" type
+                             (:template-specifier 
+                                ( ("Path" type nil nil nil)
+                                  ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6293 6389])
+                    ("init" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("pathsToIds" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Hash" type
+                                     (:template-specifier 
+                                        ( ("Path" type nil nil nil)
+                                          ("uint32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6411 6450]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6394 6652])
+                    ("init" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("idsToPaths" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Hash" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil)
+                                          ("Path" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6675 6714]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6658 6916])
+                    ("set" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6938 6955])
+                            ("fileId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6956 6972]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6922 7122])
+                    ("private" label nil (reparse-symbol classsubparts) [7123 7131])
+                    ("sMutex" variable
+                       (:typemodifiers ("static")
+                        :type ("std::mutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7136 7161])
+                    ("sPathsToIds" variable
+                       (:typemodifiers ("static")
+                        :type ("Hash" type
+                             (:template-specifier 
+                                ( ("Path" type nil nil nil)
+                                  ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7166 7206])
+                    ("sIdsToPaths" variable
+                       (:typemodifiers ("static")
+                        :type ("Hash" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil)
+                                  ("Path" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7211 7251])
+                    ("sLastId" variable
+                       (:typemodifiers ("static")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7256 7280])
+                    ("mCachedPath" variable
+                       (:typemodifiers ("mutable")
+                        :type ("Path" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7285 7310])
+                    ("" type
+                       (:members 
+                          ( ("FileBits" variable
+                               (:constant-flag t
+                                :default-value (7341 7343)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7330 7343])
+                            ("LineBits" variable
+                               (:constant-flag t
+                                :default-value (7364 7366)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7353 7366])
+                            ("ColumnBits" variable
+                               (:constant-flag t
+                                :default-value (7389 7404)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7376 7404])
+                            ("LineBits" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7405 7419]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [7315 7420])
+                    ("FILEID_MASK" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7425 7459])
+                    ("LINE_MASK" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7464 7496])
+                    ("COLUMN_MASK" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7501 7535]))                  
+                :type "class")
+                nil [1411 7538])
+            ("FixedSize" type
+               (:type "struct"
+                :template-specifier 
+                  ( ("Location" type nil nil nil))                  )
+                nil [7540 7644])
+            ("<<" function
+               (:type ("Serializer" type (:type "class") nil nil)
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :type ("Serializer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7688 7702])
+                    ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7703 7721]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [7646 7811])
+            (">>" function
+               (:type ("Deserializer" type (:type "class") nil nil)
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :type ("Deserializer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7857 7873])
+                    ("t" variable
+                       (:reference 1
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7874 7886]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [7813 7963])
+            ("<<" function
+               (:operator-flag t
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dbg" variable (:type ("Log" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7994 8002])
+                    ("loc" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8003 8023]))                  
+                :type ("Log" type (:type "class") nil nil))
+                nil [7965 8106]))          
+    :file "Location.h"
+    :pointmax 8115
+    :fsize 8114
+    :lastmodtime '(21785 57794 514414 207000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("Location_h")
+          ("LOCK" (spp-arg-list nil 970 . 972) . 
+              ((CONST "const" 973 . 978) (symbol "std" 979 . 982) (punctuation ":" 982 . 983) (punctuation ":" 983 . 984) (symbol "lock_guard" 984 . 994) (punctuation "<" 994 . 995) (symbol "std" 995 . 998) (punctuation ":" 998 . 999) (punctuation ":" 999 . 1000) (symbol "mutex" 1000 . 1005) (punctuation ">" 1005 . 1006) (symbol "lock" 1007 . 1011) (semantic-list "(sMutex)" 1011 . 1019)))
+          )
+
+    )
+   )
+  :file "!home!matt!src!rtags!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

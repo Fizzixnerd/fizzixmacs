@@ -16,6 +16,17 @@
 ;; The following code is from stackexchange.com
 ;; (http://stackoverflow.com/questions/8549351/c11-mode-or-settings-for-emacs)
 
+(require 'company)
+(require 'company-rtags)
+
+(add-to-list 'company-backends 'company-rtags)
+
+(add-hook 'c++-mode-hook (lambda ()
+			   (company-mode 1)
+			   (company-quickhelp-mode 1)
+			   (local-set-key (kbd "C-M-d") 'company-show-doc-buffer)))
+
+
 ;; START C++11 FONTLOCK HACK
 (require 'font-lock)
 
@@ -75,3 +86,4 @@
            ))
     ) t)
 ;; END C++11 FONTLOCK HACK
+

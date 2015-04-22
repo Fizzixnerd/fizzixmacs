@@ -15,26 +15,21 @@
 ; no idea what the real differences between python-mode and the other
 ; one are. In fact, most of this stuff is Greek to me.
 
-(require 'pymacs)
-(require 'python-mode)
+;(require 'python-mode)
+(require 'elpy)
 (require 'yasnippet)
 
-(autoload 'python-mode "python-mode" "Python Mode." t)
-(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
-(add-to-list 'interpreter-mode-alist '("python" . python-mode))
-(autoload 'pymacs-apply "pymacs")
-(autoload 'pymacs-call "pymacs")
-(autoload 'pymacs-eval "pymacs" nil t)
-(autoload 'pymacs-exec "pymacs" nil t)
-(autoload 'pymacs-load "pymacs" nil t)
+;(autoload 'python-mode "python-mode" "Python Mode." t)
+;(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+;(add-to-list 'interpreter-mode-alist '("python" . python-mode))
 
-(pymacs-load "ropemacs" "rope-")
-(setq ropemacs-enable-autoimport t)
+(elpy-enable)
+(elpy-use-ipython)
 
-(setq py-python-command "python")
-(setenv "PYMACS_PYTHON" "python")
-
-(setq semantic-python-dependency-system-include-path
-      '("/usr/lib/python2.7/"))
+;; (autoload 'pymacs-apply "pymacs")
+;; (autoload 'pymacs-call "pymacs")
+;; (autoload 'pymacs-eval "pymacs" nil t)
+;; (autoload 'pymacs-exec "pymacs" nil t)
+;; (autoload 'pymacs-load "pymacs" nil t)
 
 ;;

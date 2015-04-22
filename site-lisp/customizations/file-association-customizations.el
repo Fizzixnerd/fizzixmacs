@@ -10,12 +10,13 @@
 ;; July 19, 2013: * Associated .h files with c++-mode by default.
 ;; July 28, 2013: * Associated .hdl files with c-mode.
 
+(require 'rust-mode)
+(require 'glsl-mode)
+
 (add-to-list 'auto-mode-alist '("\\.lzz\\'" . c++-mode))
 
 ;; hdl files are close enough to syntax C, so this works well enough.
 (add-to-list 'auto-mode-alist '("\\.hdl\\'" . c-mode))
 
-(require 'rust-mode)
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
-(require 'glsl-mode)
 (add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))

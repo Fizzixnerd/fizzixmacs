@@ -1,0 +1,1486 @@
+;; Object trashcli/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "trashcli/"
+  :tables (list 
+   (semanticdb-table "trash.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("__future__" include nil nil [62 100])
+            ("version" variable nil nil [102 118])
+            ("os" include nil nil [120 129])
+            ("logging" include nil nil [130 144])
+            ("logger" variable nil nil [146 188])
+            ("logger" code nil nil [189 221])
+            ("logger" code nil nil [222 264])
+            ("TrashDirectory" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [374 410])
+                            ("self" variable nil (reparse-symbol indented_block_body) [419 439]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [305 309])
+                            ("path" variable nil (reparse-symbol function_parameters) [311 315])
+                            ("volume" variable nil (reparse-symbol function_parameters) [317 323]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [292 440])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [457 461]))                          )
+                        (reparse-symbol indented_block_body) [445 495])
+                    ("trash" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [510 514])
+                            ("path" variable nil (reparse-symbol function_parameters) [516 520]))                          )
+                        (reparse-symbol indented_block_body) [500 1753])
+                    ("ensure_files_dir_exists" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1786 1790]))                          )
+                        (reparse-symbol indented_block_body) [1758 1893])
+                    ("info_dir" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1925 1929]))                          
+                        :documentation "
+        The $trash_dir/info dir that contains the .trashinfo files
+        as filesystem.Path.
+        ")
+                        (reparse-symbol indented_block_body) [1898 2122])
+                    ("files_dir" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2155 2159]))                          
+                        :documentation "
+        The directory where original file where stored.
+        A Path instance.
+        ")
+                        (reparse-symbol indented_block_body) [2127 2339])
+                    ("all_info_files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2363 2367]))                          )
+                        (reparse-symbol indented_block_body) [2344 2767])
+                    ("trashed_files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2790 2794]))                          )
+                        (reparse-symbol indented_block_body) [2772 3118])
+                    ("_create_trashed_file_from_info_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3163 3167])
+                            ("info_file" variable nil (reparse-symbol function_parameters) [3169 3178]))                          )
+                        (reparse-symbol indented_block_body) [3123 3592])
+                    ("_create_trashed_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3622 3626])
+                            ("trash_id" variable nil (reparse-symbol function_parameters) [3628 3636])
+                            ("path" variable nil (reparse-symbol function_parameters) [3638 3642])
+                            ("deletion_date" variable nil (reparse-symbol function_parameters) [3644 3657]))                          )
+                        (reparse-symbol indented_block_body) [3597 3973])
+                    ("_calc_original_location" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4006 4010])
+                            ("path" variable nil (reparse-symbol function_parameters) [4012 4016]))                          )
+                        (reparse-symbol indented_block_body) [3978 4142])
+                    ("calc_id" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("trash_info_file" variable nil (reparse-symbol function_parameters) [4177 4192]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4147 4265])
+                    ("_calc_path_for_actual_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4301 4305])
+                            ("trash_id" variable nil (reparse-symbol function_parameters) [4307 4315]))                          )
+                        (reparse-symbol indented_block_body) [4270 4373])
+                    ("_calc_path_for_info_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4407 4411])
+                            ("trash_id" variable nil (reparse-symbol function_parameters) [4413 4421]))                          )
+                        (reparse-symbol indented_block_body) [4378 4495])
+                    ("_path_for_trashinfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4524 4528])
+                            ("fileToTrash" variable nil (reparse-symbol function_parameters) [4530 4541]))                          )
+                        (reparse-symbol indented_block_body) [4500 4580])
+                    ("\"\"\"
+    Create a .trashinfo file in the $trash/info directory.
+    returns the created TrashInfoFile.
+    \"\"\"" code nil (reparse-symbol indented_block_body) [4585 4694])
+                    ("persist_trash_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4722 4726])
+                            ("basename" variable nil (reparse-symbol function_parameters) [4727 4735])
+                            ("content" variable nil (reparse-symbol function_parameters) [4736 4743]))                          )
+                        (reparse-symbol indented_block_body) [4699 5821])
+                    ("check" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5836 5840]))                          
+                        :documentation "
+        Perform a sanity check of this trash directory.
+        If the check is not passed the directory can be used for trashing,
+        listing or restoring files.
+        ")
+                        (reparse-symbol indented_block_body) [5826 6047]))                  
+                :type "class")
+                nil [266 6047])
+            ("HomeTrashDirectory" type
+               (:superclasses ("TrashDirectory")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("TrashDirectory" code nil (reparse-symbol indented_block_body) [6129 6181]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6107 6111])
+                            ("path" variable nil (reparse-symbol function_parameters) [6113 6117]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6094 6182])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6199 6203]))                          )
+                        (reparse-symbol indented_block_body) [6187 6587])
+                    ("_path_for_trashinfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6616 6620])
+                            ("fileToBeTrashed" variable nil (reparse-symbol function_parameters) [6622 6637]))                          )
+                        (reparse-symbol indented_block_body) [6592 6995]))                  
+                :type "class")
+                nil [6048 6995])
+            ("VolumeTrashDirectory" type
+               (:superclasses ("TrashDirectory")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("TrashDirectory" code nil (reparse-symbol indented_block_body) [7088 7130]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7058 7062])
+                            ("path" variable nil (reparse-symbol function_parameters) [7064 7068])
+                            ("volume" variable nil (reparse-symbol function_parameters) [7070 7076]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7045 7131])
+                    ("_path_for_trashinfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7160 7164])
+                            ("fileToBeTrashed" variable nil (reparse-symbol function_parameters) [7166 7181]))                          )
+                        (reparse-symbol indented_block_body) [7136 7743]))                  
+                :type "class")
+                nil [6996 7743])
+            ("TopDirWithoutStickyBit" type
+               (:documentation "
+    Raised when $topdir/.Trash doesn't have the sticky bit.
+    "
+                :superclasses ("IOError")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [7863 7867]))                  
+                :type "class")
+                nil [7744 7868])
+            ("TopDirNotPresent" type
+               (:documentation "
+    Raised when $topdir/.Trash is not a dir.
+    "
+                :superclasses ("IOError")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [7967 7971]))                  
+                :type "class")
+                nil [7869 7972])
+            ("TopDirIsSymLink" type
+               (:documentation "
+    Raised when $topdir/.Trash is a simbolic link.
+    "
+                :superclasses ("IOError")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [8076 8080]))                  
+                :type "class")
+                nil [7973 8081])
+            ("Method1VolumeTrashDirectory" type
+               (:superclasses ("VolumeTrashDirectory")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("VolumeTrashDirectory" code nil (reparse-symbol indented_block_body) [8186 8233]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8156 8160])
+                            ("path" variable nil (reparse-symbol function_parameters) [8162 8166])
+                            ("volume" variable nil (reparse-symbol function_parameters) [8168 8174]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8143 8234])
+                    ("check" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8249 8253]))                          )
+                        (reparse-symbol indented_block_body) [8239 8744])
+                    ("parent_is_dir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8766 8770]))                          )
+                        (reparse-symbol indented_block_body) [8748 8817])
+                    ("parent_is_link" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8840 8844]))                          )
+                        (reparse-symbol indented_block_body) [8821 8892])
+                    ("parent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8907 8911]))                          )
+                        (reparse-symbol indented_block_body) [8896 8956])
+                    ("parent_has_sticky_bit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8986 8990]))                          )
+                        (reparse-symbol indented_block_body) [8960 9038]))                  
+                :type "class")
+                nil [8082 9038])
+            ("real_list_mount_points" function nil nil [9039 9190])
+            ("GlobalTrashCan" type
+               (:documentation "
+    Represent the TrashCan that contains all trashed files.
+    This class is the facade used by all trashcli commands
+    "
+                :members 
+                  ( ("NullReporter" type
+                       (:members 
+                          ( ("__getattr__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [9397 9401])
+                                    ("name" variable nil (reparse-symbol function_parameters) [9402 9406]))                                  )
+                                (reparse-symbol indented_block_body) [9381 9453]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [9353 9453])
+                    ("datetime" include nil (reparse-symbol indented_block_body) [9457 9486])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [9781 9812])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9821 9853])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9862 9895])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9904 9946])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9955 9983]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9504 9508])
+                            ("environ" variable nil (reparse-symbol function_parameters) [9527 9534])
+                            ("reporter" variable nil (reparse-symbol function_parameters) [9576 9584])
+                            ("getuid" variable nil (reparse-symbol function_parameters) [9629 9635])
+                            ("list_mount_points" variable nil (reparse-symbol function_parameters) [9677 9694])
+                            ("now" variable nil (reparse-symbol function_parameters) [9738 9741]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9491 9984])
+                    ("trashed_files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10007 10011]))                          
+                        :documentation "Return a generator of all TrashedFile(s).")
+                        (reparse-symbol indented_block_body) [9989 10214])
+                    ("trash" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10229 10233])
+                            ("file" variable nil (reparse-symbol function_parameters) [10234 10238]))                          
+                        :documentation "
+        Trash a file in the appropriate trash directory.
+        If the file belong to the same volume of the trash home directory it
+        will be trashed in the home trash directory.
+        Otherwise it will be trashed in one of the relevant volume trash
+        directories.
+
+        Each volume can have two trash directories, they are
+            - $volume/.Trash/$uid
+            - $volume/.Trash-$uid
+
+        Firstly the software attempt to trash the file in the first directory
+        then try to trash in the second trash directory.
+        ")
+                        (reparse-symbol indented_block_body) [10219 11579])
+                    ("should_skipped_by_specs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11612 11616])
+                            ("file" variable nil (reparse-symbol function_parameters) [11618 11622]))                          )
+                        (reparse-symbol indented_block_body) [11584 11722])
+                    ("volume_of_parent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11748 11752])
+                            ("file" variable nil (reparse-symbol function_parameters) [11754 11758]))                          )
+                        (reparse-symbol indented_block_body) [11727 11803])
+                    ("file_could_be_trashed_in" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11837 11841])
+                            ("file_to_be_trashed" variable nil (reparse-symbol function_parameters) [11842 11860])
+                            ("trash_dir_path" variable nil (reparse-symbol function_parameters) [11861 11875]))                          )
+                        (reparse-symbol indented_block_body) [11808 11964])
+                    ("_trash_directories" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11992 11996]))                          
+                        :documentation "Return a generator of all TrashDirectories in the filesystem")
+                        (reparse-symbol indented_block_body) [11969 12298])
+                    ("_home_trash_dir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12322 12326]))                          )
+                        (reparse-symbol indented_block_body) [12302 12393])
+                    ("_possible_trash_directories_for" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12433 12437])
+                            ("file" variable nil (reparse-symbol function_parameters) [12438 12442]))                          )
+                        (reparse-symbol indented_block_body) [12397 12585])
+                    ("trash_directories_for_volume" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12622 12626])
+                            ("volume" variable nil (reparse-symbol function_parameters) [12627 12633]))                          )
+                        (reparse-symbol indented_block_body) [12589 12728])
+                    ("_volume_trash_dir1" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12755 12759])
+                            ("volume" variable nil (reparse-symbol function_parameters) [12760 12766]))                          
+                        :documentation "
+        Return the method (1) volume trash dir ($topdir/.Trash/$uid).
+        ")
+                        (reparse-symbol indented_block_body) [12732 13035])
+                    ("_volume_trash_dir2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13062 13066])
+                            ("volume" variable nil (reparse-symbol function_parameters) [13068 13074]))                          
+                        :documentation "
+        Return the method (2) volume trash dir ($topdir/.Trash-$uid).
+        ")
+                        (reparse-symbol indented_block_body) [13039 13365])
+                    ("_home_trash_dir_path" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13394 13398]))                          )
+                        (reparse-symbol indented_block_body) [13369 13509])
+                    ("for_all_trashed_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13539 13543])
+                            ("action" variable nil (reparse-symbol function_parameters) [13545 13551]))                          )
+                        (reparse-symbol indented_block_body) [13514 13737]))                  
+                :type "class")
+                nil [9191 13737])
+            ("TrashedFile" type
+               (:documentation "
+    Represent a trashed file.
+    Each trashed file is persisted in two files:
+     - $trash_dir/info/$id.trashinfo
+     - $trash_dir/files/$id
+
+    Properties:
+     - path : the original path from where the file has been trashed
+     - deletion_date : the time when the file has been trashed (instance of
+                       datetime)
+     - info_file : the file that contains information (instance of Path)
+     - actual_path : the path where the trashed file has been placed after the
+                     trash opeartion (instance of Path)
+     - trash_directory :
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [14526 14610])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14619 14636])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14645 14680])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14689 14716])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14725 14756])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14765 14804]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14362 14366])
+                            ("path" variable nil (reparse-symbol function_parameters) [14385 14389])
+                            ("deletion_date" variable nil (reparse-symbol function_parameters) [14408 14421])
+                            ("info_file" variable nil (reparse-symbol function_parameters) [14440 14449])
+                            ("actual_path" variable nil (reparse-symbol function_parameters) [14468 14479])
+                            ("trash_directory" variable nil (reparse-symbol function_parameters) [14498 14513]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [14349 14805])
+                    ("path" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14833 14837]))                          
+                        :documentation "
+        The path from where the file has been trashed
+        ")
+                        (reparse-symbol indented_block_body) [14810 14945])
+                    ("actual_path" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14980 14984]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [14950 15020])
+                    ("original_file" variable nil (reparse-symbol indented_block_body) [15025 15052])
+                    ("deletion_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15090 15094]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [15058 15133])
+                    ("restore" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15150 15154])
+                            ("dest" variable nil (reparse-symbol function_parameters) [15156 15160]))                          )
+                        (reparse-symbol indented_block_body) [15138 15566])
+                    ("info_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15599 15603]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [15571 15637])
+                    ("trash_directory" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15676 15680]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [15642 15721]))                  
+                :type "class")
+                nil [13738 15721])
+            ("TrashInfo" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("datetime" include nil (reparse-symbol indented_block_body) [15792 15821])
+                            ("\"\"\"Create a TrashInfo.
+
+        Keyword arguments:
+        path          -- the of the .trashinfo file (string or Path)
+        deletion_date -- the date of deletion, should be a datetime.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [15830 16030])
+                            ("if" code nil (reparse-symbol indented_block_body) [16039 16149])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16157 16174])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16183 16218]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15756 15760])
+                            ("path" variable nil (reparse-symbol function_parameters) [15762 15766])
+                            ("deletion_date" variable nil (reparse-symbol function_parameters) [15768 15781]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [15743 16219])
+                    ("_format_date" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("deletion_date" variable nil (reparse-symbol function_parameters) [16259 16272]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16224 16334])
+                    ("deletion_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16371 16375]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16339 16413])
+                    ("path" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16441 16445]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16418 16474])
+                    ("parse" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("data" variable nil (reparse-symbol function_parameters) [16507 16511]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16479 16642])
+                    ("render" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16658 16662]))                          )
+                        (reparse-symbol indented_block_body) [16647 16888]))                  
+                :type "class")
+                nil [15722 16888])
+            ("TimeUtils" type
+               (:members 
+                  ( ("parse_iso8601" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("text" variable nil (reparse-symbol function_parameters) [16946 16950]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16910 17175]))                  
+                :type "class")
+                nil [16889 17175])
+            ("shutil" include nil nil [17175 17188])
+            ("remove_file" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [17205 17209]))              ) nil [17189 17338])
+            ("getcwd_as_realpath" function nil nil [17339 17400])
+            ("RestoreCmd" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [17535 17557])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17566 17588])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17597 17620])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17629 17649])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17658 17679])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17688 17743])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17752 17774]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17436 17440])
+                            ("stdout" variable nil (reparse-symbol function_parameters) [17442 17448])
+                            ("stderr" variable nil (reparse-symbol function_parameters) [17450 17456])
+                            ("environ" variable nil (reparse-symbol function_parameters) [17458 17465])
+                            ("exit" variable nil (reparse-symbol function_parameters) [17467 17471])
+                            ("input" variable nil (reparse-symbol function_parameters) [17473 17478])
+                            ("curdir" variable nil (reparse-symbol function_parameters) [17497 17503]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [17423 17775])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17787 17791]))                          )
+                        (reparse-symbol indented_block_body) [17779 18530])
+                    ("for_all_trashed_file_in_dir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18566 18570])
+                            ("action" variable nil (reparse-symbol function_parameters) [18572 18578])
+                            ("dir" variable nil (reparse-symbol function_parameters) [18580 18583]))                          )
+                        (reparse-symbol indented_block_body) [18534 18858])
+                    ("report_no_files_found" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18888 18892]))                          )
+                        (reparse-symbol indented_block_body) [18862 18976])
+                    ("println" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18992 18996])
+                            ("line" variable nil (reparse-symbol function_parameters) [18998 19002]))                          )
+                        (reparse-symbol indented_block_body) [18980 19041])
+                    ("printerr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19058 19062])
+                            ("msg" variable nil (reparse-symbol function_parameters) [19064 19067]))                          )
+                        (reparse-symbol indented_block_body) [19045 19107]))                  
+                :type "class")
+                nil [17401 19107])
+            ("optparse" include nil nil [19108 19150])
+            ("NoWrapFormatter" type
+               (:superclasses ("IndentedHelpFormatter")
+                :members 
+                  ( ("_format_text" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19219 19223])
+                            ("text" variable nil (reparse-symbol function_parameters) [19225 19229]))                          )
+                        (reparse-symbol indented_block_body) [19202 19315]))                  
+                :type "class")
+                nil [19151 19315])
+            ("TrashPutCmd" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [19405 19426])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19435 19456])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19465 19487]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19352 19356])
+                            ("stdout" variable nil (reparse-symbol function_parameters) [19358 19364])
+                            ("stderr" variable nil (reparse-symbol function_parameters) [19366 19372])
+                            ("environ" variable nil (reparse-symbol function_parameters) [19374 19381]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [19339 19488])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19501 19505])
+                            ("argv" variable nil (reparse-symbol function_parameters) [19507 19511]))                          )
+                        (reparse-symbol indented_block_body) [19493 19951])
+                    ("trash_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19970 19974])
+                            ("args" variable nil (reparse-symbol function_parameters) [19976 19980]))                          )
+                        (reparse-symbol indented_block_body) [19956 20037])
+                    ("trash" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20052 20056])
+                            ("arg" variable nil (reparse-symbol function_parameters) [20058 20061]))                          )
+                        (reparse-symbol indented_block_body) [20042 20097])
+                    ("get_option_parser" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20124 20128])
+                            ("program_name" variable nil (reparse-symbol function_parameters) [20130 20142]))                          )
+                        (reparse-symbol indented_block_body) [20102 22325])
+                    ("get_logger" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22345 22349])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [22350 22357])
+                            ("argv0" variable nil (reparse-symbol function_parameters) [22358 22363]))                          )
+                        (reparse-symbol indented_block_body) [22330 22876]))                  
+                :type "class")
+                nil [19316 22876])
+            ("TrashPutReporter" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [22941 22961]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22918 22922])
+                            ("logger" variable nil (reparse-symbol function_parameters) [22924 22930]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [22905 22962])
+                    ("unable_to_trash_dot_entries" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22999 23003])
+                            ("file" variable nil (reparse-symbol function_parameters) [23004 23008]))                          )
+                        (reparse-symbol indented_block_body) [22967 23088])
+                    ("unable_to_trash_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23118 23122])
+                            ("f" variable nil (reparse-symbol function_parameters) [23123 23124]))                          )
+                        (reparse-symbol indented_block_body) [23093 23198])
+                    ("file_has_been_trashed_in_as" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23235 23239])
+                            ("trashee" variable nil (reparse-symbol function_parameters) [23241 23248])
+                            ("trash_directory" variable nil (reparse-symbol function_parameters) [23250 23265])
+                            ("destination" variable nil (reparse-symbol function_parameters) [23267 23278]))                          )
+                        (reparse-symbol indented_block_body) [23203 23358])
+                    ("unable_to_trash_file_in_because" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23399 23403])
+                            ("file_to_be_trashed" variable nil (reparse-symbol function_parameters) [23405 23423])
+                            ("trash_directory" variable nil (reparse-symbol function_parameters) [23425 23440])
+                            ("error" variable nil (reparse-symbol function_parameters) [23442 23447]))                          )
+                        (reparse-symbol indented_block_body) [23363 23575]))                  
+                :type "class")
+                nil [22877 23575])
+            ("mkdirs_using_mode" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [23598 23602])
+                ("mode" variable nil (reparse-symbol function_parameters) [23604 23608]))              ) nil [23576 23711])
+            ("list_files_in_dir" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [23734 23738]))              ) nil [23712 23840])
+            ("move" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [23850 23854])
+                ("dest" variable nil (reparse-symbol function_parameters) [23856 23860]))              ) nil [23841 23922])
+            ("mkdirs" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [23934 23938]))              ) nil [23923 24006])
+            ("os" include nil nil [24007 24016])
+            ("parent_of" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [24032 24036]))              ) nil [24018 24072])
+            ("describe" function
+               (:documentation "
+    Return a textual description of the file pointed by this path.
+    Options:
+     - \"symbolic link\"
+     - \"directory\"
+     - \"`.' directory\"
+     - \"`..' directory\"
+     - \"regular file\"
+     - \"regular empty file\"
+     - \"non existent\"
+     - \"entry\"
+    "
+                :arguments 
+                  ( ("path" variable nil (reparse-symbol function_parameters) [24086 24090]))                  )
+                nil [24073 25065])
+            ("volume_of" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [25080 25084]))              ) nil [25066 25268])
+            ("write_file" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [25284 25288])
+                ("contents" variable nil (reparse-symbol function_parameters) [25290 25298]))              ) nil [25269 25361])
+            ("do_nothing" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [25377 25382])
+                ("argvk" variable nil (reparse-symbol function_parameters) [25384 25391]))              ) nil [25362 25399])
+            ("FileSystemReader" type
+               (:members 
+                  ( ("entries_if_dir_exists" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25453 25457])
+                            ("path" variable nil (reparse-symbol function_parameters) [25459 25463]))                          )
+                        (reparse-symbol indented_block_body) [25427 25570])
+                    ("is_sticky_dir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25592 25596])
+                            ("path" variable nil (reparse-symbol function_parameters) [25598 25602]))                          )
+                        (reparse-symbol indented_block_body) [25574 25683])
+                    ("list_volumes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25704 25708]))                          )
+                        (reparse-symbol indented_block_body) [25687 25741])
+                    ("exists" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25756 25760])
+                            ("path" variable nil (reparse-symbol function_parameters) [25762 25766]))                          )
+                        (reparse-symbol indented_block_body) [25745 25805])
+                    ("is_symlink" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25824 25828])
+                            ("path" variable nil (reparse-symbol function_parameters) [25830 25834]))                          )
+                        (reparse-symbol indented_block_body) [25809 25873])
+                    ("contents_of" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25893 25897])
+                            ("path" variable nil (reparse-symbol function_parameters) [25899 25903]))                          )
+                        (reparse-symbol indented_block_body) [25877 25939]))                  
+                :type "class")
+                nil [25399 25939])
+            ("contents_of" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [25956 25960]))              ) nil [25940 26025])
+            ("_FileRemover" type
+               (:members 
+                  ( ("remove_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26066 26070])
+                            ("path" variable nil (reparse-symbol function_parameters) [26072 26076]))                          )
+                        (reparse-symbol indented_block_body) [26050 26183])
+                    ("remove_file_if_exists" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26214 26218])
+                            ("path" variable nil (reparse-symbol function_parameters) [26219 26223]))                          )
+                        (reparse-symbol indented_block_body) [26188 26282]))                  
+                :type "class")
+                nil [26026 26282])
+            ("mount_points" include nil nil [26307 26326])
+            ("datetime" include nil nil [26327 26356])
+            ("ListCmd" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [26611 26651])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26660 26694])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26703 26733])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26742 26784])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26793 26957])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26966 26992]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26390 26394])
+                            ("out" variable nil (reparse-symbol function_parameters) [26396 26399])
+                            ("err" variable nil (reparse-symbol function_parameters) [26401 26404])
+                            ("environ" variable nil (reparse-symbol function_parameters) [26406 26413])
+                            ("getuid" variable nil (reparse-symbol function_parameters) [26432 26438])
+                            ("list_volumes" variable nil (reparse-symbol function_parameters) [26476 26488])
+                            ("file_reader" variable nil (reparse-symbol function_parameters) [26523 26534])
+                            ("version" variable nil (reparse-symbol function_parameters) [26576 26583]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [26377 26993])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27006 27010])
+                            ("argv" variable nil (reparse-symbol function_parameters) [27012 27017]))                          )
+                        (reparse-symbol indented_block_body) [26998 27251])
+                    ("list_trash" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27270 27274]))                          )
+                        (reparse-symbol indented_block_body) [27255 27348])
+                    ("list_contents" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27370 27374])
+                            ("trash_dir" variable nil (reparse-symbol function_parameters) [27376 27385])
+                            ("volume_path" variable nil (reparse-symbol function_parameters) [27387 27398]))                          )
+                        (reparse-symbol indented_block_body) [27352 28201])
+                    ("description" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28221 28225])
+                            ("program_name" variable nil (reparse-symbol function_parameters) [28227 28239])
+                            ("printer" variable nil (reparse-symbol function_parameters) [28241 28248]))                          )
+                        (reparse-symbol indented_block_body) [28205 28544])
+                    ("Output" type
+                       (:members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [28612 28626])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [28639 28653]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [28583 28587])
+                                    ("out" variable nil (reparse-symbol function_parameters) [28589 28592])
+                                    ("err" variable nil (reparse-symbol function_parameters) [28594 28597]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [28570 28654])
+                            ("println" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [28674 28678])
+                                    ("line" variable nil (reparse-symbol function_parameters) [28680 28684]))                                  )
+                                (reparse-symbol indented_block_body) [28662 28725])
+                            ("error" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [28743 28747])
+                                    ("line" variable nil (reparse-symbol function_parameters) [28749 28753]))                                  )
+                                (reparse-symbol indented_block_body) [28733 28794])
+                            ("print_read_error" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [28823 28827])
+                                    ("error" variable nil (reparse-symbol function_parameters) [28829 28834]))                                  )
+                                (reparse-symbol indented_block_body) [28802 28872])
+                            ("print_parse_path_error" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [28907 28911])
+                                    ("offending_file" variable nil (reparse-symbol function_parameters) [28913 28927]))                                  )
+                                (reparse-symbol indented_block_body) [28880 29014])
+                            ("top_trashdir_skipped_because_parent_not_sticky" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [29074 29078])
+                                    ("trashdir" variable nil (reparse-symbol function_parameters) [29080 29088]))                                  )
+                                (reparse-symbol indented_block_body) [29023 29195])
+                            ("top_trashdir_skipped_because_parent_is_symlink" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [29254 29258])
+                                    ("trashdir" variable nil (reparse-symbol function_parameters) [29260 29268]))                                  )
+                                (reparse-symbol indented_block_body) [29203 29375])
+                            ("set_volume_path" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [29403 29407])
+                                    ("volume_path" variable nil (reparse-symbol function_parameters) [29409 29420]))                                  )
+                                (reparse-symbol indented_block_body) [29383 29466])
+                            ("print_entry" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [29490 29494])
+                                    ("maybe_deletion_date" variable nil (reparse-symbol function_parameters) [29496 29515])
+                                    ("relative_location" variable nil (reparse-symbol function_parameters) [29517 29534]))                                  )
+                                (reparse-symbol indented_block_body) [29474 29717]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [28548 29717]))                  
+                :type "class")
+                nil [26358 29717])
+            ("Parser" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [29764 29796])
+                            ("self" variable nil (reparse-symbol indented_block_body) [29805 29838])
+                            ("self" variable nil (reparse-symbol indented_block_body) [29847 29870])
+                            ("self" variable nil (reparse-symbol indented_block_body) [29879 29901])
+                            ("self" variable nil (reparse-symbol indented_block_body) [29910 29931])
+                            ("self" variable nil (reparse-symbol indented_block_body) [29940 29976]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29749 29753]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [29736 29977])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29995 29999])
+                            ("argv" variable nil (reparse-symbol function_parameters) [30001 30005]))                          )
+                        (reparse-symbol indented_block_body) [29982 30702])
+                    ("on_invalid_option" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30729 30733])
+                            ("action" variable nil (reparse-symbol function_parameters) [30735 30741]))                          )
+                        (reparse-symbol indented_block_body) [30707 30785])
+                    ("on_help" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30802 30806])
+                            ("action" variable nil (reparse-symbol function_parameters) [30808 30814]))                          )
+                        (reparse-symbol indented_block_body) [30790 30862])
+                    ("on_version" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30882 30886])
+                            ("action" variable nil (reparse-symbol function_parameters) [30888 30894]))                          )
+                        (reparse-symbol indented_block_body) [30867 30940])
+                    ("add_option" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30960 30964])
+                            ("long_option" variable nil (reparse-symbol function_parameters) [30966 30977])
+                            ("action" variable nil (reparse-symbol function_parameters) [30979 30985])
+                            ("short_aliases" variable nil (reparse-symbol function_parameters) [30987 31000]))                          )
+                        (reparse-symbol indented_block_body) [30945 31199])
+                    ("add_short_option" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31225 31229])
+                            ("short_option" variable nil (reparse-symbol function_parameters) [31231 31243])
+                            ("action" variable nil (reparse-symbol function_parameters) [31245 31251]))                          )
+                        (reparse-symbol indented_block_body) [31204 31347])
+                    ("on_argument" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31368 31372])
+                            ("argument_action" variable nil (reparse-symbol function_parameters) [31374 31389]))                          )
+                        (reparse-symbol indented_block_body) [31352 31439])
+                    ("as_default" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31458 31462])
+                            ("default_action" variable nil (reparse-symbol function_parameters) [31464 31478]))                          )
+                        (reparse-symbol indented_block_body) [31443 31526]))                  
+                :type "class")
+                nil [29718 31526])
+            ("EX_USAGE" variable nil nil [31584 31622])
+            ("EX_OK" variable nil nil [31623 31661])
+            ("EmptyCmd" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [32015 32038])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32047 32070])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32079 32110])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32119 32162])
+                            ("Fs" type
+                               (:members 
+                                  ( ("__init__" function
+                                       (:suite 
+                                          ( ("self" variable nil (reparse-symbol indented_block_body) [32265 32297])
+                                            ("self" variable nil (reparse-symbol indented_block_body) [32314 32360])
+                                            ("self" variable nil (reparse-symbol indented_block_body) [32377 32416])
+                                            ("self" variable nil (reparse-symbol indented_block_body) [32433 32476]))                                          
+                                        :parent "dummy"
+                                        :arguments 
+                                          ( ("self" variable nil (reparse-symbol function_parameters) [32242 32246]))                                          
+                                        :constructor-flag t)
+                                        (reparse-symbol indented_block_body) [32229 32477]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [32171 32477])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32485 32645])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32655 32678])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32687 32719])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32728 32755]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31698 31702])
+                            ("out" variable nil (reparse-symbol function_parameters) [31704 31707])
+                            ("err" variable nil (reparse-symbol function_parameters) [31709 31712])
+                            ("environ" variable nil (reparse-symbol function_parameters) [31714 31721])
+                            ("now" variable nil (reparse-symbol function_parameters) [31740 31743])
+                            ("file_reader" variable nil (reparse-symbol function_parameters) [31787 31798])
+                            ("list_volumes" variable nil (reparse-symbol function_parameters) [31840 31852])
+                            ("getuid" variable nil (reparse-symbol function_parameters) [31887 31893])
+                            ("file_remover" variable nil (reparse-symbol function_parameters) [31931 31943])
+                            ("version" variable nil (reparse-symbol function_parameters) [31980 31987]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [31685 32756])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32769 32773])
+                            ("argv" variable nil (reparse-symbol function_parameters) [32775 32780]))                          )
+                        (reparse-symbol indented_block_body) [32761 33252])
+                    ("report_invalid_option_usage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33289 33293])
+                            ("program_name" variable nil (reparse-symbol function_parameters) [33295 33307])
+                            ("option" variable nil (reparse-symbol function_parameters) [33309 33315]))                          )
+                        (reparse-symbol indented_block_body) [33257 33458])
+                    ("set_deletion_date_criteria" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33494 33498])
+                            ("arg" variable nil (reparse-symbol function_parameters) [33500 33503]))                          )
+                        (reparse-symbol indented_block_body) [33463 33603])
+                    ("description" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33623 33627])
+                            ("program_name" variable nil (reparse-symbol function_parameters) [33629 33641])
+                            ("printer" variable nil (reparse-symbol function_parameters) [33643 33650]))                          )
+                        (reparse-symbol indented_block_body) [33607 33942])
+                    ("is_int" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33957 33961])
+                            ("text" variable nil (reparse-symbol function_parameters) [33963 33967]))                          )
+                        (reparse-symbol indented_block_body) [33946 34081])
+                    ("_empty_all_trashdirs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34110 34114]))                          )
+                        (reparse-symbol indented_block_body) [34085 34177])
+                    ("_empty_trashdir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34202 34206])
+                            ("trash_dir" variable nil (reparse-symbol function_parameters) [34208 34217])
+                            ("volume_path" variable nil (reparse-symbol function_parameters) [34219 34230]))                          )
+                        (reparse-symbol indented_block_body) [34182 34402])
+                    ("_delete_according_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34434 34438])
+                            ("trashinfo_path" variable nil (reparse-symbol function_parameters) [34440 34454]))                          )
+                        (reparse-symbol indented_block_body) [34407 34734])
+                    ("remove_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34754 34758])
+                            ("path" variable nil (reparse-symbol function_parameters) [34760 34764]))                          )
+                        (reparse-symbol indented_block_body) [34738 34811])
+                    ("_delete_both" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34832 34836])
+                            ("trashinfo_path" variable nil (reparse-symbol function_parameters) [34838 34852]))                          )
+                        (reparse-symbol indented_block_body) [34815 35028])
+                    ("println" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35044 35048])
+                            ("line" variable nil (reparse-symbol function_parameters) [35050 35054]))                          )
+                        (reparse-symbol indented_block_body) [35032 35093]))                  
+                :type "class")
+                nil [31663 35093])
+            ("IfDate" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [35161 35195])
+                            ("self" variable nil (reparse-symbol indented_block_body) [35204 35229]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35125 35129])
+                            ("date_criteria" variable nil (reparse-symbol function_parameters) [35131 35144])
+                            ("then" variable nil (reparse-symbol function_parameters) [35146 35150]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [35112 35230])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35247 35251])
+                            ("date2" variable nil (reparse-symbol function_parameters) [35253 35258]))                          )
+                        (reparse-symbol indented_block_body) [35234 35323]))                  
+                :type "class")
+                nil [35094 35323])
+            ("OlderThan" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("datetime" include nil (reparse-symbol indented_block_body) [35387 35417])
+                            ("self" code nil (reparse-symbol indented_block_body) [35426 35476]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35357 35361])
+                            ("days_ago" variable nil (reparse-symbol function_parameters) [35363 35371])
+                            ("now" variable nil (reparse-symbol function_parameters) [35373 35376]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [35344 35477])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35494 35498])
+                            ("deletion_date" variable nil (reparse-symbol function_parameters) [35500 35513]))                          )
+                        (reparse-symbol indented_block_body) [35481 35563]))                  
+                :type "class")
+                nil [35323 35563])
+            ("path_of_backup_copy" function (:arguments 
+              ( ("path_to_trashinfo" variable nil (reparse-symbol function_parameters) [35588 35605]))              ) nil [35564 35811])
+            ("EachTrashInfo" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [35890 35914])
+                            ("self" variable nil (reparse-symbol indented_block_body) [35923 35955]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35851 35855])
+                            ("list_dir" variable nil (reparse-symbol function_parameters) [35857 35865])
+                            ("on_trashinfo" variable nil (reparse-symbol function_parameters) [35867 35879]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [35838 35956])
+                    ("trashdir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35973 35977])
+                            ("path" variable nil (reparse-symbol function_parameters) [35979 35983]))                          )
+                        (reparse-symbol indented_block_body) [35960 36202]))                  
+                :type "class")
+                nil [35813 36202])
+            ("PrintHelp" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Printer" type
+                               (:members 
+                                  ( ("__init__" function
+                                       (:suite 
+                                          ( ("self" variable nil (reparse-symbol indented_block_body) [36346 36368]))                                          
+                                        :parent "dummy"
+                                        :arguments 
+                                          ( ("self" variable nil (reparse-symbol function_parameters) [36314 36318])
+                                            ("println" variable nil (reparse-symbol function_parameters) [36320 36327]))                                          
+                                        :constructor-flag t)
+                                        (reparse-symbol indented_block_body) [36301 36369])
+                                    ("usage" function
+                                       (:parent "dummy"
+                                        :arguments 
+                                          ( ("self" variable nil (reparse-symbol function_parameters) [36391 36395])
+                                            ("usage" variable nil (reparse-symbol function_parameters) [36397 36402]))                                          )
+                                        (reparse-symbol indented_block_body) [36381 36474])
+                                    ("summary" function
+                                       (:parent "dummy"
+                                        :arguments 
+                                          ( ("self" variable nil (reparse-symbol function_parameters) [36498 36502])
+                                            ("summary" variable nil (reparse-symbol function_parameters) [36504 36511]))                                          )
+                                        (reparse-symbol indented_block_body) [36486 36585])
+                                    ("options" function
+                                       (:parent "dummy"
+                                        :arguments 
+                                          ( ("self" variable nil (reparse-symbol function_parameters) [36609 36613])
+                                            ("line_describing_option" variable nil (reparse-symbol function_parameters) [36615 36638]))                                          )
+                                        (reparse-symbol indented_block_body) [36597 36806])
+                                    ("bug_reporting" function
+                                       (:parent "dummy"
+                                        :arguments 
+                                          ( ("self" variable nil (reparse-symbol function_parameters) [36836 36840]))                                          )
+                                        (reparse-symbol indented_block_body) [36818 36932]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [36274 36932])
+                            ("self" variable nil (reparse-symbol indented_block_body) [36940 36971])
+                            ("self" variable nil (reparse-symbol indented_block_body) [36980 37016]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36237 36241])
+                            ("description" variable nil (reparse-symbol function_parameters) [36243 36254])
+                            ("println" variable nil (reparse-symbol function_parameters) [36256 36263]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [36224 37017])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37035 37039])
+                            ("program_name" variable nil (reparse-symbol function_parameters) [37041 37053]))                          )
+                        (reparse-symbol indented_block_body) [37022 37109]))                  
+                :type "class")
+                nil [36203 37109])
+            ("PrintVersion" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [37180 37207])
+                            ("self" variable nil (reparse-symbol indented_block_body) [37216 37243]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37147 37151])
+                            ("println" variable nil (reparse-symbol function_parameters) [37153 37160])
+                            ("version" variable nil (reparse-symbol function_parameters) [37162 37169]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [37134 37244])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37261 37265])
+                            ("program_name" variable nil (reparse-symbol function_parameters) [37267 37279]))                          )
+                        (reparse-symbol indented_block_body) [37248 37343]))                  
+                :type "class")
+                nil [37110 37343])
+            ("AvailableTrashDirs" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [37428 37456])
+                            ("self" variable nil (reparse-symbol indented_block_body) [37465 37492])
+                            ("self" variable nil (reparse-symbol indented_block_body) [37501 37524])
+                            ("self" variable nil (reparse-symbol indented_block_body) [37533 37569])
+                            ("self" variable nil (reparse-symbol indented_block_body) [37578 37615])
+                            ("self" variable nil (reparse-symbol indented_block_body) [37624 37654]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37387 37391])
+                            ("environ" variable nil (reparse-symbol function_parameters) [37393 37400])
+                            ("getuid" variable nil (reparse-symbol function_parameters) [37402 37408])
+                            ("fs" variable nil (reparse-symbol function_parameters) [37410 37412]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [37374 37655])
+                    ("do_nothing" function (:arguments 
+                      ( ("trash_dir" variable nil (reparse-symbol function_parameters) [37674 37683])
+                        ("volume" variable nil (reparse-symbol function_parameters) [37685 37691]))                      ) (reparse-symbol indented_block_body) [37659 37699])
+                    ("NullLog" type
+                       (:members 
+                          ( ("top_trashdir_skipped_because_parent_not_sticky" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [37777 37781])
+                                    ("trashdir" variable nil (reparse-symbol function_parameters) [37783 37791]))                                  )
+                                (reparse-symbol indented_block_body) [37726 37799])
+                            ("top_trashdir_skipped_because_parent_is_symlink" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [37858 37862])
+                                    ("trashdir" variable nil (reparse-symbol function_parameters) [37864 37872]))                                  )
+                                (reparse-symbol indented_block_body) [37807 37880]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [37703 37880])
+                    ("list_trashdirs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37903 37907])
+                            ("out" variable nil (reparse-symbol function_parameters) [37909 37912])
+                            ("error_log" variable nil (reparse-symbol function_parameters) [37927 37936]))                          )
+                        (reparse-symbol indented_block_body) [37884 38043])
+                    ("_for_home_trashcan" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38070 38074])
+                            ("out" variable nil (reparse-symbol function_parameters) [38076 38079]))                          )
+                        (reparse-symbol indented_block_body) [38047 38247])
+                    ("_for_each_volume_trashcan" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38281 38285])
+                            ("action" variable nil (reparse-symbol function_parameters) [38287 38293])
+                            ("error_log" variable nil (reparse-symbol function_parameters) [38295 38304]))                          )
+                        (reparse-symbol indented_block_body) [38251 39073]))                  
+                :type "class")
+                nil [37344 39073])
+            ("home_trashcan_if_possible" function (:arguments 
+              ( ("environ" variable nil (reparse-symbol function_parameters) [39104 39111])
+                ("out" variable nil (reparse-symbol function_parameters) [39113 39116]))              ) nil [39074 39284])
+            ("Dir" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [39357 39390])
+                            ("self" variable nil (reparse-symbol indented_block_body) [39399 39449]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39313 39317])
+                            ("path" variable nil (reparse-symbol function_parameters) [39319 39323])
+                            ("entries_if_dir_exists" variable nil (reparse-symbol function_parameters) [39325 39346]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [39300 39450])
+                    ("entries" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39466 39470]))                          )
+                        (reparse-symbol indented_block_body) [39454 39526])
+                    ("full_path" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39544 39548])
+                            ("entry" variable nil (reparse-symbol function_parameters) [39550 39555]))                          )
+                        (reparse-symbol indented_block_body) [39530 39604]))                  
+                :type "class")
+                nil [39285 39604])
+            ("TrashDir" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [39685 39711])
+                            ("self" variable nil (reparse-symbol indented_block_body) [39720 39753])
+                            ("self" variable nil (reparse-symbol indented_block_body) [39762 39795])
+                            ("self" variable nil (reparse-symbol indented_block_body) [39804 39922]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39638 39642])
+                            ("file_reader" variable nil (reparse-symbol function_parameters) [39644 39655])
+                            ("path" variable nil (reparse-symbol function_parameters) [39657 39661])
+                            ("volume_path" variable nil (reparse-symbol function_parameters) [39663 39674]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [39625 39923])
+                    ("each_orphan" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39943 39947])
+                            ("action" variable nil (reparse-symbol function_parameters) [39949 39955]))                          )
+                        (reparse-symbol indented_block_body) [39927 40206])
+                    ("_entries_if_dir_exists" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40237 40241])
+                            ("path" variable nil (reparse-symbol function_parameters) [40243 40247]))                          )
+                        (reparse-symbol indented_block_body) [40210 40310])
+                    ("each_trashinfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40334 40338])
+                            ("action" variable nil (reparse-symbol function_parameters) [40340 40346]))                          )
+                        (reparse-symbol indented_block_body) [40315 40455])
+                    ("_trashinfos" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40475 40479]))                          )
+                        (reparse-symbol indented_block_body) [40459 40571])
+                    ("_trashinfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40590 40594])
+                            ("entry" variable nil (reparse-symbol function_parameters) [40596 40601]))                          )
+                        (reparse-symbol indented_block_body) [40575 41337])
+                    ("_info_dir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41355 41359]))                          )
+                        (reparse-symbol indented_block_body) [41341 41419])
+                    ("_trashinfo_path_from_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41453 41457])
+                            ("file_entry" variable nil (reparse-symbol function_parameters) [41459 41469]))                          )
+                        (reparse-symbol indented_block_body) [41423 41545])
+                    ("_files_dir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41564 41568]))                          )
+                        (reparse-symbol indented_block_body) [41549 41629])
+                    ("_trashinfo_entries" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41656 41660]))                          )
+                        (reparse-symbol indented_block_body) [41633 41804]))                  
+                :type "class")
+                nil [39605 41804])
+            ("ParseError" type
+               (:superclasses ("ValueError")
+                :members 
+                  ( ("pass" code nil nil nil))                  
+                :type "class")
+                nil [41805 41840])
+            ("LazyTrashInfoParser" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [41923 41950])
+                            ("self" variable nil (reparse-symbol indented_block_body) [41959 41989]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41885 41889])
+                            ("contents" variable nil (reparse-symbol function_parameters) [41891 41899])
+                            ("volume_path" variable nil (reparse-symbol function_parameters) [41901 41912]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [41872 41990])
+                    ("deletion_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42012 42016]))                          )
+                        (reparse-symbol indented_block_body) [41994 42071])
+                    ("_path" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42085 42089]))                          )
+                        (reparse-symbol indented_block_body) [42075 42135])
+                    ("original_location" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42161 42165]))                          )
+                        (reparse-symbol indented_block_body) [42139 42228]))                  
+                :type "class")
+                nil [41841 42228])
+            ("maybe_parse_deletion_date" function (:arguments 
+              ( ("contents" variable nil (reparse-symbol function_parameters) [42259 42267]))              ) nil [42229 42505])
+            ("maybe_date" function (:arguments 
+              ( ("parsing_closure" variable nil (reparse-symbol function_parameters) [42521 42536]))              ) nil [42506 42700])
+            ("unknown_date" function nil nil [42701 42754])
+            ("ParseTrashInfo" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [42943 42986])
+                            ("self" variable nil (reparse-symbol indented_block_body) [42995 43036])
+                            ("self" variable nil (reparse-symbol indented_block_body) [43045 43070]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42794 42798])
+                            ("on_deletion_date" variable nil (reparse-symbol function_parameters) [42817 42833])
+                            ("on_invalid_date" variable nil (reparse-symbol function_parameters) [42865 42880])
+                            ("on_path" variable nil (reparse-symbol function_parameters) [42912 42919]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [42781 43071])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43088 43092])
+                            ("contents" variable nil (reparse-symbol function_parameters) [43094 43102]))                          )
+                        (reparse-symbol indented_block_body) [43075 43653]))                  
+                :type "class")
+                nil [42755 43653])
+            ("Basket" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [43722 43752]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43685 43689])
+                            ("initial_value" variable nil (reparse-symbol function_parameters) [43691 43704]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [43672 43753])
+                    ("collect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43769 43773])
+                            ("value" variable nil (reparse-symbol function_parameters) [43775 43780]))                          )
+                        (reparse-symbol indented_block_body) [43757 43814]))                  
+                :type "class")
+                nil [43654 43814])
+            ("parse_deletion_date" function (:arguments 
+              ( ("contents" variable nil (reparse-symbol function_parameters) [43838 43846]))              ) nil [43814 43961])
+            ("parse_path" function (:arguments 
+              ( ("contents" variable nil (reparse-symbol function_parameters) [43977 43985]))              ) nil [43962 44181])
+            ("has_sticky_bit" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [44201 44205]))              ) nil [44182 44336]))          
+    :file "trash.py"
+    :pointmax 44337
+    :fsize 44336
+    :lastmodtime '(20452 32284 0 0)
+    :unmatched-syntax '((INDENT_BLOCK 27768 . 28128) (NEWLINE 27767 . 27768) (COLON 27766 . 27767) (ELSE 27762 . 27766) (INDENT_BLOCK 27694 . 27746) (NEWLINE 27693 . 27694) (COLON 27692 . 27693) (TRY 27597 . 27600) (AS 27687 . 27689) (FROM 26283 . 26287) (PERIOD 26288 . 26289) (INDENT_BLOCK 18460 . 18530) (NEWLINE 18459 . 18460) (COLON 18458 . 18459) (TRY 18367 . 18370) (AS 18454 . 18456) (INDENT_BLOCK 3079 . 3118) (NEWLINE 3078 . 3079) (COLON 3077 . 3078) (TRY 2858 . 2861) (AS 3073 . 3075) (INDENT_BLOCK 1663 . 1724) (NEWLINE 1662 . 1663) (COLON 1661 . 1662) (TRY 1578 . 1581) (AS 1656 . 1658))
+    )
+   )
+  :file "!usr!share!pyshared!trashcli!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

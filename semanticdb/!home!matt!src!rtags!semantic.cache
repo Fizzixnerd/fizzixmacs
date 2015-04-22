@@ -1,0 +1,20 @@
+;; Object rtags/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rtags/"
+  :tables (list 
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("clang-c/Index.h" include (:system-flag t) nil [1 27])
+            ("main" function (:type "int") nil [29 55]))          
+    :file "test.c"
+    :pointmax 56
+    :fsize 55
+    :lastmodtime '(21785 59663 653247 339000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!rtags!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

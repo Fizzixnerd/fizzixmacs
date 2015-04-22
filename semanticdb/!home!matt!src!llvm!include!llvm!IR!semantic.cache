@@ -1,0 +1,1163 @@
+;; Object IR/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "IR/"
+  :tables (list 
+   (semanticdb-table "Value.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("LLVM_IR_VALUE_H" variable (:constant-flag t) nil [501 516])
+            ("llvm-c/Core.h" include nil nil [518 542])
+            ("llvm/ADT/iterator_range.h" include nil nil [543 579])
+            ("llvm/IR/Use.h" include nil nil [580 604])
+            ("llvm/Support/CBindingWrapping.h" include nil nil [605 647])
+            ("llvm/Support/Casting.h" include nil nil [648 681])
+            ("llvm/Support/Compiler.h" include nil nil [682 716])
+            ("llvm" type
+               (:members 
+                  ( ("APInt" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [736 748])
+                    ("Argument" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [749 764])
+                    ("AssemblyAnnotationWriter" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [765 796])
+                    ("BasicBlock" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [797 814])
+                    ("Constant" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [815 830])
+                    ("DataLayout" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [831 848])
+                    ("Function" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [849 864])
+                    ("GlobalAlias" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [865 883])
+                    ("GlobalObject" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [884 903])
+                    ("GlobalValue" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [904 922])
+                    ("GlobalVariable" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [923 944])
+                    ("InlineAsm" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [945 961])
+                    ("Instruction" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [962 980])
+                    ("LLVMContext" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [981 999])
+                    ("Module" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1000 1013])
+                    ("StringRef" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1014 1030])
+                    ("Twine" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1031 1043])
+                    ("Type" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1044 1055])
+                    ("ValueHandleBase" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1056 1078])
+                    ("ValueSymbolTable" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1079 1102])
+                    ("raw_ostream" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1103 1121])
+                    ("StringMapEntry" type
+                       (:template 
+                          ( ("ValueTy" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1123 1171])
+                    ("ValueName" type
+                       (:typedef ("StringMapEntry" type
+                             (:template-specifier 
+                                ( ("Value" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "StringMapEntry"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1172 1213])
+                    ("Value" type
+                       (:members 
+                          ( ("VTy" variable
+                               (:pointer 1
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2198 2208])
+                            ("UseList" variable
+                               (:pointer 1
+                                :type ("Use" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2211 2224])
+                            ("ValueAsMetadata" friend nil (reparse-symbol classsubparts) [2228 2256])
+                            ("ValueHandleBase" friend nil (reparse-symbol classsubparts) [2298 2326])
+                            ("NameAndIsUsedByMD" variable (:type ("PointerIntPair" type
+                                 (:template-specifier 
+                                    ( ("ValueName" type (:pointer 1) nil nil)
+                                      ("1"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2330 2379])
+                            ("SubclassID" variable
+                               (:constant-flag t
+                                :type "unsigned char")
+                                (reparse-symbol classsubparts) [2383 2414])
+                            ("HasValueHandle" variable
+                               (:suffix ":1"
+                                :type "unsigned char")
+                                (reparse-symbol classsubparts) [2461 2494])
+                            ("protected" label nil (reparse-symbol classsubparts) [2534 2544])
+                            ("SubclassOptionalData" variable
+                               (:suffix ":7"
+                                :type "unsigned char")
+                                (reparse-symbol classsubparts) [2821 2860])
+                            ("private" label nil (reparse-symbol classsubparts) [2862 2870])
+                            ("SubclassData" variable (:type "unsigned short") (reparse-symbol classsubparts) [3119 3147])
+                            ("protected" label nil (reparse-symbol classsubparts) [3149 3159])
+                            ("NumOperands" variable (:type "unsigned int") (reparse-symbol classsubparts) [3552 3573])
+                            ("private" label nil (reparse-symbol classsubparts) [3575 3583])
+                            ("use_iterator_impl" type
+                               (:template 
+                                  ( ("UseT" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("U" variable
+                                       (:pointer 1
+                                        :type ("UseT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3739 3747])
+                                    ("use_iterator_impl" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("u" variable
+                                               (:pointer 1
+                                                :type ("UseT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3779 3787]))                                          
+                                        :type ("use_iterator_impl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3761 3797])
+                                    ("Value" friend nil (reparse-symbol classsubparts) [3802 3820])
+                                    ("public" label nil (reparse-symbol classsubparts) [3825 3832])
+                                    ("use_iterator_impl" function
+                                       (:constructor-flag t
+                                        :type ("use_iterator_impl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3837 3865])
+                                    ("==" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("use_iterator_impl" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3887 3914]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3871 3941])
+                                    ("!=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("use_iterator_impl" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3962 3989]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3946 4022])
+                                    ("++" function
+                                       (:operator-flag t
+                                        :type ("use_iterator_impl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4028 4180])
+                                    ("++" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [4214 4218]))                                          
+                                        :type ("use_iterator_impl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4185 4300])
+                                    ("" variable
+                                       (:functionpointer-flag t
+                                        :type ("UseT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4306 4409])
+                                    ("->" function
+                                       (:operator-flag t
+                                        :pointer 1
+                                        :type ("UseT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4415 4464])
+                                    ("use_iterator_impl" function
+                                       (:template-specifier 
+                                          ( ("UseT" type (:constant-flag t) nil nil))                                          
+                                        :constructor-flag t
+                                        :type ("use_iterator_impl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4479 4571]))                                  
+                                :superclasses 
+                                  ( ("std::iterator" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [3586 4576])
+                            ("user_iterator_impl" type
+                               (:template 
+                                  ( ("UserTy" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("UI" variable (:type ("use_iterator_impl" type
+                                         (:template-specifier 
+                                            ( ("Use" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [4742 4768])
+                                    ("user_iterator_impl" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("U" variable
+                                               (:pointer 1
+                                                :type ("Use" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4801 4808]))                                          
+                                        :type ("user_iterator_impl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4782 4819])
+                                    ("Value" friend nil (reparse-symbol classsubparts) [4824 4842])
+                                    ("public" label nil (reparse-symbol classsubparts) [4847 4854])
+                                    ("user_iterator_impl" function
+                                       (:constructor-flag t
+                                        :type ("user_iterator_impl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4859 4882])
+                                    ("==" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("user_iterator_impl" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4904 4932]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4888 4961])
+                                    ("!=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("user_iterator_impl" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4982 5010]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4966 5043])
+                                    ("atEnd" function (:type "bool") (reparse-symbol classsubparts) [5131 5191])
+                                    ("++" function
+                                       (:operator-flag t
+                                        :type ("user_iterator_impl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5197 5285])
+                                    ("++" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5320 5324]))                                          
+                                        :type ("user_iterator_impl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5290 5406])
+                                    ("" variable
+                                       (:functionpointer-flag t
+                                        :type ("UserTy" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5459 5520])
+                                    ("->" function
+                                       (:operator-flag t
+                                        :pointer 1
+                                        :type ("UserTy" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5526 5576])
+                                    ("user_iterator_impl" function
+                                       (:template-specifier 
+                                          ( ("UserTy" type (:constant-flag t) nil nil))                                          
+                                        :constructor-flag t
+                                        :type ("user_iterator_impl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5591 5691])
+                                    ("getUse" function (:type ("Use" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5697 5732]))                                  
+                                :superclasses 
+                                  ( ("std::iterator" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [4580 5737])
+                            ("protected" label nil (reparse-symbol classsubparts) [5815 5825])
+                            ("Value" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("Ty" variable
+                                       (:pointer 1
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5834 5843])
+                                    ("scid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5844 5858]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5828 5859])
+                            ("public" label nil (reparse-symbol classsubparts) [5860 5867])
+                            ("Value" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [5870 5887])
+                            ("dump" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5954 5972])
+                            ("print" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("O" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6031 6046]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6020 6053])
+                            ("printAsOperand" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("O" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6422 6437])
+                                    ("PrintType" variable (:type "bool") (reparse-symbol arg-sub-list) [6438 6454])
+                                    ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6455 6460])
+                                    ("M" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6483 6500])
+                                    ("" variable (:type ("nullptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6501 6509]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6402 6516])
+                            ("getType" function
+                               (:pointer 1
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6583 6620])
+                            ("getContext" function
+                               (:prototype-flag t
+                                :type ("LLVMContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6683 6715])
+                            ("hasName" function (:type "bool") (reparse-symbol classsubparts) [6768 6826])
+                            ("getValueName" function
+                               (:pointer 1
+                                :type ("ValueName" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6829 6903])
+                            ("setValueName" function
+                               (:arguments 
+                                  ( ("VN" variable
+                                       (:pointer 1
+                                        :type ("ValueName" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6924 6938]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6906 6976])
+                            ("private" label nil (reparse-symbol classsubparts) [6978 6986])
+                            ("destroyValueName" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [6989 7013])
+                            ("public" label nil (reparse-symbol classsubparts) [7015 7022])
+                            ("getName" function
+                               (:prototype-flag t
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7201 7227])
+                            ("setName" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Twine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7438 7456]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7425 7457])
+                            ("takeName" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7645 7654]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7631 7655])
+                            ("replaceAllUsesWith" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7931 7940]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7907 7941])
+                            ("replaceUsesOutsideBlock" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8313 8322])
+                                    ("BB" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8323 8338]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8284 8339])
+                            ("use_empty" function (:type "bool") (reparse-symbol classsubparts) [8482 8549])
+                            ("use_iterator" type
+                               (:typedef ("use_iterator_impl" type
+                                     (:template-specifier 
+                                        ( ("Use" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "use_iterator_impl"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8553 8603])
+                            ("const_use_iterator" type
+                               (:typedef ("use_iterator_impl" type
+                                     (:template-specifier 
+                                        ( ("Use" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "use_iterator_impl"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8606 8662])
+                            ("use_begin" function (:type ("use_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8665 8735])
+                            ("use_begin" function (:type ("const_use_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8738 8814])
+                            ("use_end" function (:type ("use_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8817 8882])
+                            ("use_end" function (:type ("const_use_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8885 8956])
+                            ("uses" function (:type ("iterator_range" type
+                                 (:template-specifier 
+                                    ( ("use_iterator" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8959 9065])
+                            ("uses" function (:type ("iterator_range" type
+                                 (:template-specifier 
+                                    ( ("const_use_iterator" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9068 9192])
+                            ("user_empty" function (:type "bool") (reparse-symbol classsubparts) [9196 9264])
+                            ("user_iterator" type
+                               (:typedef ("user_iterator_impl" type
+                                     (:template-specifier 
+                                        ( ("User" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "user_iterator_impl"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9268 9321])
+                            ("const_user_iterator" type
+                               (:typedef ("user_iterator_impl" type
+                                     (:template-specifier 
+                                        ( ("User" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "user_iterator_impl"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9324 9383])
+                            ("user_begin" function (:type ("user_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9386 9459])
+                            ("user_begin" function (:type ("const_user_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9462 9541])
+                            ("user_end" function (:type ("user_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9544 9612])
+                            ("user_end" function (:type ("const_user_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9615 9689])
+                            ("user_back" function
+                               (:pointer 1
+                                :type ("User" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9692 9756])
+                            ("user_back" function
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("User" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9759 9823])
+                            ("users" function (:type ("iterator_range" type
+                                 (:template-specifier 
+                                    ( ("user_iterator" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9826 9937])
+                            ("users" function (:type ("iterator_range" type
+                                 (:template-specifier 
+                                    ( ("const_user_iterator" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9940 10069])
+                            ("hasOneUse" function (:type "bool") (reparse-symbol classsubparts) [10263 10397])
+                            ("hasNUses" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10475 10486]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10461 10493])
+                            ("hasNUsesOrMore" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10640 10651]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10620 10658])
+                            ("isUsedInBasicBlock" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("BB" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10757 10778]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10733 10785])
+                            ("getNumUses" function
+                               (:prototype-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [10982 11010])
+                            ("addUse" function
+                               (:arguments 
+                                  ( ("U" variable
+                                       (:reference 1
+                                        :type ("Use" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11089 11096]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11077 11123])
+                            ("ValueTy" type
+                               (:members 
+                                  ( ("ArgumentVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11437 11449])
+                                    ("BasicBlockVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11502 11516])
+                                    ("FunctionVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11569 11581])
+                                    ("GlobalAliasVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11634 11649])
+                                    ("GlobalVariableVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11702 11720])
+                                    ("UndefValueVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11773 11787])
+                                    ("BlockAddressVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11840 11856])
+                                    ("ConstantExprVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11909 11925])
+                                    ("ConstantAggregateZeroVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11978 12003])
+                                    ("ConstantDataArrayVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12056 12077])
+                                    ("ConstantDataVectorVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12130 12152])
+                                    ("ConstantIntVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12205 12220])
+                                    ("ConstantFPVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12273 12287])
+                                    ("ConstantArrayVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12340 12357])
+                                    ("ConstantStructVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12410 12428])
+                                    ("ConstantVectorVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12481 12499])
+                                    ("ConstantPointerNullVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12552 12575])
+                                    ("MetadataAsValueVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12628 12647])
+                                    ("InlineAsmVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12700 12713])
+                                    ("InstructionVal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12766 12781])
+                                    ("ConstantFirstVal" variable
+                                       (:constant-flag t
+                                        :default-value (12977 12989)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12958 12989])
+                                    ("ConstantLastVal" variable
+                                       (:constant-flag t
+                                        :default-value (13013 13039)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12994 13039]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [11418 13040])
+                            ("getValueID" function (:type "unsigned int") (reparse-symbol classsubparts) [13642 13698])
+                            ("getRawSubclassOptionalData" function (:type "unsigned int") (reparse-symbol classsubparts) [13854 13936])
+                            ("clearSubclassOptionalData" function (:type "void") (reparse-symbol classsubparts) [14003 14071])
+                            ("hasSameSubclassOptionalData" function
+                               (:arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14160 14175]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [14127 14247])
+                            ("intersectOptionalDataWith" function
+                               (:arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14348 14363]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14317 14422])
+                            ("hasValueHandle" function (:type "bool") (reparse-symbol classsubparts) [14506 14560])
+                            ("isUsedByMetadata" function (:type "bool") (reparse-symbol classsubparts) [14634 14702])
+                            ("stripPointerCasts" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14889 14916])
+                            ("stripPointerCasts" function
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14919 15021])
+                            ("stripPointerCastsNoFollowAliases" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15198 15240])
+                            ("stripPointerCastsNoFollowAliases" function
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15243 15375])
+                            ("stripInBoundsConstantOffsets" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15564 15602])
+                            ("stripInBoundsConstantOffsets" function
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15605 15729])
+                            ("stripAndAccumulateInBoundsConstantOffsets" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("DL" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DataLayout" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16144 16165])
+                                    ("Offset" variable
+                                       (:reference 1
+                                        :type ("APInt" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16217 16231]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16095 16232])
+                            ("stripAndAccumulateInBoundsConstantOffsets" function
+                               (:pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("DL" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DataLayout" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16290 16311])
+                                    ("Offset" variable
+                                       (:reference 1
+                                        :type ("APInt" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16369 16383]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16235 16497])
+                            ("stripInBoundsOffsets" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16673 16703])
+                            ("stripInBoundsOffsets" function
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16706 16814])
+                            ("isDereferenceablePointer" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("DL" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DataLayout" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17038 17059]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [17008 17066])
+                            ("DoPHITranslation" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("CurBB" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17424 17448])
+                                    ("PredBB" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17449 17474]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17400 17475])
+                            ("DoPHITranslation" function
+                               (:pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("CurBB" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17509 17533])
+                                    ("PredBB" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17566 17591]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17479 17672])
+                            ("MaxAlignmentExponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [17854 17902])
+                            ("MaxAlignmentExponent" variable (:type "int") (reparse-symbol classsubparts) [17952 17973])
+                            ("mutateType" function
+                               (:arguments 
+                                  ( ("Ty" variable
+                                       (:pointer 1
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18311 18320]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [18295 18340])
+                            ("sortUseList" function
+                               (:template 
+                                  ( ("Compare" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("Cmp" variable (:type ("Compare" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18547 18559]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [18505 18560])
+                            ("reverseUseList" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [18599 18621])
+                            ("private" label nil (reparse-symbol classsubparts) [18623 18631])
+                            ("mergeUseLists" function
+                               (:template 
+                                  ( ("Compare" type (:type "class") nil nil))                                  
+                                :type ("Use" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("L" variable
+                                       (:pointer 1
+                                        :type ("Use" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18993 19000])
+                                    ("R" variable
+                                       (:pointer 1
+                                        :type ("Use" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19001 19008])
+                                    ("Cmp" variable (:type ("Compare" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19009 19021]))                                  
+                                :typemodifiers ("static")
+                                :pointer 1)
+                                (reparse-symbol classsubparts) [18940 19106])
+                            ("mergeUseListsImpl" function
+                               (:template 
+                                  ( ("Compare" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("L" variable
+                                       (:pointer 1
+                                        :type ("Use" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19286 19293])
+                                    ("R" variable
+                                       (:pointer 1
+                                        :type ("Use" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19294 19301])
+                                    ("Next" variable
+                                       (:pointer 2
+                                        :type ("Use" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19302 19313])
+                                    ("Cmp" variable (:type ("Compare" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19314 19326]))                                  
+                                :typemodifiers ("static")
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [19229 19327])
+                            ("protected" label nil (reparse-symbol classsubparts) [19329 19339])
+                            ("getSubclassDataFromValue" function (:type "unsigned short") (reparse-symbol classsubparts) [19342 19414])
+                            ("setValueSubclassData" function
+                               (:arguments 
+                                  ( ("D" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [19443 19460]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [19417 19482]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2182 19485])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("OS" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19518 19534])
+                            ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19535 19550]))                          
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [19487 19582])
+                    ("set" function
+                       (:parent "Use"
+                        :arguments 
+                          ( ("V" variable
+                               (:pointer 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19598 19607]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19584 19678])
+                    ("sortUseList" function
+                       (:template 
+                          ( ("Compare" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("Cmp" variable (:type ("Compare" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19729 19741]))                          
+                        :parent "Value")
+                        (reparse-symbol namespacesubparts) [19680 21697])
+                    ("mergeUseListsImpl" function
+                       (:template 
+                          ( ("Compare" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("L" variable
+                               (:pointer 1
+                                :type ("Use" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21754 21761])
+                            ("R" variable
+                               (:pointer 1
+                                :type ("Use" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21762 21769])
+                            ("Next" variable
+                               (:pointer 2
+                                :type ("Use" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21770 21781])
+                            ("Cmp" variable (:type ("Compare" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21782 21794]))                          
+                        :parent "Value")
+                        (reparse-symbol namespacesubparts) [21699 22047])
+                    ("isa_impl" type
+                       (:type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22276 22293]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22252 22407]))                          
+                        :template-specifier 
+                          ( ("Constant" type nil nil nil)
+                            ("Value" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [22203 22410])
+                    ("isa_impl" type
+                       (:type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22486 22503]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22461 22560]))                          
+                        :template-specifier 
+                          ( ("Argument" type nil nil nil)
+                            ("Value" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [22412 22563])
+                    ("isa_impl" type
+                       (:type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22639 22656]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22615 22714]))                          
+                        :template-specifier 
+                          ( ("InlineAsm" type nil nil nil)
+                            ("Value" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [22565 22717])
+                    ("isa_impl" type
+                       (:type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22795 22812]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22771 22872]))                          
+                        :template-specifier 
+                          ( ("Instruction" type nil nil nil)
+                            ("Value" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [22719 22875])
+                    ("isa_impl" type
+                       (:type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22952 22969]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22928 23028]))                          
+                        :template-specifier 
+                          ( ("BasicBlock" type nil nil nil)
+                            ("Value" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [22877 23031])
+                    ("isa_impl" type
+                       (:type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23106 23123]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23082 23180]))                          
+                        :template-specifier 
+                          ( ("Function" type nil nil nil)
+                            ("Value" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [23033 23183])
+                    ("isa_impl" type
+                       (:type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23264 23281]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23240 23344]))                          
+                        :template-specifier 
+                          ( ("GlobalVariable" type nil nil nil)
+                            ("Value" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [23185 23347])
+                    ("isa_impl" type
+                       (:type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23425 23442]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23401 23502]))                          
+                        :template-specifier 
+                          ( ("GlobalAlias" type nil nil nil)
+                            ("Value" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [23349 23505])
+                    ("isa_impl" type
+                       (:type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23583 23600]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23559 23666]))                          
+                        :template-specifier 
+                          ( ("GlobalValue" type nil nil nil)
+                            ("Value" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [23507 23669])
+                    ("isa_impl" type
+                       (:type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23748 23765]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23724 23830]))                          
+                        :template-specifier 
+                          ( ("GlobalObject" type nil nil nil)
+                            ("Value" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [23671 23833])
+                    ("PointerLikeTypeTraits" type
+                       (:type "class"
+                        :members 
+                          ( ("PT" type
+                               (:typedef ("Value" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "Value"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [23920 23938])
+                            ("public" label nil (reparse-symbol classsubparts) [23939 23946])
+                            ("getAsVoidPointer" function
+                               (:pointer 1
+                                :typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("P" variable (:type ("PT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23986 23991]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [23949 24005])
+                            ("getFromVoidPointer" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("P" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [24044 24052]))                                  
+                                :type ("PT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [24008 24089])
+                            ("" type
+                               (:members 
+                                  ( ("NumLowBitsAvailable" variable
+                                       (:constant-flag t
+                                        :default-value (24121 24122)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [24099 24122]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [24092 24125]))                          
+                        :template-specifier 
+                          ( ("Value" type (:pointer 1) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [23869 24128])
+                    ("unwrap" function
+                       (:pointer 2
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("Vals" variable
+                               (:pointer 1
+                                :type ("LLVMValueRef" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24316 24335]))                          
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [24294 24381])
+                    ("unwrap" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("Vals" variable
+                               (:pointer 1
+                                :type ("LLVMValueRef" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24422 24441])
+                            ("Length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24442 24458]))                          
+                        :typemodifiers ("inline")
+                        :pointer 2)
+                        (reparse-symbol namespacesubparts) [24383 24617])
+                    ("wrap" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("Vals" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24645 24664]))                          
+                        :type ("LLVMValueRef" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [24619 24737]))                  
+                :type "namespace")
+                nil [718 24740]))          
+    :file "Value.h"
+    :pointmax 24771
+    :fsize 24770
+    :lastmodtime '(21805 7492 719806 529000)
+    :unmatched-syntax '((semantic-list 24226 . 24247) (symbol 24195 . 24226) (punctuation 17950 . 17951) (punctuation 17949 . 17950) (symbol 17946 . 17948) (punctuation 17944 . 17945) (symbol 17927 . 17943) (UNSIGNED 17918 . 17926) (CONST 17912 . 17917) (STATIC 17905 . 17911) (punctuation 6499 . 6500) (punctuation 6453 . 6454) (punctuation 5812 . 5813) (DELETE 5806 . 5812) (punctuation 5804 . 5805) (semantic-list 5788 . 5803) (symbol 5783 . 5788) (punctuation 5779 . 5780) (DELETE 5773 . 5779) (punctuation 5771 . 5772) (semantic-list 5755 . 5770) (punctuation 5754 . 5755) (OPERATOR 5746 . 5754) (VOID 5741 . 5745) (OPERATOR 5582 . 5590) (punctuation 4842 . 4843) (EXPLICIT 4773 . 4781) (OPERATOR 4470 . 4478) (punctuation 3820 . 3821) (EXPLICIT 3752 . 3760) (punctuation 2326 . 2327) (punctuation 2256 . 2257))
+    :lexical-table 
+        '(("LLVM_IR_VALUE_H")
+          )
+
+    )
+   (semanticdb-table "Use.h"
+    :file "Use.h"
+    :fsize 5353
+    :lastmodtime '(21805 7492 719806 529000)
+    )
+   (semanticdb-table "Metadata.h"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "Metadata.h"
+    :pointmax 39855
+    :fsize 39854
+    :lastmodtime '(21805 7492 719806 529000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!llvm!include!llvm!IR!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

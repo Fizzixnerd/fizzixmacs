@@ -1,0 +1,117 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "parrot_config.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [189 207])
+            ("parrot/api.h" include nil nil [208 231])
+            ("Parrot_set_config_hash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("interp_pmc" variable (:type ("Parrot_PMC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [260 282]))                  
+                :type "int")
+                nil [233 283])
+            ("Parrot_get_config_hash_bytes" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [335 340]))                  
+                :type "unsigned char")
+                nil [284 341])
+            ("Parrot_get_config_hash_length" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [376 381]))                  
+                :type "int")
+                nil [342 382])
+            ("parrot_config" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "unsigned char")
+                nil [384 202154])
+            ("Parrot_get_config_hash_bytes" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [202249 202254]))                  
+                :type "unsigned char")
+                nil [202198 202284])
+            ("Parrot_get_config_hash_length" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [202342 202347]))                  
+                :type "int")
+                nil [202308 202385])
+            ("Parrot_set_config_hash" function
+               (:arguments 
+                  ( ("interp_pmc" variable (:type ("Parrot_PMC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [202414 202436]))                  
+                :type "int")
+                nil [202387 202751]))          
+    :file "parrot_config.c"
+    :pointmax 202873
+    :fsize 202872
+    :lastmodtime '(21804 16122 854535 733000)
+    :unmatched-syntax '((symbol 202286 . 202307) (symbol 202176 . 202197))
+    )
+   (semanticdb-table "null_config.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [189 207])
+            ("parrot/api.h" include nil nil [208 231])
+            ("Parrot_set_config_hash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("interp_pmc" variable (:type ("Parrot_PMC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [260 282]))                  
+                :type "int")
+                nil [233 283])
+            ("Parrot_get_config_hash_bytes" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [335 340]))                  
+                :type "unsigned char")
+                nil [284 341])
+            ("Parrot_get_config_hash_length" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [376 381]))                  
+                :type "int")
+                nil [342 382])
+            ("parrot_config" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "unsigned char")
+                nil [384 439])
+            ("Parrot_get_config_hash_bytes" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [534 539]))                  
+                :type "unsigned char")
+                nil [483 569])
+            ("Parrot_get_config_hash_length" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [627 632]))                  
+                :type "int")
+                nil [593 670])
+            ("Parrot_set_config_hash" function
+               (:arguments 
+                  ( ("interp_pmc" variable (:type ("Parrot_PMC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [699 721]))                  
+                :type "int")
+                nil [672 1036]))          
+    :file "null_config.c"
+    :pointmax 1158
+    :fsize 1157
+    :lastmodtime '(21804 16070 870533 795000)
+    :unmatched-syntax '((symbol 571 . 592) (symbol 461 . 482))
+    )
+   )
+  :file "!home!matt!src!parrot!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,146 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+    (semanticdb-table "test_AppConfigFile.py~"
+    :major-mode 'python-mode
+    :tags 
+        '( ("AppConfigFile" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [122 162])
+                            ("self" variable nil (reparse-symbol indented_block_body) [244 284])
+                            ("if" code nil (reparse-symbol indented_block_body) [293 394]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39 43])
+                            ("source" variable nil (reparse-symbol function_parameters) [45 51])
+                            ("target" variable nil (reparse-symbol function_parameters) [53 59])
+                            ("link" variable nil (reparse-symbol function_parameters) [61 65]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [26 394])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [411 415]))                          )
+                        (reparse-symbol indented_block_body) [399 1854]))                  
+                :type "class")
+                nil [1 1854]))          
+    :file "test_AppConfigFile.py~"
+    :pointmax 1856
+    :fsize 1855
+    :lastmodtime '(21798 54459 369614 884000)
+    :unmatched-syntax '((INDENT_BLOCK 526 . 1854))
+    )
+   (semanticdb-table "test_appconfigfile.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("shutil" include nil nil [11 24])
+            ("AppConfigFile" include nil nil [47 67])
+            ("test_ClassAttributes" type
+               (:members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [113 117]))                          )
+                        (reparse-symbol indented_block_body) [103 133])
+                    ("tearDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [151 155]))                          )
+                        (reparse-symbol indented_block_body) [138 171])
+                    ("test_withoutLink" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [197 201]))                          )
+                        (reparse-symbol indented_block_body) [176 362])
+                    ("test_withLink" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [385 389]))                          )
+                        (reparse-symbol indented_block_body) [367 550])
+                    ("test_notEnoughArgs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [578 582]))                          )
+                        (reparse-symbol indented_block_body) [555 705]))                  
+                :type "class")
+                nil [70 705])
+            ("test_BackupRestore" type
+               (:members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [748 752]))                          )
+                        (reparse-symbol indented_block_body) [738 1415])
+                    ("test_backup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1526 1530]))                          )
+                        (reparse-symbol indented_block_body) [1510 1704])
+                    ("test_restore" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1726 1730]))                          )
+                        (reparse-symbol indented_block_body) [1709 2046]))                  
+                :type "class")
+                nil [707 2046]))          
+    :file "test_appconfigfile.py"
+    :pointmax 1860
+    :fsize 2045
+    :lastmodtime '(21800 6678 531620 655000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_filemover.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("shutil" include nil nil [11 24])
+            ("FileMover" include nil nil [43 59])
+            ("test_FileMover" type
+               (:members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [145 149]))                          )
+                        (reparse-symbol indented_block_body) [135 206])
+                    ("tearDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [224 228]))                          )
+                        (reparse-symbol indented_block_body) [211 261])
+                    ("test_copy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [280 284]))                          )
+                        (reparse-symbol indented_block_body) [266 418])
+                    ("test_copyExisting" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [445 449]))                          )
+                        (reparse-symbol indented_block_body) [423 691])
+                    ("test_link" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [710 714]))                          )
+                        (reparse-symbol indented_block_body) [696 843])
+                    ("test_linkExisting" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [870 874]))                          )
+                        (reparse-symbol indented_block_body) [848 1032]))                  
+                :type "class")
+                nil [62 1032]))          
+    :file "test_filemover.py"
+    :pointmax 1032
+    :fsize 1031
+    :lastmodtime '(21800 14748 121511 763000)
+    :unmatched-syntax '((PERIOD 32 . 33) (FROM 26 . 30) (PERIOD 31 . 32) (PERIOD 32 . 33) (FROM 26 . 30) (PERIOD 31 . 32))
+    )
+   )
+  :file "!home!matt!src!frontdown!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

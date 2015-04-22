@@ -1,0 +1,421 @@
+;; Object lang/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lang/"
+  :tables (list 
+   (semanticdb-table "Parser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Parser.hpp" include nil nil [1 22])
+            ("AST.hpp" include nil nil [23 41])
+            ("Token.hpp" include nil nil [42 62])
+            ("make_unique.hpp" include nil nil [63 89])
+            ("iostream" include (:system-flag t) nil [91 110])
+            ("string" include (:system-flag t) nil [111 128])
+            ("vector" include (:system-flag t) nil [129 146])
+            ("memory" include (:system-flag t) nil [147 164])
+            ("lang" type
+               (:members 
+                  ( ("parse" function
+                       (:parent "LispParser"
+                        :arguments 
+                          ( ("tv" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Token" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [228 250]))                          
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("AST" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [187 550]))                  
+                :type "namespace")
+                nil [167 552]))          
+    :file "Parser.cpp"
+    :pointmax 553
+    :fsize 552
+    :lastmodtime '(21813 7395 834950 822000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CXXOPTS" variable (:default-value ("--std=c++11" "-ggdb")) nil [1 27])
+            ("CXX" variable (:default-value ("clang++-3.6" "$(CXXOPTS)")) nil [27 56])
+            ("all" function (:arguments ("AST.o" "Parser.o" "Value.o" "Token.o" "Lexer.o")) nil [57 107])
+            ("AST.o" function (:arguments ("AST.cpp" "AST.hpp")) nil [108 150])
+            ("Parser.o" function (:arguments ("Parser.cpp" "Parser.hpp" "AST.o" "Token.o" "make_unique.o")) nil [151 261])
+            ("Value.o" function (:arguments ("Value.cpp" "Value.hpp" "Symbol.o")) nil [262 330])
+            ("Token.o" function (:arguments ("Token.cpp" "Token.hpp")) nil [331 381])
+            ("Lexer.o" function (:arguments ("Lexer.cpp" "Lexer.hpp")) nil [382 432])
+            ("Symbol.o" function (:arguments ("Symbol.cpp" "Symbol.hpp")) nil [433 487])
+            ("make_unique.o" function (:arguments ("make_unique.cpp" "make_unique.hpp")) nil [488 562]))          
+    :file "Makefile"
+    :pointmax 534
+    :fsize 561
+    :lastmodtime '(21812 59494 420770 382000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Parser.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("AST.hpp" include nil nil [15 33])
+            ("Token.hpp" include nil nil [34 54])
+            ("vector" include (:system-flag t) nil [56 73])
+            ("lang" type
+               (:members 
+                  ( ("Parser" type
+                       (:members 
+                          ( ("parse" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("tv" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("Token" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [158 180]))                                  
+                                :type ("std::unique_ptr" type
+                                     (:template-specifier 
+                                        ( ("AST" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [115 181]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [95 186])
+                    ("LispParser" type
+                       (:superclasses 
+                          ( ("Parser" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("parse" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("tv" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("Token" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [272 294]))                                  
+                                :type ("std::unique_ptr" type
+                                     (:template-specifier 
+                                        ( ("AST" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [229 295]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [190 300]))                  
+                :type "namespace")
+                nil [75 302]))          
+    :file "Parser.hpp"
+    :pointmax 255
+    :fsize 305
+    :lastmodtime '(21812 59456 536769 934000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AST.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Value.hpp" include nil nil [15 35])
+            ("memory" include (:system-flag t) nil [37 54])
+            ("lang" type
+               (:members 
+                  ( ("Node" type
+                       (:members 
+                          ( ("value" variable
+                               (:constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [93 111])
+                            ("next" variable
+                               (:constant-flag t
+                                :type ("std::unique_ptr" type
+                                     (:template-specifier 
+                                        ( ("Node" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [116 149]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [76 154])
+                    ("AST" type
+                       (:members 
+                          ( ("head" variable
+                               (:constant-flag t
+                                :type ("std::unique_ptr" type
+                                     (:template-specifier 
+                                        ( ("Node" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [176 209]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [160 214]))                  
+                :type "namespace")
+                nil [56 221]))          
+    :file "AST.hpp"
+    :pointmax 222
+    :fsize 221
+    :lastmodtime '(21812 64687 888831 797000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Value.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Symbol.hpp" include nil nil [15 36])
+            ("ValuePtr.hpp" include nil nil [37 60])
+            ("lang" type
+               (:members 
+                  ( ("Type" type (:type "class") (reparse-symbol namespacesubparts) [87 125])
+                    ("Value" type
+                       (:members 
+                          ( ("type" variable
+                               (:constant-flag t
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [154 170])
+                            ("val" variable
+                               (:constant-flag t
+                                :type ("ValuePtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [175 194])
+                            ("as_int" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [200 213])
+                            ("as_symbol" function
+                               (:prototype-flag t
+                                :type ("Symbol" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [218 237])
+                            ("Value" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("t" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [248 255])
+                                    ("v" variable (:type ("ValuePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [256 267]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [242 268]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [131 273]))                  
+                :type "namespace")
+                nil [62 275]))          
+    :file "Value.hpp"
+    :pointmax 276
+    :fsize 275
+    :lastmodtime '(21812 56209 124090 127000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Symbol.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("string" include (:system-flag t) nil [15 32])
+            ("lang" type
+               (:members 
+                  ( ("Symbol" type
+                       (:typedef ("std::string" type (:type "class") nil nil)
+                        :superclasses "std::string"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [54 81]))                  
+                :type "namespace")
+                nil [34 83]))          
+    :file "Symbol.hpp"
+    :pointmax 84
+    :fsize 83
+    :lastmodtime '(21810 19035 471286 316000)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   (semanticdb-table "ValuePtr.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Symbol.hpp" include nil nil [15 36])
+            ("memory" include (:system-flag t) nil [38 55])
+            ("lang" type
+               (:members 
+                  ( ("ValueUnion" type
+                       (:members 
+                          ( ("i" variable (:type "int") (reparse-symbol classsubparts) [101 107])
+                            ("s" variable (:type ("Symbol" type (:type "class") nil nil)) (reparse-symbol classsubparts) [112 121]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [77 126])
+                    ("ValuePtr" variable (:type "int") (reparse-symbol namespacesubparts) [166 175]))                  
+                :type "namespace")
+                nil [57 178]))          
+    :file "ValuePtr.hpp"
+    :pointmax 179
+    :fsize 178
+    :lastmodtime '(21812 64995 640835 436000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Value.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Value.hpp" include nil nil [1 21])
+            ("Symbol.hpp" include nil nil [22 43])
+            ("lang" type
+               (:members 
+                  ( ("as_int" function
+                       (:parent "Value"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [65 109])
+                    ("as_symbol" function
+                       (:parent "Value"
+                        :type ("Symbol" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [113 163])
+                    ("Value" function
+                       (:constructor-flag t
+                        :parent "Value"
+                        :arguments 
+                          ( ("t" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [180 187])
+                            ("v" variable (:type ("ValuePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [188 199]))                          
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [167 222]))                  
+                :type "namespace")
+                nil [45 224]))          
+    :file "Value.cpp"
+    :pointmax 174
+    :fsize 224
+    :lastmodtime '(21812 56783 872096 924000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Lexer.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Lexer.hpp" include nil nil [1 21]))          
+    :file "Lexer.cpp"
+    :pointmax 23
+    :fsize 22
+    :lastmodtime '(21812 56668 296095 557000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Lexer.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Lexer" type (:type "class") nil [15 30]))          
+    :file "Lexer.hpp"
+    :pointmax 35
+    :fsize 34
+    :lastmodtime '(21812 56343 372091 715000)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 30 . 31) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   (semanticdb-table "Token.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("string" include (:system-flag t) nil [15 32])
+            ("lang" type
+               (:members 
+                  ( ("Token" type
+                       (:members 
+                          ( ("tok" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [71 93])
+                            ("_id" variable
+                               (:constant-flag t
+                                :type ("uint" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [98 113])
+                            ("public" label nil (reparse-symbol classsubparts) [117 124])
+                            ("is_lparen" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [129 146])
+                            ("is_rparen" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [151 168])
+                            ("is_symbol" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [173 190])
+                            ("id" function
+                               (:prototype-flag t
+                                :type ("uint" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [195 205])
+                            ("Token" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [216 230])
+                                    ("id" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [231 240]))                                  
+                                :type ("Token" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [210 244]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [53 249]))                  
+                :type "namespace")
+                nil [34 251]))          
+    :file "Token.hpp"
+    :pointmax 231
+    :fsize 251
+    :lastmodtime '(21813 7225 690948 810000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AST.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("AST.hpp" include nil nil [1 19])
+            ("lang" type (:type "namespace") nil [21 40]))          
+    :file "AST.cpp"
+    :pointmax 41
+    :fsize 40
+    :lastmodtime '(21811 41495 477618 310000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Token.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Token.hpp" include nil nil [1 21])
+            ("string" include (:system-flag t) nil [23 40])
+            ("lang" type
+               (:members 
+                  ( ("is_lparen" function
+                       (:parent "Token"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [61 170])
+                    ("is_rparen" function
+                       (:parent "Token"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [174 283])
+                    ("is_symbol" function
+                       (:parent "Token"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [287 437])
+                    ("id" function
+                       (:parent "Token"
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [441 479]))                  
+                :type "namespace")
+                nil [42 481]))          
+    :file "Token.cpp"
+    :pointmax 444
+    :fsize 481
+    :lastmodtime '(21813 7209 62948 613000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Symbol.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "Symbol.cpp"
+    :pointmax 1
+    :fsize 22
+    :lastmodtime '(21812 56694 928095 872000)
+    :unmatched-syntax 'nil
+    )
+     (semanticdb-table "Lang.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "Lang.cpp"
+    :pointmax 1
+    :fsize 20
+    :lastmodtime '(21812 59549 484771 33000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Lang.hpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "Lang.hpp"
+    :pointmax 30
+    :fsize 73
+    :lastmodtime '(21812 64804 652833 178000)
+    :unmatched-syntax '((symbol 25 . 29) (NAMESPACE 15 . 24) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   )
+  :file "!home!matt!src!lang!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,522 @@
+;; Object Support/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Support/"
+  :tables (list 
+   (semanticdb-table "Casting.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("LLVM_SUPPORT_CASTING_H" variable (:constant-flag t) nil [589 611])
+            ("llvm/Support/Compiler.h" include nil nil [613 647])
+            ("llvm/Support/type_traits.h" include nil nil [648 685])
+            ("cassert" include (:system-flag t) nil [686 704])
+            ("llvm" type
+               (:members 
+                  ( ("simplify_type" type
+                       (:template 
+                          ( ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("SimpleType" type
+                               (:typedef ("From" type (:type "class") nil nil)
+                                :superclasses "From"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1222 1252])
+                            ("getSimplifiedValue" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1379 1389]))                                  
+                                :type ("SimpleType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1341 1405]))                          )
+                        (reparse-symbol namespacesubparts) [1173 1408])
+                    ("simplify_type" type
+                       (:template 
+                          ( ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("NonConstSimpleType" variable (:type ("SimpleType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1509 1539])
+                            ("SimpleType" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1603 1623])
+                            ("RetType" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1692 1709])
+                            ("getSimplifiedValue" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1746 1762]))                                  
+                                :type ("RetType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1712 1844]))                          
+                        :template-specifier 
+                          ( ("From" type (:constant-flag t) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1410 1847])
+                    ("isa_impl" type
+                       (:members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2169 2185]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2145 2221]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2125 2224])
+                    ("isa_impl_cl" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2580 2596]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2556 2644]))                          )
+                        (reparse-symbol namespacesubparts) [2495 2647])
+                    ("isa_impl_cl" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2750 2766]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2726 2814]))                          
+                        :template-specifier 
+                          ( ("To" type nil nil nil)
+                            ("From" type (:constant-flag t) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2649 2817])
+                    ("isa_impl_cl" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2915 2931]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2891 3031]))                          
+                        :template-specifier 
+                          ( ("To" type nil nil nil)
+                            ("From" type (:pointer 1) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2819 3034])
+                    ("isa_impl_cl" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3137 3153]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3113 3253]))                          
+                        :template-specifier 
+                          ( ("To" type nil nil nil)
+                            ("From" type (:pointer 1) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3036 3256])
+                    ("isa_impl_cl" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3360 3376]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3336 3476]))                          
+                        :template-specifier 
+                          ( ("To" type nil nil nil)
+                            ("From" type
+                               (:pointer 1
+                                :constant-flag t)
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3258 3479])
+                    ("isa_impl_cl" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3588 3604]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3564 3704]))                          
+                        :template-specifier 
+                          ( ("To" type nil nil nil)
+                            ("From" type
+                               (:pointer 1
+                                :constant-flag t)
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3481 3707])
+                    ("isa_impl_wrap" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil)
+                            ("SimpleFrom" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3920 3936]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3903 4123]))                          )
+                        (reparse-symbol namespacesubparts) [3709 4126])
+                    ("isa_impl_wrap" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("FromTy" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FromTy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4300 4318]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4283 4370]))                          
+                        :template-specifier 
+                          ( ("To" type nil nil nil)
+                            ("FromTy" type nil nil nil)
+                            ("FromTy" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4128 4373])
+                    ("isa" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("Val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4611 4624]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4595 4743])
+                    ("cast_retty" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [4962 5011])
+                    ("cast_retty_impl" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("ret_type" variable (:type ("To" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5200 5213]))                          )
+                        (reparse-symbol namespacesubparts) [5134 5251])
+                    ("cast_retty_impl" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("ret_type" variable
+                               (:constant-flag t
+                                :type ("To" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5334 5353]))                          
+                        :template-specifier 
+                          ( ("To" type nil nil nil)
+                            ("From" type (:constant-flag t) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5252 5385])
+                    ("cast_retty_impl" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("ret_type" type
+                               (:typedef ("To" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "To"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5456 5477]))                          
+                        :template-specifier 
+                          ( ("To" type nil nil nil)
+                            ("From" type (:pointer 1) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5387 5520])
+                    ("cast_retty_impl" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("ret_type" type
+                               (:typedef ("To" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "To"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5597 5624]))                          
+                        :template-specifier 
+                          ( ("To" type nil nil nil)
+                            ("From" type
+                               (:pointer 1
+                                :constant-flag t)
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5522 5676])
+                    ("cast_retty_impl" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("ret_type" type
+                               (:typedef ("To" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "To"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5758 5785]))                          
+                        :template-specifier 
+                          ( ("To" type nil nil nil)
+                            ("From" type
+                               (:pointer 1
+                                :constant-flag t)
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5678 5837])
+                    ("cast_retty_wrap" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil)
+                            ("SimpleFrom" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("ret_type" variable (:type ("ret_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6135 6153]))                          )
+                        (reparse-symbol namespacesubparts) [5840 6156])
+                    ("cast_retty_wrap" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("FromTy" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("ret_type" variable (:type ("ret_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6357 6375]))                          
+                        :template-specifier 
+                          ( ("To" type nil nil nil)
+                            ("FromTy" type nil nil nil)
+                            ("FromTy" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [6158 6378])
+                    ("cast_retty" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("ret_type" variable (:type ("ret_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6538 6556]))                          )
+                        (reparse-symbol namespacesubparts) [6380 6559])
+                    ("cast_convert_val" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("From" type (:type "class") nil nil)
+                            ("SimpleFrom" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6887 6897]))                                  
+                                :type ("ret_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6873 7081]))                          )
+                        (reparse-symbol namespacesubparts) [6691 7084])
+                    ("cast_convert_val" type
+                       (:template 
+                          ( ("To" type (:type "class") nil nil)
+                            ("FromTy" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("doit" function
+                               (:arguments 
+                                  ( ("Val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FromTy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7263 7281]))                                  
+                                :type ("ret_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7249 7431]))                          
+                        :template-specifier 
+                          ( ("To" type nil nil nil)
+                            ("FromTy" type nil nil nil)
+                            ("FromTy" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7086 7434])
+                    ("is_simple_type" type
+                       (:template 
+                          ( ("X" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value" variable (:type "int") (reparse-symbol classsubparts) [7569 7575]))                          )
+                        (reparse-symbol namespacesubparts) [7436 7578])
+                    ("cast" function
+                       (:arguments 
+                          ( ("Val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8071 8084]))                          
+                        :type ("type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8061 8260])
+                    ("cast" function
+                       (:arguments 
+                          ( ("Val" variable
+                               (:reference 1
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8338 8345]))                          
+                        :type ("ret_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8324 8528])
+                    ("cast" function
+                       (:arguments 
+                          ( ("Val" variable
+                               (:pointer 1
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8608 8615]))                          
+                        :type ("ret_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8594 8800])
+                    ("cast_or_null" function
+                       (:arguments 
+                          ( ("Val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9081 9094]))                          
+                        :type ("type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9063 9231])
+                    ("cast_or_null" function
+                       (:arguments 
+                          ( ("Val" variable
+                               (:reference 1
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9409 9416]))                          
+                        :type ("type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9391 9553])
+                    ("cast_or_null" function
+                       (:arguments 
+                          ( ("Val" variable
+                               (:pointer 1
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9670 9677]))                          
+                        :type ("ret_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9648 9810])
+                    ("dyn_cast" function
+                       (:arguments 
+                          ( ("Val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10359 10372]))                          
+                        :type ("type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10345 10423])
+                    ("dyn_cast" function
+                       (:arguments 
+                          ( ("Val" variable
+                               (:reference 1
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10534 10541]))                          
+                        :type ("ret_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10516 10592])
+                    ("dyn_cast" function
+                       (:arguments 
+                          ( ("Val" variable
+                               (:pointer 1
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10705 10712]))                          
+                        :type ("ret_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10687 10763])
+                    ("dyn_cast_or_null" function
+                       (:arguments 
+                          ( ("Val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11056 11069]))                          
+                        :type ("type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11034 11129])
+                    ("dyn_cast_or_null" function
+                       (:arguments 
+                          ( ("Val" variable
+                               (:reference 1
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11311 11318]))                          
+                        :type ("type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11289 11378])
+                    ("dyn_cast_or_null" function
+                       (:arguments 
+                          ( ("Val" variable
+                               (:pointer 1
+                                :type ("Y" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11499 11506]))                          
+                        :type ("ret_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11473 11566]))                  
+                :type "namespace")
+                nil [706 11569]))          
+    :file "Casting.h"
+    :pointmax 11600
+    :fsize 11599
+    :lastmodtime '(21805 7492 743806 530000)
+    :unmatched-syntax '((punctuation 11472 . 11473) (punctuation 11471 . 11472) (punctuation 11470 . 11471) (punctuation 11469 . 11470) (symbol 11467 . 11468) (punctuation 11465 . 11466) (symbol 11464 . 11465) (punctuation 11463 . 11464) (symbol 11453 . 11463) (TYPENAME 11444 . 11452) (INLINE 11437 . 11443) (symbol 11408 . 11436) (punctuation 11406 . 11407) (symbol 11405 . 11406) (CLASS 11399 . 11404) (punctuation 11397 . 11398) (symbol 11396 . 11397) (CLASS 11390 . 11395) (punctuation 11389 . 11390) (TEMPLATE 11380 . 11388) (punctuation 11288 . 11289) (punctuation 11287 . 11288) (punctuation 11286 . 11287) (symbol 11278 . 11286) (punctuation 11277 . 11278) (punctuation 11276 . 11277) (punctuation 11275 . 11276) (symbol 11274 . 11275) (punctuation 11272 . 11273) (symbol 11271 . 11272) (punctuation 11270 . 11271) (symbol 11260 . 11270) (TYPENAME 11251 . 11259) (punctuation 11249 . 11250) (symbol 11244 . 11249) (punctuation 11243 . 11244) (punctuation 11242 . 11243) (punctuation 11241 . 11242) (symbol 11240 . 11241) (punctuation 11239 . 11240) (symbol 11225 . 11239) (punctuation 11224 . 11225) (punctuation 11218 . 11219) (symbol 11209 . 11218) (punctuation 11208 . 11209) (punctuation 11207 . 11208) (symbol 11204 . 11207) (TYPENAME 11195 . 11203) (INLINE 11188 . 11194) (symbol 11159 . 11187) (punctuation 11157 . 11158) (symbol 11156 . 11157) (CLASS 11150 . 11155) (punctuation 11148 . 11149) (symbol 11147 . 11148) (CLASS 11141 . 11146) (punctuation 11140 . 11141) (TEMPLATE 11131 . 11139) (punctuation 11033 . 11034) (punctuation 11032 . 11033) (punctuation 11031 . 11032) (symbol 11023 . 11031) (punctuation 11022 . 11023) (punctuation 11021 . 11022) (punctuation 11020 . 11021) (symbol 11019 . 11020) (CONST 11013 . 11018) (punctuation 11011 . 11012) (symbol 11010 . 11011) (punctuation 11009 . 11010) (symbol 10999 . 11009) (TYPENAME 10990 . 10998) (punctuation 10988 . 10989) (symbol 10983 . 10988) (punctuation 10982 . 10983) (punctuation 10981 . 10982) (punctuation 10980 . 10981) (symbol 10979 . 10980) (punctuation 10978 . 10979) (symbol 10964 . 10978) (punctuation 10963 . 10964) (punctuation 10957 . 10958) (symbol 10948 . 10957) (punctuation 10947 . 10948) (punctuation 10946 . 10947) (symbol 10943 . 10946) (TYPENAME 10934 . 10942) (INLINE 10927 . 10933) (symbol 10898 . 10926) (punctuation 10896 . 10897) (symbol 10895 . 10896) (CLASS 10889 . 10894) (punctuation 10887 . 10888) (symbol 10886 . 10887) (CLASS 10880 . 10885) (punctuation 10879 . 10880) (TEMPLATE 10870 . 10878) (punctuation 10686 . 10687) (punctuation 10685 . 10686) (punctuation 10684 . 10685) (punctuation 10683 . 10684) (symbol 10681 . 10682) (punctuation 10679 . 10680) (symbol 10678 . 10679) (punctuation 10677 . 10678) (symbol 10667 . 10677) (TYPENAME 10658 . 10666) (INLINE 10651 . 10657) (symbol 10622 . 10650) (punctuation 10620 . 10621) (symbol 10619 . 10620) (CLASS 10613 . 10618) (punctuation 10611 . 10612) (symbol 10610 . 10611) (CLASS 10604 . 10609) (punctuation 10603 . 10604) (TEMPLATE 10594 . 10602) (punctuation 10515 . 10516) (punctuation 10514 . 10515) (punctuation 10513 . 10514) (symbol 10512 . 10513) (punctuation 10510 . 10511) (symbol 10509 . 10510) (punctuation 10508 . 10509) (symbol 10498 . 10508) (TYPENAME 10489 . 10497) (INLINE 10482 . 10488) (symbol 10453 . 10481) (punctuation 10451 . 10452) (symbol 10450 . 10451) (CLASS 10444 . 10449) (punctuation 10442 . 10443) (symbol 10441 . 10442) (CLASS 10435 . 10440) (punctuation 10434 . 10435) (TEMPLATE 10425 . 10433) (punctuation 10344 . 10345) (punctuation 10343 . 10344) (punctuation 10342 . 10343) (symbol 10334 . 10342) (punctuation 10333 . 10334) (punctuation 10332 . 10333) (punctuation 10331 . 10332) (symbol 10330 . 10331) (CONST 10324 . 10329) (punctuation 10322 . 10323) (symbol 10321 . 10322) (punctuation 10320 . 10321) (symbol 10310 . 10320) (TYPENAME 10301 . 10309) (punctuation 10299 . 10300) (symbol 10294 . 10299) (punctuation 10293 . 10294) (punctuation 10292 . 10293) (punctuation 10291 . 10292) (symbol 10290 . 10291) (punctuation 10289 . 10290) (symbol 10275 . 10289) (punctuation 10274 . 10275) (punctuation 10268 . 10269) (symbol 10259 . 10268) (punctuation 10258 . 10259) (punctuation 10257 . 10258) (symbol 10254 . 10257) (TYPENAME 10245 . 10253) (INLINE 10238 . 10244) (symbol 10209 . 10237) (punctuation 10207 . 10208) (symbol 10206 . 10207) (CLASS 10200 . 10205) (punctuation 10198 . 10199) (symbol 10197 . 10198) (CLASS 10191 . 10196) (punctuation 10190 . 10191) (TEMPLATE 10181 . 10189) (punctuation 9647 . 9648) (punctuation 9646 . 9647) (punctuation 9645 . 9646) (punctuation 9644 . 9645) (symbol 9642 . 9643) (punctuation 9640 . 9641) (symbol 9639 . 9640) (punctuation 9638 . 9639) (symbol 9628 . 9638) (TYPENAME 9619 . 9627) (INLINE 9612 . 9618) (symbol 9583 . 9611) (punctuation 9581 . 9582) (symbol 9580 . 9581) (CLASS 9574 . 9579) (punctuation 9572 . 9573) (symbol 9571 . 9572) (CLASS 9565 . 9570) (punctuation 9564 . 9565) (TEMPLATE 9555 . 9563) (punctuation 9390 . 9391) (punctuation 9389 . 9390) (punctuation 9388 . 9389) (symbol 9380 . 9388) (punctuation 9379 . 9380) (punctuation 9378 . 9379) (punctuation 9377 . 9378) (symbol 9376 . 9377) (punctuation 9374 . 9375) (symbol 9373 . 9374) (punctuation 9372 . 9373) (symbol 9362 . 9372) (TYPENAME 9353 . 9361) (punctuation 9351 . 9352) (symbol 9346 . 9351) (punctuation 9345 . 9346) (punctuation 9344 . 9345) (punctuation 9343 . 9344) (symbol 9342 . 9343) (punctuation 9341 . 9342) (symbol 9327 . 9341) (punctuation 9326 . 9327) (punctuation 9320 . 9321) (symbol 9311 . 9320) (punctuation 9310 . 9311) (punctuation 9309 . 9310) (symbol 9306 . 9309) (TYPENAME 9297 . 9305) (INLINE 9290 . 9296) (symbol 9261 . 9289) (punctuation 9259 . 9260) (symbol 9258 . 9259) (CLASS 9252 . 9257) (punctuation 9250 . 9251) (symbol 9249 . 9250) (CLASS 9243 . 9248) (punctuation 9242 . 9243) (TEMPLATE 9233 . 9241) (punctuation 9062 . 9063) (punctuation 9061 . 9062) (punctuation 9060 . 9061) (symbol 9052 . 9060) (punctuation 9051 . 9052) (punctuation 9050 . 9051) (punctuation 9049 . 9050) (symbol 9048 . 9049) (CONST 9042 . 9047) (punctuation 9040 . 9041) (symbol 9039 . 9040) (punctuation 9038 . 9039) (symbol 9028 . 9038) (TYPENAME 9019 . 9027) (punctuation 9017 . 9018) (symbol 9012 . 9017) (punctuation 9011 . 9012) (punctuation 9010 . 9011) (punctuation 9009 . 9010) (symbol 9008 . 9009) (punctuation 9007 . 9008) (symbol 8993 . 9007) (punctuation 8992 . 8993) (punctuation 8986 . 8987) (symbol 8977 . 8986) (punctuation 8976 . 8977) (punctuation 8975 . 8976) (symbol 8972 . 8975) (TYPENAME 8963 . 8971) (INLINE 8956 . 8962) (symbol 8927 . 8955) (punctuation 8925 . 8926) (symbol 8924 . 8925) (CLASS 8918 . 8923) (punctuation 8916 . 8917) (symbol 8915 . 8916) (CLASS 8909 . 8914) (punctuation 8908 . 8909) (TEMPLATE 8899 . 8907) (punctuation 8593 . 8594) (punctuation 8592 . 8593) (punctuation 8591 . 8592) (punctuation 8590 . 8591) (symbol 8588 . 8589) (punctuation 8586 . 8587) (symbol 8585 . 8586) (punctuation 8584 . 8585) (symbol 8574 . 8584) (TYPENAME 8565 . 8573) (INLINE 8558 . 8564) (punctuation 8556 . 8557) (symbol 8555 . 8556) (CLASS 8549 . 8554) (punctuation 8547 . 8548) (symbol 8546 . 8547) (CLASS 8540 . 8545) (punctuation 8539 . 8540) (TEMPLATE 8530 . 8538) (punctuation 8323 . 8324) (punctuation 8322 . 8323) (punctuation 8321 . 8322) (symbol 8320 . 8321) (punctuation 8318 . 8319) (symbol 8317 . 8318) (punctuation 8316 . 8317) (symbol 8306 . 8316) (TYPENAME 8297 . 8305) (INLINE 8290 . 8296) (punctuation 8288 . 8289) (symbol 8287 . 8288) (CLASS 8281 . 8286) (punctuation 8279 . 8280) (symbol 8278 . 8279) (CLASS 8272 . 8277) (punctuation 8271 . 8272) (TEMPLATE 8262 . 8270) (punctuation 8060 . 8061) (punctuation 8059 . 8060) (punctuation 8058 . 8059) (symbol 8050 . 8058) (punctuation 8049 . 8050) (punctuation 8048 . 8049) (punctuation 8047 . 8048) (symbol 8046 . 8047) (CONST 8040 . 8045) (punctuation 8038 . 8039) (symbol 8037 . 8038) (punctuation 8036 . 8037) (symbol 8026 . 8036) (TYPENAME 8017 . 8025) (punctuation 7984 . 7985) (symbol 7979 . 7984) (punctuation 7978 . 7979) (punctuation 7977 . 7978) (punctuation 7976 . 7977) (symbol 7975 . 7976) (punctuation 7974 . 7975) (symbol 7960 . 7974) (punctuation 7959 . 7960) (punctuation 7958 . 7959) (symbol 7949 . 7958) (punctuation 7948 . 7949) (punctuation 7947 . 7948) (symbol 7944 . 7947) (TYPENAME 7935 . 7943) (INLINE 7928 . 7934) (punctuation 7926 . 7927) (symbol 7925 . 7926) (CLASS 7919 . 7924) (punctuation 7917 . 7918) (symbol 7916 . 7917) (CLASS 7910 . 7915) (punctuation 7909 . 7910) (TEMPLATE 7900 . 7908) (punctuation 7568 . 7569) (punctuation 7567 . 7568) (punctuation 7566 . 7567) (symbol 7556 . 7566) (punctuation 7555 . 7556) (punctuation 7554 . 7555) (punctuation 7553 . 7554) (symbol 7552 . 7553) (punctuation 7551 . 7552) (symbol 7538 . 7551) (TYPENAME 7529 . 7537) (punctuation 7527 . 7528) (symbol 7526 . 7527) (punctuation 7525 . 7526) (symbol 7518 . 7525) (punctuation 7517 . 7518) (punctuation 7516 . 7517) (symbol 7513 . 7516) (punctuation 7505 . 7506) (symbol 7499 . 7504) (BOOL 7494 . 7498) (CONST 7488 . 7493) (STATIC 7481 . 7487) (punctuation 7248 . 7249) (punctuation 7247 . 7248) (punctuation 7246 . 7247) (symbol 7240 . 7246) (punctuation 7238 . 7239) (symbol 7236 . 7238) (punctuation 7235 . 7236) (symbol 7225 . 7235) (TYPENAME 7216 . 7224) (STATIC 7209 . 7215) (punctuation 6872 . 6873) (punctuation 6871 . 6872) (punctuation 6870 . 6871) (symbol 6866 . 6870) (punctuation 6864 . 6865) (symbol 6862 . 6864) (punctuation 6861 . 6862) (symbol 6851 . 6861) (TYPENAME 6842 . 6850) (STATIC 6835 . 6841) (punctuation 6537 . 6538) (punctuation 6536 . 6537) (punctuation 6535 . 6536) (symbol 6525 . 6535) (punctuation 6524 . 6525) (punctuation 6523 . 6524) (punctuation 6522 . 6523) (symbol 6518 . 6522) (punctuation 6517 . 6518) (symbol 6504 . 6517) (TYPENAME 6495 . 6503) (punctuation 6474 . 6475) (symbol 6470 . 6474) (punctuation 6468 . 6469) (symbol 6466 . 6468) (punctuation 6465 . 6466) (symbol 6450 . 6465) (TYPENAME 6441 . 6449) (TYPEDEF 6433 . 6440) (punctuation 6356 . 6357) (punctuation 6355 . 6356) (punctuation 6354 . 6355) (symbol 6348 . 6354) (punctuation 6347 . 6348) (symbol 6345 . 6347) (punctuation 6344 . 6345) (symbol 6329 . 6344) (TYPENAME 6320 . 6328) (TYPEDEF 6312 . 6319) (punctuation 6134 . 6135) (punctuation 6133 . 6134) (punctuation 6132 . 6133) (symbol 6122 . 6132) (punctuation 6120 . 6121) (symbol 6118 . 6120) (punctuation 6117 . 6118) (symbol 6107 . 6117) (TYPENAME 6098 . 6106) (TYPEDEF 6090 . 6097) (TYPEDEF 5326 . 5333) (TYPEDEF 5192 . 5199) (symbol 4566 . 4594) (punctuation 4564 . 4565) (symbol 4563 . 4564) (CLASS 4557 . 4562) (punctuation 4555 . 4556) (symbol 4554 . 4555) (CLASS 4548 . 4553) (punctuation 4547 . 4548) (TEMPLATE 4538 . 4546) (punctuation 2492 . 2493) (semantic-list 2432 . 2492) (punctuation 2430 . 2431) (symbol 2426 . 2430) (punctuation 2425 . 2426) (punctuation 2424 . 2425) (punctuation 2423 . 2424) (symbol 2418 . 2423) (punctuation 2417 . 2418) (punctuation 2416 . 2417) (punctuation 2415 . 2416) (symbol 2411 . 2415) (punctuation 2409 . 2410) (symbol 2407 . 2409) (punctuation 2406 . 2407) (symbol 2396 . 2406) (punctuation 2395 . 2396) (punctuation 2394 . 2395) (symbol 2391 . 2394) (punctuation 2390 . 2391) (symbol 2381 . 2390) (punctuation 2380 . 2381) (punctuation 2379 . 2380) (symbol 2376 . 2379) (TYPENAME 2367 . 2375) (punctuation 2365 . 2366) (symbol 2361 . 2365) (punctuation 2359 . 2360) (symbol 2357 . 2359) (punctuation 2351 . 2352) (symbol 2343 . 2351) (STRUCT 2336 . 2342) (punctuation 2334 . 2335) (symbol 2330 . 2334) (TYPENAME 2321 . 2329) (punctuation 2319 . 2320) (symbol 2317 . 2319) (TYPENAME 2308 . 2316) (punctuation 2307 . 2308) (TEMPLATE 2298 . 2306) (punctuation 2123 . 2124) (VOID 2119 . 2123) (punctuation 2117 . 2118) (symbol 2109 . 2116) (TYPENAME 2100 . 2108) (punctuation 2098 . 2099) (symbol 2094 . 2098) (TYPENAME 2085 . 2093) (punctuation 2083 . 2084) (symbol 2081 . 2083) (TYPENAME 2072 . 2080) (punctuation 2071 . 2072) (TEMPLATE 2062 . 2070) (punctuation 1691 . 1692) (punctuation 1690 . 1691) (punctuation 1689 . 1690) (symbol 1679 . 1689) (punctuation 1678 . 1679) (symbol 1643 . 1678) (TYPENAME 1634 . 1642) (TYPEDEF 1626 . 1633) (punctuation 1602 . 1603) (punctuation 1601 . 1602) (punctuation 1600 . 1601) (symbol 1582 . 1600) (punctuation 1581 . 1582) (symbol 1559 . 1581) (TYPENAME 1550 . 1558) (TYPEDEF 1542 . 1549) (punctuation 1508 . 1509) (punctuation 1507 . 1508) (punctuation 1506 . 1507) (symbol 1502 . 1506) (punctuation 1501 . 1502) (symbol 1488 . 1501) (TYPENAME 1479 . 1487) (TYPEDEF 1471 . 1478))
+    :lexical-table 
+        '(("LLVM_SUPPORT_CASTING_H")
+          )
+
+    )
+   (semanticdb-table "Compiler.h"
+    :file "Compiler.h"
+    :fsize 14431
+    :lastmodtime '(21805 7492 743806 530000)
+    )
+   (semanticdb-table "type_traits.h"
+    :file "type_traits.h"
+    :fsize 3486
+    :lastmodtime '(21805 7492 751806 530000)
+    )
+   )
+  :file "!home!matt!src!llvm!include!llvm!Support!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

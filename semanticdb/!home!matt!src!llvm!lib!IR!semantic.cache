@@ -1,0 +1,2543 @@
+;; Object IR/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "IR/"
+  :tables (list 
+   (semanticdb-table "Verifier.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("llvm/IR/Verifier.h" include nil nil [2570 2599])
+            ("llvm/ADT/STLExtras.h" include nil nil [2600 2631])
+            ("llvm/ADT/SetVector.h" include nil nil [2632 2663])
+            ("llvm/ADT/SmallPtrSet.h" include nil nil [2664 2697])
+            ("llvm/ADT/SmallVector.h" include nil nil [2698 2731])
+            ("llvm/ADT/StringExtras.h" include nil nil [2732 2766])
+            ("llvm/IR/CFG.h" include nil nil [2767 2791])
+            ("llvm/IR/CallSite.h" include nil nil [2792 2821])
+            ("llvm/IR/CallingConv.h" include nil nil [2822 2854])
+            ("llvm/IR/ConstantRange.h" include nil nil [2855 2889])
+            ("llvm/IR/Constants.h" include nil nil [2890 2920])
+            ("llvm/IR/DataLayout.h" include nil nil [2921 2952])
+            ("llvm/IR/DebugInfo.h" include nil nil [2953 2983])
+            ("llvm/IR/DerivedTypes.h" include nil nil [2984 3017])
+            ("llvm/IR/Dominators.h" include nil nil [3018 3049])
+            ("llvm/IR/InlineAsm.h" include nil nil [3050 3080])
+            ("llvm/IR/InstIterator.h" include nil nil [3081 3114])
+            ("llvm/IR/InstVisitor.h" include nil nil [3115 3147])
+            ("llvm/IR/IntrinsicInst.h" include nil nil [3148 3182])
+            ("llvm/IR/LLVMContext.h" include nil nil [3183 3215])
+            ("llvm/IR/Metadata.h" include nil nil [3216 3245])
+            ("llvm/IR/Module.h" include nil nil [3246 3273])
+            ("llvm/IR/PassManager.h" include nil nil [3274 3306])
+            ("llvm/IR/Statepoint.h" include nil nil [3307 3338])
+            ("llvm/Pass.h" include nil nil [3339 3361])
+            ("llvm/Support/CommandLine.h" include nil nil [3362 3399])
+            ("llvm/Support/Debug.h" include nil nil [3400 3431])
+            ("llvm/Support/ErrorHandling.h" include nil nil [3432 3471])
+            ("llvm/Support/raw_ostream.h" include nil nil [3472 3509])
+            ("algorithm" include (:system-flag t) nil [3510 3530])
+            ("cstdarg" include (:system-flag t) nil [3531 3549])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [3550 3571])
+            ("VerifyDebugInfo" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3631 3645]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3573 3647])
+            ("unnamed" type
+               (:members 
+                  ( ("VerifierSupport" type
+                       (:members 
+                          ( ("OS" variable (:type ("raw_ostream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3688 3704])
+                            ("M" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3707 3723])
+                            ("Broken" variable (:type "bool") (reparse-symbol classsubparts) [3803 3815])
+                            ("VerifierSupport" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3844 3860]))                                  
+                                :type ("VerifierSupport" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [3828 3905])
+                            ("private" label nil (reparse-symbol classsubparts) [3907 3915])
+                            ("Write" function
+                               (:arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3929 3944]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3918 4106])
+                            ("Write" function
+                               (:arguments 
+                                  ( ("MD" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Metadata" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4121 4140]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4110 4211])
+                            ("Write" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("MD" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDTupleTypedArrayWrapper" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4245 4283]))                                  )
+                                (reparse-symbol classsubparts) [4215 4310])
+                            ("Write" function
+                               (:arguments 
+                                  ( ("NMD" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("NamedMDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4325 4348]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4314 4418])
+                            ("Write" function
+                               (:arguments 
+                                  ( ("T" variable
+                                       (:pointer 1
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4433 4441]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4422 4494])
+                            ("Write" function
+                               (:arguments 
+                                  ( ("C" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Comdat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4509 4525]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4498 4571])
+                            ("WriteTs" function
+                               (:arguments 
+                                  ( ("V1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4629 4642])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ts" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4643 4654])
+                                    ("" variable (:type ("Vs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4657 4660]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4616 4701])
+                            ("WriteTs" function (:type "void") (reparse-symbol classsubparts) [4731 4748])
+                            ("public" label nil (reparse-symbol classsubparts) [4750 4757])
+                            ("CheckFailed" function
+                               (:arguments 
+                                  ( ("Message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Twine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4967 4988]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4950 5040])
+                            ("CheckFailed" function
+                               (:arguments 
+                                  ( ("Message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Twine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5260 5281])
+                                    ("V1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5282 5295])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ts" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5296 5307])
+                                    ("" variable (:type ("Vs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5310 5313]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5243 5369]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3661 5372])
+                    ("Verifier" type
+                       (:superclasses 
+                          ( ("InstVisitor" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("VerifierSupport" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("InstVisitor" friend nil (reparse-symbol classsubparts) [5441 5465])
+                            ("Context" variable
+                               (:pointer 1
+                                :type ("LLVMContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5480 5501])
+                            ("DT" variable (:type ("DominatorTree" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5504 5521])
+                            ("InstsInThisBlock" variable (:type ("SmallPtrSet" type
+                                 (:template-specifier 
+                                    ( ("Instruction" type (:pointer 1) nil nil)
+                                      ("16"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [5789 5837])
+                            ("MDNodes" variable (:type ("SmallPtrSet" type
+                                 (:template-specifier 
+                                    ( ("Metadata" type
+                                         (:pointer 1
+                                          :constant-flag t)
+                                          nil nil)
+                                      ("32"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [5919 5961])
+                            ("UnresolvedTypeRefs" variable (:type ("SmallDenseMap" type
+                                 (:template-specifier 
+                                    ( ("MDString" type
+                                         (:pointer 1
+                                          :constant-flag t)
+                                          nil nil)
+                                      ("MDNode" type
+                                         (:pointer 1
+                                          :constant-flag t)
+                                          nil nil)
+                                      ("32"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6025 6096])
+                            ("PersonalityFn" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6270 6297])
+                            ("SawFrameEscape" variable (:type "bool") (reparse-symbol classsubparts) [6393 6413])
+                            ("FrameEscapeInfo" variable (:type ("DenseMap" type
+                                 (:template-specifier 
+                                    ( ("Function" type (:pointer 1) nil nil)
+                                      ("std::pair" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6570 6638])
+                            ("public" label nil (reparse-symbol classsubparts) [6640 6647])
+                            ("Verifier" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6668 6684]))                                  
+                                :type ("Verifier" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6659 6788])
+                            ("verify" function
+                               (:arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6804 6822]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6792 8073])
+                            ("verify" function
+                               (:arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8089 8105]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8077 9350])
+                            ("private" label nil (reparse-symbol classsubparts) [9352 9360])
+                            ("visitGlobalValue" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("GV" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("GlobalValue" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9414 9436]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9392 9437])
+                            ("visitGlobalVariable" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("GV" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("GlobalVariable" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9465 9490]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9440 9491])
+                            ("visitGlobalAlias" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("GA" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("GlobalAlias" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9516 9538]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9494 9539])
+                            ("visitAliaseeSubExpr" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("A" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("GlobalAlias" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9567 9588])
+                                    ("C" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Constant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9589 9607]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9542 9608])
+                            ("visitAliaseeSubExpr" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Visited" variable
+                                       (:reference 1
+                                        :type ("SmallPtrSetImpl" type
+                                             (:template-specifier 
+                                                ( ("GlobalAlias" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9636 9682])
+                                    ("A" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("GlobalAlias" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9710 9731])
+                                    ("C" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Constant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9732 9750]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9611 9751])
+                            ("visitNamedMDNode" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("NMD" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("NamedMDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9776 9799]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9754 9800])
+                            ("visitMDNode" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MD" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9820 9837]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9803 9838])
+                            ("visitMetadataAsValue" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MD" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MetadataAsValue" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9867 9893])
+                                    ("F" variable
+                                       (:pointer 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9894 9906]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9841 9907])
+                            ("visitValueAsMetadata" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MD" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ValueAsMetadata" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9936 9962])
+                                    ("F" variable
+                                       (:pointer 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9963 9975]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9910 9976])
+                            ("visitComdat" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("C" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Comdat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9996 10012]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9979 10013])
+                            ("visitModuleIdents" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10039 10055]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10016 10056])
+                            ("visitModuleFlags" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10081 10097]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10059 10098])
+                            ("visitModuleFlag" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Op" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10122 10139])
+                                    ("SeenIDs" variable
+                                       (:reference 1
+                                        :type ("DenseMap" type
+                                             (:template-specifier 
+                                                ( ("MDString" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("MDNode" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10163 10215])
+                                    ("Requirements" variable
+                                       (:reference 1
+                                        :type ("SmallVectorImpl" type
+                                             (:template-specifier 
+                                                ( ("MDNode" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10239 10285]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10101 10286])
+                            ("visitFunction" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10308 10326]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10289 10327])
+                            ("visitBasicBlock" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("BB" variable
+                                       (:reference 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10351 10366]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10330 10367])
+                            ("visitRangeMetadata" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10394 10409])
+                                    ("Range" variable
+                                       (:pointer 1
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10410 10424])
+                                    ("Ty" variable
+                                       (:pointer 1
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10425 10434]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10370 10435])
+                            ("isValidMetadataArray" function
+                               (:template 
+                                  ( ("Ty" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("N" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10485 10502]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [10439 10503])
+                            ("HANDLE_SPECIALIZED_MDNODE_LEAF" variable (:constant-flag t) (reparse-symbol classsubparts) [10512 10542])
+                            ("visitMDScope" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDScope" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10637 10654]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10619 10655])
+                            ("visitMDDerivedTypeBase" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDDerivedTypeBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10686 10713]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10658 10714])
+                            ("visitMDVariable" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDVariable" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10738 10758]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10717 10759])
+                            ("visitMDLexicalBlockBase" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDLexicalBlockBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10791 10819]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10762 10820])
+                            ("visitMDTemplateParameter" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDTemplateParameter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10853 10882]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10823 10883])
+                            ("visitTemplateParams" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10912 10928])
+                                    ("RawParams" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Metadata" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10929 10955]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10887 10956])
+                            ("isValidUUID" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11181 11197])
+                                    ("MD" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Metadata" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11198 11217]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11164 11218])
+                            ("isTypeRef" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11353 11369])
+                                    ("MD" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Metadata" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11370 11389]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11338 11390])
+                            ("isScopeRef" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11528 11544])
+                                    ("MD" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Metadata" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11545 11564]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11512 11565])
+                            ("isDIRef" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("N" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11707 11723])
+                                    ("MD" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Metadata" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11724 11743]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11694 11744])
+                            ("InstVisitor::visit" variable (:type "int") (reparse-symbol classsubparts) [11784 11813])
+                            ("visit" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11827 11842]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11816 11843])
+                            ("visitTruncInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("TruncInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11867 11880]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11847 11881])
+                            ("visitZExtInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("ZExtInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11903 11915]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11884 11916])
+                            ("visitSExtInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("SExtInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11938 11950]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11919 11951])
+                            ("visitFPTruncInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("FPTruncInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11976 11991]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11954 11992])
+                            ("visitFPExtInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("FPExtInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12015 12028]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11995 12029])
+                            ("visitFPToUIInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("FPToUIInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12053 12067]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12032 12068])
+                            ("visitFPToSIInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("FPToSIInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12092 12106]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12071 12107])
+                            ("visitUIToFPInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("UIToFPInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12131 12145]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12110 12146])
+                            ("visitSIToFPInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("SIToFPInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12170 12184]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12149 12185])
+                            ("visitIntToPtrInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("IntToPtrInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12211 12227]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12188 12228])
+                            ("visitPtrToIntInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("PtrToIntInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12254 12270]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12231 12271])
+                            ("visitBitCastInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("BitCastInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12296 12311]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12274 12312])
+                            ("visitAddrSpaceCastInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("AddrSpaceCastInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12343 12364]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12315 12365])
+                            ("visitPHINode" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("PN" variable
+                                       (:reference 1
+                                        :type ("PHINode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12386 12398]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12368 12399])
+                            ("visitBinaryOperator" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("B" variable
+                                       (:reference 1
+                                        :type ("BinaryOperator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12427 12445]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12402 12446])
+                            ("visitICmpInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("IC" variable
+                                       (:reference 1
+                                        :type ("ICmpInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12468 12481]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12449 12482])
+                            ("visitFCmpInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("FC" variable
+                                       (:reference 1
+                                        :type ("FCmpInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12504 12517]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12485 12518])
+                            ("visitExtractElementInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("EI" variable
+                                       (:reference 1
+                                        :type ("ExtractElementInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12550 12573]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12521 12574])
+                            ("visitInsertElementInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("EI" variable
+                                       (:reference 1
+                                        :type ("InsertElementInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12605 12627]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12577 12628])
+                            ("visitShuffleVectorInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("EI" variable
+                                       (:reference 1
+                                        :type ("ShuffleVectorInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12659 12681]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12631 12682])
+                            ("visitVAArgInst" function
+                               (:arguments 
+                                  ( ("VAA" variable
+                                       (:reference 1
+                                        :type ("VAArgInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12705 12720]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12685 12747])
+                            ("visitCallInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CI" variable
+                                       (:reference 1
+                                        :type ("CallInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12769 12782]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12750 12783])
+                            ("visitInvokeInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("II" variable
+                                       (:reference 1
+                                        :type ("InvokeInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12807 12822]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12786 12823])
+                            ("visitGetElementPtrInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("GEP" variable
+                                       (:reference 1
+                                        :type ("GetElementPtrInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12854 12877]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12826 12878])
+                            ("visitLoadInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("LI" variable
+                                       (:reference 1
+                                        :type ("LoadInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12900 12913]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12881 12914])
+                            ("visitStoreInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("SI" variable
+                                       (:reference 1
+                                        :type ("StoreInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12937 12951]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12917 12952])
+                            ("verifyDominatesUse" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12979 12994])
+                                    ("i" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12995 13006]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12955 13007])
+                            ("visitInstruction" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13032 13047]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13010 13048])
+                            ("visitTerminatorInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("TerminatorInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13076 13094]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13051 13095])
+                            ("visitBranchInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("BI" variable
+                                       (:reference 1
+                                        :type ("BranchInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13119 13134]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13098 13135])
+                            ("visitReturnInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("RI" variable
+                                       (:reference 1
+                                        :type ("ReturnInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13159 13174]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13138 13175])
+                            ("visitSwitchInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("SI" variable
+                                       (:reference 1
+                                        :type ("SwitchInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13199 13214]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13178 13215])
+                            ("visitIndirectBrInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("BI" variable
+                                       (:reference 1
+                                        :type ("IndirectBrInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13243 13262]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13218 13263])
+                            ("visitSelectInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("SI" variable
+                                       (:reference 1
+                                        :type ("SelectInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13287 13302]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13266 13303])
+                            ("visitUserOp1" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13324 13339]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13306 13340])
+                            ("visitUserOp2" function
+                               (:arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13361 13376]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13343 13397])
+                            ("visitIntrinsicFunctionCall" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("ID" variable (:type ("Intrinsic::ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13432 13449])
+                                    ("CI" variable
+                                       (:reference 1
+                                        :type ("CallInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13450 13463]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13400 13464])
+                            ("visitDbgIntrinsic" function
+                               (:template 
+                                  ( ("DbgIntrinsicTy" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("Kind" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13524 13539])
+                                    ("DII" variable
+                                       (:reference 1
+                                        :type ("DbgIntrinsicTy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13540 13560]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [13467 13561])
+                            ("visitAtomicCmpXchgInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CXI" variable
+                                       (:reference 1
+                                        :type ("AtomicCmpXchgInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13592 13615]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13564 13616])
+                            ("visitAtomicRMWInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("RMWI" variable
+                                       (:reference 1
+                                        :type ("AtomicRMWInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13643 13663]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13619 13664])
+                            ("visitFenceInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("FI" variable
+                                       (:reference 1
+                                        :type ("FenceInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13687 13701]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13667 13702])
+                            ("visitAllocaInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("AI" variable
+                                       (:reference 1
+                                        :type ("AllocaInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13726 13741]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13705 13742])
+                            ("visitExtractValueInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("EVI" variable
+                                       (:reference 1
+                                        :type ("ExtractValueInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13772 13794]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13745 13795])
+                            ("visitInsertValueInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("IVI" variable
+                                       (:reference 1
+                                        :type ("InsertValueInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13824 13845]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13798 13846])
+                            ("visitLandingPadInst" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("LPI" variable
+                                       (:reference 1
+                                        :type ("LandingPadInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13874 13894]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13849 13895])
+                            ("VerifyCallSite" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CS" variable (:type ("CallSite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13919 13931]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13899 13932])
+                            ("verifyMustTailCall" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CI" variable
+                                       (:reference 1
+                                        :type ("CallInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13959 13972]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13935 13973])
+                            ("PerformTypeCheck" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("ID" variable (:type ("Intrinsic::ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13998 14015])
+                                    ("F" variable
+                                       (:pointer 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14016 14028])
+                                    ("Ty" variable
+                                       (:pointer 1
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14029 14038])
+                                    ("VT" variable (:type "int") (reparse-symbol arg-sub-list) [14039 14046])
+                                    ("ArgNo" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14071 14086])
+                                    ("Suffix" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14087 14107]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13976 14108])
+                            ("VerifyIntrinsicType" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Ty" variable
+                                       (:pointer 1
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14136 14145])
+                                    ("Infos" variable
+                                       (:reference 1
+                                        :type ("ArrayRef" type
+                                             (:template-specifier 
+                                                ( ("Intrinsic::IITDescriptor" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [14146 14188])
+                                    ("ArgTys" variable
+                                       (:reference 1
+                                        :type ("SmallVectorImpl" type
+                                             (:template-specifier 
+                                                ( ("Type" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [14216 14248]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [14111 14249])
+                            ("VerifyIntrinsicIsVarArg" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("isVarArg" variable (:type "bool") (reparse-symbol arg-sub-list) [14281 14295])
+                                    ("Infos" variable
+                                       (:reference 1
+                                        :type ("ArrayRef" type
+                                             (:template-specifier 
+                                                ( ("Intrinsic::IITDescriptor" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [14327 14369]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [14252 14370])
+                            ("VerifyAttributeCount" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14399 14418])
+                                    ("Params" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14419 14435]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [14373 14436])
+                            ("VerifyAttributeTypes" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14465 14484])
+                                    ("Idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14485 14498])
+                                    ("isFunction" variable (:type "bool") (reparse-symbol arg-sub-list) [14499 14515])
+                                    ("V" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14544 14559]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14439 14560])
+                            ("VerifyParameterAttrs" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14589 14608])
+                                    ("Idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14609 14622])
+                                    ("Ty" variable
+                                       (:pointer 1
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14623 14632])
+                                    ("isReturnValue" variable (:type "bool") (reparse-symbol arg-sub-list) [14661 14680])
+                                    ("V" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14681 14696]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14563 14697])
+                            ("VerifyFunctionAttrs" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("FT" variable
+                                       (:pointer 1
+                                        :type ("FunctionType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14725 14742])
+                                    ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14743 14762])
+                                    ("V" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14790 14805]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14700 14806])
+                            ("VerifyConstantExprBitcastType" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CE" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ConstantExpr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14845 14868]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14810 14869])
+                            ("VerifyStatepoint" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CS" variable (:type ("ImmutableCallSite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14894 14915]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14872 14916])
+                            ("verifyFrameRecoverIndices" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [14919 14952])
+                            ("verifyTypeRefs" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [15001 15023])
+                            ("verifyBitPieceExpression" function
+                               (:template 
+                                  ( ("MapTy" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("I" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DbgInfoIntrinsic" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15081 15107])
+                                    ("TypeRefs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MapTy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15140 15162]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [15026 15163])
+                            ("visitUnresolvedTypeRef" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("S" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("MDString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15194 15212])
+                                    ("N" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("MDNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15213 15229]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15166 15230]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5374 15233]))                  
+                :type "namespace")
+                nil [3649 15235])
+            ("Assert" variable (:constant-flag t) nil [15349 15355])
+            ("visit" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15455 15470]))                  
+                :type "void")
+                nil [15434 15632])
+            ("visitGlobalValue" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("GV" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GlobalValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15667 15689]))                  
+                :type "void")
+                nil [15635 16356])
+            ("visitGlobalVariable" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("GV" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GlobalVariable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16393 16418]))                  
+                :type "void")
+                nil [16358 20564])
+            ("visitAliaseeSubExpr" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("GA" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GlobalAlias" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20601 20623])
+                    ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Constant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20624 20642]))                  
+                :type "void")
+                nil [20566 20754])
+            ("visitAliaseeSubExpr" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("Visited" variable
+                       (:reference 1
+                        :type ("SmallPtrSetImpl" type
+                             (:template-specifier 
+                                ( ("GlobalAlias" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20791 20836])
+                    ("GA" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GlobalAlias" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20872 20894])
+                    ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Constant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20895 20913]))                  
+                :type "void")
+                nil [20756 21791])
+            ("visitGlobalAlias" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("GA" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GlobalAlias" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21825 21847]))                  
+                :type "void")
+                nil [21793 22510])
+            ("visitNamedMDNode" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("NMD" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("NamedMDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22544 22567]))                  
+                :type "void")
+                nil [22512 22855])
+            ("visitMDNode" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("MD" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22884 22901]))                  
+                :type "void")
+                nil [22857 24161])
+            ("visitValueAsMetadata" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("MD" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ValueAsMetadata" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24199 24225])
+                    ("F" variable
+                       (:pointer 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24226 24238]))                  
+                :type "void")
+                nil [24163 25219])
+            ("visitMetadataAsValue" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("MDV" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MetadataAsValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25257 25284])
+                    ("F" variable
+                       (:pointer 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25285 25297]))                  
+                :type "void")
+                nil [25221 25690])
+            ("isValidUUID" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25719 25735])
+                    ("MD" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Metadata" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25736 25755]))                  
+                :type "bool")
+                nil [25692 26040])
+            ("isTypeRef" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26125 26141])
+                    ("MD" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Metadata" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26142 26161]))                  
+                :type "bool")
+                nil [26100 26220])
+            ("isScopeRef" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26295 26311])
+                    ("MD" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Metadata" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26312 26331]))                  
+                :type "bool")
+                nil [26269 26391])
+            ("isDIRef" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26469 26485])
+                    ("MD" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Metadata" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26486 26505]))                  
+                :type "bool")
+                nil [26446 26567])
+            ("isValidMetadataArrayImpl" function
+               (:template 
+                  ( ("Ty" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDTuple" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26619 26636])
+                    ("AllowNull" variable (:type "bool") (reparse-symbol arg-sub-list) [26637 26652]))                  )
+                nil [26569 26836])
+            ("isValidMetadataArray" function
+               (:template 
+                  ( ("Ty" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDTuple" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26884 26901]))                  )
+                nil [26838 26970])
+            ("isValidMetadataNullArray" function
+               (:template 
+                  ( ("Ty" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDTuple" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27022 27039]))                  )
+                nil [26972 27107])
+            ("visitMDLocation" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDLocation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27140 27160]))                  
+                :type "void")
+                nil [27109 27408])
+            ("visitGenericDebugNode" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GenericDebugNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27447 27473]))                  
+                :type "void")
+                nil [27410 27518])
+            ("visitMDScope" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDScope" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27548 27565]))                  
+                :type "void")
+                nil [27520 27652])
+            ("visitMDSubrange" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDSubrange" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27685 27705]))                  
+                :type "void")
+                nil [27654 27841])
+            ("visitMDEnumerator" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDEnumerator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27876 27898]))                  
+                :type "void")
+                nil [27843 27971])
+            ("visitMDBasicType" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDBasicType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28005 28026]))                  
+                :type "void")
+                nil [27973 28168])
+            ("visitMDDerivedTypeBase" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDDerivedTypeBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28208 28235]))                  
+                :type "void")
+                nil [28170 29438])
+            ("visitMDDerivedType" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDDerivedType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29474 29497]))                  
+                :type "void")
+                nil [29440 30384])
+            ("hasConflictingReferenceFlags" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [30427 30442]))                  
+                :type "bool")
+                nil [30386 30550])
+            ("visitTemplateParams" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30587 30603])
+                    ("RawParams" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Metadata" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30604 30630]))                  
+                :type "void")
+                nil [30552 30896])
+            ("visitMDCompositeType" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDCompositeType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30934 30959]))                  
+                :type "void")
+                nil [30898 31944])
+            ("visitMDSubroutineType" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDSubroutineType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31983 32009]))                  
+                :type "void")
+                nil [31946 32443])
+            ("visitMDFile" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32472 32488]))                  
+                :type "void")
+                nil [32445 32560])
+            ("visitMDCompileUnit" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDCompileUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32596 32619]))                  
+                :type "void")
+                nil [32562 34474])
+            ("visitMDSubprogram" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDSubprogram" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34509 34531]))                  
+                :type "void")
+                nil [34476 37045])
+            ("visitMDLexicalBlockBase" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDLexicalBlockBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37086 37114]))                  
+                :type "void")
+                nil [37047 37308])
+            ("visitMDLexicalBlock" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDLexicalBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37345 37369]))                  
+                :type "void")
+                nil [37310 37503])
+            ("visitMDLexicalBlockFile" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDLexicalBlockFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37544 37572]))                  
+                :type "void")
+                nil [37505 37606])
+            ("visitMDNamespace" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDNamespace" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37640 37661]))                  
+                :type "void")
+                nil [37608 37823])
+            ("visitMDTemplateParameter" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDTemplateParameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37865 37894]))                  
+                :type "void")
+                nil [37825 37972])
+            ("visitMDTemplateTypeParameter" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDTemplateTypeParameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38018 38051]))                  
+                :type "void")
+                nil [37974 38178])
+            ("visitMDTemplateValueParameter" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDTemplateValueParameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38230 38264]))                  
+                :type "void")
+                nil [38180 38536])
+            ("visitMDVariable" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDVariable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38569 38589]))                  
+                :type "void")
+                nil [38538 38842])
+            ("visitMDGlobalVariable" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDGlobalVariable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38881 38907]))                  
+                :type "void")
+                nil [38844 39482])
+            ("visitMDLocalVariable" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDLocalVariable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39520 39545]))                  
+                :type "void")
+                nil [39484 40014])
+            ("visitMDExpression" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDExpression" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40049 40071]))                  
+                :type "void")
+                nil [40016 40124])
+            ("visitMDObjCProperty" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDObjCProperty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40161 40185]))                  
+                :type "void")
+                nil [40126 40432])
+            ("visitMDImportedEntity" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("N" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDImportedEntity" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40471 40497]))                  
+                :type "void")
+                nil [40434 40847])
+            ("visitComdat" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Comdat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40876 40892]))                  
+                :type "void")
+                nil [40849 41196])
+            ("visitModuleIdents" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41231 41247]))                  
+                :type "void")
+                nil [41198 41929])
+            ("visitModuleFlags" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41963 41979]))                  
+                :type "void")
+                nil [41931 43055])
+            ("visitModuleFlag" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("Op" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("MDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43088 43105])
+                    ("SeenIDs" variable
+                       (:reference 1
+                        :type ("DenseMap" type
+                             (:template-specifier 
+                                ( ("MDString" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil)
+                                  ("MDNode" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43132 43184])
+                    ("Requirements" variable
+                       (:reference 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("MDNode" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43211 43257]))                  
+                :type "void")
+                nil [43057 45568])
+            ("VerifyAttributeTypes" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45606 45625])
+                    ("Idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [45626 45639])
+                    ("isFunction" variable (:type "bool") (reparse-symbol arg-sub-list) [45676 45692])
+                    ("V" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45693 45708]))                  
+                :type "void")
+                nil [45570 48132])
+            ("VerifyParameterAttrs" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48324 48343])
+                    ("Idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48344 48357])
+                    ("Ty" variable
+                       (:pointer 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48358 48367])
+                    ("isReturnValue" variable (:type "bool") (reparse-symbol arg-sub-list) [48404 48423])
+                    ("V" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48424 48439]))                  
+                :type "void")
+                nil [48288 51456])
+            ("VerifyFunctionAttrs" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("FT" variable
+                       (:pointer 1
+                        :type ("FunctionType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51615 51632])
+                    ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51633 51652])
+                    ("V" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51688 51703]))                  
+                :type "void")
+                nil [51580 54665])
+            ("VerifyConstantExprBitcastType" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("CE" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ConstantExpr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54712 54735]))                  
+                :type "void")
+                nil [54667 54951])
+            ("VerifyAttributeCount" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54989 55008])
+                    ("Params" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [55009 55025]))                  
+                :type "bool")
+                nil [54953 55367])
+            ("VerifyStatepoint" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("CS" variable (:type ("ImmutableCallSite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55461 55482]))                  
+                :type "void")
+                nil [55429 59746])
+            ("verifyFrameRecoverIndices" function
+               (:parent "Verifier"
+                :type "void")
+                nil [59748 60222])
+            ("visitFunction" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60305 60323]))                  
+                :type "void")
+                nil [60276 64327])
+            ("visitBasicBlock" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("BB" variable
+                       (:reference 1
+                        :type ("BasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64429 64444]))                  
+                :type "void")
+                nil [64398 66844])
+            ("visitTerminatorInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("TerminatorInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66881 66899]))                  
+                :type "void")
+                nil [66846 67121])
+            ("visitBranchInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("BI" variable
+                       (:reference 1
+                        :type ("BranchInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67154 67169]))                  
+                :type "void")
+                nil [67123 67363])
+            ("visitReturnInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("RI" variable
+                       (:reference 1
+                        :type ("ReturnInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67396 67411]))                  
+                :type "void")
+                nil [67365 68024])
+            ("visitSwitchInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("SI" variable
+                       (:reference 1
+                        :type ("SwitchInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68057 68072]))                  
+                :type "void")
+                nil [68026 68660])
+            ("visitIndirectBrInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("BI" variable
+                       (:reference 1
+                        :type ("IndirectBrInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68697 68716]))                  
+                :type "void")
+                nil [68662 69055])
+            ("visitSelectInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("SI" variable
+                       (:reference 1
+                        :type ("SelectInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69088 69103]))                  
+                :type "void")
+                nil [69057 69458])
+            ("visitUserOp1" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69613 69628]))                  
+                :type "void")
+                nil [69585 69710])
+            ("visitTruncInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("TruncInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69742 69755]))                  
+                :type "void")
+                nil [69712 70426])
+            ("visitZExtInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("ZExtInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70457 70469]))                  
+                :type "void")
+                nil [70428 71139])
+            ("visitSExtInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("SExtInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71170 71182]))                  
+                :type "void")
+                nil [71141 71852])
+            ("visitFPTruncInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("FPTruncInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71886 71901]))                  
+                :type "void")
+                nil [71854 72568])
+            ("visitFPExtInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("FPExtInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72600 72613]))                  
+                :type "void")
+                nil [72570 73275])
+            ("visitUIToFPInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("UIToFPInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73308 73322]))                  
+                :type "void")
+                nil [73277 74040])
+            ("visitSIToFPInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("SIToFPInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74073 74087]))                  
+                :type "void")
+                nil [74042 74805])
+            ("visitFPToUIInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("FPToUIInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74838 74852]))                  
+                :type "void")
+                nil [74807 75570])
+            ("visitFPToSIInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("FPToSIInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75603 75617]))                  
+                :type "void")
+                nil [75572 76335])
+            ("visitPtrToIntInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("PtrToIntInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76370 76386]))                  
+                :type "void")
+                nil [76337 77073])
+            ("visitIntToPtrInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("IntToPtrInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77108 77124]))                  
+                :type "void")
+                nil [77075 77814])
+            ("visitBitCastInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BitCastInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77848 77863]))                  
+                :type "void")
+                nil [77816 78011])
+            ("visitAddrSpaceCastInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("AddrSpaceCastInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78051 78072]))                  
+                :type "void")
+                nil [78013 78692])
+            ("visitPHINode" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("PN" variable
+                       (:reference 1
+                        :type ("PHINode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78784 78796]))                  
+                :type "void")
+                nil [78756 79727])
+            ("VerifyCallSite" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("CS" variable (:type ("CallSite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79759 79771]))                  
+                :type "void")
+                nil [79729 83355])
+            ("isTypeCongruent" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83533 83541])
+                    ("R" variable
+                       (:pointer 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83542 83550]))                  
+                :type "bool")
+                nil [83505 83770])
+            ("getParameterABIAttributes" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable (:type "int") (reparse-symbol arg-sub-list) [83817 83823])
+                    ("Attrs" variable (:type ("AttributeSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83824 83843]))                  
+                :type ("AttrBuilder" type (:type "class") nil nil))
+                nil [83772 84260])
+            ("verifyMustTailCall" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("CI" variable
+                       (:reference 1
+                        :type ("CallInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84296 84309]))                  
+                :type "void")
+                nil [84262 87164])
+            ("visitCallInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("CI" variable
+                       (:reference 1
+                        :type ("CallInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87195 87208]))                  
+                :type "void")
+                nil [87166 87441])
+            ("visitInvokeInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("II" variable
+                       (:reference 1
+                        :type ("InvokeInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87474 87489]))                  
+                :type "void")
+                nil [87443 88168])
+            ("visitBinaryOperator" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("B" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88310 88328]))                  
+                :type "void")
+                nil [88275 90483])
+            ("visitICmpInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("IC" variable
+                       (:reference 1
+                        :type ("ICmpInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90514 90527]))                  
+                :type "void")
+                nil [90485 91208])
+            ("visitFCmpInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("FC" variable
+                       (:reference 1
+                        :type ("FCmpInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91239 91252]))                  
+                :type "void")
+                nil [91210 91890])
+            ("visitExtractElementInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("EI" variable
+                       (:reference 1
+                        :type ("ExtractElementInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91931 91954]))                  
+                :type "void")
+                nil [91892 92119])
+            ("visitInsertElementInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("IE" variable
+                       (:reference 1
+                        :type ("InsertElementInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92159 92181]))                  
+                :type "void")
+                nil [92121 92402])
+            ("visitShuffleVectorInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("SV" variable
+                       (:reference 1
+                        :type ("ShuffleVectorInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92442 92464]))                  
+                :type "void")
+                nil [92404 92685])
+            ("visitGetElementPtrInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("GEP" variable
+                       (:reference 1
+                        :type ("GetElementPtrInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92725 92748]))                  
+                :type "void")
+                nil [92687 94316])
+            ("isContiguous" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("A" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConstantRange" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94343 94366])
+                    ("B" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConstantRange" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94367 94390]))                  
+                :type "bool")
+                nil [94318 94465])
+            ("visitRangeMetadata" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94501 94516])
+                    ("Range" variable
+                       (:pointer 1
+                        :type ("MDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94551 94565])
+                    ("Ty" variable
+                       (:pointer 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94566 94575]))                  
+                :type "void")
+                nil [94467 96532])
+            ("visitLoadInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("LI" variable
+                       (:reference 1
+                        :type ("LoadInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96563 96576]))                  
+                :type "void")
+                nil [96534 97614])
+            ("visitStoreInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("SI" variable
+                       (:reference 1
+                        :type ("StoreInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [97646 97660]))                  
+                :type "void")
+                nil [97616 98837])
+            ("visitAllocaInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("AI" variable
+                       (:reference 1
+                        :type ("AllocaInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98870 98885]))                  
+                :type "void")
+                nil [98839 99440])
+            ("visitAtomicCmpXchgInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("CXI" variable
+                       (:reference 1
+                        :type ("AtomicCmpXchgInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99480 99503]))                  
+                :type "void")
+                nil [99442 101043])
+            ("visitAtomicRMWInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("RMWI" variable
+                       (:reference 1
+                        :type ("AtomicRMWInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101079 101099]))                  
+                :type "void")
+                nil [101045 102113])
+            ("visitFenceInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("FI" variable
+                       (:reference 1
+                        :type ("FenceInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [102145 102159]))                  
+                :type "void")
+                nil [102115 102493])
+            ("visitExtractValueInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("EVI" variable
+                       (:reference 1
+                        :type ("ExtractValueInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [102532 102554]))                  
+                :type "void")
+                nil [102495 102796])
+            ("visitInsertValueInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("IVI" variable
+                       (:reference 1
+                        :type ("InsertValueInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [102834 102855]))                  
+                :type "void")
+                nil [102798 103124])
+            ("visitLandingPadInst" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("LPI" variable
+                       (:reference 1
+                        :type ("LandingPadInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [103161 103181]))                  
+                :type "void")
+                nil [103126 105159])
+            ("verifyDominatesUse" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105195 105210])
+                    ("i" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [105211 105222]))                  
+                :type "void")
+                nil [105161 105759])
+            ("visitInstruction" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105864 105879]))                  
+                :type "void")
+                nil [105832 111656])
+            ("VerifyIntrinsicType" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("Ty" variable
+                       (:pointer 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111989 111998])
+                    ("Infos" variable
+                       (:reference 1
+                        :type ("ArrayRef" type
+                             (:template-specifier 
+                                ( ("Intrinsic::IITDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [112034 112076])
+                    ("ArgTys" variable
+                       (:reference 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("Type" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [112112 112143]))                  
+                :type "bool")
+                nil [111954 117495])
+            ("VerifyIntrinsicIsVarArg" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("isVarArg" variable (:type "bool") (reparse-symbol arg-sub-list) [117775 117789])
+                    ("Infos" variable
+                       (:reference 1
+                        :type ("ArrayRef" type
+                             (:template-specifier 
+                                ( ("Intrinsic::IITDescriptor" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [117824 117866]))                  
+                :type "bool")
+                nil [117736 118294])
+            ("visitIntrinsicFunctionCall" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("ID" variable (:type ("Intrinsic::ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [118422 118439])
+                    ("CI" variable
+                       (:reference 1
+                        :type ("CallInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118440 118453]))                  
+                :type "void")
+                nil [118380 130774])
+            ("visitDbgIntrinsic" function
+               (:template 
+                  ( ("DbgIntrinsicTy" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("Kind" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130841 130856])
+                    ("DII" variable
+                       (:reference 1
+                        :type ("DbgIntrinsicTy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130857 130877]))                  
+                :parent "Verifier")
+                nil [130776 132050])
+            ("getVariableSize" function
+               (:template 
+                  ( ("MapTy" type (:type "class") nil nil))                  
+                :type ("uint64_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MDLocalVariable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132107 132132])
+                    ("Map" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MapTy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132133 132150]))                  
+                :typemodifiers ("static"))
+                nil [132052 132810])
+            ("verifyBitPieceExpression" function
+               (:template 
+                  ( ("MapTy" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DbgInfoIntrinsic" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132875 132901])
+                    ("TypeRefs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MapTy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132942 132964]))                  
+                :parent "Verifier")
+                nil [132812 134028])
+            ("visitUnresolvedTypeRef" function
+               (:parent "Verifier"
+                :arguments 
+                  ( ("S" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("MDString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134068 134086])
+                    ("N" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("MDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134087 134103]))                  
+                :type "void")
+                nil [134030 134254])
+            ("verifyTypeRefs" function
+               (:parent "Verifier"
+                :type "void")
+                nil [134256 136025])
+            ("verifyFunction" function
+               (:parent "llvm"
+                :arguments 
+                  ( ("f" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136268 136286])
+                    ("OS" variable
+                       (:pointer 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136287 136303]))                  
+                :type "bool")
+                nil [136242 136624])
+            ("verifyModule" function
+               (:parent "llvm"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136650 136666])
+                    ("OS" variable
+                       (:pointer 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136667 136683]))                  
+                :type "bool")
+                nil [136626 137083])
+            ("unnamed" type
+               (:members 
+                  ( ("VerifierLegacyPass" type
+                       (:superclasses 
+                          ( ("FunctionPass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [137149 137164])
+                            ("V" variable (:type ("Verifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [137168 137179])
+                            ("FatalErrors" variable (:type "bool") (reparse-symbol classsubparts) [137182 137199])
+                            ("VerifierLegacyPass" function
+                               (:constructor-flag t
+                                :type ("VerifierLegacyPass" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [137203 137350])
+                            ("VerifierLegacyPass" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("FatalErrors" variable (:type "bool") (reparse-symbol arg-sub-list) [137381 137398]))                                  
+                                :type ("VerifierLegacyPass" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [137362 137538]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [137097 137987]))                  
+                :type "namespace")
+                nil [137085 137989])
+            ("VerifierLegacyPass::ID" variable (:type "char") nil [137991 138023])
+            ("createVerifierPass" function
+               (:pointer 1
+                :parent "llvm"
+                :arguments 
+                  ( ("FatalErrors" variable (:type "bool") (reparse-symbol arg-sub-list) [138143 138160]))                  
+                :type ("FunctionPass" type (:type "class") nil nil))
+                nil [138104 138210])
+            ("run" function
+               (:parent "VerifierPass"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [138248 138258]))                  
+                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                nil [138212 138414])
+            ("run" function
+               (:parent "VerifierPass"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [138452 138464]))                  
+                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                nil [138416 138624]))          
+    :file "Verifier.cpp"
+    :pointmax 138625
+    :fsize 138624
+    :lastmodtime '(21805 7492 891806 535000)
+    :unmatched-syntax '((semantic-list 138039 . 138102) (symbol 138024 . 138039) (string 138070 . 138087) (string 138060 . 138068) (semantic-list 137953 . 137984) (symbol 137944 . 137952) (CONST 137938 . 137943) (semantic-list 137918 . 137937) (symbol 137902 . 137918) (VOID 137897 . 137901) (semantic-list 137761 . 137893) (symbol 137752 . 137760) (semantic-list 137740 . 137751) (symbol 137726 . 137740) (BOOL 137721 . 137725) (semantic-list 137583 . 137717) (symbol 137574 . 137582) (semantic-list 137560 . 137573) (symbol 137547 . 137560) (BOOL 137542 . 137546) (EXPLICIT 137353 . 137361) (USING 11778 . 11783) (spp-include "llvm/IR/Metadata.def" 10585 . 10616) (EXPLICIT 6650 . 6658) (punctuation 5475 . 5476) (punctuation 5474 . 5475) (symbol 5466 . 5474) (punctuation 5465 . 5466) (punctuation 5308 . 5309) (punctuation 5307 . 5308) (punctuation 5306 . 5307) (punctuation 5239 . 5240) (symbol 5237 . 5239) (punctuation 5235 . 5236) (punctuation 5234 . 5235) (punctuation 5233 . 5234) (TYPENAME 5225 . 5233) (punctuation 5223 . 5224) (symbol 5221 . 5223) (TYPENAME 5212 . 5220) (punctuation 5211 . 5212) (TEMPLATE 5202 . 5210) (punctuation 4729 . 4730) (symbol 4727 . 4729) (punctuation 4725 . 4726) (punctuation 4724 . 4725) (punctuation 4723 . 4724) (TYPENAME 4715 . 4723) (punctuation 4714 . 4715) (TEMPLATE 4705 . 4713) (punctuation 4655 . 4656) (punctuation 4654 . 4655) (punctuation 4653 . 4654) (punctuation 4612 . 4613) (symbol 4610 . 4612) (punctuation 4608 . 4609) (punctuation 4607 . 4608) (punctuation 4606 . 4607) (TYPENAME 4598 . 4606) (punctuation 4596 . 4597) (symbol 4594 . 4596) (TYPENAME 4585 . 4593) (punctuation 4584 . 4585) (TEMPLATE 4575 . 4583) (EXPLICIT 3819 . 3827) (semantic-list 3639 . 3645) (string 3610 . 3629))
+    :lexical-table 
+        '(("HANDLE_SPECIALIZED_MDNODE_LEAF" (spp-arg-list ("CLASS") 10542 . 10549) . 
+              ((VOID "void" 10550 . 10554) (spp-symbol-merge ((symbol "visit" 10555 . 10560) (symbol "CLASS" 10562 . 10567)) 10555 . 10567) (semantic-list "(const CLASS &N)" 10567 . 10583) (punctuation ";" 10583 . 10584)))
+          ("Assert" (spp-arg-list ("C" "...") 15355 . 15363) . 
+              ((DO "do" 15368 . 15370) (semantic-list "{ if (!(C)) { CheckFailed(__VA_ARGS__); return; } }" 15371 . 15422) (WHILE "while" 15423 . 15428) (semantic-list "(0)" 15429 . 15432)))
+          )
+
+    )
+   )
+  :file "!home!matt!src!llvm!lib!IR!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

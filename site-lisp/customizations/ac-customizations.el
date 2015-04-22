@@ -34,15 +34,7 @@
 ;(require 'ac-slime)
 (require 'ac-geiser)
 
-(ac-config-default)
-
-(defun my-ac-cc-mode-hook ()
-  (setq ac-sources (append '(ac-source-clang)
-			   ac-sources)))
-
-(defun my-ac-python-mode-hook ()
-  (setq ac-sources (append '(ac-source-semantic)
-			   ac-sources)))
+;(ac-config-default)
 
 (defun my-ac-java-mode-hook ()
   (setq ac-sources (append '(ac-source-semantic)
@@ -56,7 +48,7 @@
   (setf ac-sources (append '(ac-source-geiser)
 			    ac-sources)))
 
-(add-hook 'c-mode-common-hook 'my-ac-cc-mode-hook)
+;(add-hook 'c-mode-common-hook 'my-ac-cc-mode-hook)
 (add-hook 'python-mode-hook 'my-ac-python-mode-hook)
 (add-hook 'java-mode-hook 'my-ac-java-mode-hook)
 ; This block must be eval'd in this order
