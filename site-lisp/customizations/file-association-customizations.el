@@ -12,11 +12,16 @@
 
 (require 'rust-mode)
 (require 'glsl-mode)
+(require 'js2-mode)
 
 (add-to-list 'auto-mode-alist '("\\.lzz\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.tpp\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.tcc\\'" . c++-mode))
 
 ;; hdl files are close enough to syntax C, so this works well enough.
 (add-to-list 'auto-mode-alist '("\\.hdl\\'" . c-mode))
 
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
 (add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))
+
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
