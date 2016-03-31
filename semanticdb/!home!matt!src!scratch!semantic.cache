@@ -1,0 +1,98 @@
+;; Object scratch/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scratch/"
+  :tables (list 
+    (semanticdb-table "hw4.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("recover" function
+               (:prototype-flag t
+                :type "void")
+                nil [21 36])
+            ("main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [47 51])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52 59]))                  
+                :type "int")
+                nil [37 60])
+            ("foo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [69 73])
+                    ("" variable (:type "short") (reparse-symbol arg-sub-list) [74 80])
+                    ("" variable (:type "char") (reparse-symbol arg-sub-list) [81 86])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [87 91])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [92 96]))                  
+                :type "int")
+                nil [61 97])
+            ("recover" function (:type "void") nil [99 331]))          
+    :file "hw4.c"
+    :pointmax 334
+    :fsize 333
+    :lastmodtime '(21850 15127 228464 357000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hw4main.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("foo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [50 54])
+                    ("" variable (:type "short") (reparse-symbol arg-sub-list) [55 61])
+                    ("" variable (:type "char") (reparse-symbol arg-sub-list) [62 67])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [68 72])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [73 77]))                  
+                :type "int")
+                nil [41 78])
+            ("recover" function
+               (:prototype-flag t
+                :type "void")
+                nil [79 95])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [107 116])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [117 130]))                  
+                :type "int")
+                nil [97 559])
+            ("foo" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [570 576])
+                    ("b" variable (:type "short") (reparse-symbol arg-sub-list) [577 585])
+                    ("c" variable (:type "char") (reparse-symbol arg-sub-list) [586 593])
+                    ("countUp" variable (:type "int") (reparse-symbol arg-sub-list) [594 606])
+                    ("countDown" variable (:type "int") (reparse-symbol arg-sub-list) [607 621]))                  
+                :type "int")
+                nil [561 948]))          
+    :file "hw4main.c"
+    :pointmax 950
+    :fsize 949
+    :lastmodtime '(21850 9013 269484 270000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("all" function (:arguments ("hw4")) nil [1 20])
+            ("hw4" function (:arguments ("hw4.c" "hw4main.c")) nil [21 123]))          
+    :file "Makefile"
+    :pointmax 123
+    :fsize 122
+    :lastmodtime '(21850 10777 37505 127000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!scratch!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -2,15 +2,130 @@
 ;; SEMANTICDB Tags save file
 (semanticdb-project-database-file "matt/"
   :tables (list 
-    (semanticdb-table "main.c"
-    :major-mode 'c-mode
+    (semanticdb-table "toxicliquer.cpp"
+    :major-mode 'c++-mode
     :tags 
-        '( ("main" function (:type "int") nil [1 14]))          
-    :file "main.c"
-    :pointmax 15
-    :fsize 14
-    :lastmodtime '(21769 61865 694508 956000)
-    :unmatched-syntax '((symbol 5 . 9) (INT 1 . 4) (symbol 1 . 2))
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("okc" type
+               (:members 
+                  ( ("Greeter" type
+                       (:members 
+                          ( ("m_your_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [79 114])
+                            ("m_my_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [79 114])
+                            ("public" label nil (reparse-symbol classsubparts) [117 124])
+                            ("Greeter" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("my_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [137 164])
+                                    ("your_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [165 194]))                                  
+                                :type ("Greeter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [129 195])
+                            ("greet" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [243 264]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [59 269])
+                    ("SlowBurnBurnGreeter" type
+                       (:superclasses 
+                          ( ("Greeter" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("super" type
+                               (:typedef ("Greeter" type (:type "class") nil nil)
+                                :superclasses "Greeter"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [322 344])
+                            ("public" label nil (reparse-symbol classsubparts) [347 354])
+                            ("SlowBurnBurnGreeter" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("my_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [379 406]))                                  
+                                :type ("SlowBurnBurnGreeter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [359 407])
+                            ("greet" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [459 472]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [273 477])
+                    ("Greeter" function
+                       (:constructor-flag t
+                        :parent "Greeter"
+                        :arguments 
+                          ( ("my_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [498 525])
+                            ("your_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [526 555]))                          
+                        :type ("Greeter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [481 614])
+                    ("greet" function
+                       (:parent "Greeter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [618 856])
+                    ("SlowBurnBurnGreeter" function
+                       (:constructor-flag t
+                        :parent "SlowBurnBurnGreeter"
+                        :arguments 
+                          ( ("my_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [901 928]))                          
+                        :type ("SlowBurnBurnGreeter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [860 971])
+                    ("greet" function
+                       (:parent "SlowBurnBurnGreeter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [975 1827]))                  
+                :type "namespace")
+                nil [40 1829])
+            ("main" function (:type "int") nil [1831 1921]))          
+    :file "toxicliquer.cpp"
+    :pointmax 1922
+    :fsize 1921
+    :lastmodtime '(21945 26769 548916 445000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "scratch.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("sstream" include (:system-flag t) nil [1 19])
+            ("iostream" include (:system-flag t) nil [20 39])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [41 61])
+            ("main" function (:type "int") nil [63 135]))          
+    :file "scratch.cpp"
+    :pointmax 136
+    :fsize 135
+    :lastmodtime '(21949 32410 821973 953000)
+    :unmatched-syntax 'nil
     )
    )
   :file "!home!matt!semantic.cache"

@@ -1,0 +1,140 @@
+;; Object p2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "p2/"
+  :tables
+  (list
+    (semanticdb-table "p2.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pprint" include nil nil [1 14])
+            ("scipy" include nil nil [16 28])
+            ("numpy" include nil nil [29 47])
+            ("matplotlib.pyplot" include nil nil [48 79])
+            ("physics.data.datum" include nil nil [81 111])
+            ("scipy.optimize" include nil nil [113 147])
+            ("pp" variable nil nil [196 231])
+            ("vernier_error" variable nil nil [292 312])
+            ("vernier_measurement" function
+               (:documentation "Return a Datum which represents the vernier measurement of x, with
+error defaulting to vernier_error."
+                :arguments 
+                  ( ("x" variable nil (reparse-symbol function_parameters) [338 339])
+                    ("err" variable nil (reparse-symbol function_parameters) [341 344]))                  )
+                nil [314 500])
+            ("residuals" function (:arguments 
+              ( ("xs" variable nil (reparse-symbol function_parameters) [515 517])
+                ("ys" variable nil (reparse-symbol function_parameters) [519 521])
+                ("fit_func" variable nil (reparse-symbol function_parameters) [523 531]))              ) nil [501 599])
+            ("chi_squared" function (:arguments 
+              ( ("residuals" variable nil (reparse-symbol function_parameters) [616 625]))              ) nil [600 691])
+            ("analyze_data" function
+               (:documentation "Return output a dict of all the data analysis we want, including:
+
+    xs, ys, poly_deg, fit, efit, cov, ndof, fit_func, residuals,
+    chi_squared, reduced_chi_squared.
+
+    xs, ys, and poly_deg are the corresponding inputs to this
+    function.
+
+    fit is a list of the fit variables calculated from a polynomial
+    fitting function of degree poly_deg.  The form of the function is
+
+    \\sum_{k = 0}^n fit[k] * x ** (poly_deg - k),
+
+    so that fit[-1] is the constant term, and fit[0] is the
+    coefficient of leading order.
+
+    cov is the covariance matrix.
+
+    ndof is the number of degrees of freedom of the system.
+
+    fit_func is the fitting function calculated from fit.
+
+    residuals are the difference between the theoretical value of y
+    and the actual value of y at each of the xs.
+
+    chi_squared and reduced_chi_squared are the corresponding
+    goodness-of-fit test values calculated from the residuals and the
+    ndof.
+
+    efit, efit_func, eresiduals, echi_squared, and
+    reduced_echi_squared are just the same as their non-e counterparts
+    but include the error in the fit parameters given by the
+    squareroot of the diagonal entries in the covariance matrix.
+
+    "
+                :arguments 
+                  ( ("xs" variable nil (reparse-symbol function_parameters) [709 711])
+                    ("ys" variable nil (reparse-symbol function_parameters) [713 715])
+                    ("poly_deg" variable nil (reparse-symbol function_parameters) [717 725]))                  )
+                nil [692 3907])
+            ("lambda_0" variable nil nil [3908 3938])
+            ("Na_calibration" variable nil nil [3953 3995])
+            ("He_red" variable nil nil [4010 4044])
+            ("He_yellow" variable nil nil [4045 4082])
+            ("He_bright_green" variable nil nil [4083 4127])
+            ("He_dull_green" variable nil nil [4128 4170])
+            ("He_blue" variable nil nil [4171 4207])
+            ("He_2nd_violet" variable nil nil [4208 4250])
+            ("He" variable nil nil [4251 4337])
+            ("He_lambdas" variable nil nil [4338 4393])
+            ("He_xs" variable nil nil [4408 4463])
+            ("calibration_analysis" variable nil nil [4465 4514])
+            ("pp" code nil nil [4515 4546])
+            ("calibration_xs" variable nil nil [4548 4588])
+            ("calibration_ys" variable nil nil [4589 4654])
+            ("plt" code nil nil [4656 4696])
+            ("plt" code nil nil [4697 4891])
+            ("plt" code nil nil [4892 4935])
+            ("plt" code nil nil [4936 4972])
+            ("plt" code nil nil [4973 5040])
+            ("plt" code nil nil [5041 5071])
+            ("plt" code nil nil [5072 5082])
+            ("vernier_to_wavelength" function (:arguments 
+              ( ("vernier_reading" variable nil (reparse-symbol function_parameters) [5110 5125])
+                ("efit" variable nil (reparse-symbol function_parameters) [5127 5131]))              ) nil [5084 5229])
+            ("H_red" variable nil nil [5230 5263])
+            ("H_green_blue" variable nil nil [5264 5304])
+            ("H_1st_violet" variable nil nil [5305 5346])
+            ("H" variable nil nil [5373 5412])
+            ("H_wavelength" variable nil nil [5414 5458])
+            ("H_ys" variable nil nil [5459 5502])
+            ("H_xs" variable nil nil [5503 5564])
+            ("H_analysis" variable nil nil [5565 5605])
+            ("H_xendpoints" variable nil nil [5606 5640])
+            ("H_yendpoints" variable nil nil [5641 5697])
+            ("plt" code nil nil [5699 5830])
+            ("plt" code nil nil [5831 5867])
+            ("plt" code nil nil [5868 5912])
+            ("plt" code nil nil [5913 5953])
+            ("plt" code nil nil [5954 5985])
+            ("plt" code nil nil [5986 6018])
+            ("plt" code nil nil [6019 6029])
+            ("print" code nil nil [6031 6055])
+            ("pp" code nil nil [6057 6080])
+            ("pp" code nil nil [6081 6102])
+            ("print" code nil nil [6103 6175])
+            ("pp" code nil nil [6176 6243])
+            ("Uk_dull_red" variable nil nil [6245 6284])
+            ("Uk_red" variable nil nil [6285 6319])
+            ("Uk_orange" variable nil nil [6320 6357])
+            ("Uk_1st_green" variable nil nil [6358 6398])
+            ("Uk_2nd_green" variable nil nil [6399 6439])
+            ("Uk_3rd_green" variable nil nil [6440 6480])
+            ("Uk_4th_green" variable nil nil [6481 6521])
+            ("Uk_5th_green" variable nil nil [6522 6563])
+            ("Uk_blue" variable nil nil [6564 6600])
+            ("Uk_violet" variable nil nil [6601 6639])
+            ("Uk_bright_violet" variable nil nil [6640 6685])
+            ("Uk" variable nil nil [6686 6843])
+            ("Argon_wavelengths" variable nil nil [6844 7081])
+            ("Uk_wavelengths" variable nil nil [7083 7130])
+            ("pp" code nil nil [7131 7156]))          
+      :file "p2.py"
+      :pointmax 7157
+      :fsize 7156
+      :lastmodtime '(22184 6465 732360 206000)
+      :unmatched-syntax nil))
+  :file "!home!matt!Documents!school!phy324!p2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

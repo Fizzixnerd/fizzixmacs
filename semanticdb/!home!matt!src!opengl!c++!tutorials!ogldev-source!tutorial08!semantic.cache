@@ -1,0 +1,75 @@
+;; Object tutorial08/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tutorial08/"
+  :tables (list 
+   (semanticdb-table "tutorial08.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [731 749])
+            ("string.h" include (:system-flag t) nil [750 769])
+            ("assert.h" include (:system-flag t) nil [770 789])
+            ("math.h" include (:system-flag t) nil [790 807])
+            ("GL/glew.h" include (:system-flag t) nil [808 828])
+            ("GL/freeglut.h" include (:system-flag t) nil [829 853])
+            ("ogldev_util.h" include nil nil [855 879])
+            ("ogldev_math_3d.h" include nil nil [880 907])
+            ("VBO" variable (:type ("GLuint" type (:type "class") nil nil)) nil [909 920])
+            ("gWorldLocation" variable (:type ("GLuint" type (:type "class") nil nil)) nil [921 943])
+            ("pVSFileName" variable
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [945 983])
+            ("pFSFileName" variable
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [984 1022])
+            ("RenderSceneCB" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1025 1924])
+            ("InitializeGlutCallbacks" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1927 2037])
+            ("CreateVertexBuffer" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [2039 2381])
+            ("AddShader" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ShaderProgram" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2405 2426])
+                    ("pShaderText" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2427 2451])
+                    ("ShaderType" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2452 2470]))                  
+                :type "void")
+                nil [2383 3179])
+            ("CompileShaders" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [3181 4419])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4430 4439])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4440 4452]))                  
+                :type "int")
+                nil [4421 5088]))          
+    :file "tutorial08.cpp"
+    :pointmax 5089
+    :fsize 5088
+    :lastmodtime '(21934 38290 546965 617000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!opengl!c++!tutorials!ogldev-source!tutorial08!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

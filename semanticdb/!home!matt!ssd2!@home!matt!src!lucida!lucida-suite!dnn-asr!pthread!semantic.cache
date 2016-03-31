@@ -1,0 +1,115 @@
+;; Object pthread/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pthread/"
+  :tables
+  (list
+    (semanticdb-table "dnn-asr.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("assert.h" include (:system-flag t) nil [424 443])
+            ("algorithm" include (:system-flag t) nil [444 464])
+            ("fstream" include (:system-flag t) nil [465 483])
+            ("iostream" include (:system-flag t) nil [484 503])
+            ("cmath" include (:system-flag t) nil [504 520])
+            ("glog/logging.h" include (:system-flag t) nil [521 546])
+            ("cblas.h" include (:system-flag t) nil [547 565])
+            ("caffe/caffe.hpp" include (:system-flag t) nil [567 593])
+            ("../../utils/memoryman.h" include nil nil [595 629])
+            ("../../utils/pthreadman.h" include nil nil [630 665])
+            ("../../utils/timer.h" include nil nil [666 696])
+            ("FEATURE_VEC_SIZE" variable (:constant-flag t) nil [706 722])
+            ("PROB_VEC_SIZE" variable (:constant-flag t) nil [735 748])
+            ("caffe::Blob" using (:type ("caffe::Blob" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [755 773])
+            ("caffe::Caffe" using (:type ("caffe::Caffe" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [774 793])
+            ("caffe::Net" using (:type ("caffe::Net" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [794 811])
+            ("caffe::Layer" using (:type ("caffe::Layer" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [812 831])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [833 853])
+            ("isEqual" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [875 883])
+                    ("y" variable (:type "float") (reparse-symbol arg-sub-list) [884 892]))                  
+                :type "bool")
+                nil [855 970])
+            ("dnn_fwd" function
+               (:arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [985 995])
+                    ("in_size" variable (:type "int") (reparse-symbol arg-sub-list) [996 1008])
+                    ("out" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1009 1020])
+                    ("out_size" variable (:type "int") (reparse-symbol arg-sub-list) [1021 1034])
+                    ("net" variable
+                       (:pointer 1
+                        :type ("Net" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1048 1064]))                  
+                :type "void")
+                nil [972 1424])
+            ("dnn_init" function
+               (:arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("Net" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1439 1455])
+                    ("weights" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1456 1471]))                  
+                :type "int")
+                nil [1426 1526])
+            ("load_features" function
+               (:arguments 
+                  ( ("in" variable
+                       (:pointer 2
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1546 1557])
+                    ("feature_file" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1558 1578])
+                    ("vec_size" variable (:type "int") (reparse-symbol arg-sub-list) [1579 1592]))                  
+                :type "int")
+                nil [1528 2516])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2527 2536])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2537 2549]))                  
+                :type "int")
+                nil [2518 4333]))          
+      :file "dnn-asr.cpp"
+      :pointmax 4334
+      :fsize 4333
+      :lastmodtime '(22256 8014 492603 882000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FEATURE_VEC_SIZE" . ((number "440" 723 . 726)))
+          ("PROB_VEC_SIZE" . ((number "1706" 749 . 753)))
+          )
+))
+  :file "!home!matt!ssd2!@home!matt!src!lucida!lucida-suite!dnn-asr!pthread!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,41 @@
+;; Object simple/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "simple/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("EXECUTABLE_NAMES" variable nil nil [221 239])
+            ("SRC_SUFFIX" variable (:default-value (".cpp")) nil [239 255])
+            ("RM" variable (:default-value ("rm" "-f")) nil [255 264])
+            ("YOUR_CFLAGS" variable nil nil [265 278])
+            ("YOUR_CXXFLAGS" variable nil nil [278 293])
+            ("YOUR_CPPFLAGS" variable nil nil [293 308])
+            ("YOUR_LDFLAGS" variable nil nil [308 322])
+            ("YOUR_LDLIBS" variable nil nil [322 335])
+            ("CC" variable (:default-value ("gcc")) nil [415 422])
+            ("CXX" variable (:default-value ("g++")) nil [422 430])
+            ("CFLAGS" variable (:default-value ("$(YOUR_CFLAGS)")) nil [431 453])
+            ("CXXFLAGS" variable (:default-value ("-Wall" "-std=c++11" "$(YOUR_CXXFLAGS)")) nil [453 496])
+            ("CPPFLAGS" variable (:default-value ("$(YOUR_CPPFLAGS)")) nil [496 522])
+            ("LDFLAGS" variable (:default-value ("$(YOUR_LDFLAGS)")) nil [522 546])
+            ("LDLIBS" variable (:default-value ("$(YOUR_LDLIBS)")) nil [546 568])
+            ("SRCS" variable (:default-value ("$(wildcard *$(SRC_SUFFIX))")) nil [569 601])
+            ("OBJS" variable (:default-value ("$(subst $(SRC_SUFFIX),.o,$(SRCS))")) nil [601 640])
+            ("all" function (:arguments ("$(EXECUTABLE_NAMES)")) nil [687 712])
+            ("depend" function (:arguments (".depend")) nil [1029 1045])
+            (".depend" function (:arguments ("$(SRCS)")) nil [1046 1119])
+            ("clean" function nil nil [1120 1142])
+            ("dist-clean" function (:arguments ("clean")) nil [1143 1179])
+            (".depend" include nil nil [1180 1196]))          
+    :file "Makefile"
+    :pointmax 1196
+    :fsize 1195
+    :lastmodtime '(21913 46522 208703 819000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!magic-makefiles!c++!simple!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

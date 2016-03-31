@@ -1,0 +1,35 @@
+;; Object repository/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "repository/"
+  :tables
+  (list
+    (semanticdb-table "gnomes.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Untitled Document" section nil nil [302 555])
+            ("☼ Gnomes on Bay12 ☼" section (:members 
+              ( ("☼ Gnomes on Bay12 ☼" anchor nil nil [697 700]))              ) nil [555 899]))          
+      :file "gnomes.html"
+      :pointmax 899
+      :fsize 938
+      :lastmodtime '(21420 29849 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "info_gnome.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Untitled Document" section nil nil [302 555])
+            ("General Info" section (:members 
+              ( ("General Info" section nil nil [705 3686])
+                ("Castes" section nil nil [3686 4869])
+                ("Animals" section nil nil [4869 5891])
+                ("Gadgets" section nil nil [5891 6717])
+                ("Automatons" section nil nil [6717 7328])
+                ("Onward..." section nil nil [7328 8643]))              ) nil [555 8643]))          
+      :file "info_gnome.html"
+      :pointmax 8643
+      :fsize 8704
+      :lastmodtime '(21779 64702 0 0)
+      :unmatched-syntax nil))
+  :file "!home!matt!Downloads!Masterwork Reborn v0.06!MasterworkDwarfFortress!repository!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

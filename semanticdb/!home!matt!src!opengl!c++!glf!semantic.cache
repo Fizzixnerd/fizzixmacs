@@ -1,0 +1,36 @@
+;; Object glf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "glf/"
+  :tables (list 
+    (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [245 263])
+            ("stdlib.h" include (:system-flag t) nil [264 283])
+            ("GLES3/gl3.h" include (:system-flag t) nil [284 306])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [307 330])
+            ("glm/glm.hpp" include (:system-flag t) nil [331 353])
+            ("glm" using (:type ("glm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [355 375])
+            ("main" function
+               (:arguments 
+                  ( ("argv" variable (:type "int") (reparse-symbol arg-sub-list) [386 395])
+                    ("argc" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [396 408]))                  
+                :type "int")
+                nil [376 2105]))          
+    :file "main.cpp"
+    :pointmax 2106
+    :fsize 2105
+    :lastmodtime '(21453 29228 974768 961000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!opengl!c++!glf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

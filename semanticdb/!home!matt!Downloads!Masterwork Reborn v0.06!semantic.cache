@@ -1,0 +1,16 @@
+;; Object Masterwork Reborn v0.06/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Masterwork Reborn v0.06/"
+  :tables
+  (list
+    (semanticdb-table "Manual (unfinished).html"
+      :major-mode 'html-mode
+      :tags nil
+      :file "Manual (unfinished).html"
+      :pointmax 421
+      :fsize 443
+      :lastmodtime '(21419 15486 0 0)
+      :unmatched-syntax nil))
+  :file "!home!matt!Downloads!Masterwork Reborn v0.06!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

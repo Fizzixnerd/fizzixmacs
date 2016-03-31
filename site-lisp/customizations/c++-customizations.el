@@ -40,6 +40,7 @@
 (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
 (add-hook 'irony-mode-hook 'company-mode)
 (add-hook 'irony-mode-hook 'flycheck-mode)
+(add-hook 'irony-mode-hook 'irony-eldoc)
 (add-hook 'flycheck-mode-hook #'flycheck-irony-setup)
 
 ;;;; THIS WAS COMMENTED OUT ON JULY 26, 2015.

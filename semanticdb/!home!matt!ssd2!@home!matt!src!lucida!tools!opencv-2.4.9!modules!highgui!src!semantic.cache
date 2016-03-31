@@ -1,0 +1,2352 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "cap_ffmpeg.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("precomp.hpp" include nil nil [2088 2110])
+            ("cap_ffmpeg_api.hpp" include nil nil [2191 2220])
+            ("icvCreateFileCapture_FFMPEG_p" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("CvCreateFileCapture_Plugin" type (:type "class") nil nil))
+                nil [2229 2297])
+            ("icvReleaseCapture_FFMPEG_p" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("CvReleaseCapture_Plugin" type (:type "class") nil nil))
+                nil [2298 2360])
+            ("icvGrabFrame_FFMPEG_p" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("CvGrabFrame_Plugin" type (:type "class") nil nil))
+                nil [2361 2413])
+            ("icvRetrieveFrame_FFMPEG_p" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("CvRetrieveFrame_Plugin" type (:type "class") nil nil))
+                nil [2414 2474])
+            ("icvSetCaptureProperty_FFMPEG_p" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("CvSetCaptureProperty_Plugin" type (:type "class") nil nil))
+                nil [2475 2545])
+            ("icvGetCaptureProperty_FFMPEG_p" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("CvGetCaptureProperty_Plugin" type (:type "class") nil nil))
+                nil [2546 2616])
+            ("icvCreateVideoWriter_FFMPEG_p" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("CvCreateVideoWriter_Plugin" type (:type "class") nil nil))
+                nil [2617 2685])
+            ("icvReleaseVideoWriter_FFMPEG_p" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("CvReleaseVideoWriter_Plugin" type (:type "class") nil nil))
+                nil [2686 2756])
+            ("icvWriteFrame_FFMPEG_p" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("CvWriteFrame_Plugin" type (:type "class") nil nil))
+                nil [2757 2811])
+            ("_icvInitFFMPEG_mutex" variable
+               (:typemodifiers ("static")
+                :type ("cv::Mutex" type (:type "class") nil nil))
+                nil [2813 2851])
+            ("icvInitFFMPEG" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2875 2882])
+                    ("Init" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2887 2999])
+                    ("private" label nil (reparse-symbol classsubparts) [3001 3009])
+                    ("icvInitFFMPEG" function
+                       (:constructor-flag t
+                        :type ("icvInitFFMPEG" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3237 6934]))                  
+                :type "class")
+                nil [2853 6937])
+            ("CvCapture_FFMPEG_proxy" type
+               (:superclasses 
+                  ( ("CvCapture" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [6994 7001])
+                    ("CvCapture_FFMPEG_proxy" function
+                       (:constructor-flag t
+                        :type ("CvCapture_FFMPEG_proxy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7006 7053])
+                    ("CvCapture_FFMPEG_proxy" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7058 7104])
+                    ("getProperty" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("propId" variable (:type "int") (reparse-symbol arg-sub-list) [7137 7148]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [7110 7250])
+                    ("setProperty" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("propId" variable (:type "int") (reparse-symbol arg-sub-list) [7280 7291])
+                            ("value" variable (:type "double") (reparse-symbol arg-sub-list) [7292 7305]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7255 7421])
+                    ("grabFrame" function
+                       (:typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7426 7542])
+                    ("retrieveFrame" function
+                       (:pointer 1
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [7579 7583]))                          
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7547 7943])
+                    ("open" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [7967 7989]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7948 8223])
+                    ("close" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8228 8441])
+                    ("protected" label nil (reparse-symbol classsubparts) [8443 8453])
+                    ("ffmpegCapture" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [8458 8478])
+                    ("frame" variable (:type ("IplImage" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8483 8498]))                  
+                :type "class")
+                nil [6940 8501])
+            ("cvCreateFileCapture_FFMPEG_proxy" function
+               (:pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8548 8570]))                  
+                :type ("CvCapture" type (:type "class") nil nil))
+                nil [8504 8729])
+            ("CvVideoWriter_FFMPEG_proxy" type
+               (:superclasses 
+                  ( ("CvVideoWriter" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [8793 8800])
+                    ("CvVideoWriter_FFMPEG_proxy" function
+                       (:constructor-flag t
+                        :type ("CvVideoWriter_FFMPEG_proxy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8805 8855])
+                    ("CvVideoWriter_FFMPEG_proxy" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8860 8910])
+                    ("writeFrame" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("image" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("IplImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8941 8964]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8916 9249])
+                    ("open" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [9273 9294])
+                            ("fourcc" variable (:type "int") (reparse-symbol arg-sub-list) [9295 9306])
+                            ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [9307 9318])
+                            ("frameSize" variable (:type ("CvSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9319 9336])
+                            ("isColor" variable (:type "bool") (reparse-symbol arg-sub-list) [9337 9351]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9254 9639])
+                    ("close" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9645 9862])
+                    ("protected" label nil (reparse-symbol classsubparts) [9864 9874])
+                    ("ffmpegWriter" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [9879 9898]))                  
+                :type "class")
+                nil [8731 9901])
+            ("cvCreateVideoWriter_FFMPEG_proxy" function
+               (:pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9953 9974])
+                    ("fourcc" variable (:type "int") (reparse-symbol arg-sub-list) [9975 9986])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [10029 10040])
+                    ("frameSize" variable (:type ("CvSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10041 10058])
+                    ("isColor" variable (:type "int") (reparse-symbol arg-sub-list) [10059 10072]))                  
+                :type ("CvVideoWriter" type (:type "class") nil nil))
+                nil [9904 10278]))          
+      :file "cap_ffmpeg.cpp"
+      :pointmax 10279
+      :fsize 10278
+      :lastmodtime '(22263 3081 741526 955000)
+      :unmatched-syntax nil)
+    (semanticdb-table "precomp.hpp"
+      :file "precomp.hpp"
+      :fsize 9415
+      :lastmodtime '(22263 3081 753526 433000))
+    (semanticdb-table "cap_ffmpeg_api.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__OPENCV_FFMPEG_H__" variable (:constant-flag t) nil [37 56])
+            ("Read_InputMediaStream_FFMPEG_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("InputMediaStream_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5096 5135])
+                    ("data" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5136 5157])
+                    ("size" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5158 5168])
+                    ("endOfFile" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5169 5184]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5053 5185])
+            ("Release_InputMediaStream_FFMPEG_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("InputMediaStream_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5004 5043]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4957 5044])
+            ("Create_InputMediaStream_FFMPEG_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("InputMediaStream_FFMPEG" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4869 4890])
+                    ("codec" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4891 4902])
+                    ("chroma_format" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4903 4922])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4923 4934])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4935 4947]))                  
+                :function-pointer t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4796 4948])
+            ("read_InputMediaStream_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("InputMediaStream_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4697 4736])
+                    ("data" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [4737 4758])
+                    ("size" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4759 4769])
+                    ("endOfFile" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4770 4785]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4664 4786])
+            ("release_InputMediaStream_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("InputMediaStream_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4605 4644]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4568 4645])
+            ("create_InputMediaStream_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("InputMediaStream_FFMPEG" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4470 4491])
+                    ("codec" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4492 4503])
+                    ("chroma_format" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4504 4523])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4524 4535])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4536 4548]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4407 4549])
+            ("Write_OutputMediaStream_FFMPEG_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("OutputMediaStream_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4273 4313])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [4314 4334])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [4335 4344])
+                    ("keyFrame" variable (:type "int") (reparse-symbol arg-sub-list) [4345 4358]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4227 4359])
+            ("Release_OutputMediaStream_FFMPEG_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("OutputMediaStream_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4177 4217]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4129 4218])
+            ("Create_OutputMediaStream_FFMPEG_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("OutputMediaStream_FFMPEG" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4063 4084])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [4085 4095])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [4096 4107])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [4108 4119]))                  
+                :function-pointer t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3988 4120])
+            ("write_OutputMediaStream_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("OutputMediaStream_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3892 3932])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3933 3953])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [3954 3963])
+                    ("keyFrame" variable (:type "int") (reparse-symbol arg-sub-list) [3964 3977]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3856 3978])
+            ("release_OutputMediaStream_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("OutputMediaStream_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3796 3836]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3758 3837])
+            ("create_OutputMediaStream_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("OutputMediaStream_FFMPEG" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3682 3703])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [3704 3714])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [3715 3726])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [3727 3738]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3617 3739])
+            ("CvReleaseVideoWriter_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("writer" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3553 3568]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3516 3569])
+            ("CvWriteFrame_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("writer_handle" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3370 3390])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3391 3417])
+                    ("step" variable (:type "int") (reparse-symbol arg-sub-list) [3418 3427])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [3464 3474])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [3475 3486])
+                    ("cn" variable (:type "int") (reparse-symbol arg-sub-list) [3487 3494])
+                    ("origin" variable (:type "int") (reparse-symbol arg-sub-list) [3495 3506]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3342 3507])
+            ("CvCreateVideoWriter_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3205 3226])
+                    ("fourcc" variable (:type "int") (reparse-symbol arg-sub-list) [3227 3238])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [3284 3295])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [3296 3306])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [3307 3318])
+                    ("iscolor" variable (:type "int") (reparse-symbol arg-sub-list) [3319 3332]))                  
+                :function-pointer t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3168 3333])
+            ("CvReleaseCapture_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("capture_handle" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3135 3158]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3102 3159])
+            ("CvGetCaptureProperty_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "double"
+                :arguments 
+                  ( ("capture_handle" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3057 3078])
+                    ("prop_id" variable (:type "int") (reparse-symbol arg-sub-list) [3079 3092]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3018 3093])
+            ("CvSetCaptureProperty_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("capture_handle" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2959 2980])
+                    ("prop_id" variable (:type "int") (reparse-symbol arg-sub-list) [2981 2993])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [2994 3008]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2923 3009])
+            ("CvRetrieveFrame_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("capture_handle" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2785 2806])
+                    ("data" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2807 2828])
+                    ("step" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2829 2839])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2879 2890])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2891 2903])
+                    ("cn" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2904 2913]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2754 2914])
+            ("CvGrabFrame_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("capture_handle" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2722 2744]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2695 2745])
+            ("CvCreateCameraCapture_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [2674 2685]))                  
+                :function-pointer t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2635 2686])
+            ("CvCreateFileCapture_Plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2603 2625]))                  
+                :function-pointer t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2566 2626])
+            ("cvReleaseVideoWriter_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("writer" variable
+                       (:pointer 2
+                        :type ("CvVideoWriter_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2518 2555]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2485 2556])
+            ("cvWriteFrame_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("writer" variable
+                       (:pointer 1
+                        :type ("CvVideoWriter_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2306 2342])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2343 2369])
+                    ("step" variable (:type "int") (reparse-symbol arg-sub-list) [2412 2421])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2422 2432])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2433 2444])
+                    ("cn" variable (:type "int") (reparse-symbol arg-sub-list) [2445 2452])
+                    ("origin" variable (:type "int") (reparse-symbol arg-sub-list) [2453 2464]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2282 2465])
+            ("cvCreateVideoWriter_FFMPEG_2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CvVideoWriter_FFMPEG_2" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2167 2188])
+                    ("fourcc" variable (:type "int") (reparse-symbol arg-sub-list) [2201 2212])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [2213 2224])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2225 2235])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2236 2247])
+                    ("isColor" variable (:type "int") (reparse-symbol arg-sub-list) [2248 2261]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2107 2262])
+            ("cvCreateVideoWriter_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CvVideoWriter_FFMPEG" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1993 2014])
+                    ("fourcc" variable (:type "int") (reparse-symbol arg-sub-list) [2027 2038])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [2039 2050])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2051 2061])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2062 2073])
+                    ("isColor" variable (:type "int") (reparse-symbol arg-sub-list) [2074 2087]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1937 2088])
+            ("cvReleaseCapture_FFMPEG_2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("cap" variable
+                       (:pointer 2
+                        :type ("CvCapture_FFMPEG_2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1885 1917]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1854 1918])
+            ("cvReleaseCapture_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("cap" variable
+                       (:pointer 2
+                        :type ("CvCapture_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1804 1834]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1775 1835])
+            ("cvRetrieveFrame_FFMPEG_2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("capture" variable
+                       (:pointer 1
+                        :type ("CvCapture_FFMPEG_2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1608 1643])
+                    ("data" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1644 1665])
+                    ("step" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1711 1721])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1722 1733])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1734 1746])
+                    ("cn" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1747 1755]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1579 1756])
+            ("cvRetrieveFrame_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("capture" variable
+                       (:pointer 1
+                        :type ("CvCapture_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1414 1447])
+                    ("data" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1448 1469])
+                    ("step" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1515 1525])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1526 1537])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1538 1550])
+                    ("cn" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1551 1559]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1387 1560])
+            ("cvGrabFrame_FFMPEG_2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("cap" variable
+                       (:pointer 1
+                        :type ("CvCapture_FFMPEG_2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1336 1367]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1311 1368])
+            ("cvGrabFrame_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("cap" variable
+                       (:pointer 1
+                        :type ("CvCapture_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1262 1291]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1239 1292])
+            ("cvGetCaptureProperty_FFMPEG_2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "double"
+                :arguments 
+                  ( ("cap" variable
+                       (:pointer 1
+                        :type ("CvCapture_FFMPEG_2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1178 1209])
+                    ("prop" variable (:type "int") (reparse-symbol arg-sub-list) [1210 1219]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1141 1220])
+            ("cvGetCaptureProperty_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "double"
+                :arguments 
+                  ( ("cap" variable
+                       (:pointer 1
+                        :type ("CvCapture_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1082 1111])
+                    ("prop" variable (:type "int") (reparse-symbol arg-sub-list) [1112 1121]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1047 1122])
+            ("cvSetCaptureProperty_FFMPEG_2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("cap" variable
+                       (:pointer 1
+                        :type ("CvCapture_FFMPEG_2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [920 951])
+                    ("prop" variable (:type "int") (reparse-symbol arg-sub-list) [1004 1013])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [1014 1027]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [886 1028])
+            ("cvSetCaptureProperty_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("cap" variable
+                       (:pointer 1
+                        :type ("CvCapture_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [763 792])
+                    ("prop" variable (:type "int") (reparse-symbol arg-sub-list) [843 852])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [853 866]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [731 867])
+            ("cvCreateFileCapture_FFMPEG_2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CvCapture_FFMPEG_2" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [690 711]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [634 712])
+            ("cvCreateFileCapture_FFMPEG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CvCapture_FFMPEG" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [593 614]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [541 615])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_FFMPEG_CAP_PROP_POS_MSEC" variable
+                       (:constant-flag t
+                        :default-value (261 262)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [233 262])
+                    ("CV_FFMPEG_CAP_PROP_POS_FRAMES" variable
+                       (:constant-flag t
+                        :default-value (298 299)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [268 299])
+                    ("CV_FFMPEG_CAP_PROP_POS_AVI_RATIO" variable
+                       (:constant-flag t
+                        :default-value (338 339)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [305 339])
+                    ("CV_FFMPEG_CAP_PROP_FRAME_WIDTH" variable
+                       (:constant-flag t
+                        :default-value (376 377)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [345 377])
+                    ("CV_FFMPEG_CAP_PROP_FRAME_HEIGHT" variable
+                       (:constant-flag t
+                        :default-value (415 416)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [383 416])
+                    ("CV_FFMPEG_CAP_PROP_FPS" variable
+                       (:constant-flag t
+                        :default-value (445 446)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [422 446])
+                    ("CV_FFMPEG_CAP_PROP_FOURCC" variable
+                       (:constant-flag t
+                        :default-value (478 479)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [452 479])
+                    ("CV_FFMPEG_CAP_PROP_FRAME_COUNT" variable
+                       (:constant-flag t
+                        :default-value (516 517)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [485 517]))                  )
+                (reparse-symbol extern-c-contents) [222 520])
+            ("OPENCV_FFMPEG_API" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [196 213]))          
+      :file "cap_ffmpeg_api.hpp"
+      :pointmax 5223
+      :fsize 5222
+      :lastmodtime '(22263 3081 741526 955000)
+      :unmatched-syntax '((TYPEDEF 5045 . 5052) (TYPEDEF 4949 . 4956) (TYPEDEF 4788 . 4795) (TYPEDEF 4219 . 4226) (TYPEDEF 4121 . 4128) (TYPEDEF 3980 . 3987) (TYPEDEF 3508 . 3515) (TYPEDEF 3334 . 3341) (TYPEDEF 3160 . 3167) (TYPEDEF 3094 . 3101) (TYPEDEF 3010 . 3017) (TYPEDEF 2915 . 2922) (TYPEDEF 2746 . 2753) (TYPEDEF 2687 . 2694) (TYPEDEF 2627 . 2634) (TYPEDEF 2558 . 2565) (TYPEDEF 2915 . 2922) (TYPEDEF 2746 . 2753) (TYPEDEF 2687 . 2694) (TYPEDEF 2627 . 2634) (TYPEDEF 2558 . 2565))
+      :lexical-table 
+        '(("OPENCV_FFMPEG_API")
+          ("__OPENCV_FFMPEG_H__")
+          )
+)
+    (semanticdb-table "cap_ffmpeg_impl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cap_ffmpeg_api.hpp" include nil nil [2157 2186])
+            ("assert.h" include (:system-flag t) nil [2187 2206])
+            ("algorithm" include (:system-flag t) nil [2207 2227])
+            ("limits" include (:system-flag t) nil [2228 2245])
+            ("libavutil/mathematics.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2499 2533])
+            ("ffmpeg_codecs.hpp" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [2469 2497])
+            ("CV_WARN" variable (:constant-flag t) nil [3713 3720])
+            ("PIX_FMT_RGBA32" variable (:constant-flag t) nil [3899 3913])
+            ("CALC_FFMPEG_VERSION" variable (:constant-flag t) nil [3944 3963])
+            ("unistd.h" include (:system-flag t) nil [4099 4122])
+            ("stdio.h" include (:system-flag t) nil [4123 4145])
+            ("sys/types.h" include (:system-flag t) nil [4146 4172])
+            ("sys/sysctl.h" include (:system-flag t) nil [4173 4200])
+            ("MIN" variable (:constant-flag t) nil [4229 4232])
+            ("AV_NOPTS_VALUE_" variable (:constant-flag t) nil [4364 4379])
+            ("AVERROR_EOF" variable (:constant-flag t) nil [4442 4453])
+            ("CV_CODEC_ID" variable (:constant-flag t) nil [4625 4636])
+            ("CV_CODEC" variable (:constant-flag t) nil [4655 4663])
+            ("get_number_of_cpus" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4713 4718]))                  
+                :type "int")
+                nil [4683 5511])
+            ("Image_FFMPEG" type
+               (:members 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [5540 5560])
+                    ("step" variable (:type "int") (reparse-symbol classsubparts) [5565 5574])
+                    ("width" variable (:type "int") (reparse-symbol classsubparts) [5579 5589])
+                    ("height" variable (:type "int") (reparse-symbol classsubparts) [5594 5605])
+                    ("cn" variable (:type "int") (reparse-symbol classsubparts) [5610 5617]))                  
+                :type "struct")
+                nil [5514 5620])
+            ("_opencv_ffmpeg_free" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5655 5666]))                  
+                :type "void")
+                nil [5623 5709])
+            ("CvCapture_FFMPEG" type
+               (:members 
+                  ( ("open" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5753 5775]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5742 5776])
+                    ("close" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5781 5794])
+                    ("getProperty" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5819 5823]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [5800 5824])
+                    ("setProperty" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5846 5850])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [5851 5858]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5829 5859])
+                    ("grabFrame" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5864 5881])
+                    ("retrieveFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5905 5909])
+                            ("data" variable
+                               (:pointer 2
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [5910 5931])
+                            ("step" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5932 5942])
+                            ("width" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5943 5954])
+                            ("height" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5955 5967])
+                            ("cn" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5968 5976]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5886 5977])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5983 5995])
+                    ("seek" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("frame_number" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6014 6035]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6001 6036])
+                    ("seek" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sec" variable (:type "double") (reparse-symbol arg-sub-list) [6054 6065]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6041 6066])
+                    ("slowSeek" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("framenumber" variable (:type "int") (reparse-symbol arg-sub-list) [6089 6106]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6071 6107])
+                    ("get_total_frames" function
+                       (:prototype-flag t
+                        :type ("int64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6113 6140])
+                    ("get_duration_sec" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [6145 6172])
+                    ("get_fps" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [6177 6195])
+                    ("get_bitrate" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [6200 6222])
+                    ("r2d" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("AVRational" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6240 6253]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [6228 6254])
+                    ("dts_to_frame_number" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dts" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6287 6299]))                          
+                        :type ("int64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6259 6300])
+                    ("dts_to_sec" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dts" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6324 6336]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [6305 6337])
+                    ("ic" variable
+                       (:pointer 1
+                        :type ("AVFormatContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6343 6364])
+                    ("avcodec" variable
+                       (:pointer 1
+                        :type ("AVCodec" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6369 6395])
+                    ("video_stream" variable (:type "int") (reparse-symbol classsubparts) [6400 6431])
+                    ("video_st" variable
+                       (:pointer 1
+                        :type ("AVStream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6436 6463])
+                    ("picture" variable
+                       (:pointer 1
+                        :type ("AVFrame" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6468 6494])
+                    ("rgb_picture" variable (:type ("AVFrame" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6499 6529])
+                    ("picture_pts" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6534 6564])
+                    ("packet" variable (:type ("AVPacket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6570 6595])
+                    ("frame" variable (:type ("Image_FFMPEG" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6600 6624])
+                    ("img_convert_ctx" variable
+                       (:pointer 1
+                        :type ("SwsContext" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6629 6664])
+                    ("frame_number" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6670 6711])
+                    ("first_frame_number" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6670 6711])
+                    ("eps_zero" variable (:type "double") (reparse-symbol classsubparts) [6717 6733])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [7047 7076]))                  
+                :type "struct")
+                nil [5712 7079])
+            ("init" function
+               (:parent "CvCapture_FFMPEG"
+                :type "void")
+                nil [7081 7517])
+            ("close" function
+               (:parent "CvCapture_FFMPEG"
+                :type "void")
+                nil [7520 8329])
+            ("AVSEEK_FLAG_FRAME" variable (:constant-flag t) nil [8366 8383])
+            ("AVSEEK_FLAG_ANY" variable (:constant-flag t) nil [8425 8440])
+            ("ImplMutex" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [8469 8476])
+                    ("ImplMutex" function
+                       (:constructor-flag t
+                        :type ("ImplMutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8481 8504])
+                    ("ImplMutex" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8509 8536])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8542 8554])
+                    ("destroy" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8559 8574])
+                    ("lock" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8580 8592])
+                    ("trylock" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8597 8612])
+                    ("unlock" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8617 8631])
+                    ("Impl" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol classsubparts) [8637 8649])
+                    ("protected" label nil (reparse-symbol classsubparts) [8650 8660])
+                    ("impl" variable
+                       (:pointer 1
+                        :type ("Impl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8665 8676])
+                    ("private" label nil (reparse-symbol classsubparts) [8678 8686])
+                    ("ImplMutex" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ImplMutex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8701 8718]))                          
+                        :type ("ImplMutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8691 8719])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ImplMutex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8747 8766]))                          
+                        :type ("ImplMutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8724 8767]))                  
+                :type "class")
+                nil [8451 8770])
+            ("Impl" type
+               (:parent "ImplMutex"
+                :members 
+                  ( ("init" function (:type "void") (reparse-symbol classsubparts) [10004 10060])
+                    ("destroy" function (:type "void") (reparse-symbol classsubparts) [10065 10110])
+                    ("lock" function (:type "void") (reparse-symbol classsubparts) [10116 10155])
+                    ("trylock" function (:type "bool") (reparse-symbol classsubparts) [10160 10217])
+                    ("unlock" function (:type "void") (reparse-symbol classsubparts) [10222 10265])
+                    ("sl" variable (:type ("pthread_spinlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10271 10293])
+                    ("refcount" variable (:type "int") (reparse-symbol classsubparts) [10298 10311]))                  
+                :type "struct")
+                nil [9975 10314])
+            ("init" function
+               (:parent "ImplMutex"
+                :type "void")
+                nil [10674 10758])
+            ("destroy" function
+               (:parent "ImplMutex"
+                :type "void")
+                nil [10759 10842])
+            ("lock" function
+               (:parent "ImplMutex"
+                :type "void")
+                nil [10843 10883])
+            ("unlock" function
+               (:parent "ImplMutex"
+                :type "void")
+                nil [10884 10928])
+            ("trylock" function
+               (:parent "ImplMutex"
+                :type "bool")
+                nil [10929 10982])
+            ("LockCallBack" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mutex" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11008 11021])
+                    ("op" variable (:type ("AVLockOp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11022 11034]))                  
+                :type "int")
+                nil [10984 11687])
+            ("_mutex" variable
+               (:typemodifiers ("static")
+                :type ("ImplMutex" type (:type "class") nil nil))
+                nil [11689 11713])
+            ("_initialized" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [11714 11747])
+            ("InternalFFMpegRegister" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11780 11787])
+                    ("InternalFFMpegRegister" function
+                       (:constructor-flag t
+                        :type ("InternalFFMpegRegister" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11792 12317])
+                    ("InternalFFMpegRegister" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [12323 12425]))                  
+                :type "class")
+                nil [11749 12428])
+            ("_init" variable
+               (:typemodifiers ("static")
+                :type ("InternalFFMpegRegister" type (:type "class") nil nil))
+                nil [12430 12466])
+            ("open" function
+               (:parent "CvCapture_FFMPEG"
+                :arguments 
+                  ( ("_filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12497 12520]))                  
+                :type "bool")
+                nil [12468 15123])
+            ("grabFrame" function
+               (:parent "CvCapture_FFMPEG"
+                :type "bool")
+                nil [15126 17247])
+            ("retrieveFrame" function
+               (:parent "CvCapture_FFMPEG"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [17287 17291])
+                    ("data" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17292 17313])
+                    ("step" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [17314 17324])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [17325 17336])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [17337 17349])
+                    ("cn" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [17350 17358]))                  
+                :type "bool")
+                nil [17250 18734])
+            ("getProperty" function
+               (:parent "CvCapture_FFMPEG"
+                :arguments 
+                  ( ("property_id" variable (:type "int") (reparse-symbol arg-sub-list) [18775 18792]))                  
+                :type "double")
+                nil [18737 19827])
+            ("r2d" function
+               (:parent "CvCapture_FFMPEG"
+                :arguments 
+                  ( ("r" variable (:type ("AVRational" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19858 19871]))                  
+                :type "double")
+                nil [19829 19949])
+            ("get_duration_sec" function
+               (:parent "CvCapture_FFMPEG"
+                :type "double")
+                nil [19951 20357])
+            ("get_bitrate" function
+               (:parent "CvCapture_FFMPEG"
+                :type "int")
+                nil [20359 20423])
+            ("get_fps" function
+               (:parent "CvCapture_FFMPEG"
+                :type "double")
+                nil [20425 20813])
+            ("get_total_frames" function
+               (:parent "CvCapture_FFMPEG"
+                :type ("int64_t" type (:type "class") nil nil))
+                nil [20815 21034])
+            ("dts_to_frame_number" function
+               (:parent "CvCapture_FFMPEG"
+                :arguments 
+                  ( ("dts" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21082 21094]))                  
+                :type ("int64_t" type (:type "class") nil nil))
+                nil [21036 21177])
+            ("dts_to_sec" function
+               (:parent "CvCapture_FFMPEG"
+                :arguments 
+                  ( ("dts" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21215 21227]))                  
+                :type "double")
+                nil [21179 21349])
+            ("seek" function
+               (:parent "CvCapture_FFMPEG"
+                :arguments 
+                  ( ("_frame_number" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21379 21401]))                  
+                :type "void")
+                nil [21351 23336])
+            ("seek" function
+               (:parent "CvCapture_FFMPEG"
+                :arguments 
+                  ( ("sec" variable (:type "double") (reparse-symbol arg-sub-list) [23366 23377]))                  
+                :type "void")
+                nil [23338 23425])
+            ("setProperty" function
+               (:parent "CvCapture_FFMPEG"
+                :arguments 
+                  ( ("property_id" variable (:type "int") (reparse-symbol arg-sub-list) [23463 23479])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [23480 23494]))                  
+                :type "bool")
+                nil [23427 24226])
+            ("CvVideoWriter_FFMPEG" type
+               (:members 
+                  ( ("open" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [24355 24376])
+                            ("fourcc" variable (:type "int") (reparse-symbol arg-sub-list) [24377 24388])
+                            ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [24404 24415])
+                            ("width" variable (:type "int") (reparse-symbol arg-sub-list) [24416 24426])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [24427 24438])
+                            ("isColor" variable (:type "bool") (reparse-symbol arg-sub-list) [24439 24453]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [24344 24454])
+                    ("close" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [24459 24472])
+                    ("writeFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [24494 24520])
+                            ("step" variable (:type "int") (reparse-symbol arg-sub-list) [24521 24530])
+                            ("width" variable (:type "int") (reparse-symbol arg-sub-list) [24531 24541])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [24542 24553])
+                            ("cn" variable (:type "int") (reparse-symbol arg-sub-list) [24554 24561])
+                            ("origin" variable (:type "int") (reparse-symbol arg-sub-list) [24562 24574]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [24477 24575])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [24581 24593])
+                    ("fmt" variable
+                       (:pointer 1
+                        :type ("AVOutputFormat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24599 24621])
+                    ("oc" variable
+                       (:pointer 1
+                        :type ("AVFormatContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24626 24647])
+                    ("outbuf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24652 24677])
+                    ("outbuf_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24682 24712])
+                    ("outfile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24717 24743])
+                    ("picture" variable
+                       (:pointer 1
+                        :type ("AVFrame" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24748 24774])
+                    ("input_picture" variable
+                       (:pointer 1
+                        :type ("AVFrame" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24779 24811])
+                    ("picbuf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24816 24841])
+                    ("video_st" variable
+                       (:pointer 1
+                        :type ("AVStream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24846 24873])
+                    ("input_pix_fmt" variable (:type "int") (reparse-symbol classsubparts) [24878 24910])
+                    ("temp_image" variable (:type ("Image_FFMPEG" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24915 24944])
+                    ("frame_width" variable (:type "int") (reparse-symbol classsubparts) [24949 24993])
+                    ("frame_height" variable (:type "int") (reparse-symbol classsubparts) [24949 24993])
+                    ("ok" variable (:type "bool") (reparse-symbol classsubparts) [24998 25019])
+                    ("img_convert_ctx" variable
+                       (:pointer 1
+                        :type ("SwsContext" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [25024 25059]))                  
+                :type "struct")
+                nil [24310 25062])
+            ("icvFFMPEGErrStr" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("err" variable (:type "int") (reparse-symbol arg-sub-list) [25100 25108]))                  
+                :type "char")
+                nil [25064 26640])
+            ("codec_get_bmp_id" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CodecID" type (:type "enum") nil nil)
+                :arguments 
+                  ( ("tag" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26780 26797]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26746 26798])
+            ("init" function
+               (:parent "CvVideoWriter_FFMPEG"
+                :type "void")
+                nil [26802 27140])
+            ("icv_alloc_picture_FFMPEG" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pix_fmt" variable (:type "int") (reparse-symbol arg-sub-list) [27295 27307])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [27308 27318])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [27319 27330])
+                    ("alloc" variable (:type "bool") (reparse-symbol arg-sub-list) [27331 27342]))                  
+                :type ("AVFrame" type (:type "class") nil nil))
+                nil [27253 27884])
+            ("icv_add_video_stream_FFMPEG" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("oc" variable
+                       (:pointer 1
+                        :type ("AVFormatContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27980 28000])
+                    ("codec_id" variable (:type ("CodecID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28046 28067])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [28113 28119])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [28120 28126])
+                    ("bitrate" variable (:type "int") (reparse-symbol arg-sub-list) [28127 28139])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [28185 28196])
+                    ("pixel_format" variable (:type "int") (reparse-symbol arg-sub-list) [28197 28214]))                  
+                :type ("AVStream" type (:type "class") nil nil))
+                nil [27935 31592])
+            ("OPENCV_NO_FRAMES_WRITTEN_CODE" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1000"
+                :type "int")
+                nil [31594 31648])
+            ("icv_av_write_frame_FFMPEG" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("oc" variable
+                       (:pointer 1
+                        :type ("AVFormatContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31688 31709])
+                    ("video_st" variable
+                       (:pointer 1
+                        :type ("AVStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31710 31730])
+                    ("outbuf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31731 31748])
+                    ("outbuf_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31749 31770])
+                    ("picture" variable
+                       (:pointer 1
+                        :type ("AVFrame" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31771 31790]))                  
+                :type "int")
+                nil [31650 33329])
+            ("writeFrame" function
+               (:parent "CvVideoWriter_FFMPEG"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [33400 33426])
+                    ("step" variable (:type "int") (reparse-symbol arg-sub-list) [33427 33436])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [33437 33447])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [33448 33459])
+                    ("cn" variable (:type "int") (reparse-symbol arg-sub-list) [33460 33467])
+                    ("origin" variable (:type "int") (reparse-symbol arg-sub-list) [33468 33480]))                  
+                :type "bool")
+                nil [33361 36892])
+            ("close" function
+               (:parent "CvVideoWriter_FFMPEG"
+                :type "void")
+                nil [36951 38801])
+            ("open" function
+               (:parent "CvVideoWriter_FFMPEG"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38886 38908])
+                    ("fourcc" variable (:type "int") (reparse-symbol arg-sub-list) [38909 38920])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [38954 38965])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [38966 38976])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [38977 38988])
+                    ("is_color" variable (:type "bool") (reparse-symbol arg-sub-list) [38989 39004]))                  
+                :type "bool")
+                nil [38853 45349])
+            ("cvCreateFileCapture_FFMPEG" function
+               (:pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45399 45421]))                  
+                :type ("CvCapture_FFMPEG" type (:type "class") nil nil))
+                nil [45353 45638])
+            ("cvReleaseCapture_FFMPEG" function
+               (:arguments 
+                  ( ("capture" variable
+                       (:pointer 2
+                        :type ("CvCapture_FFMPEG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45670 45697]))                  
+                :type "void")
+                nil [45641 45818])
+            ("cvSetCaptureProperty_FFMPEG" function
+               (:arguments 
+                  ( ("capture" variable
+                       (:pointer 1
+                        :type ("CvCapture_FFMPEG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45852 45878])
+                    ("prop_id" variable (:type "int") (reparse-symbol arg-sub-list) [45879 45891])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [45892 45905]))                  
+                :type "int")
+                nil [45820 45958])
+            ("cvGetCaptureProperty_FFMPEG" function
+               (:arguments 
+                  ( ("capture" variable
+                       (:pointer 1
+                        :type ("CvCapture_FFMPEG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45995 46021])
+                    ("prop_id" variable (:type "int") (reparse-symbol arg-sub-list) [46022 46034]))                  
+                :type "double")
+                nil [45960 46080])
+            ("cvGrabFrame_FFMPEG" function
+               (:arguments 
+                  ( ("capture" variable
+                       (:pointer 1
+                        :type ("CvCapture_FFMPEG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46105 46131]))                  
+                :type "int")
+                nil [46082 46168])
+            ("cvRetrieveFrame_FFMPEG" function
+               (:arguments 
+                  ( ("capture" variable
+                       (:pointer 1
+                        :type ("CvCapture_FFMPEG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46197 46223])
+                    ("data" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [46224 46245])
+                    ("step" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [46246 46256])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [46257 46268])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [46269 46281])
+                    ("cn" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [46282 46290]))                  
+                :type "int")
+                nil [46170 46363])
+            ("cvCreateVideoWriter_FFMPEG" function
+               (:pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46415 46436])
+                    ("fourcc" variable (:type "int") (reparse-symbol arg-sub-list) [46437 46448])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [46449 46460])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [46511 46521])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [46522 46533])
+                    ("isColor" variable (:type "int") (reparse-symbol arg-sub-list) [46534 46547]))                  
+                :type ("CvVideoWriter_FFMPEG" type (:type "class") nil nil))
+                nil [46365 46806])
+            ("cvReleaseVideoWriter_FFMPEG" function
+               (:arguments 
+                  ( ("writer" variable
+                       (:pointer 2
+                        :type ("CvVideoWriter_FFMPEG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46842 46873]))                  
+                :type "void")
+                nil [46808 46989])
+            ("cvWriteFrame_FFMPEG" function
+               (:arguments 
+                  ( ("writer" variable
+                       (:pointer 1
+                        :type ("CvVideoWriter_FFMPEG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47017 47046])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [47072 47098])
+                    ("step" variable (:type "int") (reparse-symbol arg-sub-list) [47099 47108])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [47134 47144])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [47145 47156])
+                    ("cn" variable (:type "int") (reparse-symbol arg-sub-list) [47157 47164])
+                    ("origin" variable (:type "int") (reparse-symbol arg-sub-list) [47165 47176]))                  
+                :type "int")
+                nil [46992 47250])
+            ("OutputMediaStream_FFMPEG" type
+               (:members 
+                  ( ("open" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fileName" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [47330 47351])
+                            ("width" variable (:type "int") (reparse-symbol arg-sub-list) [47352 47362])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [47363 47374])
+                            ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [47375 47386]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [47320 47387])
+                    ("close" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [47392 47405])
+                    ("write" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [47422 47442])
+                            ("size" variable (:type "int") (reparse-symbol arg-sub-list) [47443 47452])
+                            ("keyFrame" variable (:type "int") (reparse-symbol arg-sub-list) [47453 47466]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [47411 47467])
+                    ("addVideoStream" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("oc" variable
+                               (:pointer 1
+                                :type ("AVFormatContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47555 47575])
+                            ("codec_id" variable (:type ("CodecID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47576 47597])
+                            ("w" variable (:type "int") (reparse-symbol arg-sub-list) [47598 47604])
+                            ("h" variable (:type "int") (reparse-symbol arg-sub-list) [47605 47611])
+                            ("bitrate" variable (:type "int") (reparse-symbol arg-sub-list) [47612 47624])
+                            ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [47625 47636])
+                            ("pixel_format" variable (:type ("PixelFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47637 47662]))                          
+                        :type ("AVStream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [47523 47663])
+                    ("fmt_" variable
+                       (:pointer 1
+                        :type ("AVOutputFormat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [47669 47690])
+                    ("oc_" variable
+                       (:pointer 1
+                        :type ("AVFormatContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [47695 47716])
+                    ("video_st_" variable
+                       (:pointer 1
+                        :type ("AVStream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [47721 47741]))                  
+                :type "struct")
+                nil [47282 47744])
+            ("close" function
+               (:parent "OutputMediaStream_FFMPEG"
+                :type "void")
+                nil [47746 48795])
+            ("addVideoStream" function
+               (:pointer 1
+                :parent "OutputMediaStream_FFMPEG"
+                :arguments 
+                  ( ("oc" variable
+                       (:pointer 1
+                        :type ("AVFormatContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48848 48868])
+                    ("codec_id" variable (:type ("CodecID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48869 48890])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [48891 48897])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [48898 48904])
+                    ("bitrate" variable (:type "int") (reparse-symbol arg-sub-list) [48905 48917])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [48918 48929])
+                    ("pixel_format" variable (:type ("PixelFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48930 48955]))                  
+                :type ("AVStream" type (:type "class") nil nil))
+                nil [48797 52189])
+            ("open" function
+               (:parent "OutputMediaStream_FFMPEG"
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52227 52248])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [52249 52259])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [52260 52271])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [52272 52283]))                  
+                :type "bool")
+                nil [52191 54643])
+            ("write" function
+               (:parent "OutputMediaStream_FFMPEG"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [54682 54702])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [54703 54712])
+                    ("keyFrame" variable (:type "int") (reparse-symbol arg-sub-list) [54713 54726]))                  
+                :type "void")
+                nil [54645 55115])
+            ("create_OutputMediaStream_FFMPEG" function
+               (:pointer 1
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [55182 55203])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [55204 55214])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [55215 55226])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [55227 55238]))                  
+                :type ("OutputMediaStream_FFMPEG" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [55117 55482])
+            ("release_OutputMediaStream_FFMPEG" function
+               (:arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("OutputMediaStream_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [55522 55562]))                  
+                :type "void")
+                nil [55484 55605])
+            ("write_OutputMediaStream_FFMPEG" function
+               (:arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("OutputMediaStream_FFMPEG" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [55643 55683])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [55684 55704])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [55705 55714])
+                    ("keyFrame" variable (:type "int") (reparse-symbol arg-sub-list) [55715 55728]))                  
+                :type "void")
+                nil [55607 55773])
+            ("" type
+               (:members 
+                  ( ("VideoCodec_MPEG1" variable
+                       (:constant-flag t
+                        :default-value (55833 55834)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [55814 55834])
+                    ("VideoCodec_MPEG2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [55840 55857])
+                    ("VideoCodec_MPEG4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [55862 55879])
+                    ("VideoCodec_VC1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [55884 55899])
+                    ("VideoCodec_H264" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [55904 55920])
+                    ("VideoCodec_JPEG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [55925 55941])
+                    ("VideoCodec_H264_SVC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [55946 55966])
+                    ("VideoCodec_H264_MVC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [55971 55991])
+                    ("VideoCodec_YUV420" variable
+                       (:constant-flag t
+                        :default-value (56041 56077)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [56021 56077])
+                    ("VideoCodec_YV12" variable
+                       (:constant-flag t
+                        :default-value (56122 56158)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [56102 56158])
+                    ("VideoCodec_NV12" variable
+                       (:constant-flag t
+                        :default-value (56203 56239)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [56183 56239])
+                    ("VideoCodec_YUYV" variable
+                       (:constant-flag t
+                        :default-value (56284 56320)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [56264 56320])
+                    ("VideoCodec_UYVY" variable
+                       (:constant-flag t
+                        :default-value (56369 56405)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [56349 56405]))                  
+                :type "enum")
+                nil [55803 56427])
+            ("" type
+               (:members 
+                  ( ("VideoChromaFormat_Monochrome" variable
+                       (:constant-flag t
+                        :default-value (56471 56472)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [56440 56472])
+                    ("VideoChromaFormat_YUV420" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [56478 56503])
+                    ("VideoChromaFormat_YUV422" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [56508 56533])
+                    ("VideoChromaFormat_YUV444" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [56538 56564]))                  
+                :type "enum")
+                nil [56429 56565])
+            ("InputMediaStream_FFMPEG" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [56600 56607])
+                    ("open" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fileName" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [56622 56643])
+                            ("codec" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [56644 56655])
+                            ("chroma_format" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [56656 56675])
+                            ("width" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [56676 56687])
+                            ("height" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [56688 56700]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [56612 56701])
+                    ("close" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [56706 56719])
+                    ("read" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 2
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [56735 56756])
+                            ("size" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [56757 56767])
+                            ("endOfFile" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [56768 56783]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [56725 56784])
+                    ("private" label nil (reparse-symbol classsubparts) [56786 56794])
+                    ("InputMediaStream_FFMPEG" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InputMediaStream_FFMPEG" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56823 56854]))                          
+                        :type ("InputMediaStream_FFMPEG" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [56799 56855])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InputMediaStream_FFMPEG" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56896 56927]))                          
+                        :type ("InputMediaStream_FFMPEG" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [56860 56928])
+                    ("ctx_" variable
+                       (:pointer 1
+                        :type ("AVFormatContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [56934 56956])
+                    ("video_stream_id_" variable (:type "int") (reparse-symbol classsubparts) [56961 56982])
+                    ("pkt_" variable (:type ("AVPacket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [56987 57001]))                  
+                :type "struct")
+                nil [56567 57004])
+            ("open" function
+               (:parent "InputMediaStream_FFMPEG"
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [57041 57062])
+                    ("codec" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [57063 57074])
+                    ("chroma_format" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [57075 57094])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [57095 57106])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [57107 57119]))                  
+                :type "bool")
+                nil [57006 59501])
+            ("close" function
+               (:parent "InputMediaStream_FFMPEG"
+                :type "void")
+                nil [59503 59827])
+            ("read" function
+               (:parent "InputMediaStream_FFMPEG"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [59864 59885])
+                    ("size" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [59886 59896])
+                    ("endOfFile" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [59897 59912]))                  
+                :type "bool")
+                nil [59829 60534])
+            ("create_InputMediaStream_FFMPEG" function
+               (:pointer 1
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60592 60613])
+                    ("codec" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [60614 60625])
+                    ("chroma_format" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [60626 60645])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [60646 60657])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [60658 60670]))                  
+                :type ("InputMediaStream_FFMPEG" type (:type "class") nil nil))
+                nil [60536 60938])
+            ("release_InputMediaStream_FFMPEG" function
+               (:arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("InputMediaStream_FFMPEG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60977 61009]))                  
+                :type "void")
+                nil [60940 61052])
+            ("read_InputMediaStream_FFMPEG" function
+               (:arguments 
+                  ( ("stream" variable
+                       (:pointer 1
+                        :type ("InputMediaStream_FFMPEG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61087 61119])
+                    ("data" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [61120 61141])
+                    ("size" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [61142 61152])
+                    ("endOfFile" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [61153 61168]))                  
+                :type "int")
+                nil [61054 61220]))          
+      :file "cap_ffmpeg_impl.hpp"
+      :pointmax 61221
+      :fsize 61220
+      :lastmodtime '(22263 3081 741526 955000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AVSEEK_FLAG_ANY" . ((number "1" 8441 . 8442)))
+          ("PIX_FMT_RGBA32" . ((symbol "PIX_FMT_RGB32" 3914 . 3927)))
+          ("MIN" (spp-arg-list ("a" "b") 4232 . 4238) . ((semantic-list "((a) < (b) ? (a) : (b))" 4239 . 4262)))
+          ("AVSEEK_FLAG_FRAME" . ((number "0" 8384 . 8385)))
+          ("CV_WARN" (spp-arg-list ("message") 3720 . 3729) . ((symbol "fprintf" 3730 . 3737) (semantic-list "(stderr, \"warning: %s (%s:%d)\\n\", message, __FILE__, __LINE__)" 3737 . 3799)))
+          ("CV_CODEC_ID" . ((symbol "CodecID" 4637 . 4644)))
+          ("CV_CODEC" (spp-arg-list ("name") 4663 . 4669) . ((symbol "name" 4670 . 4674)))
+          ("AV_NOPTS_VALUE_" . ((semantic-list "((int64_t)AV_NOPTS_VALUE)" 4380 . 4405)))
+          ("CALC_FFMPEG_VERSION" (spp-arg-list ("a" "b" "c") 3963 . 3970) . ((semantic-list "( a<<16 | b<<8 | c )" 3971 . 3991)))
+          ("AVERROR_EOF" . ((semantic-list "(-MKTAG( 'E','O','F',' '))" 4454 . 4480)))
+          )
+)
+    (semanticdb-table "ffmpeg_codecs.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("errno.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2517 2535])
+            ("UINT64_C" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2488 2496])
+            ("INT64_C" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2436 2443])
+            ("stdint.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2316 2335])
+            ("MKTAG" variable (:constant-flag t) nil [3109 3114])
+            ("libavformat/avformat.h" include (:system-flag t) nil [3171 3204])
+            ("AVCodecTag" type
+               (:members 
+                  ( ("id" variable (:type "int") (reparse-symbol classsubparts) [3383 3390])
+                    ("tag" variable (:type "unsigned int") (reparse-symbol classsubparts) [3395 3412]))                  
+                :type "struct")
+                nil [3351 3426])
+            ("AVCodecTag" type
+               (:typedef ("AVCodecTag" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [3351 3426])
+            ("codec_bmp_tags" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "{
+    { CODEC_ID_H264, MKTAG('H', '2', '6', '4') },
+    { CODEC_ID_H264, MKTAG('h', '2', '6', '4') },
+    { CODEC_ID_H264, MKTAG('X', '2', '6', '4') },
+    { CODEC_ID_H264, MKTAG('x', '2', '6', '4') },
+    { CODEC_ID_H264, MKTAG('a', 'v', 'c', '1') },
+    { CODEC_ID_H264, MKTAG('V', 'S', 'S', 'H') },
+
+    { CODEC_ID_H263, MKTAG('H', '2', '6', '3') },
+    { CODEC_ID_H263P, MKTAG('H', '2', '6', '3') },
+    { CODEC_ID_H263I, MKTAG('I', '2', '6', '3') }, /* intel h263 */
+    { CODEC_ID_H261, MKTAG('H', '2', '6', '1') },
+
+    /* added based on MPlayer */
+    { CODEC_ID_H263P, MKTAG('U', '2', '6', '3') },
+    { CODEC_ID_H263P, MKTAG('v', 'i', 'v', '1') },
+
+    { CODEC_ID_MPEG4, MKTAG('F', 'M', 'P', '4') },
+    { CODEC_ID_MPEG4, MKTAG('D', 'I', 'V', 'X') },
+    { CODEC_ID_MPEG4, MKTAG('D', 'X', '5', '0') },
+    { CODEC_ID_MPEG4, MKTAG('X', 'V', 'I', 'D') },
+    { CODEC_ID_MPEG4, MKTAG('M', 'P', '4', 'S') },
+    { CODEC_ID_MPEG4, MKTAG('M', '4', 'S', '2') },
+    { CODEC_ID_MPEG4, MKTAG(0x04, 0, 0, 0) }, /* some broken avi use this */
+
+    /* added based on MPlayer */
+    { CODEC_ID_MPEG4, MKTAG('D', 'I', 'V', '1') },
+    { CODEC_ID_MPEG4, MKTAG('B', 'L', 'Z', '0') },
+    { CODEC_ID_MPEG4, MKTAG('m', 'p', '4', 'v') },
+    { CODEC_ID_MPEG4, MKTAG('U', 'M', 'P', '4') },
+    { CODEC_ID_MPEG4, MKTAG('W', 'V', '1', 'F') },
+    { CODEC_ID_MPEG4, MKTAG('S', 'E', 'D', 'G') },
+
+    { CODEC_ID_MPEG4, MKTAG('R', 'M', 'P', '4') },
+
+    { CODEC_ID_MSMPEG4V3, MKTAG('D', 'I', 'V', '3') }, /* default signature when using MSMPEG4 */
+    { CODEC_ID_MSMPEG4V3, MKTAG('M', 'P', '4', '3') },
+
+    /* added based on MPlayer */
+    { CODEC_ID_MSMPEG4V3, MKTAG('M', 'P', 'G', '3') },
+    { CODEC_ID_MSMPEG4V3, MKTAG('D', 'I', 'V', '5') },
+    { CODEC_ID_MSMPEG4V3, MKTAG('D', 'I', 'V', '6') },
+    { CODEC_ID_MSMPEG4V3, MKTAG('D', 'I', 'V', '4') },
+    { CODEC_ID_MSMPEG4V3, MKTAG('A', 'P', '4', '1') },
+    { CODEC_ID_MSMPEG4V3, MKTAG('C', 'O', 'L', '1') },
+    { CODEC_ID_MSMPEG4V3, MKTAG('C', 'O', 'L', '0') },
+
+    { CODEC_ID_MSMPEG4V2, MKTAG('M', 'P', '4', '2') },
+
+    /* added based on MPlayer */
+    { CODEC_ID_MSMPEG4V2, MKTAG('D', 'I', 'V', '2') },
+
+    { CODEC_ID_MSMPEG4V1, MKTAG('M', 'P', 'G', '4') },
+
+    { CODEC_ID_WMV1, MKTAG('W', 'M', 'V', '1') },
+
+    /* added based on MPlayer */
+    { CODEC_ID_WMV2, MKTAG('W', 'M', 'V', '2') },
+    { CODEC_ID_DVVIDEO, MKTAG('d', 'v', 's', 'd') },
+    { CODEC_ID_DVVIDEO, MKTAG('d', 'v', 'h', 'd') },
+    { CODEC_ID_DVVIDEO, MKTAG('d', 'v', 's', 'l') },
+    { CODEC_ID_DVVIDEO, MKTAG('d', 'v', '2', '5') },
+    { CODEC_ID_MPEG1VIDEO, MKTAG('m', 'p', 'g', '1') },
+    { CODEC_ID_MPEG1VIDEO, MKTAG('m', 'p', 'g', '2') },
+    { CODEC_ID_MPEG2VIDEO, MKTAG('m', 'p', 'g', '2') },
+    { CODEC_ID_MPEG2VIDEO, MKTAG('M', 'P', 'E', 'G') },
+    { CODEC_ID_MPEG1VIDEO, MKTAG('P', 'I', 'M', '1') },
+    { CODEC_ID_MPEG1VIDEO, MKTAG('V', 'C', 'R', '2') },
+    { CODEC_ID_MPEG1VIDEO, 0x10000001 },
+    { CODEC_ID_MPEG2VIDEO, 0x10000002 },
+    { CODEC_ID_MPEG2VIDEO, MKTAG('D', 'V', 'R', ' ') },
+    { CODEC_ID_MPEG2VIDEO, MKTAG('M', 'M', 'E', 'S') },
+    { CODEC_ID_MJPEG, MKTAG('M', 'J', 'P', 'G') },
+    { CODEC_ID_MJPEG, MKTAG('L', 'J', 'P', 'G') },
+    { CODEC_ID_LJPEG, MKTAG('L', 'J', 'P', 'G') },
+    { CODEC_ID_MJPEG, MKTAG('J', 'P', 'G', 'L') }, /* Pegasus lossless JPEG */
+    { CODEC_ID_MJPEG, MKTAG('M', 'J', 'L', 'S') }, /* JPEG-LS custom FOURCC for avi - decoder */
+    { CODEC_ID_MJPEG, MKTAG('j', 'p', 'e', 'g') },
+    { CODEC_ID_MJPEG, MKTAG('I', 'J', 'P', 'G') },
+    { CODEC_ID_MJPEG, MKTAG('A', 'V', 'R', 'n') },
+    { CODEC_ID_HUFFYUV, MKTAG('H', 'F', 'Y', 'U') },
+    { CODEC_ID_FFVHUFF, MKTAG('F', 'F', 'V', 'H') },
+    { CODEC_ID_CYUV, MKTAG('C', 'Y', 'U', 'V') },
+    { CODEC_ID_RAWVIDEO, 0 },
+    { CODEC_ID_RAWVIDEO, MKTAG('I', '4', '2', '0') },
+    { CODEC_ID_RAWVIDEO, MKTAG('Y', 'U', 'Y', '2') },
+    { CODEC_ID_RAWVIDEO, MKTAG('Y', '4', '2', '2') },
+    { CODEC_ID_RAWVIDEO, MKTAG('Y', 'V', '1', '2') },
+    { CODEC_ID_RAWVIDEO, MKTAG('U', 'Y', 'V', 'Y') },
+    { CODEC_ID_RAWVIDEO, MKTAG('I', 'Y', 'U', 'V') },
+    { CODEC_ID_RAWVIDEO, MKTAG('Y', '8', '0', '0') },
+    { CODEC_ID_RAWVIDEO, MKTAG('H', 'D', 'Y', 'C') },
+    { CODEC_ID_INDEO3, MKTAG('I', 'V', '3', '1') },
+    { CODEC_ID_INDEO3, MKTAG('I', 'V', '3', '2') },
+    { CODEC_ID_VP3, MKTAG('V', 'P', '3', '1') },
+    { CODEC_ID_VP3, MKTAG('V', 'P', '3', '0') },
+    { CODEC_ID_ASV1, MKTAG('A', 'S', 'V', '1') },
+    { CODEC_ID_ASV2, MKTAG('A', 'S', 'V', '2') },
+    { CODEC_ID_VCR1, MKTAG('V', 'C', 'R', '1') },
+    { CODEC_ID_FFV1, MKTAG('F', 'F', 'V', '1') },
+    { CODEC_ID_XAN_WC4, MKTAG('X', 'x', 'a', 'n') },
+    { CODEC_ID_MSRLE, MKTAG('m', 'r', 'l', 'e') },
+    { CODEC_ID_MSRLE, MKTAG(0x1, 0x0, 0x0, 0x0) },
+    { CODEC_ID_MSVIDEO1, MKTAG('M', 'S', 'V', 'C') },
+    { CODEC_ID_MSVIDEO1, MKTAG('m', 's', 'v', 'c') },
+    { CODEC_ID_MSVIDEO1, MKTAG('C', 'R', 'A', 'M') },
+    { CODEC_ID_MSVIDEO1, MKTAG('c', 'r', 'a', 'm') },
+    { CODEC_ID_MSVIDEO1, MKTAG('W', 'H', 'A', 'M') },
+    { CODEC_ID_MSVIDEO1, MKTAG('w', 'h', 'a', 'm') },
+    { CODEC_ID_CINEPAK, MKTAG('c', 'v', 'i', 'd') },
+    { CODEC_ID_TRUEMOTION1, MKTAG('D', 'U', 'C', 'K') },
+    { CODEC_ID_MSZH, MKTAG('M', 'S', 'Z', 'H') },
+    { CODEC_ID_ZLIB, MKTAG('Z', 'L', 'I', 'B') },
+    { CODEC_ID_SNOW, MKTAG('S', 'N', 'O', 'W') },
+    { CODEC_ID_4XM, MKTAG('4', 'X', 'M', 'V') },
+    { CODEC_ID_FLV1, MKTAG('F', 'L', 'V', '1') },
+    { CODEC_ID_SVQ1, MKTAG('s', 'v', 'q', '1') },
+    { CODEC_ID_TSCC, MKTAG('t', 's', 'c', 'c') },
+    { CODEC_ID_ULTI, MKTAG('U', 'L', 'T', 'I') },
+    { CODEC_ID_VIXL, MKTAG('V', 'I', 'X', 'L') },
+    { CODEC_ID_QPEG, MKTAG('Q', 'P', 'E', 'G') },
+    { CODEC_ID_QPEG, MKTAG('Q', '1', '.', '0') },
+    { CODEC_ID_QPEG, MKTAG('Q', '1', '.', '1') },
+    { CODEC_ID_WMV3, MKTAG('W', 'M', 'V', '3') },
+    { CODEC_ID_LOCO, MKTAG('L', 'O', 'C', 'O') },
+    { CODEC_ID_THEORA, MKTAG('t', 'h', 'e', 'o') },
+#if LIBAVCODEC_VERSION_INT>0x000409
+    { CODEC_ID_WNV1, MKTAG('W', 'N', 'V', '1') },
+    { CODEC_ID_AASC, MKTAG('A', 'A', 'S', 'C') },
+    { CODEC_ID_INDEO2, MKTAG('R', 'T', '2', '1') },
+    { CODEC_ID_FRAPS, MKTAG('F', 'P', 'S', '1') },
+    { CODEC_ID_TRUEMOTION2, MKTAG('T', 'M', '2', '0') },
+#endif
+#if LIBAVCODEC_VERSION_INT>((50<<16)+(1<<8)+0)
+    { CODEC_ID_FLASHSV, MKTAG('F', 'S', 'V', '1') },
+    { CODEC_ID_JPEGLS,MKTAG('M', 'J', 'L', 'S') }, /* JPEG-LS custom FOURCC for avi - encoder */
+    { CODEC_ID_VC1, MKTAG('W', 'V', 'C', '1') },
+    { CODEC_ID_VC1, MKTAG('W', 'M', 'V', 'A') },
+    { CODEC_ID_CSCD, MKTAG('C', 'S', 'C', 'D') },
+    { CODEC_ID_ZMBV, MKTAG('Z', 'M', 'B', 'V') },
+    { CODEC_ID_KMVC, MKTAG('K', 'M', 'V', 'C') },
+#endif
+#if LIBAVCODEC_VERSION_INT>((51<<16)+(11<<8)+0)
+    { CODEC_ID_VP5, MKTAG('V', 'P', '5', '0') },
+    { CODEC_ID_VP6, MKTAG('V', 'P', '6', '0') },
+    { CODEC_ID_VP6, MKTAG('V', 'P', '6', '1') },
+    { CODEC_ID_VP6, MKTAG('V', 'P', '6', '2') },
+    { CODEC_ID_VP6F, MKTAG('V', 'P', '6', 'F') },
+    { CODEC_ID_JPEG2000, MKTAG('M', 'J', '2', 'C') },
+    { CODEC_ID_VMNC, MKTAG('V', 'M', 'n', 'c') },
+#endif
+#if LIBAVCODEC_VERSION_INT>=((51<<16)+(49<<8)+0)
+// this tag seems not to exist in older versions of FFMPEG
+    { CODEC_ID_TARGA, MKTAG('t', 'g', 'a', ' ') },
+#endif
+    { CODEC_ID_NONE, 0 },
+}"
+                :type ("AVCodecTag" type (:type "class") nil nil))
+                nil [3428 10745]))          
+      :file "ffmpeg_codecs.hpp"
+      :pointmax 10746
+      :fsize 10745
+      :lastmodtime '(22263 55187 520266 543000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MKTAG" (spp-arg-list ("a" "b" "c" "d") 3114 . 3123) . ((semantic-list "(a | (b << 8) | (c << 16) | (d << 24))" 3124 . 3162)))
+          ("INT64_C" (spp-arg-list ("c") 2443 . 2446) . ((semantic-list "(c##LL)" 2447 . 2454)))
+          ("UINT64_C" (spp-arg-list ("c") 2496 . 2499) . ((semantic-list "(c##ULL)" 2500 . 2508)))
+          )
+))
+  :file "!home!matt!ssd2!@home!matt!src!lucida!tools!opencv-2.4.9!modules!highgui!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

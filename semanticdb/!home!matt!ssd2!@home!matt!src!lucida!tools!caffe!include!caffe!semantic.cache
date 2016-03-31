@@ -1,0 +1,16 @@
+;; Object caffe/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "caffe/"
+  :tables
+  (list
+    (semanticdb-table "data_layers.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "data_layers.hpp"
+      :pointmax 11534
+      :fsize 11545
+      :lastmodtime '(22260 20182 212309 985000)
+      :unmatched-syntax nil))
+  :file "!home!matt!ssd2!@home!matt!src!lucida!tools!caffe!include!caffe!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,421 @@
+;; Object 4.9/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "4.9/"
+  :tables
+  (list
+    (semanticdb-table "exception"
+      :file "exception"
+      :fsize 5322
+      :lastmodtime '(21805 30074 0 0))
+    (semanticdb-table "stdexcept"
+      :file "stdexcept"
+      :fsize 4718
+      :lastmodtime '(21805 30073 0 0))
+    (semanticdb-table "string"
+      :file "string"
+      :fsize 1943
+      :lastmodtime '(21805 30073 0 0))
+    (semanticdb-table "vector"
+      :file "vector"
+      :fsize 2748
+      :lastmodtime '(21805 30073 0 0))
+    (semanticdb-table "memory"
+      :file "memory"
+      :fsize 2874
+      :lastmodtime '(21805 30073 0 0))
+    (semanticdb-table "cmath"
+      :file "cmath"
+      :fsize 42524
+      :lastmodtime '(21805 30073 0 0))
+    (semanticdb-table "cstdio"
+      :file "cstdio"
+      :fsize 4391
+      :lastmodtime '(21805 30073 0 0))
+    (semanticdb-table "cassert"
+      :file "cassert"
+      :fsize 1620
+      :lastmodtime '(21805 30073 0 0))
+    (semanticdb-table "array"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_ARRAY" variable (:constant-flag t) nil [1168 1182])
+            ("stdexcept" include (:system-flag t) nil [1279 1299])
+            ("bits/stl_algobase.h" include (:system-flag t) nil [1300 1330])
+            ("bits/range_access.h" include (:system-flag t) nil [1331 1361])
+            ("std" type
+               (:members 
+                  ( ("__array_traits" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("_Type" type
+                               (:typedef ("_Tp" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1524 1547]))                          )
+                        (reparse-symbol namespacesubparts) [1446 1685])
+                    ("__array_traits" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("_Type" type (:type "struct") (reparse-symbol classsubparts) [1754 1771]))                          
+                        :template-specifier 
+                          ( ("_Tp" type nil nil nil)
+                            ("0"))                          )
+                        (reparse-symbol namespacesubparts) [1688 1898])
+                    ("array" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value_type" type
+                               (:typedef ("_Tp" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2442 2479])
+                            ("pointer" type
+                               (:typedef ("value_type" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2486 2522])
+                            ("const_pointer" type
+                               (:typedef ("value_type" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2529 2591])
+                            ("reference" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2606 2653])
+                            ("const_reference" variable
+                               (:constant-flag t
+                                :type ("value_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2668 2721])
+                            ("iterator" type
+                               (:typedef ("value_type" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2728 2774])
+                            ("const_iterator" type
+                               (:typedef ("value_type" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2781 2830])
+                            ("size_type" type
+                               (:typedef ("std::size_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2837 2893])
+                            ("difference_type" type
+                               (:typedef ("std::ptrdiff_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2900 2964])
+                            ("reverse_iterator" type
+                               (:typedef ("std::reverse_iterator" type
+                                     (:template-specifier 
+                                        ( ("iterator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2971 3034])
+                            ("const_reverse_iterator" type
+                               (:typedef ("std::reverse_iterator" type
+                                     (:template-specifier 
+                                        ( ("const_iterator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3041 3112])
+                            ("_AT_Type" type
+                               (:typedef ("std::__array_traits" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3170 3228])
+                            ("_M_elems" variable
+                               (:typemodifiers ("typename")
+                                :type ("_AT_Type::_Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3235 3293])
+                            ("fill" function
+                               (:arguments 
+                                  ( ("__u" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("value_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3399 3421]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3383 3466])
+                            ("noexcept" function
+                               (:arguments 
+                                  ( ("" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3521 3579]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3512 3641])
+                            ("at" function
+                               (:arguments 
+                                  ( ("__n" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5344 5358]))                                  
+                                :type ("reference" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5325 5553])
+                            ("at" function
+                               (:arguments 
+                                  ( ("__n" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5596 5610]))                                  
+                                :type ("const_reference" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5571 5958]))                          )
+                        (reparse-symbol namespacesubparts) [2373 6624])
+                    ("==" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("__one" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6724 6753])
+                            ("__two" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6754 6783]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [6652 6853])
+                    ("!=" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("__one" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6928 6957])
+                            ("__two" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6958 6987]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [6857 7021])
+                    ("<" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("__a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7095 7122])
+                            ("__b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7123 7150]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [7025 7262])
+                    (">" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("__one" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7336 7365])
+                            ("__two" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7366 7395]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [7266 7425])
+                    ("<=" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("__one" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7500 7529])
+                            ("__two" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7530 7559]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [7429 7592])
+                    (">=" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("__one" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7667 7696])
+                            ("__two" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil)
+                                          ("_Nm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7697 7726]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [7596 7759])
+                    ("noexcept" function
+                       (:arguments 
+                          ( ("" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7918 7945]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [7909 7973]))                  
+                :type "namespace")
+                nil [1363 8815])
+            ("std" type
+               (:members 
+                  ( ("tuple_size" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [8979 9024])
+                    ("tuple_size" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "struct"
+                        :superclasses 
+                          ( ("integral_constant" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("std::array" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [9028 9176])
+                    ("tuple_element" type
+                       (:template 
+                          ( ("std::size_t" type nil nil nil)
+                            ("_Tp" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [9200 9265])
+                    ("tuple_element" type
+                       (:template 
+                          ( ("std::size_t" type nil nil nil)
+                            ("_Tp" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("static_assert" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("_Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9417 9423])
+                                    ("" variable (:type ("_Nm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9424 9428]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [9403 9455])
+                            ("type" type
+                               (:typedef ("_Tp" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9462 9479]))                          
+                        :template-specifier 
+                          ( ("_Int" type nil nil nil)
+                            ("std::array" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [9269 9486]))                  
+                :type "namespace")
+                nil [8834 9520]))          
+      :file "array"
+      :pointmax 9693
+      :fsize 9692
+      :lastmodtime '(21805 30073 0 0)
+      :unmatched-syntax '((symbol 9510 . 9518) (string 9429 . 9453) (punctuation 9422 . 9423) (symbol 8803 . 8813) (semantic-list 8626 . 8779) (symbol 8613 . 8621) (semantic-list 8582 . 8612) (symbol 8579 . 8582) (punctuation 8573 . 8574) (symbol 8570 . 8573) (CONST 8564 . 8569) (symbol 8554 . 8563) (punctuation 8548 . 8549) (symbol 8545 . 8548) (symbol 8538 . 8544) (punctuation 8537 . 8538) (punctuation 8536 . 8537) (symbol 8533 . 8536) (punctuation 8531 . 8532) (symbol 8528 . 8531) (TYPENAME 8519 . 8527) (punctuation 8517 . 8518) (symbol 8513 . 8517) (symbol 8506 . 8512) (punctuation 8505 . 8506) (punctuation 8504 . 8505) (symbol 8501 . 8504) (punctuation 8500 . 8501) (TEMPLATE 8492 . 8500) (semantic-list 8380 . 8488) (symbol 8367 . 8375) (semantic-list 8341 . 8366) (symbol 8338 . 8341) (punctuation 8358 . 8359) (punctuation 8332 . 8333) (punctuation 8331 . 8332) (symbol 8328 . 8331) (symbol 8318 . 8327) (punctuation 8312 . 8313) (symbol 8309 . 8312) (symbol 8302 . 8308) (punctuation 8301 . 8302) (punctuation 8300 . 8301) (symbol 8297 . 8300) (punctuation 8295 . 8296) (symbol 8292 . 8295) (TYPENAME 8283 . 8291) (punctuation 8281 . 8282) (symbol 8277 . 8281) (symbol 8270 . 8276) (punctuation 8269 . 8270) (punctuation 8268 . 8269) (symbol 8265 . 8268) (punctuation 8264 . 8265) (TEMPLATE 8256 . 8264) (semantic-list 8099 . 8252) (symbol 8086 . 8094) (semantic-list 8061 . 8085) (symbol 8058 . 8061) (punctuation 8052 . 8053) (symbol 8049 . 8052) (symbol 8039 . 8048) (punctuation 8033 . 8034) (symbol 8030 . 8033) (symbol 8023 . 8029) (punctuation 8022 . 8023) (punctuation 8021 . 8022) (symbol 8018 . 8021) (punctuation 8016 . 8017) (symbol 8013 . 8016) (TYPENAME 8004 . 8012) (punctuation 8002 . 8003) (symbol 7998 . 8002) (symbol 7991 . 7997) (punctuation 7990 . 7991) (punctuation 7989 . 7990) (symbol 7986 . 7989) (punctuation 7985 . 7986) (TEMPLATE 7977 . 7985) (semantic-list 7926 . 7945) (semantic-list 7856 . 7904) (symbol 7852 . 7856) (VOID 7843 . 7847) (INLINE 7836 . 7842) (punctuation 7830 . 7831) (symbol 7827 . 7830) (symbol 7820 . 7826) (punctuation 7819 . 7820) (punctuation 7818 . 7819) (symbol 7815 . 7818) (punctuation 7813 . 7814) (symbol 7810 . 7813) (TYPENAME 7801 . 7809) (punctuation 7800 . 7801) (TEMPLATE 7792 . 7800) (semantic-list 6558 . 6617) (symbol 6543 . 6551) (CONST 6537 . 6542) (semantic-list 6534 . 6536) (symbol 6530 . 6534) (symbol 6510 . 6523) (semantic-list 6443 . 6502) (symbol 6428 . 6436) (semantic-list 6425 . 6427) (symbol 6421 . 6425) (symbol 6407 . 6414) (semantic-list 6292 . 6399) (symbol 6277 . 6285) (CONST 6271 . 6276) (semantic-list 6268 . 6270) (symbol 6264 . 6268) (symbol 6241 . 6256) (symbol 6231 . 6240) (semantic-list 6184 . 6223) (symbol 6169 . 6177) (semantic-list 6166 . 6168) (symbol 6162 . 6166) (symbol 6145 . 6154) (semantic-list 6096 . 6137) (symbol 6081 . 6089) (CONST 6075 . 6080) (semantic-list 6072 . 6074) (symbol 6067 . 6072) (symbol 6044 . 6059) (symbol 6034 . 6043) (semantic-list 6006 . 6026) (symbol 5991 . 5999) (semantic-list 5988 . 5990) (symbol 5983 . 5988) (symbol 5966 . 5975) (symbol 5561 . 5570) (semantic-list 5274 . 5317) (symbol 5259 . 5267) (CONST 5253 . 5258) (semantic-list 5237 . 5252) (semantic-list 5235 . 5237) (OPERATOR 5227 . 5235) (symbol 5205 . 5220) (symbol 5195 . 5204) (semantic-list 5144 . 5187) (symbol 5129 . 5137) (semantic-list 5113 . 5128) (semantic-list 5111 . 5113) (OPERATOR 5103 . 5111) (symbol 5087 . 5096) (semantic-list 5031 . 5054) (symbol 5022 . 5030) (CONST 5016 . 5021) (semantic-list 5013 . 5015) (symbol 5008 . 5013) (BOOL 4996 . 5000) (symbol 4986 . 4995) (semantic-list 4963 . 4978) (symbol 4954 . 4962) (CONST 4948 . 4953) (semantic-list 4945 . 4947) (symbol 4937 . 4945) (symbol 4920 . 4929) (symbol 4910 . 4919) (semantic-list 4887 . 4902) (symbol 4878 . 4886) (CONST 4872 . 4877) (semantic-list 4869 . 4871) (symbol 4865 . 4869) (symbol 4848 . 4857) (symbol 4838 . 4847) (semantic-list 4768 . 4811) (symbol 4753 . 4761) (CONST 4747 . 4752) (semantic-list 4744 . 4746) (symbol 4739 . 4744) (symbol 4709 . 4731) (semantic-list 4660 . 4701) (symbol 4645 . 4653) (CONST 4639 . 4644) (semantic-list 4636 . 4638) (symbol 4629 . 4636) (symbol 4599 . 4621) (semantic-list 4551 . 4591) (symbol 4536 . 4544) (CONST 4530 . 4535) (semantic-list 4527 . 4529) (symbol 4523 . 4527) (symbol 4502 . 4516) (semantic-list 4460 . 4494) (symbol 4445 . 4453) (CONST 4439 . 4444) (semantic-list 4436 . 4438) (symbol 4430 . 4436) (symbol 4409 . 4423) (semantic-list 4358 . 4401) (symbol 4343 . 4351) (CONST 4337 . 4342) (semantic-list 4334 . 4336) (symbol 4330 . 4334) (symbol 4300 . 4322) (semantic-list 4255 . 4292) (symbol 4240 . 4248) (semantic-list 4237 . 4239) (symbol 4233 . 4237) (symbol 4209 . 4225) (semantic-list 4160 . 4201) (symbol 4145 . 4153) (CONST 4139 . 4144) (semantic-list 4136 . 4138) (symbol 4130 . 4136) (symbol 4100 . 4122) (semantic-list 4057 . 4092) (symbol 4042 . 4050) (semantic-list 4039 . 4041) (symbol 4033 . 4039) (symbol 4009 . 4025) (semantic-list 3961 . 4001) (symbol 3946 . 3954) (CONST 3940 . 3945) (semantic-list 3937 . 3939) (symbol 3934 . 3937) (symbol 3913 . 3927) (semantic-list 3871 . 3905) (symbol 3856 . 3864) (semantic-list 3853 . 3855) (symbol 3850 . 3853) (symbol 3835 . 3843) (semantic-list 3793 . 3827) (symbol 3778 . 3786) (CONST 3772 . 3777) (semantic-list 3769 . 3771) (symbol 3764 . 3769) (symbol 3743 . 3757) (semantic-list 3707 . 3735) (symbol 3692 . 3700) (semantic-list 3689 . 3691) (symbol 3684 . 3689) (symbol 3669 . 3677) (semantic-list 3529 . 3579) (semantic-list 3489 . 3505) (symbol 3485 . 3489) (VOID 3474 . 3478) (TYPEDEF 2660 . 2667) (TYPEDEF 2598 . 2605) (semantic-list 1853 . 1892) (symbol 1839 . 1847) (semantic-list 1811 . 1838) (symbol 1805 . 1811) (punctuation 1798 . 1799) (symbol 1795 . 1798) (symbol 1785 . 1794) (STATIC 1778 . 1784) (semantic-list 1640 . 1678) (symbol 1625 . 1633) (semantic-list 1589 . 1624) (symbol 1583 . 1589) (punctuation 1575 . 1576) (symbol 1572 . 1575) (symbol 1562 . 1571) (STATIC 1555 . 1561) (symbol 1198 . 1211) (symbol 1194 . 1197) (symbol 1187 . 1193) (punctuation 1186 . 1187))
+      :lexical-table 
+        '(("_GLIBCXX_ARRAY" . ((number "1" 1183 . 1184)))
+          )
+)
+    (semanticdb-table "iostream"
+      :file "iostream"
+      :fsize 2695
+      :lastmodtime '(21805 30073 0 0))
+    (semanticdb-table "cstdlib"
+      :file "cstdlib"
+      :fsize 6165
+      :lastmodtime '(21805 30073 0 0))
+    (semanticdb-table "functional"
+      :file "functional"
+      :fsize 80095
+      :lastmodtime '(21805 30073 0 0)))
+  :file "!usr!include!c++!4.9!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

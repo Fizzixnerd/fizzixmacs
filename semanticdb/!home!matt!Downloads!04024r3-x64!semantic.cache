@@ -1,0 +1,25 @@
+;; Object 04024r3-x64/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "04024r3-x64/"
+  :tables
+  (list
+    (semanticdb-table "qfcscript.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [20 29])
+            ("subprocess" include nil nil [30 47])
+            ("os.path" include nil nil [48 70])
+            ("good_listdir" function (:arguments 
+              ( ("dirname" variable nil (reparse-symbol function_parameters) [89 96]))              ) nil [72 183])
+            ("blueprints_basename" variable nil nil [184 229])
+            ("macros_basename" variable nil nil [230 276])
+            ("blueprint_dirs" variable nil nil [277 327])
+            ("for" code nil nil [329 750]))          
+      :file "qfcscript.py"
+      :pointmax 759
+      :fsize 758
+      :lastmodtime '(22048 3392 136944 967000)
+      :unmatched-syntax nil))
+  :file "!home!matt!Downloads!04024r3-x64!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

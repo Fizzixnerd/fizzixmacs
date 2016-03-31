@@ -1,0 +1,82 @@
+;; Object p1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "p1/"
+  :tables
+  (list
+    (semanticdb-table "p1.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("matplotlib.pyplot" include nil nil [20 51])
+            ("scipy" include nil nil [52 64])
+            ("value" function
+               (:documentation "Return the value of a measurement."
+                :arguments 
+                  ( ("x" variable nil (reparse-symbol function_parameters) [631 632]))                  )
+                nil [621 696])
+            ("err" function
+               (:documentation "Return the error of a measurement."
+                :arguments 
+                  ( ("x" variable nil (reparse-symbol function_parameters) [705 706]))                  )
+                nil [697 770])
+            ("subtract" function
+               (:documentation "Return the correctly error-propogated measurement defined by x - y."
+                :arguments 
+                  ( ("x" variable nil (reparse-symbol function_parameters) [784 785])
+                    ("y" variable nil (reparse-symbol function_parameters) [787 788]))                  )
+                nil [771 938])
+            ("residual" function
+               (:documentation "Return the residual of the measurement y and the fitting function f
+evaluated at x.
+    "
+                :arguments 
+                  ( ("x" variable nil (reparse-symbol function_parameters) [952 953])
+                    ("y" variable nil (reparse-symbol function_parameters) [955 956])
+                    ("f" variable nil (reparse-symbol function_parameters) [958 959]))                  )
+                nil [939 1090])
+            ("linearp" function
+               (:documentation "Return the measurement of the linear polynomial cs[0] * x + cs[1],
+where x is a measurement.
+    "
+                :arguments 
+                  ( ("x" variable nil (reparse-symbol function_parameters) [1103 1104])
+                    ("cs" variable nil (reparse-symbol function_parameters) [1106 1108]))                  )
+                nil [1091 1273])
+            ("chi_squared" function
+               (:documentation "Return the chi**2 value calculated from the residuals and
+errors."
+                :arguments 
+                  ( ("residuals" variable nil (reparse-symbol function_parameters) [1290 1299]))                  )
+                nil [1274 1446])
+            ("reduced_chi_squared" function
+               (:documentation "Return the reduced chi**2 value calculated from the chi**2, and the
+    number of degrees of freedom of the model.
+    "
+                :arguments 
+                  ( ("chi_sq" variable nil (reparse-symbol function_parameters) [1471 1477])
+                    ("ndof" variable nil (reparse-symbol function_parameters) [1479 1483]))                  )
+                nil [1447 1648])
+            ("cold_bath_temps" variable nil nil [1716 1768])
+            ("warm_bath_temps" variable nil nil [1769 2043])
+            ("voltages" variable nil nil [2059 2267])
+            ("currents" variable nil nil [2282 2349])
+            ("cold_bath_temp" variable nil nil [2501 2687])
+            ("deltas" variable nil nil [2804 2872])
+            ("fit, cov" code nil nil [2987 3066])
+            ("fit_xs" variable nil nil [3247 3280])
+            ("fit_ys" code nil nil [3281 3314])
+            ("fit_func" variable nil nil [3340 3376])
+            ("residuals" variable nil nil [3452 3568])
+            ("ndof" code nil nil [3708 3750])
+            ("chi_squared_value" variable nil nil [3751 3793])
+            ("reduced_chi_squared_value" variable nil nil [3794 3866])
+            ("main" function nil nil [4018 4896])
+            ("if" code nil nil [4897 4935]))          
+      :file "p1.py"
+      :pointmax 4935
+      :fsize 4934
+      :lastmodtime '(22177 18247 169513 784000)
+      :unmatched-syntax nil))
+  :file "!home!matt!Documents!school!phy324!p1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

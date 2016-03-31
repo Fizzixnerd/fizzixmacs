@@ -1,0 +1,381 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables
+  (list
+    (semanticdb-table "io.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CAFFE_UTIL_IO_H_" variable (:constant-flag t) nil [34 50])
+            ("unistd.h" include (:system-flag t) nil [52 71])
+            ("string" include (:system-flag t) nil [72 89])
+            ("google/protobuf/message.h" include nil nil [91 127])
+            ("hdf5/serial/hdf5.h" include nil nil [128 157])
+            ("hdf5/serial/hdf5_hl.h" include nil nil [158 190])
+            ("caffe/blob.hpp" include nil nil [192 217])
+            ("caffe/proto/caffe.pb.h" include nil nil [218 251])
+            ("HDF5_NUM_DIMS" variable (:constant-flag t) nil [261 274])
+            ("leveldb" type
+               (:members 
+                  ( ("Options" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [377 392]))                  
+                :type "namespace")
+                nil [278 394])
+            ("caffe" type
+               (:members 
+                  ( ("google::protobuf::Message" variable (:type "int") (reparse-symbol namespacesubparts) [423 449])
+                    ("MakeTempFilename" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("temp_filename" variable
+                               (:pointer 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [480 502]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [451 931])
+                    ("MakeTempDir" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("temp_dirname" variable
+                               (:pointer 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [957 978]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [933 1424])
+                    ("ReadProtoFromTextFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1453 1474])
+                            ("proto" variable
+                               (:pointer 1
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1475 1490]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1426 1491])
+                    ("ReadProtoFromTextFile" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1527 1550])
+                            ("proto" variable
+                               (:pointer 1
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1551 1566]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1493 1627])
+                    ("ReadProtoFromTextFileOrDie" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1668 1689])
+                            ("proto" variable
+                               (:pointer 1
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1690 1705]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1629 1758])
+                    ("ReadProtoFromTextFileOrDie" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1799 1822])
+                            ("proto" variable
+                               (:pointer 1
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1823 1838]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1760 1897])
+                    ("WriteProtoToTextFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("proto" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1925 1946])
+                            ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1947 1968]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1899 1969])
+                    ("WriteProtoToTextFile" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("proto" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2003 2024])
+                            ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2025 2048]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1970 2101])
+                    ("ReadProtoFromBinaryFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2132 2153])
+                            ("proto" variable
+                               (:pointer 1
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2154 2169]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2103 2170])
+                    ("ReadProtoFromBinaryFile" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2208 2231])
+                            ("proto" variable
+                               (:pointer 1
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2232 2247]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2172 2310])
+                    ("ReadProtoFromBinaryFileOrDie" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2353 2374])
+                            ("proto" variable
+                               (:pointer 1
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2375 2390]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2312 2445])
+                    ("ReadProtoFromBinaryFileOrDie" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2488 2511])
+                            ("proto" variable
+                               (:pointer 1
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2553 2568]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2447 2629])
+                    ("WriteProtoToBinaryFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("proto" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2660 2681])
+                            ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2682 2703]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2632 2704])
+                    ("WriteProtoToBinaryFile" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("proto" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2745 2766])
+                            ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2767 2790]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2705 2845])
+                    ("ReadImageToDatum" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2869 2892])
+                            ("label" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2893 2909])
+                            ("height" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2914 2931])
+                            ("width" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2932 2948])
+                            ("is_color" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2949 2969])
+                            ("datum" variable
+                               (:pointer 1
+                                :type ("Datum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2970 2983]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2847 2984])
+                    ("ReadImageToDatum" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3015 3038])
+                            ("label" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3039 3055])
+                            ("height" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3060 3077])
+                            ("width" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3078 3094])
+                            ("datum" variable
+                               (:pointer 1
+                                :type ("Datum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3095 3108]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2986 3184])
+                    ("ReadImageToDatum" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3215 3238])
+                            ("label" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3239 3255])
+                            ("datum" variable
+                               (:pointer 1
+                                :type ("Datum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3260 3273]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3186 3334])
+                    ("GetLevelDBOptions" function
+                       (:prototype-flag t
+                        :type ("leveldb::Options" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3336 3373])
+                    ("hdf5_load_nd_dataset_helper" function
+                       (:template 
+                          ( ("Dtype" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file_id" variable (:type ("hid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3437 3451])
+                            ("dataset_name_" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3452 3478])
+                            ("min_dim" variable (:type "int") (reparse-symbol arg-sub-list) [3479 3491])
+                            ("max_dim" variable (:type "int") (reparse-symbol arg-sub-list) [3492 3504])
+                            ("blob" variable
+                               (:pointer 1
+                                :type ("Blob" type
+                                     (:template-specifier 
+                                        ( ("Dtype" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3507 3525]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3375 3526])
+                    ("hdf5_load_nd_dataset" function
+                       (:template 
+                          ( ("Dtype" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file_id" variable (:type ("hid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3583 3597])
+                            ("dataset_name_" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3598 3624])
+                            ("min_dim" variable (:type "int") (reparse-symbol arg-sub-list) [3625 3637])
+                            ("max_dim" variable (:type "int") (reparse-symbol arg-sub-list) [3638 3650])
+                            ("blob" variable
+                               (:pointer 1
+                                :type ("Blob" type
+                                     (:template-specifier 
+                                        ( ("Dtype" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3653 3671]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3528 3672])
+                    ("hdf5_save_nd_dataset" function
+                       (:template 
+                          ( ("Dtype" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file_id" variable
+                               (:constant-flag t
+                                :type ("hid_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3729 3749])
+                            ("dataset_name" variable
+                               (:constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3750 3776])
+                            ("blob" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Blob" type
+                                     (:template-specifier 
+                                        ( ("Dtype" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3777 3801]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3674 3802]))                  
+                :type "namespace")
+                nil [396 3805]))          
+      :file "io.hpp"
+      :pointmax 3856
+      :fsize 3855
+      :lastmodtime '(22260 20011 219555 443000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HDF5_NUM_DIMS" . ((number "4" 263 . 264)))
+          ("CAFFE_UTIL_IO_H_")
+          )
+))
+  :file "!home!matt!ssd2!@home!matt!src!lucida!tools!caffe!include!caffe!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

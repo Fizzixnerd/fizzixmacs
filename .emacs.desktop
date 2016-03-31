@@ -1,0 +1,85 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Wed Sep  9 11:46:36 2015
+;; Desktop file format version 206
+;; Emacs version 24.4.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (22000 21596 328284 288000) (desktop . "206") "matt@ultrawalker" nil nil ((((vertical-scroll-bars . right) (tool-bar-lines . 0) (foreground-color . "unspecified-fg") (background-color . "unspecified-bg") (display-type . mono) (background-mode . dark) (cursor-color . "white") (font . "tty") (height . 10) (width . 10) (modeline . t) (unsplittable) (menu-bar-lines . 1) (frameset--id . "FEE9-E19E-2DAC-5753") (frameset--mini t) (minibuffer . t)) ((min-height . 8) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 2) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 8) (min-pixel-width . 10) (min-pixel-height-ignore . 4) (min-pixel-width-ignore . 2) (min-pixel-height-safe . 2) (min-pixel-width-safe . 2)) vc (pixel-width . 10) (pixel-height . 8) (total-width . 10) (total-height . 8) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 10) (pixel-height . 4) (total-width . 10) (total-height . 4) (normal-height . 0.5) (normal-width . 1.0) (buffer "*GHC Error*" (selected) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 30) (start . 1))) (leaf (last . t) (pixel-width . 10) (pixel-height . 4) (total-width . 10) (total-height . 4) (normal-height . 0.5) (normal-width . 1.0) (buffer "petition.tex" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 3526) (start . 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("ghci" "ghc" "ghc-syn" "ghc-comm" "4" "slime"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("/home/matt/.emacs.d/site-lisp/customizations/desktop-customizations.el" "/home/matt/src/gmail/src/Gmail.hs" "/home/matt/Documents/school/petition/late-petition/petition.tex" "/home/matt/Documents/school/petition/primary-petition/primary.tex" "/home/matt/Documents/school/petition/doctor-note/note.tex" "/home/matt/src/gmail/src/Gmail/TH.hs" "/home/matt/src/gmail/src/Gmail/Auth.hs" "/home/matt/Documents/school/petition/doctor-note/note.tex" "/home/matt/src/gmail/src/Gmail/Api.hs" "/home/matt/src/gmail/src/Gmail/Types.hs" "/home/matt/src/gmail/base.txt" "/home/matt/src/gmail/src/Gmail/Api/List.hs" "/home/matt/src/gmail/src/Gmail/Types.hs" "/home/matt/src/gmail/src/Gmail/Api/List.hs" "/home/matt/src/gmail/src/Gmail/Types.hs" "/home/matt/src/gmail/src/Gmail/Auth.hs" "/home/matt/src/gmail/src/Main.hs" "/home/matt/src/gmail/src/Gmail/Auth.hs" "/home/matt/src/gmail/src/Gmail/Types.hs" "/home/matt/src/gmail/src/Gmail/Auth.hs" "/home/matt/src/gmail/src/Gmail/Types.hs" "/home/matt/src/gmail/gmail.cabal" "/home/matt/.config/gmail/oauth2.json" "/home/matt/.gmail/oauth2.json" "~/.gmail" "~/" "/home/matt/src/gmail/src/Gmail/.gmail" "/home/matt/src/gmail/src/Gmail/Auth.hs" "/home/matt/src/gmail/src/Gmail/Types.hs" "/home/matt/src/scratch/haskell/src/Lib.hs"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/matt/Documents/school/petition/late-petition/petition.tex"
+  "petition.tex"
+  'latex-mode
+  '(yas-minor-mode window-number-mode TeX-PDF-mode company-mode outline-minor-mode)
+  3526
+  '(2906 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (case-fold-search . t)))
+
+(desktop-create-buffer 206
+  "/home/matt/.emacs.d/site-lisp/customizations/desktop-customizations.el"
+  "desktop-customizations.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode window-number-mode TeX-PDF-mode)
+  2
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . prefer-utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/matt/Documents/school/petition/primary-petition/primary.tex"
+  "primary.tex"
+  'latex-mode
+  '(yas-minor-mode window-number-mode TeX-PDF-mode company-mode outline-minor-mode)
+  2800
+  '(1490 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (case-fold-search . t)))
+
+(desktop-create-buffer 206
+  "/home/matt/src/gmail/gmail.cabal"
+  "gmail.cabal"
+  'haskell-cabal-mode
+  '(yas-minor-mode window-number-mode TeX-PDF-mode)
+  2419
+  '(1619 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/matt/src/gmail/src/Main.hs"
+  "Main.hs"
+  'haskell-mode
+  '(haskell-doc-mode yas-minor-mode window-number-mode TeX-PDF-mode company-mode subword-mode interactive-haskell-mode)
+  88
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/matt/src/gmail/src/Gmail/TH.hs"
+  "TH.hs"
+  'haskell-mode
+  '(haskell-doc-mode yas-minor-mode window-number-mode TeX-PDF-mode company-mode subword-mode interactive-haskell-mode)
+  750
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+

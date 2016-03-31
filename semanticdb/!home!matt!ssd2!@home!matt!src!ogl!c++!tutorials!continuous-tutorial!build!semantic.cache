@@ -1,0 +1,16 @@
+;; Object build/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "build/"
+  :tables
+  (list
+    (semanticdb-table "compile_commands.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "compile_commands.json"
+      :pointmax 2368
+      :fsize 2367
+      :lastmodtime '(21954 41775 981849 746000)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 2368))))
+  :file "!home!matt!ssd2!@home!matt!src!ogl!c++!tutorials!continuous-tutorial!build!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

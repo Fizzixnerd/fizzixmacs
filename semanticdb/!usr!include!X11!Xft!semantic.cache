@@ -1,0 +1,1349 @@
+;; Object Xft/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Xft/"
+  :tables
+  (list
+    (semanticdb-table "Xft.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_XFT_H_" variable (:constant-flag t) nil [1254 1261])
+            ("XFT_MAJOR" variable (:constant-flag t) nil [1402 1411])
+            ("XFT_MINOR" variable (:constant-flag t) nil [1422 1431])
+            ("XFT_REVISION" variable (:constant-flag t) nil [1442 1454])
+            ("XFT_VERSION" variable (:constant-flag t) nil [1466 1477])
+            ("XftVersion" variable (:constant-flag t) nil [1545 1555])
+            ("stdarg.h" include (:system-flag t) nil [1569 1588])
+            ("ft2build.h" include (:system-flag t) nil [1589 1610])
+            ("fontconfig/fontconfig.h" include (:system-flag t) nil [1634 1668])
+            ("X11/extensions/Xrender.h" include (:system-flag t) nil [1669 1704])
+            ("X11/Xfuncproto.h" include (:system-flag t) nil [1706 1733])
+            ("_X_SENTINEL" variable (:constant-flag t) nil [1793 1804])
+            ("X11/Xft/XftCompat.h" include (:system-flag t) nil [1840 1870])
+            ("XFT_CORE" variable (:constant-flag t) nil [1887 1895])
+            ("XFT_RENDER" variable (:constant-flag t) nil [1912 1922])
+            ("XFT_XLFD" variable (:constant-flag t) nil [1941 1949])
+            ("XFT_MAX_GLYPH_MEMORY" variable (:constant-flag t) nil [1966 1986])
+            ("XFT_MAX_UNREF_FONTS" variable (:constant-flag t) nil [2012 2031])
+            ("_XftFTlibrary" variable
+               (:typemodifiers ("extern")
+                :type ("FT_Library" type (:type "class") nil nil))
+                nil [2049 2081])
+            ("XftFontInfo" type
+               (:typedef ("_XftFontInfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2083 2123])
+            ("_XftFont" type
+               (:members 
+                  ( ("ascent" variable (:type "int") (reparse-symbol classsubparts) [2155 2167])
+                    ("descent" variable (:type "int") (reparse-symbol classsubparts) [2172 2185])
+                    ("height" variable (:type "int") (reparse-symbol classsubparts) [2190 2202])
+                    ("max_advance_width" variable (:type "int") (reparse-symbol classsubparts) [2207 2230])
+                    ("charset" variable
+                       (:pointer 1
+                        :type ("FcCharSet" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2235 2254])
+                    ("pattern" variable
+                       (:pointer 1
+                        :type ("FcPattern" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2259 2278]))                  
+                :type "struct")
+                nil [2125 2289])
+            ("XftFont" type
+               (:typedef ("_XftFont" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2125 2289])
+            ("XftDraw" type
+               (:typedef ("_XftDraw" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2291 2323])
+            ("_XftColor" type
+               (:members 
+                  ( ("pixel" variable (:type "unsigned long") (reparse-symbol classsubparts) [2356 2378])
+                    ("color" variable (:type ("XRenderColor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2383 2405]))                  
+                :type "struct")
+                nil [2325 2417])
+            ("XftColor" type
+               (:typedef ("_XftColor" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2325 2417])
+            ("_XftCharSpec" type
+               (:members 
+                  ( ("ucs4" variable (:type ("FcChar32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2453 2471])
+                    ("x" variable (:type "short") (reparse-symbol classsubparts) [2476 2488])
+                    ("y" variable (:type "short") (reparse-symbol classsubparts) [2493 2505]))                  
+                :type "struct")
+                nil [2419 2520])
+            ("XftCharSpec" type
+               (:typedef ("_XftCharSpec" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2419 2520])
+            ("_XftCharFontSpec" type
+               (:members 
+                  ( ("font" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2560 2578])
+                    ("ucs4" variable (:type ("FcChar32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2583 2601])
+                    ("x" variable (:type "short") (reparse-symbol classsubparts) [2606 2618])
+                    ("y" variable (:type "short") (reparse-symbol classsubparts) [2623 2635]))                  
+                :type "struct")
+                nil [2522 2654])
+            ("XftCharFontSpec" type
+               (:typedef ("_XftCharFontSpec" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2522 2654])
+            ("_XftGlyphSpec" type
+               (:members 
+                  ( ("glyph" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2691 2709])
+                    ("x" variable (:type "short") (reparse-symbol classsubparts) [2714 2726])
+                    ("y" variable (:type "short") (reparse-symbol classsubparts) [2731 2743]))                  
+                :type "struct")
+                nil [2656 2759])
+            ("XftGlyphSpec" type
+               (:typedef ("_XftGlyphSpec" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2656 2759])
+            ("_XftGlyphFontSpec" type
+               (:members 
+                  ( ("font" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2800 2818])
+                    ("glyph" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2823 2841])
+                    ("x" variable (:type "short") (reparse-symbol classsubparts) [2846 2858])
+                    ("y" variable (:type "short") (reparse-symbol classsubparts) [2863 2875]))                  
+                :type "struct")
+                nil [2761 2895])
+            ("XftGlyphFontSpec" type
+               (:typedef ("_XftGlyphFontSpec" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2761 2895])
+            ("XftColorAllocName" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2957 2971])
+                    ("Visual" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2977 2995])
+                    ("" variable (:type ("visual" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2995 3002])
+                    ("cmap" variable (:type ("Colormap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3008 3022])
+                    ("" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3028 3040])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3036 3051])
+                    ("result" variable
+                       (:pointer 1
+                        :type ("XftColor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3057 3074]))                  
+                :type ("Bool" type (:type "class") nil nil))
+                nil [2933 3075])
+            ("XftColorAllocValue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3102 3119])
+                    ("visual" variable
+                       (:pointer 1
+                        :type ("Visual" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3126 3145])
+                    ("cmap" variable (:type ("Colormap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3152 3170])
+                    ("XRenderColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3177 3202])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3202 3208])
+                    ("result" variable
+                       (:pointer 1
+                        :type ("XftColor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3215 3236]))                  
+                :type ("Bool" type (:type "class") nil nil))
+                nil [3077 3237])
+            ("XftColorFree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3258 3271])
+                    ("visual" variable
+                       (:pointer 1
+                        :type ("Visual" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3279 3294])
+                    ("cmap" variable (:type ("Colormap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3302 3316])
+                    ("color" variable
+                       (:pointer 1
+                        :type ("XftColor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3324 3340]))                  
+                :type "void")
+                nil [3239 3341])
+            ("XftDefaultHasRender" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3384 3397]))                  
+                :type ("Bool" type (:type "class") nil nil))
+                nil [3358 3398])
+            ("XftDefaultSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3420 3433])
+                    ("defaults" variable
+                       (:pointer 1
+                        :type ("FcPattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3434 3454]))                  
+                :type ("Bool" type (:type "class") nil nil))
+                nil [3400 3455])
+            ("XftDefaultSubstitute" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3484 3497])
+                    ("screen" variable (:type "int") (reparse-symbol arg-sub-list) [3498 3509])
+                    ("pattern" variable
+                       (:pointer 1
+                        :type ("FcPattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3510 3529]))                  
+                :type "void")
+                nil [3457 3530])
+            ("XftDrawCreate" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3574 3589])
+                    ("drawable" variable (:type ("Drawable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3598 3617])
+                    ("visual" variable
+                       (:pointer 1
+                        :type ("Visual" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3626 3644])
+                    ("colormap" variable (:type ("Colormap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3653 3672]))                  
+                :type ("XftDraw" type (:type "class") nil nil))
+                nil [3549 3673])
+            ("XftDrawCreateBitmap" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3706 3720])
+                    ("bitmap" variable (:type ("Pixmap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3728 3744]))                  
+                :type ("XftDraw" type (:type "class") nil nil))
+                nil [3675 3745])
+            ("XftDrawCreateAlpha" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3777 3790])
+                    ("pixmap" variable (:type ("Pixmap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3797 3812])
+                    ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [3819 3833]))                  
+                :type ("XftDraw" type (:type "class") nil nil))
+                nil [3747 3834])
+            ("XftDrawChange" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3856 3870])
+                    ("drawable" variable (:type ("Drawable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3879 3897]))                  
+                :type "void")
+                nil [3836 3898])
+            ("XftDrawDisplay" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3926 3940]))                  
+                :type ("Display" type (:type "class") nil nil))
+                nil [3900 3941])
+            ("XftDrawDrawable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3969 3983]))                  
+                :type ("Drawable" type (:type "class") nil nil))
+                nil [3943 3984])
+            ("XftDrawColormap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4012 4026]))                  
+                :type ("Colormap" type (:type "class") nil nil))
+                nil [3986 4027])
+            ("XftDrawVisual" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4053 4067]))                  
+                :type ("Visual" type (:type "class") nil nil))
+                nil [4029 4068])
+            ("XftDrawDestroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4091 4105]))                  
+                :type "void")
+                nil [4070 4106])
+            ("XftDrawPicture" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4132 4146]))                  
+                :type ("Picture" type (:type "class") nil nil))
+                nil [4108 4147])
+            ("XftDrawSrcPicture" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4176 4190])
+                    ("XftColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4191 4209])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4209 4215]))                  
+                :type ("Picture" type (:type "class") nil nil))
+                nil [4149 4216])
+            ("XftDrawGlyphs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4238 4253])
+                    ("XftColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4262 4280])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4280 4286])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4295 4309])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4318 4325])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4334 4341])
+                    ("FT_UInt" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4350 4367])
+                    ("" variable (:type ("glyphs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4367 4374])
+                    ("nglyphs" variable (:type "int") (reparse-symbol arg-sub-list) [4383 4396]))                  
+                :type "void")
+                nil [4218 4397])
+            ("XftDrawString8" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4420 4439])
+                    ("XftColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4442 4463])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4463 4469])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4472 4490])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4493 4504])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4507 4518])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4521 4542])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4542 4549])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [4552 4565]))                  
+                :type "void")
+                nil [4399 4566])
+            ("XftDrawString16" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4590 4608])
+                    ("XftColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4612 4632])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4632 4638])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4642 4659])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4663 4674])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4678 4689])
+                    ("FcChar16" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4693 4713])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4713 4720])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [4724 4737]))                  
+                :type "void")
+                nil [4568 4738])
+            ("XftDrawString32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4762 4780])
+                    ("XftColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4784 4804])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4804 4810])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4814 4831])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4835 4846])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4850 4861])
+                    ("FcChar32" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4865 4885])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4885 4892])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [4896 4909]))                  
+                :type "void")
+                nil [4740 4910])
+            ("XftDrawStringUtf8" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4936 4954])
+                    ("XftColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4960 4978])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4978 4984])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4990 5007])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5013 5024])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5030 5041])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5047 5065])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5065 5072])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [5078 5091]))                  
+                :type "void")
+                nil [4912 5092])
+            ("XftDrawStringUtf16" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5119 5134])
+                    ("XftColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5141 5159])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5159 5165])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5172 5186])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5193 5201])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5208 5216])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5223 5240])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5240 5247])
+                    ("endian" variable (:type ("FcEndian" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5254 5271])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [5278 5288]))                  
+                :type "void")
+                nil [5094 5289])
+            ("XftDrawCharSpec" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5313 5328])
+                    ("XftColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5332 5350])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5350 5356])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5360 5374])
+                    ("XftCharSpec" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5378 5399])
+                    ("" variable (:type ("chars" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5399 5405])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [5409 5419]))                  
+                :type "void")
+                nil [5291 5420])
+            ("XftDrawCharFontSpec" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5448 5464])
+                    ("XftColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5472 5491])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5491 5497])
+                    ("XftCharFontSpec" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5505 5530])
+                    ("" variable (:type ("chars" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5530 5536])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [5544 5554]))                  
+                :type "void")
+                nil [5422 5555])
+            ("XftDrawGlyphSpec" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5580 5595])
+                    ("XftColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5600 5618])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5618 5624])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5629 5643])
+                    ("XftGlyphSpec" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5648 5670])
+                    ("" variable (:type ("glyphs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5670 5677])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [5682 5692]))                  
+                :type "void")
+                nil [5557 5693])
+            ("XftDrawGlyphFontSpec" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5722 5738])
+                    ("XftColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5747 5766])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5766 5772])
+                    ("XftGlyphFontSpec" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5781 5807])
+                    ("" variable (:type ("glyphs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5807 5814])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [5823 5833]))                  
+                :type "void")
+                nil [5695 5834])
+            ("XftDrawRect" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5854 5869])
+                    ("XftColor" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5876 5894])
+                    ("" variable (:type ("color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5894 5900])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5907 5914])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5921 5928])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5935 5954])
+                    ("height" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5961 5981]))                  
+                :type "void")
+                nil [5836 5982])
+            ("XftDrawSetClip" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6006 6024])
+                    ("r" variable (:type ("Region" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6027 6040]))                  
+                :type ("Bool" type (:type "class") nil nil))
+                nil [5985 6041])
+            ("XftDrawSetClipRectangles" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6075 6090])
+                    ("xOrigin" variable (:type "int") (reparse-symbol arg-sub-list) [6096 6110])
+                    ("yOrigin" variable (:type "int") (reparse-symbol arg-sub-list) [6116 6130])
+                    ("XRectangle" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6136 6156])
+                    ("" variable (:type ("rects" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6156 6162])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [6168 6176]))                  
+                :type ("Bool" type (:type "class") nil nil))
+                nil [6044 6177])
+            ("XftDrawSetSubwindowMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("draw" variable
+                       (:pointer 1
+                        :type ("XftDraw" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6209 6226])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [6231 6244]))                  
+                :type "void")
+                nil [6179 6245])
+            ("XftGlyphExtents" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6288 6305])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6309 6326])
+                    ("FT_UInt" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6330 6350])
+                    ("" variable (:type ("glyphs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6350 6357])
+                    ("nglyphs" variable (:type "int") (reparse-symbol arg-sub-list) [6361 6378])
+                    ("extents" variable
+                       (:pointer 1
+                        :type ("XGlyphInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6382 6406]))                  
+                :type "void")
+                nil [6266 6407])
+            ("XftTextExtents8" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6431 6448])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6452 6469])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6473 6493])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6493 6500])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [6504 6517])
+                    ("extents" variable
+                       (:pointer 1
+                        :type ("XGlyphInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6521 6545]))                  
+                :type "void")
+                nil [6409 6546])
+            ("XftTextExtents16" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6571 6588])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6593 6610])
+                    ("FcChar16" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6615 6634])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6634 6641])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [6646 6659])
+                    ("extents" variable
+                       (:pointer 1
+                        :type ("XGlyphInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6664 6688]))                  
+                :type "void")
+                nil [6548 6689])
+            ("XftTextExtents32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6714 6731])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6736 6753])
+                    ("FcChar32" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6758 6777])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6777 6784])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [6789 6802])
+                    ("extents" variable
+                       (:pointer 1
+                        :type ("XGlyphInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6807 6831]))                  
+                :type "void")
+                nil [6691 6832])
+            ("XftTextExtentsUtf8" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6859 6876])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6883 6900])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6907 6924])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6924 6931])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [6938 6951])
+                    ("extents" variable
+                       (:pointer 1
+                        :type ("XGlyphInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6958 6982]))                  
+                :type "void")
+                nil [6834 6983])
+            ("XftTextExtentsUtf16" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7011 7025])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7033 7047])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7055 7072])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7072 7079])
+                    ("endian" variable (:type ("FcEndian" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7087 7104])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [7112 7121])
+                    ("extents" variable
+                       (:pointer 1
+                        :type ("XGlyphInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7129 7150]))                  
+                :type "void")
+                nil [6985 7151])
+            ("XftFontMatch" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7195 7209])
+                    ("screen" variable (:type "int") (reparse-symbol arg-sub-list) [7217 7229])
+                    ("FcPattern" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7237 7256])
+                    ("" variable (:type ("pattern" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7256 7264])
+                    ("result" variable
+                       (:pointer 1
+                        :type ("FcResult" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7272 7290]))                  
+                :type ("FcPattern" type (:type "class") nil nil))
+                nil [7169 7291])
+            ("XftFontOpen" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7316 7329])
+                    ("screen" variable (:type "int") (reparse-symbol arg-sub-list) [7330 7341])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7342 7346]))                  
+                :type ("XftFont" type (:type "class") nil nil))
+                nil [7293 7362])
+            ("XftFontOpenName" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7391 7404])
+                    ("screen" variable (:type "int") (reparse-symbol arg-sub-list) [7405 7416])
+                    ("" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7417 7429])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7425 7436]))                  
+                :type ("XftFont" type (:type "class") nil nil))
+                nil [7364 7437])
+            ("XftFontOpenXlfd" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7466 7479])
+                    ("screen" variable (:type "int") (reparse-symbol arg-sub-list) [7480 7491])
+                    ("" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7492 7504])
+                    ("xlfd" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7500 7511]))                  
+                :type ("XftFont" type (:type "class") nil nil))
+                nil [7439 7512])
+            ("XftLockFace" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7556 7569]))                  
+                :type ("FT_Face" type (:type "class") nil nil))
+                nil [7535 7570])
+            ("XftUnlockFace" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7592 7605]))                  
+                :type "void")
+                nil [7572 7606])
+            ("XftFontInfoCreate" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7641 7654])
+                    ("FcPattern" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7655 7674])
+                    ("" variable (:type ("pattern" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7674 7682]))                  
+                :type ("XftFontInfo" type (:type "class") nil nil))
+                nil [7608 7683])
+            ("XftFontInfoDestroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7710 7723])
+                    ("fi" variable
+                       (:pointer 1
+                        :type ("XftFontInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7724 7740]))                  
+                :type "void")
+                nil [7685 7741])
+            ("XftFontInfoHash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("XftFontInfo" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7769 7790])
+                    ("" variable (:type ("fi" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7790 7793]))                  
+                :type ("FcChar32" type (:type "class") nil nil))
+                nil [7743 7794])
+            ("XftFontInfoEqual" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("XftFontInfo" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7821 7842])
+                    ("" variable (:type ("a" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7842 7844])
+                    ("XftFontInfo" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7845 7866])
+                    ("" variable (:type ("b" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7866 7868]))                  
+                :type ("FcBool" type (:type "class") nil nil))
+                nil [7796 7869])
+            ("XftFontOpenInfo" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7898 7911])
+                    ("pattern" variable
+                       (:pointer 1
+                        :type ("FcPattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7915 7934])
+                    ("fi" variable
+                       (:pointer 1
+                        :type ("XftFontInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7938 7954]))                  
+                :type ("XftFont" type (:type "class") nil nil))
+                nil [7871 7955])
+            ("XftFontOpenPattern" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7987 8000])
+                    ("pattern" variable
+                       (:pointer 1
+                        :type ("FcPattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8001 8020]))                  
+                :type ("XftFont" type (:type "class") nil nil))
+                nil [7957 8021])
+            ("XftFontCopy" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8046 8059])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8060 8073]))                  
+                :type ("XftFont" type (:type "class") nil nil))
+                nil [8023 8074])
+            ("XftFontClose" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8095 8108])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8109 8122]))                  
+                :type "void")
+                nil [8076 8123])
+            ("XftInitFtLibrary" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8149 8154]))                  
+                :type ("FcBool" type (:type "class") nil nil))
+                nil [8125 8155])
+            ("XftFontLoadGlyphs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8199 8216])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8222 8239])
+                    ("need_bitmaps" variable (:type ("FcBool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8245 8269])
+                    ("FT_UInt" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8275 8293])
+                    ("" variable (:type ("glyphs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8293 8300])
+                    ("nglyph" variable (:type "int") (reparse-symbol arg-sub-list) [8306 8322]))                  
+                :type "void")
+                nil [8175 8323])
+            ("XftFontUnloadGlyphs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8351 8365])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8373 8387])
+                    ("FT_UInt" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8395 8412])
+                    ("" variable (:type ("glyphs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8412 8419])
+                    ("nglyph" variable (:type "int") (reparse-symbol arg-sub-list) [8427 8439]))                  
+                :type "void")
+                nil [8325 8440])
+            ("XFT_NMISSING" variable (:constant-flag t) nil [8450 8462])
+            ("XftFontCheckGlyph" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8495 8509])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8515 8529])
+                    ("need_bitmaps" variable (:type ("FcBool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8535 8557])
+                    ("glyph" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8563 8578])
+                    ("missing" variable
+                       (:pointer 1
+                        :type ("FT_UInt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8584 8602])
+                    ("nmissing" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8608 8626]))                  
+                :type ("FcBool" type (:type "class") nil nil))
+                nil [8469 8627])
+            ("XftCharExists" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8651 8668])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8677 8694])
+                    ("ucs4" variable (:type ("FcChar32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8703 8720]))                  
+                :type ("FcBool" type (:type "class") nil nil))
+                nil [8629 8721])
+            ("XftCharIndex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8745 8762])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8770 8787])
+                    ("ucs4" variable (:type ("FcChar32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8795 8813]))                  
+                :type ("FT_UInt" type (:type "class") nil nil))
+                nil [8723 8814])
+            ("XftInit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8848 8860])
+                    ("config" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8856 8869]))                  
+                :type ("FcBool" type (:type "class") nil nil))
+                nil [8832 8870])
+            ("XftGetVersion" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8891 8896]))                  
+                :type "int")
+                nil [8872 8897])
+            ("XftListFonts" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8942 8955])
+                    ("screen" variable (:type "int") (reparse-symbol arg-sub-list) [8963 8974])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [8982 8986]))                  
+                :type ("FcFontSet" type (:type "class") nil nil))
+                nil [8916 9002])
+            ("XftNameParse" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9045 9057])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9053 9064]))                  
+                :type ("FcPattern" type (:type "class") nil nil))
+                nil [9020 9065])
+            ("XftGlyphRender" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9106 9120])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [9123 9131])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9134 9147])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9150 9164])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9167 9180])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [9183 9193])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [9196 9206])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [9209 9216])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [9219 9226])
+                    ("FT_UInt" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9229 9246])
+                    ("" variable (:type ("glyphs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9246 9253])
+                    ("nglyphs" variable (:type "int") (reparse-symbol arg-sub-list) [9256 9269]))                  
+                :type "void")
+                nil [9085 9270])
+            ("XftGlyphSpecRender" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9297 9315])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [9322 9335])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9342 9359])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9366 9384])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9391 9408])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [9415 9430])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [9437 9452])
+                    ("XftGlyphSpec" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9459 9484])
+                    ("" variable (:type ("glyphs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9484 9491])
+                    ("nglyphs" variable (:type "int") (reparse-symbol arg-sub-list) [9498 9516]))                  
+                :type "void")
+                nil [9272 9517])
+            ("XftCharSpecRender" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9543 9557])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [9563 9572])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9578 9591])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9597 9611])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9617 9630])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [9636 9647])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [9653 9664])
+                    ("XftCharSpec" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9670 9691])
+                    ("" variable (:type ("chars" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9691 9697])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [9703 9713]))                  
+                :type "void")
+                nil [9519 9714])
+            ("XftGlyphFontSpecRender" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9745 9764])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [9768 9781])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9785 9803])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9807 9825])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [9829 9844])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [9848 9863])
+                    ("XftGlyphFontSpec" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9867 9896])
+                    ("" variable (:type ("glyphs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9896 9903])
+                    ("nglyphs" variable (:type "int") (reparse-symbol arg-sub-list) [9907 9925]))                  
+                :type "void")
+                nil [9716 9926])
+            ("XftCharFontSpecRender" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9956 9971])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [9981 9990])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10000 10014])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10024 10038])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [10048 10059])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [10069 10080])
+                    ("XftCharFontSpec" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10090 10115])
+                    ("" variable (:type ("chars" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10115 10121])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10131 10141]))                  
+                :type "void")
+                nil [9928 10142])
+            ("XftTextRender8" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10165 10179])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [10182 10190])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10193 10206])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10209 10223])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10226 10239])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [10242 10252])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [10255 10265])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [10268 10275])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [10278 10285])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10288 10305])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10305 10312])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10315 10324]))                  
+                :type "void")
+                nil [10144 10325])
+            ("XftTextRender16" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10349 10366])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [10370 10382])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10386 10402])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10406 10423])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10427 10443])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [10447 10461])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [10465 10479])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [10483 10494])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [10498 10509])
+                    ("FcChar16" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10513 10533])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10533 10540])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10544 10557]))                  
+                :type "void")
+                nil [10327 10558])
+            ("XftTextRender16BE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10584 10601])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [10607 10619])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10625 10641])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10647 10664])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10670 10686])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [10692 10706])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [10712 10726])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [10732 10743])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [10749 10760])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10766 10784])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10784 10791])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10797 10810]))                  
+                :type "void")
+                nil [10560 10811])
+            ("XftTextRender16LE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10837 10854])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [10860 10872])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10878 10894])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10900 10917])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10923 10939])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [10945 10959])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [10965 10979])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [10985 10996])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [11002 11013])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11019 11037])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11037 11044])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [11050 11063]))                  
+                :type "void")
+                nil [10813 11064])
+            ("XftTextRender32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11088 11105])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [11109 11121])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11125 11141])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11145 11162])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11166 11182])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [11186 11200])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [11204 11218])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [11222 11233])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [11237 11248])
+                    ("FcChar32" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11252 11272])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11272 11279])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [11283 11296]))                  
+                :type "void")
+                nil [11066 11297])
+            ("XftTextRender32BE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11323 11340])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [11346 11358])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11364 11380])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11386 11403])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11409 11425])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [11431 11445])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [11451 11465])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [11471 11482])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [11488 11499])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11505 11523])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11523 11530])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [11536 11549]))                  
+                :type "void")
+                nil [11299 11550])
+            ("XftTextRender32LE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11576 11593])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [11599 11611])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11617 11633])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11639 11656])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11662 11678])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [11684 11698])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [11704 11718])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [11724 11735])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [11741 11752])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11758 11776])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11776 11783])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [11789 11802]))                  
+                :type "void")
+                nil [11552 11803])
+            ("XftTextRenderUtf8" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11829 11846])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [11852 11864])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11870 11886])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11892 11909])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11915 11931])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [11937 11951])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [11957 11971])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [11977 11988])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [11994 12005])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12011 12029])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12029 12036])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [12042 12055]))                  
+                :type "void")
+                nil [11805 12056])
+            ("XftTextRenderUtf16" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpy" variable
+                       (:pointer 1
+                        :type ("Display" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12083 12100])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [12107 12119])
+                    ("src" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12126 12142])
+                    ("pub" variable
+                       (:pointer 1
+                        :type ("XftFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12149 12166])
+                    ("dst" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12173 12189])
+                    ("srcx" variable (:type "int") (reparse-symbol arg-sub-list) [12196 12210])
+                    ("srcy" variable (:type "int") (reparse-symbol arg-sub-list) [12217 12231])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [12238 12249])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [12256 12267])
+                    ("FcChar8" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12274 12291])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12291 12298])
+                    ("endian" variable (:type ("FcEndian" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12305 12325])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [12332 12345]))                  
+                :type "void")
+                nil [12058 12346])
+            ("XftXlfdParse" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("_Xconst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12390 12402])
+                    ("xlfd_orig" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12398 12414])
+                    ("ignore_scalable" variable (:type ("Bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12415 12436])
+                    ("complete" variable (:type ("Bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12437 12451]))                  
+                :type ("FcPattern" type (:type "class") nil nil))
+                nil [12364 12452]))          
+      :file "Xft.h"
+      :pointmax 12491
+      :fsize 12491
+      :lastmodtime '(21442 48731 0 0)
+      :unmatched-syntax '((symbol 12454 . 12468) (punctuation 12290 . 12291) (punctuation 12028 . 12029) (punctuation 11775 . 11776) (punctuation 11522 . 11523) (punctuation 11271 . 11272) (punctuation 11036 . 11037) (punctuation 10783 . 10784) (punctuation 10532 . 10533) (punctuation 10304 . 10305) (punctuation 10114 . 10115) (punctuation 9895 . 9896) (punctuation 9690 . 9691) (punctuation 9483 . 9484) (punctuation 9245 . 9246) (punctuation 8411 . 8412) (punctuation 8292 . 8293) (punctuation 7865 . 7866) (punctuation 7841 . 7842) (punctuation 7789 . 7790) (punctuation 7673 . 7674) (punctuation 7255 . 7256) (punctuation 7071 . 7072) (punctuation 6923 . 6924) (punctuation 6776 . 6777) (punctuation 6633 . 6634) (punctuation 6492 . 6493) (punctuation 6349 . 6350) (punctuation 6155 . 6156) (punctuation 5893 . 5894) (punctuation 5806 . 5807) (punctuation 5765 . 5766) (punctuation 5669 . 5670) (punctuation 5617 . 5618) (punctuation 5529 . 5530) (punctuation 5490 . 5491) (punctuation 5398 . 5399) (punctuation 5349 . 5350) (punctuation 5239 . 5240) (punctuation 5158 . 5159) (punctuation 5064 . 5065) (punctuation 4977 . 4978) (punctuation 4884 . 4885) (punctuation 4803 . 4804) (punctuation 4712 . 4713) (punctuation 4631 . 4632) (punctuation 4541 . 4542) (punctuation 4462 . 4463) (punctuation 4366 . 4367) (punctuation 4279 . 4280) (punctuation 4208 . 4209) (punctuation 3201 . 3202) (punctuation 2994 . 2995) (symbol 2897 . 2913) (symbol 1620 . 1633) (symbol 1612 . 1619) (punctuation 1611 . 1612))
+      :lexical-table 
+        '(("XFT_REVISION" . ((number "2" 1455 . 1456)))
+          ("XFT_MAX_GLYPH_MEMORY" . ((string "\"maxglyphmemory\"" 1987 . 2003)))
+          ("XFT_MINOR" . ((number "3" 1432 . 1433)))
+          ("XFT_VERSION" . ((semantic-list "((XFT_MAJOR * 10000) + (XFT_MINOR * 100) + (XFT_REVISION))" 1478 . 1536)))
+          ("XFT_MAX_UNREF_FONTS" . ((string "\"maxunreffonts\"" 2032 . 2047)))
+          ("XFT_NMISSING" . ((number "256" 8464 . 8467)))
+          ("_XFT_H_")
+          ("XFT_XLFD" . ((string "\"xlfd\"" 1951 . 1957)))
+          ("XftVersion" . ((symbol "XFT_VERSION" 1556 . 1567)))
+          ("_X_SENTINEL" (spp-arg-list ("x") 1804 . 1807))
+          ("XFT_MAJOR" . ((number "2" 1412 . 1413)))
+          ("XFT_CORE" . ((string "\"core\"" 1897 . 1903)))
+          ("XFT_RENDER" . ((string "\"render\"" 1924 . 1932)))
+          )
+)
+    (semanticdb-table "XftCompat.h"
+      :file "XftCompat.h"
+      :fsize 5223
+      :lastmodtime '(21442 48731 0 0)))
+  :file "!usr!include!X11!Xft!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

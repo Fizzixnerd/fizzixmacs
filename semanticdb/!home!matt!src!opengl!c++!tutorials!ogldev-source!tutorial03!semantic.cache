@@ -1,0 +1,44 @@
+;; Object tutorial03/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tutorial03/"
+  :tables (list 
+   (semanticdb-table "tutorial03.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [723 741])
+            ("GL/glew.h" include (:system-flag t) nil [742 762])
+            ("GL/freeglut.h" include (:system-flag t) nil [763 787])
+            ("ogldev_math_3d.h" include nil nil [788 815])
+            ("VBO" variable (:type ("GLuint" type (:type "class") nil nil)) nil [817 828])
+            ("RenderSceneCB" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [830 1128])
+            ("InitializeGlutCallbacks" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1131 1208])
+            ("CreateVertexBuffer" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1210 1552])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1564 1573])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1574 1586]))                  
+                :type "int")
+                nil [1555 2103]))          
+    :file "tutorial03.cpp"
+    :pointmax 2106
+    :fsize 2105
+    :lastmodtime '(21886 3816 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!opengl!c++!tutorials!ogldev-source!tutorial03!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

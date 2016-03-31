@@ -1,0 +1,18 @@
+;; Object scratch/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scratch/"
+  :tables (list 
+   (semanticdb-table "scratch.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "scratch.js"
+    :pointmax 29
+    :fsize 28
+    :lastmodtime '(21936 10704 390489 775000)
+    :unmatched-syntax '((PAREN_BLOCK 19 . 27))
+    )
+   )
+  :file "!home!matt!src!js!node!scratch!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,30 @@
+;; Object plot/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "plot/"
+  :tables
+  (list
+    (semanticdb-table "simple.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("matplotlib.pyplot" include nil nil [20 51])
+            ("simple_plot_model" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [75 83])
+                ("xlabel" variable nil (reparse-symbol function_parameters) [85 91])
+                ("ylabel" variable nil (reparse-symbol function_parameters) [98 104])
+                ("title" variable nil (reparse-symbol function_parameters) [111 116]))              ) nil [53 623]))          
+      :file "simple.py"
+      :pointmax 624
+      :fsize 623
+      :lastmodtime '(22266 39858 923431 861000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22242 63406 354291 38000)
+      :unmatched-syntax nil))
+  :file "!home!matt!Documents!school!phy324!lib!plot!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

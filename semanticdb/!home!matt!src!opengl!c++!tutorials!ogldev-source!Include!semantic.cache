@@ -1,0 +1,367 @@
+;; Object Include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Include/"
+  :tables (list 
+   (semanticdb-table "ogldev_math_3d.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MATH_3D_H" variable (:constant-flag t) nil [715 724])
+            ("stdio.h" include (:system-flag t) nil [726 744])
+            ("math.h" include (:system-flag t) nil [808 825])
+            ("vector3.h" include (:system-flag t) nil [834 854])
+            ("matrix3x3.h" include (:system-flag t) nil [855 877])
+            ("matrix4x4.h" include (:system-flag t) nil [878 900])
+            ("ogldev_util.h" include nil nil [902 926])
+            ("ToRadian" variable (:constant-flag t) nil [936 944])
+            ("ToDegree" variable (:constant-flag t) nil [987 995])
+            ("RandomFloat" function
+               (:prototype-flag t
+                :type "float")
+                nil [1031 1051])
+            ("Vector2i" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [1075 1081])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [1086 1092]))                  
+                :type "struct")
+                nil [1053 1095])
+            ("Vector2f" type
+               (:members 
+                  ( ("x" variable (:type "float") (reparse-symbol classsubparts) [1119 1127])
+                    ("y" variable (:type "float") (reparse-symbol classsubparts) [1132 1140])
+                    ("Vector2f" function
+                       (:constructor-flag t
+                        :type ("Vector2f" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1146 1168])
+                    ("Vector2f" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("_x" variable (:type "float") (reparse-symbol arg-sub-list) [1183 1192])
+                            ("_y" variable (:type "float") (reparse-symbol arg-sub-list) [1193 1202]))                          
+                        :type ("Vector2f" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1174 1246]))                  
+                :type "struct")
+                nil [1097 1249])
+            ("Vector3f" type
+               (:members 
+                  ( ("x" variable (:type "float") (reparse-symbol classsubparts) [1274 1282])
+                    ("y" variable (:type "float") (reparse-symbol classsubparts) [1287 1295])
+                    ("z" variable (:type "float") (reparse-symbol classsubparts) [1300 1308])
+                    ("Vector3f" function
+                       (:constructor-flag t
+                        :type ("Vector3f" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1314 1336])
+                    ("Vector3f" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("_x" variable (:type "float") (reparse-symbol arg-sub-list) [1351 1360])
+                            ("_y" variable (:type "float") (reparse-symbol arg-sub-list) [1361 1370])
+                            ("_z" variable (:type "float") (reparse-symbol arg-sub-list) [1371 1380]))                          
+                        :type ("Vector3f" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1342 1440])
+                    ("Vector3f" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("f" variable (:type "float") (reparse-symbol arg-sub-list) [1459 1467]))                          
+                        :type ("Vector3f" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1450 1502])
+                    ("+=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1529 1547]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1508 1636])
+                    ("-=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1663 1681]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1642 1770])
+                    ("=" variable
+                       (:functionpointer-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1776 1888])
+                    ("Cross" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1977 1995]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1962 2002])
+                    ("Normalize" function
+                       (:prototype-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2008 2030])
+                    ("Rotate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Angle" variable (:type "float") (reparse-symbol arg-sub-list) [2048 2060])
+                            ("Axis" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2061 2082]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2036 2083])
+                    ("Print" function (:type "void") (reparse-symbol classsubparts) [2089 2169]))                  
+                :type "struct")
+                nil [1252 2172])
+            ("Vector4f" type
+               (:members 
+                  ( ("x" variable (:type "float") (reparse-symbol classsubparts) [2197 2205])
+                    ("y" variable (:type "float") (reparse-symbol classsubparts) [2210 2218])
+                    ("z" variable (:type "float") (reparse-symbol classsubparts) [2223 2231])
+                    ("w" variable (:type "float") (reparse-symbol classsubparts) [2236 2244])
+                    ("Vector4f" function
+                       (:constructor-flag t
+                        :type ("Vector4f" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [2250 2280])
+                    ("Vector4f" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("_x" variable (:type "float") (reparse-symbol arg-sub-list) [2299 2308])
+                            ("_y" variable (:type "float") (reparse-symbol arg-sub-list) [2309 2318])
+                            ("_z" variable (:type "float") (reparse-symbol arg-sub-list) [2319 2328])
+                            ("_w" variable (:type "float") (reparse-symbol arg-sub-list) [2329 2338]))                          
+                        :type ("Vector4f" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [2290 2414])
+                    ("Print" function (:type "void") (reparse-symbol classsubparts) [2424 2514]))                  
+                :type "struct")
+                nil [2175 2524])
+            ("+" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("l" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2552 2570])
+                    ("r" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2571 2589]))                  
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [2526 2695])
+            ("-" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("l" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2723 2741])
+                    ("r" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2742 2760]))                  
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [2697 2866])
+            ("" variable
+               (:functionpointer-flag t
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [2868 3021])
+            ("PersProjInfo" type
+               (:members 
+                  ( ("FOV" variable (:type "float") (reparse-symbol classsubparts) [3049 3059])
+                    ("Width" variable (:type "float") (reparse-symbol classsubparts) [3064 3076])
+                    ("Height" variable (:type "float") (reparse-symbol classsubparts) [3082 3095])
+                    ("zNear" variable (:type "float") (reparse-symbol classsubparts) [3100 3112])
+                    ("zFar" variable (:type "float") (reparse-symbol classsubparts) [3117 3128]))                  
+                :type "struct")
+                nil [3023 3131])
+            ("Matrix4f" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3150 3157])
+                    ("m" variable
+                       (:dereference 2
+                        :type "float")
+                        (reparse-symbol classsubparts) [3162 3176])
+                    ("Matrix4f" function
+                       (:constructor-flag t
+                        :type ("Matrix4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3182 3212])
+                    ("Matrix4f" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("AssimpMatrix" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("aiMatrix4x4" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3269 3301]))                          
+                        :type ("Matrix4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3260 3777])
+                    ("Matrix4f" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("AssimpMatrix" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("aiMatrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3796 3828]))                          
+                        :type ("Matrix4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3787 4260])
+                    ("Matrix4f" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("a00" variable (:type "float") (reparse-symbol arg-sub-list) [4282 4292])
+                            ("a01" variable (:type "float") (reparse-symbol arg-sub-list) [4293 4303])
+                            ("a02" variable (:type "float") (reparse-symbol arg-sub-list) [4304 4314])
+                            ("a03" variable (:type "float") (reparse-symbol arg-sub-list) [4315 4325])
+                            ("a10" variable (:type "float") (reparse-symbol arg-sub-list) [4339 4349])
+                            ("a11" variable (:type "float") (reparse-symbol arg-sub-list) [4350 4360])
+                            ("a12" variable (:type "float") (reparse-symbol arg-sub-list) [4361 4371])
+                            ("a13" variable (:type "float") (reparse-symbol arg-sub-list) [4372 4382])
+                            ("a20" variable (:type "float") (reparse-symbol arg-sub-list) [4396 4406])
+                            ("a21" variable (:type "float") (reparse-symbol arg-sub-list) [4407 4417])
+                            ("a22" variable (:type "float") (reparse-symbol arg-sub-list) [4418 4428])
+                            ("a23" variable (:type "float") (reparse-symbol arg-sub-list) [4429 4439])
+                            ("a30" variable (:type "float") (reparse-symbol arg-sub-list) [4453 4463])
+                            ("a31" variable (:type "float") (reparse-symbol arg-sub-list) [4464 4474])
+                            ("a32" variable (:type "float") (reparse-symbol arg-sub-list) [4475 4485])
+                            ("a33" variable (:type "float") (reparse-symbol arg-sub-list) [4486 4496]))                          
+                        :type ("Matrix4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4273 4788])
+                    ("SetZero" function (:type "void") (reparse-symbol classsubparts) [4794 4841])
+                    ("Transpose" function (:type ("Matrix4f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4850 5107])
+                    ("InitIdentity" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5114 5440])
+                    ("" variable
+                       (:functionpointer-flag t
+                        :type ("Matrix4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5446 5905])
+                    ("" variable
+                       (:functionpointer-flag t
+                        :type ("Vector4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5915 6318])
+                    ("Print" function (:type "void") (reparse-symbol classsubparts) [6406 6566])
+                    ("Determinant" function
+                       (:prototype-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [6576 6602])
+                    ("Inverse" function
+                       (:prototype-flag t
+                        :type ("Matrix4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6612 6632])
+                    ("InitScaleTransform" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ScaleX" variable (:type "float") (reparse-symbol arg-sub-list) [6666 6679])
+                            ("ScaleY" variable (:type "float") (reparse-symbol arg-sub-list) [6680 6693])
+                            ("ScaleZ" variable (:type "float") (reparse-symbol arg-sub-list) [6694 6707]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6642 6708])
+                    ("InitRotateTransform" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("RotateX" variable (:type "float") (reparse-symbol arg-sub-list) [6738 6752])
+                            ("RotateY" variable (:type "float") (reparse-symbol arg-sub-list) [6753 6767])
+                            ("RotateZ" variable (:type "float") (reparse-symbol arg-sub-list) [6768 6782]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6713 6783])
+                    ("InitTranslationTransform" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [6818 6826])
+                            ("y" variable (:type "float") (reparse-symbol arg-sub-list) [6827 6835])
+                            ("z" variable (:type "float") (reparse-symbol arg-sub-list) [6836 6844]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6788 6845])
+                    ("InitCameraTransform" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Target" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6875 6898])
+                            ("Up" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6899 6918]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6850 6919])
+                    ("InitPersProjTransform" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PersProjInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6951 6973]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6924 6974]))                  
+                :type "class")
+                nil [3133 6977])
+            ("Quaternion" type
+               (:members 
+                  ( ("w" variable (:type "float") (reparse-symbol classsubparts) [7004 7021])
+                    ("z" variable (:type "float") (reparse-symbol classsubparts) [7004 7021])
+                    ("y" variable (:type "float") (reparse-symbol classsubparts) [7004 7021])
+                    ("x" variable (:type "float") (reparse-symbol classsubparts) [7004 7021])
+                    ("Quaternion" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("_x" variable (:type "float") (reparse-symbol arg-sub-list) [7038 7047])
+                            ("_y" variable (:type "float") (reparse-symbol arg-sub-list) [7048 7057])
+                            ("_z" variable (:type "float") (reparse-symbol arg-sub-list) [7058 7067])
+                            ("_w" variable (:type "float") (reparse-symbol arg-sub-list) [7068 7077]))                          
+                        :type ("Quaternion" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [7027 7078])
+                    ("Normalize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7084 7101])
+                    ("Conjugate" function
+                       (:prototype-flag t
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7107 7130]))                  
+                :type "struct")
+                nil [6980 7136])
+            ("" variable
+               (:functionpointer-flag t
+                :type ("Quaternion" type (:type "class") nil nil))
+                nil [7138 7201])
+            ("" variable
+               (:functionpointer-flag t
+                :type ("Quaternion" type (:type "class") nil nil))
+                nil [7203 7264]))          
+    :file "ogldev_math_3d.h"
+    :pointmax 7290
+    :fsize 7289
+    :lastmodtime '(21886 3816 0 0)
+    :unmatched-syntax '((semantic-list 6362 . 6396) (CONST 6352 . 6357) (semantic-list 6349 . 6351) (punctuation 6348 . 6349) (FLOAT 6343 . 6348) (CONST 6337 . 6342) (OPERATOR 6328 . 6336) (semantic-list 1928 . 1956) (CONST 1918 . 1923) (semantic-list 1915 . 1917) (punctuation 1914 . 1915) (FLOAT 1909 . 1914) (CONST 1903 . 1908) (OPERATOR 1894 . 1902))
+    :lexical-table 
+        '(("MATH_3D_H")
+          ("ToDegree" (spp-arg-list ("x") 995 . 998) . ((semantic-list "(float)" 999 . 1006) (semantic-list "(((x) * 180.0f / M_PI))" 1006 . 1029)))
+          ("ToRadian" (spp-arg-list ("x") 944 . 947) . ((semantic-list "(float)" 948 . 955) (semantic-list "(((x) * M_PI / 180.0f))" 955 . 978)))
+          )
+
+    )
+   (semanticdb-table "ogldev_util.h"
+    :file "ogldev_util.h"
+    :fsize 2510
+    :lastmodtime '(21886 3816 0 0)
+    )
+   )
+  :file "!home!matt!src!opengl!c++!tutorials!ogldev-source!Include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

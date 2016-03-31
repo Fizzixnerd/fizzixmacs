@@ -1,0 +1,25 @@
+;; Object awt/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "awt/"
+  :tables (list 
+   (semanticdb-table "CausedFocusEvent.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__sun_awt_CausedFocusEvent__" variable (:constant-flag t) nil [111 139])
+            ("java/awt/event/FocusEvent.h" include (:system-flag t) nil [160 198])
+            ("java::awt::event::FocusEvent" variable (:type "int") nil [466 864]))          
+    :file "CausedFocusEvent.h"
+    :pointmax 905
+    :fsize 904
+    :lastmodtime '(21844 58768 0 0)
+    :unmatched-syntax '((punctuation 465 . 466) (punctuation 464 . 465) (PUBLIC 457 . 463) (punctuation 455 . 456) (symbol 438 . 454) (punctuation 437 . 438) (punctuation 436 . 437) (symbol 433 . 436) (punctuation 432 . 433) (punctuation 431 . 432) (symbol 428 . 431) (CLASS 422 . 427) (semantic-list 213 . 420) (string 206 . 212) (EXTERN 199 . 205) (symbol 149 . 158) (symbol 142 . 148) (punctuation 141 . 142))
+    :lexical-table 
+        '(("__sun_awt_CausedFocusEvent__")
+          )
+
+    )
+   )
+  :file "!usr!include!c++!4.8!sun!awt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

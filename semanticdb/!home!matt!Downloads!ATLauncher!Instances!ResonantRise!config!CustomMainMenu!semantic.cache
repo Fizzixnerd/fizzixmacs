@@ -1,0 +1,16 @@
+;; Object CustomMainMenu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CustomMainMenu/"
+  :tables
+  (list
+    (semanticdb-table "menu.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "menu.json"
+      :pointmax 3271
+      :fsize 3422
+      :lastmodtime '(22002 55706 750256 581000)
+      :unmatched-syntax nil))
+  :file "!home!matt!Downloads!ATLauncher!Instances!ResonantRise!config!CustomMainMenu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,18 @@
+;; Object lucida/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lucida/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("SUBDIRS" variable (:default-value ("commandcenter" "imagematching" "learn" "questionanswering" "djinntonic" "speechrecognition")) nil [1 90])
+            ("../Makefile.common" include nil nil [90 117]))          
+      :file "Makefile"
+      :pointmax 117
+      :fsize 116
+      :lastmodtime '(22258 50944 842990 969000)
+      :unmatched-syntax nil))
+  :file "!home!matt!ssd2!@home!matt!src!lucida!lucida!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

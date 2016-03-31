@@ -1,0 +1,16 @@
+;; Object baseline/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "baseline/"
+  :tables
+  (list
+    (semanticdb-table "dnn-asr.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "dnn-asr.cpp"
+      :pointmax 4182
+      :fsize 4181
+      :lastmodtime '(22256 8163 486978 594000)
+      :unmatched-syntax nil))
+  :file "!home!matt!ssd2!@home!matt!src!lucida!lucida-suite!dnn-asr!baseline!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

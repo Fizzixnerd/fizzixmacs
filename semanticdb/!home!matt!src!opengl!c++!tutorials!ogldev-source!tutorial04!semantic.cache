@@ -1,0 +1,72 @@
+;; Object tutorial04/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tutorial04/"
+  :tables (list 
+   (semanticdb-table "tutorial04.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [716 734])
+            ("string.h" include (:system-flag t) nil [735 754])
+            ("GL/glew.h" include (:system-flag t) nil [755 775])
+            ("GL/freeglut.h" include (:system-flag t) nil [776 800])
+            ("ogldev_util.h" include nil nil [802 826])
+            ("ogldev_math_3d.h" include nil nil [827 854])
+            ("VBO" variable (:type ("GLuint" type (:type "class") nil nil)) nil [856 867])
+            ("pVSFileName" variable
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [869 907])
+            ("pFSFileName" variable
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [908 946])
+            ("RenderSceneCB" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [948 1246])
+            ("InitializeGlutCallbacks" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1249 1326])
+            ("CreateVertexBuffer" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1328 1670])
+            ("AddShader" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ShaderProgram" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1694 1715])
+                    ("pShaderText" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1716 1740])
+                    ("ShaderType" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1741 1759]))                  
+                :type "void")
+                nil [1672 2468])
+            ("CompileShaders" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [2470 3600])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3611 3620])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3621 3633]))                  
+                :type "int")
+                nil [3602 4268]))          
+    :file "tutorial04.cpp"
+    :pointmax 4269
+    :fsize 4268
+    :lastmodtime '(21934 38180 666964 318000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!opengl!c++!tutorials!ogldev-source!tutorial04!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

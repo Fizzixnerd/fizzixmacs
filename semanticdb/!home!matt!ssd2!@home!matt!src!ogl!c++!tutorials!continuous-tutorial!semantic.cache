@@ -1,0 +1,2516 @@
+;; Object continuous-tutorial/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "continuous-tutorial/"
+  :tables
+  (list
+    (semanticdb-table "uniform.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GL/glew.h" include (:system-flag t) nil [1 21])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [22 45])
+            ("uniform.hpp" include nil nil [47 69])
+            ("vector.hpp" include nil nil [70 91])
+            ("ogl" type
+               (:members 
+                  ( ("update" function
+                       (:type "void"
+                        :parent "Uniform")
+                        (reparse-symbol namespacesubparts) [112 208])
+                    ("update" function
+                       (:type "void"
+                        :parent "Uniform")
+                        (reparse-symbol namespacesubparts) [212 337]))                  
+                :type "namespace")
+                nil [93 339]))          
+      :file "uniform.cpp"
+      :pointmax 340
+      :fsize 339
+      :lastmodtime '(21954 11171 106733 127000)
+      :unmatched-syntax nil)
+    (semanticdb-table "uniform.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GL/glew.h" include (:system-flag t) nil [15 35])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [36 59])
+            ("string" include (:system-flag t) nil [61 78])
+            ("ogl" type
+               (:members 
+                  ( ("Uniform" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("m_value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [381 391])
+                            ("m_handle" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [396 411])
+                            ("public" label nil (reparse-symbol classsubparts) [415 422])
+                            ("Uniform" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("handle" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [436 449]))                                  
+                                :type ("Uniform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [428 450])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [540 555]))                                  
+                                :type ("Uniform" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [517 556])
+                            ("handle" function
+                               (:prototype-flag t
+                                :type ("GLint" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [655 670])
+                            ("view" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [675 697])
+                            ("value" function
+                               (:prototype-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [702 713])
+                            ("decltype" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("m_value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [787 797]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [778 799])
+                            ("update" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [804 818]))                          )
+                        (reparse-symbol namespacesubparts) [341 823]))                  
+                :type "namespace")
+                nil [80 825])
+            ("uniform.tpp" include nil nil [827 849]))          
+      :file "uniform.hpp"
+      :pointmax 850
+      :fsize 849
+      :lastmodtime '(21959 21740 697742 171000)
+      :unmatched-syntax nil)
+    (semanticdb-table "vector.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("memory" include (:system-flag t) nil [15 32])
+            ("array" include (:system-flag t) nil [33 49])
+            ("cstdlib" include (:system-flag t) nil [50 68])
+            ("ogl" type
+               (:members 
+                  ( ("Matrix" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [89 152])
+                    ("Matrix" variable (:type "int") (reparse-symbol namespacesubparts) [316 332])
+                    ("Vector" variable (:type "int") (reparse-symbol namespacesubparts) [353 370])
+                    ("Vector" variable (:type "int") (reparse-symbol namespacesubparts) [390 407])
+                    ("Vector" variable (:type "int") (reparse-symbol namespacesubparts) [427 444])
+                    ("Vector" variable (:type "int") (reparse-symbol namespacesubparts) [464 481])
+                    ("Vector" variable (:type "int") (reparse-symbol namespacesubparts) [502 517])
+                    ("Vector" variable (:type "int") (reparse-symbol namespacesubparts) [537 552])
+                    ("Vector" variable (:type "int") (reparse-symbol namespacesubparts) [572 587])
+                    ("Vector" variable (:type "int") (reparse-symbol namespacesubparts) [607 622])
+                    ("Vector" variable (:type "int") (reparse-symbol namespacesubparts) [644 668])
+                    ("Vector" variable (:type "int") (reparse-symbol namespacesubparts) [689 713])
+                    ("Vector" variable (:type "int") (reparse-symbol namespacesubparts) [734 758])
+                    ("Vector" variable (:type "int") (reparse-symbol namespacesubparts) [779 803])
+                    ("make_singleton_array" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::array" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("1"))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [889 893]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [831 894])
+                    ("make_vector" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v1" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1162 1167])
+                            ("" variable (:type ("Ts" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1168 1171])
+                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1174 1179]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1150 1180]))                  
+                :type "namespace")
+                nil [70 1182])
+            ("vector.tpp" include nil nil [1184 1205])
+            ("matrix.hpp" include nil nil [1206 1227]))          
+      :file "vector.hpp"
+      :pointmax 1228
+      :fsize 1227
+      :lastmodtime '(21955 25392 747447 383000)
+      :unmatched-syntax nil)
+    (semanticdb-table "uniform.tpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GL/glew.h" include (:system-flag t) nil [15 35])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [36 59])
+            ("uniform.hpp" include nil nil [61 83])
+            ("ogl" type
+               (:members 
+                  ( ("Uniform" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Uniform" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("handle" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144 157]))                          
+                        :parent "Uniform"
+                        :constructor-flag t)
+                        (reparse-symbol namespacesubparts) [104 182])
+                    ("=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Uniform" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [333 348]))                          
+                        :parent "Uniform"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [278 407])
+                    ("handle" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("GLint" type (:type "class") nil nil)
+                        :parent "Uniform")
+                        (reparse-symbol namespacesubparts) [541 614])
+                    ("view" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :constant-flag t
+                        :parent "Uniform")
+                        (reparse-symbol namespacesubparts) [618 697])
+                    ("value" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :parent "Uniform")
+                        (reparse-symbol namespacesubparts) [701 769]))                  
+                :type "namespace")
+                nil [85 846]))          
+      :file "uniform.tpp"
+      :pointmax 847
+      :fsize 846
+      :lastmodtime '(21959 21823 123425 463000)
+      :unmatched-syntax nil)
+    (semanticdb-table "shader.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GL/glew.h" include (:system-flag t) nil [15 35])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [36 59])
+            ("exception" include (:system-flag t) nil [61 81])
+            ("stdexcept" include (:system-flag t) nil [82 102])
+            ("string" include (:system-flag t) nil [103 120])
+            ("vector" include (:system-flag t) nil [121 138])
+            ("make_unique.hpp" include nil nil [140 140])
+            ("uniform.hpp" include nil nil [140 162])
+            ("ogl" type
+               (:members 
+                  ( ("Shader" type
+                       (:template 
+                          ( ("GLenum" type nil nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [183 224])
+                    ("ShaderProgram" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [227 247])
+                    ("ShaderProgram" type
+                       (:members 
+                          ( ("Shader" type
+                               (:template 
+                                  ( ("GLenum" type nil nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol classsubparts) [386 438])
+                            ("make_shaderprogram" function
+                               (:prototype-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Shader" type
+                                             (:template-specifier 
+                                                ( ("ShaderTypes" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [519 540])
+                                    ("" variable (:type ("shaders" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [543 551]))                                  
+                                :type ("ShaderProgram" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [475 552])
+                            ("initialize_shaderprogram" function
+                               (:prototype-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("sp" variable
+                                       (:reference 1
+                                        :type ("ShaderProgram" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [649 667])
+                                    ("shader" variable
+                                       (:reference 1
+                                        :type ("Shader" type
+                                             (:template-specifier 
+                                                ( ("ShaderType" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [674 701])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("Shader" type
+                                             (:template-specifier 
+                                                ( ("ShaderTypes" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [708 729])
+                                    ("" variable (:type ("shaders" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [732 740]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [608 741])
+                            ("initialize_shaderprogram" function
+                               (:prototype-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("sp" variable
+                                       (:reference 1
+                                        :type ("ShaderProgram" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [787 805]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [746 806])
+                            ("m_attached_shaders" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("GLuint" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [812 851])
+                            ("m_handle" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [856 872])
+                            ("m_good" variable (:type "bool") (reparse-symbol classsubparts) [877 889])
+                            ("m_infolog" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [894 916])
+                            ("attach" function
+                               (:template 
+                                  ( ("GLenum" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :type ("Shader" type
+                                             (:template-specifier 
+                                                ( ("ShaderType" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [966 988]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [922 989])
+                            ("detach_shaders" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [994 1016])
+                            ("link" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1021 1033])
+                            ("public" label nil (reparse-symbol classsubparts) [1037 1044])
+                            ("ShaderProgram" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("ShaderProgram" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1049 1065])
+                            ("ShaderProgram" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("ShaderProgram" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1131 1146])
+                                    ("" variable (:type ("sp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1147 1150]))                                  
+                                :type ("ShaderProgram" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1117 1151])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [1173 1182])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1198 1213])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1234 1249])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1283 1298])
+                            ("get_uniform" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("Uniform" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1348 1372]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [1303 1373])
+                            ("handle" function
+                               (:prototype-flag t
+                                :type ("GLuint" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1378 1394]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [360 1399])
+                    ("ShaderProgramCreationException" type
+                       (:superclasses 
+                          ( ("std::runtime_error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1474 1481])
+                            ("ShaderProgramCreationException" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("ShaderProgramCreationException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1486 1519])
+                            ("override" variable
+                               (:constant-flag t
+                                :type ("noexcept" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1552 1576]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1405 1581])
+                    ("Shader" type
+                       (:template 
+                          ( ("GLenum" type nil nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("ShaderProgram" friend nil (reparse-symbol classsubparts) [1847 1873])
+                            ("m_handle" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1884 1900])
+                            ("m_filename" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1905 1934])
+                            ("m_infolog" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1939 1961])
+                            ("m_good" variable (:type "bool") (reparse-symbol classsubparts) [1966 1978])
+                            ("read" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1988 2013])
+                            ("compile" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("shader_text" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2031 2062]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2018 2063])
+                            ("public" label nil (reparse-symbol classsubparts) [2067 2074])
+                            ("Shader" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("filename" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2086 2114]))                                  
+                                :type ("Shader" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2079 2115])
+                            ("Shader" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Shader" type
+                                             (:template-specifier 
+                                                ( ("ShaderType" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2171 2191])
+                                    ("" variable (:type ("s" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2192 2194]))                                  
+                                :type ("Shader" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2164 2195])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [2210 2219])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [2240 2255])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [2289 2304])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [2325 2340])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [2375 2390]))                          )
+                        (reparse-symbol namespacesubparts) [1798 2395])
+                    ("ShaderCreationException" type
+                       (:superclasses 
+                          ( ("std::runtime_error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2461 2468])
+                            ("ShaderCreationException" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("ShaderCreationException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2473 2499])
+                            ("override" variable
+                               (:constant-flag t
+                                :type ("noexcept" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2532 2556]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2399 2561]))                  
+                :type "namespace")
+                nil [164 2564])
+            ("shader.tpp" include nil nil [2566 2587])
+            ("shaderprogram.tpp" include nil nil [2588 2616]))          
+      :file "shader.hpp"
+      :pointmax 2617
+      :fsize 2616
+      :lastmodtime '(21958 4682 842513 116000)
+      :unmatched-syntax nil)
+    (semanticdb-table "shader.tpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("exception" include (:system-flag t) nil [1 21])
+            ("string" include (:system-flag t) nil [22 39])
+            ("fstream" include (:system-flag t) nil [40 58])
+            ("sstream" include (:system-flag t) nil [59 77])
+            ("iostream" include (:system-flag t) nil [78 97])
+            ("debug.hpp" include nil nil [99 119])
+            ("shader.hpp" include nil nil [120 141])
+            ("ogl" type
+               (:members 
+                  ( ("read" function
+                       (:template 
+                          ( ("GLenum" type nil nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :constant-flag t
+                        :parent "Shader")
+                        (reparse-symbol namespacesubparts) [162 419])
+                    ("compile" function
+                       (:template 
+                          ( ("GLenum" type nil nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("shader_text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [486 517]))                          
+                        :parent "Shader")
+                        (reparse-symbol namespacesubparts) [423 855])
+                    ("Shader" function
+                       (:template 
+                          ( ("GLenum" type nil nil nil))                          
+                        :type ("Shader" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [916 944]))                          
+                        :parent "Shader"
+                        :constructor-flag t)
+                        (reparse-symbol namespacesubparts) [859 1625])
+                    ("Shader" function
+                       (:template 
+                          ( ("GLenum" type nil nil nil))                          
+                        :type ("Shader" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Shader" type
+                                     (:template-specifier 
+                                        ( ("ShaderType" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1686 1706])
+                            ("" variable (:type ("s" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1707 1709]))                          
+                        :parent "Shader"
+                        :constructor-flag t)
+                        (reparse-symbol namespacesubparts) [1629 1838]))                  
+                :type "namespace")
+                nil [143 2495]))          
+      :file "shader.tpp"
+      :pointmax 2496
+      :fsize 2495
+      :lastmodtime '(21959 20881 438212 257000)
+      :unmatched-syntax nil)
+    (semanticdb-table "shaderprogram.tpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("shader.hpp" include nil nil [15 36])
+            ("ogl" type
+               (:members 
+                  ( ("attach" function
+                       (:template 
+                          ( ("GLenum" type nil nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("Shader" type
+                                     (:template-specifier 
+                                        ( ("ShaderType" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [116 138]))                          
+                        :parent "ShaderProgram")
+                        (reparse-symbol namespacesubparts) [59 232])
+                    ("make_shaderprogram" function
+                       (:arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Shader" type
+                                     (:template-specifier 
+                                        ( ("ShaderTypes" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [303 324])
+                            ("" variable (:type ("shaders" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [327 335]))                          
+                        :type ("ShaderProgram" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [270 517])
+                    ("initialize_shaderprogram" function
+                       (:arguments 
+                          ( ("sp" variable
+                               (:reference 1
+                                :type ("ShaderProgram" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [604 622])
+                            ("shader" variable
+                               (:reference 1
+                                :type ("Shader" type
+                                     (:template-specifier 
+                                        ( ("ShaderType" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [627 654])
+                            ("" variable
+                               (:reference 1
+                                :type ("Shader" type
+                                     (:template-specifier 
+                                        ( ("ShaderTypes" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [659 680])
+                            ("" variable (:type ("shaders" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [683 691]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [574 766])
+                    ("get_uniform" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Uniform" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [828 852]))                          
+                        :parent "ShaderProgram")
+                        (reparse-symbol namespacesubparts) [770 953]))                  
+                :type "namespace")
+                nil [38 955]))          
+      :file "shaderprogram.tpp"
+      :pointmax 956
+      :fsize 955
+      :lastmodtime '(21958 4674 774404 726000)
+      :unmatched-syntax nil)
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GL/glew.h" include (:system-flag t) nil [1 21])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [22 45])
+            ("cmath" include (:system-flag t) nil [47 63])
+            ("cstdio" include (:system-flag t) nil [64 81])
+            ("cassert" include (:system-flag t) nil [82 100])
+            ("memory" include (:system-flag t) nil [102 119])
+            ("array" include (:system-flag t) nil [120 136])
+            ("iostream" include (:system-flag t) nil [137 156])
+            ("debug.hpp" include nil nil [158 178])
+            ("vector.hpp" include nil nil [179 200])
+            ("matrix.hpp" include nil nil [201 222])
+            ("shader.hpp" include nil nil [223 244])
+            ("context.hpp" include nil nil [245 267])
+            ("buffer.hpp" include nil nil [268 289])
+            ("uniform.hpp" include nil nil [290 312])
+            ("attribute.hpp" include nil nil [313 337])
+            ("check_shader" function
+               (:template 
+                  ( ("GLenum" type nil nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :type ("ogl::Shader" type
+                             (:template-specifier 
+                                ( ("ShaderType" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [520 547]))                  )
+                nil [474 642])
+            ("check_program" function
+               (:arguments 
+                  ( ("sp" variable
+                       (:reference 1
+                        :type ("ogl::ShaderProgram" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [804 827]))                  
+                :type "void")
+                nil [785 924])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [935 944])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [945 957]))                  
+                :type "int")
+                nil [926 3495]))          
+      :file "main.cpp"
+      :pointmax 3496
+      :fsize 3495
+      :lastmodtime '(21959 20735 990135 952000)
+      :unmatched-syntax nil)
+    (semanticdb-table "matrix.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstdlib" include (:system-flag t) nil [15 33])
+            ("array" include (:system-flag t) nil [34 50])
+            ("iostream" include (:system-flag t) nil [51 70])
+            ("vector.hpp" include nil nil [72 93])
+            ("ogl" type
+               (:members 
+                  ( ("Matrix" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("m_elements" variable (:type ("std::array" type
+                                 (:template-specifier 
+                                    ( ("std::array" type nil nil nil)
+                                      ("N" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [309 352])
+                            ("public" label nil (reparse-symbol classsubparts) [355 362])
+                            ("Matrix" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [367 376])
+                            ("Matrix" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("elements" variable
+                                       (:reference 1
+                                        :type ("std::array" type
+                                             (:template-specifier 
+                                                ( ("std::array" type nil nil nil)
+                                                  ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [397 439]))                                  
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [390 440])
+                            ("Matrix" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("column" variable
+                                       (:reference 1
+                                        :type ("std::array" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("M" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [461 486]))                                  
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [454 487])
+                            ("Matrix" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("N" type nil nil nil)
+                                                  ("M" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [499 524]))                                  
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [492 525])
+                            ("Matrix" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("N" type nil nil nil)
+                                                  ("M" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [537 554])
+                                    ("" variable (:type ("m" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [555 557]))                                  
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [530 558])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("N" type nil nil nil)
+                                                  ("M" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [625 650]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [597 651])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("N" type nil nil nil)
+                                                  ("M" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [684 701])
+                                    ("" variable (:type ("m" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [702 704]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [656 705])
+                            ("[]" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [740 754]))                                  
+                                :type ("std::array" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [710 755])
+                            ("data" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [837 847]))                          )
+                        (reparse-symbol namespacesubparts) [240 852])
+                    ("Matrix" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("m_elements" variable (:type ("std::array" type
+                                 (:template-specifier 
+                                    ( ("std::array" type nil nil nil)
+                                      ("1"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1043 1086])
+                            ("public" label nil (reparse-symbol classsubparts) [1089 1096])
+                            ("Matrix" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("elements" variable
+                                       (:reference 1
+                                        :type ("std::array" type
+                                             (:template-specifier 
+                                                ( ("std::array" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1117 1159]))                                  
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1110 1160])
+                            ("Matrix" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("column" variable
+                                       (:reference 1
+                                        :type ("std::array" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1181 1206]))                                  
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1174 1207])
+                            ("Matrix" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("1")
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1219 1244]))                                  
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1212 1245])
+                            ("Matrix" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("1")
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1257 1274])
+                                    ("" variable (:type ("m" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1275 1277]))                                  
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1250 1278])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("1")
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1345 1370]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("1")
+                                          ("1"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1317 1371])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("1")
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1404 1421])
+                                    ("" variable (:type ("m" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1422 1424]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("1")
+                                          ("1"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1376 1425])
+                            ("[]" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1460 1474]))                                  
+                                :type ("std::array" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("1"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1430 1475])
+                            ("Matrix" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1488 1499]))                                  
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1481 1500])
+                            ("T" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1514 1518]))                          
+                        :template-specifier 
+                          ( ("T" type nil nil nil)
+                            ("1")
+                            ("1"))                          )
+                        (reparse-symbol namespacesubparts) [995 1523])
+                    ("Matrix" variable (:type "int") (reparse-symbol namespacesubparts) [1547 1567])
+                    ("Matrix" variable (:type "int") (reparse-symbol namespacesubparts) [1592 1612])
+                    ("Matrix" variable (:type "int") (reparse-symbol namespacesubparts) [1636 1656])
+                    ("Matrix" variable (:type "int") (reparse-symbol namespacesubparts) [1679 1699])
+                    ("+" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("M" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1780 1807])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1808 1835]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [1703 1836])
+                    ("-" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("M" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1917 1944])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1945 1972]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [1840 1973])
+                    ("-" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("M" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2054 2079]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [1977 2080])
+                    ("" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("M" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2161 2186])
+                            ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2187 2196]))                          
+                        :function-pointer t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2084 2197])
+                    ("" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("M" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2278 2287])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2288 2313]))                          
+                        :function-pointer t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2201 2314])
+                    ("/" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("M" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2397 2422])
+                            ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2423 2432]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2320 2433])
+                    ("" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("M" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("L" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2529 2556])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("L" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2557 2584]))                          
+                        :function-pointer t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2437 2585])
+                    ("==" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2656 2683])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2684 2711]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2589 2712])
+                    ("!=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2783 2810])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2811 2838]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2716 2839])
+                    ("+=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("M" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2922 2943])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2944 2971]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2843 2972])
+                    ("-=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("M" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3055 3076])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3077 3104]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2976 3105])
+                    ("=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("M" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3188 3209])
+                            ("rhs" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3210 3216]))                          
+                        :function-pointer t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3109 3217])
+                    ("/=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("M" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3300 3321])
+                            ("rhs" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3322 3328]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3221 3329])
+                    ("multiply_add" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("M" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("L" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3560 3587])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("L" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3598 3625])
+                            ("adder" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3636 3665]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3466 3666])
+                    ("multiply_add_assign" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("N" type nil nil nil)
+                                  ("N" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3910 3937])
+                            ("rhs" variable
+                               (:reference 1
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3949 3970])
+                            ("adder" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3982 4011]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3838 4012])
+                    ("<<" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type ("std::ostream" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4092 4109])
+                            ("m" variable
+                               (:reference 1
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4110 4129]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [4016 4130]))                  
+                :type "namespace")
+                nil [95 4132])
+            ("matrix.tpp" include nil nil [4134 4155])
+            ("matrix1.tpp" include nil nil [4156 4178]))          
+      :file "matrix.hpp"
+      :pointmax 4179
+      :fsize 4178
+      :lastmodtime '(21959 30230 310096 398000)
+      :unmatched-syntax nil)
+    (semanticdb-table "context.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GL/glew.h" include (:system-flag t) nil [15 35])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [36 59])
+            ("string" include (:system-flag t) nil [61 78])
+            ("ogl" type
+               (:members 
+                  ( ("Context" type
+                       (:members 
+                          ( ("m_window" variable
+                               (:pointer 1
+                                :type ("GLFWwindow" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [225 246])
+                            ("public" label nil (reparse-symbol classsubparts) [250 257])
+                            ("Context" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [271 281])
+                                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [287 298])
+                                    ("title" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [304 329])
+                                    ("monitor" variable
+                                       (:pointer 1
+                                        :type ("GLFWmonitor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [335 356])
+                                    ("share" variable
+                                       (:pointer 1
+                                        :type ("GLFWwindow" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [362 380]))                                  
+                                :type ("Context" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [263 381])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [397 406])
+                            ("window" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("GLFWwindow" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [411 432])
+                            ("use" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [458 469])
+                            ("swap_buffers" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [474 494])
+                            ("should_close" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [499 519]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [205 524]))                  
+                :type "namespace")
+                nil [80 526]))          
+      :file "context.hpp"
+      :pointmax 527
+      :fsize 526
+      :lastmodtime '(21954 41344 167005 700000)
+      :unmatched-syntax nil)
+    (semanticdb-table "buffer.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GL/glew.h" include (:system-flag t) nil [15 35])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [36 59])
+            ("cstdlib" include (:system-flag t) nil [61 79])
+            ("array" include (:system-flag t) nil [81 97])
+            ("vector.hpp" include nil nil [99 120])
+            ("ogl" type
+               (:members 
+                  ( ("Buffer" type
+                       (:template 
+                          ( ("GLenum" type nil nil nil)
+                            ("GLenum" type nil nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("m_handle" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [425 441])
+                            ("public" label nil (reparse-symbol classsubparts) [445 452])
+                            ("Buffer" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Buffer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [462 471])
+                            ("Buffer" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("handle" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [483 497]))                                  
+                                :type ("Buffer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [476 498])
+                            ("Buffer" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Buffer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [542 550])
+                                    ("" variable (:type ("b" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [551 553]))                                  
+                                :type ("Buffer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [535 554])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [569 578])
+                            ("buffer" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [679 696])
+                                    ("data" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [697 714]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [667 715])
+                            ("buffer" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("std::size_t" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::array" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [810 839]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [761 840])
+                            ("buffer" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("std::size_t" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [936 961]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [887 962])
+                            ("handle" function
+                               (:prototype-flag t
+                                :type ("GLuint" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1032 1048])
+                            ("bind" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1117 1129]))                          )
+                        (reparse-symbol namespacesubparts) [288 1134]))                  
+                :type "namespace")
+                nil [122 1136])
+            ("buffer.tpp" include nil nil [1138 1159]))          
+      :file "buffer.hpp"
+      :pointmax 1160
+      :fsize 1159
+      :lastmodtime '(21955 29010 503286 499000)
+      :unmatched-syntax nil)
+    (semanticdb-table "attribute.hpp"
+      :file "attribute.hpp"
+      :fsize 445
+      :lastmodtime '(21954 11171 94722 16000))
+    (semanticdb-table "vector.tpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vector.hpp" include nil nil [15 36])
+            ("ogl" type
+               (:members 
+                  ( ("make_singleton_array" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::array" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("1"))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115 119]))                          )
+                        (reparse-symbol namespacesubparts) [57 173])
+                    ("make_vector" function
+                       (:arguments 
+                          ( ("v1" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [253 258])
+                            ("" variable (:type ("Ts" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [259 262])
+                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [265 270]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [241 415]))                  
+                :type "namespace")
+                nil [38 417]))          
+      :file "vector.tpp"
+      :pointmax 418
+      :fsize 417
+      :lastmodtime '(21954 42142 38420 389000)
+      :unmatched-syntax nil)
+    (semanticdb-table "vector.old.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "vector.old.hpp"
+      :pointmax 2422
+      :fsize 2421
+      :lastmodtime '(21954 11171 106733 127000)
+      :unmatched-syntax nil)
+    (semanticdb-table "buffer.tpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("buffer.hpp" include nil nil [15 36])
+            ("ogl" type
+               (:members 
+                  ( ("Buffer" function
+                       (:template 
+                          ( ("GLenum" type nil nil nil)
+                            ("GLenum" type nil nil nil))                          
+                        :type ("Buffer" type (:type "class") nil nil)
+                        :parent "Buffer"
+                        :constructor-flag t)
+                        (reparse-symbol namespacesubparts) [57 182])
+                    ("Buffer" function
+                       (:template 
+                          ( ("GLenum" type nil nil nil)
+                            ("GLenum" type nil nil nil))                          
+                        :type ("Buffer" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("handle" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [272 286]))                          
+                        :parent "Buffer"
+                        :constructor-flag t)
+                        (reparse-symbol namespacesubparts) [186 311])
+                    ("Buffer" function
+                       (:template 
+                          ( ("GLenum" type nil nil nil)
+                            ("GLenum" type nil nil nil))                          
+                        :type ("Buffer" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Buffer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [442 450])
+                            ("" variable (:type ("b" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [451 453]))                          
+                        :parent "Buffer"
+                        :constructor-flag t)
+                        (reparse-symbol namespacesubparts) [356 510])
+                    ("buffer" function
+                       (:template 
+                          ( ("GLenum" type nil nil nil)
+                            ("GLenum" type nil nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [748 765])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [766 783]))                          
+                        :parent "Buffer")
+                        (reparse-symbol namespacesubparts) [657 854])
+                    ("buffer" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::array" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [984 1013]))                          
+                        :parent "Buffer")
+                        (reparse-symbol namespacesubparts) [906 1100])
+                    ("buffer" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("std::size_t" type nil nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1230 1255]))                          
+                        :parent "Buffer")
+                        (reparse-symbol namespacesubparts) [1152 1342])
+                    ("handle" function
+                       (:template 
+                          ( ("GLenum" type nil nil nil)
+                            ("GLenum" type nil nil nil))                          
+                        :type ("GLuint" type (:type "class") nil nil)
+                        :parent "Buffer")
+                        (reparse-symbol namespacesubparts) [1346 1467])
+                    ("bind" function
+                       (:template 
+                          ( ("GLenum" type nil nil nil)
+                            ("GLenum" type nil nil nil))                          
+                        :type "void"
+                        :parent "Buffer")
+                        (reparse-symbol namespacesubparts) [1471 1607]))                  
+                :type "namespace")
+                nil [38 1609]))          
+      :file "buffer.tpp"
+      :pointmax 1610
+      :fsize 1609
+      :lastmodtime '(21955 36928 959856 826000)
+      :unmatched-syntax nil)
+    (semanticdb-table "matrix.tpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "matrix.tpp"
+      :pointmax 6896
+      :fsize 6895
+      :lastmodtime '(21955 24281 311491 617000)
+      :unmatched-syntax nil)
+    (semanticdb-table "matrix1.tpp"
+      :file "matrix1.tpp"
+      :fsize 1154
+      :lastmodtime '(21954 11171 106733 127000))
+    (semanticdb-table "shader.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("shader.hpp" include nil nil [1 22])
+            ("ogl" type
+               (:members 
+                  ( ("ShaderCreationException" function
+                       (:constructor-flag t
+                        :parent "ShaderCreationException"
+                        :type ("ShaderCreationException" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [43 124]))                  
+                :type "namespace")
+                nil [24 238]))          
+      :file "shader.cpp"
+      :pointmax 239
+      :fsize 238
+      :lastmodtime '(21955 30011 256660 202000)
+      :unmatched-syntax '((semantic-list 189 . 235) (symbol 180 . 188) (CONST 174 . 179) (semantic-list 171 . 173) (symbol 167 . 171) (punctuation 166 . 167) (punctuation 165 . 166) (symbol 142 . 165) (punctuation 140 . 141) (CHAR 135 . 139) (CONST 129 . 134) (punctuation 124 . 125)))
+    (semanticdb-table "shaderprogram.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "shaderprogram.hpp"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(21954 11171 106733 127000)
+      :unmatched-syntax nil)
+    (semanticdb-table "shaderprogram.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("shader.hpp" include nil nil [22 43])
+            ("ogl" type
+               (:members 
+                  ( ("ShaderProgram" function
+                       (:constructor-flag t
+                        :parent "ShaderProgram"
+                        :type ("ShaderProgram" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [64 349])
+                    ("ShaderProgram" function
+                       (:constructor-flag t
+                        :parent "ShaderProgram"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("ShaderProgram" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [382 397])
+                            ("" variable (:type ("sp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [398 401]))                          
+                        :type ("ShaderProgram" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [353 533])
+                    ("link" function
+                       (:parent "ShaderProgram"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [756 1425])
+                    ("detach_shaders" function
+                       (:parent "ShaderProgram"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1429 1609])
+                    ("handle" function
+                       (:parent "ShaderProgram"
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1703 1760])
+                    ("initialize_shaderprogram" function
+                       (:arguments 
+                          ( ("sp" variable
+                               (:reference 1
+                                :type ("ShaderProgram" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1872 1890]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1842 1908])
+                    ("ShaderProgramCreationException" function
+                       (:constructor-flag t
+                        :parent "ShaderProgramCreationException"
+                        :type ("ShaderProgramCreationException" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1912 2007]))                  
+                :type "namespace")
+                nil [45 2134]))          
+      :file "shaderprogram.cpp"
+      :pointmax 2135
+      :fsize 2134
+      :lastmodtime '(21959 20814 263907 896000)
+      :unmatched-syntax nil)
+    (semanticdb-table "make_unique.hpp"
+      :file "make_unique.hpp"
+      :fsize 200
+      :lastmodtime '(21955 23379 200691 881000))
+    (semanticdb-table "transform.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("matrix.hpp" include nil nil [15 36])
+            ("vector.hpp" include nil nil [37 58])
+            ("ogl" type
+               (:members 
+                  ( ("Transform" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("m_matrix" variable (:type ("Matrix" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil)
+                                      ("4")
+                                      ("4"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [678 703])
+                            ("init_scale_transform" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("scale" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [746 772]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("4")
+                                          ("4"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [709 773])
+                            ("init_rotation_transform" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("rotation" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("4"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [818 847]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("4")
+                                          ("4"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [778 848])
+                            ("init_position_transform" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("position" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [893 922]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("4")
+                                          ("4"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [853 923])
+                            ("public" label nil (reparse-symbol classsubparts) [926 933])
+                            ("Transform" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [939 951])
+                            ("Transform" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("scale" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [966 992])
+                                    ("rotation" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("4"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1001 1030])
+                                    ("position" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1038 1067]))                                  
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [956 1068])
+                            ("Transform" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("4")
+                                                  ("4"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1083 1108]))                                  
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1073 1109])
+                            ("Transform" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Transform" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1166 1180])
+                                    ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1181 1183]))                                  
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1156 1184])
+                            ("matrix" function
+                               (:prototype-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("4")
+                                          ("4"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1260 1286]))                          )
+                        (reparse-symbol namespacesubparts) [636 1291]))                  
+                :type "namespace")
+                nil [60 1293])
+            ("transform.tpp" include nil nil [1295 1319]))          
+      :file "transform.hpp"
+      :pointmax 1320
+      :fsize 1319
+      :lastmodtime '(21963 20170 577658 680000)
+      :unmatched-syntax nil)
+    (semanticdb-table "transform.tpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("array" include (:system-flag t) nil [15 31])
+            ("transform.hpp" include nil nil [33 57])
+            ("ogl" type
+               (:members 
+                  ( ("init_scale_transform" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("4")
+                                  ("4"))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("scale" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("3"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [220 246]))                          
+                        :parent "Transform")
+                        (reparse-symbol namespacesubparts) [149 468])
+                    ("init_rotation_transform" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("4")
+                                  ("4"))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("rotation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("4"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [613 642]))                          
+                        :parent "Transform")
+                        (reparse-symbol namespacesubparts) [539 1654])
+                    ("init_position_transform" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("4")
+                                  ("4"))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("3"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1732 1761]))                          
+                        :parent "Transform")
+                        (reparse-symbol namespacesubparts) [1658 1964]))                  
+                :type "namespace")
+                nil [59 1966]))          
+      :file "transform.tpp"
+      :pointmax 1967
+      :fsize 1966
+      :lastmodtime '(21974 6807 830946 907000)
+      :unmatched-syntax nil)
+    (semanticdb-table "debug.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [15 34])
+            ("DEBUG" variable (:constant-flag t) nil [44 49])
+            ("DEBUGV" variable (:constant-flag t) nil [111 117]))          
+      :file "debug.hpp"
+      :pointmax 185
+      :fsize 184
+      :lastmodtime '(21959 20076 829912 134000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (semantic-list 95 . 102) (WHILE 89 . 94) (semantic-list 56 . 88) (DO 53 . 55) (semantic-list 49 . 52))
+      :lexical-table 
+        '(("DEBUG" (spp-arg-list ("x") 49 . 52) . 
+              ((DO "do" 53 . 55) (semantic-list "{ std::cerr << x << std::endl; }" 56 . 88) (WHILE "while" 89 . 94) (semantic-list "(false)" 95 . 102)))
+          ("DEBUGV" (spp-arg-list ("x") 117 . 120) . 
+              ((DO "do" 121 . 123) (semantic-list "{ std::cerr << #x << \": \" << x << std::endl; }" 124 . 170) (WHILE "while" 171 . 176) (semantic-list "(false)" 177 . 184)))
+          )
+)
+    (semanticdb-table "hello.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("main" function (:type "int") nil [1 43]))          
+      :file "hello.c"
+      :pointmax 44
+      :fsize 43
+      :lastmodtime '(21968 39852 402873 487000)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "transform.tpp~"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("array" include (:system-flag t) nil [15 31])
+            ("transform.hpp" include nil nil [33 57])
+            ("ogl" type
+               (:members 
+                  ( ("init_scale_transform" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("4")
+                                  ("4"))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("scale" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("3"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [151 177]))                          
+                        :parent "Transform")
+                        (reparse-symbol namespacesubparts) [80 367])
+                    ("init_rotation_transform" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("4")
+                                  ("4"))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("rotation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("4"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [512 541]))                          
+                        :parent "Transform")
+                        (reparse-symbol namespacesubparts) [438 743]))                  
+                :type "namespace")
+                nil [59 747]))          
+      :file "transform.tpp~"
+      :pointmax 748
+      :fsize 1075
+      :lastmodtime '(21963 25577 44162 154000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "transform.hpp~"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("matrix.hpp" include nil nil [15 36])
+            ("vector.hpp" include nil nil [37 58])
+            ("ogl" type
+               (:members 
+                  ( ("Transform" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("m_matrix" variable (:type ("Matrix" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil)
+                                      ("4")
+                                      ("4"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [678 703])
+                            ("init_scale_transform" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("scale" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [746 772]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("4")
+                                          ("4"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [709 773])
+                            ("init_rotation_transform" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("rotation" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("4"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [818 847]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("4")
+                                          ("4"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [778 848])
+                            ("init_position_transform" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("position" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [893 922]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("4")
+                                          ("4"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [853 923])
+                            ("public" label nil (reparse-symbol classsubparts) [926 933])
+                            ("Transform" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [939 951])
+                            ("Transform" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("scale" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [966 992])
+                                    ("rotation" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("4"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1001 1030])
+                                    ("position" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1038 1067]))                                  
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [956 1068])
+                            ("Transform" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("4")
+                                                  ("4"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1083 1108]))                                  
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1073 1109])
+                            ("Transform" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Transform" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1166 1180])
+                                    ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1181 1183]))                                  
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1156 1184])
+                            ("matrix" function
+                               (:prototype-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("4")
+                                          ("4"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1260 1286]))                          )
+                        (reparse-symbol namespacesubparts) [636 1291]))                  
+                :type "namespace")
+                nil [60 1293])
+            ("transform.tpp" include nil nil [1295 1319]))          
+      :file "transform.hpp~"
+      :pointmax 1320
+      :fsize 1319
+      :lastmodtime '(21959 30262 569055 406000)
+      :unmatched-syntax '((punctuation 1253 . 1254) (semantic-list 1251 . 1253) (punctuation 1250 . 1251) (punctuation 1249 . 1250) (number 1248 . 1249) (punctuation 1246 . 1247) (number 1245 . 1246) (punctuation 1243 . 1244) (symbol 1242 . 1243) (punctuation 1241 . 1242) (symbol 1235 . 1241) (OPERATOR 1226 . 1234) (punctuation 1220 . 1221) (DEFAULT 1213 . 1220) (punctuation 1211 . 1212) (symbol 1202 . 1210) (semantic-list 1199 . 1201) (symbol 1190 . 1199) (punctuation 1189 . 1190) (punctuation 1179 . 1180) (punctuation 1150 . 1151) (DEFAULT 1143 . 1150) (punctuation 1141 . 1142) (semantic-list 1123 . 1140) (symbol 1114 . 1123) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))))
+  :file "!home!matt!ssd2!@home!matt!src!ogl!c++!tutorials!continuous-tutorial!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,168 @@
+;; Object l3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "l3/"
+  :tables
+  (list
+    (semanticdb-table "thermodynamics.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "thermodynamics.py"
+      :pointmax 1
+      :fsize 3097
+      :lastmodtime '(22240 32995 781836 542000)
+      :unmatched-syntax '(($EOI 2978 . 2978)))
+    (semanticdb-table "thermoelectrics.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("scipy.optimize" include nil nil [21 55])
+            ("numpy" include nil nil [56 75])
+            ("pylab" include nil nil [76 95])
+            ("sys" include nil nil [96 106])
+            ("sys" code nil nil [108 151])
+            ("volt, amp, tempa, temph, tempc" code nil nil [152 244])
+            ("x" variable nil nil [246 259])
+            ("power" variable nil nil [260 276])
+            ("Tio" variable nil nil [277 291])
+            ("Toa" variable nil nil [292 306])
+            ("dt" variable nil nil [307 315])
+            ("E" variable nil nil [316 328])
+            ("for" code nil nil [330 479])
+            ("p" variable nil nil [480 489])
+            ("peval" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [500 501])
+                ("p" variable nil (reparse-symbol function_parameters) [502 503]))              ) nil [490 531])
+            ("residuals" function (:arguments 
+              ( ("p" variable nil (reparse-symbol function_parameters) [545 546])
+                ("y" variable nil (reparse-symbol function_parameters) [548 549])
+                ("x" variable nil (reparse-symbol function_parameters) [551 552]))              ) nil [531 582])
+            ("pfinal1, cov_x, info, msg, success" code nil nil [582 696])
+            ("chi2" variable nil nil [698 759])
+            ("dof" code nil nil [760 782])
+            ("chi2_reduced" code nil nil [783 806])
+            ("print" code nil nil [807 865])
+            ("print" code nil nil [866 929])
+            ("for" code nil nil [931 1027])
+            ("print" code nil nil [1028 1090])
+            ("print" code nil nil [1091 1096])
+            ("print" code nil nil [1097 1102])
+            ("p" variable nil nil [1104 1115])
+            ("peval" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [1126 1127])
+                ("p" variable nil (reparse-symbol function_parameters) [1128 1129]))              ) nil [1116 1157])
+            ("residuals" function (:arguments 
+              ( ("p" variable nil (reparse-symbol function_parameters) [1171 1172])
+                ("y" variable nil (reparse-symbol function_parameters) [1174 1175])
+                ("x" variable nil (reparse-symbol function_parameters) [1177 1178]))              ) nil [1157 1208])
+            ("pfinal2, cov_x, info, msg, success" code nil nil [1208 1322])
+            ("chi2" variable nil nil [1324 1385])
+            ("dof" code nil nil [1386 1408])
+            ("chi2_reduced" code nil nil [1409 1432])
+            ("print" code nil nil [1433 1491])
+            ("print" code nil nil [1492 1555])
+            ("for" code nil nil [1557 1653])
+            ("print" code nil nil [1654 1753])
+            ("line1" variable nil nil [1755 1784])
+            ("plot" code nil nil [1785 1805])
+            ("errorbar" code nil nil [1806 1840])
+            ("plot" code nil nil [1841 1865])
+            ("line2" variable nil nil [1868 1897])
+            ("plot" code nil nil [1898 1919])
+            ("errorbar" code nil nil [1920 1954])
+            ("plot" code nil nil [1955 1979])
+            ("print" code nil nil [1989 1994])
+            ("print" code nil nil [1995 2000])
+            ("print" code nil nil [2001 2006])
+            ("V, A, tout, tin, time" code nil nil [2008 2091])
+            ("o" variable nil nil [2092 2102])
+            ("P" variable nil nil [2103 2115])
+            ("deltat" variable nil nil [2116 2133])
+            ("t" variable nil nil [2134 2146])
+            ("terr" variable nil nil [2147 2156])
+            ("for" code nil nil [2157 2258])
+            ("p" variable nil nil [2264 2274])
+            ("peval" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [2285 2286])
+                ("p" variable nil (reparse-symbol function_parameters) [2287 2288]))              ) nil [2275 2316])
+            ("residuals" function (:arguments 
+              ( ("p" variable nil (reparse-symbol function_parameters) [2330 2331])
+                ("y" variable nil (reparse-symbol function_parameters) [2333 2334])
+                ("x" variable nil (reparse-symbol function_parameters) [2336 2337]))              ) nil [2316 2367])
+            ("pfinal3, cov_x, info, msg, success" code nil nil [2368 2481])
+            ("chi2" variable nil nil [2483 2544])
+            ("dof" code nil nil [2545 2567])
+            ("chi2_reduced" code nil nil [2568 2591])
+            ("print" code nil nil [2592 2650])
+            ("print" code nil nil [2651 2714])
+            ("for" code nil nil [2716 2812])
+            ("line3" variable nil nil [2814 2839])
+            ("plot" code nil nil [2840 2859])
+            ("errorbar" code nil nil [2860 2894])
+            ("plot" code nil nil [2895 2915])
+            ("plot" code nil nil [2925 2940])
+            ("plot" code nil nil [2949 2969])
+            ("show" code nil nil [2970 2976])
+            ("print" code nil nil [2978 2983])
+            ("print" code nil nil [2984 2989])
+            ("print" code nil nil [2991 2996])
+            ("variac, altV, altA, dirV, dirA, seebV, Thot, Tcold" code nil nil [2998 3108])
+            ("Thot" code nil nil [3109 3129])
+            ("Tcold" code nil nil [3130 3152])
+            ("l" variable nil nil [3153 3168])
+            ("P_in" code nil nil [3169 3191])
+            ("altP" code nil nil [3192 3210])
+            ("dirP" code nil nil [3211 3230])
+            ("Tdiff" code nil nil [3231 3251])
+            ("do3" function nil nil [3253 3414])
+            ("average" function (:arguments 
+              ( ("xs" variable nil (reparse-symbol function_parameters) [3427 3429]))              ) nil [3415 3464])
+            ("S_d" variable nil nil [3465 3493])
+            ("print" code nil nil [3495 3526])
+            ("R_h" variable nil nil [3543 3552])
+            ("K_d" code nil nil [3554 3623])
+            ("R_d" variable nil nil [3625 3652]))          
+      :file "thermoelectrics.py"
+      :pointmax 3653
+      :fsize 3652
+      :lastmodtime '(22241 43917 892070 879000)
+      :unmatched-syntax '(($EOI 3654 . 3654)))
+    (semanticdb-table "l3.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pprint" include nil nil [21 34])
+            ("numpy" include nil nil [36 54])
+            ("matplotlib.pyplot" include nil nil [55 86])
+            ("physics.data.datum" include nil nil [88 118])
+            ("physics.data.analysis" include nil nil [119 152])
+            ("physics.data.load" include nil nil [153 182])
+            ("physics.plot.simple" include nil nil [183 214])
+            ("pp" variable nil nil [216 251])
+            ("average" function (:arguments 
+              ( ("xs" variable nil (reparse-symbol function_parameters) [265 267]))              ) nil [253 302])
+            ("analyze_part1" function nil nil [303 891])
+            ("plot_part1" function (:arguments 
+              ( ("pvthc" variable nil (reparse-symbol function_parameters) [907 912])
+                ("pvtha" variable nil (reparse-symbol function_parameters) [914 919]))              ) nil [892 1509])
+            ("analyze_part2" function nil nil [1510 2618])
+            ("plot_part2" function (:arguments 
+              ( ("pvthc" variable nil (reparse-symbol function_parameters) [2634 2639])
+                ("thvt" variable nil (reparse-symbol function_parameters) [2641 2645])
+                ("tcvt" variable nil (reparse-symbol function_parameters) [2647 2651])
+                ("pvt" variable nil (reparse-symbol function_parameters) [2653 2656]))              ) nil [2619 3665])
+            ("analyze_part3" function nil nil [3666 5333])
+            ("plot_part3" function (:arguments 
+              ( ("pvpd" variable nil (reparse-symbol function_parameters) [5349 5353])
+                ("pvthc" variable nil (reparse-symbol function_parameters) [5355 5360])
+                ("pvvd" variable nil (reparse-symbol function_parameters) [5362 5366])
+                ("pvid" variable nil (reparse-symbol function_parameters) [5368 5372])
+                ("ivv" variable nil (reparse-symbol function_parameters) [5374 5377])
+                ("vvthc" variable nil (reparse-symbol function_parameters) [5379 5384]))              ) nil [5334 6851])
+            ("main" function nil nil [6852 7662])
+            ("if" code nil nil [7663 7711]))          
+      :file "l3.py"
+      :pointmax 7711
+      :fsize 7710
+      :lastmodtime '(22266 42420 637497 53000)
+      :unmatched-syntax nil))
+  :file "!home!matt!Documents!school!phy324!l3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

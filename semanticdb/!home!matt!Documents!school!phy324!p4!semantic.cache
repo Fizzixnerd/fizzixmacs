@@ -1,0 +1,60 @@
+;; Object p4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "p4/"
+  :tables
+  (list
+    (semanticdb-table "p4.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pprint" include nil nil [19 32])
+            ("physics.data.datum" include nil nil [34 64])
+            ("physics.data.analysis" include nil nil [65 100])
+            ("numpy" include nil nil [102 120])
+            ("matplotlib.pyplot" include nil nil [121 152])
+            ("scipy" include nil nil [153 165])
+            ("scipy.optimize" include nil nil [166 200])
+            ("pp" variable nil nil [202 237])
+            ("measurement_200_kohms" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [265 266])
+                ("err" variable nil (reparse-symbol function_parameters) [268 271]))              ) nil [239 306])
+            ("measurement_kelvin" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [330 331])
+                ("err" variable nil (reparse-symbol function_parameters) [333 336]))              ) nil [307 370])
+            ("measurement_20_volts" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [396 397])
+                ("err" variable nil (reparse-symbol function_parameters) [399 402]))              ) nil [371 438])
+            ("measurement_200_volts" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [465 466])
+                ("err" variable nil (reparse-symbol function_parameters) [468 471]))              ) nil [439 506])
+            ("measurement_20_mamps" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [532 533])
+                ("err" variable nil (reparse-symbol function_parameters) [535 538]))              ) nil [507 574])
+            ("measurement_200_mamps" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [601 602])
+                ("err" variable nil (reparse-symbol function_parameters) [604 607]))              ) nil [575 642])
+            ("celsius_to_kelvin" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [665 666]))              ) nil [643 691])
+            ("thermistor" function nil nil [692 1597])
+            ("thermistor_plot" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [1618 1626]))              ) nil [1598 2090])
+            ("lamp" function nil nil [2091 2577])
+            ("lamp_plot" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [2592 2600]))              ) nil [2578 3061])
+            ("thermistor_analysis" variable nil nil [3063 3097])
+            ("pp" code nil nil [3098 3128])
+            ("thermistor_efit" variable nil nil [3129 3174])
+            ("print" code nil nil [3175 3254])
+            ("thermistor_plot" code nil nil [3255 3291])
+            ("lamp_analysis" variable nil nil [3293 3315])
+            ("pp" code nil nil [3316 3340])
+            ("lamp_efit" variable nil nil [3341 3374])
+            ("print" code nil nil [3375 3439])
+            ("lamp_plot" code nil nil [3440 3464]))          
+      :file "p4.py"
+      :pointmax 3465
+      :fsize 3464
+      :lastmodtime '(22192 52313 63967 987000)
+      :unmatched-syntax nil))
+  :file "!home!matt!Documents!school!phy324!p4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

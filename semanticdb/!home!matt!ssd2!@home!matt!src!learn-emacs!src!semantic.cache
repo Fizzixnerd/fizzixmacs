@@ -1,0 +1,20 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "index.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("My First Website" section nil nil [37 73])
+            ("This is a header!" section nil nil [73 117])
+            ("This is a header!" section (:members 
+              ( ("This is a header!" section nil nil [128 223]))              ) nil [117 223]))          
+      :file "index.html"
+      :pointmax 223
+      :fsize 222
+      :lastmodtime '(22052 62207 520927 611000)
+      :unmatched-syntax nil))
+  :file "!home!matt!ssd2!@home!matt!src!learn-emacs!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

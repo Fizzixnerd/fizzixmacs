@@ -1,0 +1,29 @@
+;; Object lucida-suite/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lucida-suite/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("KERNELS" variable (:default-value ("gmm" "dnn-asr" "fe" "fd" "crf" "regex" "stemmer")) nil [1 47])
+            (".PHONY" function (:arguments ("all" "$(KERNELS)")) nil [48 71])
+            ("SUBCLEAN" variable (:default-value ("$(addsuffix .clean, $(KERNELS))")) nil [72 115])
+            (".PHONY" function (:arguments ("clean" "$(SUBCLEAN)")) nil [115 141])
+            ("SUBTEST" variable (:default-value ("$(addsuffix .test, $(KERNELS))")) nil [142 183])
+            (".PHONY" function (:arguments ("test" "$(SUBTEST)")) nil [183 207])
+            ("all" function (:arguments ("$(KERNELS)" "prepare")) nil [208 232])
+            ("prepare" function nil nil [233 256])
+            ("$(KERNELS)" function nil nil [257 284])
+            ("clean" function (:arguments ("$(SUBCLEAN)")) nil [285 304])
+            ("$(SUBCLEAN)" function (:arguments ("%.clean:")) nil [304 347])
+            ("test" function (:arguments ("$(SUBTEST)")) nil [348 365])
+            ("$(SUBTEST)" function (:arguments ("%.test:")) nil [365 409]))          
+      :file "Makefile"
+      :pointmax 409
+      :fsize 408
+      :lastmodtime '(22258 50944 810990 273000)
+      :unmatched-syntax '((shell-command 386 . 408) (bol 385 . 385))))
+  :file "!home!matt!ssd2!@home!matt!src!lucida!lucida-suite!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

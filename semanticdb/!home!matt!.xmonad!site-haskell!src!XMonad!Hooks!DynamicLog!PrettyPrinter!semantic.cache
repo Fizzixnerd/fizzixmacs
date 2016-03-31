@@ -1,0 +1,9 @@
+;; Object PrettyPrinter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PrettyPrinter/"
+  :tables
+  (list
+)
+  :file "!home!matt!.xmonad!site-haskell!src!XMonad!Hooks!DynamicLog!PrettyPrinter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

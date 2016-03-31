@@ -1,0 +1,63 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+
+
+    (semanticdb-table "make_lab.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pylatex" include nil nil [1 21])
+            ("pylatex.utils" include nil nil [22 48])
+            ("red" function (:arguments 
+              ( ("text" variable nil (reparse-symbol function_parameters) [58 62]))              ) nil [50 122])
+            ("make_phy324_lab" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [143 147])
+                ("filename" variable nil (reparse-symbol function_parameters) [149 157])
+                ("title" variable nil (reparse-symbol function_parameters) [159 164]))              ) nil [123 311])
+            ("make_lab" function
+               (:documentation "Return a lab report."
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [325 329])
+                    ("filename" variable nil (reparse-symbol function_parameters) [334 342])
+                    ("title" variable nil (reparse-symbol function_parameters) [350 355])
+                    ("author" variable nil (reparse-symbol function_parameters) [372 378]))                  )
+                nil [312 1167])
+            ("preamble_title" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [1191 1194])
+                ("title" variable nil (reparse-symbol function_parameters) [1196 1201])
+                ("author" variable nil (reparse-symbol function_parameters) [1203 1209])
+                ("date" variable nil (reparse-symbol function_parameters) [1211 1215]))              ) nil [1172 1397])
+            ("preamble_packages" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [1424 1427])
+                ("packages" variable nil (reparse-symbol function_parameters) [1429 1437]))              ) nil [1402 1657])
+            ("make_title" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [1673 1676]))              ) nil [1658 1765])
+            ("make_sections" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [1784 1787]))              ) nil [1766 1964])
+            ("make_appendices" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [1985 1988]))              ) nil [1965 2346])
+            ("make_objectives" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [2367 2370]))              ) nil [2347 2627])
+            ("make_apparatus" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [2647 2650]))              ) nil [2628 2799])
+            ("make_procedure" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [2819 2822]))              ) nil [2800 2915])
+            ("make_error_analysis" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [2940 2943]))              ) nil [2916 3795])
+            ("make_analysis" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [3814 3817]))              ) nil [3796 3938])
+            ("make_questions" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [3958 3961]))              ) nil [3939 4054])
+            ("make_conclusion" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [4075 4078]))              ) nil [4055 4173])
+            ("test_main" function nil nil [4174 4278]))          
+      :file "make_lab.py"
+      :pointmax 4278
+      :fsize 4277
+      :lastmodtime '(22201 690 764778 611000)
+      :unmatched-syntax nil))
+  :file "!home!matt!Documents!school!phy324!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

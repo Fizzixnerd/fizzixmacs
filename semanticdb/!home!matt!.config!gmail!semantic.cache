@@ -1,0 +1,16 @@
+;; Object gmail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gmail/"
+  :tables
+  (list
+    (semanticdb-table "oauth2.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "oauth2.json"
+      :pointmax 424
+      :fsize 423
+      :lastmodtime '(21986 7479 225563 952000)
+      :unmatched-syntax nil))
+  :file "!home!matt!.config!gmail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

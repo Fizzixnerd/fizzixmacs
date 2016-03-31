@@ -1,0 +1,24 @@
+;; Object Profiles/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Profiles/"
+  :tables
+  (list
+    (semanticdb-table "Default Settings.JSON"
+      :major-mode 'js-mode
+      :tags nil
+      :file "Default Settings.JSON"
+      :pointmax 11710
+      :fsize 12097
+      :lastmodtime '(22059 58893 88951 753000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Easy Settings.JSON"
+      :major-mode 'js-mode
+      :tags nil
+      :file "Easy Settings.JSON"
+      :pointmax 11717
+      :fsize 12103
+      :lastmodtime '(21382 172 0 0)
+      :unmatched-syntax nil))
+  :file "!home!matt!Downloads!Masterwork Reborn v0.06!MasterworkDwarfFortress!Settings!Profiles!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

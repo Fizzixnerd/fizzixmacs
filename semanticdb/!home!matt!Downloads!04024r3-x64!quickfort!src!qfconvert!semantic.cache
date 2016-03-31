@@ -1,0 +1,53 @@
+;; Object qfconvert/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "qfconvert/"
+  :tables
+  (list
+    (semanticdb-table "qfconvert.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Main entry point for qfconvert.\"\"\"" code nil nil [21 58])
+            ("sys" include nil nil [60 70])
+            ("optparse" include nil nil [72 105])
+            ("traceback" include nil nil [106 122])
+            ("cProfile" include nil nil [123 138])
+            ("blueprint" include nil nil [140 156])
+            ("log" include nil nil [157 167])
+            ("errors" include nil nil [169 203])
+            ("VERSION" variable nil nil [205 221])
+            ("parse_options" function
+               (:documentation "Read options and args from argv (the command line parameters)."
+                :arguments 
+                  ( ("argv" variable nil (reparse-symbol function_parameters) [242 246]))                  )
+                nil [224 3700])
+            ("run" function
+               (:documentation "Perform filereading/conversion work and output result."
+                :arguments 
+                  ( ("options" variable nil (reparse-symbol function_parameters) [3710 3717]))                  )
+                nil [3702 4709])
+            ("main" function
+               (:documentation "Parse options file, parse and convert blueprint, and output result."
+                :arguments 
+                  ( ("argv" variable nil (reparse-symbol function_parameters) [4720 4724]))                  )
+                nil [4711 5305])
+            ("if" code nil nil [5307 5345]))          
+      :file "qfconvert.py"
+      :pointmax 5345
+      :fsize 5488
+      :lastmodtime '(20420 65502 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 5271 . 5305) (NEWLINE 5270 . 5271) (COLON 5227 . 5228) (TRY 4823 . 4826) (AS 5222 . 5224) (INDENT_BLOCK 4535 . 4698) (NEWLINE 4534 . 4535) (COLON 4533 . 4534) (TRY 3790 . 3793) (AS 4528 . 4530) (NAME 3403 . 3410) (IF 3429 . 3431) (ELSE 3446 . 3450) (NAME 3222 . 3229) (IF 3248 . 3250) (ELSE 3265 . 3269)))
+    (semanticdb-table "blueprint.py"
+      :file "blueprint.py"
+      :fsize 16539
+      :lastmodtime '(20420 2913 0 0))
+    (semanticdb-table "log.py"
+      :file "log.py"
+      :fsize 1655
+      :lastmodtime '(20375 29076 0 0))
+    (semanticdb-table "errors.py"
+      :file "errors.py"
+      :fsize 501
+      :lastmodtime '(20331 58815 0 0)))
+  :file "!home!matt!Downloads!04024r3-x64!quickfort!src!qfconvert!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

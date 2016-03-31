@@ -6,6 +6,7 @@
 ;;;### (autoloads nil "evernote-mode-pkg" "evernote-mode-pkg.el"
 ;;;;;;  (20296 51307))
 ;;; Generated autoloads from evernote-mode-pkg.el
+ (load-file "evernote-mode.el")
  (require 'evernote-mode)
  (setq evernote-enml-formatter-command '("w3m" "-dump" "-I" "UTF8" "-O" "UTF8"))
  (global-set-key "\C-cec" 'evernote-create-note)

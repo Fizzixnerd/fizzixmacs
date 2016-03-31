@@ -1,0 +1,1438 @@
+;; Object stdlib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "stdlib/"
+  :tables (list 
+   (semanticdb-table "memory.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pointer.hpp" include nil nil [15 37])
+            ("pointer.tpp" include nil nil [38 60])
+            ("UniquePointer.hpp" include nil nil [61 89])
+            ("UniquePointer.tpp" include nil nil [90 118])
+            ("deleter.hpp" include nil nil [119 141])
+            ("deleter.tpp" include nil nil [142 164]))          
+    :file "memory.hpp"
+    :pointmax 165
+    :fsize 164
+    :lastmodtime '(21926 30213 723591 213000)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (semantic-list 1041 . 1081) (CONST 1035 . 1040) (semantic-list 1032 . 1034) (BOOL 1028 . 1032) (OPERATOR 1019 . 1027) (punctuation 1018 . 1019) (punctuation 1017 . 1018) (punctuation 1016 . 1017) (symbol 1015 . 1016) (punctuation 1014 . 1015) (symbol 1007 . 1014) (punctuation 1003 . 1004) (symbol 1002 . 1003) (CLASS 996 . 1001) (punctuation 995 . 996) (TEMPLATE 987 . 995) (punctuation 205 . 206) (CONST 200 . 205) (semantic-list 197 . 199) (BOOL 193 . 197) (OPERATOR 184 . 192) (punctuation 178 . 179) (DEFAULT 171 . 178) (punctuation 169 . 170) (semantic-list 166 . 168) (symbol 159 . 166) (punctuation 158 . 159) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (semantic-list 1028 . 1068) (CONST 1022 . 1027) (semantic-list 1019 . 1021) (BOOL 1015 . 1019) (OPERATOR 1006 . 1014) (punctuation 1005 . 1006) (punctuation 1004 . 1005) (punctuation 1003 . 1004) (symbol 1002 . 1003) (punctuation 1001 . 1002) (symbol 994 . 1001) (punctuation 990 . 991) (symbol 989 . 990) (CLASS 983 . 988) (punctuation 982 . 983) (TEMPLATE 974 . 982) (punctuation 192 . 193) (CONST 187 . 192) (semantic-list 184 . 186) (BOOL 180 . 184) (OPERATOR 171 . 179) (punctuation 165 . 166) (DEFAULT 158 . 165) (punctuation 156 . 157) (semantic-list 153 . 155) (symbol 146 . 153) (punctuation 145 . 146) (symbol 16 . 23) (punctuation 15 . 16) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 16 . 23) (punctuation 15 . 16) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("EXECUTABLE_NAMES" variable (:default-value ("test-stdlib")) nil [221 250])
+            ("SRC_SUFFIX" variable (:default-value (".cpp")) nil [250 266])
+            ("RM" variable (:default-value ("rm" "-f")) nil [266 275])
+            ("YOUR_CFLAGS" variable nil nil [276 289])
+            ("YOUR_CXXFLAGS" variable nil nil [289 304])
+            ("YOUR_CPPFLAGS" variable nil nil [304 319])
+            ("YOUR_LDFLAGS" variable nil nil [319 333])
+            ("YOUR_LDLIBS" variable nil nil [333 346])
+            ("CC" variable (:default-value ("clang-3.6")) nil [426 439])
+            ("CXX" variable (:default-value ("clang++-3.6")) nil [439 455])
+            ("CFLAGS" variable (:default-value ("$(YOUR_CFLAGS)")) nil [456 478])
+            ("CXXFLAGS" variable (:default-value ("-Wall" "-std=gnu++11" "-ggdb" "$(YOUR_CXXFLAGS)")) nil [478 529])
+            ("CPPFLAGS" variable (:default-value ("$(YOUR_CPPFLAGS)")) nil [529 555])
+            ("LDFLAGS" variable (:default-value ("$(YOUR_LDFLAGS)")) nil [555 579])
+            ("LDLIBS" variable (:default-value ("$(YOUR_LDLIBS)")) nil [579 601])
+            ("SRCS" variable (:default-value ("$(wildcard *$(SRC_SUFFIX))")) nil [602 634])
+            ("OBJS" variable (:default-value ("$(subst $(SRC_SUFFIX),.o,$(SRCS))")) nil [634 673])
+            ("all" function (:arguments ("$(EXECUTABLE_NAMES)")) nil [720 745])
+            ("test-stdlib" function (:arguments ("$(OBJS)")) nil [1064 1137])
+            ("scratch" function (:arguments ("$(OBJS)")) nil [1138 1203])
+            ("depend" function (:arguments (".depend")) nil [1204 1220])
+            (".depend" function (:arguments ("$(SRCS)")) nil [1221 1294])
+            ("clean" function nil nil [1295 1317])
+            ("dist-clean" function (:arguments ("clean")) nil [1318 1354])
+            (".depend" include nil nil [1355 1371]))          
+    :file "Makefile"
+    :pointmax 1371
+    :fsize 1370
+    :lastmodtime '(21925 37114 920190 535000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table ".depend"
+    :file ".depend"
+    :fsize 431
+    :lastmodtime '(21926 32485 591618 79000)
+    )
+   (semanticdb-table "memory.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("memory.hpp" include nil nil [1 22]))          
+    :file "memory.cpp"
+    :pointmax 23
+    :fsize 22
+    :lastmodtime '(21917 29589 765125 266000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "memory.tpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "memory.tpp"
+    :pointmax 15
+    :fsize 253
+    :lastmodtime '(21917 29589 765125 266000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_memory.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("memory.hpp" include nil nil [1 22])
+            ("cassert" include (:system-flag t) nil [23 41])
+            ("stdlib" type
+               (:members 
+                  ( ("test_memory" function (:type "bool") (reparse-symbol namespacesubparts) [65 189]))                  
+                :type "namespace")
+                nil [43 191]))          
+    :file "test_memory.cpp"
+    :pointmax 179
+    :fsize 194
+    :lastmodtime '(21919 486 577059 123000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "eprintf.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [15 34]))          
+    :file "eprintf.hpp"
+    :pointmax 36
+    :fsize 35
+    :lastmodtime '(21917 29589 765125 266000)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 36 . 43) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 36 . 43) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 36 . 43) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 11 . 19) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2))
+    )
+   (semanticdb-table "test_stdlib.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "test_stdlib.cpp"
+    :pointmax 1
+    :fsize 133
+    :lastmodtime '(21919 55964 198388 721000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_memory.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdlib" type
+               (:members 
+                  ( ("test_memory" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [39 58]))                  
+                :type "namespace")
+                nil [15 60]))          
+    :file "test_memory.hpp"
+    :pointmax 58
+    :fsize 60
+    :lastmodtime '(21917 29589 765125 266000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pointer.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstdlib" include (:system-flag t) nil [15 33])
+            ("stdlib" type
+               (:members 
+                  ( ("Pointer" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [97 104])
+                            ("public" label nil (reparse-symbol classsubparts) [108 115])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [130 139])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [158 167])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [195 204])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [233 242])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [278 287])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [331 340])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [396 411])
+                            ("" variable
+                               (:functionpointer-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [416 438])
+                            ("->" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [443 466])
+                            ("+" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable (:type "int") (reparse-symbol arg-sub-list) [493 501]))                                  
+                                :type ("Pointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [471 508])
+                            ("-" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable (:type "int") (reparse-symbol arg-sub-list) [535 543]))                                  
+                                :type ("Pointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [513 550])
+                            ("-" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:constant-flag t
+                                        :type ("Pointer" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [578 599]))                                  
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [555 606])
+                            ("+=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable (:type "int") (reparse-symbol arg-sub-list) [635 643]))                                  
+                                :type ("Pointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [611 644])
+                            ("++" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :type ("Pointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [649 675])
+                            ("++" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [704 708]))                                  
+                                :type ("Pointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [680 709])
+                            ("-=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable (:type "int") (reparse-symbol arg-sub-list) [738 746]))                                  
+                                :type ("Pointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [714 747])
+                            ("--" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :type ("Pointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [752 778])
+                            ("--" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [807 811]))                                  
+                                :type ("Pointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [783 812])
+                            ("del" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [817 828])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [842 851])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [872 887]))                          )
+                        (reparse-symbol namespacesubparts) [57 892])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [985 994])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [1086 1095])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [1188 1197])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [1290 1299])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [1392 1401])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [1494 1503])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [1591 1600])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [1687 1696])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [1784 1793])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [1881 1890])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [1978 1987])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [2075 2084])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [2172 2181])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [2268 2277])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [2365 2374])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [2462 2471])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [2559 2568])
+                    ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [2656 2665]))                  
+                :type "namespace")
+                nil [35 2668]))          
+    :file "pointer.hpp"
+    :pointmax 2631
+    :fsize 2668
+    :lastmodtime '(21925 24990 526394 350000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pointer.tpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstdlib" include (:system-flag t) nil [15 33])
+            ("pointer.hpp" include nil nil [35 57])
+            ("stdlib" type
+               (:members 
+                  ( ("ptr" function
+                       (:arguments 
+                          ( ("" variable (:type ("nullptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [138 146]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [134 152])
+                    ("ptr" function
+                       (:arguments 
+                          ( ("" variable (:type ("p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [217 219]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [213 225])
+                    ("ptr" function
+                       (:arguments 
+                          ( ("" variable (:type ("p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [299 301])
+                            ("" variable (:type ("ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [301 305]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [295 311])
+                    ("ptr" function
+                       (:arguments 
+                          ( ("" variable (:type ("p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [385 387])
+                            ("" variable (:type ("ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [387 391]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [381 397])
+                    ("" variable
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :functionpointer-flag t)
+                        (reparse-symbol namespacesubparts) [754 830])
+                    ("->" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :parent "Pointer"
+                        :pointer 1
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [834 909])
+                    ("+" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Pointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("rhs" variable (:type "int") (reparse-symbol arg-sub-list) [967 975]))                          
+                        :parent "Pointer"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [913 1018])
+                    ("-" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Pointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("rhs" variable (:type "int") (reparse-symbol arg-sub-list) [1078 1086]))                          
+                        :parent "Pointer"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1024 1129])
+                    ("-" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::size_t" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("rhs" variable
+                               (:constant-flag t
+                                :type ("Pointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1190 1211]))                          
+                        :parent "Pointer"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1135 1254])
+                    ("+=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Pointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("rhs" variable (:type "int") (reparse-symbol arg-sub-list) [1316 1324]))                          
+                        :parent "Pointer"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1260 1364])
+                    ("++" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Pointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :parent "Pointer"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1370 1462])
+                    ("++" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Pointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1522 1526]))                          
+                        :parent "Pointer"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1466 1583])
+                    ("-=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Pointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("rhs" variable (:type "int") (reparse-symbol arg-sub-list) [1643 1651]))                          
+                        :parent "Pointer"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1587 1691])
+                    ("--" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Pointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :parent "Pointer"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1695 1787])
+                    ("--" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Pointer" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1847 1851]))                          
+                        :parent "Pointer"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1791 1908])
+                    ("del" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :parent "Pointer")
+                        (reparse-symbol namespacesubparts) [1912 1976]))                  
+                :type "namespace")
+                nil [59 4702]))          
+    :file "pointer.tpp"
+    :pointmax 4746
+    :fsize 4702
+    :lastmodtime '(21925 25028 822394 803000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "UniquePointer.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstdlib" include (:system-flag t) nil [15 33])
+            ("stdlib" type
+               (:members 
+                  ( ("UniquePointer" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("ptr" variable (:type ("Pointer" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [103 118])
+                            ("public" label nil (reparse-symbol classsubparts) [123 130])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [151 160])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [194 203])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [246 255])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [296 305])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [353 362])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [384 393])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [420 435])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [456 465])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [487 496])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [685 694])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [747 756])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [775 784])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [822 831])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [868 877])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [892 901])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [922 937]))                          )
+                        (reparse-symbol namespacesubparts) [57 942])
+                    ("<" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [995 1023])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("S" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1024 1052]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [946 1053])
+                    (">" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1105 1133])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("S" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1134 1162]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [1056 1163])
+                    ("==" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1216 1244])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("S" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1245 1273]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [1166 1274])
+                    ("<=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1327 1355])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("S" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1356 1384]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [1277 1385])
+                    (">=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1438 1466])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("S" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1467 1495]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [1388 1496])
+                    ("!=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1549 1577])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("S" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1578 1606]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [1499 1607])
+                    ("<" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1651 1679])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1680 1706]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [1611 1707])
+                    (">" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1750 1778])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1779 1805]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [1710 1806])
+                    ("==" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1850 1878])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1879 1905]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [1809 1906])
+                    ("<=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1950 1978])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1979 2005]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [1909 2006])
+                    (">=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2050 2078])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2079 2105]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2009 2106])
+                    ("!=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2150 2178])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2179 2205]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2109 2206])
+                    ("<" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2250 2276])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2277 2305]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2210 2306])
+                    (">" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2349 2375])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2376 2404]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2309 2405])
+                    ("==" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2449 2475])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2476 2504]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2408 2505])
+                    ("<=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2549 2575])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2576 2604]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2508 2605])
+                    (">=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2649 2675])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2676 2704]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2608 2705])
+                    ("!=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2749 2775])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2776 2804]))                          
+                        :constant-flag t
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2708 2805]))                  
+                :type "namespace")
+                nil [35 2808]))          
+    :file "UniquePointer.hpp"
+    :pointmax 2809
+    :fsize 2808
+    :lastmodtime '(21925 36071 996178 202000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "scratch.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("memory" include (:system-flag t) nil [22 39])
+            ("cassert" include (:system-flag t) nil [40 58])
+            ("memory.hpp" include nil nil [59 80])
+            ("stdlib" type
+               (:members 
+                  ( ("Foo" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("_null" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [140 164])
+                            ("public" label nil (reparse-symbol classsubparts) [167 174])
+                            ("null" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [179 205]))                          )
+                        (reparse-symbol namespacesubparts) [104 210])
+                    ("foo" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("U" type (:type "class") nil nil))                          
+                        :type ("U" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [256 260])
+                            ("y" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [261 265]))                          )
+                        (reparse-symbol namespacesubparts) [214 288])
+                    ("test" function (:type "int") (reparse-symbol namespacesubparts) [292 479])
+                    ("Bar" type
+                       (:members 
+                          ( ("x" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol classsubparts) [499 506])
+                            ("public" label nil (reparse-symbol classsubparts) [509 516])
+                            ("Bar" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Bar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [521 527])
+                            ("set" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("b" variable (:type ("Bar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [541 547]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [532 548]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [483 584])
+                    ("Bar" function
+                       (:constructor-flag t
+                        :parent "Bar"
+                        :type ("Bar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [588 635])
+                    ("set" function
+                       (:parent "Bar"
+                        :arguments 
+                          ( ("b" variable (:type ("Bar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [653 659]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [639 678])
+                    ("scratch" function (:type "int") (reparse-symbol namespacesubparts) [682 912]))                  
+                :type "namespace")
+                nil [82 914]))          
+    :file "scratch.cpp"
+    :pointmax 1004
+    :fsize 914
+    :lastmodtime '(21925 20464 745323 339000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "UniquePointer.tpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstdlib" include (:system-flag t) nil [15 33])
+            ("UniquePointer.hpp" include nil nil [34 62])
+            ("stdlib" type
+               (:members 
+                  ( ("ptr" function
+                       (:arguments 
+                          ( ("" variable (:type ("Pointer" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [155 167]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [151 174])
+                    ("ptr" function
+                       (:arguments 
+                          ( ("" variable (:type ("Pointer" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [251 264]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [247 271])
+                    ("ptr" function
+                       (:arguments 
+                          ( ("" variable (:type ("p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [357 359]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [353 365])
+                    ("ptr" function
+                       (:arguments 
+                          ( ("" variable (:type ("nullptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [458 466]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [454 496])
+                    ("ptr" function
+                       (:arguments 
+                          ( ("" variable (:type ("nullptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [587 595]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [583 601])
+                    ("<" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1606 1634])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("S" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1635 1663]))                          
+                        :constant-flag t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1555 1705])
+                    (">" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1760 1788])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("S" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1789 1817]))                          
+                        :constant-flag t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1709 1859])
+                    ("==" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1915 1943])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("S" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1944 1972]))                          
+                        :constant-flag t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1863 2015])
+                    ("<=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2071 2099])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("S" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2100 2128]))                          
+                        :constant-flag t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [2019 2174])
+                    (">=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2230 2258])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("S" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2259 2287]))                          
+                        :constant-flag t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [2178 2333])
+                    ("!=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2389 2417])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("S" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2418 2446]))                          
+                        :constant-flag t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [2337 2481])
+                    ("<" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2527 2555])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2556 2582]))                          
+                        :constant-flag t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [2485 2606])
+                    (">" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2654 2682])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2683 2709]))                          
+                        :constant-flag t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [2612 2748])
+                    ("==" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2797 2825])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2826 2852]))                          
+                        :constant-flag t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [2754 2892])
+                    ("<=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2941 2969])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2970 2996]))                          
+                        :constant-flag t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [2898 3061])
+                    (">=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3110 3138])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3139 3165]))                          
+                        :constant-flag t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [3067 3219])
+                    ("!=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UniquePointer" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3268 3296])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::nullptr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3297 3323]))                          
+                        :constant-flag t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [3225 3362]))                  
+                :type "namespace")
+                nil [64 3364]))          
+    :file "UniquePointer.tpp"
+    :pointmax 3530
+    :fsize 3364
+    :lastmodtime '(21925 36376 48181 797000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "scratch.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdlib" type
+               (:members 
+                  ( ("scratch" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [39 53]))                  
+                :type "namespace")
+                nil [15 55]))          
+    :file "scratch.hpp"
+    :pointmax 56
+    :fsize 55
+    :lastmodtime '(21919 55995 314389 89000)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   (semanticdb-table "deleter.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdlib" type
+               (:members 
+                  ( ("default_delete" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [197 206])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [236 251]))                          )
+                        (reparse-symbol namespacesubparts) [37 256]))                  
+                :type "namespace")
+                nil [15 551]))          
+    :file "deleter.hpp"
+    :pointmax 456
+    :fsize 551
+    :lastmodtime '(21926 32319 987616 121000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "deleter.tpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("deleter.hpp" include nil nil [15 37])
+            ("stdlib" type (:type "namespace") nil [39 678]))          
+    :file "deleter.tpp"
+    :pointmax 495
+    :fsize 678
+    :lastmodtime '(21926 32529 747618 601000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!stdlib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

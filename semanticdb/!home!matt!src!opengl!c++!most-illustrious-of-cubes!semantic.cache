@@ -5,31 +5,34 @@
    (semanticdb-table "Makefile"
     :major-mode 'makefile-gmake-mode
     :tags 
-        '( ("LDDEPS" variable (:default-value ("-lglut" "-lGL" "-lGLEW" "-lm")) nil [1 31])
-            ("CXX" variable (:default-value ("g++" "-g" "-std=gnu++11")) nil [31 56])
-            ("CXX_COMPILE" variable (:default-value ("$(CXX)" "$(DEFS)" "$(INCLUDES)" "$(CPPFLAGS)" "$(CFLAGS)")) nil [56 117])
-            ("CXX_DEPENDENCIES" variable (:default-value ("-Wp,-MD,.deps/$(*F).P")) nil [117 156])
-            ("CXX_LINK" variable (:default-value ("$(CXX)" "$(CFLAGS)" "$(LDFLAGS)" "-L.")) nil [156 197])
-            ("most-illustrious-of-cubes_SOURCES" variable (:default-value ("mioc.cpp" "lib/shader_utils.cpp")) nil [197 261])
-            ("most-illustrious-of-cubes_OBJ" variable (:default-value ("mioc.o" "lib/shader_utils.o")) nil [261 318])
-            ("VERSION" variable (:default-value ("1.0")) nil [318 330])
-            ("DISTDIR" variable (:default-value ("$(top)C++" "OpenGL" "Fun-$(VERSION)")) nil [330 370])
-            ("top_builddir" variable nil nil [370 386])
-            ("DEP_FILES" variable (:default-value (".deps/main.P" ".deps/main2.P")) nil [387 424])
-            ("DEPS_MAGIC" variable (:default-value ("$(shell mkdir .deps > /dev/null 2>&1 || :)")) nil [425 482])
-            ("all" function (:arguments ("most-illustrious-of-cubes")) nil [506 569])
-            ("install-deps" function nil nil [570 665])
-            ("%.o" function (:arguments ("%.cpp")) nil [666 758])
-            ("lib/%.o" function (:arguments ("lib/%.cpp")) nil [759 858])
-            ("most-illustrious-of-cubes" function (:arguments ("$(most-illustrious-of-cubes_OBJ)")) nil [860 952])
-            ("tags" function nil nil [953 960])
-            ("clean" function nil nil [962 1014])
-            (".PHONY" function (:arguments ("dist")) nil [1015 1015])
-            ("dist" function nil nil [1015 1015]))          
+        '( ("EXECUTABLE_NAMES" variable (:default-value ("most-illustrious-of-cubes")) nil [221 264])
+            ("SRC_SUFFIX" variable (:default-value (".cpp")) nil [264 280])
+            ("RM" variable (:default-value ("trash")) nil [280 289])
+            ("YOUR_CFLAGS" variable nil nil [290 303])
+            ("YOUR_CXXFLAGS" variable nil nil [303 318])
+            ("YOUR_CPPFLAGS" variable nil nil [318 333])
+            ("YOUR_LDFLAGS" variable (:default-value ("-L.")) nil [333 350])
+            ("YOUR_LDLIBS" variable (:default-value ("-lglut" "-lGL" "-lGLEW" "-lm")) nil [350 385])
+            ("CC" variable (:default-value ("gcc")) nil [465 472])
+            ("CXX" variable (:default-value ("g++")) nil [472 480])
+            ("CFLAGS" variable (:default-value ("$(YOUR_CFLAGS)")) nil [481 503])
+            ("CXXFLAGS" variable (:default-value ("-Wall" "-std=c++11" "$(YOUR_CXXFLAGS)")) nil [503 546])
+            ("CPPFLAGS" variable (:default-value ("$(YOUR_CPPFLAGS)")) nil [546 572])
+            ("LDFLAGS" variable (:default-value ("$(YOUR_LDFLAGS)")) nil [572 596])
+            ("LDLIBS" variable (:default-value ("$(YOUR_LDLIBS)")) nil [596 618])
+            ("SRCS" variable (:default-value ("$(wildcard *$(SRC_SUFFIX))")) nil [619 651])
+            ("OBJS" variable (:default-value ("$(subst $(SRC_SUFFIX),.o,$(SRCS))")) nil [651 690])
+            ("all" function (:arguments ("$(EXECUTABLE_NAMES)")) nil [737 762])
+            ("most-illustrious-of-cubes" function (:arguments ("$(OBJS)")) nil [763 864])
+            ("depend" function (:arguments (".depend")) nil [1183 1199])
+            (".depend" function (:arguments ("$(SRCS)")) nil [1200 1273])
+            ("clean" function nil nil [1274 1296])
+            ("dist-clean" function (:arguments ("clean")) nil [1297 1333])
+            (".depend" include nil nil [1334 1350]))          
     :file "Makefile"
-    :pointmax 1015
-    :fsize 1014
-    :lastmodtime '(21458 22335 707850 534000)
+    :pointmax 1198
+    :fsize 1349
+    :lastmodtime '(21917 11418 831213 742000)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "mioc.cpp"
@@ -133,6 +136,39 @@
           ("GLM_FORCE_RADIANS")
           )
 
+    )
+   (semanticdb-table ".depend"
+    :file ".depend"
+    :fsize 42
+    :lastmodtime '(21917 10927 743207 934000)
+    )
+   (semanticdb-table "Makefile.real"
+    :major-mode 'makefile-mode
+    :tags 
+        '( ("LDDEPS" variable (:default-value ("-lglut" "-lGL" "-lGLEW" "-lm")) nil [1 31])
+            ("CXX" variable (:default-value ("g++" "-g" "-std=gnu++11")) nil [31 56])
+            ("CXX_COMPILE" variable (:default-value ("$(CXX)" "$(DEFS)" "$(INCLUDES)" "$(CPPFLAGS)" "$(CFLAGS)")) nil [56 117])
+            ("CXX_DEPENDENCIES" variable (:default-value ("-Wp,-MD,.deps/$(*F).P")) nil [117 156])
+            ("CXX_LINK" variable (:default-value ("$(CXX)" "$(CFLAGS)" "$(LDFLAGS)" "-L.")) nil [156 197])
+            ("most-illustrious-of-cubes_SOURCES" variable (:default-value ("mioc.cpp" "lib/shader_utils.cpp")) nil [197 261])
+            ("most-illustrious-of-cubes_OBJ" variable (:default-value ("mioc.o" "lib/shader_utils.o")) nil [261 318])
+            ("VERSION" variable (:default-value ("1.0")) nil [318 330])
+            ("DISTDIR" variable (:default-value ("$(top)C++" "OpenGL" "Fun-$(VERSION)")) nil [330 370])
+            ("top_builddir" variable nil nil [370 386])
+            ("DEP_FILES" variable (:default-value (".deps/main.P" ".deps/main2.P")) nil [387 424])
+            ("DEPS_MAGIC" variable (:default-value ("$(shell mkdir .deps > /dev/null 2>&1 || :)")) nil [425 482])
+            ("all" function (:arguments ("most-illustrious-of-cubes")) nil [506 569])
+            ("install-deps" function nil nil [570 665])
+            ("%.o" function (:arguments ("%.cpp")) nil [666 758])
+            ("lib/%.o" function (:arguments ("lib/%.cpp")) nil [759 859])
+            ("most-illustrious-of-cubes" function (:arguments ("$(most-illustrious-of-cubes_OBJ)")) nil [860 952])
+            ("tags" function nil nil [953 960])
+            ("clean" function nil nil [962 1014]))          
+    :file "Makefile.real"
+    :pointmax 1015
+    :fsize 1014
+    :lastmodtime '(21458 22335 707850 534000)
+    :unmatched-syntax '((semantic-list 492 . 503) (punctuation 491 . 492) (symbol 482 . 490) (bol 482 . 482))
     )
    )
   :file "!home!matt!src!opengl!c++!most-illustrious-of-cubes!semantic.cache"

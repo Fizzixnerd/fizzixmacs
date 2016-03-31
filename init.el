@@ -27,7 +27,10 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/glsl-mode/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/cc-mode-5.32.5/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/company-quickhelp-20150322.451.el")
-(add-to-list 'load-path "~/.emacs.d/site-list/company-rtags.el")
+;(add-to-list 'load-path "~/.emacs.d/elpa/company-ghc-20150613.123/")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/company-rtags.el")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/stack-mode")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/ghc-mod-elisp")
 
 ; Fuck, I don't know what to do with these. I will leave them here, I
 ; guess.
@@ -49,7 +52,7 @@
  '(inferior-haskell-wait-and-jump t)
  '(inhibit-startup-screen t)
  '(org-agenda-files (quote ("~/Documents/school/jph311/project/proposal/proposal.org")))
- '(package-selected-packages (quote (wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode evernote-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
+ '(package-selected-packages (quote (wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
  '(preview-auto-cache-preamble t)
  '(preview-gs-options (quote ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4")))
  '(quack-pretty-lambda-p t)
@@ -65,14 +68,13 @@
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 
-
-
 ;; These libraries should always be loaded.
 (load-library "customizations/package-customizations.el")
 
 (require 'yasnippet)
 (yas-global-mode 1)
 
+(load-library "customizations/desktop-customizations.el")
 (load-library "customizations/ede-customizations.el")
 (load-library "customizations/ac-customizations.el")
 (load-library "customizations/ido-customizations.el")
@@ -88,10 +90,14 @@
 ;; autoloads at some point.
 (load-library "customizations/tex-customizations.el")
 (load-library "customizations/racket-customizations.el")
-(load-library "customizations/cl-customizations.el")
+;(load-library "customizations/cl-customizations.el")
 (load-library "customizations/c++-customizations.el")
+(load-library "customizations/glsl-customizations.el")
 (load-library "customizations/visual-customizations.el")
 (load-library "customizations/haskell-customizations.el")
+(load-library "customizations/mail-customizations.el")
+(load-library "customizations/web-customizations.el")
+(load-library "customizations/template-replace.el")
 
 ;; These libraries should only be loaded in their respective major
 ;; modes.

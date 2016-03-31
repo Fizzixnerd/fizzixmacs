@@ -1,0 +1,29 @@
+;; Object dnn-asr/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dnn-asr/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("PLATFORMS" variable (:default-value ("baseline" "pthread" "gpu")) nil [1 34])
+            ("PLATFORMS" variable (:default-value ("baseline" "pthread")) nil [62 91])
+            (".PHONY" function (:arguments ("all" "$(PLATFORMS)")) nil [98 123])
+            ("SUBCLEAN" variable (:default-value ("$(addsuffix .clean, $(PLATFORMS))")) nil [124 169])
+            (".PHONY" function (:arguments ("clean" "$(SUBCLEAN)")) nil [169 195])
+            ("SUBTEST" variable (:default-value ("$(addsuffix .test, $(PLATFORMS))")) nil [196 239])
+            (".PHONY" function (:arguments ("test" "$(SUBTEST)")) nil [239 263])
+            ("all" function (:arguments ("$(PLATFORMS)")) nil [264 282])
+            ("$(PLATFORMS)" function nil nil [282 311])
+            ("clean" function (:arguments ("$(SUBCLEAN)")) nil [312 331])
+            ("$(SUBCLEAN)" function (:arguments ("%.clean:")) nil [331 374])
+            ("test" function (:arguments ("$(SUBTEST)")) nil [375 392])
+            ("$(SUBTEST)" function (:arguments ("%.test:")) nil [392 435]))          
+      :file "Makefile"
+      :pointmax 435
+      :fsize 434
+      :lastmodtime '(22253 58398 557392 61000)
+      :unmatched-syntax '((shell-command 413 . 434) (bol 412 . 412))))
+  :file "!home!matt!ssd2!@home!matt!src!lucida!lucida-suite!dnn-asr!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "OAuth2.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OAuth2.json"
+      :pointmax 424
+      :fsize 423
+      :lastmodtime '(21983 10913 3152 172000)
+      :unmatched-syntax nil))
+  :file "!home!matt!ssd2!@home!matt!src!gmail!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,80 @@
+;; Object Downloads/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Downloads/"
+  :tables
+  (list
+    (semanticdb-table "FallingLoopB_2013.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("visual" include nil nil [1 21])
+            ("visual.graph" include nil nil [22 48])
+            ("print" code nil nil [50 158])
+            ("draw_axes" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [174 175]))              ) nil [160 329])
+            ("pause" function nil nil [330 512])
+            ("first_damp" function (:arguments 
+              ( ("pos_lower" variable nil (reparse-symbol function_parameters) [528 537])
+                ("pos_upper" variable nil (reparse-symbol function_parameters) [538 547])
+                ("L" variable nil (reparse-symbol function_parameters) [548 549]))              ) nil [513 698])
+            ("second_damp" function (:arguments 
+              ( ("pos_lower" variable nil (reparse-symbol function_parameters) [715 724])
+                ("pos_upper" variable nil (reparse-symbol function_parameters) [725 734])
+                ("L" variable nil (reparse-symbol function_parameters) [735 736]))              ) nil [699 885])
+            ("g" variable nil nil [997 1003])
+            ("L" variable nil nil [1039 1046])
+            ("h" variable nil nil [1100 1107])
+            ("w" variable nil nil [1143 1149])
+            ("y_o" code nil nil [1188 1198])
+            ("B" variable nil nil [1250 1258])
+            ("A" variable nil nil [1328 1337])
+            ("rho" variable nil nil [1379 1391])
+            ("eta" variable nil nil [1426 1437])
+            ("vt" code nil nil [1475 1524])
+            ("tau" code nil nil [1552 1562])
+            ("scene" variable nil nil [1612 1667])
+            ("scene" variable nil nil [1668 1685])
+            ("scene" variable nil nil [1686 1704])
+            ("draw_axes" code nil nil [1705 1718])
+            ("scene" variable nil nil [1719 1746])
+            ("scene" variable nil nil [1747 1766])
+            ("field_region" variable nil nil [1842 1917])
+            ("loop" variable nil nil [2008 2022])
+            ("curve" code nil nil [2023 2128])
+            ("loop" variable nil nil [2130 2149])
+            ("loop" variable nil nil [2184 2213])
+            ("ball" variable nil nil [2281 2335])
+            ("ball" variable nil nil [2336 2365])
+            ("pause" code nil nil [2395 2402])
+            ("gd1" variable nil nil [2488 2581])
+            ("gd2" variable nil nil [2582 2677])
+            ("gd3" variable nil nil [2678 2789])
+            ("gd4" variable nil nil [2790 2888])
+            ("loop_poscurve" variable nil nil [2890 2943])
+            ("ball_poscurve" variable nil nil [2944 2996])
+            ("loop_velcurve" variable nil nil [2998 3051])
+            ("ball_velcurve" variable nil nil [3052 3104])
+            ("BFlux_curve" variable nil nil [3106 3160])
+            ("Current_curve" variable nil nil [3162 3217])
+            ("time" variable nil nil [3241 3250])
+            ("dt" variable nil nil [3251 3261])
+            ("time_o" variable nil nil [3274 3285])
+            ("velocity_o" variable nil nil [3339 3365])
+            ("entered" variable nil nil [3424 3439])
+            ("max_current" variable nil nil [3511 3527])
+            ("Current" variable nil nil [3557 3569])
+            ("Force" variable nil nil [3591 3601])
+            ("upper_force" variable nil nil [3654 3742])
+            ("lower_force" variable nil nil [3743 3831])
+            ("upper_current" variable nil nil [3867 3955])
+            ("lower_current" variable nil nil [3956 4044])
+            ("right_current" variable nil nil [4045 4133])
+            ("left_current" variable nil nil [4134 4221])
+            ("while" code nil nil [4256 7331]))          
+      :file "FallingLoopB_2013.py"
+      :pointmax 7333
+      :fsize 7546
+      :lastmodtime '(21959 43644 416750 749000)
+      :unmatched-syntax nil))
+  :file "!home!matt!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

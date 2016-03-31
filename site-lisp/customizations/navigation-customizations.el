@@ -6,6 +6,19 @@
 ;       you to the _logical_ beginning of the line before the _actual_
 ;       beginning.
 
+(require 'multiple-cursors)
+(require 'expand-region)
+(require 'window-number)
+(window-number-mode)
+(window-number-meta-mode)
+
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+(global-set-key (kbd "C-=") 'er/expand-region)
+
 (defun smart-move-beginning-of-line (&optional arg)
   "Move point to the first non-whitespace character on the
   current line.  If point is already located there, move to the
@@ -76,4 +89,5 @@
 
 (global-set-key [home] 'smart-move-beginning-of-line)
 (global-set-key "\C-a" 'smart-move-beginning-of-line)
+
 ;(global-set-key "\M-f" 'skip-whitespace-or-forward-word)

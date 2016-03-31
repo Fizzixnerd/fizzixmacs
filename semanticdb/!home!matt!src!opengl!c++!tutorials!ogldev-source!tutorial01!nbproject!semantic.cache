@@ -1,0 +1,44 @@
+;; Object nbproject/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nbproject/"
+  :tables (list 
+   (semanticdb-table "Makefile-impl.mk"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("SUB_no" variable (:default-value ("NO")) nil [602 612])
+            ("SUBPROJECTS" variable (:default-value ("${SUB_${SUB}}")) nil [612 638])
+            ("BUILD_SUBPROJECTS_" variable (:default-value (".build-subprojects")) nil [638 676])
+            ("BUILD_SUBPROJECTS_NO" variable nil nil [676 698])
+            ("BUILD_SUBPROJECTS" variable (:default-value ("${BUILD_SUBPROJECTS_${SUBPROJECTS}}")) nil [698 752])
+            ("CLEAN_SUBPROJECTS_" variable (:default-value (".clean-subprojects")) nil [752 790])
+            ("CLEAN_SUBPROJECTS_NO" variable nil nil [790 812])
+            ("CLEAN_SUBPROJECTS" variable (:default-value ("${CLEAN_SUBPROJECTS_${SUBPROJECTS}}")) nil [812 866])
+            ("PROJECTNAME" variable (:default-value ("tutorial01")) nil [883 906])
+            ("DEFAULTCONF" variable (:default-value ("Debug")) nil [930 948])
+            ("CONF" variable (:default-value ("${DEFAULTCONF}")) nil [948 968])
+            ("ALLCONFS" variable (:default-value ("Debug" "Release")) nil [990 1014])
+            (".build-impl" function (:arguments (".build-pre" ".validate-impl" ".depcheck-impl")) nil [1024 1225])
+            (".clean-impl" function (:arguments (".clean-pre" ".validate-impl" ".depcheck-impl")) nil [1235 1436])
+            (".clobber-impl" function (:arguments (".clobber-pre" ".depcheck-impl")) nil [1449 1665])
+            (".all-impl" function (:arguments (".all-pre" ".depcheck-impl")) nil [1673 1881])
+            (".build-tests-impl" function (:arguments (".build-impl" ".build-tests-pre")) nil [1896 2082])
+            (".test-impl" function (:arguments (".build-tests-impl" ".test-pre")) nil [2095 2266])
+            (".depcheck-impl" function nil nil [2297 2744])
+            (".validate-impl" function nil nil [2772 3140])
+            (".help-impl" function (:arguments (".help-pre")) nil [3149 4206]))          
+    :file "Makefile-impl.mk"
+    :pointmax 4207
+    :fsize 4206
+    :lastmodtime '(21886 3816 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile-variables.mk"
+    :file "Makefile-variables.mk"
+    :fsize 1258
+    :lastmodtime '(21886 3816 0 0)
+    )
+   )
+  :file "!home!matt!src!opengl!c++!tutorials!ogldev-source!tutorial01!nbproject!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

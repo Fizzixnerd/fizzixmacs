@@ -1,0 +1,36 @@
+;; Object p3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "p3/"
+  :tables
+  (list
+    (semanticdb-table "p3.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("physics.data.datum" include nil nil [1 33])
+            ("numpy" include nil nil [35 53])
+            ("scipy" include nil nil [54 66])
+            ("matplotlib.pyplot" include nil nil [67 98])
+            ("rod" variable nil nil [100 124])
+            ("size_of_circle" variable nil nil [125 160])
+            ("measurement" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [178 179])
+                ("err" variable nil (reparse-symbol function_parameters) [181 184]))              ) nil [162 217])
+            ("distance_via_rod" function (:arguments 
+              ( ("x_0" variable nil (reparse-symbol function_parameters) [239 242])
+                ("x_1" variable nil (reparse-symbol function_parameters) [244 247])
+                ("rod" variable nil (reparse-symbol function_parameters) [249 252]))              ) nil [218 288])
+            ("q2" function nil nil [289 2458])
+            ("temp" variable nil nil [2459 2470])
+            ("f_H" code nil nil [2471 2495])
+            ("f_h" code nil nil [2496 2520])
+            ("f_S" variable nil nil [2521 2534])
+            ("q3" function nil nil [2536 2583])
+            ("q4" function nil nil [2584 2603]))          
+      :file "p3.py"
+      :pointmax 2603
+      :fsize 2682
+      :lastmodtime '(22192 60365 970101 724000)
+      :unmatched-syntax nil))
+  :file "!home!matt!Documents!school!phy324!p3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

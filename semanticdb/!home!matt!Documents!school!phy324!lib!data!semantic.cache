@@ -1,0 +1,272 @@
+;; Object data/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "data/"
+  :tables
+  (list
+    (semanticdb-table "datum.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("numpy" include nil nil [19 37])
+            ("Datum" type
+               (:documentation "A Datum is a value with associated error.  They can be added and
+subtracted, multiplied and divided, and even exponentiated -- just
+like normal numbers -- but with correct error propogation.
+
+    These values can also be used seamlessly with other numerical
+    types, in which case the non-Data are assumed to have zero error.
+
+    Comparisons are strict.
+
+    Multiplication and addition are assumed to be commutative.
+
+    Data can be coerced in the usual way to regular numbers; this will
+    result in the loss of all error data.
+
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Return a new Datum with val v and err e.\"\"\"" code nil (reparse-symbol indented_block_body) [646 692])
+                            ("self" variable nil (reparse-symbol indented_block_body) [701 713])
+                            ("self" variable nil (reparse-symbol indented_block_body) [722 734]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [625 629])
+                            ("v" variable nil (reparse-symbol function_parameters) [631 632])
+                            ("e" variable nil (reparse-symbol function_parameters) [634 635]))                          
+                        :documentation "Return a new Datum with val v and err e."
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [612 735])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [753 757]))                          )
+                        (reparse-symbol indented_block_body) [740 812])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [829 833]))                          )
+                        (reparse-symbol indented_block_body) [817 867])
+                    ("__int__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [884 888]))                          )
+                        (reparse-symbol indented_block_body) [872 920])
+                    ("__float__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [939 943]))                          )
+                        (reparse-symbol indented_block_body) [925 977])
+                    ("__long__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [995 999]))                          )
+                        (reparse-symbol indented_block_body) [982 1032])
+                    ("__complex__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1053 1057]))                          )
+                        (reparse-symbol indented_block_body) [1037 1093])
+                    ("__cmp__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1110 1114])
+                            ("x" variable nil (reparse-symbol function_parameters) [1116 1117]))                          )
+                        (reparse-symbol indented_block_body) [1098 1243])
+                    ("__pos__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1260 1264]))                          )
+                        (reparse-symbol indented_block_body) [1248 1287])
+                    ("__neg__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1304 1308]))                          )
+                        (reparse-symbol indented_block_body) [1292 1353])
+                    ("__abs__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1370 1374]))                          )
+                        (reparse-symbol indented_block_body) [1358 1462])
+                    ("__add__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1479 1483])
+                            ("x" variable nil (reparse-symbol function_parameters) [1485 1486]))                          )
+                        (reparse-symbol indented_block_body) [1467 1665])
+                    ("__radd__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1683 1687])
+                            ("x" variable nil (reparse-symbol function_parameters) [1689 1690]))                          )
+                        (reparse-symbol indented_block_body) [1670 1717])
+                    ("__sub__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1734 1738])
+                            ("x" variable nil (reparse-symbol function_parameters) [1740 1741]))                          )
+                        (reparse-symbol indented_block_body) [1722 1771])
+                    ("__rsub__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1789 1793])
+                            ("x" variable nil (reparse-symbol function_parameters) [1795 1796]))                          )
+                        (reparse-symbol indented_block_body) [1776 1826])
+                    ("__mul__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1843 1847])
+                            ("x" variable nil (reparse-symbol function_parameters) [1849 1850]))                          )
+                        (reparse-symbol indented_block_body) [1831 2094])
+                    ("__rmul__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2112 2116])
+                            ("x" variable nil (reparse-symbol function_parameters) [2118 2119]))                          )
+                        (reparse-symbol indented_block_body) [2099 2146])
+                    ("__div__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2163 2167])
+                            ("x" variable nil (reparse-symbol function_parameters) [2169 2170]))                          )
+                        (reparse-symbol indented_block_body) [2151 2414])
+                    ("__rdiv__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2432 2436])
+                            ("x" variable nil (reparse-symbol function_parameters) [2438 2439]))                          )
+                        (reparse-symbol indented_block_body) [2419 2701])
+                    ("__pow__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2718 2722])
+                            ("x" variable nil (reparse-symbol function_parameters) [2724 2725]))                          )
+                        (reparse-symbol indented_block_body) [2706 3083])
+                    ("__rpow__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3101 3105])
+                            ("x" variable nil (reparse-symbol function_parameters) [3107 3108]))                          )
+                        (reparse-symbol indented_block_body) [3088 3148]))                  
+                :type "class")
+                nil [39 3148])
+            ("log" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [3157 3158]))              ) nil [3149 3281])
+            ("cos" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [3290 3291]))              ) nil [3282 3422])
+            ("sin" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [3431 3432]))              ) nil [3423 3563])
+            ("tan" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [3572 3573]))              ) nil [3564 3603])
+            ("arctan" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [3615 3616]))              ) nil [3604 3756]))          
+      :file "datum.py"
+      :pointmax 3756
+      :fsize 3756
+      :lastmodtime '(22265 21766 319343 393000)
+      :unmatched-syntax '((DEF 3757 . 3760) ($EOI 3773 . 3773)))
+    (semanticdb-table "analysis.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("scipy.optimize" include nil nil [20 54])
+            ("datum" include nil nil [56 73])
+            ("residuals" function (:arguments 
+              ( ("xs" variable nil (reparse-symbol function_parameters) [89 91])
+                ("ys" variable nil (reparse-symbol function_parameters) [93 95])
+                ("fit_func" variable nil (reparse-symbol function_parameters) [97 105]))              ) nil [75 173])
+            ("chi_squared" function (:arguments 
+              ( ("residuals" variable nil (reparse-symbol function_parameters) [190 199]))              ) nil [174 265])
+            ("analyze_data" function
+               (:documentation "Return output a dict of all the data analysis we want, including:
+
+    xs, ys, fit, efit, cov, ndof, fit_func, residuals,
+    chi_squared, reduced_chi_squared.
+
+    xs, ys, and poly_deg are the corresponding inputs to this
+    function.
+
+    cov is the covariance matrix.
+
+    ndof is the number of degrees of freedom of the system.
+
+    residuals are the difference between the theoretical value of y
+    and the actual value of y at each of the xs.
+
+    chi_squared and reduced_chi_squared are the corresponding
+    goodness-of-fit test values calculated from the residuals and the
+    ndof.
+
+    efit, efit_func, eresiduals, echi_squared, and
+    reduced_echi_squared are just the same as their non-e counterparts
+    but include the error in the fit parameters given by the
+    squareroot of the diagonal entries in the covariance matrix.
+
+    "
+                :arguments 
+                  ( ("xs" variable nil (reparse-symbol function_parameters) [283 285])
+                    ("ys" variable nil (reparse-symbol function_parameters) [287 289])
+                    ("parameterized_fit_func" variable nil (reparse-symbol function_parameters) [291 313])
+                    ("initial_parameters" variable nil (reparse-symbol function_parameters) [315 333]))                  )
+                nil [266 3421]))          
+      :file "analysis.py"
+      :pointmax 3421
+      :fsize 3420
+      :lastmodtime '(22266 41984 138662 958000)
+      :unmatched-syntax nil)
+    (semanticdb-table "table.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pylatex" include nil nil [1 29])
+            ("read_data_from_file" function
+               (:documentation "The file looks like this:
+    <name_1> ... <name_n>
+    <unit_1> ... <unit_n>
+    <data_11> ... <data_1n>
+    .         .           .
+    .          .          .
+    .           .         .
+    <data_m1> ... <data_mn>
+    "
+                :arguments 
+                  ( ("filename" variable nil (reparse-symbol function_parameters) [83 91]))                  )
+                nil [59 522])
+            ("make_data_table" function
+               (:documentation "Return a pylatex.table.Tabular object representing a table of the
+data."
+                :arguments 
+                  ( ("spec" variable nil (reparse-symbol function_parameters) [543 547])
+                    ("names" variable nil (reparse-symbol function_parameters) [549 554])
+                    ("units" variable nil (reparse-symbol function_parameters) [556 561])
+                    ("data" variable nil (reparse-symbol function_parameters) [563 567]))                  )
+                nil [523 960])
+            ("make_latex_table" function
+               (:documentation "Print to output_filename a table read from input_filename in nice
+LaTeX way."
+                :arguments 
+                  ( ("input_filename" variable nil (reparse-symbol function_parameters) [982 996])
+                    ("output_filename" variable nil (reparse-symbol function_parameters) [998 1013]))                  )
+                nil [961 1344]))          
+      :file "table.py"
+      :pointmax 1344
+      :fsize 1343
+      :lastmodtime '(22212 48362 853290 750000)
+      :unmatched-syntax nil)
+    (semanticdb-table "load.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("datum" include nil nil [20 37])
+            ("read_data" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [53 61])
+                ("formats" variable nil (reparse-symbol function_parameters) [63 70])
+                ("with_units" variable nil (reparse-symbol function_parameters) [72 82])
+                ("with_errors" variable nil (reparse-symbol function_parameters) [90 101]))              ) nil [39 715]))          
+      :file "load.py"
+      :pointmax 715
+      :fsize 714
+      :lastmodtime '(22245 45434 816158 494000)
+      :unmatched-syntax nil))
+  :file "!home!matt!Documents!school!phy324!lib!data!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

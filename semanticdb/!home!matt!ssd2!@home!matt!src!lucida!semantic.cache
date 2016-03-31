@@ -1,0 +1,29 @@
+;; Object lucida/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lucida/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("SUBDIRS" variable (:default-value ("lucida-suite" "lucida")) nil [1 29])
+            ("DOCKER_CONTAINER" variable (:default-value ("claritylab/lucida")) nil [30 65])
+            ("VERSION" variable (:default-value ("latest")) nil [65 80])
+            ("THREADS" variable (:default-value ("4")) nil [81 91])
+            ("./Makefile.common" include nil nil [92 118])
+            (".PHONY" function (:arguments ("docker" "local")) nil [119 140])
+            ("docker" function nil nil [169 227])
+            ("THRIFT_VERSION" variable (:default-value ("0.9.2")) nil [255 276])
+            ("local" function nil nil [426 511]))          
+      :file "Makefile"
+      :pointmax 511
+      :fsize 510
+      :lastmodtime '(22258 50944 810990 273000)
+      :unmatched-syntax '((shell-command 434 . 510) (bol 433 . 433) (symbol 418 . 425) (semantic-list 407 . 418) (punctuation 406 . 407) (punctuation 405 . 406) (symbol 395 . 405) (symbol 388 . 394) (bol 388 . 388) (symbol 364 . 387) (semantic-list 353 . 364) (punctuation 352 . 353) (punctuation 351 . 352) (symbol 346 . 351) (symbol 339 . 345) (bol 339 . 339) (semantic-list 322 . 338) (punctuation 321 . 322) (symbol 307 . 321) (semantic-list 296 . 307) (punctuation 295 . 296) (punctuation 294 . 295) (symbol 283 . 294) (symbol 276 . 282) (bol 276 . 276)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 392
+      :lastmodtime '(22258 50944 810990 273000)))
+  :file "!home!matt!ssd2!@home!matt!src!lucida!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

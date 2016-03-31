@@ -1,0 +1,9 @@
+;; Object build/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "build/"
+  :tables (list 
+    )
+  :file "!home!matt!src!opengl!c++!tutorials!continuous-tutorial!build!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

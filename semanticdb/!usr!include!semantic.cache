@@ -1,10 +1,11 @@
 ;; Object include/
 ;; SEMANTICDB Tags save file
 (semanticdb-project-database-file "include/"
-  :tables (list 
-   (semanticdb-table "stdio.h"
-    :major-mode 'c-mode
-    :tags 
+  :tables
+  (list
+    (semanticdb-table "stdio.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_STDIO_H" variable (:constant-flag t) nil [972 980])
             ("features.h" include (:system-flag t) nil [983 1005])
             ("C" extern nil nil [1007 1020])
@@ -604,12 +605,12 @@
                 :type "void")
                 nil [28468 28505])
             ("bits/sys_errlist.h" include (:system-flag t) nil [28771 28800]))          
-    :file "stdio.h"
-    :pointmax 31640
-    :fsize 31639
-    :lastmodtime '(21741 65042 0 0)
-    :unmatched-syntax '((close-paren "}" 31569 . 31580) (semantic-list 20405 . 20452) (punctuation 20403 . 20404) (punctuation 20402 . 20403))
-    :lexical-table 
+      :file "stdio.h"
+      :pointmax 31640
+      :fsize 31365
+      :lastmodtime '(21779 44621 0 0)
+      :unmatched-syntax '((close-paren "}" 31569 . 31580) (semantic-list 20405 . 20452) (punctuation 20403 . 20404) (punctuation 20402 . 20403))
+      :lexical-table 
         '(("putc" (spp-arg-list ("_ch" "_fp") 19106 . 19116) . ((symbol "_IO_putc" 19117 . 19125) (semantic-list "(_ch, _fp)" 19126 . 19136)))
           ("stderr" . ((symbol "stderr" 4670 . 4676)))
           ("SEEK_CUR" . ((number "1" 3500 . 3501)))
@@ -630,11 +631,10 @@
           ("_IOLBF" . ((number "1" 3054 . 3055)))
           ("BUFSIZ" . ((symbol "_IO_BUFSIZ" 3179 . 3189)))
           )
-
-    )
-   (semanticdb-table "stdlib.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "stdlib.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("features.h" include (:system-flag t) nil [872 893])
             ("__need_size_t" variable (:constant-flag t) nil [957 970])
             ("__need_wchar_t" variable (:constant-flag t) nil [1013 1027])
@@ -990,12 +990,12 @@
                 :type ("size_t" type (:type "class") nil nil))
                 nil [30844 30952])
             ("bits/stdlib-float.h" include (:system-flag t) nil [33568 33598]))          
-    :file "stdlib.h"
-    :pointmax 33928
-    :fsize 33927
-    :lastmodtime '(21741 65041 0 0)
-    :unmatched-syntax '((close-paren "}" 33892 . 33903) (TYPEDEF 25744 . 25751) (semantic-list 17990 . 17996) (semantic-list 17980 . 17989))
-    :lexical-table 
+      :file "stdlib.h"
+      :pointmax 33928
+      :fsize 33686
+      :lastmodtime '(21779 44620 0 0)
+      :unmatched-syntax '((close-paren "}" 33892 . 33903) (TYPEDEF 25744 . 25751) (semantic-list 17990 . 17996) (semantic-list 17980 . 17989))
+      :lexical-table 
         '(("RAND_MAX" . ((number "2147483647" 3814 . 3824)))
           ("__need_size_t")
           ("__need_wchar_t")
@@ -1008,11 +1008,10 @@
           ("EXIT_SUCCESS" . ((number "0" 4018 . 4019)))
           ("__malloc_and_calloc_defined")
           )
-
-    )
-   (semanticdb-table "string.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "string.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_STRING_H" variable (:constant-flag t) nil [877 886])
             ("features.h" include (:system-flag t) nil [890 911])
             ("C" extern nil nil [913 926])
@@ -1386,21 +1385,20 @@
                     ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15822 15833]))                  
                 :type "void")
                 nil [15790 15858]))          
-    :file "string.h"
-    :pointmax 22522
-    :fsize 22521
-    :lastmodtime '(21741 65043 0 0)
-    :unmatched-syntax '((close-paren "}" 22486 . 22497))
-    :lexical-table 
+      :file "string.h"
+      :pointmax 22522
+      :fsize 22410
+      :lastmodtime '(21779 44622 0 0)
+      :unmatched-syntax '((close-paren "}" 22486 . 22497))
+      :lexical-table 
         '(("__need_size_t")
           ("_STRING_H" . ((number "1" 887 . 888)))
           ("__need_NULL")
           )
-
-    )
-   (semanticdb-table "math.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "math.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_MATH_H" variable (:constant-flag t) nil [905 912])
             ("features.h" include (:system-flag t) nil [916 937])
             ("C" extern nil nil [939 952])
@@ -1416,22 +1414,21 @@
             ("_Mdouble_BEGIN_NAMESPACE" variable (:constant-flag t) nil [2482 2506])
             ("_Mdouble_END_NAMESPACE" variable (:constant-flag t) nil [2537 2559])
             ("bits/mathcalls.h" include (:system-flag t) nil [2582 2609]))          
-    :file "math.h"
-    :pointmax 16477
-    :fsize 16476
-    :lastmodtime '(21741 65039 0 0)
-    :unmatched-syntax '((close-paren "}" 16442 . 16453))
-    :lexical-table 
+      :file "math.h"
+      :pointmax 16477
+      :fsize 16475
+      :lastmodtime '(21779 44619 0 0)
+      :unmatched-syntax '((close-paren "}" 16442 . 16453))
+      :lexical-table 
         '(("__MATHCALLX" (spp-arg-list ("function" "suffix" "args" "attrib") 1987 . 2018) . ((symbol "__MATHDECLX" 2023 . 2034) (semantic-list "(_Mdouble_,function,suffix, args, attrib)" 2035 . 2076)))
           ("_MATH_H" . ((number "1" 913 . 914)))
           ("__MATHDECLX" (spp-arg-list ("type" "function" "suffix" "args" "attrib") 2096 . 2133) . 
               ((symbol "__MATHDECL_1" 2138 . 2150) (semantic-list "(type, function,suffix, args)" 2150 . 2179) (symbol "__attribute__" 2180 . 2193) (semantic-list "(attrib)" 2194 . 2202) (punctuation ";" 2202 . 2203) (symbol "__MATHDECL_1" 2208 . 2220) (semantic-list "(type, __CONCAT(__,function),suffix, args)" 2220 . 2262) (symbol "__attribute__" 2263 . 2276) (semantic-list "(attrib)" 2277 . 2285)))
           )
-
-    )
-   (semanticdb-table "errno.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "errno.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_ERRNO_H" variable (:constant-flag t) nil [1010 1018])
             ("features.h" include (:system-flag t) nil [1021 1043])
             ("C" extern nil nil [1052 1065])
@@ -1440,131 +1437,105 @@
                (:typemodifiers ("extern")
                 :type "int")
                 nil [1574 1591]))          
-    :file "errno.h"
-    :pointmax 2368
-    :fsize 2367
-    :lastmodtime '(21741 65041 0 0)
-    :unmatched-syntax '((close-paren "}" 1941 . 1952))
-    :lexical-table 
+      :file "errno.h"
+      :pointmax 2368
+      :fsize 2367
+      :lastmodtime '(21779 44620 0 0)
+      :unmatched-syntax '((close-paren "}" 1941 . 1952))
+      :lexical-table 
         '(("_ERRNO_H" . ((number "1" 1019 . 1020)))
           )
-
-    )
-   (semanticdb-table "features.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "features.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_FEATURES_H" variable (:constant-flag t) nil [818 829])
-            ("__KERNEL_STRICT_NAMES" variable (:constant-flag t) nil [5462 5483])
-            ("__GNUC_PREREQ" variable (:constant-flag t) nil [5812 5825])
-            ("_ISOC95_SOURCE" variable (:constant-flag t) nil [6081 6095])
-            ("_ISOC99_SOURCE" variable (:constant-flag t) nil [6131 6145])
-            ("_ISOC11_SOURCE" variable (:constant-flag t) nil [6181 6195])
-            ("_POSIX_SOURCE" variable (:constant-flag t) nil [6230 6243])
-            ("_POSIX_C_SOURCE" variable (:constant-flag t) nil [6280 6295])
-            ("_XOPEN_SOURCE" variable (:constant-flag t) nil [6336 6349])
-            ("_XOPEN_SOURCE_EXTENDED" variable (:constant-flag t) nil [6395 6417])
-            ("_LARGEFILE64_SOURCE" variable (:constant-flag t) nil [6458 6477])
-            ("_DEFAULT_SOURCE" variable (:constant-flag t) nil [6514 6529])
-            ("_BSD_SOURCE" variable (:constant-flag t) nil [6562 6573])
-            ("_SVID_SOURCE" variable (:constant-flag t) nil [6607 6619])
-            ("_ATFILE_SOURCE" variable (:constant-flag t) nil [6655 6669])
-            ("_DEFAULT_SOURCE" variable (:constant-flag t) nil [7098 7113])
-            ("_BSD_SOURCE" variable (:constant-flag t) nil [7146 7157])
-            ("_SVID_SOURCE" variable (:constant-flag t) nil [7191 7203])
-            ("__USE_ISOC11" variable (:constant-flag t) nil [7368 7380])
-            ("__USE_ISOC99" variable (:constant-flag t) nil [7571 7583])
-            ("__USE_ISOC95" variable (:constant-flag t) nil [7791 7803])
-            ("__USE_ISOCXX11" variable (:constant-flag t) nil [8069 8083])
-            ("_POSIX_SOURCE" variable (:constant-flag t) nil [8407 8420])
-            ("_POSIX_C_SOURCE" variable (:constant-flag t) nil [8457 8472])
-            ("__USE_POSIX" variable (:constant-flag t) nil [9080 9091])
-            ("__USE_POSIX2" variable (:constant-flag t) nil [9188 9200])
-            ("__USE_POSIX199309" variable (:constant-flag t) nil [9257 9274])
-            ("__USE_POSIX199506" variable (:constant-flag t) nil [9331 9348])
-            ("__USE_XOPEN2K" variable (:constant-flag t) nil [9405 9418])
-            ("__USE_ISOC95" variable (:constant-flag t) nil [9452 9464])
-            ("__USE_ISOC99" variable (:constant-flag t) nil [9498 9510])
-            ("__USE_XOPEN2K8" variable (:constant-flag t) nil [9568 9582])
-            ("_ATFILE_SOURCE" variable (:constant-flag t) nil [9619 9633])
-            ("__USE_XOPEN" variable (:constant-flag t) nil [9674 9685])
-            ("__USE_XOPEN_EXTENDED" variable (:constant-flag t) nil [9730 9750])
-            ("__USE_UNIX98" variable (:constant-flag t) nil [9763 9775])
-            ("_LARGEFILE_SOURCE" variable (:constant-flag t) nil [9815 9832])
-            ("__USE_XOPEN2K8" variable (:constant-flag t) nil [9914 9928])
-            ("__USE_XOPEN2K8XSI" variable (:constant-flag t) nil [9943 9960])
-            ("__USE_XOPEN2K" variable (:constant-flag t) nil [9984 9997])
-            ("__USE_XOPEN2KXSI" variable (:constant-flag t) nil [10011 10027])
-            ("__USE_ISOC95" variable (:constant-flag t) nil [10064 10076])
-            ("__USE_ISOC99" variable (:constant-flag t) nil [10114 10126])
-            ("__USE_LARGEFILE" variable (:constant-flag t) nil [10271 10286])
-            ("__USE_LARGEFILE64" variable (:constant-flag t) nil [10333 10350])
-            ("__USE_MISC" variable (:constant-flag t) nil [10514 10524])
-            ("__USE_BSD" variable (:constant-flag t) nil [10563 10572])
-            ("__USE_SVID" variable (:constant-flag t) nil [10612 10622])
-            ("__USE_ATFILE" variable (:constant-flag t) nil [10664 10676])
-            ("__USE_GNU" variable (:constant-flag t) nil [10715 10724])
-            ("__USE_FORTIFY_LEVEL" variable (:constant-flag t) nil [11061 11080])
-            ("stdc-predef.h" include (:system-flag t) nil [11211 11235])
-            ("__GNU_LIBRARY__" variable (:constant-flag t) nil [11668 11683])
-            ("__GLIBC__" variable (:constant-flag t) nil [11827 11836])
-            ("__GLIBC_MINOR__" variable (:constant-flag t) nil [11847 11862])
-            ("__GLIBC_PREREQ" variable (:constant-flag t) nil [11875 11889])
-            ("gnu/stubs.h" include (:system-flag t) nil [12936 12958]))          
-    :file "features.h"
-    :pointmax 12986
-    :fsize 12985
-    :lastmodtime '(21741 65023 0 0)
-    :unmatched-syntax '((close-paren 8058 . 8059) (symbol 8032 . 8058) (symbol 8024 . 8031) (punctuation 8022 . 8023) (punctuation 8021 . 8022) (close-paren 7780 . 7781) (close-paren 7779 . 7780) (number 7772 . 7779) (punctuation 7770 . 7771) (punctuation 7769 . 7770) (symbol 7752 . 7768) (punctuation 7750 . 7751) (punctuation 7749 . 7750) (symbol 7732 . 7748) (symbol 7724 . 7731) (open-paren 7723 . 7724) (punctuation 7721 . 7722) (punctuation 7720 . 7721) (close-paren 7560 . 7561) (close-paren 7559 . 7560) (number 7552 . 7559) (punctuation 7550 . 7551) (punctuation 7549 . 7550) (symbol 7532 . 7548) (punctuation 7530 . 7531) (punctuation 7529 . 7530) (symbol 7512 . 7528) (symbol 7504 . 7511) (open-paren 7503 . 7504) (punctuation 7501 . 7502) (punctuation 7500 . 7501) (close-paren 7357 . 7358) (close-paren 7356 . 7357) (number 7349 . 7356) (punctuation 7347 . 7348) (punctuation 7346 . 7347) (symbol 7329 . 7345) (punctuation 7327 . 7328) (punctuation 7326 . 7327) (symbol 7309 . 7325) (symbol 7301 . 7308) (open-paren 7300 . 7301) (punctuation 7298 . 7299) (punctuation 7297 . 7298) (close-paren 7062 . 7063) (semantic-list 6855 . 7062) (punctuation 6853 . 6854) (punctuation 6852 . 6853))
-    :lexical-table 
-        '(("__USE_XOPEN" . ((number "1" 9686 . 9687)))
-          ("__USE_XOPEN_EXTENDED" . ((number "1" 9751 . 9752)))
-          ("__USE_BSD" . ((number "1" 10573 . 10574)))
-          ("_ISOC99_SOURCE" . ((number "1" 6146 . 6147)))
-          ("__USE_XOPEN2KXSI" . ((number "1" 10028 . 10029)))
-          ("__USE_ATFILE" . ((number "1" 10677 . 10678)))
-          ("_ISOC95_SOURCE" . ((number "1" 6096 . 6097)))
-          ("_LARGEFILE64_SOURCE" . ((number "1" 6478 . 6479)))
-          ("__USE_ISOC11" . ((number "1" 7381 . 7382)))
-          ("__USE_LARGEFILE64" . ((number "1" 10351 . 10352)))
+            ("__KERNEL_STRICT_NAMES" variable (:constant-flag t) nil [5288 5309])
+            ("__GNUC_PREREQ" variable (:constant-flag t) nil [5638 5651])
+            ("_ISOC95_SOURCE" variable (:constant-flag t) nil [6498 6512])
+            ("_ISOC99_SOURCE" variable (:constant-flag t) nil [6548 6562])
+            ("_ISOC11_SOURCE" variable (:constant-flag t) nil [6598 6612])
+            ("_POSIX_SOURCE" variable (:constant-flag t) nil [6647 6660])
+            ("_POSIX_C_SOURCE" variable (:constant-flag t) nil [6697 6712])
+            ("_XOPEN_SOURCE" variable (:constant-flag t) nil [6753 6766])
+            ("_XOPEN_SOURCE_EXTENDED" variable (:constant-flag t) nil [6812 6834])
+            ("_LARGEFILE64_SOURCE" variable (:constant-flag t) nil [6875 6894])
+            ("_DEFAULT_SOURCE" variable (:constant-flag t) nil [6931 6946])
+            ("_ATFILE_SOURCE" variable (:constant-flag t) nil [6982 6996])
+            ("_DEFAULT_SOURCE" variable (:constant-flag t) nil [7339 7354])
+            ("_POSIX_SOURCE" variable (:constant-flag t) nil [8558 8571])
+            ("_POSIX_C_SOURCE" variable (:constant-flag t) nil [8608 8623])
+            ("__USE_POSIX" variable (:constant-flag t) nil [9231 9242])
+            ("__USE_POSIX2" variable (:constant-flag t) nil [9339 9351])
+            ("__USE_XOPEN" variable (:constant-flag t) nil [9825 9836])
+            ("__USE_XOPEN_EXTENDED" variable (:constant-flag t) nil [9881 9901])
+            ("__USE_UNIX98" variable (:constant-flag t) nil [9914 9926])
+            ("_LARGEFILE_SOURCE" variable (:constant-flag t) nil [9966 9983])
+            ("__USE_XOPEN2K8" variable (:constant-flag t) nil [10065 10079])
+            ("__USE_XOPEN2K8XSI" variable (:constant-flag t) nil [10094 10111])
+            ("__USE_XOPEN2K" variable (:constant-flag t) nil [10135 10148])
+            ("__USE_XOPEN2KXSI" variable (:constant-flag t) nil [10162 10178])
+            ("__USE_ISOC95" variable (:constant-flag t) nil [10215 10227])
+            ("__USE_ISOC99" variable (:constant-flag t) nil [10265 10277])
+            ("__USE_LARGEFILE" variable (:constant-flag t) nil [10422 10437])
+            ("__USE_LARGEFILE64" variable (:constant-flag t) nil [10484 10501])
+            ("__USE_MISC" variable (:constant-flag t) nil [10645 10655])
+            ("__USE_ATFILE" variable (:constant-flag t) nil [10697 10709])
+            ("__USE_GNU" variable (:constant-flag t) nil [10748 10757])
+            ("__USE_FORTIFY_LEVEL" variable (:constant-flag t) nil [11094 11113])
+            ("stdc-predef.h" include (:system-flag t) nil [11244 11268])
+            ("__GNU_LIBRARY__" variable (:constant-flag t) nil [11701 11716])
+            ("__GLIBC__" variable (:constant-flag t) nil [11860 11869])
+            ("__GLIBC_MINOR__" variable (:constant-flag t) nil [11880 11895])
+            ("__GLIBC_PREREQ" variable (:constant-flag t) nil [11908 11922])
+            ("sys/cdefs.h" include (:system-flag t) nil [12122 12146])
+            ("gnu/stubs.h" include (:system-flag t) nil [12969 12991]))          
+      :file "features.h"
+      :pointmax 13019
+      :fsize 13018
+      :lastmodtime '(21779 44606 0 0)
+      :unmatched-syntax '((close-paren 7303 . 7304) (semantic-list 7152 . 7303) (punctuation 7150 . 7151) (punctuation 7149 . 7150))
+      :lexical-table 
+        '(("__USE_XOPEN" . ((number "1" 9837 . 9838)))
+          ("__USE_XOPEN_EXTENDED" . ((number "1" 9902 . 9903)))
+          ("_ISOC99_SOURCE" . ((number "1" 6563 . 6564)))
+          ("__USE_XOPEN2KXSI" . ((number "1" 10179 . 10180)))
+          ("__USE_ATFILE" . ((number "1" 10710 . 10711)))
+          ("_ISOC95_SOURCE" . ((number "1" 6513 . 6514)))
+          ("_LARGEFILE64_SOURCE" . ((number "1" 6895 . 6896)))
+          ("__USE_LARGEFILE64" . ((number "1" 10502 . 10503)))
           ("__KERNEL_STRICT_NAMES")
-          ("_BSD_SOURCE" . ((number "1" 7158 . 7159)))
-          ("_POSIX_SOURCE" . ((number "1" 8421 . 8422)))
-          ("__USE_XOPEN2K8" . ((number "1" 9929 . 9930)))
-          ("__USE_XOPEN2K" . ((number "1" 9998 . 9999)))
-          ("__USE_ISOC95" . ((number "1" 10078 . 10079)))
-          ("__GLIBC__" . ((number "2" 11837 . 11838)))
-          ("_XOPEN_SOURCE_EXTENDED" . ((number "1" 6418 . 6419)))
-          ("__USE_XOPEN2K8XSI" . ((number "1" 9961 . 9962)))
-          ("_XOPEN_SOURCE" . ((number "700" 6350 . 6353)))
-          ("__USE_ISOCXX11" . ((number "1" 8084 . 8085)))
-          ("_ATFILE_SOURCE" . ((number "1" 9634 . 9635)))
-          ("__USE_FORTIFY_LEVEL" . ((number "0" 11081 . 11082)))
+          ("_POSIX_SOURCE" . ((number "1" 8572 . 8573)))
+          ("__USE_XOPEN2K8" . ((number "1" 10080 . 10081)))
+          ("__USE_XOPEN2K" . ((number "1" 10149 . 10150)))
+          ("__USE_ISOC95" . ((number "1" 10229 . 10230)))
+          ("__GLIBC__" . ((number "2" 11870 . 11871)))
+          ("_XOPEN_SOURCE_EXTENDED" . ((number "1" 6835 . 6836)))
+          ("__USE_XOPEN2K8XSI" . ((number "1" 10112 . 10113)))
+          ("_XOPEN_SOURCE" . ((number "700" 6767 . 6770)))
+          ("_ATFILE_SOURCE" . ((number "1" 6997 . 6998)))
+          ("__USE_FORTIFY_LEVEL" . ((number "0" 11114 . 11115)))
           ("_FEATURES_H" . ((number "1" 830 . 831)))
-          ("__USE_MISC" . ((number "1" 10525 . 10526)))
-          ("__GNU_LIBRARY__" . ((number "6" 11684 . 11685)))
-          ("__GLIBC_MINOR__" . ((number "19" 11863 . 11865)))
-          ("__GLIBC_PREREQ" (spp-arg-list ("maj" "min") 11889 . 11899) . ((semantic-list "((__GLIBC__ << 16) + __GLIBC_MINOR__ >= ((maj) << 16) + (min))" 11903 . 11965)))
-          ("__GNUC_PREREQ" (spp-arg-list ("maj" "min") 5825 . 5835) . ((semantic-list "((__GNUC__ << 16) + __GNUC_MINOR__ >= ((maj) << 16) + (min))" 5839 . 5899)))
-          ("__USE_POSIX2" . ((number "1" 9201 . 9202)))
-          ("__USE_POSIX199309" . ((number "1" 9275 . 9276)))
-          ("__USE_ISOC99" . ((number "1" 10128 . 10129)))
-          ("__USE_GNU" . ((number "1" 10725 . 10726)))
-          ("_ISOC11_SOURCE" . ((number "1" 6196 . 6197)))
-          ("_POSIX_C_SOURCE" . ((number "200809L" 8473 . 8480)))
-          ("__USE_LARGEFILE" . ((number "1" 10287 . 10288)))
-          ("__USE_POSIX199506" . ((number "1" 9349 . 9350)))
-          ("__USE_UNIX98" . ((number "1" 9776 . 9777)))
-          ("__USE_SVID" . ((number "1" 10623 . 10624)))
-          ("_DEFAULT_SOURCE" . ((number "1" 7114 . 7115)))
-          ("_SVID_SOURCE" . ((number "1" 7204 . 7205)))
-          ("__USE_POSIX" . ((number "1" 9092 . 9093)))
-          ("_LARGEFILE_SOURCE" . ((number "1" 9833 . 9834)))
+          ("__USE_MISC" . ((number "1" 10656 . 10657)))
+          ("__GNU_LIBRARY__" . ((number "6" 11717 . 11718)))
+          ("__GLIBC_MINOR__" . ((number "21" 11896 . 11898)))
+          ("__GLIBC_PREREQ" (spp-arg-list ("maj" "min") 11922 . 11932) . ((semantic-list "((__GLIBC__ << 16) + __GLIBC_MINOR__ >= ((maj) << 16) + (min))" 11936 . 11998)))
+          ("__GNUC_PREREQ" (spp-arg-list ("maj" "min") 5651 . 5661) . ((semantic-list "((__GNUC__ << 16) + __GNUC_MINOR__ >= ((maj) << 16) + (min))" 5665 . 5725)))
+          ("__USE_POSIX2" . ((number "1" 9352 . 9353)))
+          ("__USE_ISOC99" . ((number "1" 10279 . 10280)))
+          ("__USE_GNU" . ((number "1" 10758 . 10759)))
+          ("_ISOC11_SOURCE" . ((number "1" 6613 . 6614)))
+          ("_POSIX_C_SOURCE" . ((number "200809L" 8624 . 8631)))
+          ("__USE_LARGEFILE" . ((number "1" 10438 . 10439)))
+          ("__USE_UNIX98" . ((number "1" 9927 . 9928)))
+          ("_DEFAULT_SOURCE" . ((number "1" 7355 . 7356)))
+          ("__USE_POSIX" . ((number "1" 9243 . 9244)))
+          ("_LARGEFILE_SOURCE" . ((number "1" 9984 . 9985)))
           )
-
-    )
-   (semanticdb-table "libio.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "libio.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_IO_STDIO_H" variable (:constant-flag t) nil [1361 1372])
             ("_G_config.h" include (:system-flag t) nil [1374 1396])
             ("_IO_fpos_t" variable (:constant-flag t) nil [1457 1467])
@@ -2183,12 +2154,12 @@
                 :typemodifiers ("extern" "\"C\"" "extern")
                 :prototype-flag t)
                 (reparse-symbol extern-c-contents) [15280 15334]))          
-    :file "libio.h"
-    :pointmax 17249
-    :fsize 17248
-    :lastmodtime '(21741 65042 0 0)
-    :unmatched-syntax '((TYPEDEF 11196 . 11203) (TYPEDEF 11102 . 11109) (TYPEDEF 10737 . 10744) (TYPEDEF 10272 . 10279) (semantic-list 2228 . 2284))
-    :lexical-table 
+      :file "libio.h"
+      :pointmax 17249
+      :fsize 17248
+      :lastmodtime '(21779 44621 0 0)
+      :unmatched-syntax '((TYPEDEF 11196 . 11203) (TYPEDEF 11102 . 11109) (TYPEDEF 10737 . 10744) (TYPEDEF 10272 . 10279) (semantic-list 2228 . 2284))
+      :lexical-table 
         '(("_IO_fpos64_t" . ((symbol "_G_fpos64_t" 1499 . 1510)))
           ("_IO_ssize_t" . ((symbol "__ssize_t" 1557 . 1566)))
           ("_IO_TIED_PUT_GET" . ((number "0x400" 3484 . 3489)))
@@ -2278,11 +2249,10 @@
           ("_IO_HEX" . ((number "0100" 4170 . 4174)))
           ("_IO_flockfile" (spp-arg-list ("_fp") 14625 . 14630))
           )
-
-    )
-   (semanticdb-table "inttypes.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "inttypes.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_INTTYPES_H" variable (:constant-flag t) nil [890 901])
             ("features.h" include (:system-flag t) nil [905 926])
             ("stdint.h" include (:system-flag t) nil [960 979])
@@ -2533,12 +2503,12 @@
                     ("__base" variable (:type "int") (reparse-symbol arg-sub-list) [8273 8284]))                  
                 :type ("uintmax_t" type (:type "class") nil nil))
                 nil [8166 8298]))          
-    :file "inttypes.h"
-    :pointmax 11893
-    :fsize 11892
-    :lastmodtime '(21741 65041 0 0)
-    :unmatched-syntax '((close-paren "}" 11856 . 11867) (LONG 7249 . 7253) (symbol 7235 . 7248) (LONG 7194 . 7198) (symbol 7180 . 7193) (punctuation 1199 . 1200) (WCHAR "wchar_t" 1189 . 1199) (INT "int" 1174 . 1188) (TYPEDEF 1166 . 1173))
-    :lexical-table 
+      :file "inttypes.h"
+      :pointmax 11893
+      :fsize 11892
+      :lastmodtime '(21779 44620 0 0)
+      :unmatched-syntax '((close-paren "}" 11856 . 11867) (LONG 7249 . 7253) (symbol 7235 . 7248) (LONG 7194 . 7198) (symbol 7180 . 7193) (punctuation 1199 . 1200) (WCHAR "wchar_t" 1189 . 1199) (INT "int" 1174 . 1188) (TYPEDEF 1166 . 1173))
+      :lexical-table 
         '(("PRIdLEAST16" . ((string "\"d\"" 1700 . 1703)))
           ("PRIdLEAST64" . ((symbol "__PRI64_PREFIX" 1750 . 1764) (string "\"d\"" 1765 . 1768)))
           ("PRIoLEAST8" . ((string "\"o\"" 2413 . 2416)))
@@ -2699,11 +2669,10 @@
           ("SCNiMAX" . ((symbol "__PRI64_PREFIX" 6510 . 6524) (string "\"i\"" 6525 . 6528)))
           ("SCNiPTR" . ((symbol "__PRIPTR_PREFIX" 6746 . 6761) (string "\"i\"" 6762 . 6765)))
           )
-
-    )
-   (semanticdb-table "assert.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "assert.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_ASSERT_H" variable (:constant-flag t) nil [1006 1015])
             ("features.h" include (:system-flag t) nil [1018 1039])
             ("__ASSERT_VOID_CAST" variable (:constant-flag t) nil [1150 1168])
@@ -2768,12 +2737,12 @@
                 nil [2310 2433])
             ("assert" variable (:constant-flag t) nil [2491 2497])
             ("__ASSERT_FUNCTION" variable (:constant-flag t) nil [3398 3415]))          
-    :file "assert.h"
-    :pointmax 3653
-    :fsize 3652
-    :lastmodtime '(21741 65037 0 0)
-    :unmatched-syntax '((close-paren "}" 2436 . 2447))
-    :lexical-table 
+      :file "assert.h"
+      :pointmax 3653
+      :fsize 3652
+      :lastmodtime '(21779 44617 0 0)
+      :unmatched-syntax '((close-paren "}" 2436 . 2447))
+      :lexical-table 
         '(("__ASSERT_VOID_CAST" . ((semantic-list "(void)" 1169 . 1175)))
           ("_ASSERT_H" . ((number "1" 1016 . 1017)))
           ("_ASSERT_H_DECLS")
@@ -2782,11 +2751,10 @@
    ? __ASSERT_VOID_CAST (0)						\\
    : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))" 2514 . 2641)))
           )
-
-    )
-   (semanticdb-table "stdint.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "stdint.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_STDINT_H" variable (:constant-flag t) nil [866 875])
             ("features.h" include (:system-flag t) nil [879 900])
             ("bits/wchar.h" include (:system-flag t) nil [901 924])
@@ -2965,12 +2933,12 @@
             ("UINT64_C" variable (:constant-flag t) nil [7775 7783])
             ("INTMAX_C" variable (:constant-flag t) nil [7925 7933])
             ("UINTMAX_C" variable (:constant-flag t) nil [7955 7964]))          
-    :file "stdint.h"
-    :pointmax 8008
-    :fsize 8007
-    :lastmodtime '(21741 65041 0 0)
-    :unmatched-syntax '((LONG 3342 . 3346) (UNSIGNED 3333 . 3341) (TYPEDEF 3325 . 3332) (symbol 3311 . 3324) (LONG 3286 . 3290) (TYPEDEF 3278 . 3285) (symbol 3264 . 3277) (LONG 2779 . 2783) (UNSIGNED 2770 . 2778) (TYPEDEF 2762 . 2769) (symbol 2748 . 2761) (LONG 2433 . 2437) (TYPEDEF 2425 . 2432) (symbol 2411 . 2424) (LONG 2124 . 2128) (UNSIGNED 2115 . 2123) (TYPEDEF 2107 . 2114) (symbol 2093 . 2106) (LONG 1850 . 1854) (TYPEDEF 1842 . 1849) (symbol 1828 . 1841) (LONG 1601 . 1605) (UNSIGNED 1592 . 1600) (TYPEDEF 1584 . 1591) (symbol 1570 . 1583) (LONG 1287 . 1291) (TYPEDEF 1279 . 1286) (symbol 1265 . 1278))
-    :lexical-table 
+      :file "stdint.h"
+      :pointmax 8008
+      :fsize 8094
+      :lastmodtime '(21779 44620 0 0)
+      :unmatched-syntax '((LONG 3342 . 3346) (UNSIGNED 3333 . 3341) (TYPEDEF 3325 . 3332) (symbol 3311 . 3324) (LONG 3286 . 3290) (TYPEDEF 3278 . 3285) (symbol 3264 . 3277) (LONG 2779 . 2783) (UNSIGNED 2770 . 2778) (TYPEDEF 2762 . 2769) (symbol 2748 . 2761) (LONG 2433 . 2437) (TYPEDEF 2425 . 2432) (symbol 2411 . 2424) (LONG 2124 . 2128) (UNSIGNED 2115 . 2123) (TYPEDEF 2107 . 2114) (symbol 2093 . 2106) (LONG 1850 . 1854) (TYPEDEF 1842 . 1849) (symbol 1828 . 1841) (LONG 1601 . 1605) (UNSIGNED 1592 . 1600) (TYPEDEF 1584 . 1591) (symbol 1570 . 1583) (LONG 1287 . 1291) (TYPEDEF 1279 . 1286) (symbol 1265 . 1278))
+      :lexical-table 
         '(("__int8_t_defined")
           ("INT_LEAST16_MAX" . ((semantic-list "(32767)" 4488 . 4495)))
           ("INT_LEAST64_MAX" . ((semantic-list "(__INT64_C(9223372036854775807))" 4559 . 4591)))
@@ -3039,20 +3007,18 @@
           ("__INT64_C" (spp-arg-list ("c") 3486 . 3489) . ((spp-symbol-merge ((symbol "c" 3490 . 3491) (symbol "LL" 3495 . 3497)) 3490 . 3497)))
           ("__UINT64_C" (spp-arg-list ("c") 3518 . 3521) . ((spp-symbol-merge ((symbol "c" 3522 . 3523) (symbol "ULL" 3527 . 3530)) 3522 . 3530)))
           )
-
-    )
-   (semanticdb-table "stdc-predef.h"
-    :major-mode 'c-mode
-    :tags nil
-    :file "stdc-predef.h"
-    :pointmax 2154
-    :fsize 2153
-    :lastmodtime '(21741 65023 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "_G_config.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "stdc-predef.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "stdc-predef.h"
+      :pointmax 2154
+      :fsize 2153
+      :lastmodtime '(21779 44606 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "_G_config.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_G_config_h" variable (:constant-flag t) nil [161 172])
             ("bits/types.h" include (:system-flag t) nil [253 276])
             ("__need_size_t" variable (:constant-flag t) nil [285 298])
@@ -3084,12 +3050,12 @@
             ("_G_IO_IO_FILE_VERSION" variable (:constant-flag t) nil [1086 1107])
             ("_G_HAVE_ST_BLKSIZE" variable (:constant-flag t) nil [1189 1207])
             ("_G_BUFSIZ" variable (:constant-flag t) nil [1247 1256]))          
-    :file "_G_config.h"
-    :pointmax 1288
-    :fsize 1287
-    :lastmodtime '(21741 65042 0 0)
-    :unmatched-syntax 'nil
-    :lexical-table 
+      :file "_G_config.h"
+      :pointmax 1288
+      :fsize 1287
+      :lastmodtime '(21779 44621 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
         '(("_G_va_list" . ((symbol "__gnuc_va_list" 1013 . 1027)))
           ("_G_HAVE_MMAP" . ((number "1" 1050 . 1051)))
           ("_G_HAVE_ST_BLKSIZE" . ((symbol "defined" 1208 . 1215) (semantic-list "(_STATBUF_ST_BLKSIZE)" 1216 . 1237)))
@@ -3101,11 +3067,10 @@
           ("_G_IO_IO_FILE_VERSION" . ((number "0x20001" 1108 . 1115)))
           ("__need_mbstate_t")
           )
-
-    )
-   (semanticdb-table "wchar.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "wchar.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_WCHAR_H" variable (:constant-flag t) nil [973 981])
             ("features.h" include (:system-flag t) nil [984 1006])
             ("__need___FILE" variable (:constant-flag t) nil [1068 1081])
@@ -3789,12 +3754,12 @@
                         (reparse-symbol arg-sub-list) [30654 30687]))                  
                 :type ("size_t" type (:type "class") nil nil))
                 nil [30545 30696]))          
-    :file "wchar.h"
-    :pointmax 32000
-    :fsize 31999
-    :lastmodtime '(21741 65044 0 0)
-    :unmatched-syntax '((close-paren "}" 31762 . 31773))
-    :lexical-table 
+      :file "wchar.h"
+      :pointmax 32000
+      :fsize 31999
+      :lastmodtime '(21779 44623 0 0)
+      :unmatched-syntax '((close-paren "}" 31762 . 31773))
+      :lexical-table 
         '(("__need___FILE")
           ("__mbstate_t_defined" . ((number "1" 3120 . 3121)))
           ("WEOF" . ((semantic-list "(0xffffffffu)" 3366 . 3379)))
@@ -3808,11 +3773,10 @@
           ("__need___va_list")
           ("_WINT_T")
           )
-
-    )
-   (semanticdb-table "ctype.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "ctype.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_CTYPE_H" variable (:constant-flag t) nil [877 885])
             ("features.h" include (:system-flag t) nil [889 910])
             ("bits/types.h" include (:system-flag t) nil [911 934])
@@ -4005,12 +3969,12 @@
                 :type "int")
                 nil [4504 4541])
             ("__tobody" variable (:constant-flag t) nil [5455 5463]))          
-    :file "ctype.h"
-    :pointmax 11749
-    :fsize 11748
-    :lastmodtime '(21741 65037 0 0)
-    :unmatched-syntax '((close-paren "}" 11714 . 11725))
-    :lexical-table 
+      :file "ctype.h"
+      :pointmax 11749
+      :fsize 11652
+      :lastmodtime '(21779 44617 0 0)
+      :unmatched-syntax '((close-paren "}" 11714 . 11725))
+      :lexical-table 
         '(("_ISbit" (spp-arg-list ("bit") 1387 . 1392) . ((semantic-list "(1 << (bit))" 1393 . 1405)))
           ("_CTYPE_H" . ((number "1" 886 . 887)))
           ("__isascii" (spp-arg-list ("c") 3751 . 3754) . ((semantic-list "(((c) & ~0x7f) == 0)" 3755 . 3775)))
@@ -4033,11 +3997,10 @@
 	__res = (a)[(int) (c)];						      \\
       __res; }))" 5483 . 5945)))
           )
-
-    )
-   (semanticdb-table "locale.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "locale.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_LOCALE_H" variable (:constant-flag t) nil [874 883])
             ("features.h" include (:system-flag t) nil [887 908])
             ("__need_NULL" variable (:constant-flag t) nil [918 929])
@@ -4139,12 +4102,12 @@
                       :type "struct")
                       nil nil))
                 nil [4809 4856]))          
-    :file "locale.h"
-    :pointmax 7942
-    :fsize 7941
-    :lastmodtime '(21741 65025 0 0)
-    :unmatched-syntax '((close-paren "}" 7906 . 7917))
-    :lexical-table 
+      :file "locale.h"
+      :pointmax 7942
+      :fsize 7941
+      :lastmodtime '(21779 44607 0 0)
+      :unmatched-syntax '((close-paren "}" 7906 . 7917))
+      :lexical-table 
         '(("LC_COLLATE" . ((symbol "__LC_COLLATE" 1269 . 1281)))
           ("LC_TELEPHONE" . ((symbol "__LC_TELEPHONE" 1505 . 1519)))
           ("LC_MEASUREMENT" . ((symbol "__LC_MEASUREMENT" 1545 . 1561)))
@@ -4161,11 +4124,10 @@
           ("__need_NULL")
           ("LC_NUMERIC" . ((symbol "__LC_NUMERIC" 1194 . 1206)))
           )
-
-    )
-   (semanticdb-table "endian.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "endian.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_ENDIAN_H" variable (:constant-flag t) nil [816 825])
             ("features.h" include (:system-flag t) nil [829 850])
             ("__LITTLE_ENDIAN" variable (:constant-flag t) nil [1353 1368])
@@ -4173,23 +4135,22 @@
             ("__PDP_ENDIAN" variable (:constant-flag t) nil [1408 1420])
             ("bits/endian.h" include (:system-flag t) nil [1495 1519])
             ("__FLOAT_WORD_ORDER" variable (:constant-flag t) nil [1647 1665]))          
-    :file "endian.h"
-    :pointmax 2938
-    :fsize 2937
-    :lastmodtime '(21741 65043 0 0)
-    :unmatched-syntax 'nil
-    :lexical-table 
+      :file "endian.h"
+      :pointmax 2938
+      :fsize 2939
+      :lastmodtime '(21779 44622 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
         '(("_ENDIAN_H" . ((number "1" 826 . 827)))
           ("__FLOAT_WORD_ORDER" . ((symbol "__BYTE_ORDER" 1666 . 1678)))
           ("__PDP_ENDIAN" . ((number "3412" 1421 . 1425)))
           ("__LITTLE_ENDIAN" . ((number "1234" 1369 . 1373)))
           ("__BIG_ENDIAN" . ((number "4321" 1395 . 1399)))
           )
-
-    )
-   (semanticdb-table "wctype.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "wctype.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("features.h" include (:system-flag t) nil [910 931])
             ("bits/types.h" include (:system-flag t) nil [932 955])
             ("_WCTYPE_H" variable (:constant-flag t) nil [988 997])
@@ -4465,23 +4426,22 @@
                     ("__desc" variable (:type ("wctrans_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7307 7324]))                  
                 :type ("wint_t" type (:type "class") nil nil))
                 nil [7269 7333]))          
-    :file "wctype.h"
-    :pointmax 11131
-    :fsize 11130
-    :lastmodtime '(21741 65049 0 0)
-    :unmatched-syntax '((close-paren "}" 11060 . 11071) (close-paren "}" 6763 . 6774))
-    :lexical-table 
+      :file "wctype.h"
+      :pointmax 11131
+      :fsize 11130
+      :lastmodtime '(21779 44627 0 0)
+      :unmatched-syntax '((close-paren "}" 11060 . 11071) (close-paren "}" 6763 . 6774))
+      :lexical-table 
         '(("_WCTYPE_H" . ((number "1" 998 . 999)))
           ("WEOF" . ((semantic-list "(0xffffffffu)" 1232 . 1245)))
           ("_ISwbit" (spp-arg-list ("bit") 1899 . 1904) . ((semantic-list "(1 << (bit))" 1905 . 1917)))
           ("__need_wint_t")
           ("__iswxxx_defined" . ((number "1" 1450 . 1451)))
           )
-
-    )
-   (semanticdb-table "pthread.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "pthread.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_PTHREAD_H" variable (:constant-flag t) nil [817 827])
             ("features.h" include (:system-flag t) nil [831 852])
             ("endian.h" include (:system-flag t) nil [853 872])
@@ -5453,12 +5413,12 @@
                     ("" variable (:type "void") (reparse-symbol arg-sub-list) [41262 41277]))                  
                 :type "int")
                 nil [41172 41294]))          
-    :file "pthread.h"
-    :pointmax 41513
-    :fsize 41512
-    :lastmodtime '(21741 65053 0 0)
-    :unmatched-syntax '((close-paren "}" 41477 . 41488) (semantic-list 41278 . 41284) (semantic-list 41267 . 41277) (semantic-list 41248 . 41254) (semantic-list 41236 . 41247) (semantic-list 41217 . 41223) (semantic-list 41204 . 41216) (semantic-list 39888 . 39896) (semantic-list 39868 . 39887) (semantic-list 18877 . 18885) (semantic-list 18868 . 18876) (semantic-list 17048 . 17054) (semantic-list 17030 . 17047) (semantic-list 6958 . 6966) (semantic-list 6939 . 6957) (spp-macro-def 6208 . 6235) (spp-macro-def 6122 . 6145) (spp-macro-def 6030 . 6052) (spp-macro-def 5951 . 5972) (spp-macro-def 5384 . 5406) (spp-macro-def 5303 . 5326) (spp-macro-def 5171 . 5192) (spp-macro-def 5094 . 5114) (spp-macro-def 4980 . 5002) (spp-macro-def 4901 . 4922) (spp-macro-def 1141 . 1164) (spp-macro-def 1059 . 1082))
-    :lexical-table 
+      :file "pthread.h"
+      :pointmax 41513
+      :fsize 41350
+      :lastmodtime '(21779 44630 0 0)
+      :unmatched-syntax '((close-paren "}" 41477 . 41488) (semantic-list 41278 . 41284) (semantic-list 41267 . 41277) (semantic-list 41248 . 41254) (semantic-list 41236 . 41247) (semantic-list 41217 . 41223) (semantic-list 41204 . 41216) (semantic-list 39888 . 39896) (semantic-list 39868 . 39887) (semantic-list 18877 . 18885) (semantic-list 18868 . 18876) (semantic-list 17048 . 17054) (semantic-list 17030 . 17047) (semantic-list 6958 . 6966) (semantic-list 6939 . 6957) (spp-macro-def 6208 . 6235) (spp-macro-def 6122 . 6145) (spp-macro-def 6030 . 6052) (spp-macro-def 5951 . 5972) (spp-macro-def 5384 . 5406) (spp-macro-def 5303 . 5326) (spp-macro-def 5171 . 5192) (spp-macro-def 5094 . 5114) (spp-macro-def 4980 . 5002) (spp-macro-def 4901 . 4922) (spp-macro-def 1141 . 1164) (spp-macro-def 1059 . 1082))
+      :lexical-table 
         '(("PTHREAD_CREATE_DETACHED" . ((symbol "PTHREAD_CREATE_DETACHED" 1165 . 1188)))
           ("PTHREAD_INHERIT_SCHED" . ((symbol "PTHREAD_INHERIT_SCHED" 4925 . 4946)))
           ("PTHREAD_PROCESS_PRIVATE" . ((symbol "PTHREAD_PROCESS_PRIVATE" 5327 . 5350)))
@@ -5483,11 +5443,10 @@
           ("PTHREAD_CREATE_JOINABLE" . ((symbol "PTHREAD_CREATE_JOINABLE" 1083 . 1106)))
           ("PTHREAD_SCOPE_SYSTEM" . ((symbol "PTHREAD_SCOPE_SYSTEM" 5118 . 5138)))
           )
-
-    )
-   (semanticdb-table "sched.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "sched.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_SCHED_H" variable (:constant-flag t) nil [889 897])
             ("features.h" include (:system-flag t) nil [901 922])
             ("bits/types.h" include (:system-flag t) nil [953 976])
@@ -5592,12 +5551,12 @@
                         (reparse-symbol arg-sub-list) [2370 2391]))                  
                 :type "int")
                 nil [2321 2400]))          
-    :file "sched.h"
-    :pointmax 4630
-    :fsize 4629
-    :lastmodtime '(21741 65046 0 0)
-    :unmatched-syntax '((close-paren "}" 4596 . 4607))
-    :lexical-table 
+      :file "sched.h"
+      :pointmax 4630
+      :fsize 4659
+      :lastmodtime '(21779 44624 0 0)
+      :unmatched-syntax '((close-paren "}" 4596 . 4607))
+      :lexical-table 
         '(("__pid_t_defined")
           ("_SCHED_H" . ((number "1" 898 . 899)))
           ("__need_time_t")
@@ -5605,11 +5564,10 @@
           ("__need_size_t")
           ("__need_timespec")
           )
-
-    )
-   (semanticdb-table "time.h"
-    :major-mode 'c-mode
-    :tags 
+)
+    (semanticdb-table "time.h"
+      :major-mode 'c-mode
+      :tags 
         '( ("_TIME_H" variable (:constant-flag t) nil [966 973])
             ("features.h" include (:system-flag t) nil [976 998])
             ("C" extern nil nil [1000 1013])
@@ -5656,12 +5614,12 @@
                 :type "long int")
                 nil [8517 8544])
             ("__isleap" variable (:constant-flag t) nil [9195 9203]))          
-    :file "time.h"
-    :pointmax 13725
-    :fsize 13724
-    :lastmodtime '(21741 65045 0 0)
-    :unmatched-syntax '((close-paren "}" 13633 . 13644) (punctuation 8413 . 8414) (close-paren 8412 . 8413) (number 8411 . 8412) (open-paren 8410 . 8411) (symbol 8402 . 8410) (punctuation 8401 . 8402) (CHAR 8396 . 8400) (EXTERN 8389 . 8395) (punctuation 7824 . 7825) (close-paren 7815 . 7816) (symbol 7808 . 7815) (punctuation 7807 . 7808) (symbol 7800 . 7806) (CONST 7794 . 7799) (open-paren 7793 . 7794) (symbol 7787 . 7792) (punctuation 7786 . 7787) (CHAR 7781 . 7785) (EXTERN 7774 . 7780) (punctuation 7719 . 7720) (close-paren 7710 . 7711) (symbol 7706 . 7710) (punctuation 7705 . 7706) (symbol 7702 . 7704) (STRUCT 7695 . 7701) (CONST 7689 . 7694) (open-paren 7688 . 7689) (symbol 7680 . 7687) (punctuation 7679 . 7680) (CHAR 7674 . 7678) (EXTERN 7667 . 7673) (punctuation 7010 . 7011) (close-paren 7001 . 7002) (symbol 6994 . 7001) (punctuation 6993 . 6994) (symbol 6986 . 6992) (CONST 6980 . 6985) (open-paren 6979 . 6980) (symbol 6969 . 6978) (punctuation 6968 . 6969) (symbol 6965 . 6967) (STRUCT 6958 . 6964) (EXTERN 6951 . 6957) (punctuation 6867 . 6868) (close-paren 6858 . 6859) (symbol 6851 . 6858) (punctuation 6850 . 6851) (symbol 6843 . 6849) (CONST 6837 . 6842) (open-paren 6836 . 6837) (symbol 6829 . 6835) (punctuation 6828 . 6829) (symbol 6825 . 6827) (STRUCT 6818 . 6824) (EXTERN 6811 . 6817) (punctuation 5839 . 5840) (close-paren 5830 . 5831) (symbol 5826 . 5830) (punctuation 5814 . 5815) (symbol 5811 . 5813) (STRUCT 5804 . 5810) (CONST 5798 . 5803) (punctuation 5793 . 5794) (symbol 5785 . 5793) (punctuation 5773 . 5774) (CHAR 5768 . 5772) (CONST 5762 . 5767) (punctuation 5757 . 5758) (symbol 5748 . 5757) (symbol 5741 . 5747) (punctuation 5739 . 5740) (symbol 5736 . 5739) (punctuation 5724 . 5725) (CHAR 5719 . 5723) (open-paren 5718 . 5719) (symbol 5709 . 5717) (symbol 5702 . 5708) (EXTERN 5695 . 5701) (punctuation 5524 . 5525) (close-paren 5515 . 5516) (symbol 5511 . 5515) (punctuation 5510 . 5511) (symbol 5507 . 5509) (STRUCT 5500 . 5506) (open-paren 5499 . 5500) (symbol 5492 . 5498) (symbol 5485 . 5491) (EXTERN 5478 . 5484) (punctuation 5409 . 5410) (close-paren 5367 . 5368) (symbol 5360 . 5367) (symbol 5353 . 5359) (punctuation 5351 . 5352) (symbol 5344 . 5351) (symbol 5337 . 5343) (open-paren 5336 . 5337) (symbol 5327 . 5335) (DOUBLE 5320 . 5326) (EXTERN 5313 . 5319) (punctuation 5256 . 5257) (close-paren 5247 . 5248) (symbol 5240 . 5247) (punctuation 5239 . 5240) (symbol 5232 . 5238) (open-paren 5231 . 5232) (symbol 5226 . 5230) (symbol 5219 . 5225) (EXTERN 5212 . 5218) (punctuation 5135 . 5136) (close-paren 5126 . 5127) (VOID 5122 . 5126) (open-paren 5121 . 5122) (symbol 5115 . 5120) (symbol 5107 . 5114) (EXTERN 5100 . 5106) (punctuation 4343 . 4344) (close-paren 4342 . 4343) (open-paren 3731 . 3732) (symbol 3728 . 3730) (STRUCT 3721 . 3727) (close-paren 955 . 956) (symbol 940 . 955) (symbol 932 . 939) (punctuation 930 . 931))
-    :lexical-table 
+      :file "time.h"
+      :pointmax 13725
+      :fsize 13543
+      :lastmodtime '(21779 44623 0 0)
+      :unmatched-syntax '((close-paren "}" 13633 . 13644) (punctuation 8413 . 8414) (close-paren 8412 . 8413) (number 8411 . 8412) (open-paren 8410 . 8411) (symbol 8402 . 8410) (punctuation 8401 . 8402) (CHAR 8396 . 8400) (EXTERN 8389 . 8395) (punctuation 7824 . 7825) (close-paren 7815 . 7816) (symbol 7808 . 7815) (punctuation 7807 . 7808) (symbol 7800 . 7806) (CONST 7794 . 7799) (open-paren 7793 . 7794) (symbol 7787 . 7792) (punctuation 7786 . 7787) (CHAR 7781 . 7785) (EXTERN 7774 . 7780) (punctuation 7719 . 7720) (close-paren 7710 . 7711) (symbol 7706 . 7710) (punctuation 7705 . 7706) (symbol 7702 . 7704) (STRUCT 7695 . 7701) (CONST 7689 . 7694) (open-paren 7688 . 7689) (symbol 7680 . 7687) (punctuation 7679 . 7680) (CHAR 7674 . 7678) (EXTERN 7667 . 7673) (punctuation 7010 . 7011) (close-paren 7001 . 7002) (symbol 6994 . 7001) (punctuation 6993 . 6994) (symbol 6986 . 6992) (CONST 6980 . 6985) (open-paren 6979 . 6980) (symbol 6969 . 6978) (punctuation 6968 . 6969) (symbol 6965 . 6967) (STRUCT 6958 . 6964) (EXTERN 6951 . 6957) (punctuation 6867 . 6868) (close-paren 6858 . 6859) (symbol 6851 . 6858) (punctuation 6850 . 6851) (symbol 6843 . 6849) (CONST 6837 . 6842) (open-paren 6836 . 6837) (symbol 6829 . 6835) (punctuation 6828 . 6829) (symbol 6825 . 6827) (STRUCT 6818 . 6824) (EXTERN 6811 . 6817) (punctuation 5839 . 5840) (close-paren 5830 . 5831) (symbol 5826 . 5830) (punctuation 5814 . 5815) (symbol 5811 . 5813) (STRUCT 5804 . 5810) (CONST 5798 . 5803) (punctuation 5793 . 5794) (symbol 5785 . 5793) (punctuation 5773 . 5774) (CHAR 5768 . 5772) (CONST 5762 . 5767) (punctuation 5757 . 5758) (symbol 5748 . 5757) (symbol 5741 . 5747) (punctuation 5739 . 5740) (symbol 5736 . 5739) (punctuation 5724 . 5725) (CHAR 5719 . 5723) (open-paren 5718 . 5719) (symbol 5709 . 5717) (symbol 5702 . 5708) (EXTERN 5695 . 5701) (punctuation 5524 . 5525) (close-paren 5515 . 5516) (symbol 5511 . 5515) (punctuation 5510 . 5511) (symbol 5507 . 5509) (STRUCT 5500 . 5506) (open-paren 5499 . 5500) (symbol 5492 . 5498) (symbol 5485 . 5491) (EXTERN 5478 . 5484) (punctuation 5409 . 5410) (close-paren 5367 . 5368) (symbol 5360 . 5367) (symbol 5353 . 5359) (punctuation 5351 . 5352) (symbol 5344 . 5351) (symbol 5337 . 5343) (open-paren 5336 . 5337) (symbol 5327 . 5335) (DOUBLE 5320 . 5326) (EXTERN 5313 . 5319) (punctuation 5256 . 5257) (close-paren 5247 . 5248) (symbol 5240 . 5247) (punctuation 5239 . 5240) (symbol 5232 . 5238) (open-paren 5231 . 5232) (symbol 5226 . 5230) (symbol 5219 . 5225) (EXTERN 5212 . 5218) (punctuation 5135 . 5136) (close-paren 5126 . 5127) (VOID 5122 . 5126) (open-paren 5121 . 5122) (symbol 5115 . 5120) (symbol 5107 . 5114) (EXTERN 5100 . 5106) (punctuation 4343 . 4344) (close-paren 4342 . 4343) (open-paren 3731 . 3732) (symbol 3728 . 3730) (STRUCT 3721 . 3727) (close-paren 955 . 956) (symbol 940 . 955) (symbol 932 . 939) (punctuation 930 . 931))
+      :lexical-table 
         '(("_TIME_H" . ((number "1" 974 . 975)))
           ("__need_size_t")
           ("__time_t_defined" . ((number "1" 2026 . 2027)))
@@ -5670,10 +5628,68 @@
           ("__need_NULL")
           ("__clock_t_defined" . ((number "1" 1603 . 1604)))
           )
-
-    )
-   )
+)
+    (semanticdb-table "error.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_ERROR_H" variable (:constant-flag t) nil [859 867])
+            ("features.h" include (:system-flag t) nil [871 892])
+            ("C" extern nil nil [895 908])
+            ("error" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("__status" variable (:type "int") (reparse-symbol arg-sub-list) [1128 1141])
+                    ("__errnum" variable (:type "int") (reparse-symbol arg-sub-list) [1142 1155])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1156 1177])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1178 1182]))                  
+                :type "void")
+                nil [1109 1236])
+            ("error_at_line" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("__status" variable (:type "int") (reparse-symbol arg-sub-list) [1265 1278])
+                    ("__errnum" variable (:type "int") (reparse-symbol arg-sub-list) [1279 1292])
+                    ("__fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1293 1313])
+                    ("__lineno" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1320 1342])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1343 1364])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1365 1369]))                  
+                :type "void")
+                nil [1238 1423])
+            ("error_print_progname" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [1602 1645])
+            ("error_message_count" variable
+               (:typemodifiers ("extern")
+                :type "unsigned int")
+                nil [1712 1752])
+            ("error_one_per_line" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1880 1910]))          
+      :file "error.h"
+      :pointmax 2040
+      :fsize 2039
+      :lastmodtime '(21779 44625 0 0)
+      :unmatched-syntax '((close-paren "}" 2006 . 2017))
+      :lexical-table 
+        '(("_ERROR_H" . ((number "1" 868 . 869)))
+          )
+))
   :file "!usr!include!semantic.cache"
   :semantic-tag-version "2.0"
-  :semanticdb-version "2.2"
-  )
+  :semanticdb-version "2.2")

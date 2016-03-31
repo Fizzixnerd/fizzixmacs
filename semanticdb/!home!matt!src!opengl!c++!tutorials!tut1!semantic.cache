@@ -1,0 +1,69 @@
+;; Object tut1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tut1/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GL/freeglut.h" include (:system-flag t) nil [1 25])
+            ("RenderSceneCB" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [27 111])
+            ("InitializeGlutCallbacks" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [113 188])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [199 208])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [209 221]))                  
+                :type "int")
+                nil [190 504]))          
+    :file "main.cpp"
+    :pointmax 445
+    :fsize 504
+    :lastmodtime '(21927 47835 566535 308000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("EXECUTABLE_NAMES" variable (:default-value ("main")) nil [221 243])
+            ("SRC_SUFFIX" variable (:default-value (".cpp")) nil [243 259])
+            ("RM" variable (:default-value ("rm" "-f")) nil [259 268])
+            ("YOUR_CFLAGS" variable nil nil [269 282])
+            ("YOUR_CXXFLAGS" variable (:default-value ("-Wall" "-std=gnu++11")) nil [282 315])
+            ("YOUR_CPPFLAGS" variable nil nil [315 330])
+            ("YOUR_LDFLAGS" variable nil nil [330 344])
+            ("YOUR_LDLIBS" variable (:default-value ("-lglut" "-lGL")) nil [344 368])
+            ("CC" variable (:default-value ("gcc")) nil [448 455])
+            ("CXX" variable (:default-value ("g++")) nil [455 463])
+            ("CFLAGS" variable (:default-value ("$(YOUR_CFLAGS)")) nil [464 486])
+            ("CXXFLAGS" variable (:default-value ("-Wall" "-std=c++11" "$(YOUR_CXXFLAGS)")) nil [486 529])
+            ("CPPFLAGS" variable (:default-value ("$(YOUR_CPPFLAGS)")) nil [529 555])
+            ("LDFLAGS" variable (:default-value ("$(YOUR_LDFLAGS)")) nil [555 579])
+            ("LDLIBS" variable (:default-value ("$(YOUR_LDLIBS)")) nil [579 601])
+            ("SRCS" variable (:default-value ("$(wildcard *$(SRC_SUFFIX))")) nil [602 634])
+            ("OBJS" variable (:default-value ("$(subst $(SRC_SUFFIX),.o,$(SRCS))")) nil [634 673])
+            ("all" function (:arguments ("$(EXECUTABLE_NAMES)")) nil [720 745])
+            ("main" function (:arguments ("$(OBJS)")) nil [1064 1123])
+            ("depend" function (:arguments (".depend")) nil [1124 1140])
+            (".depend" function (:arguments ("$(SRCS)")) nil [1141 1214])
+            ("clean" function nil nil [1215 1237])
+            ("dist-clean" function (:arguments ("clean")) nil [1238 1274])
+            (".depend" include nil nil [1275 1291]))          
+    :file "Makefile"
+    :pointmax 1202
+    :fsize 1290
+    :lastmodtime '(21927 47649 482533 108000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!matt!src!opengl!c++!tutorials!tut1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

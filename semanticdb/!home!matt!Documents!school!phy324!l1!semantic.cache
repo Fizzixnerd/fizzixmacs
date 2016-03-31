@@ -1,0 +1,88 @@
+;; Object l1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "l1/"
+  :tables
+  (list
+    (semanticdb-table "l1.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 22])
+            ("pprint" include nil nil [23 36])
+            ("numpy" include nil nil [38 56])
+            ("matplotlib.pyplot" include nil nil [57 88])
+            ("physics.data.datum" include nil nil [90 120])
+            ("physics.data.analysis" include nil nil [121 154])
+            ("pp" variable nil nil [156 191])
+            ("R1" code nil nil [193 229])
+            ("R2" code nil nil [234 270])
+            ("R" code nil nil [271 292])
+            ("M1" code nil nil [293 328])
+            ("M2" code nil nil [334 369])
+            ("_d" code nil nil [393 428])
+            ("w" code nil nil [433 469])
+            ("x_0" code nil nil [492 557])
+            ("L" variable nil nil [562 587])
+            ("K" code nil nil [592 652])
+            ("read_data" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [668 676])
+                ("formats" variable nil (reparse-symbol function_parameters) [678 685]))              ) nil [654 931])
+            ("convert_times_to_second_offsets" function (:arguments 
+              ( ("str_times" variable nil (reparse-symbol function_parameters) [968 977]))              ) nil [932 1326])
+            ("prepare_data" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [1344 1352]))              ) nil [1327 1655])
+            ("x" function (:arguments 
+              ( ("t" variable nil (reparse-symbol function_parameters) [1662 1663])
+                ("A" variable nil (reparse-symbol function_parameters) [1665 1666])
+                ("tau" variable nil (reparse-symbol function_parameters) [1668 1671])
+                ("omega" variable nil (reparse-symbol function_parameters) [1673 1678])
+                ("x_0" variable nil (reparse-symbol function_parameters) [1680 1683])
+                ("theta_0" variable nil (reparse-symbol function_parameters) [1685 1692]))              ) nil [1656 1766])
+            ("run" function (:arguments 
+              ( ("times" variable nil (reparse-symbol function_parameters) [1775 1780])
+                ("xs" variable nil (reparse-symbol function_parameters) [1782 1784])
+                ("start" variable nil (reparse-symbol function_parameters) [1786 1791])
+                ("end" variable nil (reparse-symbol function_parameters) [1793 1796])
+                ("p" variable nil (reparse-symbol function_parameters) [1798 1799]))              ) nil [1767 1969])
+            ("first_run" function (:arguments 
+              ( ("times" variable nil (reparse-symbol function_parameters) [1984 1989])
+                ("xs" variable nil (reparse-symbol function_parameters) [1991 1993]))              ) nil [1970 2089])
+            ("second_run" function (:arguments 
+              ( ("times" variable nil (reparse-symbol function_parameters) [2105 2110])
+                ("xs" variable nil (reparse-symbol function_parameters) [2112 2114]))              ) nil [2090 2208])
+            ("simple_plot_model" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [2231 2239]))              ) nil [2209 2427])
+            ("_simple_plot_model" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [2451 2459]))              ) nil [2428 2765])
+            ("plot_all_data" function (:arguments 
+              ( ("xs" variable nil (reparse-symbol function_parameters) [2784 2786])
+                ("ys" variable nil (reparse-symbol function_parameters) [2788 2790])
+                ("analysis1" variable nil (reparse-symbol function_parameters) [2792 2801])
+                ("analysis2" variable nil (reparse-symbol function_parameters) [2803 2812]))              ) nil [2766 3056])
+            ("print_all_but_data" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [3080 3088]))              ) nil [3057 3309])
+            ("omega" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [3320 3328]))              ) nil [3310 3362])
+            ("T" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [3369 3377]))              ) nil [3363 3419])
+            ("x_final" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [3432 3440]))              ) nil [3420 3474])
+            ("S" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [3481 3489]))              ) nil [3475 3527])
+            ("theta" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [3538 3546]))              ) nil [3528 3605])
+            ("G" function (:arguments 
+              ( ("analysis_1" variable nil (reparse-symbol function_parameters) [3612 3622])
+                ("analysis_2" variable nil (reparse-symbol function_parameters) [3624 3634]))              ) nil [3606 3825])
+            ("question_1" function (:arguments 
+              ( ("analysis_1" variable nil (reparse-symbol function_parameters) [3841 3851])
+                ("analysis_2" variable nil (reparse-symbol function_parameters) [3853 3863]))              ) nil [3826 4057])
+            ("main" function nil nil [4058 4496])
+            ("if" code nil nil [4497 4535]))          
+      :file "l1.py"
+      :pointmax 4535
+      :fsize 4534
+      :lastmodtime '(22212 55444 215656 11000)
+      :unmatched-syntax nil))
+  :file "!home!matt!Documents!school!phy324!l1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

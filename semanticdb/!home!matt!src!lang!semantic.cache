@@ -269,7 +269,7 @@
                 :type "namespace")
                 nil [45 224]))          
     :file "Value.cpp"
-    :pointmax 174
+    :pointmax 225
     :fsize 224
     :lastmodtime '(21812 56783 872096 924000)
     :unmatched-syntax 'nil
@@ -382,25 +382,27 @@
                 :type "namespace")
                 nil [42 481]))          
     :file "Token.cpp"
-    :pointmax 444
+    :pointmax 482
     :fsize 481
     :lastmodtime '(21813 7209 62948 613000)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "Symbol.cpp"
     :major-mode 'c++-mode
-    :tags nil
+    :tags 
+        '( ("Symbol.hpp" include nil nil [1 22]))          
     :file "Symbol.cpp"
-    :pointmax 1
+    :pointmax 23
     :fsize 22
     :lastmodtime '(21812 56694 928095 872000)
     :unmatched-syntax 'nil
     )
-     (semanticdb-table "Lang.cpp"
+   (semanticdb-table "Lang.cpp"
     :major-mode 'c++-mode
-    :tags nil
+    :tags 
+        '( ("Lang.hpp" include nil nil [1 20]))          
     :file "Lang.cpp"
-    :pointmax 1
+    :pointmax 21
     :fsize 20
     :lastmodtime '(21812 59549 484771 33000)
     :unmatched-syntax 'nil
@@ -413,6 +415,39 @@
     :fsize 73
     :lastmodtime '(21812 64804 652833 178000)
     :unmatched-syntax '((symbol 25 . 29) (NAMESPACE 15 . 24) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   (semanticdb-table "make_unique.hpp"
+    :file "make_unique.hpp"
+    :fsize 147
+    :lastmodtime '(21812 57232 444102 228000)
+    )
+   (semanticdb-table "make_unique.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("make_unique.hpp" include nil nil [1 27])
+            ("memory" include (:system-flag t) nil [29 46])
+            ("lang" type
+               (:members 
+                  ( ("make_unique" function
+                       (:arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Args" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [143 149])
+                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [153 159]))                          
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [109 236]))                  
+                :type "namespace")
+                nil [48 238]))          
+    :file "make_unique.cpp"
+    :pointmax 239
+    :fsize 238
+    :lastmodtime '(21812 57238 392102 299000)
+    :unmatched-syntax '((punctuation 152 . 153) (punctuation 151 . 152) (punctuation 150 . 151) (punctuation 148 . 149) (punctuation 105 . 106) (symbol 101 . 105) (punctuation 100 . 101) (punctuation 99 . 100) (punctuation 98 . 99) (TYPENAME 89 . 97) (punctuation 87 . 88) (symbol 86 . 87) (TYPENAME 77 . 85) (punctuation 76 . 77) (TEMPLATE 68 . 76))
     )
    )
   :file "!home!matt!src!lang!semantic.cache"

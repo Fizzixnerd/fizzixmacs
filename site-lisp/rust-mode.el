@@ -1,1 +1,1 @@
-../../src/rust/src/etc/emacs/rust-mode.el
+/home/matt/ssd2/src/rust/src/etc/emacs/rust-mode.el

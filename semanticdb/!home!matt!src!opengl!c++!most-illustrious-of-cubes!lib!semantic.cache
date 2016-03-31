@@ -6,7 +6,7 @@
     :major-mode 'c++-mode
     :tags nil
     :file "shader_utils.cpp"
-    :pointmax 2106
+    :pointmax 2117
     :fsize 2116
     :lastmodtime '(21458 22226 547849 243000)
     :unmatched-syntax 'nil
