@@ -1,0 +1,142 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/matt/Documents/soi/" . "general/")
+ ("/home/matt/.emacs.d/site-lisp/" . "customizations/")
+ ("/home/matt/.emacs.d/" . "site-lisp/")
+ ("/home/matt/src/fizzixnerd.com/scratch-site/src/" . "Lib/")
+ ("/home/matt/src/fizzixnerd.com/scratch-site/" . "src/")
+ ("/home/matt/src/fizzixnerd.com/" . "scratch-site/")
+ ("/home/matt/Documents/" . "geometric-entanglement/")
+ ("/home/matt/Downloads/84082_Simple_SSS_setup/" . "SimpleSSS demo/")
+ ("/home/matt/Downloads/" . "84082_Simple_SSS_setup/")
+ ("/home/matt/src/ghame/lib/lambdacube-gl/" . "examples/")
+ ("/home/matt/src/ghame/lib/" . "lambdacube-gl/")
+ ("/home/matt/src/" . "fizzixnerd.com/")
+ ("/home/matt/" . "Documents/")
+ ("/home/matt/src/ghame/src/TKC/Graphics/" . "LambdaCube3D/")
+ ("/home/matt/src/ghame/src/TKC/Engine/" . "Event/")
+ ("/home/matt/src/ghame/src/TKC/" . "Graphics/")
+ ("/home/matt/src/ghame/src/" . "TKC/")
+ ("/home/matt/src/ghame/" . "src/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/matt/Documents/geometric-entanglement/"
+ "/home/matt/Documents/soi/general/"
+ "/home/matt/.emacs.d/site-lisp/customizations/"
+ "/home/matt/.emacs.d/"
+ "/home/matt/src/tapl/"
+ "/home/matt/src/fizzixnerd.com/scratch-site/src/Lib/"
+ "/home/matt/src/fizzixnerd.com/fizzixnerd-site/"
+ "/home/matt/Documents/et/"
+ "/home/matt/src/ghame/src/"
+ "/home/matt/src/ghame/src/TKC/Graphics/LambdaCube3D/"
+ "/home/matt/src/ghame/src/X3D/"
+ "/home/matt/Downloads/84082_Simple_SSS_setup/SimpleSSS demo/"
+ "/home/matt/src/ghame/"
+ "/home/matt/src/ghame/lib/lambdacube-gl/examples/"
+ "/home/matt/src/ghame/src/TKC/Engine/Entity/"
+ "/home/matt/src/ghame/src/TKC/Engine/Data/"
+ "/home/matt/src/ghame/src/TKC/Engine/"
+ "/home/matt/src/ghame/src/TKC/Engine/Location/"
+ "/home/matt/src/ghame/src/TKC/Engine/Event/"
+ "/home/matt/src/ghame/src/TKC/Graphics/NCurses/"
+ "/home/matt/src/ghame/src/TKC/Graphics/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "ge.tex"
+ "soi.tex"
+ "tex-customizations.el"
+ "init.el"
+ "pdfview-customizations.el"
+ "tapl.org"
+ ".gitignore"
+ "Hello.hs"
+ "Foundation.hs"
+ "et2.tex"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/matt/.emacs.d/site-lisp/customizations/" (22713 51322 812934 849000) "#tex-customizations.el#" ".#tex-customizations.el" "pdfview-customizations.el" "#sql-customizations.el#" ".#sql-customizations.el" "sql-customizations.el" "web-customizations.el" "visual-customizations.el" "tex-customizations.el" "template-replace.el" "shell-customizations.el" "racket-customizations.el" "python-customizations.el" "package-customizations.el" "org-customizations.el" "navigation-customizations.el" "mail-customizations.el" "kaide-customizations.el" "js-customizations.el" "java-customizations.el" "ispell-customizations.el" "ido-customizations.el" "hs-customizations.el" "haskell-customizations.el" "glsl-customizations.el" "file-association-customizations.el" "erc-customizations.el" "ede-customizations.el" "desktop-customizations.el" "cl-customizations.el" "c++-customizations.el" "ac-customizations.el" ".ropeproject/" ".#haskell-customizations.el" "#haskell-customizations.el#" "../" "./")
+
+ ("/home/matt/Documents/soi/general/" (22666 14701 592988 144000) "soi.tex" "soi.tex~" "cam/" "Academic History.pdf" "soi.bbl" "soi.blg" "soi.run.xml" "soi.bcf" "refs.bib" "resume-old.pdf" "soi.out" "soi.pdf" "soi.aux" "soi.log" "auto/" "../" "./")
+
+ ("/home/matt/Documents/soi/" (22593 33376 884200 487000) "cv/" "ubc/" "general/" "../" "./")
+
+ ("/home/matt/Documents/psi/" (22666 16195 695016 1000) "psi.pdf" "cv.pdf" "Academic History.pdf" "soi.pdf" "../" "./")
+
+ ("/home/matt/Documents/" (22708 38132 848852 588000) "submission_2017-02-27T21:07:00.850203.xlsx" "submission_2017-02-27T21:07:00.623614.html" "invoice/" "classical-entanglement/" "psi/" "tikz-tutorial/" "geometric-entanglement/" "pl/" "lea/" "et/" "soi/" "sea1/" "col1.txt" "../" "./")
+
+ ("/home/matt/.emacs.d/elpa/" (22713 49927 913901 761000) "helm-projectile-20170202.1000/" "helm-20170301.819/" "helm-core-20170301.2122/" "projectile-20170225.2320/" "org-caldav-20160614.1342/" "org-gcal-20161115.357/" "request-deferred-20160419.1605/" "request-20170131.1747/" "alert-20170223.1030/" "gntp-20141024.1950/" "log4e-20150105.505/" "org-pdfview-20161130.1053/" "org-20170210.signed" "org-20170210/" "pdf-tools-20170228.2312/" "tablist-20170219.1935/" "emacsql-psql-20151004.715/" "emacsql-20170110.1853/" "finalize-20140127.1046/" "pg-20130731.1442/" "shakespeare-mode-20160908.1511/" "ac-clang-20161202.725/" "android-mode-20160408.523/" "apel-20160427.152/" "auctex-11.90.0.signed" "auctex-11.90.0/" "auto-complete-20161029.643/" "autopair-20160304.437/" "clojure-mode-20161221.523/" "cmake-mode-20160928.505/" "company-20170112.2005/" "company-auctex-20161025.24/" "company-ghc-20160315.710/" "company-irony-20160826.56/" "company-jedi-20151216.1921/" "company-quickhelp-20161113.1226/" "concurrent-20161228.1930/" "csharp-mode-20170111.1133/" "d-mode-20161022.717/" "dart-mode-20161218.1548/" "dash-functional-20160615.1351/" "deferred-20161228.1930/" "dired+-20170112.1427/" "elpy-20161229.1103/" "emms-20161222.1446/" "expand-region-20161122.50/" "f-20161002.800/" "find-file-in-project-20161202.2205/" "flim-20161210.1728/" "flycheck-20170117.1033/" "flycheck-haskell-20160524.117/" "flycheck-irony-20160317.1536/" "fsharp-mode-20161130.653/" "geiser-20170116.1834/" "ghc-20160808.813/" "google-translate-20161206.1408/" "guru-mode-20160415.1921/" "haskell-mode-20170116.407/" "haskell-snippets-20160918.1722/" "highlight-indentation-20161012.209/" "htmlize-20161211.1019/" "irony-20161227.348/" "jedi-20160425.2156/" "jedi-core-20160709.722/" "js-comint-20161212.2125/" "js2-mode-20170116.733/" "js2-refactor-20161102.1108/" "lua-mode-20161101.1340/" "magit-20170114.1211/" "git-commit-20170112.334/" "magit-popup-20170104.924/" "async-20161103.1036/" "dash-20161121.55/" "markdown-mode-20161222.1416/" "monokai-theme-20161216.628/" "multiple-cursors-20161021.1431/" "popup-20160709.729/" "pretty-lambdada-20170101.1117/" "python-mode-20170117.455/" "pyvenv-20160527.442/" "quack-20160410.207/" "rtags-20170111.2258/" "s-20160928.636/" "sauron-20160501.1045/" "semi-20160816.239/" "simple-httpd-20160902.1800/" "skewer-mode-20161205.419/" "slime-20161109.640/" "macrostep-20161120.1306/" "slime-company-20161229.743/" "smex-20151212.1409/" "swiper-20161213.719/" "ivy-20170109.626/" "unbound-20160505.2355/" "wanderlust-20161227.2220/" "web-mode-20170114.906/" "window-number-20141106.1829/" "with-editor-20161231.826/" "yasnippet-20161221.1953/" "yaml-mode-20161105.814/" "yasnippet-readme.txt" "wtf-2.0/" "w3-readme.txt" "virtualenv-20140220.1501/" "slime-ritz-20130218.1537/" "seq-20151121.1017/" "python-environment-20150310.153/" "pymacs-0.25/" "pushbullet-20140809.532/" "pretty-mode-plus-1.2/" "pos-tip-20150318.813/" "pkg-info-20150517.443/" "pep8-1.2/" "nvm-20151113.55/" "nose-20140520.948/" "markdown-mode-readme.txt" "load-dir-0.0.3/" "let-alist-1.0.4/" "less-0.2/" "javadoc-help-1.0/" "irony-eldoc-20141226.2219/" "ipython-2927/" "impatient-mode-20150501.247/" "idomenu-20141123.1320/" "hc-zenburn-theme-20150928.933/" "grapnel-20131001.834/" "god-mode-20151005.925/" "gnuplot-mode-20151122.2339/" "gnuplot-20141231.1337/" "gnupg/" "fuzzy-20150729.2037/" "flymake-shell-20121104.1100/" "flymake-ruby-20121104.1059/" "flymake-python-pyflakes-20131127.6/" "flymake-easy-20140818.55/" "flymake-0.4.16/" "flycheck-ghcmod-20150113.2232/" "fic-ext-mode-0.1/" "evernote-mode-0.41/" "epl-20150517.433/" "epc-20140609.2234/" "emacs-droid-0.0.0/" "djvu-0.5/" "dark-souls-readme.txt" "ctypes-1.2/" "ctable-20140304.1659/" "crontab-mode-20090510.1355/" "company-readme.txt" "company-quickhelp-readme.txt" "company-c-headers-20150801.901/" "company-auctex-readme.txt" "color-theme-twilight-0.1/" "color-theme-ir-black-1.0.1/" "color-theme-dawn-night-1.0/" "color-theme-20080305.34/" "cdlatex-20140707.426/" "builtin-packages" "auto-complete-auctex-20140223.958/" "aumix-mode-readme.txt" "archives/" "ac-slime-20150729.2035/" "ac-python-20110519/" "ac-js2-20140906.442/" "ac-geiser-20130928.2347/" "Save-visited-files-readme.txt" "Save-visited-files-1.2/" "../" "./")
+
+ ("/home/matt/.emacs.d/elpa/helm-20170301.819/" (22713 49931 739986 506000) "helm-utils.elc" "helm-types.elc" "helm-tags.elc" "helm-sys.elc" "helm-semantic.elc" "helm-ring.elc" "helm-regexp.elc" "helm-org.elc" "helm-net.elc" "helm-mode.elc" "helm-misc.elc" "helm-man.elc" "helm-locate.elc" "helm-info.elc" "helm-imenu.elc" "helm-id-utils.elc" "helm-help.elc" "helm-grep.elc" "helm-font.elc" "helm-files.elc" "helm-external.elc" "helm-eval.elc" "helm-eshell.elc" "helm-elscreen.elc" "helm-elisp.elc" "helm-elisp-package.elc" "helm-easymenu.elc" "helm-dabbrev.elc" "helm-config.elc" "helm-command.elc" "helm-color.elc" "helm-buffers.elc" "helm-bookmark.elc" "helm-apt.elc" "helm-adaptive.elc" "helm-autoloads.el" "helm-autoloads.el~" "helm-types.el" "helm-org.el" "helm-grep.el" "helm-bookmark.el" "helm-config.el" "helm-elisp.el" "helm-color.el" "helm-net.el" "helm-regexp.el" "emacs-helm.sh" "helm-man.el" "helm-eval.el" "helm-adaptive.el" "helm-misc.el" "helm-pkg.el" "helm-files.el" "helm-dabbrev.el" "helm-sys.el" "helm-apt.el" "helm-id-utils.el" "helm-buffers.el" "helm-semantic.el" "helm-imenu.el" "helm-info.el" "helm-font.el" "helm-eshell.el" "helm-tags.el" "helm-easymenu.el" "helm-elisp-package.el" "helm-command.el" "helm-utils.el" "helm-elscreen.el" "helm-locate.el" "helm-external.el" "helm-help.el" "helm-ring.el" "helm-mode.el" "../" "./")
+
+ ("/home/matt/.emacs.d/" (22713 50409 151351 761000) ".#ido.last" "init.el" "ido.last" "ido.last~" "snippets/" "session.10feb6695ecb894179147565648581812700000017150048" "places" "smex-items" "auto-save-list/" "url/" "srecode-map.el" "site-lisp/" "session.10e32d1f6c914991f8143991114568362000000015920052" "session.10d18c49334af231b6140871982595473100000021430067" "session.10d0234d548ac0293140077970893430100000019070054" "session.10b8655b24cbdbbf84143301934440488700000019720067" "session.10b03b8500ecfb515314455437485949800000015720052" "session.10ab3aed590a6dfd8143524419281000900000019670066" "session.10995097ad456581af143766851660874300000315250067" "session.1096f726c0229c15d4143938728840890800000015820051" "session.107db08e1b6c84a5dd144519326242326900000012730052" "session.1068609f1adb62e227142609122812849000000020970064" "session.104b88fe0c711966b3144276309233340900000016180053" "session.1049fd18e326a7ba7b140068600917113000000019270054" "session.104551722cbef91f85142896328083621500000022290066" "session.103b65398988b4af6b144310007453515500000244940053" "session.103670184e19bacb681445998720217100000219250052" "session.103595ed2cf174d4fe143551118654105000000020830067" "session.10275087263d0e7de140597294317540300000019220059" "session.1012ce0406c43c5918143878769479676100000062250050" "semanticdb/" "sbcl.core-for-slime" "opengl-customizations.el" "mkslime-core.bash" "menu_log.notes" "irony/" "emms/" "elpa/" "ede/" "ede-projects.el" "ac-comphist.dat" "abbrev_defs" "README.md" "LICENSE" ".org-id-locations" ".mc-lists.el" ".gitignore" ".emacs.desktop.lock" ".emacs.desktop" ".git/" "../" "./")
+
+ ("/home/matt/src/ghame/" (22544 62017 378555 293000) "collada_spec_1_5.pdf" "res/" "x3d-3.3.dtd~" "HelloWorld.x3d~" "TriangleSet2D.x3d~" "x3d-3.3.xsd~" "x3d.org" "x3d.org~" ".gitignore" ".gitignore~" "lib/" "shit.txt" "cabal.sandbox.config" ".cabal-sandbox/" "cabal.sandbox.config.old" ".cabal-sandbox-old/" "TKC_GDD.pdf" "TKC_GDD.tex" "TKC_GDD.tex~" "auto/" "ghame.cabal" "ghame.cabal~" "TKC_GDD.org" "TKC_GDD.org~" "dist/" "ChangeLog.md" "Setup.hs" "LICENSE" "doc/" "src/" ".git/" "../" "./")
+
+ ("/home/matt/Downloads/84082_Simple_SSS_setup/SimpleSSS demo/" (22536 64620 565721 849000) "23213/" "untitled.blend" "SSSdemo.x3d" "Preview.jpg" "SSSdemo.blend" "textures/" "../" "./")
+
+ ("/home/matt/src/ghame/src/X3D/" (22535 30162 919820 67000) "Types.hs" "Types.hs~" "test.x3d" "test.x3d~" "TheGaybeards.jpg" "GL.hs" "GL.hs~" "Shader.hs" "Shader.hs~" "Scratch.hs" "Scratch.hs~" "Util.hs" "Util.hs~" "Compile.hs" "Compile.hs~" "test.lc" "#GeneratedTypes.hs#" ".#GeneratedTypes.hs" "GeneratedTypes.hs~" "HXT.hs" "HXT.hs~" "../" "./")
+
+ ("/home/matt/src/ghame/src/TKC/Graphics/LambdaCube3D/" (22534 17216 1315 371000) "Mesh.hs" "Mesh.hs~" "Shader.hs" "Shader.hs~" "../" "./")
+
+ ("/home/matt/src/ghame/src/" (22544 62065 284259 500000) "Data/" "test.lc~" "test.json" "X3D/" "Main.o" "Main.hi" "Main.hs" "Main.hs~" "Scratch.hs~" "TKC/" "blah.c~" "../" "./")
+
+ ("/home/matt/Documents/et/" (22588 25577 805956 836000) "et3.tex" "et3.tex~" "et3.toc" "et3.pdf" "et3.out" "et3.aux" "et3.log" "prv_et3.fmt" "prv_et3.log" "plot2.png" "et2.tex" "et2.tex~" "hydrogen2.pdf" "et2.pdf" "plot1.png" "plot1.svg" "et2.toc" "et2.out" "et2.aux" "et.tex" "et.tex~" "et2.log" "hydrogen.pdf" "et.pdf" "et.toc" "et.out" "_region_.prv/" "_region_.log" "prv_et.log" "_region_.tex" "et.aux" "et.log" "auto/" "../" "./")
+
+ ("/home/matt/Documents/geometric-entanglement/" (22672 32980 739904 800000) "ge.pdf" "_region_.maf" "_region_.mtc" "_region_.mtc0" "ge.maf" "ge.mtc" "ge.mtc0" "ge.tex" "ge.tex~" "_region_.prv/" "_region_.run.xml" "_region_.log" "prv_ge.log" "_region_.tex" "ge.toc" "ge.out" "ge.run.xml" "ge.bcf" "ge.aux" "ge.log" "auto/" ".git/" "../" "./")
+
+ ("/home/matt/src/fizzixnerd.com/scratch-site/src/Lib/" (22705 56621 773326 116000) "Hello.hs" "Hello.hs~" "../" "./")
+
+ ("/home/matt/.emacs.d/site-lisp/" (22481 33111 324961 468000) "stack-mode" "rust-mode.el" "rtf-mode.el" "glsl-mode/" "ghc-mod-elisp" "fullscreen.el" "customizations/" "company-quickhelp.el" "cedet/" "cc-mode-5.32.5/" "ac-ghc-mod.el" "../" "./")
+
+ ("/home/matt/" (22713 30545 881639 773000) ".xsession-errors" ".xsession-errors.old" ".psql_history" ".steampid" ".steampath" ".pgadmin3" ".pgpass" "pgadmin.log" ".profile" ".profile~" ".Xauthority" "ubc-cwl.txt" ".gnuplot_history" ".ssh/" "academic_history.pdf" ".stack/" ".erc/" ".lesshst" ".dbus/" ".gnome/" ".gitconfig" ".thunderbird/" ".pulse-cookie" ".pki/" "Steam/" ".steam/" ".ghc-mod/" ".hoogle/" "src/" ".cabal/" ".ghc/" ".aliases.bash" ".system/" ".emacs.d/" ".bash_history" ".sudo_as_admin_successful" ".mozilla/" ".gconf/" ".ICEauthority" ".gnupg/" ".local/" ".config/" "Videos/" "Pictures/" "Music/" "Documents/" "Public/" "Templates/" "Downloads/" "Desktop/" ".dmrc" ".cache/" "examples.desktop" ".bashrc" ".bash_logout" "../" "./")
+
+ ("/home/matt/src/" (22713 30559 20838 911000) "tapl/" "postgresql-tutorial/" "fizzixnerd.com/" "VulkanTools/" "Vulkan/" "lc3d/" "lambdacube-quake3/" "lambdacube-gl/" "lambdacube-ir/" "lambdacube-compiler/" "lambdacube-gl-0.5.1.1/" "bt/" "scratch.hs" "scratch.hs~" "ghame/" "../" "./")
+
+ ("/home/matt/src/tapl/" (22713 50151 552295 274000) ".#tapl.org" "tapl.org" "tapl.org~" ".gitignore" ".gitignore~" "tapl.pdf" ".git/" "../" "./")
+
+ ("/home/matt/src/fizzixnerd.com/scratch-site/src/" (22700 31411 659488 645000) "Lib/" "Lib.hs" "Lib.hs~" "../" "./")
+
+ ("/home/matt/src/fizzixnerd.com/scratch-site/" (22700 31984 56337 880000) "client_session_key.aes" "README.md" "scratch-site.cabal" "scratch-site.cabal~" ".stack-work/" "stack.yaml" ".git/" "test/" "src/" "app/" "Setup.hs" "LICENSE" "../" "./")
+
+ ("/home/matt/src/fizzixnerd.com/" (22700 29750 857070 951000) "scratch-site/" "fizzixnerd-site/" "../" "./")
+
+ ("/home/matt/src/fizzixnerd.com/fizzixnerd-site/" (22699 18569 467335 443000) ".stack-work/" "stack.yaml" ".git/" "test/" "templates/" "static/" "fizzixnerd-site.cabal" "config/" "app/" "Settings/" "Settings.hs" "Import/" "Import.hs" "Handler/" "Foundation.hs" "Application.hs" ".gitignore" ".dir-locals.el" "../" "./")
+
+ ("/home/matt/src/ghame/src/TKC/Graphics/" (22533 3718 835619 453000) "LambdaCube3D/" "Curses/" "NCurses.hs~" "../" "./")
+
+ ("/home/matt/Downloads/84082_Simple_SSS_setup/" (22530 31657 618742 137000) "84082 - LICENSE.html" "SimpleSSS demo/" "../" "./")
+
+ ("/home/matt/Downloads/" (22530 31657 284342 189000) "84082_Simple_SSS_setup/" "84082_Simple_SSS_setup.zip" "2FF48E0B55604E9E87867F4BCDD2C440.png" "CM0024_whole.x3d" "ISO-IEC-19775-1-IS-V3.3.zip" "HelloWorld.x3d" "thegaybeards.jpg" "hugeasshole.jpg" "castle_game_engine/" "castle_game_engine-5.2.0-src.tar.gz" "freewrl-3.0.0/" "freewrl-3.0.0.tar.bz2" "86103_Maliki_-_Rig___printable/" "86103_Maliki_-_Rig___printable.zip" "google-chrome-stable_current_amd64.deb" "SBFC162.mp3" "../" "./")
+
+ ("/home/matt/src/ghame/src/TKC/Engine/Event/" (22515 58189 44092 422000) "Loop.o" "Loop.hi" "Draw.o" "Draw.hi" "Timer.o" "Timer.hi" "Input.o" "Input.hi" "EventHandler.o" "EventHandler.hi" "Loop.hs" "Loop.hs~" "Draw.hs" "Draw.hs~" "Input.hs" "SimpleLoop.hs" "Timer.hs" "EventHandler.hs" "../" "./")
+
+ ("/home/matt/src/ghame/src/TKC/Engine/Location/" (22512 65132 507129 149000) "Node.o" "Node.hi" "Area.o" "Area.hi" "Position.o" "Position.hi" "Node.hs" "Node.hs~" "Area.hs" "Area.hs~" "Types.hs~" "Place.hs~" "Tile.hs~" "Position.hs" "Position.hs~" "../" "./")
+
+ ("/home/matt/src/ghame/src/TKC/Engine/" (22514 58400 935120 434000) "Block/" "Item/" "Inventory.hs" "Event/" "Entity.hs" "Types.hs" "ID.hs" "#Name.hs#" "#Location.hs#" "Data/" "Location/" "Entity/" "../" "./")
+
+ ("/home/matt/src/ghame/src/TKC/Engine/Data/" (22514 38870 417080 459000) "Save.o" "Save.hi" "VectorMaze.o" "VectorMaze.hi" "Store.hs~" "Save.hs" "Save.hs~" "Types.hs~" "#Core.hs#" "Core.hs~" "VectorMaze.hs" "VectorMaze.hs~" "../" "./")
+
+ ("/home/matt/src/ghame/src/TKC/Engine/Entity/" (22514 27601 100102 4000) "Cow.hs" "Cow.hs~" "WinningX.o" "WinningX.hi" "Player.o" "Player.hi" "Movement.hs~" "Types.hs~" "Wall.hs~" "New.hs" "New.hs~" "WinningX.hs" "WinningX.hs~" "Player.hs" "Player.hs~" "Class.hs~" "EntityType.hs~" "../" "./")
+
+ ("/home/matt/src/ghame/lib/lambdacube-gl/examples/" (22519 46426 446883 235000) "#HelloOBJ.hs#" ".#HelloOBJ.hs" "logo.png" "hello_obj.lc" "hello_obj.json" "hello.lc" "hello.json" "cube.obj" "cube.mtl" "README" "MtlParser.hs" "HelloOBJ.hs" "HelloEmbedded.hs" "Hello.hs" "../" "./")
+
+ ("/home/matt/src/ghame/lib/lambdacube-gl/" (22515 43691 784221 638000) "dist/" "testclient/" "stack.yaml" "src/" "lambdacube-gl.cabal" "examples/" "README.md" "LICENSE" ".gitignore" ".git/" "../" "./")
+
+ ("/home/matt/src/ghame/lib/" (22515 42842 720462 623000) "lambdacube-compiler/" "lambdacube-ir/" "lambdacube-gl/" "../" "./")
+
+ ("/home/matt/src/ghame/src/TKC/" (22504 5251 3123 808000) "Helpers.hs" "Helpers.hs~" "Graphics/" "Engine/" "../" "./")
+
+ ("/home/matt/src/ghame/src/TKC/Graphics/NCurses/" (22493 22977 658594 201000) "Drawable.hs" "Drawable.hs~" "Glyph.hs" "Glyph.hs~" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

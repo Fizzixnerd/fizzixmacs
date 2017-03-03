@@ -1,0 +1,71 @@
+
+;; ----- smex-history -----
+(
+ package-list-packages
+ sql-postgres
+ customize
+ flycheck-mode
+ comment-region
+ mc/edit-lines
+ replace-regexp
+)
+
+;; ----- smex-data -----
+(
+ (haskell-mode-stylish-buffer . 8)
+ (ghc-debug . 3)
+ (comment-box . 1)
+ (comment-region . 72)
+ (replace-regexp . 32)
+ (recover-this-file . 1)
+ (read-color . 1)
+ (dired . 4)
+ (haskell-mode . 13)
+ (rename-file . 2)
+ (uncomment-region . 4)
+ (haskell-process-restart . 3)
+ (shell . 7)
+ (mkdir . 9)
+ (mc/edit-lines . 36)
+ (move-file-to-trash . 1)
+ (kmacro-edit-macro . 3)
+ (package-list-packages . 10)
+ (erc . 6)
+ (js-indent-line . 1)
+ (woman . 3)
+ (magit-commit . 7)
+ (magit-diff . 1)
+ (ediff-current-file . 1)
+ (magit-diff-dwim . 2)
+ (diff . 1)
+ (magit-clone . 3)
+ (org-src-mode . 2)
+ (org-toggle-pretty-entities . 2)
+ (org-src-fontify-block . 1)
+ (beginning-of-line . 20)
+ (count-words . 15)
+ (downcase-word . 1)
+ (speedbar . 2)
+ (xml-mode . 7)
+ (nxml-debug-overlays . 4)
+ (nxml-refresh-outline . 1)
+ (flyspell-mode . 1)
+ (magit-init . 1)
+ (customize-mode . 9)
+ (sql-postgres . 5)
+ (org-cut-special . 1)
+ (org-table-create . 4)
+ (org-edit-special . 1)
+ (org-toggle-link-display . 2)
+ (org-latex-export-as-latex . 1)
+ (sql-set-sqli-buffer . 3)
+ (sql-show-sqli-buffer . 1)
+ (sql-highlight-postgres-keywords . 5)
+ (flycheck-mode . 3)
+ (customize . 1)
+ (sql-set-product . 1)
+ (sql-set-sqli-buffer-generally . 2)
+ (pdf-view-mode . 2)
+ (mailcap-parse-mimetypes . 1)
+ (reftex-toc . 4)
+)

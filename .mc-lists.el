@@ -3,10 +3,23 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	backward-kill-sexp
+	backward-sexp
+	electric-newline-and-maybe-indent
 	end-of-buffer
+	end-of-defun
+	forward-sexp
+	haskell-indentation-indent-backwards
+	smex
 	))
 
 (setq mc/cmds-to-run-once
       '(
+	company-show-doc-buffer
+	forward-sentence
+	ghc-import-module
+	haskell-goto-next-error
+	haskell-indentation-newline-and-indent
 	smart-move-beginning-of-line
+	yas-expand
 	))
