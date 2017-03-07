@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ helm-ag
+ eval-buffer
  package-list-packages
- sql-postgres
- customize
- flycheck-mode
- comment-region
- mc/edit-lines
- replace-regexp
+ emacs-version
+ magit-push
+ magit-commit
+ magit-stage-file
 )
 
 ;; ----- smex-data -----
@@ -29,11 +29,11 @@
  (mc/edit-lines . 36)
  (move-file-to-trash . 1)
  (kmacro-edit-macro . 3)
- (package-list-packages . 10)
+ (package-list-packages . 13)
  (erc . 6)
  (js-indent-line . 1)
  (woman . 3)
- (magit-commit . 7)
+ (magit-commit . 13)
  (magit-diff . 1)
  (ediff-current-file . 1)
  (magit-diff-dwim . 2)
@@ -67,5 +67,13 @@
  (sql-set-sqli-buffer-generally . 2)
  (pdf-view-mode . 2)
  (mailcap-parse-mimetypes . 1)
- (reftex-toc . 4)
+ (reftex-toc . 5)
+ (magit-stage . 1)
+ (wl . 2)
+ (magit-stage-file . 2)
+ (magit-push . 4)
+ (apel-version . 1)
+ (emacs-version . 4)
+ (eval-buffer . 1)
+ (helm-ag . 1)
 )

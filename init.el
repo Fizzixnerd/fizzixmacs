@@ -56,7 +56,7 @@
     ("~/Documents/school/jph311/project/proposal/proposal.org")))
  '(package-selected-packages
    (quote
-    (wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
+    (persp-fr persp-mode persp-projectile term-projectile helm-projectile projectile org-projectile package-build shut-up git commander f dash s company-cabal ag ahk-mode cask cask-mode cmake-font-lock company-bibtex company-cmake company-dict company-lua company-math company-nand2tetris company-shell dante ecb wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
  '(preview-auto-cache-preamble t)
  '(preview-gs-options
    (quote
@@ -114,6 +114,8 @@
 (load-library "customizations/web-customizations.el")
 (load-library "customizations/template-replace.el")
 (load-library "customizations/pdfview-customizations.el")
+(load-library "customizations/helm-customizations.el")
+(load-library "customizations/yatemplate-customizations.el")
 
 ;; These libraries should only be loaded in their respective major
 ;; modes.
