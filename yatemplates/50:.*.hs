@@ -1,7 +1,7 @@
--- | Author: `yatemplate-owner`
+-- | `(file-name-nondirectory buffer-file-name)`
+-- Author: `(progn (hs-add-file-to-cabal) yatemplate-owner)`
 -- License: `(yatemplate-get-license 'bsd2)`
 -- Created: `(yatemplate-today)`
--- `(file-name-nondirectory buffer-file-name)`
 -- Summary: $0
 
 {-# LANGUAGE Arrows #-}
@@ -12,6 +12,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 -- {-# LANGUAGE TemplateHaskell #-}
+-- {-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE TypeFamilies #-}
 
 module `(hs-file-module-name)` where

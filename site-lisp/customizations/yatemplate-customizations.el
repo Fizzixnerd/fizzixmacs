@@ -6,6 +6,7 @@
 
 (require 'yatemplate)
 (require 'f)
+(require 'haskell-cabal)
 
 (auto-insert-mode)
 
@@ -14,15 +15,7 @@
 (setq yatemplate-license-alist (list 
 				'(gpl3 . "https://www.gnu.org/licenses/gpl-3.0-standalone.html")
 				'(gpl2 . "https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html")
-				'(bsd2 . "Copyright 2017 Matthew Walker
-
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-
-1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-
-2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.")))
+				'(bsd2 . "https://opensource.org/licenses/BSD-2-Clause")))
 
 (yatemplate-fill-alist)
 
@@ -66,7 +59,7 @@ it, else nil."
   (interactive)
   (and (hs-stack-project-p)
        (f-join (hs-project-root) 
-	       "stack.yaml")))
+	       "stack.yaml"))) 
 
 ;; (defun path-split (fp &optional nondirectory-p)
 ;;   "Split a filepath into components on the separator and return
@@ -169,15 +162,17 @@ from its `hs-file-src'."
 			 (list final-name))
 		 ".")))
 
-(hs-file-module-name)
-
-;; (string-join (drop-while (lambda (x)
-;; 			     (let ((first-char (subseq x 1)))
-;; 			       (equal first-char (downcase first-char)))) 
-;; 			   (reverse (path-split (pwd*))))
-;; 	       "."))
-
-(defun hs-filepath-to-module-name ()
+(defun hs-add-file-to-cabal ()
+  "Add the current file to the cabal list of exposed modules."
   (interactive)
-  (let ((proj-src (hs-find-project-src))
-	(basename (file-name-nondirectory buffer-file-name)))
+  (let ((module-name (hs-file-module-name)))
+    (save-excursion 
+      (when (ignore-errors (haskell-cabal-visit-file nil))
+	(when (haskell-cabal-goto-exposed-modules)
+	  (save-excursion
+	    (newline)
+	    (insert ", ")
+	    (haskell-cabal-indent-line))
+	  (insert module-name)
+	  (save-buffer)
+	  (kill-buffer))))))

@@ -64,6 +64,8 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/matt/Documents/geometric-entanglement/" (22720 33634 861310 588000) "ge.synctex.gz" "_region_.synctex.gz" "_region_.pdf" "ge.pdf" "_region_.maf" "_region_.mtc" "_region_.mtc0" "ge.maf" "ge.mtc" "ge.mtc0" "ge.tex" "ge.tex~" "_region_.prv/" "_region_.run.xml" "_region_.log" "prv_ge.log" "_region_.tex" "ge.toc" "ge.out" "ge.run.xml" "ge.bcf" "ge.aux" "ge.log" "auto/" ".git/" "../" "./")
+
  ("/home/matt/.emacs.d/yatemplates/" (22716 18656 581407 677000) "50:.*.hs" "50:.*.hs~" "../" "./")
 
  ("/home/matt/.emacs.d/site-lisp/customizations/" (22714 49391 336298 886000) "helm-customizations.el" "helm-customizations.el~" "pdfview-customizations.el" "#sql-customizations.el#" ".#sql-customizations.el" "sql-customizations.el" "web-customizations.el" "visual-customizations.el" "tex-customizations.el" "template-replace.el" "shell-customizations.el" "racket-customizations.el" "python-customizations.el" "package-customizations.el" "org-customizations.el" "navigation-customizations.el" "mail-customizations.el" "kaide-customizations.el" "js-customizations.el" "java-customizations.el" "ispell-customizations.el" "ido-customizations.el" "hs-customizations.el" "haskell-customizations.el" "glsl-customizations.el" "file-association-customizations.el" "erc-customizations.el" "ede-customizations.el" "desktop-customizations.el" "cl-customizations.el" "c++-customizations.el" "ac-customizations.el" ".ropeproject/" ".#haskell-customizations.el" "#haskell-customizations.el#" "../" "./")
@@ -75,8 +77,6 @@
  ("/home/" (22481 17575 104002 753000) "matt/" "../" "./")
 
  ("/home/matt/Documents/soi/general/" (22713 50975 149239 951000) "soi.synctex.gz" "soi.tex" "soi.tex~" "cam/" "Academic History.pdf" "soi.bbl" "soi.blg" "soi.run.xml" "soi.bcf" "refs.bib" "resume-old.pdf" "soi.out" "soi.pdf" "soi.aux" "soi.log" "auto/" "../" "./")
-
- ("/home/matt/Documents/geometric-entanglement/" (22713 51648 396660 995000) "ge.pdf" "_region_.maf" "_region_.mtc" "_region_.mtc0" "ge.maf" "ge.mtc" "ge.mtc0" "ge.tex" "ge.tex~" "_region_.prv/" "_region_.run.xml" "_region_.log" "prv_ge.log" "_region_.tex" "ge.toc" "ge.out" "ge.run.xml" "ge.bcf" "ge.aux" "ge.log" "auto/" ".git/" "../" "./")
 
  ("/home/matt/src/tapl/" (22713 54481 742331 821000) "README.md" "tapl.org" "tapl.org~" ".gitignore" ".gitignore~" "tapl.pdf" ".git/" "../" "./")
 

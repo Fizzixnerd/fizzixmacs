@@ -15,7 +15,6 @@
 ;   and all the subdirectories thereof if the variable 'load-dir-recursive
 ;   is t.
 
-
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/cedet/")
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/cedet/lisp")
 ;; Prevents regular CEDET from loading, which would screw everything up
