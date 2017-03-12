@@ -2,3 +2,5 @@
 ;; Author: Matt Walker <matt.g.d.walker@gmail.com>
 
 (autoload 'wl "wl" "Wanderlust" t)
+(require 'wl)
+	     

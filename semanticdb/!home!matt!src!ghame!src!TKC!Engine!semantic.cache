@@ -1,0 +1,9 @@
+;; Object Engine/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Engine/"
+  :tables
+  (list
+)
+  :file "!home!matt!src!ghame!src!TKC!Engine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

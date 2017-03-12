@@ -1,0 +1,28 @@
+;; Object Awesome-CV/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Awesome-CV/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( (".PHONY" function (:arguments ("examples")) nil [1 18])
+            ("CC" variable (:default-value ("xelatex")) nil [19 32])
+            ("EXAMPLES_DIR" variable (:default-value ("examples")) nil [32 56])
+            ("RESUME_DIR" variable (:default-value ("examples/resume")) nil [56 85])
+            ("CV_DIR" variable (:default-value ("examples/cv")) nil [85 106])
+            ("RESUME_SRCS" variable (:default-value ("$(shell find $(RESUME_DIR) -name '*.tex')")) nil [106 162])
+            ("CV_SRCS" variable (:default-value ("$(shell find $(CV_DIR) -name '*.tex')")) nil [162 210])
+            ("examples" function (:arguments ("$(foreach x, coverletter cv resume, $x.pdf)")) nil [211 265])
+            ("resume.pdf" function (:arguments ("$(EXAMPLES_DIR)/resume.tex" "$(RESUME_SRCS)")) nil [266 364])
+            ("cv.pdf" function (:arguments ("$(EXAMPLES_DIR)/cv.tex" "$(CV_SRCS)")) nil [365 451])
+            ("coverletter.pdf" function (:arguments ("$(EXAMPLES_DIR)/coverletter.tex")) nil [452 545])
+            ("clean" function nil nil [546 583]))          
+      :file "Makefile"
+      :pointmax 583
+      :fsize 582
+      :lastmodtime '(22591 19434 694852 382000)
+      :unmatched-syntax '((shell-command 554 . 582) (bol 553 . 553))))
+  :file "!home!matt!Documents!soi!cv!Awesome-CV!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

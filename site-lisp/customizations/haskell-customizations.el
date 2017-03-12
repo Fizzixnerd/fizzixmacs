@@ -7,6 +7,7 @@
 (require 'company)
 (require 'company-ghc)
 (require 'company-quickhelp)
+(require 'speedbar)
 
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 
@@ -35,3 +36,4 @@
 	    (define-key haskell-cabal-mode-map [remap complete-symbol]
 	      'company-complete)))
 
+(speedbar-add-supported-extension ".hs")

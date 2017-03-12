@@ -5,6 +5,7 @@
 ;     * Moved everything out of init.el
 
 (require 'latex)
+(require 'reftex)
 (require 'company)
 (require 'company-auctex)
 
@@ -26,9 +27,13 @@
 (company-auctex-init)
 
 (add-hook 'LaTeX-mode-hook '(lambda ()
-			      (TeX-fold-mode 1)
+			      (TeX-fold-mode nil)
 			      (outline-minor-mode 1)
-			      (company-mode)))
+			      (company-mode)
+			      (TeX-source-correlate-mode)
+			      (auto-fill-mode)
+			      (flyspell-mode)
+			      (setq reftex-plug-into-AUCTeX t)))
 
 ; I think these are pretty self explanatory, except maybe
 ; TeX-PDF-mode. Not sure what it does.

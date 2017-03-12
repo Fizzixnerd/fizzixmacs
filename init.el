@@ -15,7 +15,6 @@
 ;   and all the subdirectories thereof if the variable 'load-dir-recursive
 ;   is t.
 
-
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/cedet/")
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/cedet/lisp")
 ;; Prevents regular CEDET from loading, which would screw everything up
@@ -46,7 +45,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(LaTeX-command "latex --enable-write18")
+ '(LaTeX-command "latex --enable-write18 -shell-escape")
  '(column-number-mode t)
  '(company-ghc-show-info t)
  '(doc-view-continuous t)
@@ -58,12 +57,22 @@
  '(inferior-haskell-use-web-docs (quote always))
  '(inferior-haskell-wait-and-jump t)
  '(inhibit-startup-screen t)
- '(org-agenda-files (quote ("~/Documents/school/jph311/project/proposal/proposal.org")))
- '(package-selected-packages (quote (wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
+ '(org-agenda-files
+   (quote
+    ("~/Documents/school/jph311/project/proposal/proposal.org")))
+ '(package-selected-packages
+   (quote
+    (persp-fr persp-mode persp-projectile term-projectile helm-projectile projectile org-projectile package-build shut-up git commander f dash s company-cabal ag ahk-mode cask cask-mode cmake-font-lock company-bibtex company-cmake company-dict company-lua company-math company-nand2tetris company-shell dante ecb wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
  '(preview-auto-cache-preamble t)
- '(preview-gs-options (quote ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4")))
+ '(preview-gs-options
+   (quote
+    ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4")))
  '(quack-pretty-lambda-p t)
  '(quack-smart-open-paren-p t)
+ '(safe-local-variable-values
+   (quote
+    ((haskell-process-use-ghci . t)
+     (haskell-indent-spaces . 4))))
  '(save-place t nil (saveplace))
  '(scroll-bar-mode (quote right))
  '(semantic-c-dependency-system-include-path (quote ("/usr/include")))
@@ -71,8 +80,13 @@
  '(semantic-complete-inline-analyzer-idle-displayor-class (quote semantic-displayor-tooltip))
  '(semantic-java-dependency-system-include-path (quote ("/usr/share/java/")))
  '(semantic-mode t)
- '(semantic-python-dependency-system-include-path (quote ("/usr/lib/python2.7" "/usr/lib/python2.7/dist-packages")))
+ '(semantic-python-dependency-system-include-path
+   (quote
+    ("/usr/lib/python2.7" "/usr/lib/python2.7/dist-packages")))
  '(show-paren-mode t)
+ '(sql-database "matt")
+ '(sql-product (quote postgres))
+ '(sql-user "matt")
  '(tool-bar-mode nil))
 
 ;; These libraries should always be loaded.
@@ -105,6 +119,9 @@
 (load-library "customizations/mail-customizations.el")
 (load-library "customizations/web-customizations.el")
 (load-library "customizations/template-replace.el")
+(load-library "customizations/pdfview-customizations.el")
+(load-library "customizations/helm-customizations.el")
+(load-library "customizations/yatemplate-customizations.el")
 
 ;; These libraries should only be loaded in their respective major
 ;; modes.

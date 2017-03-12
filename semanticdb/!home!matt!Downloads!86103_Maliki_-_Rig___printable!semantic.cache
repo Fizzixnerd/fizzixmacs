@@ -1,0 +1,28 @@
+;; Object 86103_Maliki_-_Rig___printable/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "86103_Maliki_-_Rig___printable/"
+  :tables
+  (list
+    (semanticdb-table "86103 - LICENSE.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("86103 - Maliki - Rig & printable - Downloaded from Blend Swap" section nil nil [60 536])
+            ("Blend #86103: Maliki - Rig &amp; printable" section (:members 
+              ( ("Blend #86103: Maliki - Rig &amp; printable" section (:members 
+                  ( ("Blend #86103: Maliki - Rig &amp; printable" anchor nil nil [571 574])
+                    ("Released under <a href=\"https://creativecommons.org/licenses/by/3.0/\">Creative Commons Attribution 3.0" section (:members 
+                      ( ("Creative Commons Attribution 3.0" anchor nil nil [694 697]))                      ) nil [675 1369])
+                    ("About \"Maliki - Rig &amp; printable\":" section (:members 
+                      ( ("Help us moderate this file" section (:members 
+                          ( ("http://www.blendswap.com/blends/view/86103" anchor nil nil [1965 1968])
+                            ("Notes:" section (:members 
+                              ( ("questions section" anchor nil nil [2765 2768])
+                                ("Blend Swap, LLC" anchor nil nil [2896 2899]))                              ) nil [2650 2974]))                          ) nil [1782 2974]))                      ) nil [1369 2974]))                  ) nil [567 2974]))              ) nil [536 2974]))          
+      :file "86103 - LICENSE.html"
+      :pointmax 2974
+      :fsize 2973
+      :lastmodtime '(22506 52264 0 0)
+      :unmatched-syntax nil))
+  :file "!home!matt!Downloads!86103_Maliki_-_Rig___printable!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

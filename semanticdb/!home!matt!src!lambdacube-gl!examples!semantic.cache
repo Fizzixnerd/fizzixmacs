@@ -1,0 +1,16 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables
+  (list
+    (semanticdb-table "hello.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "hello.json"
+      :pointmax 2404
+      :fsize 2403
+      :lastmodtime '(22511 41517 810079 466000)
+      :unmatched-syntax nil))
+  :file "!home!matt!src!lambdacube-gl!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
