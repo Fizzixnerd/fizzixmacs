@@ -22,9 +22,16 @@
 ;(load-file "~/.emacs.d/site-lisp/cedet/cedet-devel-load.el")
 
 ;(add-to-list 'load-path "~/.emacs.d/")
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (add-to-list 'load-path "~/.emacs.d/elpa/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
-(add-to-list 'load-path "~/.emacs.d/site-lisp/glsl-mode/")
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/glsl-mode/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/cc-mode-5.32.5/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/company-quickhelp-20150322.451.el")
 ;(add-to-list 'load-path "~/.emacs.d/elpa/company-ghc-20150613.123/")
@@ -92,7 +99,7 @@
 (load-library "customizations/racket-customizations.el")
 ;(load-library "customizations/cl-customizations.el")
 (load-library "customizations/c++-customizations.el")
-(load-library "customizations/glsl-customizations.el")
+;(load-library "customizations/glsl-customizations.el")
 (load-library "customizations/visual-customizations.el")
 (load-library "customizations/haskell-customizations.el")
 (load-library "customizations/mail-customizations.el")
