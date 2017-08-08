@@ -1,10 +1,13 @@
 ;;; color-theme-ir-black-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil nil ("color-theme-ir-black.el") (22089 60827
-;;;;;;  241627 825000))
+;;;### (autoloads nil "color-theme-ir-black" "color-theme-ir-black.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from color-theme-ir-black.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "color-theme-ir-black" '("color-theme-ir-black")))
 
 ;;;***
 

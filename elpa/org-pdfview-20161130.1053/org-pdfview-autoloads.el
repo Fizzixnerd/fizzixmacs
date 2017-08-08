@@ -1,10 +1,12 @@
 ;;; org-pdfview-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil nil ("org-pdfview.el") (22713 49441 386969
-;;;;;;  979000))
+;;;### (autoloads nil "org-pdfview" "org-pdfview.el" (0 0 0 0))
+;;; Generated autoloads from org-pdfview.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-pdfview" '("org-pdfview-")))
 
 ;;;***
 

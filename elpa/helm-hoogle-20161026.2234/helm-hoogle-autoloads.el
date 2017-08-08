@@ -1,10 +1,9 @@
 ;;; helm-hoogle-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "helm-hoogle" "helm-hoogle.el" (22714 526 527583
-;;;;;;  247000))
+;;;### (autoloads nil "helm-hoogle" "helm-hoogle.el" (0 0 0 0))
 ;;; Generated autoloads from helm-hoogle.el
 
 (autoload 'helm-hoogle "helm-hoogle" "\
@@ -12,10 +11,7 @@
 
 \(fn)" t nil)
 
-;;;***
-
-;;;### (autoloads nil nil ("helm-hoogle-pkg.el") (22714 526 538641
-;;;;;;  846000))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-hoogle" '("helm-c-hoogle-")))
 
 ;;;***
 

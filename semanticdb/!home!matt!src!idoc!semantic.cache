@@ -1,0 +1,83 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("idoc User Guide" section nil nil [29 296])
+            ("idoc User Guide" section (:members 
+              ( ("idoc User Guide" section (:members 
+                  ( ("Prerex" section nil nil [421 642])
+                    ("Introduction" section nil nil [642 1404])
+                    ("Basics" section (:members 
+                      ( ("Paragraphs" section nil nil [1458 2121])
+                        ("Comments" section nil nil [2121 2527])
+                        ("Lists" section nil nil [2527 4095])
+                        ("Math" section (:members 
+                          ( ("Look Ma&#39;, I Have Equations!" section nil nil [4476 5024]))                          ) nil [4095 5024])
+                        ("Blocks" section (:members 
+                          ( ("A Blockquote from the &quot;Great One&quot;." section nil nil [5378 6179])
+                            ("Please be Aware:" section nil nil [6179 6824])
+                            ("An aside" section nil nil [6824 7015])
+                            ("Aside Prerex" section nil nil [7015 7762]))                          ) nil [5024 7762])
+                        ("Links" section nil nil [7762 8550]))                      ) nil [1404 8550])
+                    ("Conclusion" section nil nil [8550 8736]))                  ) nil [328 8736]))              ) nil [296 8736]))          
+      :file "target.html"
+      :pointmax 8736
+      :fsize 8735
+      :lastmodtime '(22755 40804 669975 442000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("W3.CSS Template" section nil nil [24 572])
+            ("Navbar -->
+<div class=\"w3-top\">
+  <div class=\"w3-bar w3-theme w3-top w3-left-align w3-large\">
+    <a class=\"w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1\" href=\"javascript:void(0)\" onclick=\"w3_open()\"><i class=\"fa fa-bars\">" section (:members 
+              ( ("Logo" anchor nil nil [856 859])
+                ("About" anchor nil nil [923 926])
+                ("Values" anchor nil nil [1008 1011])
+                ("News" anchor nil nil [1094 1097])
+                ("Contact" anchor nil nil [1178 1181])
+                ("Clients" anchor nil nil [1265 1268])
+                ("Partners" anchor nil nil [1367 1370])
+                ("Menu" anchor nil nil [1651 1654])
+                ("Menu" section nil nil [1836 2570])
+                ("Heading" section nil nil [2570 3389])
+                ("Heading" section nil nil [3389 4222])
+                ("Heading" section (:members 
+                  ( ("Footer" section (:members 
+                      ( ("w3.css" anchor nil nil [5593 5596]))                      ) nil [5502 5728]))                  ) nil [4222 5728]))              ) nil [572 5728])
+            ("// Get the Sidebar
+var mySidebar = document.getElementById(\"mySidebar\");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById(\"myOverlay\");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = \"none\";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = \"block\";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = \"none\";
+    overlayBg.style.display = \"none\";
+}" section nil nil [5728 6404]))          
+      :file "website-template.html"
+      :pointmax 6404
+      :fsize 6405
+      :lastmodtime '(22754 54458 376167 855000)
+      :unmatched-syntax nil))
+  :file "!home!matt!src!idoc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

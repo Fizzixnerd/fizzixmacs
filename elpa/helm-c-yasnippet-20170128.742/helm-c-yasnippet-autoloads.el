@@ -1,10 +1,10 @@
 ;;; helm-c-yasnippet-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "helm-c-yasnippet" "helm-c-yasnippet.el" (22714
-;;;;;;  535 377341 93000))
+;;;### (autoloads nil "helm-c-yasnippet" "helm-c-yasnippet.el" (0
+;;;;;;  0 0 0))
 ;;; Generated autoloads from helm-c-yasnippet.el
 
 (autoload 'helm-yas-complete "helm-c-yasnippet" "\
@@ -22,10 +22,7 @@ Create a snippet from region.
 
 \(fn &optional START END FILE-NAME)" t nil)
 
-;;;***
-
-;;;### (autoloads nil nil ("helm-c-yasnippet-pkg.el") (22714 535
-;;;;;;  387433 379000))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-c-yasnippet" '("helm-")))
 
 ;;;***
 

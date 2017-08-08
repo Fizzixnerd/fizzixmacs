@@ -1,1 +1,0 @@
-(define-package "pushbullet" "20140809.532" "Emacs client for the PushBullet Android app" '((grapnel "0.5.2") (json "1.2")) :url "http://www.github.com/theanalyst/revolver" :keywords '("convenience"))

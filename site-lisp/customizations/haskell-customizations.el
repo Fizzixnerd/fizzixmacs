@@ -1,8 +1,11 @@
 ;;Haskell Mode customizations.
 
+(add-path "~/.stack/snapshots/x86_64-linux-nopie/lts-8.23/8.0.2/share/x86_64-linux-ghc-8.0.2/HaRe-0.8.4.0/elisp")
+
 (require 'haskell-mode)
 (require 'haskell-interactive-mode)
 (require 'haskell-process)
+(require 'hare)
 (require 'ghc)
 (require 'company)
 (require 'company-ghc)
@@ -19,6 +22,7 @@
 (add-hook 'haskell-mode-hook
 	  (lambda ()
 	    (ghc-init)
+	    (hare-init)
 	    (company-mode 1)
 	    (company-quickhelp-mode 1)
 	    (local-set-key (kbd "C-M-d") 'company-show-doc-buffer)

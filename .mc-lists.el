@@ -9,7 +9,11 @@
 	end-of-buffer
 	end-of-defun
 	forward-sexp
+	haskell-indentation-common-electric-command
 	haskell-indentation-indent-backwards
+	helm-M-x
+	helm-occur
+	indent-for-tab-command
 	smex
 	))
 

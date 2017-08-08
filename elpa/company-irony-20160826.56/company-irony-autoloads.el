@@ -1,10 +1,9 @@
 ;;; company-irony-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "company-irony" "company-irony.el" (22654 46448
-;;;;;;  206523 802000))
+;;;### (autoloads nil "company-irony" "company-irony.el" (0 0 0 0))
 ;;; Generated autoloads from company-irony.el
 
 (autoload 'company-irony "company-irony" "\
@@ -22,6 +21,8 @@ This may be useful to company < `0.8.4', newer version of company
 include these commands by default.
 
 \(fn)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-irony" '("company-irony-")))
 
 ;;;***
 

@@ -14,7 +14,7 @@
  ("/home/matt/Downloads/" . "84082_Simple_SSS_setup/")
  ("/home/matt/src/ghame/lib/lambdacube-gl/" . "examples/")
  ("/home/matt/src/ghame/lib/" . "lambdacube-gl/")
- ("/home/matt/src/" . "tapl/")
+ ("/home/matt/src/" . "alex-toy/")
  ("/home/matt/" . ".emacs.d/")
  ("/home/matt/src/ghame/src/TKC/Graphics/" . "LambdaCube3D/")
  ("/home/matt/src/ghame/src/TKC/Engine/" . "Event/")
@@ -25,6 +25,10 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/matt/src/kaleidoscope/src/chapter2/"
+ "/etc/apt/sources.list.d/"
+ "/home/matt/"
+ "/home/matt/src/alex-toy/"
  "/home/matt/.emacs.d/site-lisp/customizations/"
  "/home/matt/.emacs.d/"
  "/home/matt/src/tapl/"
@@ -50,20 +54,38 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "Main.hs"
+ "Lexer.hs"
+ "budgie-remix-ubuntu-ppa-yakkety.list"
+ "budgie-remix-ubuntu-ppa-yakkety.list.distUpgrade"
+ "src"
+ "Tokens.x"
  "init.el"
  "helm-customizations.el"
  ".emacs.desktop"
  "mail-customizations.el"
- "tapl.org"
- "ge.tex"
- "soi.tex"
- "tex-customizations.el"
- "pdfview-customizations.el"
- ".gitignore"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/matt/src/tush/src/Tush/Syntax/" (22911 14182 615995 109000) "Lex.hs" "Lex.hs~" "Parse.hs" "Parse.hs~" "Expression.hs" "Statement.hs" "../" "./")
+
+ ("/home/matt/src/kaleidoscope/src/chapter2/" (22885 5560 799842 426000) "chapter2.k" "Syntax.hs" "Parser.hs" "Main.hs" "Lexer.hs" "../" "./")
+
+ ("/etc/apt/sources.list.d/" (22885 4241 337389 843000) ".#budgie-remix-ubuntu-ppa-yakkety.list.distUpgrade" "hvr-ubuntu-ghc-yakkety.list.distUpgrade" "ubuntu-elisp-ubuntu-ppa-yakkety.list.distUpgrade" "google-chrome.list.distUpgrade" "tista-ubuntu-adapta-yakkety.list.distUpgrade" "snwh-ubuntu-pulp-yakkety.list.distUpgrade" "budgie-remix-ubuntu-ppa-yakkety.list.distUpgrade" "hvr-ubuntu-ghc-yakkety.list" "ubuntu-elisp-ubuntu-ppa-yakkety.list.save" "ubuntu-elisp-ubuntu-ppa-yakkety.list" "google-chrome.list.save" "google-chrome.list" "tista-ubuntu-adapta-yakkety.list.save" "tista-ubuntu-adapta-yakkety.list" "snwh-ubuntu-pulp-yakkety.list.save" "snwh-ubuntu-pulp-yakkety.list" "budgie-remix-ubuntu-ppa-yakkety.list.save" "budgie-remix-ubuntu-ppa-yakkety.list" "../" "./")
+
+ ("/home/matt/" (22778 4133 810482 301000) ".xsession-errors" ".xsession-errors.old" ".nano/" ".gconf/" ".Xauthority" ".sudo_as_admin_successful" ".steampid" ".steampath" ".pulse-cookie" ".psql_history" ".profile~" ".profile" ".pgpass" ".pgadmin3" ".lesshst" ".ICEauthority" ".gnuplot_history" ".gitconfig" ".dmrc" ".bashrc" ".bash_logout" ".bash_history" ".aliases.bash" "ubc-cwl.txt" "TAGS" "pgadmin.log" "golf.hs~" "golf.hs" "examples.desktop" "dog_names.txt~" "dog_names.txt" "academic_history.pdf" ".thunderbird/" ".system/" ".steam/" ".purple/" ".stack/" ".ssh/" ".npm/" ".node-gyp/" ".hoogle/" ".gnupg/" ".ghc-mod/" ".ghc/" ".erc/" ".emacs.d/" ".elmo/" ".cabal/" "tmp/" "Steam/" "src/" "Mail/" ".gnome/" ".pki/" ".mozilla/" ".local/" ".cache/" ".dbus/" "Videos/" "Pictures/" "Music/" "Documents/" "Public/" "Templates/" "Downloads/" "Desktop/" ".config/" "../" "./")
+
+ ("/home/matt/src/alex-toy/" (22776 58793 684453 199000) "Tokens.x" "Tokens.x~" "Main.hs" "../" "./")
+
+ ("/home/matt/src/idoc/" (22776 33707 888077 719000) "17523132_1794036004247221_7160477124686481751_n.jpg" "uusBbd5.jpg" "ils_logo_april_2.svg" "summary.synctex.gz" "LOGO_ILS_2017.pdf_tex" "LOGO_ILS_2017.pdf" "summary.pdf" "LOGO_ILS_2017.svg" "summary.tex" "summary.tex~" "summary.idoc" "summary.slnc" "summary.toc" "summary.out" "summary.aux" "summary.log" "summary.html" "summary.idoc~" "idoc.cabal" "idoc.cabal~" "target-roboto.html" "target-roboto.html~" "basic.html" "basic.html~" "bootstrap/" "idoc.css" "idoc.css~" "target.synctex.gz" "ils.colors" "ils.colors~" "templatemo_496_pipeline/" "website-template.html" "cv-template.html" "target.html" "prerex.lucius~" "target.html~" "target.tex" "target.slnc" "_region_.tex" "target.idoc~" "target.pdf" "target.out" "target.aux" "target.toc" "auto/" "target.log" "texput.log" "target.tex~" "source.idoc" "jk" "examples/" "TAGS" ".stack-work/" "package.yaml" "stack.yaml" ".git/" "test-suite/" "package.yaml~" "library/" "executable/" "benchmark/" "Setup.hs" "README.md" "LICENSE.md" "CHANGELOG.md" ".gitignore" "../" "./")
+
+ ("/home/matt/src/" (22776 44487 63197 35000) "alex-toy/" "apress-postgres-book/" "purple-facebook/" "pidgin-opensteamworks/" "idoc/" "independentlearning.science/" "gitignore/" "tush/" "testy/" "tapl/" "postgresql-tutorial/" "fizzixnerd.com/" "VulkanTools/" "Vulkan/" "lc3d/" "lambdacube-quake3/" "lambdacube-gl/" "lambdacube-ir/" "lambdacube-compiler/" "lambdacube-gl-0.5.1.1/" "bt/" "scratch.hs" "scratch.hs~" "ghame/" "../" "./")
+
+ ("/home/matt/src/idoc/library/Text/IDoc/Render/" (22766 9886 178314 942000) ".#Hamlet.hs" "Hamlet.hs" "Hamlet.hs~" "IDoc.hs" "blah.synctex.gz" "blah.pdf" "blah.aux" "blah.log" "blah.tex" "blah.tex~" "auto/" "Tex.hs" "Tex.hs~" "IDoc.hs~" "../" "./")
+
+ ("/home/matt/src/idoc/library/Text/IDoc/" (22761 9825 686161 679000) ".#Parse.hs" "Parse.hs" "Parse.hs~" "Render/" "../" "./")
+
  ("/home/matt/Documents/geometric-entanglement/" (22720 33634 861310 588000) "ge.synctex.gz" "_region_.synctex.gz" "_region_.pdf" "ge.pdf" "_region_.maf" "_region_.mtc" "_region_.mtc0" "ge.maf" "ge.mtc" "ge.mtc0" "ge.tex" "ge.tex~" "_region_.prv/" "_region_.run.xml" "_region_.log" "prv_ge.log" "_region_.tex" "ge.toc" "ge.out" "ge.run.xml" "ge.bcf" "ge.aux" "ge.log" "auto/" ".git/" "../" "./")
 
  ("/home/matt/.emacs.d/yatemplates/" (22716 18656 581407 677000) "50:.*.hs" "50:.*.hs~" "../" "./")
@@ -71,8 +93,6 @@
  ("/home/matt/.emacs.d/site-lisp/customizations/" (22714 49391 336298 886000) "helm-customizations.el" "helm-customizations.el~" "pdfview-customizations.el" "#sql-customizations.el#" ".#sql-customizations.el" "sql-customizations.el" "web-customizations.el" "visual-customizations.el" "tex-customizations.el" "template-replace.el" "shell-customizations.el" "racket-customizations.el" "python-customizations.el" "package-customizations.el" "org-customizations.el" "navigation-customizations.el" "mail-customizations.el" "kaide-customizations.el" "js-customizations.el" "java-customizations.el" "ispell-customizations.el" "ido-customizations.el" "hs-customizations.el" "haskell-customizations.el" "glsl-customizations.el" "file-association-customizations.el" "erc-customizations.el" "ede-customizations.el" "desktop-customizations.el" "cl-customizations.el" "c++-customizations.el" "ac-customizations.el" ".ropeproject/" ".#haskell-customizations.el" "#haskell-customizations.el#" "../" "./")
 
  ("/home/matt/.emacs.d/" (22714 48598 98842 411000) "init.el" "ido.last" "ido.last~" ".cask/" "snippets/" "session.10feb6695ecb894179147565648581812700000017150048" "places" "smex-items" "auto-save-list/" "url/" "srecode-map.el" "site-lisp/" "session.10e32d1f6c914991f8143991114568362000000015920052" "session.10d18c49334af231b6140871982595473100000021430067" "session.10d0234d548ac0293140077970893430100000019070054" "session.10b8655b24cbdbbf84143301934440488700000019720067" "session.10b03b8500ecfb515314455437485949800000015720052" "session.10ab3aed590a6dfd8143524419281000900000019670066" "session.10995097ad456581af143766851660874300000315250067" "session.1096f726c0229c15d4143938728840890800000015820051" "session.107db08e1b6c84a5dd144519326242326900000012730052" "session.1068609f1adb62e227142609122812849000000020970064" "session.104b88fe0c711966b3144276309233340900000016180053" "session.1049fd18e326a7ba7b140068600917113000000019270054" "session.104551722cbef91f85142896328083621500000022290066" "session.103b65398988b4af6b144310007453515500000244940053" "session.103670184e19bacb681445998720217100000219250052" "session.103595ed2cf174d4fe143551118654105000000020830067" "session.10275087263d0e7de140597294317540300000019220059" "session.1012ce0406c43c5918143878769479676100000062250050" "semanticdb/" "sbcl.core-for-slime" "opengl-customizations.el" "mkslime-core.bash" "menu_log.notes" "irony/" "emms/" "elpa/" "ede/" "ede-projects.el" "ac-comphist.dat" "abbrev_defs" "README.md" "LICENSE" ".org-id-locations" ".mc-lists.el" ".gitignore" ".emacs.desktop.lock" ".emacs.desktop" ".git/" "../" "./")
-
- ("/home/matt/" (22714 46489 645599 259000) ".xsession-errors" ".xsession-errors.old" ".steampid" ".steampath" ".elmo/" "tmp/" "Mail/" ".psql_history" ".pgadmin3" ".pgpass" "pgadmin.log" ".profile" ".profile~" ".Xauthority" "ubc-cwl.txt" ".gnuplot_history" ".ssh/" "academic_history.pdf" ".stack/" ".erc/" ".lesshst" ".dbus/" ".gnome/" ".gitconfig" ".thunderbird/" ".pulse-cookie" ".pki/" "Steam/" ".steam/" ".ghc-mod/" ".hoogle/" "src/" ".cabal/" ".ghc/" ".aliases.bash" ".system/" ".emacs.d/" ".bash_history" ".sudo_as_admin_successful" ".mozilla/" ".gconf/" ".ICEauthority" ".gnupg/" ".local/" ".config/" "Videos/" "Pictures/" "Music/" "Documents/" "Public/" "Templates/" "Downloads/" "Desktop/" ".dmrc" ".cache/" "examples.desktop" ".bashrc" ".bash_logout" "../" "./")
 
  ("/home/" (22481 17575 104002 753000) "matt/" "../" "./")
 
@@ -107,8 +127,6 @@
  ("/home/matt/src/fizzixnerd.com/scratch-site/src/Lib/" (22705 56621 773326 116000) "Hello.hs" "Hello.hs~" "../" "./")
 
  ("/home/matt/.emacs.d/site-lisp/" (22481 33111 324961 468000) "stack-mode" "rust-mode.el" "rtf-mode.el" "glsl-mode/" "ghc-mod-elisp" "fullscreen.el" "customizations/" "company-quickhelp.el" "cedet/" "cc-mode-5.32.5/" "ac-ghc-mod.el" "../" "./")
-
- ("/home/matt/src/" (22713 30559 20838 911000) "tapl/" "postgresql-tutorial/" "fizzixnerd.com/" "VulkanTools/" "Vulkan/" "lc3d/" "lambdacube-quake3/" "lambdacube-gl/" "lambdacube-ir/" "lambdacube-compiler/" "lambdacube-gl-0.5.1.1/" "bt/" "scratch.hs" "scratch.hs~" "ghame/" "../" "./")
 
  ("/home/matt/src/fizzixnerd.com/scratch-site/src/" (22700 31411 659488 645000) "Lib/" "Lib.hs" "Lib.hs~" "../" "./")
 

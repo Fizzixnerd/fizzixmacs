@@ -1,10 +1,9 @@
 ;;; biblio-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "biblio-arxiv" "biblio-arxiv.el" (22713 64888
-;;;;;;  549639 651000))
+;;;### (autoloads nil "biblio-arxiv" "biblio-arxiv.el" (0 0 0 0))
 ;;; Generated autoloads from biblio-arxiv.el
 
 (autoload 'biblio-arxiv-backend "biblio-arxiv" "\
@@ -22,10 +21,12 @@ Start an arXiv search for QUERY, prompting if needed.
 
 (defalias 'arxiv-lookup 'biblio-arxiv-lookup)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "biblio-arxiv" '("biblio-arxiv-")))
+
 ;;;***
 
-;;;### (autoloads nil "biblio-crossref" "biblio-crossref.el" (22713
-;;;;;;  64888 591240 416000))
+;;;### (autoloads nil "biblio-crossref" "biblio-crossref.el" (0 0
+;;;;;;  0 0))
 ;;; Generated autoloads from biblio-crossref.el
 
 (autoload 'biblio-crossref-backend "biblio-crossref" "\
@@ -43,10 +44,11 @@ Start a CrossRef search for QUERY, prompting if needed.
 
 (defalias 'crossref-lookup 'biblio-crossref-lookup)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "biblio-crossref" '("biblio-crossref--")))
+
 ;;;***
 
-;;;### (autoloads nil "biblio-dblp" "biblio-dblp.el" (22713 64888
-;;;;;;  605640 680000))
+;;;### (autoloads nil "biblio-dblp" "biblio-dblp.el" (0 0 0 0))
 ;;; Generated autoloads from biblio-dblp.el
 
 (autoload 'biblio-dblp-backend "biblio-dblp" "\
@@ -64,10 +66,12 @@ Start a DBLP search for QUERY, prompting if needed.
 
 (defalias 'dblp-lookup 'biblio-dblp-lookup)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "biblio-dblp" '("biblio-dblp--")))
+
 ;;;***
 
-;;;### (autoloads nil "biblio-dissemin" "biblio-dissemin.el" (22713
-;;;;;;  64888 644041 386000))
+;;;### (autoloads nil "biblio-dissemin" "biblio-dissemin.el" (0 0
+;;;;;;  0 0))
 ;;; Generated autoloads from biblio-dissemin.el
 
 (autoload 'biblio-dissemin-lookup "biblio-dissemin" "\
@@ -86,10 +90,11 @@ Add Dissemin to list of `biblio-selection-mode' actions.
 
 (add-hook 'biblio-selection-mode-hook #'biblio-dissemin--register-action)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "biblio-dissemin" '("biblio-dissemin--")))
+
 ;;;***
 
-;;;### (autoloads nil "biblio-doi" "biblio-doi.el" (22713 64888 576840
-;;;;;;  151000))
+;;;### (autoloads nil "biblio-doi" "biblio-doi.el" (0 0 0 0))
 ;;; Generated autoloads from biblio-doi.el
 
 (autoload 'doi-insert-bibtex "biblio-doi" "\
@@ -97,10 +102,12 @@ Insert BibTeX entry matching DOI.
 
 \(fn DOI)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "biblio-doi" '("biblio-doi-")))
+
 ;;;***
 
-;;;### (autoloads nil "biblio-download" "biblio-download.el" (22713
-;;;;;;  64888 618440 915000))
+;;;### (autoloads nil "biblio-download" "biblio-download.el" (0 0
+;;;;;;  0 0))
 ;;; Generated autoloads from biblio-download.el
 
 (autoload 'biblio-download--register-action "biblio-download" "\
@@ -110,10 +117,11 @@ Add download to list of `biblio-selection-mode' actions.
 
 (add-hook 'biblio-selection-mode-hook #'biblio-download--register-action)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "biblio-download" '("biblio-download-")))
+
 ;;;***
 
-;;;### (autoloads nil "biblio-hal" "biblio-hal.el" (22713 64888 559239
-;;;;;;  828000))
+;;;### (autoloads nil "biblio-hal" "biblio-hal.el" (0 0 0 0))
 ;;; Generated autoloads from biblio-hal.el
 
 (autoload 'biblio-hal-backend "biblio-hal" "\
@@ -131,10 +139,11 @@ Start a HAL search for QUERY, prompting if needed.
 
 (defalias 'hal-lookup 'biblio-hal-lookup)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "biblio-hal" '("biblio-hal--")))
+
 ;;;***
 
-;;;### (autoloads nil nil ("biblio-pkg.el" "biblio.el") (22713 64888
-;;;;;;  664153 429000))
+;;;### (autoloads nil nil ("biblio-pkg.el" "biblio.el") (0 0 0 0))
 
 ;;;***
 

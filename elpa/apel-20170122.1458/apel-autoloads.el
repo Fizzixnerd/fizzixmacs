@@ -1,9 +1,9 @@
 ;;; apel-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "alist" "alist.el" (22714 672 899792 886000))
+;;;### (autoloads nil "alist" "alist.el" (0 0 0 0))
 ;;; Generated autoloads from alist.el
 
 (autoload 'put-alist "alist" "\
@@ -50,8 +50,84 @@ See also `assoc'.
 
 ;;;***
 
-;;;### (autoloads nil "path-util" "path-util.el" (22714 672 834191
-;;;;;;  717000))
+;;;### (autoloads nil "apel-ver" "apel-ver.el" (0 0 0 0))
+;;; Generated autoloads from apel-ver.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "apel-ver" '("apel-version")))
+
+;;;***
+
+;;;### (autoloads nil "broken" "broken.el" (0 0 0 0))
+;;; Generated autoloads from broken.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "broken" '("check-broken-facility" "unless-broken" "when-broken" "if-broken" "broken-facility")))
+
+;;;***
+
+;;;### (autoloads nil "calist" "calist.el" (0 0 0 0))
+;;; Generated autoloads from calist.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "calist" '("calist-" "ctree-" "in-calist-package" "make-calist-package" "use-calist-package" "define-calist-field-match-method" "find-calist-package")))
+
+;;;***
+
+;;;### (autoloads nil "emu" "emu.el" (0 0 0 0))
+;;; Generated autoloads from emu.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "emu" '("insert-binary-file-contents" "char-list-to-string" "running-")))
+
+;;;***
+
+;;;### (autoloads nil "filename" "filename.el" (0 0 0 0))
+;;; Generated autoloads from filename.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "filename" '("replace-as-filename" "filename-" "poly-funcall")))
+
+;;;***
+
+;;;### (autoloads nil "install" "install.el" (0 0 0 0))
+;;; Generated autoloads from install.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "install" '("install-" "compile-elisp-module")))
+
+;;;***
+
+;;;### (autoloads nil "inv-23" "inv-23.el" (0 0 0 0))
+;;; Generated autoloads from inv-23.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "inv-23" '("next-visible-point" "visible-region" "invisible-region" "enable-invisible" "end-of-invisible" "disable-invisible")))
+
+;;;***
+
+;;;### (autoloads nil "mcharset" "mcharset.el" (0 0 0 0))
+;;; Generated autoloads from mcharset.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mcharset" '("find-mime-charset-by-charsets" "charsets-to-mime-charset" "default-mime-charset-")))
+
+;;;***
+
+;;;### (autoloads nil "mcs-20" "mcs-20.el" (0 0 0 0))
+;;; Generated autoloads from mcs-20.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mcs-20" '("widget-mime-charset-" "write-region-as-mime-charset" "default-mime-charset" "mime-charset-")))
+
+;;;***
+
+;;;### (autoloads nil "mcs-e20" "mcs-e20.el" (0 0 0 0))
+;;; Generated autoloads from mcs-e20.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mcs-e20" '("mime-charset-list" "charsets-mime-charset-alist" "coding-system-" "decode-mime-charset-" "encode-mime-charset-")))
+
+;;;***
+
+;;;### (autoloads nil "mule-caesar" "mule-caesar.el" (0 0 0 0))
+;;; Generated autoloads from mule-caesar.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mule-caesar" '("mule-caesar-region")))
+
+;;;***
+
+;;;### (autoloads nil "path-util" "path-util.el" (0 0 0 0))
 ;;; Generated autoloads from path-util.el
 
 (autoload 'add-path "path-util" "\
@@ -111,10 +187,67 @@ If PATHS is omitted, `load-path' is used.
 
 \(fn MODULE &optional PATHS)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "path-util" '("default-load-path")))
+
 ;;;***
 
-;;;### (autoloads nil "richtext" "richtext.el" (22714 672 693389
-;;;;;;  208000))
+;;;### (autoloads nil "pces-20" "pces-20.el" (0 0 0 0))
+;;; Generated autoloads from pces-20.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pces-20" '("save-buffer-as-" "find-file-noselect-as-" "write-region-as-" "insert-file-contents-as-" "open-network-stream-as-binary" "as-binary-")))
+
+;;;***
+
+;;;### (autoloads nil "pces-e20" "pces-e20.el" (0 0 0 0))
+;;; Generated autoloads from pces-e20.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pces-e20" '("set-process-input-coding-system" "find-coding-system")))
+
+;;;***
+
+;;;### (autoloads nil "poe" "poe.el" (0 0 0 0))
+;;; Generated autoloads from poe.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "poe" '("combine-after-change-calls" "current-" "character-to-event" "nbutlast" "next-command-event" "eval-next-after-load" "event-to-character" "define-obsolete-function-alias" "push" "path-separator" "functionp" "temporary-file-directory" "split-string" "save-" "get-buffer-window-list" "min" "match-string" "when" "with-" "butlast" "buffer-" "assoc-default" "add-to-list" "rassoc" "rem" "line-" "last" "unless")))
+
+;;;***
+
+;;;### (autoloads nil "poem" "poem.el" (0 0 0 0))
+;;; Generated autoloads from poem.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "poem" '("char" "int-char" "string-as-")))
+
+;;;***
+
+;;;### (autoloads nil "poem-e20" "poem-e20.el" (0 0 0 0))
+;;; Generated autoloads from poem-e20.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "poem-e20" '("fontset-pixel-size" "find-non-ascii-charset-")))
+
+;;;***
+
+;;;### (autoloads nil "poem-e20_3" "poem-e20_3.el" (0 0 0 0))
+;;; Generated autoloads from poem-e20_3.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "poem-e20_3" '("looking-at-as-unibyte" "sset" "string-to-" "char")))
+
+;;;***
+
+;;;### (autoloads nil "product" "product.el" (0 0 0 0))
+;;; Generated autoloads from product.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "product" '("emacs-m" "product-")))
+
+;;;***
+
+;;;### (autoloads nil "pym" "pym.el" (0 0 0 0))
+;;; Generated autoloads from pym.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pym" '("subr-fboundp" "def")))
+
+;;;***
+
+;;;### (autoloads nil "richtext" "richtext.el" (0 0 0 0))
 ;;; Generated autoloads from richtext.el
 
 (autoload 'richtext-encode "richtext" "\
@@ -127,14 +260,19 @@ If PATHS is omitted, `load-path' is used.
 
 \(fn FROM TO)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "richtext" '("richtext-")))
+
 ;;;***
 
-;;;### (autoloads nil nil ("apel-pkg.el" "apel-ver.el" "broken.el"
-;;;;;;  "calist.el" "emu.el" "filename.el" "install.el" "inv-23.el"
-;;;;;;  "invisible.el" "mcharset.el" "mcs-20.el" "mcs-e20.el" "mule-caesar.el"
-;;;;;;  "pccl-20.el" "pccl.el" "pces-20.el" "pces-e20.el" "pces.el"
-;;;;;;  "pcustom.el" "poe.el" "poem-e20.el" "poem-e20_3.el" "poem.el"
-;;;;;;  "product.el" "pym.el" "static.el") (22714 672 923607 663000))
+;;;### (autoloads nil "static" "static.el" (0 0 0 0))
+;;; Generated autoloads from static.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "static" '("static-")))
+
+;;;***
+
+;;;### (autoloads nil nil ("apel-pkg.el" "invisible.el" "pccl-20.el"
+;;;;;;  "pccl.el" "pces.el" "pcustom.el") (0 0 0 0))
 
 ;;;***
 

@@ -1,10 +1,9 @@
 ;;; flim-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "eword-decode" "eword-decode.el" (22654 46419
-;;;;;;  900200 296000))
+;;;### (autoloads nil "eword-decode" "eword-decode.el" (0 0 0 0))
 ;;; Generated autoloads from eword-decode.el
 
 (autoload 'mime-set-field-decoder "eword-decode" "\
@@ -67,10 +66,11 @@ If SEPARATOR is not nil, it is used as header separator.
 
 \(fn &optional CODE-CONVERSION SEPARATOR)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "eword-decode" '("eword-" "mime-")))
+
 ;;;***
 
-;;;### (autoloads nil "eword-encode" "eword-encode.el" (22654 46420
-;;;;;;  132094 348000))
+;;;### (autoloads nil "eword-encode" "eword-encode.el" (0 0 0 0))
 ;;; Generated autoloads from eword-encode.el
 
 (autoload 'mime-encode-field-body "eword-encode" "\
@@ -86,9 +86,67 @@ It refers the `mime-field-encoding-method-alist' variable.
 
 \(fn &optional CODE-CONVERSION)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "eword-encode" '("ew-" "eword-" "tm-eword::encoded-word-length" "mime-header-" "make-ew-rword")))
+
 ;;;***
 
-;;;### (autoloads nil "mel" "mel.el" (22654 46420 66524 223000))
+;;;### (autoloads nil "hex-util" "hex-util.el" (0 0 0 0))
+;;; Generated autoloads from hex-util.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hex-util" '("encode-hex-string" "decode-hex-string")))
+
+;;;***
+
+;;;### (autoloads nil "hmac-def" "hmac-def.el" (0 0 0 0))
+;;; Generated autoloads from hmac-def.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hmac-def" '("define-hmac-function")))
+
+;;;***
+
+;;;### (autoloads nil "hmac-md5" "hmac-md5.el" (0 0 0 0))
+;;; Generated autoloads from hmac-md5.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hmac-md5" '("hmac-md5")))
+
+;;;***
+
+;;;### (autoloads nil "hmac-sha1" "hmac-sha1.el" (0 0 0 0))
+;;; Generated autoloads from hmac-sha1.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hmac-sha1" '("hmac-sha1")))
+
+;;;***
+
+;;;### (autoloads nil "luna" "luna.el" (0 0 0 0))
+;;; Generated autoloads from luna.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "luna" '("luna-")))
+
+;;;***
+
+;;;### (autoloads nil "lunit" "lunit.el" (0 0 0 0))
+;;; Generated autoloads from lunit.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lunit" '("lunit")))
+
+;;;***
+
+;;;### (autoloads nil "md4" "md4.el" (0 0 0 0))
+;;; Generated autoloads from md4.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "md4" '("md4")))
+
+;;;***
+
+;;;### (autoloads nil "md5" "md5.el" (0 0 0 0))
+;;; Generated autoloads from md5.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "md5" '("md5-dl-module")))
+
+;;;***
+
+;;;### (autoloads nil "mel" "mel.el" (0 0 0 0))
 ;;; Generated autoloads from mel.el
 
 (autoload 'mime-encode-region "mel" "\
@@ -122,10 +180,60 @@ START and END are buffer positions.
 
 \(fn START END FILENAME ENCODING)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mel" '("Q-encod" "binary-" "base64-encoded-length" "encoded-text-encode-string" "mime-encoding-" "mel-" "7bit-" "8bit-")))
+
 ;;;***
 
-;;;### (autoloads nil "mime-conf" "mime-conf.el" (22654 46419 976965
-;;;;;;  101000))
+;;;### (autoloads nil "mel-b-ccl" "mel-b-ccl.el" (0 0 0 0))
+;;; Generated autoloads from mel-b-ccl.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mel-b-ccl" '("base64-" "mel-ccl-encode-b")))
+
+;;;***
+
+;;;### (autoloads nil "mel-b-el" "mel-b-el.el" (0 0 0 0))
+;;; Generated autoloads from mel-b-el.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mel-b-el" '("base64-" "pack-sequence")))
+
+;;;***
+
+;;;### (autoloads nil "mel-g" "mel-g.el" (0 0 0 0))
+;;; Generated autoloads from mel-g.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mel-g" '("gzip64-external-")))
+
+;;;***
+
+;;;### (autoloads nil "mel-q" "mel-q.el" (0 0 0 0))
+;;; Generated autoloads from mel-q.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mel-q" '("quoted-printable-" "q-encoding-")))
+
+;;;***
+
+;;;### (autoloads nil "mel-q-ccl" "mel-q-ccl.el" (0 0 0 0))
+;;; Generated autoloads from mel-q-ccl.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mel-q-ccl" '("mel-ccl-")))
+
+;;;***
+
+;;;### (autoloads nil "mel-u" "mel-u.el" (0 0 0 0))
+;;; Generated autoloads from mel-u.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mel-u" '("uuencode-external-")))
+
+;;;***
+
+;;;### (autoloads nil "mime" "mime.el" (0 0 0 0))
+;;; Generated autoloads from mime.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime" '("mime-")))
+
+;;;***
+
+;;;### (autoloads nil "mime-conf" "mime-conf.el" (0 0 0 0))
 ;;; Generated autoloads from mime-conf.el
 
 (autoload 'mime-parse-mailcap-buffer "mime-conf" "\
@@ -163,10 +271,18 @@ may be:
 
 \(fn MTEXT SITUATION)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-conf" '("mime-mailcap-")))
+
 ;;;***
 
-;;;### (autoloads nil "mime-parse" "mime-parse.el" (22654 46420 106506
-;;;;;;  7000))
+;;;### (autoloads nil "mime-def" "mime-def.el" (0 0 0 0))
+;;; Generated autoloads from mime-def.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-def" '("base64-" "make-mime-content-" "mime-" "mel-" "Q-encoded-text-regexp" "quoted-printable-" "B-encoded-text-regexp" "regexp-")))
+
+;;;***
+
+;;;### (autoloads nil "mime-parse" "mime-parse.el" (0 0 0 0))
 ;;; Generated autoloads from mime-parse.el
 
 (autoload 'mime-parse-Content-Type "mime-parse" "\
@@ -230,9 +346,39 @@ If buffer is omitted, it parses current-buffer.
 
 \(fn &optional BUFFER REPRESENTATION-TYPE)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-parse" '("mime-")))
+
 ;;;***
 
-;;;### (autoloads nil "qmtp" "qmtp.el" (22654 46419 889005 428000))
+;;;### (autoloads nil "mmbuffer" "mmbuffer.el" (0 0 0 0))
+;;; Generated autoloads from mmbuffer.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmbuffer" '("mmbuffer-parse-")))
+
+;;;***
+
+;;;### (autoloads nil "mmexternal" "mmexternal.el" (0 0 0 0))
+;;; Generated autoloads from mmexternal.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmexternal" '("mmexternal-require-")))
+
+;;;***
+
+;;;### (autoloads nil "mmgeneric" "mmgeneric.el" (0 0 0 0))
+;;; Generated autoloads from mmgeneric.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmgeneric" '("mm-" "mime-")))
+
+;;;***
+
+;;;### (autoloads nil "ntlm" "ntlm.el" (0 0 0 0))
+;;; Generated autoloads from ntlm.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ntlm" '("ntlm-")))
+
+;;;***
+
+;;;### (autoloads nil "qmtp" "qmtp.el" (0 0 0 0))
 ;;; Generated autoloads from qmtp.el
 
 (defvar qmtp-open-connection-function #'open-network-stream)
@@ -247,10 +393,53 @@ If buffer is omitted, it parses current-buffer.
 
 \(fn SENDER RECIPIENTS BUFFER)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "qmtp" '("qmtp-")))
+
 ;;;***
 
-;;;### (autoloads nil "sha1-el" "sha1-el.el" (22654 46419 797847
-;;;;;;  221000))
+;;;### (autoloads nil "sasl" "sasl.el" (0 0 0 0))
+;;; Generated autoloads from sasl.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sasl" '("sasl-")))
+
+;;;***
+
+;;;### (autoloads nil "sasl-cram" "sasl-cram.el" (0 0 0 0))
+;;; Generated autoloads from sasl-cram.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sasl-cram" '("sasl-cram-md5-")))
+
+;;;***
+
+;;;### (autoloads nil "sasl-digest" "sasl-digest.el" (0 0 0 0))
+;;; Generated autoloads from sasl-digest.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sasl-digest" '("sasl-digest-md5-")))
+
+;;;***
+
+;;;### (autoloads nil "sasl-ntlm" "sasl-ntlm.el" (0 0 0 0))
+;;; Generated autoloads from sasl-ntlm.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sasl-ntlm" '("sasl-ntlm-")))
+
+;;;***
+
+;;;### (autoloads nil "sasl-scram" "sasl-scram.el" (0 0 0 0))
+;;; Generated autoloads from sasl-scram.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sasl-scram" '("sasl-scram-md5-")))
+
+;;;***
+
+;;;### (autoloads nil "sha1" "sha1.el" (0 0 0 0))
+;;; Generated autoloads from sha1.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sha1" '("sha1-dl-module")))
+
+;;;***
+
+;;;### (autoloads nil "sha1-el" "sha1-el.el" (0 0 0 0))
 ;;; Generated autoloads from sha1-el.el
 
 (autoload 'sha1 "sha1-el" "\
@@ -262,9 +451,11 @@ If BINARY is non-nil, return a string in binary form.
 
 \(fn OBJECT &optional BEG END BINARY)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sha1-el" '("sha1-")))
+
 ;;;***
 
-;;;### (autoloads nil "smtp" "smtp.el" (22654 46420 90513 293000))
+;;;### (autoloads nil "smtp" "smtp.el" (0 0 0 0))
 ;;; Generated autoloads from smtp.el
 
 (defvar smtp-open-connection-function #'open-network-stream "\
@@ -297,9 +488,11 @@ BUFFER may be a buffer or a buffer name which contains mail message.
 
 \(fn SENDER RECIPIENTS BUFFER)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "smtp" '("smtp-")))
+
 ;;;***
 
-;;;### (autoloads nil "std11" "std11.el" (22654 46420 32939 527000))
+;;;### (autoloads nil "std11" "std11.el" (0 0 0 0))
 ;;; Generated autoloads from std11.el
 
 (autoload 'std11-fetch-field "std11" "\
@@ -377,15 +570,11 @@ If no name can be extracted, FULL-NAME will be nil.
 
 \(fn STRING)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "std11" '("std11-")))
+
 ;;;***
 
-;;;### (autoloads nil nil ("flim-pkg.el" "hex-util.el" "hmac-def.el"
-;;;;;;  "hmac-md5.el" "hmac-sha1.el" "luna.el" "lunit.el" "md4.el"
-;;;;;;  "md5.el" "mel-b-ccl.el" "mel-b-el.el" "mel-g.el" "mel-q-ccl.el"
-;;;;;;  "mel-q.el" "mel-u.el" "mime-def.el" "mime.el" "mmbuffer.el"
-;;;;;;  "mmcooked.el" "mmexternal.el" "mmgeneric.el" "ntlm.el" "sasl-cram.el"
-;;;;;;  "sasl-digest.el" "sasl-ntlm.el" "sasl-scram.el" "sasl.el"
-;;;;;;  "sha1.el") (22654 46420 181827 44000))
+;;;### (autoloads nil nil ("flim-pkg.el" "mmcooked.el") (0 0 0 0))
 
 ;;;***
 

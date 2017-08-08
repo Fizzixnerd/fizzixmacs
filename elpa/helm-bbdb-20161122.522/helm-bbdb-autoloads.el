@@ -1,10 +1,9 @@
 ;;; helm-bbdb-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "helm-bbdb" "helm-bbdb.el" (22714 538 378994
-;;;;;;  628000))
+;;;### (autoloads nil "helm-bbdb" "helm-bbdb.el" (0 0 0 0))
 ;;; Generated autoloads from helm-bbdb.el
 
 (autoload 'helm-bbdb "helm-bbdb" "\
@@ -16,10 +15,7 @@ URL `http://bbdb.sourceforge.net/'
 
 \(fn)" t nil)
 
-;;;***
-
-;;;### (autoloads nil nil ("helm-bbdb-pkg.el") (22714 538 393547
-;;;;;;  826000))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-bbdb" '("helm-")))
 
 ;;;***
 

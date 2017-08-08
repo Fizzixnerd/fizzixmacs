@@ -1,10 +1,9 @@
 ;;; biblio-core-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "biblio-core" "biblio-core.el" (22713 64887
-;;;;;;  773625 391000))
+;;;### (autoloads nil "biblio-core" "biblio-core.el" (0 0 0 0))
 ;;; Generated autoloads from biblio-core.el
 
 (autoload 'biblio-lookup "biblio-core" "\
@@ -15,6 +14,8 @@ function obeying the interface described in the docstring of
 inserted.
 
 \(fn &optional BACKEND QUERY)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "biblio-core" '("biblio-")))
 
 ;;;***
 

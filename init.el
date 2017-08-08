@@ -21,6 +21,13 @@
 ;(load-file "~/.emacs.d/site-lisp/cedet/cedet-devel-load.el")
 
 ;(add-to-list 'load-path "~/.emacs.d/")
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (add-to-list 'load-path "~/.emacs.d/elpa/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/glsl-mode/")
@@ -55,7 +62,7 @@
     ("~/Documents/school/jph311/project/proposal/proposal.org")))
  '(package-selected-packages
    (quote
-    (persp-fr persp-mode persp-projectile term-projectile helm-projectile projectile org-projectile package-build shut-up git commander f dash s company-cabal ag ahk-mode cask cask-mode cmake-font-lock company-bibtex company-cmake company-dict company-lua company-math company-nand2tetris company-shell dante ecb wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
+    (flymake-haskell-multi adoc-mode persp-fr persp-mode persp-projectile term-projectile helm-projectile projectile org-projectile package-build shut-up git commander f dash s company-cabal ag ahk-mode cask cask-mode cmake-font-lock company-bibtex company-cmake company-dict company-lua company-math company-nand2tetris company-shell dante ecb wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
  '(preview-auto-cache-preamble t)
  '(preview-gs-options
    (quote

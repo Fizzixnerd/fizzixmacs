@@ -1,10 +1,9 @@
 ;;; irony-eldoc-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads (irony-eldoc) "irony-eldoc" "irony-eldoc.el" (21941
-;;;;;;  10391 711904 634000))
+;;;### (autoloads nil "irony-eldoc" "irony-eldoc.el" (0 0 0 0))
 ;;; Generated autoloads from irony-eldoc.el
 
 (autoload 'irony-eldoc "irony-eldoc" "\
@@ -30,18 +29,13 @@ Notes:
 
 \(fn &optional ARG)" t nil)
 
-;;;***
-
-;;;### (autoloads nil nil ("irony-eldoc-pkg.el") (21941 10391 726163
-;;;;;;  135000))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "irony-eldoc" '("irony-eldoc-")))
 
 ;;;***
 
-(provide 'irony-eldoc-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
-;; coding: utf-8
 ;; End:
 ;;; irony-eldoc-autoloads.el ends here

@@ -1,10 +1,9 @@
 ;;; helm-flyspell-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "helm-flyspell" "helm-flyspell.el" (22714 531
-;;;;;;  31663 584000))
+;;;### (autoloads nil "helm-flyspell" "helm-flyspell.el" (0 0 0 0))
 ;;; Generated autoloads from helm-flyspell.el
 
 (autoload 'helm-flyspell-correct "helm-flyspell" "\
@@ -13,10 +12,7 @@ Adapted from `flyspell-correct-word-before-point'.
 
 \(fn)" t nil)
 
-;;;***
-
-;;;### (autoloads nil nil ("helm-flyspell-pkg.el") (22714 531 42325
-;;;;;;  700000))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-flyspell" '("helm-flyspell")))
 
 ;;;***
 

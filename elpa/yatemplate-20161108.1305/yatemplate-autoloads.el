@@ -1,10 +1,17 @@
 ;;; yatemplate-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "yatemplate" "yatemplate.el" (22714 376 774510
-;;;;;;  703000))
+;;;### (autoloads nil "test-yatemplate" "test-yatemplate.el" (0 0
+;;;;;;  0 0))
+;;; Generated autoloads from test-yatemplate.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "test-yatemplate" '("touch" "yatemplate")))
+
+;;;***
+
+;;;### (autoloads nil "yatemplate" "yatemplate.el" (0 0 0 0))
 ;;; Generated autoloads from yatemplate.el
 
 (defvar yatemplate-dir (locate-user-emacs-file "templates") "\
@@ -33,10 +40,11 @@ Fill `auto-insert-alist'.
 
 \(fn)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "yatemplate" '("yatemplate-")))
+
 ;;;***
 
-;;;### (autoloads nil nil ("test-yatemplate.el" "yatemplate-pkg.el")
-;;;;;;  (22714 376 790023 361000))
+;;;### (autoloads nil nil ("yatemplate-pkg.el") (0 0 0 0))
 
 ;;;***
 

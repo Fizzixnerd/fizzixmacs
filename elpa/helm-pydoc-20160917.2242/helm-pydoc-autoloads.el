@@ -1,10 +1,9 @@
 ;;; helm-pydoc-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "helm-pydoc" "helm-pydoc.el" (22714 523 508329
-;;;;;;  393000))
+;;;### (autoloads nil "helm-pydoc" "helm-pydoc.el" (0 0 0 0))
 ;;; Generated autoloads from helm-pydoc.el
 
 (autoload 'helm-pydoc "helm-pydoc" "\
@@ -12,10 +11,11 @@
 
 \(fn)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-pydoc" '("helm-pydoc-")))
+
 ;;;***
 
-;;;### (autoloads nil nil ("helm-pydoc-pkg.el") (22714 523 558223
-;;;;;;  568000))
+;;;### (autoloads nil nil ("helm-pydoc-pkg.el") (0 0 0 0))
 
 ;;;***
 

@@ -1,10 +1,16 @@
 ;;; semi-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "mime-edit" "mime-edit.el" (22654 46358 704457
-;;;;;;  119000))
+;;;### (autoloads nil "mime-bbdb" "mime-bbdb.el" (0 0 0 0))
+;;; Generated autoloads from mime-bbdb.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-bbdb" '("signature/" "mime-bbdb/")))
+
+;;;***
+
+;;;### (autoloads nil "mime-edit" "mime-edit.el" (0 0 0 0))
 ;;; Generated autoloads from mime-edit.el
 
 (autoload 'mime-edit-mode "mime-edit" "\
@@ -164,10 +170,39 @@ converted to MIME-Edit tags.
 
 \(fn &optional NOT-DECODE-TEXT NO-SEPARATOR NOT-TURN-ON)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-edit" '("mime-" "eliminate-top-spaces" "replace-space-with-underline")))
+
 ;;;***
 
-;;;### (autoloads nil "mime-play" "mime-play.el" (22654 46358 717244
-;;;;;;  320000))
+;;;### (autoloads nil "mime-image" "mime-image.el" (0 0 0 0))
+;;; Generated autoloads from mime-image.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-image" '("mime-")))
+
+;;;***
+
+;;;### (autoloads nil "mime-mac" "mime-mac.el" (0 0 0 0))
+;;; Generated autoloads from mime-mac.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-mac" '("mime-mac-save-and-play-with-")))
+
+;;;***
+
+;;;### (autoloads nil "mime-partial" "mime-partial.el" (0 0 0 0))
+;;; Generated autoloads from mime-partial.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-partial" '("mime-combine-message/partial-pieces-automatically")))
+
+;;;***
+
+;;;### (autoloads nil "mime-pgp" "mime-pgp.el" (0 0 0 0))
+;;; Generated autoloads from mime-pgp.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-pgp" '("mime-")))
+
+;;;***
+
+;;;### (autoloads nil "mime-play" "mime-play.el" (0 0 0 0))
 ;;; Generated autoloads from mime-play.el
 
 (autoload 'mime-preview-play-current-entity "mime-play" "\
@@ -188,10 +223,40 @@ specified, play as it.  Default MODE is \"play\".
 
 \(fn ENTITY &optional SITUATION IGNORED-METHOD)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-play" '("mime-")))
+
 ;;;***
 
-;;;### (autoloads nil "mime-view" "mime-view.el" (22654 46358 664497
-;;;;;;  116000))
+;;;### (autoloads nil "mime-shr" "mime-shr.el" (0 0 0 0))
+;;; Generated autoloads from mime-shr.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-shr" '("mime-shr-")))
+
+;;;***
+
+;;;### (autoloads nil "mime-signature" "mime-signature.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from mime-signature.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-signature" '("mime-edit-")))
+
+;;;***
+
+;;;### (autoloads nil "mime-tnef" "mime-tnef.el" (0 0 0 0))
+;;; Generated autoloads from mime-tnef.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-tnef" '("mime-")))
+
+;;;***
+
+;;;### (autoloads nil "mime-vcard" "mime-vcard.el" (0 0 0 0))
+;;; Generated autoloads from mime-vcard.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-vcard" '("mime-display-text/vcard")))
+
+;;;***
+
+;;;### (autoloads nil "mime-view" "mime-view.el" (0 0 0 0))
 ;;; Generated autoloads from mime-view.el
 
 (autoload 'mime-display-message "mime-view" "\
@@ -230,10 +295,18 @@ message.  It must be nil, `binary' or `cooked'.  If it is nil,
 
 \(fn &optional RAW-BUFFER PREVIEW-BUFFER MOTHER DEFAULT-KEYMAP-OR-FUNCTION REPRESENTATION-TYPE)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-view" '("mime-")))
+
 ;;;***
 
-;;;### (autoloads nil "postpet" "postpet.el" (22654 46358 798762
-;;;;;;  726000))
+;;;### (autoloads nil "mime-w3" "mime-w3.el" (0 0 0 0))
+;;; Generated autoloads from mime-w3.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mime-w3" '("url-cid" "mime-")))
+
+;;;***
+
+;;;### (autoloads nil "postpet" "postpet.el" (0 0 0 0))
 ;;; Generated autoloads from postpet.el
 
 (autoload 'postpet-decode "postpet" "\
@@ -246,13 +319,33 @@ message.  It must be nil, `binary' or `cooked'.  If it is nil,
 
 \(fn ENTITY SITUATION)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "postpet" '("unpack")))
+
 ;;;***
 
-;;;### (autoloads nil nil ("mail-mime-setup.el" "mime-bbdb.el" "mime-image.el"
-;;;;;;  "mime-mac.el" "mime-partial.el" "mime-pgp.el" "mime-setup.el"
-;;;;;;  "mime-shr.el" "mime-signature.el" "mime-tnef.el" "mime-vcard.el"
-;;;;;;  "mime-w3.el" "semi-def.el" "semi-pkg.el" "semi-setup.el"
-;;;;;;  "signature.el") (22654 46358 964100 690000))
+;;;### (autoloads nil "semi-def" "semi-def.el" (0 0 0 0))
+;;; Generated autoloads from semi-def.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "semi-def" '("mime-")))
+
+;;;***
+
+;;;### (autoloads nil "semi-setup" "semi-setup.el" (0 0 0 0))
+;;; Generated autoloads from semi-setup.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "semi-setup" '("mime-setup-" "call-after-loaded")))
+
+;;;***
+
+;;;### (autoloads nil "signature" "signature.el" (0 0 0 0))
+;;; Generated autoloads from signature.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "signature" '("insert-signature" "signature")))
+
+;;;***
+
+;;;### (autoloads nil nil ("mail-mime-setup.el" "mime-setup.el" "semi-pkg.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
