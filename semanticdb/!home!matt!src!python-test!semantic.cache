@@ -1,0 +1,41 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("A" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("return" code nil (reparse-symbol indented_block_body) [42 53]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27 31]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [14 54]))                  
+                :type "class")
+                nil [1 54])
+            ("B" type
+               (:superclasses ("A")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("return" code nil (reparse-symbol indented_block_body) [99 110]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [84 88]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [71 111]))                  
+                :type "class")
+                nil [55 111]))          
+      :file "main.py"
+      :pointmax 111
+      :fsize 110
+      :lastmodtime '(22922 1492 204435 816000)
+      :unmatched-syntax nil))
+  :file "!home!matt!src!python-test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

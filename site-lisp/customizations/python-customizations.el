@@ -18,17 +18,32 @@
 ;(require 'python-mode)
 (require 'elpy)
 (require 'yasnippet)
+(require 'flycheck)
+(require 'python-mode)
+(require 'python-docstring)
+(require 'company)
+(require 'jedi)
 
 ;(autoload 'python-mode "python-mode" "Python Mode." t)
 ;(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 ;(add-to-list 'interpreter-mode-alist '("python" . python-mode))
 
+;;; Code:
 (elpy-enable)
 (elpy-use-ipython)
+(add-to-list 'company-backends 'company-jedi)
+(add-hook 'python-mode-hook
+	  (lambda ()
+	    (jedi-mode t)
+	    (jedi:setup)
+	    (company-mode-on)
+	    (company-quickhelp-mode 1)
+	    (flycheck-mode t)))
+
 
 ;; (autoload 'pymacs-apply "pymacs")
 ;; (autoload 'pymacs-call "pymacs")
-;; (autoload 'pymacs-eval "pymacs" nil t)
+	    ;; (autoload 'pymacs-eval "pymacs" nil t)
 ;; (autoload 'pymacs-exec "pymacs" nil t)
 ;; (autoload 'pymacs-load "pymacs" nil t)
 

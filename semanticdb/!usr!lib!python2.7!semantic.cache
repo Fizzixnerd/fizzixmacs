@@ -1,10 +1,11 @@
-;; Object python2.7/
+;; Object semanticdb-project-database-file
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "python2.7/"
-  :tables (list 
-   (semanticdb-table "os.py"
-    :major-mode 'python-mode
-    :tags 
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("r\"\"\"OS routines for Mac, NT, or Posix depending on what system we're on.
 
 This exports:
@@ -243,33 +244,30 @@ and opendir), and leave all pathname manipulation to os.path
             ("_pickle_statvfs_result" function (:arguments 
               ( ("sr" variable nil (reparse-symbol function_parameters) [25522 25524]))              ) nil [25495 25602])
             ("try" code nil nil [25603 25770]))          
-    :file "os.py"
-    :pointmax 25770
-    :fsize 25769
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "copy_reg.py"
-    :major-mode 'python-mode
-    :tags nil
-    :file "copy_reg.py"
-    :pointmax 6801
-    :fsize 6800
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "subprocess.py"
-    :major-mode 'python-mode
-    :tags nil
-    :file "subprocess.py"
-    :pointmax 59047
-    :fsize 59046
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "smtplib.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "os.py"
+      :pointmax 25770
+      :fsize 25910
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags nil
+      :file "copy_reg.py"
+      :pointmax 6801
+      :fsize 6800
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags nil
+      :file "subprocess.py"
+      :pointmax 59047
+      :fsize 49417
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("'''SMTP/ESMTP client class.
 
 This should follow RFC 821 (SMTP), RFC 1869 (ESMTP), RFC 2554 (SMTP
@@ -871,15 +869,14 @@ Example:
                 :type "class")
                 nil [29070 30649])
             ("if" code nil nil [30751 31304]))          
-    :file "smtplib.py"
-    :pointmax 31304
-    :fsize 31303
-    :lastmodtime '(21294 8954 0 0)
-    :unmatched-syntax '((INDENT_BLOCK 11745 . 11909) (NEWLINE 11744 . 11745) (COLON 11743 . 11744) (TRY 11658 . 11661) (AS 11739 . 11741))
-    )
-   (semanticdb-table "socket.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "smtplib.py"
+      :pointmax 31304
+      :fsize 32105
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 11745 . 11909) (NEWLINE 11744 . 11745) (COLON 11743 . 11744) (TRY 11658 . 11661) (AS 11739 . 11741)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"\\
 This module provides socket operations and some related functions.
 On Unix, it supports IP (Internet Protocol) and Unix domain sockets.
@@ -1143,15 +1140,14 @@ the setsockopt() and getsockopt() methods.
                     ("timeout" variable nil (reparse-symbol function_parameters) [19145 19152])
                     ("source_address" variable nil (reparse-symbol function_parameters) [19200 19214]))                  )
                 nil [19114 20513]))          
-    :file "socket.py"
-    :pointmax 20513
-    :fsize 20512
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax '((INDENT_BLOCK 20321 . 20403) (NEWLINE 20320 . 20321) (COLON 20319 . 20320) (TRY 20019 . 20022) (AS 20315 . 20317))
-    )
-   (semanticdb-table "re.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "socket.py"
+      :pointmax 20513
+      :fsize 20615
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 20321 . 20403) (NEWLINE 20320 . 20321) (COLON 20319 . 20320) (TRY 20019 . 20022) (AS 20315 . 20317)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("r\"\"\"Support for regular expressions (RE).
 
 This module provides regular expression matching operations similar to
@@ -1331,15 +1327,14 @@ This module also defines an exception 'error'.
             ("_alphanum" variable nil nil [9249 9341])
             ("escape" function (:arguments 
               ( ("pattern" variable nil (reparse-symbol function_parameters) [9354 9361]))              ) nil [9343 13071]))          
-    :file "re.py"
-    :pointmax 13071
-    :fsize 13070
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "base64.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "re.py"
+      :pointmax 13071
+      :fsize 13423
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"RFC 3548: Base16, Base32, Base64 Data Encodings\"\"\"" code nil nil [24 77])
             ("re" include nil nil [209 218])
             ("struct" include nil nil [219 232])
@@ -1505,15 +1500,14 @@ This module also defines an exception 'error'.
             ("test" function (:documentation "Small test program") nil [10451 11192])
             ("test1" function nil nil [11194 11317])
             ("if" code nil nil [11319 11357]))          
-    :file "base64.py"
-    :pointmax 11357
-    :fsize 11356
-    :lastmodtime '(21294 8973 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "hmac.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "base64.py"
+      :pointmax 11357
+      :fsize 11806
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"HMAC (Keyed-Hashing for Message Authentication) Python module.
 
 Implements the HMAC algorithm as described by RFC 2104.
@@ -1630,15 +1624,14 @@ Implements the HMAC algorithm as described by RFC 2104.
                     ("msg" variable nil (reparse-symbol function_parameters) [4111 4114])
                     ("digestmod" variable nil (reparse-symbol function_parameters) [4123 4132]))                  )
                 nil [4098 4532]))          
-    :file "hmac.py"
-    :pointmax 4532
-    :fsize 4531
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "functools.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "hmac.py"
+      :pointmax 4532
+      :fsize 4588
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"functools.py - Tools for working with functions and callable objects
 \"\"\"" code nil nil [1 76])
             ("_functools" include nil nil [358 396])
@@ -1686,15 +1679,14 @@ Implements the HMAC algorithm as described by RFC 2104.
                 :arguments 
                   ( ("mycmp" variable nil (reparse-symbol function_parameters) [3705 3710]))                  )
                 nil [3690 4479]))          
-    :file "functools.py"
-    :pointmax 4479
-    :fsize 4478
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "types.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "functools.py"
+      :pointmax 4479
+      :fsize 4478
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Define names for all type symbols known in the standard interpreter.
 
 Types that are part of optional modules (e.g. array) are not listed.
@@ -1747,15 +1739,14 @@ Types that are part of optional modules (e.g. array) are not listed.
             ("GetSetDescriptorType" variable nil nil [1866 1917])
             ("MemberDescriptorType" variable nil nil [1918 1972])
             ("del" code nil nil [1974 1997]))          
-    :file "types.py"
-    :pointmax 2041
-    :fsize 2040
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "warnings.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "types.py"
+      :pointmax 2041
+      :fsize 2094
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Python part of the warnings subsystem.\"\"\"" code nil nil [1 45])
             ("linecache" include nil nil [172 188])
             ("sys" include nil nil [189 199])
@@ -1951,15 +1942,14 @@ Types that are part of optional modules (e.g. array) are not listed.
             ("_processoptions" code nil nil [13405 13437])
             ("if" code nil nil [13438 14022])
             ("del" code nil nil [14022 14044]))          
-    :file "warnings.py"
-    :pointmax 14045
-    :fsize 14044
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax '((NAME 11396 . 11400) (IF 11435 . 11437) (ELSE 11453 . 11457) (NAME 10048 . 10052) (IF 10088 . 10090) (ELSE 10100 . 10104) (NAME 1367 . 1371) (IF 1410 . 1412) (ELSE 1426 . 1430))
-    )
-   (semanticdb-table "sre_compile.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "warnings.py"
+      :pointmax 14045
+      :fsize 14748
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax '((NAME 11396 . 11400) (IF 11435 . 11437) (ELSE 11453 . 11457) (NAME 10048 . 10052) (IF 10088 . 10090) (ELSE 10100 . 10104) (NAME 1367 . 1371) (IF 1410 . 1412) (ELSE 1426 . 1430)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Internal support module for sre\"\"\"" code nil nil [225 262])
             ("_sre" include nil nil [264 280])
             ("sys" include nil nil [264 280])
@@ -2005,15 +1995,14 @@ Types that are part of optional modules (e.g. array) are not listed.
             ("compile" function (:arguments 
               ( ("p" variable nil (reparse-symbol function_parameters) [15626 15627])
                 ("flags" variable nil (reparse-symbol function_parameters) [15629 15634]))              ) nil [15614 16358]))          
-    :file "sre_compile.py"
-    :pointmax 16358
-    :fsize 16357
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "sre_parse.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "sre_compile.py"
+      :pointmax 16358
+      :fsize 19817
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Internal support module for sre\"\"\"" code nil nil [240 277])
             ("sys" include nil nil [345 355])
             ("sre_constants" include nil nil [357 384])
@@ -2167,15 +2156,14 @@ Types that are part of optional modules (e.g. array) are not listed.
             ("expand_template" function (:arguments 
               ( ("template" variable nil (reparse-symbol function_parameters) [27076 27084])
                 ("match" variable nil (reparse-symbol function_parameters) [27086 27091]))              ) nil [27056 27461]))          
-    :file "sre_parse.py"
-    :pointmax 27461
-    :fsize 27460
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax '((ASSIGN 26768 . 26769) (INDENT_BLOCK 7698 . 7711) (NEWLINE 7697 . 7698) (COLON 7696 . 7697))
-    )
-   (semanticdb-table "random.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "sre_parse.py"
+      :pointmax 27461
+      :fsize 28911
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax '((ASSIGN 26768 . 26769) (INDENT_BLOCK 7698 . 7711) (NEWLINE 7697 . 7698) (COLON 7696 . 7697)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Random variable generators.
 
     integers
@@ -2709,15 +2697,14 @@ General notes on the underlying Mersenne Twister core generator:
             ("jumpahead" variable nil nil [32030 32057])
             ("getrandbits" variable nil nil [32058 32089])
             ("if" code nil nil [32091 32130]))          
-    :file "random.py"
-    :pointmax 32130
-    :fsize 32129
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax '((NAME 14388 . 14389) (IF 14396 . 14398) (ELSE 14412 . 14416))
-    )
-   (semanticdb-table "urllib.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "random.py"
+      :pointmax 32130
+      :fsize 32323
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax '((NAME 14388 . 14389) (IF 14396 . 14398) (ELSE 14412 . 14416)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Open an arbitrary URL.
 
 See the following document for more info on URLs:
@@ -3440,15 +3427,14 @@ used to query various info about the object, if available.
               ( ("blocknum" variable nil (reparse-symbol function_parameters) [58037 58045])
                 ("blocksize" variable nil (reparse-symbol function_parameters) [58047 58056])
                 ("totalsize" variable nil (reparse-symbol function_parameters) [58058 58067]))              ) nil [58022 58212]))          
-    :file "urllib.py"
-    :pointmax 58212
-    :fsize 58211
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax '((NAME 44900 . 44909) (IF 44917 . 44919) (ELSE 44951 . 44955))
-    )
-   (semanticdb-table "quopri.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "urllib.py"
+      :pointmax 58212
+      :fsize 59939
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax '((NAME 44900 . 44909) (IF 44917 . 44919) (ELSE 44951 . 44955)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Conversions to/from quoted-printable transport encoding as per RFC 1521.\"\"\"" code nil nil [24 102])
             ("__all__" variable nil nil [127 189])
             ("ESCAPE" variable nil nil [191 203])
@@ -3517,27 +3503,25 @@ used to query various info about the object, if available.
                 nil [5475 5830])
             ("main" function nil nil [5833 6928])
             ("if" code nil nil [6931 6969]))          
-    :file "quopri.py"
-    :pointmax 6969
-    :fsize 6968
-    :lastmodtime '(21294 8947 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "struct.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "quopri.py"
+      :pointmax 6969
+      :fsize 6968
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("_struct" include nil nil [1 22])
             ("_struct" include nil nil [23 54])
             ("_struct" include nil nil [55 82]))          
-    :file "struct.py"
-    :pointmax 83
-    :fsize 82
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "linecache.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "struct.py"
+      :pointmax 83
+      :fsize 82
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Cache lines from files.
 
 This is intended to read lines from modules imported -- hence if a filename
@@ -3574,15 +3558,14 @@ that name.
                   ( ("filename" variable nil (reparse-symbol function_parameters) [1590 1598])
                     ("module_globals" variable nil (reparse-symbol function_parameters) [1600 1614]))                  )
                 nil [1574 4119]))          
-    :file "linecache.py"
-    :pointmax 4119
-    :fsize 4118
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "sre_constants.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "linecache.py"
+      :pointmax 4119
+      :fsize 4027
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Internal support module for sre\"\"\"" code nil nil [296 333])
             ("MAGIC" variable nil nil [381 397])
             ("try" code nil nil [399 510])
@@ -3682,15 +3665,14 @@ that name.
             ("SRE_INFO_LITERAL" variable nil nil [5607 5627])
             ("SRE_INFO_CHARSET" variable nil nil [5674 5694])
             ("if" code nil nil [5743 7198]))          
-    :file "sre_constants.py"
-    :pointmax 7198
-    :fsize 7197
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "__future__.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "sre_constants.py"
+      :pointmax 7198
+      :fsize 7197
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Record of phased-in incompatible language changes.
 
 Each line is of the form:
@@ -3796,15 +3778,14 @@ No feature line is ever to be deleted from this file.
             ("with_statement" variable nil nil [3921 4070])
             ("print_function" variable nil nil [4072 4221])
             ("unicode_literals" variable nil nil [4223 4380]))          
-    :file "__future__.py"
-    :pointmax 4381
-    :fsize 4380
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "hashlib.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "__future__.py"
+      :pointmax 4381
+      :fsize 4380
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("__doc__" variable nil nil [122 2057])
             ("__always_supported" variable nil nil [2169 2245])
             ("algorithms" variable nil nil [2247 2278])
@@ -3833,15 +3814,14 @@ No feature line is ever to be deleted from this file.
             ("for" code nil nil [4565 4892])
             ("del" code nil nil [4912 4959])
             ("del" code nil nil [4960 5011]))          
-    :file "hashlib.py"
-    :pointmax 5012
-    :fsize 5011
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "string.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "hashlib.py"
+      :pointmax 5012
+      :fsize 7842
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"A collection of string operations (most are no longer used).
 
 Warning: most of the code you see here isn't normally used nowadays.
@@ -4380,15 +4360,14 @@ printable -- a string containing all characters considered printable
                         (reparse-symbol indented_block_body) [20330 20757]))                  
                 :type "class")
                 nil [17254 20757]))          
-    :file "string.py"
-    :pointmax 20757
-    :fsize 20756
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "urlparse.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "string.py"
+      :pointmax 20757
+      :fsize 21548
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Parse (absolute and relative) URLs.
 
 urlparse module is based upon the following RFC specifications.
@@ -4605,15 +4584,14 @@ test_urlparse.py provides a good indicator of parsing behavior.
                     ("keep_blank_values" variable nil (reparse-symbol function_parameters) [13725 13742])
                     ("strict_parsing" variable nil (reparse-symbol function_parameters) [13746 13760]))                  )
                 nil [13707 15165]))          
-    :file "urlparse.py"
-    :pointmax 15165
-    :fsize 15164
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax '((COMMA 4396 . 4397) (NAME 4327 . 4337) (PAREN_BLOCK 4337 . 4396) (COMMA 4216 . 4217) (NAME 4154 . 4164) (PAREN_BLOCK 4164 . 4216))
-    )
-   (semanticdb-table "calendar.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "urlparse.py"
+      :pointmax 15165
+      :fsize 15164
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax '((COMMA 4396 . 4397) (NAME 4327 . 4337) (PAREN_BLOCK 4337 . 4396) (COMMA 4216 . 4217) (NAME 4154 . 4164) (PAREN_BLOCK 4164 . 4216)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Calendar printing functions
 
 Note when comparing these calendars to the ones printed by cal(1): By
@@ -5241,15 +5219,14 @@ set the first day of the week (0=Monday, 6=Sunday).\"\"\"" code nil nil [1 299])
             ("main" function (:arguments 
               ( ("args" variable nil (reparse-symbol function_parameters) [20249 20253]))              ) nil [20240 23258])
             ("if" code nil nil [23260 23306]))          
-    :file "calendar.py"
-    :pointmax 23306
-    :fsize 23305
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "collections.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "calendar.py"
+      :pointmax 23306
+      :fsize 23384
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("__all__" variable nil nil [1 75])
             ("_abcoll" include nil nil [224 245])
             ("_abcoll" include nil nil [246 260])
@@ -5605,24 +5582,22 @@ set the first day of the week (0=Monday, 6=Sunday).\"\"\"" code nil nil [1 299])
                 :type "class")
                 nil [14258 24841])
             ("if" code nil nil [24843 26010]))          
-    :file "collections.py"
-    :pointmax 26010
-    :fsize 26009
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax '((NAME 25468 . 25478) (PAREN_BLOCK 25478 . 25494) (NAME 25126 . 25136) (PAREN_BLOCK 25136 . 25152) (NAME 24693 . 24701) (IF 24710 . 24712) (ELSE 24733 . 24737) (NAME 24043 . 24051) (IF 24066 . 24068) (ELSE 24089 . 24093) (INDENT_BLOCK 13534 . 13598) (NEWLINE 13533 . 13534) (COLON 13532 . 13533) (TRY 13457 . 13460) (AS 13528 . 13530))
-    )
-   (semanticdb-table "locale.py"
-    :major-mode 'python-mode
-    :tags nil
-    :file "locale.py"
-    :pointmax 92588
-    :fsize 92587
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "_abcoll.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "collections.py"
+      :pointmax 26010
+      :fsize 27798
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax '((NAME 25468 . 25478) (PAREN_BLOCK 25478 . 25494) (NAME 25126 . 25136) (PAREN_BLOCK 25136 . 25152) (NAME 24693 . 24701) (IF 24710 . 24712) (ELSE 24733 . 24737) (NAME 24043 . 24051) (IF 24066 . 24068) (ELSE 24089 . 24093) (INDENT_BLOCK 13534 . 13598) (NEWLINE 13533 . 13534) (COLON 13532 . 13533) (TRY 13457 . 13460) (AS 13528 . 13530)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags nil
+      :file "locale.py"
+      :pointmax 92588
+      :fsize 99520
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Abstract Base Classes (ABCs) for collections, according to PEP 3119.
 
 DON'T USE THIS MODULE DIRECTLY!  The classes here should be imported
@@ -6289,15 +6264,14 @@ bootstrapping issues.  Unit tests are in test_collections.
                 :type "class")
                 nil [16284 17845])
             ("MutableSequence" code nil nil [17846 17876]))          
-    :file "_abcoll.py"
-    :pointmax 17877
-    :fsize 17876
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax '((NAME 14316 . 14321) (IF 14332 . 14334) (ELSE 14350 . 14354))
-    )
-   (semanticdb-table "keyword.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "_abcoll.py"
+      :pointmax 17877
+      :fsize 18619
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax '((NAME 14316 . 14321) (IF 14332 . 14334) (ELSE 14350 . 14354)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Keywords (from \"graminit.c\")
 
 This file is automatically generated; please don't muck it up!
@@ -6312,15 +6286,14 @@ the python source tree after building the interpreter and run:
             ("iskeyword" variable nil nil [883 925])
             ("main" function nil nil [927 1957])
             ("if" code nil nil [1958 1996]))          
-    :file "keyword.py"
-    :pointmax 1996
-    :fsize 1995
-    :lastmodtime '(21294 8973 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "heapq.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "keyword.py"
+      :pointmax 1996
+      :fsize 1995
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Heap queue algorithm (a.k.a. priority queue).
 
 Heaps are arrays for which a[k] <= a[2*k+1] and a[k] <= a[2*k+2] for
@@ -6463,15 +6436,14 @@ maintains the heap invariant!
                     ("key" variable nil (reparse-symbol function_parameters) [16865 16868]))                  )
                 nil [16839 18015])
             ("if" code nil nil [18016 18297]))          
-    :file "heapq.py"
-    :pointmax 18297
-    :fsize 18296
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax '((RETURN 6454 . 6460) (IF 6469 . 6471) (ELSE 6493 . 6497))
-    )
-   (semanticdb-table "shutil.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "heapq.py"
+      :pointmax 18297
+      :fsize 18295
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax '((RETURN 6454 . 6460) (IF 6469 . 6471) (ELSE 6493 . 6497)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Utility functions for copying and archiving files and directory trees.
 
 XXX The functions here don't copy the resource fork or other metadata on Mac.
@@ -6741,15 +6713,14 @@ XXX The functions here don't copy the resource fork or other metadata on Mac.
                     ("group" variable nil (reparse-symbol function_parameters) [16762 16767])
                     ("logger" variable nil (reparse-symbol function_parameters) [16774 16780]))                  )
                 nil [16645 18482]))          
-    :file "shutil.py"
-    :pointmax 18482
-    :fsize 18481
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "stat.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "shutil.py"
+      :pointmax 18482
+      :fsize 19022
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Constants/functions for interpreting results of os.stat() and os.lstat().
 
 Suggested usage: from stat import *
@@ -6820,15 +6791,14 @@ Suggested usage: from stat import *
             ("SF_APPEND" variable nil nil [1765 1790])
             ("SF_NOUNLINK" variable nil nil [1791 1816])
             ("SF_SNAPSHOT" variable nil nil [1817 1842]))          
-    :file "stat.py"
-    :pointmax 1843
-    :fsize 1842
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "fnmatch.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "stat.py"
+      :pointmax 1843
+      :fsize 1842
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Filename matching with shell patterns.
 
 fnmatch(FILENAME, PATTERN) matches according to the local convention.
@@ -6888,15 +6858,14 @@ corresponding to PATTERN.  (It does not compile it.)
                 :arguments 
                   ( ("pat" variable nil (reparse-symbol function_parameters) [2259 2262]))                  )
                 nil [2245 3240]))          
-    :file "fnmatch.py"
-    :pointmax 3240
-    :fsize 3239
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "argparse.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "fnmatch.py"
+      :pointmax 3240
+      :fsize 3315
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Command-line parsing library
 
 This module is an optparse-inspired command-line parsing library that:
@@ -8240,15 +8209,14 @@ still considered an implementation detail.)
                         (reparse-symbol indented_block_body) [88307 88692]))                  
                 :type "class")
                 nil [54491 88692]))          
-    :file "argparse.py"
-    :pointmax 88692
-    :fsize 88691
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax '((NAME 57288 . 57302) (IF 57309 . 57311) (ELSE 57332 . 57336) (INDENT_BLOCK 39468 . 39574) (NEWLINE 39467 . 39468) (COLON 39466 . 39467) (TRY 39375 . 39378) (AS 39462 . 39464))
-    )
-   (semanticdb-table "copy.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "argparse.py"
+      :pointmax 88692
+      :fsize 89124
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax '((NAME 57288 . 57302) (IF 57309 . 57311) (ELSE 57332 . 57336) (INDENT_BLOCK 39468 . 39574) (NEWLINE 39467 . 39468) (COLON 39466 . 39467) (TRY 39375 . 39378) (AS 39462 . 39464)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Generic (shallow and deep) copying operations.
 
 Interface summary:
@@ -8412,15 +8380,14 @@ __getstate__() and __setstate__().  See the documentation for module
                 nil [9771 9799])
             ("_test" function nil nil [9800 11480])
             ("if" code nil nil [11481 11520]))          
-    :file "copy.py"
-    :pointmax 11520
-    :fsize 11519
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "textwrap.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "copy.py"
+      :pointmax 11520
+      :fsize 11533
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Text wrapping and filling.
 \"\"\"" code nil nil [1 34])
             ("__revision__" variable nil nil [177 198])
@@ -8661,15 +8628,14 @@ __getstate__() and __setstate__().  See the documentation for module
                   ( ("text" variable nil (reparse-symbol function_parameters) [15176 15180]))                  )
                 nil [15165 16865])
             ("if" code nil nil [16866 17038]))          
-    :file "textwrap.py"
-    :pointmax 17038
-    :fsize 17037
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "gettext.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "textwrap.py"
+      :pointmax 17038
+      :fsize 17215
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Internationalization and localization support.
 
 This module provides internationalization (I18N) and localization (L10N)
@@ -8926,15 +8892,14 @@ internationalized, to the local language and cultural habits.
                 ("msgid2" variable nil (reparse-symbol function_parameters) [19757 19763])
                 ("n" variable nil (reparse-symbol function_parameters) [19765 19766]))              ) nil [19735 19827])
             ("Catalog" variable nil nil [20265 20286]))          
-    :file "gettext.py"
-    :pointmax 20287
-    :fsize 20286
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "weakref.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "gettext.py"
+      :pointmax 20287
+      :fsize 23015
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Weak reference support for Python.
 
 This module is an implementation of PEP 205:
@@ -9318,15 +9283,14 @@ http://www.python.org/dev/peps/pep-0205/
                         (reparse-symbol indented_block_body) [12641 12962]))                  
                 :type "class")
                 nil [7729 12962]))          
-    :file "weakref.py"
-    :pointmax 12962
-    :fsize 12961
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "abc.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "weakref.py"
+      :pointmax 12962
+      :fsize 13600
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"Abstract Base Classes (ABCs) according to PEP 3119.\"\"\"" code nil nil [102 159])
             ("types" include nil nil [161 173])
             ("_weakrefset" include nil nil [175 206])
@@ -9435,15 +9399,14 @@ http://www.python.org/dev/peps/pep-0205/
                         (reparse-symbol indented_block_body) [5564 7146]))                  
                 :type "class")
                 nil [1772 7146]))          
-    :file "abc.py"
-    :pointmax 7146
-    :fsize 7145
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "UserDict.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "abc.py"
+      :pointmax 7146
+      :fsize 7145
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("\"\"\"A more or less complete user-defined wrapper around dictionary objects.\"\"\"" code nil nil [1 78])
             ("UserDict" type
                (:members 
@@ -9702,15 +9665,14 @@ http://www.python.org/dev/peps/pep-0205/
                         (reparse-symbol indented_block_body) [5761 5812]))                  
                 :type "class")
                 nil [2787 5812]))          
-    :file "UserDict.py"
-    :pointmax 5812
-    :fsize 5811
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   (semanticdb-table "_weakrefset.py"
-    :major-mode 'python-mode
-    :tags 
+      :file "UserDict.py"
+      :pointmax 5812
+      :fsize 7060
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
         '( ("_weakref" include nil nil [145 169])
             ("__all__" variable nil nil [171 192])
             ("_IterationGuard" type
@@ -9941,14 +9903,23 @@ http://www.python.org/dev/peps/pep-0205/
                         (reparse-symbol indented_block_body) [5833 5912]))                  
                 :type "class")
                 nil [933 5912]))          
-    :file "_weakrefset.py"
-    :pointmax 5912
-    :fsize 5911
-    :lastmodtime '(21294 8926 0 0)
-    :unmatched-syntax 'nil
-    )
-   )
+      :file "_weakrefset.py"
+      :pointmax 5912
+      :fsize 5911
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("s" variable nil nil [1 867])
+            ("d" variable nil nil [869 875])
+            ("for" code nil nil [876 962])
+            ("print" code nil nil [963 1002]))          
+      :file "this.py"
+      :pointmax 1003
+      :fsize 1002
+      :lastmodtime '(22656 53672 0 0)
+      :unmatched-syntax nil))
   :file "!usr!lib!python2.7!semantic.cache"
   :semantic-tag-version "2.0"
-  :semanticdb-version "2.2"
-  )
+  :semanticdb-version "2.2")

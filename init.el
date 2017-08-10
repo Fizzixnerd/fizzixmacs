@@ -47,9 +47,11 @@
  ;; If there is more than one, they won't work right.
  '(LaTeX-command "latex --enable-write18 -shell-escape")
  '(column-number-mode t)
+ '(company-auto-complete (quote (quote company-explicit-action-p)))
  '(company-ghc-show-info t)
  '(doc-view-continuous t)
  '(ede-project-directories (quote ("/home/matt/src/silveretta/src")))
+ '(elpy-rpc-python-command "python3")
  '(haskell-process-auto-import-loaded-modules t)
  '(haskell-process-log t)
  '(haskell-process-suggest-remove-import-lines t)
@@ -62,11 +64,13 @@
     ("~/Documents/school/jph311/project/proposal/proposal.org")))
  '(package-selected-packages
    (quote
-    (flymake-haskell-multi adoc-mode persp-fr persp-mode persp-projectile term-projectile helm-projectile projectile org-projectile package-build shut-up git commander f dash s company-cabal ag ahk-mode cask cask-mode cmake-font-lock company-bibtex company-cmake company-dict company-lua company-math company-nand2tetris company-shell dante ecb wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
+    (elpy python-docstring flycheck-popup-tip flycheck-pycheckers company-jedi jedi jedi-core flymake-haskell-multi adoc-mode persp-fr persp-mode persp-projectile term-projectile helm-projectile projectile org-projectile package-build shut-up git commander f dash s company-cabal ag ahk-mode cask cask-mode cmake-font-lock company-bibtex company-cmake company-dict company-lua company-math company-nand2tetris company-shell dante ecb wtf virtualenv unbound smex slime-ritz slime-js slime-fuzzy sauron quack python-mode pretty-mode-plus pretty-lambdada pos-tip pep8 nose monokai-theme markdown-mode magit lua-mode load-dir less javadoc-help ipython idomenu highlight-indentation hc-zenburn-theme guru-mode google-translate god-mode ghc-imported-from fuzzy flymake-shell flymake-ruby flymake-python-pyflakes flymake find-file-in-project fic-ext-mode erc epl emms djvu dired+ dart-mode d-mode ctypes csharp-mode crontab-mode company-ghci company-ghc company-c-headers company-auctex color-theme-twilight color-theme-dawn-night cmake-mode clojure-mode autopair auto-complete-auctex ac-slime ac-python ac-geiser ac-clang Save-visited-files)))
  '(preview-auto-cache-preamble t)
  '(preview-gs-options
    (quote
     ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4")))
+ '(python-check-command "/usr/bin/pyflakes3")
+ '(python-shell-interpreter "python3")
  '(quack-pretty-lambda-p t)
  '(quack-smart-open-paren-p t)
  '(safe-local-variable-values
