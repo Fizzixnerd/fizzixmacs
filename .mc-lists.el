@@ -10,6 +10,8 @@
 	end-of-defun
 	forward-sexp
 	haskell-indentation-indent-backwards
+	helm-M-x
+	indent-for-tab-command
 	smex
 	))
 
