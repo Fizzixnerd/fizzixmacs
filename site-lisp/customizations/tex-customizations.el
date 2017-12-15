@@ -33,8 +33,7 @@
 			      (TeX-source-correlate-mode)
 			      (auto-fill-mode)
 			      (flyspell-mode)
-			      (setq reftex-plug-into-AUCTeX t)
-			      (add-to-list 'TeX-command-list '("LuaLaTeX" "lualatex -shell-escape %s" TeX-run-command t t :help "Run LuaLaTeX") t)))
+			      (setq reftex-plug-into-AUCTeX t)))
 
 ; I think these are pretty self explanatory, except maybe
 ; TeX-PDF-mode. Not sure what it does.

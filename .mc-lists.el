@@ -9,10 +9,7 @@
 	end-of-buffer
 	end-of-defun
 	forward-sexp
-	haskell-indentation-common-electric-command
 	haskell-indentation-indent-backwards
-	helm-M-x
-	indent-for-tab-command
 	smex
 	))
 
@@ -23,7 +20,6 @@
 	ghc-import-module
 	haskell-goto-next-error
 	haskell-indentation-newline-and-indent
-	helm-occur
 	smart-move-beginning-of-line
 	yas-expand
 	))
