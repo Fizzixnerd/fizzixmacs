@@ -10,6 +10,15 @@
 	end-of-defun
 	forward-sexp
 	haskell-indentation-indent-backwards
+<<<<<<< HEAD
+	helm-M-x
+<<<<<<< HEAD
+	helm-occur
+=======
+>>>>>>> intero
+	indent-for-tab-command
+=======
+>>>>>>> parent of 47b55fb... Setup Intero for Haskell.
 	smex
 	))
 
