@@ -1,0 +1,98 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode mhtml-mode
+      :tags 
+        '( ("window.MathJax = { TeX: {equationNumbers: {autoNumber: \"AMS\", formatID: function (n) {return ''+String(n).replace(/[:'\"<>&]/g,\"\")}}}}" section nil nil [143 294])
+            (".ils-logo-small, .ils-logo-container { height: 52px; width: 52px; display: inline-block; }
+span.footnote:before { counter-increment: footnotecounter; content: counter(footnotecounter); position: relative; }
+body { counter-reset: footnotecounter; }" section nil nil [294 1005])
+            ("idoc User Guide" section (:members 
+              ( ("idoc User Guide" section (:members 
+                  ( ("http://www.independentlearning.scienceNone <span class=\"fa fa-angle-double-down\">" section nil nil [1201 1979])
+                    ("Introduction <span class=\"fa fa-angle-double-down\">" section nil nil [1979 2795])
+                    ("Goals" section (:members 
+                      ( ("Get the Source! <span class=\"fa fa-angle-double-down\">" section nil nil [2920 7845]))                      ) nil [2795 7845])
+                    ("Features" section (:members 
+                      ( ("Basics" section nil nil [7929 9545])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [9545 10035])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [10035 11292])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [11292 11896])
+                        ("Lists" section nil nil [11896 12577])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [12577 13158])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [13158 13707])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [13707 14119]))                      ) nil [7845 14119])
+                    ("Blocks" section (:members 
+                      ( ("Math" section nil nil [15263 15697])
+                        ("Look Ma&#39;, I Have Equations! <span class=\"fa fa-angle-double-down\">" section nil nil [15697 16129])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [16129 17569])
+                        ("EqnArray <span class=\"fa fa-angle-double-down\">" section nil nil [17569 18033])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [18033 18935])
+                        ("EqnArray <span class=\"fa fa-angle-double-down\">" section nil nil [18935 19352])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [19352 20133])
+                        ("EqnArray <span class=\"fa fa-angle-double-down\">" section nil nil [20133 20619])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [20619 21112])
+                        ("Axiom <span class=\"fa fa-angle-double-down\">" section nil nil [21112 21485])
+                        ("EqnArray <span class=\"fa fa-angle-double-down\">" section nil nil [21485 21907])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [21907 22368])
+                        ("Defintion <span class=\"fa fa-angle-double-down\">" section nil nil [22368 22861])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [22861 23316])
+                        ("Theorem <span class=\"fa fa-angle-double-down\">" section nil nil [23316 23672])
+                        ("EqnArray <span class=\"fa fa-angle-double-down\">" section nil nil [23672 24185])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [24185 24686])
+                        ("Easy Lemma <span class=\"fa fa-angle-double-down\">" section nil nil [24686 25260])
+                        ("EqnArray <span class=\"fa fa-angle-double-down\">" section nil nil [25260 25763])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [25763 26401])
+                        ("Proposition <span class=\"fa fa-angle-double-down\">" section nil nil [26401 26846])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [26846 27280])
+                        ("Corollary <span class=\"fa fa-angle-double-down\">" section nil nil [27280 27797])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [27797 28229])
+                        ("Conjecture <span class=\"fa fa-angle-double-down\">" section nil nil [28229 28665])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [28665 29089])
+                        ("Proof <span class=\"fa fa-angle-double-down\">" section nil nil [29089 29479])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [29479 29849])
+                        ("Emphasis Blocks" section nil nil [29849 30178])
+                        ("A Quote from the &quot;Great One&quot;. <span class=\"fa fa-angle-double-down\">" section nil nil [30178 30659])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [30659 31923])
+                        ("Please be Aware: <span class=\"fa fa-angle-double-down\">" section nil nil [31923 32512])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [32512 33390])
+                        ("This is a Warning Block <span class=\"fa fa-angle-double-down\">" section nil nil [33390 33891])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [33891 34369])
+                        ("This is an Info Block <span class=\"fa fa-angle-double-down\">" section nil nil [34369 34849])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [34849 35316])
+                        ("This is a Caution Block <span class=\"fa fa-angle-double-down\">" section nil nil [35316 35819])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [35819 36297])
+                        ("This is a Tip Block <span class=\"fa fa-angle-double-down\">" section nil nil [36297 36777])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [36777 37484])
+                        ("Pedagogical Blocks" section nil nil [37484 38124])
+                        ("A connection <span class=\"fa fa-angle-double-down\">" section nil nil [38124 38527])
+                        ("http://www.independentlearning.scienceBasics/Logic <span class=\"fa fa-angle-double-down\">" section nil nil [38527 39375])
+                        ("http://www.independentlearning.scienceBasics/Fun <span class=\"fa fa-angle-double-down\">" section nil nil [39375 40404])
+                        ("Rendering <span class=\"fa fa-angle-double-down\">" section nil nil [40404 42416])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [42416 44868])
+                        ("But What <em class=\"idocEmphasis\">is" section nil nil [44868 46239])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [46239 47674])
+                        ("Example <span class=\"fa fa-angle-double-down\">" section nil nil [47674 48348])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [48348 48944])
+                        ("Exercise <span class=\"fa fa-angle-double-down\">" section nil nil [48944 49496])
+                        ("Code <span class=\"fa fa-angle-double-down\">" section nil nil [49496 49915])
+                        ("Links" section nil nil [49915 53225])
+                        ("YouTube" section nil nil [53225 53475])
+                        ("YouTube <span class=\"fa fa-angle-double-down\">" section nil nil [53475 53827])
+                        ("YouTube Video <span class=\"fa fa-angle-double-down\">" section nil nil [53827 54411])
+                        ("Images" section nil nil [54411 54600])
+                        ("Image <span class=\"fa fa-angle-double-down\">" section nil nil [54600 55032]))                      ) nil [14119 55032])
+                    ("Conclusion" section nil nil [55032 55187]))                  ) nil [1011 55187]))              ) nil [1005 55187])
+            ("" section nil nil [55187 55283])
+            ("" section nil nil [55283 55420]))          
+      :file "rando.html"
+      :pointmax 55420
+      :fsize 55419
+      :lastmodtime '(22954 43837 307992 478000)
+      :unmatched-syntax nil))
+  :file "!home!matt!src!idoc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
