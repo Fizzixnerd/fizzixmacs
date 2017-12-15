@@ -25,10 +25,14 @@
 
 ;; ----- ido-work-directory-list -----
 (
+<<<<<<< HEAD
  "/home/matt/src/kaleidoscope/src/chapter2/"
  "/etc/apt/sources.list.d/"
  "/home/matt/"
  "/home/matt/src/alex-toy/"
+=======
+ "/home/matt/"
+>>>>>>> intero
  "/home/matt/.emacs.d/site-lisp/customizations/"
  "/home/matt/.emacs.d/"
  "/home/matt/src/tapl/"
@@ -64,10 +68,19 @@
  "helm-customizations.el"
  ".emacs.desktop"
  "mail-customizations.el"
+<<<<<<< HEAD
+=======
+ "tapl.org"
+ "ge.tex"
+ "soi.tex"
+ "tex-customizations.el"
+ "pdfview-customizations.el"
+>>>>>>> intero
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+<<<<<<< HEAD
  ("/home/matt/src/tush/src/Tush/Syntax/" (22911 14182 615995 109000) "Lex.hs" "Lex.hs~" "Parse.hs" "Parse.hs~" "Expression.hs" "Statement.hs" "../" "./")
 
  ("/home/matt/src/kaleidoscope/src/chapter2/" (22885 5560 799842 426000) "chapter2.k" "Syntax.hs" "Parser.hs" "Main.hs" "Lexer.hs" "../" "./")
@@ -87,18 +100,39 @@
  ("/home/matt/src/idoc/library/Text/IDoc/" (22761 9825 686161 679000) ".#Parse.hs" "Parse.hs" "Parse.hs~" "Render/" "../" "./")
 
  ("/home/matt/Documents/geometric-entanglement/" (22720 33634 861310 588000) "ge.synctex.gz" "_region_.synctex.gz" "_region_.pdf" "ge.pdf" "_region_.maf" "_region_.mtc" "_region_.mtc0" "ge.maf" "ge.mtc" "ge.mtc0" "ge.tex" "ge.tex~" "_region_.prv/" "_region_.run.xml" "_region_.log" "prv_ge.log" "_region_.tex" "ge.toc" "ge.out" "ge.run.xml" "ge.bcf" "ge.aux" "ge.log" "auto/" ".git/" "../" "./")
+=======
+ ("/home/matt/" (23051 7404 723951 172000) ".nano/" ".zsh_history" ".xsession-errors" ".xsession-errors.old" ".gradle/" "AndroidStudioProjects/" "Android/" ".java/" ".AndroidStudio3.0/" ".android/" ".apport-ignore.xml" "package-lock.json" ".hplip/" ".thunderbird/" "simple1.idoc" "node_modules/" ".npm/" ".stack/" ".zcompdump" ".compiz/" "windows/" "ubc-cwl.txt" "type-fam.hs~" "pgadmin.log" "missfont.log" "dog_names.txt" "academic_history.pdf" ".zshrc~" ".zshrc" ".Xauthority" ".texlive2016/" ".system/" ".sudo_as_admin_successful" ".ssh/" ".purple/" ".psql_history" ".profile~" ".profile" ".pki/" ".pgpass" ".pgadmin3" ".mozilla/" ".lesshst" ".irssi/" ".ICEauthority" ".hoogle/" ".gnupg/" ".gnome/" ".gitconfig" ".ghci~" ".ghci" ".ghc-mod/" ".ghc/" ".gconf/" ".emacs.d/" ".dmrc" ".dbus/" ".cabal/" ".bash_logout" ".bash_history" ".bashrc" ".antigen/" ".aliases.zsh" ".aliases.bash" "src/" ".local/" ".config/" "Videos/" "Pictures/" "Music/" "Documents/" "Public/" "Templates/" "Downloads/" "Desktop/" ".cache/" "examples.desktop" "../" "./")
+>>>>>>> intero
+
+ ("/home/matt/src/idoc/library/Text/IDoc/" (22948 8987 339979 756000) ".#Parse2.hs" "Syntax.hs" "Syntax.hs~" "Parse2.hs" "Parse2.hs~" "Lex.hs" "Lex.hs~" "Render/" "Parse.hs~" "Parse.hs" "parse.grammar~" "parse.grammar" "../" "./")
+
+ ("/home/matt/src/tush/src/Tush/Compile/LLVM/" (22942 2314 226772 680000) "Prelude.hs" "Prelude.hs~" "CodeGen2.hs" "CodeGen2.hs~" "Instructions.hs" "Instructions.hs~" "Types.hs" "Types.hs~" "#CodeGen.hs#" "Mangle.hs" "JIT.hs" "../" "./")
+
+ ("/home/matt/src/ghame/src/TKC/Engine/" (22719 8263 0 0) "Types.hs" "Location/" "Item/" "Inventory.hs" "ID.hs" "Event/" "Entity.hs" "Entity/" "Data/" "Block/" "#Name.hs#" "#Location.hs#" "../" "./")
+
+<<<<<<< HEAD
+ ("/home/" (22481 17575 104002 753000) "matt/" "../" "./")
+=======
+ ("/home/matt/src/ghame/" (22865 55277 0 0) "x3d.org~" "x3d.org" "x3d-3.3.xsd~" "x3d-3.3.dtd~" "TriangleSet2D.x3d~" "TKC_GDD.tex~" "TKC_GDD.tex" "TKC_GDD.pdf" "TKC_GDD.org~" "TKC_GDD.org" "TAGS" "src/" "shit.txt" "Setup.hs" "res/" "LICENSE" "lib/" "HelloWorld.x3d~" "ghame.cabal~" "ghame.cabal" "doc/" "dist/" "collada_spec_1_5.pdf" "ChangeLog.md" "cabal.sandbox.config.old" "cabal.sandbox.config" "auto/" ".gitignore~" ".gitignore" ".git/" ".cabal-sandbox-old/" ".cabal-sandbox/" "../" "./")
+
+ ("/home/matt/Downloads/84082_Simple_SSS_setup/SimpleSSS demo/" (22924 23376 880458 474000) "untitled.blend" "SSSdemo.x3d" "SSSdemo.blend" "Preview.jpg" "textures/" "23213/" "../" "./")
+
+ ("/home/matt/Documents/et/" (22924 23371 412537 867000) "_region_.tex" "_region_.log" "prv_et3.log" "prv_et3.fmt" "prv_et.log" "plot2.png" "plot1.svg" "plot1.png" "hydrogen2.pdf" "hydrogen.pdf" "et3.toc" "et3.tex~" "et3.tex" "et3.pdf" "et3.out" "et3.log" "et3.aux" "et2.toc" "et2.tex~" "et2.tex" "et2.pdf" "et2.out" "et2.log" "et2.aux" "et.toc" "et.tex~" "et.tex" "et.pdf" "et.out" "et.log" "et.aux" "_region_.prv/" "auto/" "../" "./")
+
+ ("/home/matt/Documents/soi/general/" (22924 23376 304466 360000) "soi.tex~" "soi.tex" "soi.synctex.gz" "soi.run.xml" "soi.pdf" "soi.out" "soi.log" "soi.blg" "soi.bcf" "soi.bbl" "soi.aux" "resume-old.pdf" "refs.bib" "Academic History.pdf" "cam/" "auto/" "../" "./")
+
+ ("/home/matt/Documents/geometric-entanglement/" (22924 23372 392522 963000) "_region_.tex" "_region_.synctex.gz" "_region_.run.xml" "_region_.pdf" "_region_.mtc0" "_region_.mtc" "_region_.maf" "_region_.log" "references.bib~" "references.bib" "prv_ge.log" "ge2.toc" "ge2.tex~" "ge2.tex" "ge2.synctex.gz" "ge2.run.xml" "ge2.pdf" "ge2.out" "ge2.mtc0" "ge2.mtc" "ge2.maf" "ge2.log" "ge2.blg" "ge2.bcf" "ge2.bbl" "ge2.aux" "ge.toc" "ge.tex~" "ge.tex" "ge.synctex.gz" "ge.run.xml" "ge.pdf" "ge.out" "ge.mtc0" "ge.mtc" "ge.maf" "ge.log" "ge.bcf" "ge.aux" "_region_.prv/" "auto/" ".git/" "../" "./")
+
+ ("/home/matt/src/tapl/" (22721 31641 0 0) "tapl_book.pdf" "tapl.tex" "tapl.pdf" "tapl.org~" "tapl.org" "README.md" "auto/" "arith/" ".gitignore~" ".gitignore" ".git/" "../" "./")
+
+ ("/home/matt/.emacs.d/" (22940 28159 135957 70000) "ido.last" "ido.last~" "recentf" "recentf~" "snippets/" "url/" "srecode-map.el" "sbcl.core-for-slime" "places" "opengl-customizations.el" "menu_log.notes" "helm-adaptive-history" "emms/" "ede/" "ede-projects.el" "abbrev_defs" "README.md" "LICENSE" "yatemplates/" "smex-items" "session.10feb6695ecb894179147565648581812700000017150048" "session.10e32d1f6c914991f8143991114568362000000015920052" "session.10d18c49334af231b6140871982595473100000021430067" "session.10d0234d548ac0293140077970893430100000019070054" "session.10b8655b24cbdbbf84143301934440488700000019720067" "session.10b03b8500ecfb515314455437485949800000015720052" "session.10ab3aed590a6dfd8143524419281000900000019670066" "session.10995097ad456581af143766851660874300000315250067" "session.1096f726c0229c15d4143938728840890800000015820051" "session.107db08e1b6c84a5dd144519326242326900000012730052" "session.1068609f1adb62e227142609122812849000000020970064" "session.104b88fe0c711966b3144276309233340900000016180053" "session.1049fd18e326a7ba7b140068600917113000000019270054" "session.104551722cbef91f85142896328083621500000022290066" "session.103b65398988b4af6b144310007453515500000244940053" "session.103670184e19bacb681445998720217100000219250052" "session.103595ed2cf174d4fe143551118654105000000020830067" "session.10275087263d0e7de140597294317540300000019220059" "session.1012ce0406c43c5918143878769479676100000062250050" "mkslime-core.bash" "init.el" "ac-comphist.dat" ".mc-lists.el" "auto-save-list/" "site-lisp/" "semanticdb/" "irony/" "elpa/" ".org-id-locations" ".gitignore" ".emacs.desktop.lock" ".emacs.desktop" ".git/" ".cask/" "../" "./")
+>>>>>>> intero
+
+ ("/home/matt/.emacs.d/site-lisp/customizations/" (22924 25351 978438 980000) "yatemplate-customizations.el" "web-customizations.el" "visual-customizations.el" "tex-customizations.el" "template-replace.el" "sql-customizations.el" "shell-customizations.el" "racket-customizations.el" "pdfview-customizations.el" "package-customizations.el" "org-customizations.el" "navigation-customizations.el" "mail-customizations.el" "kaide-customizations.el" "js-customizations.el" "java-customizations.el" "ispell-customizations.el" "ido-customizations.el" "hs-customizations.el" "helm-customizations.el" "glsl-customizations.el" "file-association-customizations.el" "erc-customizations.el" "ede-customizations.el" "desktop-customizations.el" "cl-customizations.el" "c++-customizations.el" "ac-customizations.el" ".ropeproject/" "#sql-customizations.el#" "python-customizations.el" "haskell-customizations.el" ".#sql-customizations.el" "../" "./")
 
  ("/home/matt/.emacs.d/yatemplates/" (22716 18656 581407 677000) "50:.*.hs" "50:.*.hs~" "../" "./")
 
- ("/home/matt/.emacs.d/site-lisp/customizations/" (22714 49391 336298 886000) "helm-customizations.el" "helm-customizations.el~" "pdfview-customizations.el" "#sql-customizations.el#" ".#sql-customizations.el" "sql-customizations.el" "web-customizations.el" "visual-customizations.el" "tex-customizations.el" "template-replace.el" "shell-customizations.el" "racket-customizations.el" "python-customizations.el" "package-customizations.el" "org-customizations.el" "navigation-customizations.el" "mail-customizations.el" "kaide-customizations.el" "js-customizations.el" "java-customizations.el" "ispell-customizations.el" "ido-customizations.el" "hs-customizations.el" "haskell-customizations.el" "glsl-customizations.el" "file-association-customizations.el" "erc-customizations.el" "ede-customizations.el" "desktop-customizations.el" "cl-customizations.el" "c++-customizations.el" "ac-customizations.el" ".ropeproject/" ".#haskell-customizations.el" "#haskell-customizations.el#" "../" "./")
-
- ("/home/matt/.emacs.d/" (22714 48598 98842 411000) "init.el" "ido.last" "ido.last~" ".cask/" "snippets/" "session.10feb6695ecb894179147565648581812700000017150048" "places" "smex-items" "auto-save-list/" "url/" "srecode-map.el" "site-lisp/" "session.10e32d1f6c914991f8143991114568362000000015920052" "session.10d18c49334af231b6140871982595473100000021430067" "session.10d0234d548ac0293140077970893430100000019070054" "session.10b8655b24cbdbbf84143301934440488700000019720067" "session.10b03b8500ecfb515314455437485949800000015720052" "session.10ab3aed590a6dfd8143524419281000900000019670066" "session.10995097ad456581af143766851660874300000315250067" "session.1096f726c0229c15d4143938728840890800000015820051" "session.107db08e1b6c84a5dd144519326242326900000012730052" "session.1068609f1adb62e227142609122812849000000020970064" "session.104b88fe0c711966b3144276309233340900000016180053" "session.1049fd18e326a7ba7b140068600917113000000019270054" "session.104551722cbef91f85142896328083621500000022290066" "session.103b65398988b4af6b144310007453515500000244940053" "session.103670184e19bacb681445998720217100000219250052" "session.103595ed2cf174d4fe143551118654105000000020830067" "session.10275087263d0e7de140597294317540300000019220059" "session.1012ce0406c43c5918143878769479676100000062250050" "semanticdb/" "sbcl.core-for-slime" "opengl-customizations.el" "mkslime-core.bash" "menu_log.notes" "irony/" "emms/" "elpa/" "ede/" "ede-projects.el" "ac-comphist.dat" "abbrev_defs" "README.md" "LICENSE" ".org-id-locations" ".mc-lists.el" ".gitignore" ".emacs.desktop.lock" ".emacs.desktop" ".git/" "../" "./")
-
  ("/home/" (22481 17575 104002 753000) "matt/" "../" "./")
-
- ("/home/matt/Documents/soi/general/" (22713 50975 149239 951000) "soi.synctex.gz" "soi.tex" "soi.tex~" "cam/" "Academic History.pdf" "soi.bbl" "soi.blg" "soi.run.xml" "soi.bcf" "refs.bib" "resume-old.pdf" "soi.out" "soi.pdf" "soi.aux" "soi.log" "auto/" "../" "./")
-
- ("/home/matt/src/tapl/" (22713 54481 742331 821000) "README.md" "tapl.org" "tapl.org~" ".gitignore" ".gitignore~" "tapl.pdf" ".git/" "../" "./")
 
  ("/home/matt/tmp/" (22713 53465 162117 608000) "../" "./")
 
@@ -112,17 +146,11 @@
 
  ("/home/matt/.emacs.d/elpa/helm-20170301.819/" (22713 49931 739986 506000) "helm-utils.elc" "helm-types.elc" "helm-tags.elc" "helm-sys.elc" "helm-semantic.elc" "helm-ring.elc" "helm-regexp.elc" "helm-org.elc" "helm-net.elc" "helm-mode.elc" "helm-misc.elc" "helm-man.elc" "helm-locate.elc" "helm-info.elc" "helm-imenu.elc" "helm-id-utils.elc" "helm-help.elc" "helm-grep.elc" "helm-font.elc" "helm-files.elc" "helm-external.elc" "helm-eval.elc" "helm-eshell.elc" "helm-elscreen.elc" "helm-elisp.elc" "helm-elisp-package.elc" "helm-easymenu.elc" "helm-dabbrev.elc" "helm-config.elc" "helm-command.elc" "helm-color.elc" "helm-buffers.elc" "helm-bookmark.elc" "helm-apt.elc" "helm-adaptive.elc" "helm-autoloads.el" "helm-autoloads.el~" "helm-types.el" "helm-org.el" "helm-grep.el" "helm-bookmark.el" "helm-config.el" "helm-elisp.el" "helm-color.el" "helm-net.el" "helm-regexp.el" "emacs-helm.sh" "helm-man.el" "helm-eval.el" "helm-adaptive.el" "helm-misc.el" "helm-pkg.el" "helm-files.el" "helm-dabbrev.el" "helm-sys.el" "helm-apt.el" "helm-id-utils.el" "helm-buffers.el" "helm-semantic.el" "helm-imenu.el" "helm-info.el" "helm-font.el" "helm-eshell.el" "helm-tags.el" "helm-easymenu.el" "helm-elisp-package.el" "helm-command.el" "helm-utils.el" "helm-elscreen.el" "helm-locate.el" "helm-external.el" "helm-help.el" "helm-ring.el" "helm-mode.el" "../" "./")
 
- ("/home/matt/src/ghame/" (22544 62017 378555 293000) "collada_spec_1_5.pdf" "res/" "x3d-3.3.dtd~" "HelloWorld.x3d~" "TriangleSet2D.x3d~" "x3d-3.3.xsd~" "x3d.org" "x3d.org~" ".gitignore" ".gitignore~" "lib/" "shit.txt" "cabal.sandbox.config" ".cabal-sandbox/" "cabal.sandbox.config.old" ".cabal-sandbox-old/" "TKC_GDD.pdf" "TKC_GDD.tex" "TKC_GDD.tex~" "auto/" "ghame.cabal" "ghame.cabal~" "TKC_GDD.org" "TKC_GDD.org~" "dist/" "ChangeLog.md" "Setup.hs" "LICENSE" "doc/" "src/" ".git/" "../" "./")
-
- ("/home/matt/Downloads/84082_Simple_SSS_setup/SimpleSSS demo/" (22536 64620 565721 849000) "23213/" "untitled.blend" "SSSdemo.x3d" "Preview.jpg" "SSSdemo.blend" "textures/" "../" "./")
-
  ("/home/matt/src/ghame/src/X3D/" (22535 30162 919820 67000) "Types.hs" "Types.hs~" "test.x3d" "test.x3d~" "TheGaybeards.jpg" "GL.hs" "GL.hs~" "Shader.hs" "Shader.hs~" "Scratch.hs" "Scratch.hs~" "Util.hs" "Util.hs~" "Compile.hs" "Compile.hs~" "test.lc" "#GeneratedTypes.hs#" ".#GeneratedTypes.hs" "GeneratedTypes.hs~" "HXT.hs" "HXT.hs~" "../" "./")
 
  ("/home/matt/src/ghame/src/TKC/Graphics/LambdaCube3D/" (22534 17216 1315 371000) "Mesh.hs" "Mesh.hs~" "Shader.hs" "Shader.hs~" "../" "./")
 
  ("/home/matt/src/ghame/src/" (22544 62065 284259 500000) "Data/" "test.lc~" "test.json" "X3D/" "Main.o" "Main.hi" "Main.hs" "Main.hs~" "Scratch.hs~" "TKC/" "blah.c~" "../" "./")
-
- ("/home/matt/Documents/et/" (22588 25577 805956 836000) "et3.tex" "et3.tex~" "et3.toc" "et3.pdf" "et3.out" "et3.aux" "et3.log" "prv_et3.fmt" "prv_et3.log" "plot2.png" "et2.tex" "et2.tex~" "hydrogen2.pdf" "et2.pdf" "plot1.png" "plot1.svg" "et2.toc" "et2.out" "et2.aux" "et.tex" "et.tex~" "et2.log" "hydrogen.pdf" "et.pdf" "et.toc" "et.out" "_region_.prv/" "_region_.log" "prv_et.log" "_region_.tex" "et.aux" "et.log" "auto/" "../" "./")
 
  ("/home/matt/src/fizzixnerd.com/scratch-site/src/Lib/" (22705 56621 773326 116000) "Hello.hs" "Hello.hs~" "../" "./")
 
@@ -145,8 +173,6 @@
  ("/home/matt/src/ghame/src/TKC/Engine/Event/" (22515 58189 44092 422000) "Loop.o" "Loop.hi" "Draw.o" "Draw.hi" "Timer.o" "Timer.hi" "Input.o" "Input.hi" "EventHandler.o" "EventHandler.hi" "Loop.hs" "Loop.hs~" "Draw.hs" "Draw.hs~" "Input.hs" "SimpleLoop.hs" "Timer.hs" "EventHandler.hs" "../" "./")
 
  ("/home/matt/src/ghame/src/TKC/Engine/Location/" (22512 65132 507129 149000) "Node.o" "Node.hi" "Area.o" "Area.hi" "Position.o" "Position.hi" "Node.hs" "Node.hs~" "Area.hs" "Area.hs~" "Types.hs~" "Place.hs~" "Tile.hs~" "Position.hs" "Position.hs~" "../" "./")
-
- ("/home/matt/src/ghame/src/TKC/Engine/" (22514 58400 935120 434000) "Block/" "Item/" "Inventory.hs" "Event/" "Entity.hs" "Types.hs" "ID.hs" "#Name.hs#" "#Location.hs#" "Data/" "Location/" "Entity/" "../" "./")
 
  ("/home/matt/src/ghame/src/TKC/Engine/Data/" (22514 38870 417080 459000) "Save.o" "Save.hi" "VectorMaze.o" "VectorMaze.hi" "Store.hs~" "Save.hs" "Save.hs~" "Types.hs~" "#Core.hs#" "Core.hs~" "VectorMaze.hs" "VectorMaze.hs~" "../" "./")
 
