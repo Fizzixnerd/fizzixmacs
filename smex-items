@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- package-list-packages-no-fetch
  package-list-packages
- haskell-mode
- comment-region
+ helm-ag
  eval-buffer
  emacs-version
  magit-push
+ magit-commit
+ magit-stage-file
 )
 
 ;; ----- smex-data -----
@@ -15,12 +15,12 @@
  (haskell-mode-stylish-buffer . 8)
  (ghc-debug . 3)
  (comment-box . 1)
- (comment-region . 73)
+ (comment-region . 72)
  (replace-regexp . 32)
  (recover-this-file . 1)
  (read-color . 1)
  (dired . 4)
- (haskell-mode . 14)
+ (haskell-mode . 13)
  (rename-file . 2)
  (uncomment-region . 4)
  (haskell-process-restart . 3)
@@ -29,7 +29,7 @@
  (mc/edit-lines . 36)
  (move-file-to-trash . 1)
  (kmacro-edit-macro . 3)
- (package-list-packages . 31)
+ (package-list-packages . 14)
  (erc . 6)
  (js-indent-line . 1)
  (woman . 3)
@@ -76,5 +76,4 @@
  (emacs-version . 4)
  (eval-buffer . 1)
  (helm-ag . 1)
- (package-list-packages-no-fetch . 3)
 )
